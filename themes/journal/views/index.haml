@@ -1,0 +1,3 @@
+- @articles.each do |article|
+  %article
+    = haml :summary, :layout => false, :locals => { :article => article, :heading => :h2 }
