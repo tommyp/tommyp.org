@@ -1,10 +1,15 @@
 - @articlenav = capture_haml do 
-  
-  %ul#article-nav
-    %li
-      %a{:title => 'Prev', :href => '/'} Prev
-      %a{:title => 'Next', :href => '/'} Next
+  -#if @page.date
+  /     %ul#article-nav
+  /       -if @page.next
+  /         %li
+  /           %a{:title => 'Next', :href => @page.next } Next
+  /       -if @page.prev
+  /         %li
+  /           %a{:title => 'Prev', :href => @page.prev } Prev
 
+%p
+  This is page.haml
 
 %article
   ~ @page.to_html(self)
@@ -17,9 +22,3 @@
       %header
         %h1= "Articles on #{@page.heading}"
       = haml :summaries, :layout => false, :locals => { :pages => @page.articles, :heading => :h3 }
-
-    = haml :page_meta, :layout => false, :locals => { :page => @page }
-
-  = haml :comments, :layout => false
-
-= haml :sidebar, :layout => false

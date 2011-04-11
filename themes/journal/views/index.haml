@@ -1,3 +1,6 @@
+%p
+  This is the index.haml page
+
 - @articles.each do |article|
   %article
     = haml :summary, :layout => false, :locals => { :article => article, :heading => :h2 }
