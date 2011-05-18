@@ -11,7 +11,9 @@ module Nesta
     use Rack::Static, :urls => ["/journal"], :root => "themes/journal/public"
 
     helpers do
-
+      def next
+        return Page.find_articles.index
+      end
     end
 
     get '/css/:sheet.css' do

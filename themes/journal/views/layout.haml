@@ -10,8 +10,9 @@
     %link{ :href => "/css/style.css", :media => "screen", :rel => "stylesheet", :type => "text/css" }
     %link{ :href => "/css/master.css", :media => "screen", :rel => "stylesheet", :type => "text/css" }
     %link{ :href => "/articles.xml", :rel => "alternate", :type => "application/atom+xml" }
+    -if @extrahead
+      = @extrahead
     %script{ :src => "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js", :type => "text/javascript" }
-    %script{ :src => "/postal3/javascripts/application.js", :type => "text/javascript" }
     %script{ :src => "http://use.typekit.com/chf2bwy.js", :type => "text/javascript" }
     %script
       try{Typekit.load();}catch(e){}
