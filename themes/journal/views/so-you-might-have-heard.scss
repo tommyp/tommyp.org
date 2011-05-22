@@ -42,31 +42,31 @@ ul#fingers {
 }
 
 span#semicircle {
-  color: #fff;
+  background-color: #fff;
   position: absolute;
   z-index: 3000;
   width: $knuckle-base*20;
   height: $knuckle-base*10;
   border: $knuckle-base*2 solid #000;
   border-top: none;
-  border-bottom-right-radius: $knuckle-base*20;
-  border-bottom-left-radius: $knuckle-base*20; 
+  border-bottom-right-radius: $knuckle-base*10 $knuckle-base*11;
+  border-bottom-left-radius: $knuckle-base*10 $knuckle-base*11; 
   display: inline-block;
   margin-left: $knuckle-base*11.5;
   margin-top: $knuckle-base*11.4;
 }
 
 span#innerpalm {
-  color: #fff;
+  background-color: #000;
   position: absolute;
-  z-index: 3000;
-  width: $knuckle-base*20;
-  height: $knuckle-base*10;
+  z-index: 2500;
+  width: $knuckle-base*30;
+  height: $knuckle-base*6;
   border: $knuckle-base*2 solid #000;
   border-top: none;
   border-bottom-right-radius: $knuckle-base*5;
   border-bottom-left-radius: $knuckle-base*5; 
   display: inline-block;
-  margin-left: $knuckle-base*11.5;
-  margin-top: $knuckle-base*11.4;
+  margin-left: $knuckle-base*6.4;
+  margin-top: $knuckle-base*20;
 }
