@@ -11,8 +11,20 @@ module Nesta
     use Rack::Static, :urls => ["/journal"], :root => "themes/journal/public"
 
     helpers do
-      def next
-        return Page.find_articles.index
+      def previous_post
+        articles = Nesta::Page.find_articles
+        i = articles.index(@page)
+
+        p = i != articles.count-1 ? articles[i+1] : nil
+        haml "%a{:href=>'#{p.abspath}'} Previous" if p
+      end
+
+      def next_post
+        articles = Nesta::Page.find_articles
+        i = articles.index(@page)
+
+        n = i != 0 ? articles[i-1] : nil
+        haml "%a{:href=>'#{n.abspath}'} Next" if n
       end
     end
 

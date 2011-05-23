@@ -1,6 +1,10 @@
 - @articlenav = capture_haml do 
   -if @page.date
--#    ~next(@page)
+  %ul#article-nav
+    %li
+      = previous_post
+    %li
+      = next_post
 
 %article
   ~ @page.to_html(self)
