@@ -1,25 +1,33 @@
 Date: 21 Jan 2011
 Summary: Now that I've finished Uni, I'm becoming a Rumbler.
-Heading: So you might have heard...
+Heading: So you might've heard&hellip;
 Template: article
-Title: So you might have heard..
+Title: So you might've heard&hellip;
 
-- @extrahead = capture_haml do 
-  
+- @extrahead = capture_haml do   
   %link{ :href => "/css/so-you-might-have-heard.css", :media => "screen", :rel => "stylesheet", :type => "text/css" }
-
-%section#duster
-  %ul#fingers
-    %li
-      %span#first.finger
-    %li
-      %span.finger
-    %li
-      %span.finger
-    %li
-      %span#last.finger
-  %span#semicircle
-  %span#innerpalm
+    
+%article
+  // %section#duster
+  //   %ul#fingers
+  //     %li
+  //       %span#first.finger
+  //     %li
+  //       %span.finger
+  //     %li
+  //       %span.finger
+  //     %li
+  //       %span#last.finger
+  //   %span#semicircle
+  //   %span#innerpalm
+  %h1 So you might've heard...
+  %h2 I'm becoming a Rumbler.
+  %p
+    More specifically, I'm joining 
+    %a{:href => "http://rumblelabs"} Rumble Labs
+    as a Web Developer. A few weeks ago they announced their switch to Rails and
+    %a{:href => "http://davidjrice.co.uk"} David Rice
+    joining the company. I've been playing with Rails on and off for a year or so and loved every second of it, so this is a fantastic opportunity for me. The guys at Rumble Labs are absolute geebols and I couldn't think of a better place to be joining straight out of Uni.
+    
+    
   
-%section#main
-  %h1 So you might have heard

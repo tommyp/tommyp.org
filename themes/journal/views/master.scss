@@ -1,10 +1,18 @@
+/* basics */
+
+$header-font-family: "league-gothic-1","league-gothic-2", Helvetica, Sans-serif;
+
 /* type */
 
 #content {
 	color: #222;
 }
 
-h2, h3, h4, h5 {
+h1 {
+  font-size: 60px;
+}
+
+h1, h2, h3, h4, h5 {
   font-family: "Helvetica Neue", Arial, sans-serif;
 	padding-bottom: 0.5em;
 }
@@ -83,7 +91,7 @@ cite {
 /* header */
 
 header {
-	font-family: "league-gothic-1","league-gothic-2", Helvetica, Sans-serif;
+	font-family: $header-font-family;
 	text-transform: uppercase;
 	font-size: 37px;
   width: 1120px;
@@ -98,42 +106,34 @@ header a {
 nav {
   border-bottom: 1px solid #1D1D1D;
   height: 36px;
+  ul {
+  	list-style: none;
+  	display: inline;
+  	color: #1D1D1D;
+  	li {
+      font-family: $header-font-family;
+    	line-height: 1em;
+    	text-transform: uppercase;
+    	color: #1D1D1D;
+    	font-size: 37px;
+    	display: inline;
+    	margin-right: 16px;
+    }
+  }
 }
 
-nav ul {
-	list-style: none;
-	display: inline;
-	color: #1D1D1D;
-}
-
-nav ul li {
-  font-family: "league-gothic-1","league-gothic-2", Helvetica, Sans-serif;
-	line-height: 1em;
-	text-transform: uppercase;
-	color: #1D1D1D;
-	font-size: 37px;
-	display: inline;
-}
-
-#article-nav {
+nav#article {
   float: right;
 }
 
-/* Index */
-
-#articlelist p, h2{
-
+article.post {
+  h1 {
+    font-family: $header-font-family;
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase;
+  }
 }
-
-#articlelist a {
-	border: none;
-}
-
-#articlelist a:hover {
-	border: none;
-	color: #000;
-}
-
 /* info */
 
 #info {

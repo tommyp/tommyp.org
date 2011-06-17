@@ -1,1 +1,7 @@
-%section.articles= article_summaries(latest_articles)
+Title: Tommy Palmer
+
+- latest_articles.each do |post|
+  %article.post
+    %h1
+      %a{:href=>"#{post.abspath}"}= post.metadata("title")
+    

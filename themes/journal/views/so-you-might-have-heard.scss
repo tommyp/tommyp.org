@@ -1,12 +1,18 @@
 $knuckle-base: 10px;
 
+$rumble-stack: "ff-tisa-web-pro-1","ff-tisa-web-pro-2",Palatino,Georgia,serif;
+
+body {
+  background: url(/images/so-you-might-have-heard/bg.jpg) repeat;
+}
+
 article {
-  width: 600px;
-  margin: 100px auto 0;
-  section#duster {
-    margin: 0 auto;
-    height: 600px;
-  }
+  margin: 0 auto;
+  width: 960px;
+}
+
+p, h1, h2, h3, h4 {
+  font-family: $rumble-stack;
 }
 
 span.finger {
@@ -32,7 +38,7 @@ span#last {
 
 ul#fingers {
   position: absolute;
-  z-index: 4000;
+  z-index: 6000;
 }
 
 #fingers li {
@@ -53,7 +59,7 @@ span#semicircle {
   border-bottom-left-radius: $knuckle-base*10 $knuckle-base*11; 
   display: inline-block;
   margin-left: $knuckle-base*11.5;
-  margin-top: $knuckle-base*11.4;
+  margin-top: $knuckle-base*10;
 }
 
 span#innerpalm {
@@ -64,9 +70,9 @@ span#innerpalm {
   height: $knuckle-base*6;
   border: $knuckle-base*2 solid #000;
   border-top: none;
-  border-bottom-right-radius: $knuckle-base*5;
-  border-bottom-left-radius: $knuckle-base*5; 
+  border-bottom-right-radius: $knuckle-base*12 $knuckle-base*5;
+  border-bottom-left-radius: $knuckle-base*12 $knuckle-base*5; 
   display: inline-block;
   margin-left: $knuckle-base*6.4;
-  margin-top: $knuckle-base*20;
+  margin-top: $knuckle-base*16;
 }
