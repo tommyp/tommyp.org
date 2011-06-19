@@ -39,7 +39,7 @@ body {
 
 #content {
   article {
-    @include imgpath("duster.png");
+    @include imgpath("logo.png");
     background-repeat: no-repeat;
     background-position: top center;
     margin-top: 40px;

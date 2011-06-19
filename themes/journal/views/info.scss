@@ -1,10 +1,10 @@
 section#main {
   margin: 20px auto;
-  width: 860px;
+  width: 860px; 
   section#info {
     margin: 80px 0 0 0;
     width: 500px;
-    float: left;
+    float: left; 
     p#jess, p#jess a {
       font-size: 12px;
       color: #acacac;
@@ -17,6 +17,6 @@ section#main {
     width: 360px;
     height: 630px;
     float: right;
-    background: url(/images/avatar.png) no-repeat;
+    background: url(/images/avatar.png) no-repeat;    
   }
 }
