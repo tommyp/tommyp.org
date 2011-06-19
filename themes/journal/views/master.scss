@@ -2,6 +2,8 @@
 
 $header-font-family: "league-gothic-1","league-gothic-2", Helvetica, Sans-serif;
 
+$main-font-family: "proxima-nova-1","proxima-nova-2", "Helvetica Neue", Arial, sans-serif;
+
 /* type */
 
 #content {
@@ -13,7 +15,7 @@ h1 {
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: $main-font-family;
 	padding-bottom: 0.5em;
 }
 
@@ -30,8 +32,8 @@ h4 {
 }
 
 p, li, blockquote {
-	font-family: Helvetica, Arial, Sans-serif;
-	line-height: 1.3em;
+	font-family: $main-font-family;
+	line-height: 1.5em;
 }
 
 p, ol, ul {
@@ -67,12 +69,24 @@ cite {
 	font-size: 12px;
 }
 
-.workdesc {
-	width: 350px;
+section#index {
+  margin: 40px auto;
+  width: 960px;
+  article.post {
+    h1 {
+      font-family: $header-font-family;
+      font-size: 60px;
+      text-transform: uppercase;
+      a {
+        border-bottom: none;
+      }
+    }
+  }
 }
 
-.workimage {
-	
+#content {
+  margin: 0 auto;
+  width: 1120px;
 }
 
 #content a{
@@ -124,15 +138,6 @@ nav {
 
 nav#article {
   float: right;
-}
-
-article.post {
-  h1 {
-    font-family: $header-font-family;
-    font-size: 60px;
-    text-align: center;
-    text-transform: uppercase;
-  }
 }
 /* info */
 

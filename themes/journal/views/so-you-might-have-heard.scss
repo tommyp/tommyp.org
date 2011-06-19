@@ -1,78 +1,69 @@
 $knuckle-base: 10px;
 
-$rumble-stack: "ff-tisa-web-pro-1","ff-tisa-web-pro-2",Palatino,Georgia,serif;
+$rumble-body: "ff-tisa-web-pro-1","ff-tisa-web-pro-2",Palatino,Georgia,serif;
 
-body {
-  background: url(/images/so-you-might-have-heard/bg.jpg) repeat;
+$rumble-headline: "futura-pt-1","futura-pt-2","Helvetica Neue", Arial, Sans-serif;
+
+@mixin imgpath($image) {
+  background-image: url("/images/so-you-might-have-heard/#{$image}");
 }
 
-article {
-  margin: 0 auto;
-  width: 960px;
+p {
+  font-family: $rumble-body;
+}
+
+h1 {
+  font-family: $rumble-headline;
+  font-weight: bold;
+  padding-bottom: none;
+}
+
+h2 {
+  font-family: $rumble-body;
+  font-size: 17px;
 }
 
 p, h1, h2, h3, h4 {
-  font-family: $rumble-stack;
+  color: #fff;
 }
 
-span.finger {
-  height: $knuckle-base*10;
-  width: $knuckle-base*10;
-  border: $knuckle-base*2 solid #000;
-  border-radius: $knuckle-base*10;
-  display: inline-block;
-  margin: 0 -$knuckle-base;
+h1 {
+  font-size: 1.95em;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
 }
 
-span#first, span#last {
-  margin-bottom: -$knuckle-base*7;
+body {
+  background: #000;
 }
 
-span#first {
-  margin-right: -$knuckle-base*2;
+#content {
+  article {
+    @include imgpath("duster.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin-top: 40px;
+    padding-top: 300px;
+  }
+  a {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+  }
+  h1, h2 {
+    text-align: center;
+  }
+  section#main {
+    width: 440px;
+    font-size: 16px;
+    margin: 60px auto;
+  }
 }
 
-span#last {
-  margin-left: -$knuckle-base*2;
-}
-
-ul#fingers {
-  position: absolute;
-  z-index: 6000;
-}
-
-#fingers li {
-  display: inline;
-  padding: 0;
-  margin: 0;
-}
-
-span#semicircle {
-  background-color: #fff;
-  position: absolute;
-  z-index: 3000;
-  width: $knuckle-base*20;
-  height: $knuckle-base*10;
-  border: $knuckle-base*2 solid #000;
-  border-top: none;
-  border-bottom-right-radius: $knuckle-base*10 $knuckle-base*11;
-  border-bottom-left-radius: $knuckle-base*10 $knuckle-base*11; 
-  display: inline-block;
-  margin-left: $knuckle-base*11.5;
-  margin-top: $knuckle-base*10;
-}
-
-span#innerpalm {
-  background-color: #000;
-  position: absolute;
-  z-index: 2500;
-  width: $knuckle-base*30;
-  height: $knuckle-base*6;
-  border: $knuckle-base*2 solid #000;
-  border-top: none;
-  border-bottom-right-radius: $knuckle-base*12 $knuckle-base*5;
-  border-bottom-left-radius: $knuckle-base*12 $knuckle-base*5; 
-  display: inline-block;
-  margin-left: $knuckle-base*6.4;
-  margin-top: $knuckle-base*16;
+header {
+  border-bottom: 1px solid #fff;
+  li {
+    a {
+      color: #fff;
+    }
+  }
 }

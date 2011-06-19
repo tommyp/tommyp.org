@@ -1,7 +1,8 @@
-Title: Tommy Palmer
+Title: Web Developer
 
-- latest_articles.each do |post|
-  %article.post
-    %h1
-      %a{:href=>"#{post.abspath}"}= post.metadata("title")
+%section#index
+  - latest_articles.each do |post|
+    %article.post
+      %h1
+        %a{:href=>"#{post.abspath}"} #{latest_articles.index(post)+1}. #{post.metadata("title")}
     

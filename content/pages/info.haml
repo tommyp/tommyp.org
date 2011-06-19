@@ -1,2 +1,21 @@
-%section#info
-  %h1 This is info.haml
+Title: Info
+
+- @extrahead = capture_haml do   
+  %link{ :href => "/css/info.css", :media => "screen", :rel => "stylesheet", :type => "text/css" }
+
+%section#main
+  %section#info
+    %h1 Hi, I'm Tommy
+    %p
+      I'm a web developer at <a href="http://rumblelabs.com">Rumble Labs</a>.
+    %p
+      I spend my days playing <a href="http://live.xbox.com/en-US/MyXbox/Profile?gamertag=Synthesezia">videogames</a>,
+      <a href="http://www.last.fm/user/synthesezia">listening to obscure electronic music</a>,
+      %a{:href => "http://tommypalm"} tweeting 
+      and <a href="http://gowalla.com/tommypalm">spending far too much time in bars</a>.
+    %p#jess
+      Illustration by the awesome <a href="http://weejess.tumblr.com">Jess</a>.
+  %section#avatar
+  
+    
+    
