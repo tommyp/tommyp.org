@@ -1,20 +1,28 @@
 Title: Contact
 
+- @extrahead = capture_haml do   
+  %link{ :href => "/css/contact.css", :media => "screen", :rel => "stylesheet", :type => "text/css" }
+
 %section#content
+  -if !@contact_form.errors.empty?
+    #error_container
+      %p Ooops... Did you forget something?
+      %ul
+        -@contact_form.errors.each do |field, error|
+          %li #{field.to_s.gsub('_', ' ').capitalize} #{error}
   %section#form.section
     %form{:action => "/contact", :method => "post"}
       .field
         %label{:for => "name"} Name
         %input#name{:name => "contact_form[name]", :value => @contact_form.name, :type => "text"}
-          %span.error-message No Anon allowed here.
+        %span.error-message No Anon allowed here.
       .field
         %label{:for => "email"} Email
         %input#email{:name => "contact_form[email]", :value => @contact_form.email, :placeholder => "name@example.com", :type => "email"}
-          %span.error-message We need your email to be able to reply!
+        %span.error-message We need your email to be able to reply!
       .field
         %label{:for => "message"} Message
         %span.error-message No message?! Sounds like heavy breathing on the phone to me.
         %textarea#message{:name => "contact_form[message]", :rows => "4"}&= @contact_form.message
       .button
         %input{:type => "submit", :value => "Send message  →"}
-    

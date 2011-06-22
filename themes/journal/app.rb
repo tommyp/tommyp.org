@@ -17,6 +17,14 @@ module Nesta
     set :email_domain, ENV['SENDGRID_DOMAIN'] || 'localhost.localdomain'
 
     helpers do
+      
+      def body_class
+        return "class='404'" if @page.nil?
+        return "class='homepage'" if @page.path == ""
+        return "class='info'" if @page.path =~ %r{info/$}
+        return "class='contact'" if @page.path =~ %r{contact/$}
+      end
+      
       def previous_post
         articles = Nesta::Page.find_articles
         i = articles.index(@page)
