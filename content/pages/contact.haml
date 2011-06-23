@@ -4,16 +4,16 @@ Title: Contact
   %link{ :href => "/css/contact.css", :media => "screen", :rel => "stylesheet", :type => "text/css" }
 
 %section#content
-  -if !@contact_form.errors.empty?
-    #error_container
-      %p Ooops... Did you forget something?
-      %ul
-        -@contact_form.errors.each do |field, error|
-          %li #{field.to_s.gsub('_', ' ').capitalize} #{error}
-  %section#form.section
+  %section#form
+    -if !@contact_form.errors.empty?
+      #error_container
+        %p Ooops... Did you forget something?
+        %ul
+          -@contact_form.errors.each do |field, error|
+            %li #{field.to_s.gsub('_', ' ').capitalize} #{error}
     %form{:action => "/contact", :method => "post"}
       .field
-        %label{:for => "name"} Name
+        %label{:for => "name"} Your Name
         %input#name{:name => "contact_form[name]", :value => @contact_form.name, :type => "text"}
         %span.error-message No Anon allowed here.
       .field
