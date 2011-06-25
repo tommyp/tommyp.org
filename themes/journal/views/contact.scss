@@ -18,9 +18,19 @@ body {
         padding: 20px;
         border: 5px solid #000;
         .field {
-          width: 100%;
           label {
-            width: 30%;
+            width: 200px;
+            display: block;
+            float: left;
+          }
+          input {
+            width: 560px;
+          }
+          span.error-message {
+            display: none;
+          }
+          .textarea {
+            
           }
         }
       }
