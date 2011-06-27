@@ -1,7 +1,9 @@
 - @articlenav = capture_haml do 
-  -if @page.date
+  -if @page.date && (previous_post|next_post)
     %nav#article
+    -unless previous_post.nil?
       %li = previous_post
+    -unless next_post.nil?
       %li = next_post
 
 %article
