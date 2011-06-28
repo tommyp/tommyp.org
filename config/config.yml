@@ -63,5 +63,5 @@ content: content
 
 production:
   cache: true    
-  content: /content
+  # content: /content
   google_analytics_code: "UA-6779398-5"
