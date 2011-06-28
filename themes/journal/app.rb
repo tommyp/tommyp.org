@@ -90,6 +90,15 @@ module Nesta
         haml(@page.template, :layout => @page.layout)
       end
     end
+    
+    not_found do
+      set_common_variables
+      @heading = @title
+      @page = Nesta::Page.find_by_path('not_found')
+      @title = @page.title
+      set_from_page(:description, :keywords)
+      cache haml(@page.template, :layout => @page.layout)
+    end
         
   end
 end
