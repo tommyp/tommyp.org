@@ -1,0 +1,20 @@
+!!! XML
+%rss{:version => "2.0"}
+  %channel
+    %title{:type => 'text'}= @title
+    %link{:href => base_url, :rel => 'alternate'}
+    %description= @subtitle
+    %language en-gb
+    %pubDate= @articles[0].date.rfc822
+    %lastBuildDate= @articles[0].date.rfc822
+    %generator tommyp.org
+    - @articles.each do |article|
+      %item
+        %title
+          :cdata
+            #{article.title}
+        %link{ :href => url_for(article), :type => 'text/html', :rel => 'alternate' }
+        %description
+          :cdata
+            #{find_and_preserve(absolute_urls(article.summary))}
+        %pubDate= article.date.rfc822

@@ -47,6 +47,13 @@ module Nesta
           cache scss(params[:sheet].to_sym)
     end
     
+    get '/feed' do
+      content_type :xml, :charset => 'utf-8'
+      set_from_config(:title, :subtitle)
+      @articles = Page.find_articles.select { |a| a.date }[0..9]
+      cache haml(:rss2, :format => :xhtml, :layout => false)
+    end
+    
     get '/contact/?' do
       set_common_variables
       @heading = @title
