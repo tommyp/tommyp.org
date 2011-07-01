@@ -1,8 +1,10 @@
 Title: Web Developer & Designer from Belfast, Northern Ireland
 
 %section#index
-  - latest_articles.each do |post|
-    %article.post
-      %h1
-        %a{:href=>"#{post.abspath}"} #{latest_articles.index(post)+1}. #{post.metadata("title")}
+  %ol
+    - latest_articles.each do |post|
+      %li
+        %article.post
+          %h1
+            %a{:href=>"#{post.abspath}"} #{post.metadata("title")}
     

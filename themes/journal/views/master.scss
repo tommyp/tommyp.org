@@ -72,14 +72,21 @@ cite {
 section#index {
   margin: 40px auto;
   width: 960px;
-  article.post {
-    h1 {
+  ol {
+    li {
       font-family: $header-font-family;
       font-size: 60px;
       text-transform: uppercase;
-      a {
-        border-bottom: none;
-      }
+      article.post {
+        h1 {
+          font-family: $header-font-family;
+          font-size: 60px;
+          text-transform: uppercase;
+          a {
+            border-bottom: none;
+          }
+        }
+      }      
     }
   }
 }
