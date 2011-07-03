@@ -1,16 +1,16 @@
 - @articlenav = capture_haml do 
-  -if @page.date && (previous_post|next_post)
+  -if @page.date
     %nav#article
-    -unless previous_post.nil?
-      %li = previous_post
-    -unless next_post.nil?
-      %li = next_post
+      %ul
+        -unless previous_post.nil?
+          %li 
+            = previous_post
+        -unless next_post.nil?
+          %li
+            = next_post
 
 %article
   ~ @page.to_html(self)
-
-  %section.pages
-    = haml :summaries, :layout => false, :locals => { :pages => @page.pages }
 
   - unless @page.articles.empty?
     %section.articles

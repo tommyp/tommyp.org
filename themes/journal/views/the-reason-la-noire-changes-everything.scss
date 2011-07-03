@@ -1,0 +1,22 @@
+$futura-ff: "futura-pt", "Helvetica Neue", Arial, Sans-serif;
+
+$league-ff: "league-gothic", Helvetica, Sans-serif;
+
+body {
+  background: #120A00;
+  margin: 0 auto;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: $futura-ff;
+  font-size: 16px;
+  font-weight: bold;
+  span {
+    font-weight: normal;
+    display: block;
+    font-family: $league-ff;
+    font-size: 180px;
+  }
+}
