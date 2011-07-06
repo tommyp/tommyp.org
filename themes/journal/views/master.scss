@@ -72,9 +72,9 @@ cite {
 section#index {
   margin: 40px auto;
   width: 960px;
-  ol {
+  ul {
     margin-left: 82px;
-    list-style-type: decimal;
+    list-style-type: none;
     li {
       font-family: $header-font-family;
       font-size: 60px;
