@@ -4,8 +4,13 @@
     %meta{ "http-equiv" => "content-type", "content" => "text/html; charset=utf-8" }
     - if @description
       %meta{ "name" => "description", "content" => @description }
+      - else
+      %meta{ "name" => "description", "content" => "Tommy Palmer is a Web Developer at Rumble Labs in Belfast, Northern Ireland." }
     - if @keywords
       %meta{ "name" => "keywords", "content" => @keywords }
+      - else
+      %meta{ "name" => "keywords", "content" => "Tommy, Palmer, Rails, Web, Developer, HTML, CSS, Ruby, Belfast, Rumble, Labs, Blog, Article, Design"}
+      
     %title
       Tommy Palmer -
       = @title
