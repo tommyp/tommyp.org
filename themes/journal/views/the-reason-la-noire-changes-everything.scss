@@ -1,10 +1,23 @@
 $futura-ff: "futura-pt", "Helvetica Neue", Arial, Sans-serif;
-
 $league-ff: "league-gothic", Helvetica, Sans-serif;
+$block-shadow: #1d1101;
 
 body {
   background: #120A00;
   margin: 0 auto;
+}
+
+#content {
+  margin-top: 80px;
+}
+
+header {
+  border-bottom: 1px solid #fff;
+  li {
+    a {
+      color: #fff;
+    }
+  }
 }
 
 h1 {
@@ -13,10 +26,43 @@ h1 {
   font-family: $futura-ff;
   font-size: 16px;
   font-weight: bold;
+  color: #fff;
   span {
     font-weight: normal;
     display: block;
     font-family: $league-ff;
-    font-size: 180px;
+    font-size: 250px;
+    color: #f4b319;
+    text-shadow: 0 0 100px #fff3cc, -1px 1px 0 $block-shadow, -2px 2px 0 $block-shadow, -3px 3px 0 $block-shadow, -4px 4px 0 $block-shadow, -5px 5px 0 $block-shadow, -6px 6px 0 $block-shadow, -7px 7px 0 $block-shadow, -8px 8px 0 $block-shadow, -9px 9px 0 $block-shadow, -10px 10px 0 $block-shadow;
+    -webkit-animation-name: headerflickr;
+    -webkit-animation-duration: 20s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1.0);
   }
+}
+
+
+@-webkit-keyframes headerflickr {
+    from {
+      text-shadow: 0 0 100px #fff3cc, -1px 1px 0 $block-shadow, -2px 2px 0 $block-shadow, -3px 3px 0 $block-shadow, -4px 4px 0 $block-shadow, -5px 5px 0 $block-shadow, -6px 6px 0 $block-shadow, -7px 7px 0 $block-shadow, -8px 8px 0 $block-shadow, -9px 9px 0 $block-shadow, -10px 10px 0 $block-shadow;
+    }
+    10% {
+        text-shadow: -1px 1px 0 $block-shadow, -2px 2px 0 $block-shadow, -3px 3px 0 $block-shadow, -4px 4px 0 $block-shadow, -5px 5px 0 $block-shadow, -6px 6px 0 $block-shadow, -7px 7px 0 $block-shadow, -8px 8px 0 $block-shadow, -9px 9px 0 $block-shadow, -10px 10px 0 $block-shadow;
+    }
+    15% {
+        text-shadow: 0 0 100px #fff3cc, -1px 1px 0 $block-shadow, -2px 2px 0 $block-shadow, -3px 3px 0 $block-shadow, -4px 4px 0 $block-shadow, -5px 5px 0 $block-shadow, -6px 6px 0 $block-shadow, -7px 7px 0 $block-shadow, -8px 8px 0 $block-shadow, -9px 9px 0 $block-shadow, -10px 10px 0 $block-shadow;
+    }
+    20% {
+        text-shadow: -1px 1px 0 $block-shadow, -2px 2px 0 $block-shadow, -3px 3px 0 $block-shadow, -4px 4px 0 $block-shadow, -5px 5px 0 $block-shadow, -6px 6px 0 $block-shadow, -7px 7px 0 $block-shadow, -8px 8px 0 $block-shadow, -9px 9px 0 $block-shadow, -10px 10px 0 $block-shadow;
+    }
+    25% {
+        text-shadow: 0 0 100px #fff3cc, -1px 1px 0 $block-shadow, -2px 2px 0 $block-shadow, -3px 3px 0 $block-shadow, -4px 4px 0 $block-shadow, -5px 5px 0 $block-shadow, -6px 6px 0 $block-shadow, -7px 7px 0 $block-shadow, -8px 8px 0 $block-shadow, -9px 9px 0 $block-shadow, -10px 10px 0 $block-shadow;
+    }
+    to {
+        text-shadow: 0 0 100px #fff3cc, -1px 1px 0 $block-shadow, -2px 2px 0 $block-shadow, -3px 3px 0 $block-shadow, -4px 4px 0 $block-shadow, -5px 5px 0 $block-shadow, -6px 6px 0 $block-shadow, -7px 7px 0 $block-shadow, -8px 8px 0 $block-shadow, -9px 9px 0 $block-shadow, -10px 10px 0 $block-shadow;
+    }
+}
+
+article {
+  
 }
