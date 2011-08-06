@@ -1,5 +1,8 @@
 Title: Web Developer & Designer from Belfast, Northern Ireland
 
+- @extrahead = capture_haml do   
+  %script{ :src => "http://use.typekit.com/atp3yvw.js", :type => "text/javascript" }
+
 %section#index
   %ul
     - latest_articles.each do |post|
