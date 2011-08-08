@@ -15,6 +15,8 @@ module Nesta
     set :email_address, "hi@tommyp.org"
     set :email_service, ENV['EMAIL_SERVICE'] || 'sendgrid.net'
     set :email_domain, ENV['SENDGRID_DOMAIN'] || 'localhost.localdomain'
+    
+    set :haml, :format => :html5
 
     helpers do
       

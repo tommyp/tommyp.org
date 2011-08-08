@@ -2,9 +2,13 @@ Title: Web Developer & Designer from Belfast, Northern Ireland
 Description: Tommy Palmer is a Web Developer at Rumble Labs in Belfast, Northern Ireland.
 Keywords: Tommy, Palmer, Rails, Web, Developer, HTML, CSS, Ruby, Belfast, Rumble, Labs, Blog, Article, Design
 
+- @extrahead = capture_haml do   
+  %script{ :src => "http://use.typekit.com/atp3yvw.js", :type => "text/javascript" }
+
 %section#index
-  - latest_articles.each do |post|
-    %article.post
-      %h1
-        %a{:href=>"#{post.abspath}"} #{latest_articles.index(post)+1}. #{post.metadata("title")}
-    
+  %ul
+    - latest_articles.each do |post|
+      %li
+        %article.post
+          %h1
+            %a{:href=>"#{post.abspath}"} #{post.metadata("id")}. #{post.metadata("title")}

@@ -72,14 +72,24 @@ cite {
 section#index {
   margin: 40px auto;
   width: 960px;
-  article.post {
-    h1 {
+  ul {
+    margin-left: 82px;
+    list-style-type: none;
+    li {
       font-family: $header-font-family;
       font-size: 60px;
       text-transform: uppercase;
-      a {
-        border-bottom: none;
-      }
+      line-height: 0.8em;
+      article.post {
+        h1 {
+          font-family: $header-font-family;
+          font-size: 60px;
+          text-transform: uppercase;
+          a {
+            border-bottom: none;
+          }
+        }
+      }      
     }
   }
 }
@@ -141,10 +151,10 @@ nav#article {
 }
 /* info */
 
-section#main {
+section#info {
   margin: 20px auto;
   width: 860px; 
-  section#info {
+  section#main {
     margin: 80px 0 0 0;
     width: 500px;
     float: left; 

@@ -1,11 +1,9 @@
-$knuckle-base: 10px;
-
 $rumble-body: "ff-tisa-web-pro", Palatino, Georgia, serif;
 
 $rumble-headline: "futura-pt","Helvetica Neue", Arial, Sans-serif;
 
 @mixin imgpath($image) {
-  background-image: url("/images/so-you-might-have-heard/#{$image}");
+  background-image: url("/images/1-so-you-might-have-heard/#{$image}");
 }
 
 p {
