@@ -26,12 +26,12 @@
     %header
       %nav
         %ul
-          %li#tommy
+          %li
             %a{:title => 'Tommy Palmer', :href => '/'} Tommy Palmer
           %li
             %a{:title => 'Info', :href => '/info'} Info
-        -if @articlenav
-          = @articlenav
+      -if @articlenav
+        = @articlenav
     %section#page
       %section#content
         = yield

@@ -130,6 +130,7 @@ header a {
 nav {
   border-bottom: 1px solid #1D1D1D;
   height: 36px;
+  display: inline;
   ul {
   	list-style: none;
   	display: inline;
@@ -142,6 +143,15 @@ nav {
     	font-size: 37px;
     	display: inline;
     	margin-right: 16px;
+    }
+  }
+}
+
+nav#article {
+  ul {
+    li {
+      margin-right: 0;
+      margin-left: 16px;
     }
   }
 }
