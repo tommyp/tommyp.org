@@ -1,0 +1,35 @@
+@mixin imgpath($image) {
+  background-image: url("/images/3-teaching-the-web/#{$image}");
+}
+
+$header-ff: "felt-tip-roman", Cursive;
+
+$main-ff: "sorts-mill-goudy", Paltino, Georgia;
+
+#content {
+  margin-top: 80px;
+}
+
+header {
+  border-bottom: 1px solid #DD1F1F;
+  // li {
+  //   a {
+  //     color: #dd1f1f;   
+  //   }
+  // }
+}
+
+section#main {
+  h1 {
+    font-family: $header-ff;
+    color: #dd1f1f;
+  }
+  article {
+    p {
+      font-size: 18px;
+      font-family: $main-ff;
+    }
+    margin: 0 auto;
+    width: 600px;
+  }
+}

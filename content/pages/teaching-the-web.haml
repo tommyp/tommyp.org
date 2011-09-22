@@ -1,68 +1,189 @@
 Date: 02 September 2011
-Summary: 4 years ago, the web was a different place. I was being taught tables and Visual Basic. I got my job at Rumble because I learnt Ruby and Rails by myself. Web (design) education needs to change.
-Heading: We don't need no outdated education
-Title: We don't need no outdated education
+Summary: 4 years ago, the web was a different place. My University was teaching tables and Visual Basic. Web (design) education needs to change.
+Heading: Teaching the web
+Title: Teaching the Web
 id: 3
 
 - @extrahead = capture_haml do  
-  %link{ :href => "../css/teaching-the-web.css", :media => "screen", :rel => "stylesheet", :type => "text/css" }
+  %link{:href => "../css/teaching-the-web.css", :media => "screen", :rel => "stylesheet", :type => "text/css" }
   %script{ :src => "http://use.typekit.com/vbq2wvm.js", :type => "text/javascript" }
 
 %section#main
-  %p
-    4 years ago almost to the day, I started Interactive Multimedia Design. The course, although good was already outdated from the start. We were being taught tables and Dreamweaver. In 2nd year we learnt Visual Basic. I recently graduated and got a job as a 
-    %a{:href => "so-you-might-have-heard"} Web Developer
-    spending most of my time working with Rails. When I was starting Uni, Rails was on Version 1.2 and there was probably not a lot jobs involving Rails anywhere outside of the valley.
+  %h1
+    Teaching the web
+  %article
+    %p
+      4 years ago almost to the day, I started Interactive Multimedia Design at the University of Ulster. The course, although good was already outdated from the start. We were being taught tables and Dreamweaver and in 2nd year we learnt Visual Basic. I recently graduated and got a job as a 
+      %a{:href => "so-you-might-have-heard"} Web Developer
+      spending most of my time working with Rails. When I was starting Uni, Rails was on Version 1.2 and there was probably not a lot jobs involving Rails anywhere outside of the valley.
     
-  %p
-    Teaching design for the web may work for some in it's current format. It worked for me - I ended up in a job. There's a lot of it, that
-    %i could
-    be done better. 
-    
-  %p
-    A web design course should be composed of a few different things, practical and theory are the two main ones. Practical concepts to teach would be technologies, HTML, CSS, even JS - your bread and butter and making a website. Theory should cover design principles such as grid systems, colour theory, typography. These will and should overlap. Being able to say why a Serif typeface is better for body copy and explaining what's the difference between a bad font stack and a good font stick is, is one of these areas. 
-    
-  %p
-    All of this could be fine for our students, but ideally we need a reading list right from the start. The reading list needs to supplement what they're learning through the year. They need books like 
-    %a{:href => "http://www.webstandardistas.com/book/"} HTML and CSS Web Standards Solutions: A Web Standardistas Apporach
-    and <a href="http://www.amazon.co.uk/Grid-Systems-Graphic-Design-Typographers/dp/3721201450/ref=sr_1_1?ie=UTF8&qid=1315519010&sr=8-1">Grid Systems in Graphic Design: A Handbook for Graphic Artists, Typographers, and Exhibition Designers</a>, I'm also sure there's a lot more out there that should be on the reading list and there's probably a lot of overlap with a good portion of what's on 
-    %a{:href => "http://jasonsantamaria.com/reading/"} here
-    that would be applicable to our students. 
-    
-  %p
-    This being the web though, they should really be reading a lot of blogs. In an ideal world, they would be subscribed to RSS feeds 
-    %b before
-    they start this course. They need to be reading the obvious sites and blogs from day one - <a href="http://daringfireball.net">Daring Fireball</a>, <a href="http://alistapart.com">A List Apart</a>, <a href="http://markboultondesign.com/blog/">Mark Boulton Design</a>, <a href="http://contrast.ie/blog">Contrast's blog</a>, <a href="http://blog.frankchimero.com/">Frank Chimero's blog</a>, <a href="http://andyrutledge.com/design-view.php">Andy Rutledge's blog</a>. The important thing to remember here is that we're catering for a lot of beginners, so sites such as
-    %a{:href => "http://smashingmagazine"} Smashing Magazine
-    will absolutely come in handy. 
+    %p
+      Teaching design for the web may work for some in it's current format. It worked for me - I ended up in a job. There's a lot of it, that
+      %i could
+      be done better.
   
-  %p
-    Our students also need to be blogging from the start. It'll help them learn how to build a site and make use of basic HTML tags like a, b, p and img. The main thing it will help our students with is writing - which as 
-    %a{:href => "http://gettingreal.37signals.com/ch08_Wordsmiths.php"} 37signals
-    rightly tells us, is important to be able to write as it comes with good communication and just generally, good organisation of thought.
-  %p
-    We're missing a key component in our course though. The students obviously need to hand in something to judge their performance
-  %p
-    So we have our five cornerstones of what we need: Practical, Theory, Reading, Learning and Experimentation.
-    So that's the ground work. We also need some good assignments for our students to work on, something will make use of everything they learn. - 
+    %p 
+      Don't think I'm putting down my course. It's probably one of the better undergraduate courses in the UK teaching Web Design, but it's nowhere near perfect. There's no point in me bullshitting and saying it 100% prepared me for joining the real world. If you've read the article in
+      %a{:href => "http://alwaysreadthemanual.com/"} The Manual
+      by
+      %a{:href => "http://www.webstandardistas.com/"} The Standardistas
+      you'll have read how they teach on the MA in Multidisciplinary design, IMD's big brother. One of the points they raise is that without criticism, there can be no improvement.
+      
+    %p
+      %a{:href => "http://www.andybudd.com/archives/2009/12/the_sorry_state/"} Andy Budd
+      in his article discussing the current landscape of web design education gets to the crux of the problem:
+      %blockquote
+        We need to create students that are connected to the medium and have an understanding of the provenance of their craft; students who are schooled in critical thinking, who can deconstruct ideas, analyse briefs, solve problems and critique solutions.
+      
+    %p 
+      One of the main problems the students feel about IMD as it stands is the culture of academia. Web Design is primarily a non academic background. The students need lecturers with real world experience. Without the real world advice from local designers, developers and creative directors - our students would be stuck in a world of older technologies.
     
-  %h2 1st Year &emdash; The Basics
-  %ul
-    %li
-      &ndash; Practical
-      %ul
-        %li Intro to the Web - how a website works, directories, external links, good practices of markup, browsers, etc.
-        %li HTML
-        %li CSS
-    %li
-      &ndash; Theory
-      %ul
-        %li Intro to Design - good design vs bad design, history of design, grid systems, design in other fields, etc.
-        %li Examples of Good interaction design - breaking them down and explaining why they're good.
-        %li Typography and Colour Theory - explaining why certain typefaces and colours work better with each other, typography hierarchy in information architecture.
-    %li
-      &ndash; Deliverables
-      %ul
-        %li Build up skills by marking up a piece of text, for example a bio about the student or some content given to them.
-        %li Each week, as their skills build up, they should be able to add more and more markup to the piece of content.
-        %li Give the students a set of content and the list of pages. Make them design a static site in an interesting way.
+    %p
+      A web design course needs to be be composed of a few different things, practical and theory are the two main ones. Practical concepts to teach would be technologies, HTML, CSS, even JS - your bread and butter of making a website. Theory should cover design principles such as grid systems, colour theory, typography. These will and should overlap. Being able to say why a Serif typeface is better for body copy and explaining what's the difference between a bad font stack and a good font stack is, is one of these areas. 
+    
+    %p
+      All of this could be fine for our students, but ideally we need a reading list right from the start. The reading list needs to supplement what they're learning through the year. They need books like 
+      %a{:href => "http://www.webstandardistas.com/book/"} HTML and CSS Web Standards Solutions: A Web Standardistas Apporach
+      and <a href="http://www.amazon.co.uk/Grid-Systems-Graphic-Design-Typographers/dp/3721201450/ref=sr_1_1?ie=UTF8&qid=1315519010&sr=8-1">Grid Systems in Graphic Design</a>. A lot of what is on Jason Santa Maria's
+      %a{:href => "http://jasonsantamaria.com/reading/"} reading list
+      would be applicable to our students. 
+    
+    %p
+      This being the web though, they should really be reading a lot of blogs. In an ideal world, they would be subscribed to RSS feeds 
+      %b before
+      they start this course. They need to be reading the obvious sites and blogs from day one - <a href="http://daringfireball.net">Daring Fireball</a>, <a href="http://alistapart.com">A List Apart</a>, <a href="http://markboultondesign.com/blog/">Mark Boulton Design</a>, <a href="http://contrast.ie/blog">Contrast's blog</a>, <a href="http://blog.frankchimero.com/">Frank Chimero's blog</a> and <a href="http://andyrutledge.com/design-view.php">Andy Rutledge's blog</a>. The important thing to remember here is that we're catering for a lot of beginners, so sites such as
+      %a{:href => "http://smashingmagazine"} Smashing Magazine
+      will absolutely come in handy.
+  
+    %p
+      Our course ideally should have a well designed web page, not only for promoting the course, but for sharing content with the students. The
+      %a{:href => "http://interactiondesign.sva.edu/"} MFA in Interaction Design
+      at the SVA is one of the best out there but it seems to cater more for promotion of the course (unless the content for students is on another site). The site needs to have a page like
+      %a{:href => "http://www.thegridsystem.org/"} this one
+      on The Grid System. A list of books, blogs, tools and other miscellany that our students will find immensely helpful.
+  
+    %p
+      The students also need to be blogging from the start. It'll help them learn how to build a site and make use of basic HTML tags like a, b, p and img. The main thing it will help our students with is writing - which as 
+      %a{:href => "http://gettingreal.37signals.com/ch08_Wordsmiths.php"} 37signals
+      rightly tells us, it's important to be able to write as it tends to be packaged with good communication and just generally - good organisation of thought.
+    %p
+      We're missing a key component in our course though. The students obviously need to hand in something to judge their performance. Coding a blog could be valid for this section but more traditional assignments will be invaluable. The Standardistas book does exactly what we need beautifully - starts off with the basics and eventually builds on those skills to give us the ability to make a whole site. 
+      
+    %p
+      Later on in our course, we need to show our students what it's like working with a clients. We really have two ways to do this - give our students an imaginary client like a Victorian Ghost Hunter, a Time Travel Holiday Agency or an Interstellar Delivery Service. It gives our students something fun to work with and allows them to be creative without the typical restraints of a client's own idea. The real purpose this serves is to teach our students about processes: content audit, brainstorming, sketching, wire framing, mood boards, designing (whether in the browser or a design application), feedback from tutors and other students and finally coding it.
+    
+    %p
+      The flip side of this is using an actual client. Something that happens in IMD, albeit a non-profit or a University organisation. These have worked out well enough in the past when the students have been allowed enough time but all too often they feel rushed. Pushed in at the last minute. If the student want an authentic experience from this they need to go through all the processes to end up with a better result, not just to tick boxes on a marking sheet. 
+      
+    %p
+      So we have our five cornerstones of what we need: Practical, Theory, Reading, Learning and Experimentation.
+      So that's the ground work. We also need some good assignments for our students to work on, something will make use of everything they learn. - 
+    
+    %h2 1st Year - The Basics
+    %ul
+      %li
+        &ndash; Practical
+        %ul
+          %li Intro to the Web - how a website works, directories, external links, good practices of markup, browsers, etc.
+          %li HTML
+          %li CSS
+      %li
+        &ndash; Theory
+        %ul
+          %li Intro to Design - good design vs bad design, history of design, grid systems, design in other fields, etc.
+          %li Interaction Design - examining examples of typography, colour, user flows and wireframing in building interactive products.
+          %li Typography and Colour Theory - explaining why certain typefaces and colours work better with each other, typography hierarchy in information architecture.
+      %li
+        &ndash; Deliverables
+        %ul
+          %li Build up skills by marking up a piece of text, for example a bio about the student or some content given to them.
+          %li Each week, as their skills build up, they should be able to add more and more markup to the piece of content.
+          %li Give the students one of our imaginary briefs and have them create a site.
+    
+    %h2 2nd Year - The Middle
+  
+    %p
+      Now, our students should have a good level of skills and with the books and blogs they've been reading they should have developed a good degree of knowledge on the theory side of things. They should also have opinions, opinions are good, opinions mean they're passionate. Now, we need to foster some self motivated learning outside of our curriculum. In my 2nd year of Uni I started learning Ruby, I understood programming concepts and Ruby looked like the closest thing to plain english that I could find. The reason we need to build a culture of self learning is to allow our students to produce work on their own that isn't being evaluated for their grade. Doing more good work will get them more recognition and give them a higher chance of getting a job when they finish. 
+    %ul
+      %li
+        &ndash; Practical
+        %ul
+          %li Javascript (and possibly jQuery, it doesn't look like it's going anywhere soon).
+          %li Basic Programming Concepts - loops, conditional statements, etc.
+          %li 
+            %b Current
+            advanced CSS techniques.
+      %li
+        &ndash; Theory
+        %ul
+          %li Intermediate Design - graphic & web designers and their work, examining well designed sites and what makes them work
+          %li Information Design - visualising complicated sets of data like the work of Felton, Tuft and Brian Suda
+          %li UX Design - What is it and how it touches into psychology. Looking at user testing and user feedback.
+      %li
+        &ndash; Deliverables
+        %ul
+          %li Weekly tests on the Javascript skills being taught to demonstrate understanding
+          %li 
+            Produce an infograph with a set of data. Probably something from 
+            %a{:href => "http://www.google.com/publicdata/directory"} this
+            list of public data.
+          %li Pick a product and create a well designed, usable and informative site to demonstrate the student's understanding of UX Design.
+        
+    %h2 3rd Year - The Option
+    
+    %p 
+      In IMD our 3rd Year of Uni was set aside as a placement year, you had no choice in the matter. It didn't help that we had to find a job whilst the world was knee deep in a recession. Real world experience is good, but there's no point in getting unrelated real world experience. If you can't get a placement working in a studio there isn't much point going to work in a school just so you'll get a grade. 
+  
+    %p 
+      The other big discussion about University placements is whether or not the students should be paid. In my experience, the answer is yes. Being forced by circumstances to work for free amounts to slavery. It shouldn't be an issue about should you pay this student minimum wage, no matter your opinions, students are still people and as such, need to eat, drink and occasionally party.
+  
+    %h2 4th Year - The End
+  
+    %p
+      Here we are now, the beginning of the end. Our students should be nearly ready for the real world. They've been designing, coding, blogging and reading for 3 years now. After their year of a
+      %b good
+      placement, they should understand now that what they do is a craft.
+    
+    %p
+      Now, the students should be able to deal with some higher level concepts. It would probably be a good idea for them to at least use some sort of dynamic web language, obviously I have a bias towards Ruby on this (the fact that it's practically plain english was a big selling point for me) but PHP is still the most used language out there. I would say that we need to be cautious about teaching certain technologies that aren't 'traditional'. Expression Engine and Wordpress are two products that would be useful to teach, but teaching programming concepts and letting our students learn these on their own is still probably the best idea.
+    
+    %p
+      They've been working with HTML and CSS for a few years now and should have already reached a semi-experienced level and they should, be OK with learning advanced CSS. Responsive design definitely seems to be the next step in where our industry is headed and it's exactly the kind of thing our students should be learning at this stage.
+    
+    %p
+      We also need something to demonstrate the result of the past four years. Our Final Project (as it gets called in IMD) is an open brief, you decide the idea, you decide the technologies used and you decide how to do it. My final project, <a href="http://todaytheworldis.com">Today The World Is</a>, I built in Rails because I'd been learning it by myself for a while. I know of more than a few students who found it difficult because they had to go from being vaguely familiar with programming concepts to building an dynamic site within a few weeks. Most just resorted to a Wordpress backend with plugins. Knowing any piece of a dynamic language will help our students to get jobs in the real world. The most difficult stage in learning it has to be programming concepts in relation to how a web site works. In Rails, this is a for loop:
+      
+      %code
+        SOME RUBY CODE HERE
+
+    %p
+      The plain english-ness of Ruby is a great boost to someone who has never done any sort of programming before. The primary thing is, that we're teaching programming to people that aren't programmers.
+
+  
+    %p
+      Even with our open brief final project, the students should be given some time to work on smaller ideas to prepare themselves. Weather it be an open brief or smaller assignments. With our module teaching programming skills (or a language) and their knowledge of Javascript, they should be able to complete very small assignments, like a simple blogging engine with HTTP auth or a single serving site.
+    
+    %p
+      While our students are doing their final project, they should really be able to focus solely on it. If our year is split between 2 semesters, they should really have the second semester to work, wholly on building their programming skill-set for their project. The product of our final year should be an excellent final project that sells our students to an employer or gives them the ability to go out and work for themselves.
+    
+    %p
+      One thing you'll have noticed I've missed out is exams - they have no place in our course. In 2011 there is absolutely no need to test my ability to write the HTML of a page with a contact form on paper. I can absolutely guarantee that no designer or developer has ever done this in the real world. 
+      %a{:href => "http://www.unf.edu/~broggio/cop2221/2221pseu.htm"} Psuedocode
+      I can understand, but writing a 60 line file on paper serves no purpose other than show how exams have no place in our course.
+    
+    %p
+      The other thing I've missed out is a list of content for our 4th year. The final year of our course is when our students should be at their most interested, their most passionate and their most creative. We could help to cultivate this further by giving optional modules allowing them to chose the path they want to head down. iOS design, UX, Rails, PHP, Advanced Javascript are great topics that our students could learn from professionals with real life experience. Normal lectures should still happen, but they need to focus on more abstract concepts. This is something that IMD does very well in the last year with 
+      %a{:href => "http://twitter.com/takete"} Nik
+      and
+      %a{:href => "http://twitter.com/fehler"} Chris
+      giving some amazing lectures to on topics such as paper prototyping, symantic markup with content, masters of design and processes.
+    
+    %h2 The Result
+    %p 
+      Over the last four years, our students have learnt a tremendous amount about this craft and hopefully, their future career.
+  
+    %p
+      However, I am not a teacher and have never been involved in education. I'm not saying this is exactly what needs to be in a web design course. It will, and should, evolve and change over time, just like web design itself. The content of the course needs to focus on theory of design, core technologies and abstract concepts. Our students should be well versed in these three cornerstones to allow them to shift and change their skills with the moving landscape of our industry. A recent episode of This American Life put it so eliquently -
+    
+    %blockquote
+      A degree should be a gateway drug to learning.
