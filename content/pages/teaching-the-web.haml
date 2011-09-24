@@ -13,7 +13,7 @@ id: 3
     Teaching the web
   %article
     %p
-      4 years ago almost to the day, I started Interactive Multimedia Design at the University of Ulster. The course, although good was already outdated from the start. We were being taught tables and Dreamweaver and in 2nd year we learnt Visual Basic. I recently graduated and got a job as a 
+      4 years ago almost to the day, I started Interactive Multimedia Design at the University of Ulster. The course, although good, was already outdated from the start. We were being taught tables and Dreamweaver and in 2nd year we learnt Visual Basic. I recently graduated and got a job as a 
       %a{:href => "so-you-might-have-heard"} Web Developer
       spending most of my time working with Rails. When I was starting Uni, Rails was on Version 1.2 and there was probably not a lot jobs involving Rails anywhere outside of the valley.
     
@@ -34,9 +34,6 @@ id: 3
       in his article discussing the current landscape of web design education gets to the crux of the problem:
       %blockquote
         We need to create students that are connected to the medium and have an understanding of the provenance of their craft; students who are schooled in critical thinking, who can deconstruct ideas, analyse briefs, solve problems and critique solutions.
-      
-    %p 
-      One of the main problems the students feel about IMD as it stands is the culture of academia. Web Design is primarily a non academic background. The students need lecturers with real world experience. Without the real world advice from local designers, developers and creative directors - our students would be stuck in a world of older technologies.
     
     %p
       A web design course needs to be be composed of a few different things, practical and theory are the two main ones. Practical concepts to teach would be technologies, HTML, CSS, even JS - your bread and butter of making a website. Theory should cover design principles such as grid systems, colour theory, typography. These will and should overlap. Being able to say why a Serif typeface is better for body copy and explaining what's the difference between a bad font stack and a good font stack is, is one of these areas. 
@@ -44,9 +41,11 @@ id: 3
     %p
       All of this could be fine for our students, but ideally we need a reading list right from the start. The reading list needs to supplement what they're learning through the year. They need books like 
       %a{:href => "http://www.webstandardistas.com/book/"} HTML and CSS Web Standards Solutions: A Web Standardistas Apporach
-      and <a href="http://www.amazon.co.uk/Grid-Systems-Graphic-Design-Typographers/dp/3721201450/ref=sr_1_1?ie=UTF8&qid=1315519010&sr=8-1">Grid Systems in Graphic Design</a>. A lot of what is on Jason Santa Maria's
-      %a{:href => "http://jasonsantamaria.com/reading/"} reading list
-      would be applicable to our students. 
+      and <a href="http://www.amazon.co.uk/Grid-Systems-Graphic-Design-Typographers/dp/3721201450/ref=sr_1_1?ie=UTF8&qid=1315519010&sr=8-1">Grid Systems in Graphic Design</a>. A lot of what is on 
+      %a{:href => "http://jasonsantamaria.com/reading/"} Jason Santa Maria's
+      and
+      %a{:href => "http://colly.com/comments/my_recommended_reading/"} Colly's
+      reading lists would be appropriate to our students. 
     
     %p
       This being the web though, they should really be reading a lot of blogs. In an ideal world, they would be subscribed to RSS feeds 
@@ -73,11 +72,14 @@ id: 3
       Later on in our course, we need to show our students what it's like working with a clients. We really have two ways to do this - give our students an imaginary client like a Victorian Ghost Hunter, a Time Travel Holiday Agency or an Interstellar Delivery Service. It gives our students something fun to work with and allows them to be creative without the typical restraints of a client's own idea. The real purpose this serves is to teach our students about processes: content audit, brainstorming, sketching, wire framing, mood boards, designing (whether in the browser or a design application), feedback from tutors and other students and finally coding it.
     
     %p
-      The flip side of this is using an actual client. Something that happens in IMD, albeit a non-profit or a University organisation. These have worked out well enough in the past when the students have been allowed enough time but all too often they feel rushed. Pushed in at the last minute. If the student want an authentic experience from this they need to go through all the processes to end up with a better result, not just to tick boxes on a marking sheet. 
+      The flip side of this is using an actual client. Something that happens in IMD, albeit a non-profit or a University organisation. These have worked out well enough in the past when the students have been allowed enough time but all too often they feel rushed. Pushed in at the last minute. If the student wants an authentic experience from this they need to go through all the processes to end up with a better result, not just to tick boxes on a marking sheet. 
+      
+    %p 
+      Before we get into it, I feel like I need to discuss one of the main problems the students feel about IMD as it stands. The culture of academia doesn't work for teaching web design. Web Design is primarily a non academic background, the students need lecturers with real world experience. Without real advice from local designers, developers and creative directors - our students would be stuck in a world of older technologies and even worse, a world removed from the reality of working in a business.
       
     %p
       So we have our five cornerstones of what we need: Practical, Theory, Reading, Learning and Experimentation.
-      So that's the ground work. We also need some good assignments for our students to work on, something will make use of everything they learn. - 
+      That's the ground work. We also need some good assignments for our students to work on, something will make use of everything they learn. - 
     
     %h2 1st Year - The Basics
     %ul
@@ -154,10 +156,13 @@ id: 3
       We also need something to demonstrate the result of the past four years. Our Final Project (as it gets called in IMD) is an open brief, you decide the idea, you decide the technologies used and you decide how to do it. My final project, <a href="http://todaytheworldis.com">Today The World Is</a>, I built in Rails because I'd been learning it by myself for a while. I know of more than a few students who found it difficult because they had to go from being vaguely familiar with programming concepts to building an dynamic site within a few weeks. Most just resorted to a Wordpress backend with plugins. Knowing any piece of a dynamic language will help our students to get jobs in the real world. The most difficult stage in learning it has to be programming concepts in relation to how a web site works. In Rails, this is a for loop:
       
       %code
-        SOME RUBY CODE HERE
+        &lt;%= @posts.each do |post| %&gt;<br/>
+        &nbsp;&nbsp;&lt;h2&gt;&lt;%= post.title %&gt;&lt;/h2&gt;<br/>
+        &nbsp;&nbsp;&lt;p&gt;&lt;%= post.summary %&gt;&lt;/p&gt;<br/>
+        &lt;% end %&gt;
 
     %p
-      The plain english-ness of Ruby is a great boost to someone who has never done any sort of programming before. The primary thing is, that we're teaching programming to people that aren't programmers.
+      The plain english-ness of Ruby is a great boost to someone who has never done any sort of programming before. The primary thing that the lecturers need to remember, that we're teaching programming to people that aren't programmers. All too often we were taught the examples of OOP using a real world object and its attributes and the possible methods associated with it. Designers don't get that. Use the example of a blog posts, attributes such as a title, a published date, a summary, the content whilst the methods could be publishing it, saving a draft copy or deleting it.
 
   
     %p
