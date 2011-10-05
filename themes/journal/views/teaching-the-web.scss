@@ -1,3 +1,5 @@
+@import "responsive";
+
 @mixin imgpath($image) {
   background-image: url("/images/3-teaching-the-web/#{$image}");
 }

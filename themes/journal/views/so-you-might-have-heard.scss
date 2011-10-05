@@ -1,3 +1,5 @@
+@import "responsive";
+
 $rumble-body: "ff-tisa-web-pro", Palatino, Georgia, serif;
 
 $rumble-headline: "futura-pt","Helvetica Neue", Arial, Sans-serif;
@@ -51,7 +53,7 @@ body {
     text-align: center;
   }
   section#main {
-    width: 450px;
+    @include width(7);
     font-size: 16px;
     margin: 60px auto;
   }
