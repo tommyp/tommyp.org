@@ -122,7 +122,7 @@ section#index {
 
 /* header */
 
-header {
+header#header {
 	font-family: $header-font-family;
 	text-transform: uppercase;
   @include width(16);
@@ -130,7 +130,7 @@ header {
 	margin: 20px auto 0 auto;
 }
 
-header a {
+header#header a {
   font-size: 37px;
   color: #1D1D1D;
   text-decoration: none;
