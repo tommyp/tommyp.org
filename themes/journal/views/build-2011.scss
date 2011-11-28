@@ -1,0 +1,75 @@
+@mixin imgpath($image) {
+  background-image: url("/images/4-build-2011/#{$image}");
+}
+
+
+body {
+  background: #181819;
+  header#header {
+    a {
+      color: #1eb4dc;
+    }
+    border-bottom: 1px solid #fff;
+  }
+}
+
+article {
+  header {
+    width: 100%;
+    @include imgpath("build2011.jpg");
+    background-position: center center;
+    background-repeat: none;
+    background-size: cover;
+    height: 250px;
+    margin: 50px auto;
+    padding-top: 50px;
+    h1 {
+      margin: 0 auto;
+      background: #fff url("/images/4-build-2011/build_logo.png") no-repeat center center;
+      width: 150px;
+      height: 115px;
+      border-radius: 90px;
+      text-indent: -9999px;
+    }
+  }
+}
+
+section#main {
+  margin: 0 auto;
+  width: 600px;
+//  max-width: 600px;
+//  padding: 0 20px;
+  h1, h2, h3 {
+    font-family: "kulturista-web", Georgia, Serif;  
+    margin: 40px auto 0;
+    color: #1eb4dc;
+    font-weight: normal;
+  }
+  p, li, blockquote {
+    font-family: ff-meta-serif-web-pro, Gerogia, Serif;
+    color: #fff;
+  }
+  a {
+    color: #1eb4dc;
+    border-bottom: 1px solid #1eb4dc;
+  }
+  img {
+    border: 1px solid #fff;
+    width: 600px;
+//    max-width: 600px;
+  }
+  blockquote {
+    border-left: 3px solid #1eb4dc;
+  }
+  cite {
+    font-style: normal;
+    p {
+      font-size: 14px;
+      color: #555;
+      a {
+        color: #555;
+        border-bottom: 1px solid #555;
+      } 
+    }
+  }
+}
