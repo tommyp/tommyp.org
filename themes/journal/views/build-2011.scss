@@ -27,8 +27,8 @@ article {
       margin: 0 auto;
       background: #fff url("/images/4-build-2011/build_logo.png") no-repeat center center;
       width: 150px;
-      height: 125px;
-      border-radius: 75px;
+      height: 115px;
+      border-radius: 90px;
       text-indent: -9999px;
     }
   }
@@ -60,5 +60,16 @@ section#main {
   }
   blockquote {
     border-left: 3px solid #1eb4dc;
+  }
+  cite {
+    font-style: normal;
+    p {
+      font-size: 14px;
+      color: #555;
+      a {
+        color: #555;
+        border-bottom: 1px solid #555;
+      } 
+    }
   }
 }
