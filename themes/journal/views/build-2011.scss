@@ -36,9 +36,8 @@ article {
 
 section#main {
   margin: 0 auto;
-  width: 600px;
-//  max-width: 600px;
-//  padding: 0 20px;
+  max-width: 600px;
+  padding: 0 1.5em;
   h1, h2, h3 {
     font-family: "kulturista-web", Georgia, Serif;  
     margin: 40px auto 0;
@@ -55,8 +54,8 @@ section#main {
   }
   img {
     border: 1px solid #fff;
-    width: 600px;
 //    max-width: 600px;
+    width: 100%;
   }
   blockquote {
     border-left: 3px solid #1eb4dc;

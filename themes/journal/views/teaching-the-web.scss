@@ -1,5 +1,3 @@
-@import "responsive";
-
 @mixin imgpath($image) {
   background-image: url("/images/3-teaching-the-web/#{$image}");
 }
@@ -39,7 +37,8 @@ section#main {
   }
   article {
     margin: 20px auto;
-    width: 600px;
+    max-width: 37.5em;
+    padding: 0 1.5em;
     h2 {
       font-family: $header-ff;
       color: #dd1f1f;
