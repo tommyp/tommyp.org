@@ -11,4 +11,6 @@ Keywords: Tommy, Palmer, Rails, Web, Developer, HTML, CSS, Ruby, Belfast, Rumble
       %li
         %article.post
           %h1
-            %a{:href=>"#{post.abspath}"} #{post.metadata("id")}. #{post.metadata("title")}
+            %a{:href=> post.abspath } 
+              %span.post-id #{post.metadata("id")}.
+              #{post.metadata("title")}
