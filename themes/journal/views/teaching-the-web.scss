@@ -33,12 +33,11 @@ section#main {
     font-family: $header-ff;
     color: #dd1f1f;
     text-align: center;
-    font-size: 80px;
+    font-size: 5em;
   }
   article {
     margin: 20px auto;
     max-width: 37.5em;
-    padding: 0 1.5em;
     h2 {
       font-family: $header-ff;
       color: #dd1f1f;
@@ -60,6 +59,14 @@ section#main {
           }
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  section#main {
+    h1 {
+     font-size: 4.5em; 
     }
   }
 }

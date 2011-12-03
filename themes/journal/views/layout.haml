@@ -3,6 +3,7 @@
   %head
     %meta{:charset => "utf-8"}
     %meta{:content => "en", :name => "language"}
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}
     - if @description
       %meta{ "name" => "description", "content" => @description }
       - else
@@ -15,7 +16,6 @@
     %title
       Tommy Palmer -
       = @title
-    %link{ :href => "/css/style.css", :media => "screen", :rel => "stylesheet", :type => "text/css" }
     %link{ :href => "/css/master.css", :media => "screen", :rel => "stylesheet", :type => "text/css" }
     %script{ :src => "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js", :type => "text/javascript" }
     -if @extrahead
