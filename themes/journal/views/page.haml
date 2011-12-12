@@ -3,10 +3,10 @@
     %nav#article
       %ul
         -unless previous_post.nil?
-          %li 
+          %li.previous
             = previous_post
         -unless next_post.nil?
-          %li
+          %li.next
             = next_post
 
 %article

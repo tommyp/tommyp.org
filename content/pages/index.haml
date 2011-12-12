@@ -6,11 +6,10 @@ Keywords: Tommy, Palmer, Rails, Web, Developer, HTML, CSS, Ruby, Belfast, Rumble
   %script{ :src => "http://use.typekit.com/atp3yvw.js", :type => "text/javascript" }
 
 %section#index
-  %ul
+  %ol
     - latest_articles.each do |post|
-      %li
+      %li{:value => post.metadata("id")}
         %article.post
           %h1
             %a{:href=> post.abspath } 
-              %span.post-id #{post.metadata("id")}.
               #{post.metadata("title")}

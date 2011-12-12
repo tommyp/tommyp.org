@@ -110,18 +110,21 @@ cite {
 }
 
 section#index {
-  width: 60em;
+  max-width: 60em;
   margin: 40px auto;
-  ul {
+  ol {
     margin-left: 82px;
-    list-style-type: none;
+    list-style-type: decimal;
     li {
       font-family: $header-font-family;
       font-size: 60px;
       text-transform: uppercase;
       line-height: 0.8em;
+      word-spacing: -0.3em;
       article.post {
+        word-spacing: 0;
         h1 {
+          font-weight: normal;
           font-family: $header-font-family;
           font-size: 60px;
           text-transform: uppercase;
@@ -195,6 +198,38 @@ nav#article {
   }
 }
 
+@media screen and (max-width: 490px) {
+  header#header {
+    nav {
+      width: 60%;
+      li {
+        a {
+          text-indent: -9999px;
+          height: 100%;
+          width: 40px;
+          background: red;
+          display: inline-block;
+        }
+        a.home {
+          
+        } 
+        a.info {
+ 
+        }
+        a.prev {
+ 
+        }
+        a.next {
+ 
+        }
+      }
+    }
+    nav#article {
+      width: 40%;
+    }
+  }
+}
+
 nav#article {
   float: right;
 }
@@ -225,6 +260,26 @@ section#info {
 }
 
 @media screen and (max-width: 940px) {
+  
+  header
+  
+  section#index {
+    margin: 40px auto;
+    ol {
+      max-width: 80%;
+      margin: 0 auto;
+      li {
+        font-size: 40px;
+        article.post {
+          line-height: 1.2em;
+          h1 {
+            font-size: 40px;
+          }
+        }
+      }
+    }
+  }
+  
   section#info {
     section#main {
       float: none;
