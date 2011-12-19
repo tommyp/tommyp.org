@@ -28,9 +28,11 @@
       %nav
         %ul
           %li
-            %a{:title => 'Tommy Palmer', :href => '/', :class => 'home'} Tommy Palmer
+            %a{:title => 'Tommy Palmer', :href => '/', :class => 'home'}(data-icon='H') 
+              %span Tommy Palmer
           %li
-            %a{:title => 'Info', :href => '/info', :class => 'info'} Info
+            %a{:title => 'Info', :href => '/info', :class => 'info'}(data-icon='i')
+              %span Info
       -if @articlenav
         = @articlenav
     %section#content

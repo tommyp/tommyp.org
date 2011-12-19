@@ -32,7 +32,8 @@ module Nesta
         i = articles.index(@page)
 
         p = i != articles.count-1 ? articles[i+1] : nil
-        haml "%a{:href=>'#{p.abspath}'} Previous" if p
+        haml "%a{:href=>'#{p.abspath}'}(data-icon='[') 
+                %span Previous" if p
       end
 
       def next_post
@@ -40,7 +41,8 @@ module Nesta
         i = articles.index(@page)
 
         n = i != 0 ? articles[i-1] : nil
-        haml "%a{:href=>'#{n.abspath}'} Next" if n
+        haml "%a{:href=>'#{n.abspath}'}(data-icon=']') 
+                %span Next" if n
       end
     end
     
