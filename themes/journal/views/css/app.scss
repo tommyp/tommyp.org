@@ -16,6 +16,35 @@ body {
 	height: 100%;
 }
 
+
+/* fades */
+
+header#header {
+  -webkit-animation-name: 'short-fade';
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-direction: alternate;
+}
+
+@-webkit-keyframes 'short-fade' {
+  0%{opacity: 0;}
+  50%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+#content {
+  -webkit-animation-name: 'short-fade';
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-direction: alternate;
+}
+
+@-webkit-keyframes 'short-fade' {
+  0%{opacity: 0;}
+  50%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
 /* type */
 
 #content {
