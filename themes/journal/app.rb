@@ -10,12 +10,6 @@ module Nesta
     #
     use Rack::Static, :urls => ["/journal"], :root => "themes/journal/public"
     
-    set :email_username, ENV['SENDGRID_USERNAME'] # ||
-    set :email_password, ENV['SENDGRID_PASSWORD'] # ||
-    set :email_address, "hi@tommyp.org"
-    set :email_service, ENV['EMAIL_SERVICE'] || 'sendgrid.net'
-    set :email_domain, ENV['SENDGRID_DOMAIN'] || 'localhost.localdomain'
-    
     set :haml, :format => :html5
 
     helpers do
