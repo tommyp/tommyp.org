@@ -1,0 +1,65 @@
+Title: Work
+
+- @extrahead = capture_haml do   
+  %link{ :href => "/css/work.css", :media => "screen", :rel => "stylesheet", :type => "text/css" }
+  %script{ :src => "http://use.typekit.com/khl5oyk.js", :type => "text/javascript" }
+
+%section#content.work
+
+  %section.intro
+    :markdown
+      I work with Ruby on Rails, but my skills extend between backend and frontend development. I prefer to do all my front end work in [Haml](http://haml-lang.com/), [Scss](http://sass-lang.com/) and [Coffeescript](http://coffeescript.org/). I studied Interactive Multimedia Design at University of Ulster and finished the course with a Second class honours, upper division.
+
+      I'm dissattisfied with the status quo and want to do great things.
+
+      I currently work for [Rumble Labs](http://rumblelabs.com).
+
+      Below is some of the work I've done.
+
+  %hr/
+  
+  .projects
+    %article.digital-circle
+      .container
+        / %img{:src => '/images/work/digitalcircle.png'}
+        %section.project-desc.right
+          %h2 
+            %a{:href => 'http://digitalcircle.org'} digitalcircle.org
+          :markdown
+            Digital Circle represents the digital content industry in Northern Ireland. In 2011 Rumble Labs won the tender to create the new version of the site. I mostly worked on crafting the front end views. It was the first large Rails site I worked on and the first project I worked on as part of Rumble Labs.
+    
+
+    %article.rumble
+      .container
+        %section.project-desc.left
+          %h2 
+            %a{:href => "http://rumblelabs.com"} rumblelabs.com
+          .body
+            %h3
+              Shortly after I joined,
+            :markdown
+              We began work on a new site. Originally created with Nesta, we decided to port it to Rails a few months after it's launch. Although I primarily worked on the front end of the site I also assisted with some back end development. The site was also the first responsive site I worked on, with the site significant layout changes when viewing on a mobile device.
+        .gallery.right
+          .img
+            %a{:href => "http://rumblelabs.com"}
+              %img{:src => '/images/work/rumblelabs.png'}
+          .img
+            %a{:href => "http://rumblelabs.com/clients"}
+              %img{:src => '/images/work/rumblelabs-clients.png'}
+      .clearfix
+
+  / %article.shorts
+  /   %img{:src => "/images/work/shorts.png"}
+  /   .project-desc
+  /     %h2 
+  /       %a{:href => 'http://isitshortsweathertoday.com'} Shorts Weather
+  /     :markdown
+  /       After coming up with the idea as a joke with a friend, I spent a few hours one Sunday putting it together. 
+
+  / %article.digital-circle
+  /   %img{:src => "/images/work/todaytheworldis.png"}
+  /   .project-desc
+  /     %h2 
+  /       %a{:href => 'http://todaytheworldis.com'} Today The World Is
+  /     :markdown
+  /       Today The World Is was my final University project. It was my first big undertaking with Ruby on Rails after working through the Agile Web Development book. It works by analysing news headlines word by word and matching them to a list of control words that are either positive or negative, this can then give us a status headline and from that, the status of that day. It uses Highcharts to do the data visualisation.
