@@ -1,7 +1,7 @@
 Title: Work
 
 - @extrahead = capture_haml do   
-  %link{ :href => "/css/work.css", :media => "screen", :rel => "stylesheet", :type => "text/css" }
+  %link{ :href => "css/work.css", :media => "screen", :rel => "stylesheet", :type => "text/css" }
   %script{ :src => "http://use.typekit.com/khl5oyk.js", :type => "text/javascript" }
 
 %section#content.work
@@ -57,9 +57,9 @@ Title: Work
     .container
       .project-desc
         %h2 
-          %a{:href => 'http://isitshortsweathertoday.com'} Shorts Weather
+          %a{:href => 'http://isitshortsweathertoday.com'} Is It Shorts Weather Today?
         :markdown
-          After coming up with the idea as a joke with a friend, I spent a few hours one Sunday putting it together. 
+          After coming up with the idea as a joke with a friend, I spent a few hours one Sunday putting it together. It was originally a Rails app that used Barometer to query the city name provided by the user. Recently, I moved the logic over to JavaScript and threw away the Rails code, deciding to serve it via Sinatra instead.
     .container.img
       %img{:src => "/images/work/shorts.png"}
 

@@ -11,8 +11,7 @@
     - @articles.each do |article|
       %item
         %title
-          :cdata
-            #{article.title}
+          = article.title
         %link{ :href => article.abspath, :type => 'text/html', :rel => 'alternate' }
         %description
           = article.summary 
