@@ -2,7 +2,9 @@ Title: Work
 
 - @extrahead = capture_haml do   
   %link{ :href => "css/work.css", :media => "screen", :rel => "stylesheet", :type => "text/css" }
+  //%link{ :href => "css/common.css", :media => "screen", :rel => "stylesheet", :type => "text/css" }
   %script{ :src => "http://use.typekit.com/khl5oyk.js", :type => "text/javascript" }
+  %script{ :src => "/js/jquery.js", :type => "text/javascript" }
   %script{ :src => "/js/fancyzoom.js", :type => "text/javascript" }
   :javascript
     $(document).ready(function() {
@@ -26,19 +28,24 @@ Title: Work
   .projects
     %article.digital-circle
       .container
-        / %img{:src => '/images/work/digitalcircle.png'}
         %section.project-desc
           %h2 
-            %a{:href => 'http://digitalcircle.org'} digitalcircle.org
+            %a{:href => 'http://digitalcircle.org'} digital circle
           :markdown
-            Digital Circle represents the digital content industry in Northern Ireland. In 2011 Rumble Labs won the tender to create the new version of the site. I mostly worked on crafting the front end views. It was the first large Rails site I worked on and the first project I worked on as part of Rumble Labs.
+            [Digital Circle](http://digitalcircle.org) represents the digital content industry in Northern Ireland. In 2011 Rumble Labs won the tender to create the new version of the site. I mostly worked on crafting the front end views. It was the first large Rails site I worked on and the first project I worked on as part of Rumble Labs.
         .gallery
-          %a.zoom{:href => '/images/work/digitalcircle-home.png'}
-            %img{:src => '/images/work/digitalcircle-home-th.png'}
-          %a.zoom{:href => '/images/work/digitalcircle-event.png'}
-            %img{:src => '/images/work/digitalcircle-event-th.png'}
-          %a.zoom{:href => '/images/work/digitalcircle-business.png'}
-            %img{:src => '/images/work/digitalcircle-business-th.png'}
+          %a.zoom{:href => '#digitalcircle-home'}
+            %img{:src => '/images/work/digitalcircle-home.png'}
+          %a.zoom{:href => '#digitalcircle-event'}
+            %img{:src => '/images/work/digitalcircle-event.png'}
+          %a.zoom{:href => '#digitalcircle-business'}
+            %img{:src => '/images/work/digitalcircle-business.png'}
+          #digitalcircle-home
+            %img{:src => '/images/work/digitalcircle-home.png'}
+          #digitalcircle-event
+            %img{:src => '/images/work/digitalcircle-event.png'}
+          #digitalcircle-business
+            %img{:src => '/images/work/digitalcircle-business.png'}
     
 
     %article.rumble
@@ -51,18 +58,22 @@ Title: Work
               %h3
                 Shortly after I joined,
               :markdown
-                We began work on a new site. Originally created with Nesta, we decided to port it to Rails a few months after it's launch. Although I primarily worked on the front end of the site I also assisted with some back end development. The site was also the first responsive site I worked on, with the site significant layout changes when viewing on a mobile device.
+                Rumble Labs began work on a new, long overdue, [site](http://rumblelabs.com). Originally created with Nesta, we decided to port it to Rails a few months after it's launch. The site was also the first responsive site I worked on, with the pages having significant layout changes when viewed on a mobile device.
           .clearfix
           %section.mobile.left
             %a{:href => "http://rumblelabs.com"}
               %img{:src => "/images/work/rumble-iphone.png"}
         .gallery.right
           .img
-            %a{:href => "http://rumblelabs.com"}
+            %a.zoom{:href => "#rumblelabs-index"}
               %img{:src => '/images/work/rumblelabs.png'}
           .img
-            %a{:href => "http://rumblelabs.com/clients"}
+            %a.zoom{:href => "#rumblelabs-clients"}
               %img{:src => '/images/work/rumblelabs-clients.png'}
+          #rumblelabs-index.hide
+            %img{:src => '/images/work/rumblelabs.png'}
+          #rumblelabs-clients.hide
+            %img{:src => '/images/work/rumblelabs-clients.png'}
       .clearfix
 
   %article.shorts
