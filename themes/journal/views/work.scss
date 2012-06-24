@@ -62,6 +62,8 @@ body {
       }
     }
     .gallery {
+      width: 1068px;
+      margin: 0 auto;
       div {
         display: none;
       }
@@ -74,16 +76,13 @@ body {
         &:hover {
           border: 6px solid rgba(0,0,0,0.3);
         }
+        &:last-of-type {
+          margin-right: 0;
+        }
         img {
           width: 100%;
         }
       }
-    }
-  }
-
-  @media screen and (max-width: 1150px) {  
-    .digital-circle {
-
     }
   }
 
@@ -117,32 +116,29 @@ body {
         }
       }
       .gallery {
+        float: right;
         margin-top: 6em;
+        padding-right: 3em;
         .hide {
           display: none;
-        }
-        .img {
-          width: 28em;
+        }          
+        a {
           margin-bottom: 3em;
-          a {
-            display: inline-block;
-            width: 20em;
-            img {
-              border-radius: 6px;
-              border: 6px solid rgba(255,255,255,1);
-            }
-            &:hover {
-              img {
-                border: 6px solid rgba(255,255,255,0.3);
-                transition: 0.3s linear;
-                -webkit-transition: 0.3s linear;
-                -moz-transition: 0.3s linear;
-                -o-transition: 0.3s linear;
-              }
-            }
-          }
+          display: block;
+          width: 20em;
           img {
             width: 100%;
+            border-radius: 6px;
+            border: 6px solid rgba(255,255,255,1);
+          }
+          &:hover {
+            img {
+              border: 6px solid rgba(255,255,255,0.3);
+              transition: 0.3s linear;
+              -webkit-transition: 0.3s linear;
+              -moz-transition: 0.3s linear;
+              -o-transition: 0.3s linear;
+            }
           }
         }
       }
@@ -193,6 +189,27 @@ body {
       img {
         width:100%;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {  
+  .work#content {
+    .digital-circle {
+      .gallery {
+        width: 828px;
+        a {
+          width: 15em;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1010px) {  
+  .rumble {
+    .gallery {
+
     }
   }
 }
