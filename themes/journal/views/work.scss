@@ -15,7 +15,7 @@ body {
 .intro {
   max-width: 46.125em;
   margin: 4em auto 1em;
-  padding: 1em;
+  padding: 1.5em;
   p {
     font-size: 1.4em;
   }
@@ -31,7 +31,7 @@ article {
 
 .container {
   margin: 0 auto;
-  width: 70em;
+  max-width: 70em;
   padding-top: 4em;
 }
 
@@ -46,7 +46,7 @@ hr {
 }
 
 .gallery {
-  width: 1068px;
+  max-width: 1068px;
   margin: 4em auto 0;
   a {
     margin-right: 2em;
@@ -64,7 +64,7 @@ hr {
 
 .project-desc {
   max-width: 37.5em;
-  padding: 0 1em;
+  padding: 0 1.5em;
   margin:0 auto 1.5em;
   h2 {
     font-size: 32px;
@@ -79,6 +79,7 @@ hr {
 
 .digital-circle {
   background: #fff;
+  padding-bottom: 4em;
   .visit {
     a {
       background: #000;
@@ -191,14 +192,10 @@ hr {
 }
 
 @media screen and (max-width: 1100px) {  
-  .work#content {
-    .digital-circle {
-      .gallery {
-        width: 828px;
-        a {
-          width: 15em;
-        }
-      }
+  .gallery {
+    width: 828px;
+    a {
+      width: 15em;
     }
   }
 }
@@ -212,52 +209,22 @@ hr {
 }
 
 @media screen and (max-width: 950px) {  
-  .work#content {
-    .digital-circle {
-      .gallery {
-        width: 588px;
-        a {
-          width: 10em;
-        }
-      }
-    }
-    .rumble {
-      .gallery {
-        padding-right: 6em;
-        a {
-          width: 10em;
-        }
-      }
+  .gallery {
+    width: 588px;
+    a {
+      width: 10em;
     }
   }
 }
 
 @media screen and (max-width: 908px) {  
-  .work#content {
-    .vist {
+  .gallery {
+    width: 332px;
+    a {
+      width: 20em;
       display: block;
-    }
-    .digital-circle {
-      .gallery {
-        margin-top: 4em;
-        width: 332px;
-        a {
-          width: 20em;
-          display: block;
-          margin-right: 0;
-          margin-bottom: 3em;
-        }
-      }
-    }
-    .rumble {
-      .gallery {
-        padding-right: 6em;
-        a {
-          width: 10em;
-          margin-right: 0;
-          margin-bottom: 3em;
-        }
-      }
+      margin-right: 0;
+      margin-bottom: 3em;
     }
   }
 }
