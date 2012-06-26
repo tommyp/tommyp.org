@@ -100,6 +100,25 @@ ol {
 	list-style: decimal-leading-zero;
 }
 
+a{
+  color: #000;
+  border-bottom: 1px solid #000;
+  text-decoration: none;
+  transition: 0.3s linear;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+}
+
+a:hover{
+  color: #666;
+  border-bottom: 1px solid #666;
+  transition: 0.3s linear;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+}
+
 blockquote {
 	font-family: Georgia, Serif;
 	padding: 10px 0px 10px 20px;
@@ -145,25 +164,6 @@ section#index {
   margin: 0 auto;
 }
 
-#content a{
-	color: #000;
-	border-bottom: 1px solid #000;
-	text-decoration: none;
-	transition: 0.3s linear;
-  -webkit-transition: 0.3s linear;
-  -moz-transition: 0.3s linear;
-  -o-transition: 0.3s linear;
-}
-
-#content a:hover{
-	color: #666;
-	border-bottom: 1px solid #666;
-  transition: 0.3s linear;
-	-webkit-transition: 0.3s linear;
-  -moz-transition: 0.3s linear;
-  -o-transition: 0.3s linear;
-}
-
 /* header */
 
 header#header {
@@ -178,6 +178,7 @@ header#header a {
   font-size: 37px;
   color: #1D1D1D;
   text-decoration: none;
+  border-bottom: 0;
 }
 
 nav {
