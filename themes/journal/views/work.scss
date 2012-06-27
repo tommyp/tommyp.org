@@ -81,6 +81,9 @@ hr {
     font-weight: normal;
     text-align: center;
     margin: 0 0 32px 0;
+    a {
+      border-bottom: none;
+    }
   }
   h3 {
     margin: 32px 0; 
@@ -118,7 +121,6 @@ hr {
       text-align: center;
       a {
         color: #fff;
-        border-bottom: none;
       }
     }
     h3 {
@@ -127,9 +129,11 @@ hr {
       text-transform: uppercase;
       letter-spacing: 0.22em;
     }
-    a {
-      color: #fff;
-      border-bottom: 1px solid #fff;
+    p {
+      a {
+        color: #fff;
+        border-bottom: 1px solid #fff;
+      }
     }
     .visit {
       a {
@@ -166,7 +170,6 @@ hr {
       font-weight: normal;
       text-transform: uppercase;
       a {
-        border-bottom: 0;
         color: #4B8A79;
       }
     }
