@@ -136,7 +136,7 @@ section#index {
   max-width: 60em;
   margin: 40px auto;
   ul {
-    margin-left: 82px;
+    margin: 0 1.5em;
     list-style-type: none;
     li {
       font-family: $header-font-family;
@@ -255,7 +255,6 @@ section#info {
     margin: 40px auto;
     ul {
       max-width: 70%;
-      margin: 0 auto;
       li {
         font-size: 40px;
         article.post {
@@ -355,17 +354,10 @@ footer {
     nav#article {
       width: 96px;
       margin-right: -6px;
-      ul {
-        li {
-          margin-right: 0;
-          margin-left: 8px;
-        }
-      }
     }
   }
   section#index {
     max-width: 100%;
-    margin-left: 1em;
   }
 
   section#info {
