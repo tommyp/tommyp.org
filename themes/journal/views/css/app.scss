@@ -135,6 +135,10 @@ cite {
 section#index {
   max-width: 60em;
   margin: 40px auto;
+  p {
+    margin: 3em 0 0.8em 1em;
+    font-size: 25px;
+  }
   ul {
     margin: 0 1.5em;
     list-style-type: none;
@@ -210,6 +214,13 @@ nav#article {
       }
     }
   }
+}
+
+
+section#cv {
+  max-width: 36em;
+  padding: 0 1.5em;
+  margin: 5em auto 0;
 }
 
 /* info */
