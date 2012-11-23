@@ -18,7 +18,7 @@ article {
     width: 100%;
     @include imgpath("build2011.jpg");
     background-position: center center;
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: cover;
     height: 250px;
     margin: 50px auto;
