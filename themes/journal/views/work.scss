@@ -110,6 +110,11 @@ hr {
 
 .rumble {
   background: #000;
+  a {
+    &:hover {
+      color: #AE4600;
+    }
+  }
   .project-desc {
     color: #fff;
     h2 {
@@ -133,6 +138,10 @@ hr {
       a {
         color: #fff;
         border-bottom: 1px solid #fff;
+        &:hover {
+          color: #AE4600;
+          border-bottom: 1px solid #AE4600;
+        }
       }
     }
     .visit {
@@ -142,6 +151,13 @@ hr {
         &:hover {
           background: #AE4600;
         }
+      }
+    }
+  }
+  .gallery {
+    a {
+      &:hover {
+        border-color: #AE4600;
       }
     }
   }
