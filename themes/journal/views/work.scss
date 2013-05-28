@@ -98,6 +98,34 @@ hr {
   }
 }
 
+.omgito {
+  background-color: #3c2157;
+  color: #fff;
+  .visit {
+    a {
+      background: #2d1841;
+      color: #fff;
+      &:hover {
+        background: lighten(#2d1841, 20%);
+      }
+    }
+  }
+  .project-desc {
+    h2 {
+      font-weight: bold;
+      a {
+        color: #fff;
+      }
+    }
+    p {
+      a {
+        color: #fff;
+        border-bottom: 1px solid #fff;    
+      }
+    }
+  }
+}
+
 .digital-circle {
   background: #fff;
   .visit {
