@@ -97,11 +97,20 @@ hr {
     margin: 32px 0; 
     text-align: center;
   }
-  p {
+  p, li {
     max-width: 37.5em;
     margin: 0 auto;
     a {
       border-bottom: 1px solid #000;
+    }
+  }
+}
+
+.hacks {
+  .project-desc {
+    li {
+      font-size: 16px;
+      margin-bottom: 10px;
     }
   }
 }
