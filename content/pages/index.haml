@@ -2,17 +2,16 @@ Title: Web Developer & Designer living in London
 Description: Tommy Palmer is a Web Developer who works with Ruby on Rails at Rumble Labs in London.
 Keywords: Tommy, Palmer, Rails, Web, Developer, HTML, CSS, Ruby, Belfast, Rumble, Labs, Blog, Article, Design, London, Start Up
 
-- @extrahead = capture_haml do   
+- @extrahead = capture_haml do
   %script{ :src => "http://use.typekit.com/atp3yvw.js", :type => "text/javascript" }
 
 %section#index
   :markdown
-    I'm Tommy Palmer, a developer and designer living in London and working at [GDS](https://gds.blog.gov.uk/)
-    .
+    I'm Tommy Palmer, a developer living in London and working at [GDS](https://gds.blog.gov.uk/).
   %ul
     - latest_articles.each do |post|
       %li
         %article.post
           %h1
-            %a{:href=> post.abspath } 
+            %a{:href=> post.abspath }
               = post.metadata("title")
