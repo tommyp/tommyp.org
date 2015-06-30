@@ -1,0 +1,95 @@
+$header-font-family: "azo-sans-uber", "Helvetica Neue", Arial, Sans-serif;
+$font-family: "museo-sans", "Helvetica Neue", Arial, Sans-serif;
+$red: #FF1D23;
+
+@mixin header-formatting {
+  font-family: $header-font-family;
+  text-transform: uppercase;
+  text-align: center;
+  color: $red;
+}
+
+header#header {
+  border-bottom: 1px solid $red;
+}
+
+article {
+  header {
+    h1 {
+      @include header-formatting;
+      font-size: 200px;
+      text-align: center;
+      margin: 0;
+      padding: 0.25em 0;
+    }
+  }
+}
+
+#main {
+  max-width: 680px;
+  margin: 0px auto;
+  color: $red;
+  font-family: $font-family;
+
+  a {
+    color: darken($red, 20%);
+    border-bottom: 1px solid darken($red, 20%);
+    &:hover {
+      color: darken($red, 40%);
+      border-bottom: 1px solid darken($red, 40%);
+    }
+  }
+
+  h2, h3, h4 {
+    @include header-formatting;
+    margin: 1.5em 0 0.5em 0;
+  }
+
+  h2 {
+    font-size: 54px;
+  }
+
+  h3 {
+    font-size: 38px;
+  }
+
+  h4 {
+    font-size: 26px;
+  }
+
+  p, li {
+    font-size: 18px;
+    font-family: $font-family;
+  }
+
+  blockquote {
+    border-left: none;
+    padding: 0 1em;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  article {
+    header {
+      h1 {
+        font-size: 100px;
+        padding: 0.5em 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  article {
+    header {
+      h1 {
+        font-size: 50px;
+      }
+    }
+    section#main {
+      h2 {
+        font-size: 27px;
+      }
+    }
+  }
+}
