@@ -20,7 +20,7 @@ id: 9
 
     I decided to work on improving the Finder format, which is what my team had built over the previous year. An example of one of these pages can be found [here](https://www.gov.uk/aaib-reports). At its core, it’s faceted searching over a list of documents. As the Finder format had been in development for nearly a year it had some Tech Debt within its stack, which is what I decided to focus on. I split the work into two parts; dropping Finder API and reducing specification code. This post is meant to explain what those two parts entailed. But first, a little explanation of how GOV.UK works:
 
-    GOV.UK isn’t one monolithic Application, but in actual fact lots of different Applications. The number is probably close to 70 now. When a user visits a page on GOV.UK, an Application we call [the router](https://gdstechnology.blog.gov.uk/2013/12/05/building-a-new-router-for-gov-uk/) parses the URL and decides what application to pass the User to.
+    GOV.UK isn’t one monolithic Application, but in fact lots of different Applications. The actual number is probably close to 70 now. When a user visits a page on GOV.UK, an Application we call [the router](https://gdstechnology.blog.gov.uk/2013/12/05/building-a-new-router-for-gov-uk/) parses the URL and decides what application to pass the User to.
 
     When you visit `gov.uk/aaib-reports`, the router knows that `/aaib-reports` is rendered by [Finder Frontend](https://github.com/alphagov/finder-frontend) and passes the User to it. The rest of the process functions mostly like a normal Rails application. Have a look at the code if you’re curious.
 
@@ -30,7 +30,7 @@ id: 9
 
     - [**Finder Frontend**](https://github.com/alphagov/finder-frontend) - faceted searching over Documents. This is the App that renders the index pages with the search filters down the side.
 
-    - [**Specialist Publisher**](https://github.com/alphagov/specialist-publisher/) - publishing App for Editors from various organisations to publish Documents belonging to their Org. [AAIB](https://www.gov.uk/government/organisations/air-accidents-investigation-branch) publishes [AAIB Reports](https://www.gov.uk/aaib-reports), [MHRA](https://www.gov.uk/government/organisations/medicines-and-healthcare-products-regulatory-agency) publishes [Drug & Device Alerts](https://www.gov.uk/drug-device-alerts) and [Drug Safety Updates](https://www.gov.uk/drug-safety-update). There are also editors from several other agencies using Specialist Publisher to publish several other formats.
+    - [**Specialist Publisher**](https://github.com/alphagov/specialist-publisher/) - publishing App for Editors from various organisations to publish Documents belonging to their Org. Editors from [AAIB](https://www.gov.uk/government/organisations/air-accidents-investigation-branch) can publish [AAIB Reports](https://www.gov.uk/aaib-reports), editors from the [MHRA](https://www.gov.uk/government/organisations/medicines-and-healthcare-products-regulatory-agency) publish [Drug & Device Alerts](https://www.gov.uk/drug-device-alerts) and [Drug Safety Updates](https://www.gov.uk/drug-safety-update), etc. There are also editors from several other agencies using Specialist Publisher to publish several other formats.
 
     - [**Finder API**](https://github.com/gds-attic/finder-api) - Serves JSON schemas describing the filters down the side of the Finder pages and some other functions.
 
@@ -48,7 +48,7 @@ id: 9
 
     ### Schemas
 
-    One of the things we’ve been working on at GOV.UK is introducing a canonical source of published content. We’ve called this the [Content Store](https://github.com/alphagov/content-store) and we’re slowly moving Applications over to both publish to the Content Store and to read from it. When writing JSON describing a page to the Content Store, we include all the details needed to render the page along the name of both the publishing and rendering app and an array of routes (paths) that this App will use. Those last few bits are how the Router knows which Application to pass the User to.
+    One of the things we’ve been working on at GOV.UK is introducing a canonical source of published content. We’ve called this the [Content Store](https://github.com/alphagov/content-store) and we’re slowly moving Applications over to both publish to the Content Store and read from it. When writing JSON describing a page to the Content Store, we include all the details needed to render the page along the name of both the publishing and rendering app and an array of routes (paths) that this App will use. Those last few bits are how the Router knows which Application to pass the User to.
 
     The first hurdle to removing Finder API was figuring out where to store the schemas describing the filters. The answer was pretty obvious to me - port them over to live in the Content Store and use that to generate the page in Finder Frontend.
 
@@ -76,11 +76,11 @@ id: 9
 
     ## Firebroken
 
-    The GOV.UK firebreak was a great few weeks. Even during normal weeks in the office, I find myself chatting with those in other teams about what they’re working on but during firebreak it was somehow more exciting because most people came up with their own ideas of what they wanted to do. We gained a [random page URL](https://www.gov.uk/random), upgraded our largest App to [Rails 4](https://github.com/alphagov/whitehall/pull/1958) and we ran a [game day](https://gdstechnology.blog.gov.uk/2015/02/06/running-a-game-day-for-gov-uk/) were we had a deploy freeze and some of the developers tried attacking our staging servers which have a copy of GOV.UK. We also had some non-code based projects such as looking at how we model services starting with childcare. There were a lot of other ideas. Far too many to mention here.
+    The GOV.UK Firebreak was a great few weeks. Even during normal weeks in the office, I find myself chatting with those in other teams about what they’re working on but during Firebreak it was somehow more exciting because most people came up with their own ideas of what they wanted to do. We gained a [random page URL](https://www.gov.uk/random), upgraded our largest App to [Rails 4](https://github.com/alphagov/whitehall/pull/1958) and we ran a [game day](https://gdstechnology.blog.gov.uk/2015/02/06/running-a-game-day-for-gov-uk/) were we had a deploy freeze and some of the developers tried attacking our staging servers which have a copy of GOV.UK. We also had some non-code based projects such as looking at how we model services starting with childcare. There were a lot of other ideas. Far too many to mention here.
 
-    I’d highly recommend a firebreak to any team. It may be a hard sell to trying to convince the people in charge to effectively take a month off working from a backlog but it’s definitely worth it to improve how you work or the quality of the experience that your users get.
+    I’d highly recommend a Firebreak to any team. It may be a hard sell to trying to convince the people in charge to effectively take a month off working from a backlog but it’s definitely worth it to improve how you work or the quality of the experience that your users get.
 
-    After firebreak I was placed onto the team preparing GOV.UK for the UK General Election. One of the things we were working on was porting [policies](https://www.gov.uk/government/policies) to be powered by the Finder platform. Incredibly conveniently, the work I had completed during the Firebreak saved us about a month of work as I would’ve had do something like that anyways.
+    After Firebreak I was placed onto the team preparing GOV.UK for the UK General Election. One of the things we were working on was porting [policies](https://www.gov.uk/government/policies) to be powered by the Finder platform. Incredibly conveniently, the work I had completed during the Firebreak saved us about a month of work as I would’ve had do something like that anyways.
 
     So not only did I improve a small part of the GOV.UK stack, I managed to save myself and my colleagues a few weeks of work.
 
