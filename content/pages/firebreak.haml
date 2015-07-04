@@ -20,9 +20,9 @@ id: 9
 
     I decided to work on improving the Finder format, which is what my team had built over the previous year. An example of one of these pages can be found [here](https://www.gov.uk/aaib-reports). At its core, it’s faceted searching over a list of documents. As the Finder format had been in development for nearly a year it had some Tech Debt within its stack, which is what I decided to focus on. I split the work into two parts; dropping Finder API and reducing specification code. This post is meant to explain what those two parts entailed. But first, a little explanation of how GOV.UK works:
 
-    GOV.UK isn’t one monolithic Application, but in fact lots of different Applications. The actual number is probably close to 70 now. When a user visits a page on GOV.UK, an Application we call [the router](https://gdstechnology.blog.gov.uk/2013/12/05/building-a-new-router-for-gov-uk/) parses the URL and decides what application to pass the User to.
+    GOV.UK isn’t one monolithic Application, but in fact lots of different Applications. The actual number is probably close to 70 now. When a user visits a page on GOV.UK, an Application we call [the router](https://gdstechnology.blog.gov.uk/2013/12/05/building-a-new-router-for-gov-uk/) parses the URL and decides what Application to pass the User to.
 
-    When you visit `gov.uk/aaib-reports`, the router knows that `/aaib-reports` is rendered by [Finder Frontend](https://github.com/alphagov/finder-frontend) and passes the User to it. The rest of the process functions mostly like a normal Rails application. Have a look at the code if you’re curious.
+    When you visit `gov.uk/aaib-reports`, the router knows that `/aaib-reports` is rendered by [Finder Frontend](https://github.com/alphagov/finder-frontend) and passes the User to it. The rest of the process functions mostly like a normal Rails Application. Have a look at the code if you’re curious.
 
     ## Dropping Finder API
 
@@ -66,7 +66,7 @@ id: 9
 
     Finder API is now refactored [into the attic](https://github.com/gds-attic) and we pass about a Content Item from the Content Store describing the Finder to Finder Frontend and Specialist Frontend.
 
-    Specialist Frontend is one of our most simple applications. It renders documents, does some parameterised value to label conversion and links back to pre filtered versions of the Finder. As the App renders a few different document formats, it had a [Presenter for each format](https://github.com/alphagov/specialist-frontend/tree/ced4e62e97d68bd797ae35b1b2279e6fd36156e9/app/presenters) which contained a hash of that formats metadata keys and short names to use for date metadata.
+    Specialist Frontend is one of our most simple Applications. It renders documents, does some parameterised value to label conversion and links back to pre filtered versions of the Finder. As the App renders a few different document formats, it had a [Presenter for each format](https://github.com/alphagov/specialist-frontend/tree/ced4e62e97d68bd797ae35b1b2279e6fd36156e9/app/presenters) which contained a hash of that formats metadata keys and short names to use for date metadata.
 
     Since we now have the Content Item for the Finder too in Specialist Frontend, I was able to remove all the Presenters for each format, except for the [MHRAs Drug Safety Update](https://github.com/alphagov/specialist-frontend/blob/master/app/presenters/drug_safety_update_presenter.rb) format which has some special cases with dates.
 
