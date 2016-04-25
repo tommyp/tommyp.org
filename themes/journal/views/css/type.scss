@@ -30,7 +30,7 @@ p, li, blockquote {
   line-height: 1.5em;
 }
 
-p, ol, ul {
+p, ol, ul, pre {
   padding-bottom: 20px;
 }
 
@@ -48,6 +48,14 @@ ul {
 
 ol {
   list-style-type: decimal;
+}
+
+pre {
+  font-size: 14px;
+}
+
+code {
+  font-family: monospace;
 }
 
 a{
