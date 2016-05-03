@@ -52,10 +52,26 @@ ol {
 
 pre {
   font-size: 14px;
+  padding: 16px;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #eee;
+  border-radius: 3px;
+  margin-bottom: 1em;
 }
 
 code {
   font-family: monospace;
+}
+
+p code {
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+}
+
+pre code {
+
 }
 
 a{
