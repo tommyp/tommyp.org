@@ -84,13 +84,13 @@ id: 10
     This `ListDocumentsService` is returned from `services.list`. The `call` method on `ListDocumentsService` looks like this:
 
     ```
-      def call
-        if search_details.query.present?
-          documents_repository.search(search_details.query)
-        else
-          documents_repository
-        end
+    def call
+      if search_details.query.present?
+        documents_repository.search(search_details.query)
+      else
+        documents_repository
       end
+    end
     ```
 
     That then returns the `document_repository`, which is actually a `RepositoryPaginator`. That takes a `SpecialistDocumentRepository` as an argument. This is where we actually interact with the Database through a `SpecialistDocumentEdition` using `Mongoid::Document`. The logic around actual Specialist Documents is in a `SpecialistDocument` class, but that isn’t backed by the Database.
