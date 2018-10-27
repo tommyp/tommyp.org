@@ -1,0 +1,14 @@
+/* 404 */
+.fouroh {
+  max-width: 60em;
+  margin: 0 auto; }
+  .fouroh h1 {
+    text-align: center;
+    margin-top: 40px; }
+  .fouroh a {
+    display: block;
+    margin: 40px auto 0;
+    border-bottom: none !important;
+    max-width: 436px; }
+    .fouroh a img {
+      max-width: 100%; }

@@ -1,0 +1,62 @@
+/* basics */
+
+$header-font-family: league-gothic, Helvetica, Sans-serif;
+
+$main-font-family: proxima-nova, "Helvetica Neue", Arial, sans-serif;
+
+@font-face {
+  font-family: 'Pictos';
+  src: url('/fonts/pictos-web.eot');
+  src: url('/fonts/pictos-web.woff') format('woff'), url('/fonts/pictos-web.ttf') format('truetype'), url('/fonts/pictos-web.svg#webfontIyfZbseF') format('svg');
+}
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+}
+
+.clearfix {
+  clear:both;
+}
+
+/* fades */
+
+header#header {
+  -webkit-animation-name: 'short-fade';
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-direction: alternate;
+}
+
+@-webkit-keyframes short-fade {
+  0%{opacity: 0;}
+  50%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+#content {
+  -webkit-animation-name: 'short-fade';
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-direction: alternate;
+}
+
+@-webkit-keyframes short-fade {
+  0%{opacity: 0;}
+  50%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+@import "/css/basics.css";
+
+@import "/css/type.css";
+
+@import "/css/layout.css";
+
+@import "/css/header.css";
+
+@import "/css/info.css";
+
+@import "/css/four_oh_four.css";
+

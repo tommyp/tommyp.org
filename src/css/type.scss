@@ -1,0 +1,107 @@
+/* type */
+
+#content {
+  color: #222;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: $main-font-family;
+  padding-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 25px;
+}
+
+p, li, blockquote {
+  font-family: $main-font-family;
+  line-height: 1.5em;
+}
+
+p, ol, ul, pre {
+  padding-bottom: 20px;
+}
+
+p {
+  font-size: 16px;
+}
+
+li {
+  font-size: 14px;
+}
+
+ul {
+  list-style-type: square;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+pre {
+  font-size: 14px;
+  padding: 16px;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #eee;
+  border-radius: 3px;
+  margin-bottom: 1em;
+}
+
+code {
+  font-family: monospace;
+}
+
+p code {
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+}
+
+pre code {
+
+}
+
+a{
+  color: #000;
+  border-bottom: 1px solid #000;
+  text-decoration: none;
+  transition: 0.3s linear;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+}
+
+a:hover{
+  color: #666;
+  border-bottom: 1px solid #666;
+  transition: 0.3s linear;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+}
+
+blockquote {
+  font-family: Georgia, Serif;
+  padding: 10px 0px 10px 20px;
+  border-left: 3px solid #999;
+  font-size: 15px;
+}
+
+cite {
+  font-style: italic;
+  font-family: Georgia, Serif;
+  font-size: 12px;
+}
