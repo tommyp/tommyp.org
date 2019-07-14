@@ -4,10 +4,6 @@ import ArticleNav from '../../components/articleNav';
 import styles from './header.module.css';
 
 export default class extends React.Component {
-  constructor(props) {
-    super(props)
-  }
-
   articleNav() {
     if (this.props.next || this.props.prev) {
       return(
