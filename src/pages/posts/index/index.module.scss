@@ -1,0 +1,58 @@
+@import "../../../css/variables";
+@import "../../../css/common";
+
+.container {
+  background-color: #fff;
+}
+
+.index {
+  max-width: 60em;
+  margin: 40px auto;
+  p {
+    margin: 3em 0 0.8em 1em;
+    font-size: 25px;
+    font-family: $main-font-family;
+  }
+  ul {
+    margin: 0 1.5em;
+    padding: 0;
+    list-style-type: none;
+    li {
+      font-family: $header-font-family;
+      font-size: 60px;
+      text-transform: uppercase;
+      line-height: 0.8em;
+      word-spacing: -0.3em;
+      article.post {
+        word-spacing: 0;
+        h1 {
+          font-weight: normal;
+          font-family: $header-font-family;
+          font-size: 60px;
+          text-transform: uppercase;
+          a {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .index {
+    margin: 40px auto;
+    ul {
+      max-width: 70%;
+      li {
+        font-size: 40px;
+        article.post {
+          line-height: 1.2em;
+          h1 {
+            font-size: 40px;
+          }
+        }
+      }
+    }
+  }
+}

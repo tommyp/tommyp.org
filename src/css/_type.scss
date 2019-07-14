@@ -1,3 +1,5 @@
+@import "./variables";
+
 /* type */
 
 #content {
@@ -70,11 +72,7 @@ p code {
   padding-bottom: 0.1em;
 }
 
-pre code {
-
-}
-
-a{
+a {
   color: #000;
   border-bottom: 1px solid #000;
   text-decoration: none;

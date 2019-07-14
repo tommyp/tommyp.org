@@ -1,9 +1,12 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import ArticleNav from '../../components/articleNav';
-import './header.css'
+import styles from './header.module.css';
 
 export default class extends React.Component {
+  constructor(props) {
+    super(props)
+  }
 
   articleNav() {
     if (this.props.next || this.props.prev) {
@@ -18,8 +21,8 @@ export default class extends React.Component {
 
   render() {
     return (
-      <header id="header">
-        <nav>
+      <header className={styles.header + ' ' + this.props.styles}>
+        <nav className={styles.nav}>
           <ul>
             <li>
               <Link to="/" data-icon="H">

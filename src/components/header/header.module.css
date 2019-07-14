@@ -1,0 +1,77 @@
+/* header */
+.header {
+  max-width: 70em;
+  border-bottom: 1px solid #1D1D1D;
+  padding-top: 20px;
+  margin: 0 auto;
+  -webkit-animation-name: 'short-fade';
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-direction: alternate; }
+  .header a {
+    font-size: 37px;
+    color: #1D1D1D;
+    text-decoration: none;
+    border-bottom: 0; }
+
+@-webkit-keyframes short-fade {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.nav {
+  height: 36px;
+  display: inline; }
+  .nav ul {
+    padding: 0;
+    list-style: none;
+    display: inline;
+    color: #1D1D1D; }
+    .nav ul li {
+      font-family: "League Gothic", Helvetica, Sans-serif;
+      line-height: 1em;
+      text-transform: uppercase;
+      color: #1D1D1D;
+      font-size: 37px;
+      display: inline;
+      margin-right: 16px; }
+
+.nav .article {
+  float: right; }
+  .nav .article ul li {
+    margin-right: 0;
+    margin-left: 16px; }
+    .nav .article ul li.next {
+      float: right; }
+
+@media screen and (max-width: 560px) {
+  .header {
+    margin-top: 0;
+    padding-bottom: 6px; }
+    .header .nav {
+      width: 60%; }
+      .header .nav ul li {
+        text-transform: none;
+        margin-right: 8px; }
+        .header .nav ul li a {
+          height: 100%;
+          max-width: 40px;
+          display: inline-block; }
+          .header .nav ul li a:before {
+            font-family: 'Pictos';
+            content: attr(data-icon);
+            font-size: 40px;
+            width: 40px; }
+          .header .nav ul li a span {
+            display: none; }
+    .header .nav .article {
+      width: 120px;
+      margin-right: -6px; } }
+
+@media screen and (max-width: 1160px) {
+  header.header {
+    margin-left: 1.5em;
+    margin-right: 1.5em; } }
