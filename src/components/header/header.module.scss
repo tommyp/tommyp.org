@@ -4,25 +4,31 @@
 
 .header {
   max-width: 70em;
-  border-bottom: 1px solid #1D1D1D;
+  border-bottom: 1px solid #1d1d1d;
   padding-top: 20px;
   margin: 0 auto;
-  -webkit-animation-name: 'short-fade';
+  -webkit-animation-name: "short-fade";
   -webkit-animation-duration: 3s;
   -webkit-animation-iteration-count: 1;
   -webkit-animation-direction: alternate;
   a {
     font-size: 37px;
-    color: #1D1D1D;
+    color: #1d1d1d;
     text-decoration: none;
     border-bottom: 0;
   }
 }
 
 @-webkit-keyframes short-fade {
-  0%{opacity: 0;}
-  50%{opacity: 0;}
-  100%{opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .nav {
@@ -32,12 +38,12 @@
     padding: 0;
     list-style: none;
     display: inline;
-    color: #1D1D1D;
+    color: #1d1d1d;
     li {
       font-family: $header-font-family;
       line-height: 1em;
       text-transform: uppercase;
-      color: #1D1D1D;
+      color: #1d1d1d;
       font-size: 37px;
       display: inline;
       margin-right: 16px;
@@ -45,16 +51,14 @@
   }
 }
 
-.nav {
-  .article {
-    float: right;
-    ul {
-      li {
-        margin-right: 0;
-        margin-left: 16px;
-        &.next {
-          float: right;
-        }
+.nextPrevious {
+  float: right;
+  ul {
+    li {
+      margin-right: 0;
+      margin-left: 16px;
+      &.next {
+        float: right;
       }
     }
   }
@@ -81,26 +85,22 @@
             max-width: 40px;
             display: inline-block;
             &:before {
-              font-family: 'Pictos';
+              font-family: "Pictos";
               content: attr(data-icon);
               font-size: 40px;
-              width: 40px
+              width: 40px;
             }
             span {
               display: none;
             }
           }
           a.home {
-
           }
           a.info {
-
           }
           a.prev {
-
           }
           a.next {
-
           }
         }
       }

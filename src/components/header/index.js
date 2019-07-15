@@ -1,23 +1,11 @@
-import React from 'react';
+import React from "react";
 import { Link } from "react-router-dom";
-import ArticleNav from '../../components/articleNav';
-import styles from './header.module.css';
+import styles from "./header.module.css";
 
 export default class extends React.Component {
-  articleNav() {
-    if (this.props.next || this.props.prev) {
-      return(
-        <ArticleNav
-          prev={this.props.prev}
-          next={this.props.next}
-        />
-      )
-    }
-  }
-
   render() {
     return (
-      <header className={styles.header + ' ' + this.props.styles}>
+      <header className={styles.header + " " + this.props.styles}>
         <nav className={styles.nav}>
           <ul>
             <li>
@@ -36,9 +24,16 @@ export default class extends React.Component {
               </Link>
             </li>
           </ul>
+          <ul className={styles.nextPrevious}>
+            <li className="previous">
+              {this.props.prev && <Link to={this.props.prev}>Previous</Link>}
+            </li>
+            <li className="next">
+              {this.props.next && <Link to={this.props.next}>Next</Link>}
+            </li>
+          </ul>
         </nav>
-        {this.articleNav()}
       </header>
-    )
+    );
   }
 }

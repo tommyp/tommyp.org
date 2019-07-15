@@ -20,8 +20,17 @@ export default class extends React.Component {
                 <li>
                   <article className={styles.post}>
                     <h1>
+                      <Link to="/the-reason-la-noire-changes-everything">
+                        The reason LA Noire changes everything
+                      </Link>
+                    </h1>
+                  </article>
+                </li>
+                <li>
+                  <article className={styles.post}>
+                    <h1>
                       <Link to="/so-you-mightve-heard">
-                        So you might've heard
+                        So you might've heard...
                       </Link>
                     </h1>
                   </article>

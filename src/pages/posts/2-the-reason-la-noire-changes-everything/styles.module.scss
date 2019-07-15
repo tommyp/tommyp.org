@@ -29,7 +29,7 @@ $block-shadow: #1d1101;
   }
   .cole {
     float: right;
-    background-image: url('.cole.png');
+    background-image: url('./cole.png');
     height: 720px;
     width: 30em;
   }
@@ -59,7 +59,7 @@ $block-shadow: #1d1101;
 
 @media screen and (max-width: 1130px) {
   .main {
-    #cole {
+    .cole {
       display: none;
     }
     article {
