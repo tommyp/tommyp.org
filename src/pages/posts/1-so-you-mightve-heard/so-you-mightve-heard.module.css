@@ -1,3 +1,4 @@
+@import url("https://use.typekit.com/kmu4ycw.css");
 .body {
   background: #000; }
 
@@ -10,13 +11,18 @@
   .content a {
     color: #fff;
     border-bottom: 1px solid #fff; }
-  .content p, .content h1, .content h2, .content h3, .content h4 {
+  .content p,
+  .content h1,
+  .content h2,
+  .content h3,
+  .content h4 {
     color: #fff; }
   .content h1 {
     font-size: 1.95em;
     letter-spacing: 0.22em;
     text-transform: uppercase; }
-  .content h1, .content h2 {
+  .content h1,
+  .content h2 {
     text-align: center; }
   .content h1 {
     font-family: "futura-pt", "Helvetica Neue", Arial, Sans-serif;

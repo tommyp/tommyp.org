@@ -1,14 +1,26 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
+import { Helmet } from "react-helmet";
 import Header from "./../../../components/header";
 import styles from "./styles.module.css";
 
 export default class extends React.Component {
+  componentWillMount() {
+    document.getElementsByName("body").style = styles.body;
+  }
+
+  componentWillUnmount() {
+    document.getElementsByName("body").style = "";
+  }
+
   render() {
     return (
       <div className={styles.container}>
+        <Helmet>
+          <style>@import url("https://use.typekit.net/kmu4ycw.css");</style>
+        </Helmet>
         <Header styles={styles.header} />
-        <div className="cole" />
+        <div className={styles.cole} />
         <article className={styles.content}>
           <h1 className={styles.title}>
             The Reason
