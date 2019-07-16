@@ -24,13 +24,19 @@ export default class extends React.Component {
               </Link>
             </li>
           </ul>
-          <ul className={styles.nextPrevious}>
-            <li className="previous">
-              {this.props.prev && <Link to={this.props.prev}>Previous</Link>}
-            </li>
-            <li className="next">
-              {this.props.next && <Link to={this.props.next}>Next</Link>}
-            </li>
+        </nav>
+        <nav className={styles.nextPrevious}>
+          <ul>
+            {this.props.previous && (
+              <li className="previous">
+                <Link to={this.props.previous}>Previous</Link>
+              </li>
+            )}
+            {this.props.next && (
+              <li className="next">
+                <Link to={this.props.next}>Next</Link>
+              </li>
+            )}
           </ul>
         </nav>
       </header>

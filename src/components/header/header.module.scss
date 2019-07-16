@@ -11,11 +11,25 @@
   -webkit-animation-duration: 3s;
   -webkit-animation-iteration-count: 1;
   -webkit-animation-direction: alternate;
-  a {
-    font-size: 37px;
+  ul {
+    padding: 0;
+    list-style: none;
+    display: inline;
+  }
+  li {
+    font-family: $header-font-family;
+    line-height: 1em;
+    text-transform: uppercase;
     color: #1d1d1d;
-    text-decoration: none;
-    border-bottom: 0;
+    font-size: 37px;
+    display: inline;
+    margin-right: 16px;
+    a {
+      font-size: 37px;
+      color: #1d1d1d;
+      text-decoration: none;
+      border-bottom: 0;
+    }
   }
 }
 
@@ -32,19 +46,12 @@
 }
 
 .nav {
-  height: 36px;
   display: inline;
   ul {
     padding: 0;
     list-style: none;
     display: inline;
-    color: #1d1d1d;
     li {
-      font-family: $header-font-family;
-      line-height: 1em;
-      text-transform: uppercase;
-      color: #1d1d1d;
-      font-size: 37px;
       display: inline;
       margin-right: 16px;
     }
@@ -53,6 +60,7 @@
 
 .nextPrevious {
   float: right;
+  text-align: right;
   ul {
     li {
       margin-right: 0;
@@ -63,12 +71,6 @@
     }
   }
 }
-
-// section#cv {
-//   max-width: 36em;
-//   padding: 0 1.5em;
-//   margin: 5em auto 0;
-// }
 
 @media screen and (max-width: 560px) {
   .header {

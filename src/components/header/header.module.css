@@ -8,11 +8,23 @@
   -webkit-animation-duration: 3s;
   -webkit-animation-iteration-count: 1;
   -webkit-animation-direction: alternate; }
-  .header a {
-    font-size: 37px;
+  .header ul {
+    padding: 0;
+    list-style: none;
+    display: inline; }
+  .header li {
+    font-family: "League Gothic", Helvetica, Sans-serif;
+    line-height: 1em;
+    text-transform: uppercase;
     color: #1d1d1d;
-    text-decoration: none;
-    border-bottom: 0; }
+    font-size: 37px;
+    display: inline;
+    margin-right: 16px; }
+    .header li a {
+      font-size: 37px;
+      color: #1d1d1d;
+      text-decoration: none;
+      border-bottom: 0; }
 
 @-webkit-keyframes short-fade {
   0% {
@@ -23,24 +35,18 @@
     opacity: 1; } }
 
 .nav {
-  height: 36px;
   display: inline; }
   .nav ul {
     padding: 0;
     list-style: none;
-    display: inline;
-    color: #1d1d1d; }
+    display: inline; }
     .nav ul li {
-      font-family: "League Gothic", Helvetica, Sans-serif;
-      line-height: 1em;
-      text-transform: uppercase;
-      color: #1d1d1d;
-      font-size: 37px;
       display: inline;
       margin-right: 16px; }
 
 .nextPrevious {
-  float: right; }
+  float: right;
+  text-align: right; }
   .nextPrevious ul li {
     margin-right: 0;
     margin-left: 16px; }

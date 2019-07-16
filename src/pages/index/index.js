@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Header from "./../../../components/header";
+import Header from "../../components/header";
 import ReactMarkdown from "react-markdown";
 import styles from "./index.module.scss";
 
