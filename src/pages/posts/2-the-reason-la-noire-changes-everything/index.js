@@ -6,11 +6,7 @@ import styles from "./styles.module.css";
 
 export default class extends React.Component {
   componentWillMount() {
-    document.getElementsByName("body").style = styles.body;
-  }
-
-  componentWillUnmount() {
-    document.getElementsByName("body").style = "";
+    document.body.style.backgroundColor = "#000";
   }
 
   render() {

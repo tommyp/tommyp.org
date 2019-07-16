@@ -1,20 +1,26 @@
-import React from 'react';
+import React from "react";
 import { Link } from "react-router-dom";
-import Header from './../../../components/header';
-import ReactMarkdown from 'react-markdown';
-import styles from './index.module.scss';
+import Header from "./../../../components/header";
+import ReactMarkdown from "react-markdown";
+import styles from "./index.module.scss";
 
 export default class extends React.Component {
+  componentDidMount() {
+    document.body.style.backgroundColor = "#fff";
+  }
+
   render() {
-    return(
+    return (
       <div className={styles.container}>
-        <Header></Header>
+        <Header />
         <section className={styles.content}>
           <article>
             <section className={styles.index}>
-              <ReactMarkdown source={
-                "I'm Tommy Palmer, a Software Engineer living in London and working at [Deliveroo](https://deliveroo.co.uk/)."
-              }/>
+              <ReactMarkdown
+                source={
+                  "I'm Tommy Palmer, a Software Engineer living in London and working at [Deliveroo](https://deliveroo.co.uk/)."
+                }
+              />
 
               <ul>
                 <li>
@@ -40,6 +46,6 @@ export default class extends React.Component {
           </article>
         </section>
       </div>
-    )
+    );
   }
 }

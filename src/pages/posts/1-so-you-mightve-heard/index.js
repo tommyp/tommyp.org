@@ -1,23 +1,27 @@
-import React from 'react';
-import ReactMarkdown from 'react-markdown';
-import Header from './../../../components/header';
-import styles from './so-you-mightve-heard.module.css';
+import React from "react";
+import ReactMarkdown from "react-markdown";
+import Header from "./../../../components/header";
+import styles from "./so-you-mightve-heard.module.css";
 
 export default class extends React.Component {
-  render() {
-    return(
-      <div className={styles.body}>
-        <div className={styles.container}>
-          <Header
-            styles={styles.header}
-            next="/the-reason-la-noire-changes-everything"
-          />
+  componentWillMount() {
+    document.body.style.backgroundColor = "#000";
+  }
 
-          <article className={styles.content}>
-            <h1 className={styles.title}>So you might have heard...</h1>
-            <h2 className={styles.subtitle}>I'm becoming a Rumbler.</h2>
-            <section className={styles.main}>
-              <ReactMarkdown source="Recently, it become public knowledge that I have donned a lab coat and joined the team at [Rumble Labs]('http://rumblelabs.com') as a Web Developer.
+  render() {
+    return (
+      <div className={styles.container}>
+        <Header
+          styles={styles.header}
+          next="/the-reason-la-noire-changes-everything"
+        />
+
+        <article className={styles.content}>
+          <h1 className={styles.title}>So you might have heard...</h1>
+          <h2 className={styles.subtitle}>I'm becoming a Rumbler.</h2>
+          <section className={styles.main}>
+            <ReactMarkdown
+              source="Recently, it become public knowledge that I have donned a lab coat and joined the team at [Rumble Labs]('http://rumblelabs.com') as a Web Developer.
 
                 A few weeks ago they announced their switch to Rails with [David Rice]('http://davidjrice.co.uk')
                 joining the company. After playing with Rails on and off over the final 2 years of University, Dave offered me some part time work just after
@@ -30,11 +34,10 @@ export default class extends React.Component {
                 even more glad to be joining a team like Rumble. It's the end of my education and the start of my professional career and I couldn't be happier about where I am.
 
                 Until next time."
-              />
-            </section>
-          </article>
-        </div>
+            />
+          </section>
+        </article>
       </div>
-    )
+    );
   }
 }
