@@ -48,11 +48,12 @@ $rumble-headline: "futura-pt", "Helvetica Neue", Arial, Sans-serif;
   p {
     font-family: $rumble-body;
   }
-  section {
-    max-width: 30em;
-    font-size: 1em;
-    margin: 60px auto 0;
-  }
+}
+
+.main {
+  max-width: 30em;
+  font-size: 1em;
+  margin: 60px auto 0;
 }
 
 .header {
@@ -65,6 +66,9 @@ $rumble-headline: "futura-pt", "Helvetica Neue", Arial, Sans-serif;
 }
 
 @media screen and (max-width: 500px) {
+  .main {
+    margin: 0 1em;
+  }
   .container {
     article {
       background: none;

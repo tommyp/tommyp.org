@@ -4,6 +4,7 @@ import Header from "../../components/header";
 import ReactMarkdown from "react-markdown";
 import styles from "./index.module.scss";
 import { Helmet } from "react-helmet";
+import parameterize from "parameterize-string";
 
 export default class extends React.Component {
   componentDidMount() {
@@ -11,6 +12,12 @@ export default class extends React.Component {
   }
 
   render() {
+    const posts = [
+      "Teaching the Web",
+      "The reason LA Noire changes everything",
+      "So you might've heard..."
+    ];
+
     return (
       <React.Fragment>
         <Helmet>
@@ -28,24 +35,15 @@ export default class extends React.Component {
                 />
 
                 <ul>
-                  <li>
-                    <article className={styles.post}>
-                      <h1>
-                        <Link to="/the-reason-la-noire-changes-everything">
-                          The reason LA Noire changes everything
-                        </Link>
-                      </h1>
-                    </article>
-                  </li>
-                  <li>
-                    <article className={styles.post}>
-                      <h1>
-                        <Link to="/so-you-mightve-heard">
-                          So you might've heard...
-                        </Link>
-                      </h1>
-                    </article>
-                  </li>
+                  {posts.map(post => (
+                    <li>
+                      <article className={styles.post}>
+                        <h1>
+                          <Link to={parameterize(post)}>{post}</Link>
+                        </h1>
+                      </article>
+                    </li>
+                  ))}
                 </ul>
               </section>
             </article>

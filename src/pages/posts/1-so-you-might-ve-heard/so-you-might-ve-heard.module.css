@@ -32,10 +32,11 @@
     font-size: 17px; }
   .content p {
     font-family: "ff-tisa-web-pro", Palatino, Georgia, serif; }
-  .content section {
-    max-width: 30em;
-    font-size: 1em;
-    margin: 60px auto 0; }
+
+.main {
+  max-width: 30em;
+  font-size: 1em;
+  margin: 60px auto 0; }
 
 .header {
   border-bottom: 1px solid #fff; }
@@ -43,6 +44,8 @@
     color: #fff; }
 
 @media screen and (max-width: 500px) {
+  .main {
+    margin: 0 1em; }
   .container article {
     background: none;
     padding-top: 0; } }

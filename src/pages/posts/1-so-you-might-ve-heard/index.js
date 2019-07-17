@@ -1,7 +1,7 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
-import Header from "./../../../components/header";
-import styles from "./so-you-mightve-heard.module.css";
+import Header from "../../../components/header";
+import styles from "./so-you-might-ve-heard.module.css";
 
 const post = `
 Recently, it become public knowledge that I have donned a lab coat and joined the team at [Rumble Labs]('http://rumblelabs.com') as a Web Developer.

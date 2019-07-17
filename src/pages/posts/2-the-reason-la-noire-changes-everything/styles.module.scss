@@ -65,10 +65,10 @@ $block-shadow: #1d1101;
 }
 
 @media screen and (max-width: 1130px) {
+  .cole {
+    display: none;
+  }
   .main {
-    .cole {
-      display: none;
-    }
     article {
       float: none;
       margin: 0 auto;
@@ -78,6 +78,7 @@ $block-shadow: #1d1101;
 
 @media screen and (max-width: 600px) {
   .main {
+    margin: 0 1em;
     h1 {
       span {
         font-size: 8.125em;

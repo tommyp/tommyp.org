@@ -44,12 +44,14 @@
     text-shadow: 0 0 100px #fff3cc, -1px 1px 0 #1d1101, -2px 2px 0 #1d1101, -3px 3px 0 #1d1101, -4px 4px 0 #1d1101, -5px 5px 0 #1d1101, -6px 6px 0 #1d1101, -7px 7px 0 #1d1101, -8px 8px 0 #1d1101, -9px 9px 0 #1d1101, -10px 10px 0 #1d1101; }
 
 @media screen and (max-width: 1130px) {
-  .main .cole {
+  .cole {
     display: none; }
   .main article {
     float: none;
     margin: 0 auto; } }
 
 @media screen and (max-width: 600px) {
-  .main h1 span {
-    font-size: 8.125em; } }
+  .main {
+    margin: 0 1em; }
+    .main h1 span {
+      font-size: 8.125em; } }

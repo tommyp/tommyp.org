@@ -32,7 +32,11 @@ export default class extends React.Component {
     return (
       <div className={styles.container}>
         <Helmet />
-        <Header styles={styles.header} previous="/so-you-mightve-heard" />
+        <Header
+          styles={styles.header}
+          previous="/so-you-might-ve-heard"
+          next="teaching-the-web"
+        />
         <div className={styles.cole} />
         <article className={styles.content}>
           <h1 className={styles.title}>

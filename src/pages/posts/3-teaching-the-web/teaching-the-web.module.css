@@ -1,0 +1,47 @@
+@import url("https://use.typekit.net/vbq2wvm.css");
+.content {
+  margin-top: 80px; }
+
+.header {
+  border-bottom: 1px solid #dd1f1f; }
+
+p,
+li,
+blockquote {
+  font-family: "sorts-mill-goudy", Paltino, Georgia;
+  font-size: 18px; }
+
+blockquote {
+  border-left: 4px solid #dd1f1f; }
+
+code {
+  display: block;
+  margin: 15px 0; }
+
+.title {
+  font-family: "felt-tip-roman", Cursive;
+  color: #dd1f1f;
+  text-align: center;
+  font-size: 5em; }
+
+.main {
+  margin: 20px auto;
+  max-width: 37.5em; }
+  .main h2 {
+    font-family: "felt-tip-roman", Cursive;
+    color: #dd1f1f;
+    font-size: 45px; }
+  .main p {
+    font-size: 18px; }
+  .main a {
+    border-bottom: 1px solid #dd1f1f; }
+  .main ul {
+    padding-left: 20px; }
+    .main ul li ul {
+      padding-left: 20px; }
+
+@media screen and (max-width: 600px) {
+  .main {
+    margin: 0 1em; }
+  .title {
+    font-size: 4.5em; } }
