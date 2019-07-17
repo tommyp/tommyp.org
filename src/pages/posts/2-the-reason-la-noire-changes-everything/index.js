@@ -31,9 +31,7 @@ export default class extends React.Component {
   render() {
     return (
       <div className={styles.container}>
-        <Helmet>
-          <style>@import url("https://use.typekit.net/kmu4ycw.css");</style>
-        </Helmet>
+        <Helmet />
         <Header styles={styles.header} previous="/so-you-mightve-heard" />
         <div className={styles.cole} />
         <article className={styles.content}>

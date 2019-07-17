@@ -13,7 +13,7 @@
     list-style: none;
     display: inline; }
   .header li {
-    font-family: "League Gothic", Helvetica, Sans-serif;
+    font-family: league-gothic, Helvetica, Sans-serif;
     line-height: 1em;
     text-transform: uppercase;
     color: #1d1d1d;

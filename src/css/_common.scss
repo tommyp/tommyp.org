@@ -1,64 +1,358 @@
-$header-font-family: "League Gothic", Helvetica, Sans-serif;
-
-$main-font-family: proxima-nova, "Helvetica Neue", Arial, sans-serif;
-
 @media screen, projection {
-	/*
+  /*
 	Copyright (c) 2007, Yahoo! Inc. All rights reserved.
 	Code licensed under the BSD License:
 	http://developer.yahoo.net/yui/license.txt
 	version: 2.2.0
 	*/
-	body {font:13px arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small;}table {font-size:inherit;font:100%;}select, input, textarea {font:99% arial,helvetica,clean,sans-serif;}pre, code {font:115% monospace;*font-size:100%;}body * {line-height:1.22em;}
-	body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}/*ol,ul {list-style:none;}*/caption,th {text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym {border:0;}
-	/* end of yahoo reset and fonts */
+  body {
+    font: 13px arial, helvetica, clean, sans-serif;
+    *font-size: small;
+    *font: x-small;
+  }
+  table {
+    font-size: inherit;
+    font: 100%;
+  }
+  select,
+  input,
+  textarea {
+    font: 99% arial, helvetica, clean, sans-serif;
+  }
+  pre,
+  code {
+    font: 115% monospace;
+    *font-size: 100%;
+  }
+  body * {
+    line-height: 1.22em;
+  }
+  body,
+  div,
+  dl,
+  dt,
+  dd,
+  ul,
+  ol,
+  li,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  pre,
+  form,
+  fieldset,
+  input,
+  textarea,
+  p,
+  blockquote,
+  th,
+  td {
+    margin: 0;
+    padding: 0;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  fieldset,
+  img {
+    border: 0;
+  }
+  address,
+  caption,
+  cite,
+  code,
+  dfn,
+  em,
+  strong,
+  th,
+  var {
+    font-style: normal;
+    font-weight: normal;
+  } /*ol,ul {list-style:none;}*/
+  caption,
+  th {
+    text-align: left;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 100%;
+    font-weight: normal;
+  }
+  q:before,
+  q:after {
+    content: "";
+  }
+  abbr,
+  acronym {
+    border: 0;
+  }
+  /* end of yahoo reset and fonts */
 
-	body 										  {color:#333; background:#4b1a1a; line-height:1.3;}
-	p												  {margin:0 0 20px;}
-	a												  {color:#4b1a1a;}
-	a:hover									  {text-decoration:none;}
-	strong									  {font-weight:bold;}
-	em											  {font-style:italics;}
-	h1,h2,h3,h4,h5,h6				  {font-weight:bold;}
-	h1											  {font-size:197%; margin:30px 0; color:#4b1a1a;}
-	h2											  {font-size:174%; margin:20px 0; color:#b8111a;}
-	h3											  {font-size:152%; margin:10px 0;}
-	h4											  {font-size:129%; margin:10px 0;}
-	pre 										  {background:#eee; margin:0 0 20px; padding:20px; border:1px solid #ccc; font-size:100%; overflow:auto;}
-	code										  {font-size:100%; margin:0; padding:0;}
-	ul, ol									  {margin:10px 0 10px 25px;}
-	ol li										  {margin:0 0 10px;}
+  body {
+    color: #333;
+    background: #4b1a1a;
+    line-height: 1.3;
+  }
+  p {
+    margin: 0 0 20px;
+  }
+  a {
+    color: #4b1a1a;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  strong {
+    font-weight: bold;
+  }
+  em {
+    font-style: italics;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: bold;
+  }
+  h1 {
+    font-size: 197%;
+    margin: 30px 0;
+    color: #4b1a1a;
+  }
+  h2 {
+    font-size: 174%;
+    margin: 20px 0;
+    color: #b8111a;
+  }
+  h3 {
+    font-size: 152%;
+    margin: 10px 0;
+  }
+  h4 {
+    font-size: 129%;
+    margin: 10px 0;
+  }
+  pre {
+    background: #eee;
+    margin: 0 0 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    font-size: 100%;
+    overflow: auto;
+  }
+  code {
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  ul,
+  ol {
+    margin: 10px 0 10px 25px;
+  }
+  ol li {
+    margin: 0 0 10px;
+  }
 
-  div#photos                {overflow:auto;}
-  div.photo                 {float:left; display:inline; margin:0 20px 20px 0;}
-  div.photo a img           {border:1px solid; padding:1px;}
-  p#turtles_caption         {margin:5px 0 0;}
+  div#photos {
+    overflow: auto;
+  }
+  div.photo {
+    float: left;
+    display: inline;
+    margin: 0 20px 20px 0;
+  }
+  div.photo a img {
+    border: 1px solid;
+    padding: 1px;
+  }
+  p#turtles_caption {
+    margin: 5px 0 0;
+  }
 
-  div#text a                {font-weight:bold;}
+  div#text a {
+    font-weight: bold;
+  }
 
-  div#zoom h2               {margin:10px 0 10px;}
-  div#zoom p                {line-height:1.6;}
+  div#zoom h2 {
+    margin: 10px 0 10px;
+  }
+  div#zoom p {
+    line-height: 1.6;
+  }
 
-	div#wrapper 							{background:#fff; width:560px; margin:0 auto; padding:20px; border:10px solid #bc8c46; border-width:0 10px;}
-	div#header								{position:relative; border-bottom:1px dotted; margin:0 0 10px; padding:0 0 10px;}
-	div#header p							{margin:0; padding:0;}
-	div#header h1							{margin:0; padding:0;}
-	ul#nav										{position:absolute; top:0; right:0; list-style:none; margin:0; padding:0;}
-	ul#nav li									{display:inline; padding:0 0 0 5px;}
-	ul#nav li a								{}
-	div#content								{}
-  div#content p             {line-height:1.6;}
-	div#footer								{clear:both; margin:40px 0 0; border-top:1px dotted; padding:10px 0 0;}
+  div#wrapper {
+    background: #fff;
+    width: 560px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 10px solid #bc8c46;
+    border-width: 0 10px;
+  }
+  div#header {
+    position: relative;
+    border-bottom: 1px dotted;
+    margin: 0 0 10px;
+    padding: 0 0 10px;
+  }
+  div#header p {
+    margin: 0;
+    padding: 0;
+  }
+  div#header h1 {
+    margin: 0;
+    padding: 0;
+  }
+  ul#nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  ul#nav li {
+    display: inline;
+    padding: 0 0 0 5px;
+  }
+  ul#nav li a {
+  }
+  div#content {
+  }
+  div#content p {
+    line-height: 1.6;
+  }
+  div#footer {
+    clear: both;
+    margin: 40px 0 0;
+    border-top: 1px dotted;
+    padding: 10px 0 0;
+  }
 }
 
-body { background-color: #fff; color: #000; }
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+body {
+  background-color: #fff;
+  color: #000;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+:focus {
+  outline: 0;
+}
+ins {
+  text-decoration: none;
+}
+del {
+  text-decoration: line-through;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
 html {
   overflow-y: scroll;
 }
 
-section, article, header, hgroup {
+section,
+article,
+header,
+hgroup {
   display: block;
 }
 
@@ -70,7 +364,6 @@ ul {
   list-style: disc;
 }
 
-
 .content {
   margin: 0 auto;
   color: #222;
@@ -80,7 +373,11 @@ h1 {
   font-size: 60px;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: $main-font-family;
   padding-bottom: 0.5em;
 }
@@ -97,12 +394,17 @@ h4 {
   font-size: 25px;
 }
 
-p, li, blockquote {
+p,
+li,
+blockquote {
   font-family: $main-font-family;
   line-height: 1.5em;
 }
 
-p, ol, ul, pre {
+p,
+ol,
+ul,
+pre {
   padding-bottom: 20px;
 }
 
@@ -136,7 +438,7 @@ code {
 }
 
 p code {
-  background-color: rgba(0,0,0,0.04);
+  background-color: rgba(0, 0, 0, 0.04);
   border-radius: 3px;
   padding-top: 0.1em;
   padding-bottom: 0.1em;
@@ -152,7 +454,7 @@ a {
   -o-transition: 0.3s linear;
 }
 
-a:hover{
+a:hover {
   color: #666;
   border-bottom: 1px solid #666;
   transition: 0.3s linear;
@@ -179,15 +481,20 @@ cite {
 }
 
 .content {
-  -webkit-animation-name: 'short-fade';
+  -webkit-animation-name: "short-fade";
   -webkit-animation-duration: 1.5s;
   -webkit-animation-iteration-count: 1;
   -webkit-animation-direction: alternate;
 }
 
 @-webkit-keyframes short-fade {
-  0%{opacity: 0;}
-  50%{opacity: 0;}
-  100%{opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-

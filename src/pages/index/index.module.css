@@ -1,3 +1,4 @@
+@import url("https://use.typekit.net/atp3yvw.css");
 @media screen, projection {
   /*
 	Copyright (c) 2007, Yahoo! Inc. All rights reserved.
@@ -6,39 +7,81 @@
 	version: 2.2.0
 	*/
   body {
-    font: 13px arial,helvetica,clean,sans-serif;
+    font: 13px arial, helvetica, clean, sans-serif;
     *font-size: small;
     *font: x-small; }
   table {
     font-size: inherit;
     font: 100%; }
-  select, input, textarea {
-    font: 99% arial,helvetica,clean,sans-serif; }
-  pre, code {
+  select,
+  input,
+  textarea {
+    font: 99% arial, helvetica, clean, sans-serif; }
+  pre,
+  code {
     font: 115% monospace;
     *font-size: 100%; }
   body * {
     line-height: 1.22em; }
-  body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+  body,
+  div,
+  dl,
+  dt,
+  dd,
+  ul,
+  ol,
+  li,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  pre,
+  form,
+  fieldset,
+  input,
+  textarea,
+  p,
+  blockquote,
+  th,
+  td {
     margin: 0;
     padding: 0; }
   table {
     border-collapse: collapse;
     border-spacing: 0; }
-  fieldset, img {
+  fieldset,
+  img {
     border: 0; }
-  address, caption, cite, code, dfn, em, strong, th, var {
+  address,
+  caption,
+  cite,
+  code,
+  dfn,
+  em,
+  strong,
+  th,
+  var {
     font-style: normal;
     font-weight: normal; }
   /*ol,ul {list-style:none;}*/
-  caption, th {
+  caption,
+  th {
     text-align: left; }
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-size: 100%;
     font-weight: normal; }
-  q:before, q:after {
-    content: ''; }
-  abbr, acronym {
+  q:before,
+  q:after {
+    content: ""; }
+  abbr,
+  acronym {
     border: 0; }
   /* end of yahoo reset and fonts */
   body {
@@ -55,7 +98,12 @@
     font-weight: bold; }
   em {
     font-style: italics; }
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-weight: bold; }
   h1 {
     font-size: 197%;
@@ -82,7 +130,8 @@
     font-size: 100%;
     margin: 0;
     padding: 0; }
-  ul, ol {
+  ul,
+  ol {
     margin: 10px 0 10px 25px; }
   ol li {
     margin: 0 0 10px; }
@@ -143,7 +192,68 @@ body {
   background-color: #fff;
   color: #000; }
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
   margin: 0;
   padding: 0;
   border: 0;
@@ -155,14 +265,19 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 body {
   line-height: 1; }
 
-ol, ul {
+ol,
+ul {
   list-style: none; }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none; }
 
-blockquote:before, blockquote:after, q:before, q:after {
-  content: '';
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
   content: none; }
 
 :focus {
@@ -181,7 +296,10 @@ table {
 html {
   overflow-y: scroll; }
 
-section, article, header, hgroup {
+section,
+article,
+header,
+hgroup {
   display: block; }
 
 ol {
@@ -197,7 +315,11 @@ ul {
 h1 {
   font-size: 60px; }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: proxima-nova, "Helvetica Neue", Arial, sans-serif;
   padding-bottom: 0.5em; }
 
@@ -210,11 +332,16 @@ h3 {
 h4 {
   font-size: 25px; }
 
-p, li, blockquote {
+p,
+li,
+blockquote {
   font-family: proxima-nova, "Helvetica Neue", Arial, sans-serif;
   line-height: 1.5em; }
 
-p, ol, ul, pre {
+p,
+ol,
+ul,
+pre {
   padding-bottom: 20px; }
 
 p {
@@ -278,7 +405,7 @@ cite {
   height: 100px; }
 
 .content {
-  -webkit-animation-name: 'short-fade';
+  -webkit-animation-name: "short-fade";
   -webkit-animation-duration: 1.5s;
   -webkit-animation-iteration-count: 1;
   -webkit-animation-direction: alternate; }
@@ -306,7 +433,7 @@ cite {
     padding: 0;
     list-style-type: none; }
     .index ul li {
-      font-family: "League Gothic", Helvetica, Sans-serif;
+      font-family: league-gothic, Helvetica, Sans-serif;
       font-size: 60px;
       text-transform: uppercase;
       line-height: 0.8em;
@@ -315,7 +442,7 @@ cite {
         word-spacing: 0; }
         .index ul li article.post h1 {
           font-weight: normal;
-          font-family: "League Gothic", Helvetica, Sans-serif;
+          font-family: league-gothic, Helvetica, Sans-serif;
           font-size: 60px;
           text-transform: uppercase; }
           .index ul li article.post h1 a {
