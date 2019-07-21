@@ -151,6 +151,7 @@ export default class extends React.Component {
         <Header
           styles={styles.header}
           previous="/the-reason-la-noire-changes-everything"
+          next="/build-2011"
         />
 
         <article className={styles.content}>
