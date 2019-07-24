@@ -1,8 +1,10 @@
 @import url("https://use.typekit.net/bsk3qna.css");
 
 .header {
-  a {
-    color: #db241e;
+  li {
+    a {
+      color: #db241e;
+    }
   }
   border-bottom: 1px solid #db241e;
 }
@@ -40,10 +42,11 @@
       font-family: "Gill Sans", sans-serif;
       text-align: center;
       text-transform: uppercase;
-      padding: 6px 0;
+      padding: 0;
       font-weight: normal;
       top: 215px;
       width: 410px;
+      height: 72px;
     }
     @media screen and (max-width: 400px) {
       width: 270px;
