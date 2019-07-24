@@ -13,6 +13,8 @@ export default class extends React.Component {
 
   render() {
     const posts = [
+      "Moving On",
+      "The Medium And The Message",
       "The Entire History Of Everyone",
       "Build 2011",
       "Teaching the Web",

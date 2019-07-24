@@ -72,6 +72,7 @@ export default class extends React.Component {
         <Header
           styles={styles.header}
           previous="/the-entire-history-of-everyone"
+          next="/moving-on"
         />
 
         <article className={styles.content}>
