@@ -3,7 +3,7 @@
   .header li a {
     color: #1eb4dc; }
 
-article header {
+.content header {
   width: 100%;
   background-image: url("./waterfront.jpg");
   background-position: center center;
@@ -12,7 +12,7 @@ article header {
   height: 250px;
   margin: 50px auto;
   padding-top: 50px; }
-  article header h1 {
+  .content header h1 {
     margin: 0 auto;
     background: #fff url("./build_logo.png") no-repeat center center;
     width: 150px;

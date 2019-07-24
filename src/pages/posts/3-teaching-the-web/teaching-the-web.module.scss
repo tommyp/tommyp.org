@@ -12,31 +12,31 @@ $main-ff: "sorts-mill-goudy", Paltino, Georgia;
   border-bottom: 1px solid #dd1f1f;
 }
 
-p,
-li,
-blockquote {
-  font-family: $main-ff;
-  font-size: 18px;
-}
-
-blockquote {
-  border-left: 4px solid #dd1f1f;
-}
-
-code {
-  display: block;
-  margin: 15px 0;
-}
-
 .title {
   font-family: $header-ff;
   color: #dd1f1f;
   text-align: center;
   font-size: 5em;
 }
+
 .main {
   margin: 20px auto;
   max-width: 37.5em;
+  p,
+  li,
+  blockquote {
+    font-family: $main-ff;
+    font-size: 18px;
+  }
+
+  blockquote {
+    border-left: 4px solid #dd1f1f;
+  }
+
+  code {
+    display: block;
+    margin: 15px 0;
+  }
   h2 {
     font-family: $header-ff;
     color: #dd1f1f;

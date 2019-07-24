@@ -5,19 +5,6 @@
 .header {
   border-bottom: 1px solid #dd1f1f; }
 
-p,
-li,
-blockquote {
-  font-family: "sorts-mill-goudy", Paltino, Georgia;
-  font-size: 18px; }
-
-blockquote {
-  border-left: 4px solid #dd1f1f; }
-
-code {
-  display: block;
-  margin: 15px 0; }
-
 .title {
   font-family: "felt-tip-roman", Cursive;
   color: #dd1f1f;
@@ -27,6 +14,16 @@ code {
 .main {
   margin: 20px auto;
   max-width: 37.5em; }
+  .main p,
+  .main li,
+  .main blockquote {
+    font-family: "sorts-mill-goudy", Paltino, Georgia;
+    font-size: 18px; }
+  .main blockquote {
+    border-left: 4px solid #dd1f1f; }
+  .main code {
+    display: block;
+    margin: 15px 0; }
   .main h2 {
     font-family: "felt-tip-roman", Cursive;
     color: #dd1f1f;

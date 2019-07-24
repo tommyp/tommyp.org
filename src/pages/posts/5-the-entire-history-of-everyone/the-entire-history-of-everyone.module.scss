@@ -1,0 +1,86 @@
+@import url("https://use.typekit.net/qdj1kyu.css");
+
+$liquor-ff: "liquor-store", "Helvetica Neue", Arial, Sans-serif;
+$body-ff: "ff-meta-web-pro", Helvetica, Sans-serif;
+$meta-ff: "ff-meta-serif-web-pro", Georgia, Serif;
+
+.header {
+  border-bottom: 1px solid #fff;
+  li {
+    a {
+      color: #fff;
+    }
+  }
+}
+
+.earth {
+  background-image: url("./earth.png");
+  background-size: cover;
+  height: 300px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.content {
+  color: #fff;
+  width: 100%;
+  margin: 50px auto;
+}
+
+.title {
+  font-size: 88px;
+  font-family: $liquor-ff;
+  text-align: center;
+}
+
+.sagan {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  blockquote,
+  cite {
+    border-left: none;
+    font-family: $meta-ff;
+  }
+  blockquote {
+    padding: 1em;
+    font-size: 1.618em;
+    text-align: center;
+  }
+  cite {
+    font-style: normal;
+    text-align: center;
+  }
+}
+
+.main {
+  max-width: 500px;
+  margin: 0 auto;
+  p {
+    font-family: $body-ff;
+    font-size: 1.2em;
+  }
+  a {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    &:hover {
+      color: #000;
+      background: #fff;
+      border-bottom: 1px solid #fff;
+    }
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .content {
+    header {
+      h1 {
+        font-size: 60px;
+      }
+    }
+  }
+  .sagan {
+    blockquote {
+      font-size: 1.3em;
+    }
+  }
+}

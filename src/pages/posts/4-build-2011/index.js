@@ -47,7 +47,11 @@ export default class extends React.Component {
   render() {
     return (
       <div className={styles.container}>
-        <Header styles={styles.header} previous="/teaching-the-web" />
+        <Header
+          styles={styles.header}
+          previous="/teaching-the-web"
+          next="/the-entire-history-of-everyone"
+        />
 
         <article className={styles.content}>
           <header>
