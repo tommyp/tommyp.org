@@ -13,6 +13,7 @@ import TheMediumAndTheMessage from "./pages/posts/6-the-medium-and-the-message";
 import MovingOn from "./pages/posts/7-moving-on";
 import JuniorDeveloper from "./pages/posts/8-junior-developer";
 import Firebreak from "./pages/posts/9-firebreak";
+import BeMoreStupid from "./pages/posts/10-be-more-stupid";
 
 class App extends Component {
   render() {
@@ -26,7 +27,7 @@ class App extends Component {
             <Route path="/" exact component={Index} />
             <Route path="/about/" component={About} />
 
-            {/* <Route path="/firebreak" exact component={Firebreak} /> */}
+            <Route path="/be-more-stupid" exact component={BeMoreStupid} />
             <Route path="/firebreak" exact component={Firebreak} />
             <Route path="/junior-developer" exact component={JuniorDeveloper} />
             <Route path="/moving-on" exact component={MovingOn} />
