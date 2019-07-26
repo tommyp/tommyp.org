@@ -13,6 +13,9 @@ export default class extends React.Component {
 
   render() {
     const posts = [
+      "Be More Stupid",
+      "Firebreak",
+      "Junior Developer",
       "Moving On",
       "The Medium And The Message",
       "The Entire History Of Everyone",

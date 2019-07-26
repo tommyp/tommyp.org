@@ -1,0 +1,46 @@
+@import url("https://use.typekit.net/swl5ylw.css");
+.title {
+  margin-top: 75px; }
+  .title h1 {
+    font-family: "futura-pt", "Helvetica Neue", Arial, Sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    background: #0b0c0c;
+    font-size: 88px;
+    text-align: center;
+    margin: 0;
+    padding: 1em 0;
+    font-weight: normal; }
+
+.main {
+  max-width: 680px;
+  margin: 75px auto;
+  color: #0b0c0c;
+  font-family: "jaf-facitweb", "Helvetica Neue", Arial, Sans-serif; }
+  .main h2,
+  .main h3,
+  .main h4 {
+    font-family: "futura-pt", "Helvetica Neue", Arial, Sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 1.5em 0 0.5em 0; }
+  .main h2 {
+    font-size: 54px; }
+  .main h3 {
+    font-size: 38px; }
+  .main h4 {
+    font-size: 26px; }
+  .main p,
+  .main li {
+    font-size: 18px;
+    font-family: "jaf-facitweb", "Helvetica Neue", Arial, Sans-serif; }
+  .main blockquote {
+    border-left: none;
+    padding: 0 1em; }
+
+@media screen and (max-width: 700px) {
+  .content header h1 {
+    font-size: 50px; }
+  .content .main h2 {
+    font-size: 27px; } }

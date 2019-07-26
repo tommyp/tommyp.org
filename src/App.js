@@ -11,6 +11,8 @@ import Build2011 from "./pages/posts/4-build-2011";
 import TheEntireHistoryOfEveryone from "./pages/posts/5-the-entire-history-of-everyone";
 import TheMediumAndTheMessage from "./pages/posts/6-the-medium-and-the-message";
 import MovingOn from "./pages/posts/7-moving-on";
+import JuniorDeveloper from "./pages/posts/8-junior-developer";
+import Firebreak from "./pages/posts/9-firebreak";
 
 class App extends Component {
   render() {
@@ -24,6 +26,9 @@ class App extends Component {
             <Route path="/" exact component={Index} />
             <Route path="/about/" component={About} />
 
+            {/* <Route path="/firebreak" exact component={Firebreak} /> */}
+            <Route path="/firebreak" exact component={Firebreak} />
+            <Route path="/junior-developer" exact component={JuniorDeveloper} />
             <Route path="/moving-on" exact component={MovingOn} />
             <Route
               path="/the-medium-and-the-message"
