@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Index from "./pages/index";
-import About from "./pages/posts/about";
+import Info from "./pages/info";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
 import { Helmet } from "react-helmet";
@@ -25,7 +25,7 @@ class App extends Component {
         <Router>
           <div>
             <Route path="/" exact component={Index} />
-            <Route path="/about/" component={About} />
+            <Route path="/info/" component={Info} />
 
             <Route path="/be-more-stupid" exact component={BeMoreStupid} />
             <Route path="/firebreak" exact component={Firebreak} />
