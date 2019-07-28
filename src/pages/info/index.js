@@ -21,7 +21,10 @@ export default class extends React.Component {
 
         <section className={styles.info}>
           <section className={styles.avatar}>
-            <img src="/images/bangface.jpg" />
+            <img
+              alt="Me, wearing a necklace of glowsticks."
+              src="/images/bangface.jpg"
+            />
           </section>
           <section className={styles.main}>
             <ReactMarkdown source={content} />

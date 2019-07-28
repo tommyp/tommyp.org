@@ -160,7 +160,7 @@ export default class extends React.Component {
   render() {
     return (
       <div className={styles.container}>
-        <Header styles={styles.header} previous="/be-more-stupid" />
+        <Header styles={styles.header} previous="/junior-developer" />
 
         <article className={styles.content}>
           <header className={styles.title}>
