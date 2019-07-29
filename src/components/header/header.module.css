@@ -40,9 +40,6 @@
     padding: 0;
     list-style: none;
     display: inline; }
-    .nav ul li {
-      display: inline;
-      margin-right: 16px; }
 
 .nextPrevious {
   float: right;

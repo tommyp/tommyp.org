@@ -440,7 +440,8 @@ cite {
           font-weight: normal;
           font-family: league-gothic, Helvetica, Sans-serif;
           font-size: 60px;
-          text-transform: uppercase; }
+          text-transform: uppercase;
+          padding: 0; }
           .index ul li article.post h1 a {
             border-bottom: none; }
 

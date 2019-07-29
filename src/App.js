@@ -14,6 +14,7 @@ import MovingOn from "./pages/posts/7-moving-on";
 import JuniorDeveloper from "./pages/posts/8-junior-developer";
 import Firebreak from "./pages/posts/9-firebreak";
 import BeMoreStupid from "./pages/posts/10-be-more-stupid";
+import work from "./pages/work";
 
 class App extends Component {
   render() {
@@ -26,6 +27,7 @@ class App extends Component {
           <div>
             <Route path="/" exact component={Index} />
             <Route path="/info/" component={Info} />
+            <Route path="/work/" component={work} />
 
             <Route path="/be-more-stupid" exact component={BeMoreStupid} />
             <Route path="/firebreak" exact component={Firebreak} />

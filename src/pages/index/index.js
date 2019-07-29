@@ -42,8 +42,8 @@ export default class extends React.Component {
                 />
 
                 <ul>
-                  {posts.map(post => (
-                    <li>
+                  {posts.map((post, i) => (
+                    <li key={i}>
                       <article className={styles.post}>
                         <h1>
                           <Link to={parameterize(post)}>{post}</Link>
