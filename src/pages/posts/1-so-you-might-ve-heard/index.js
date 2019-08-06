@@ -1,5 +1,6 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
+import Helmet from "react-helmet";
 import Header from "../../../components/header";
 import styles from "./so-you-might-ve-heard.module.css";
 
@@ -28,20 +29,25 @@ export default class extends React.Component {
 
   render() {
     return (
-      <div className={styles.container}>
-        <Header
-          styles={styles.header}
-          next="/the-reason-la-noire-changes-everything"
-        />
+      <React.Fragment>
+        <Helmet>
+          <title>Tommy Palmer | So You Might've Heard</title>
+        </Helmet>
+        <div className={styles.container}>
+          <Header
+            styles={styles.header}
+            next="/the-reason-la-noire-changes-everything"
+          />
 
-        <article className={styles.content}>
-          <h1 className={styles.title}>So you might have heard...</h1>
-          <h2 className={styles.subtitle}>I'm becoming a Rumbler.</h2>
-          <section className={styles.main}>
-            <ReactMarkdown source={post} />
-          </section>
-        </article>
-      </div>
+          <article className={styles.content}>
+            <h1 className={styles.title}>So you might have heard...</h1>
+            <h2 className={styles.subtitle}>I'm becoming a Rumbler.</h2>
+            <section className={styles.main}>
+              <ReactMarkdown source={post} />
+            </section>
+          </article>
+        </div>
+      </React.Fragment>
     );
   }
 }

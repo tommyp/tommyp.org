@@ -1,5 +1,6 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
+import Helmet from "react-helmet";
 import Header from "./../../../components/header";
 import styles from "./the-entire-history-of-everyone.module.css";
 
@@ -44,30 +45,35 @@ export default class extends React.Component {
 
   render() {
     return (
-      <div className={styles.container}>
-        <Header
-          styles={styles.header}
-          previous="/build-2011"
-          next="/the-medium-and-the-message"
-        />
+      <React.Fragment>
+        <Helmet>
+          <title>Tommy Palmer | The Entire History Of Everyone</title>
+        </Helmet>
+        <div className={styles.container}>
+          <Header
+            styles={styles.header}
+            previous="/build-2011"
+            next="/the-medium-and-the-message"
+          />
 
-        <article className={styles.content}>
-          <header>
-            <div className={styles.earth} />
-            <h1 className={styles.title}>The Entire History Of Everyone</h1>
-          </header>
-          <section className={styles.sagan}>
-            <blockquote>
-              "All of the books in the world contain no more information than is
-              broadcast as video in a single large American city in a single
-              year. Not all bits have equal value." – Carl Sagan
+          <article className={styles.content}>
+            <header>
+              <div className={styles.earth} />
+              <h1 className={styles.title}>The Entire History Of Everyone</h1>
+            </header>
+            <section className={styles.sagan}>
+              <blockquote>
+                "All of the books in the world contain no more information than is
+                broadcast as video in a single large American city in a single
+                year. Not all bits have equal value." – Carl Sagan
             </blockquote>
-          </section>
-          <section className={styles.main}>
-            <ReactMarkdown source={post} />
-          </section>
-        </article>
-      </div>
+            </section>
+            <section className={styles.main}>
+              <ReactMarkdown source={post} />
+            </section>
+          </article>
+        </div>
+      </React.Fragment>
     );
   }
 }

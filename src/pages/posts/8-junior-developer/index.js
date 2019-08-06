@@ -1,5 +1,6 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
+import Helmet from "react-helmet";
 import Header from "./../../../components/header";
 import styles from "./junior-developer.module.css";
 
@@ -112,22 +113,27 @@ export default class extends React.Component {
 
   render() {
     return (
-      <div className={styles.container}>
-        <Header
-          styles={styles.header}
-          previous="/moving-on"
-          next="/firebreak"
-        />
+      <React.Fragment>
+        <Helmet>
+          <title>Tommy Palmer | Junior Developer</title>
+        </Helmet>
+        <div className={styles.container}>
+          <Header
+            styles={styles.header}
+            previous="/moving-on"
+            next="/firebreak"
+          />
 
-        <article className={styles.content}>
-          <header className={styles.title}>
-            <h1>Junior Developer</h1>
-          </header>
-          <section className={styles.main}>
-            <ReactMarkdown source={post} />
-          </section>
-        </article>
-      </div>
+          <article className={styles.content}>
+            <header className={styles.title}>
+              <h1>Junior Developer</h1>
+            </header>
+            <section className={styles.main}>
+              <ReactMarkdown source={post} />
+            </section>
+          </article>
+        </div>
+      </React.Fragment>
     );
   }
 }

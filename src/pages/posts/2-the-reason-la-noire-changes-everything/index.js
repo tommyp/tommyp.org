@@ -30,25 +30,29 @@ export default class extends React.Component {
 
   render() {
     return (
-      <div className={styles.container}>
-        <Helmet />
-        <Header
-          styles={styles.header}
-          previous="/so-you-might-ve-heard"
-          next="teaching-the-web"
-        />
-        <div className={styles.cole} />
-        <article className={styles.content}>
-          <h1 className={styles.title}>
-            The Reason
+      <React.Fragment>
+        <Helmet>
+          <title>Tommy Palmer | The Reason LA Noire Changes Everything</title>
+        </Helmet>
+        <div className={styles.container}>
+          <Header
+            styles={styles.header}
+            previous="/so-you-might-ve-heard"
+            next="teaching-the-web"
+          />
+          <div className={styles.cole} />
+          <article className={styles.content}>
+            <h1 className={styles.title}>
+              The Reason
             <span>LA Noire</span>
-            Changes Everything
+              Changes Everything
           </h1>
-          <section className={styles.main}>
-            <ReactMarkdown source={post} />
-          </section>
-        </article>
-      </div>
+            <section className={styles.main}>
+              <ReactMarkdown source={post} />
+            </section>
+          </article>
+        </div>
+      </React.Fragment>
     );
   }
 }

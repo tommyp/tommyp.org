@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./../../components/header";
+import Helmet from "react-helmet";
 import ReactMarkdown from "react-markdown";
 import styles from "./info.module.css";
 
@@ -17,6 +18,9 @@ export default class extends React.Component {
   render() {
     return (
       <React.Fragment>
+        <Helmet>
+          <title>Tommy Palmer | Info</title>
+        </Helmet>
         <Header />
 
         <section className={styles.info}>

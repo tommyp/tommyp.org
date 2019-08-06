@@ -1,5 +1,6 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
+import Helmet from "react-helmet";
 import Header from "./../../../components/header";
 import styles from "./firebreak.module.css";
 
@@ -90,22 +91,27 @@ export default class extends React.Component {
 
   render() {
     return (
-      <div className={styles.container}>
-        <Header
-          styles={styles.header}
-          previous="/junior-developer"
-          next="/be-more-stupid"
-        />
+      <React.Fragment>
+        <Helmet>
+          <title>Tommy Palmer | Firebreak</title>
+        </Helmet>
+        <div className={styles.container}>
+          <Header
+            styles={styles.header}
+            previous="/junior-developer"
+            next="/be-more-stupid"
+          />
 
-        <article className={styles.content}>
-          <header className={styles.title}>
-            <h1>Firebreak</h1>
-          </header>
-          <section className={styles.main}>
-            <ReactMarkdown source={post} />
-          </section>
-        </article>
-      </div>
+          <article className={styles.content}>
+            <header className={styles.title}>
+              <h1>Firebreak</h1>
+            </header>
+            <section className={styles.main}>
+              <ReactMarkdown source={post} />
+            </section>
+          </article>
+        </div>
+      </React.Fragment>
     );
   }
 }

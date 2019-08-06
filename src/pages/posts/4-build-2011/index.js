@@ -1,5 +1,6 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
+import Helmet from "react-helmet";
 import Header from "./../../../components/header";
 import styles from "./build-2011.module.css";
 
@@ -46,27 +47,32 @@ export default class extends React.Component {
 
   render() {
     return (
-      <div className={styles.container}>
-        <Header
-          styles={styles.header}
-          previous="/teaching-the-web"
-          next="/the-entire-history-of-everyone"
-        />
+      <React.Fragment>
+        <Helmet>
+          <title>Tommy Palmer | Build 2011</title>
+        </Helmet>
+        <div className={styles.container}>
+          <Header
+            styles={styles.header}
+            previous="/teaching-the-web"
+            next="/the-entire-history-of-everyone"
+          />
 
-        <article className={styles.content}>
-          <header>
-            <h1 className={styles.title}>Build 2011</h1>
-          </header>
-          <section className={styles.main}>
-            <ReactMarkdown source={post} />
-            <cite>
-              <ReactMarkdown
-                source={`All photos from [Filly C](http://twitter.com/fillyc)`}
-              />
-            </cite>
-          </section>
-        </article>
-      </div>
+          <article className={styles.content}>
+            <header>
+              <h1 className={styles.title}>Build 2011</h1>
+            </header>
+            <section className={styles.main}>
+              <ReactMarkdown source={post} />
+              <cite>
+                <ReactMarkdown
+                  source={`All photos from [Filly C](http://twitter.com/fillyc)`}
+                />
+              </cite>
+            </section>
+          </article>
+        </div>
+      </React.Fragment>
     );
   }
 }

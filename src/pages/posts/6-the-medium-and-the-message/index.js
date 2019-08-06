@@ -1,5 +1,6 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
+import Helmet from "react-helmet";
 import Header from "./../../../components/header";
 import styles from "./the-medium-and-the-message.module.css";
 
@@ -68,22 +69,27 @@ export default class extends React.Component {
 
   render() {
     return (
-      <div className={styles.container}>
-        <Header
-          styles={styles.header}
-          previous="/the-entire-history-of-everyone"
-          next="/moving-on"
-        />
+      <React.Fragment>
+        <Helmet>
+          <title>Tommy Palmer | The Medium And The Message</title>
+        </Helmet>
+        <div className={styles.container}>
+          <Header
+            styles={styles.header}
+            previous="/the-entire-history-of-everyone"
+            next="/moving-on"
+          />
 
-        <article className={styles.content}>
-          <header className={styles.title}>
-            <h1>The Medium And The Message</h1>
-          </header>
-          <section className={styles.main}>
-            <ReactMarkdown source={post} />
-          </section>
-        </article>
-      </div>
+          <article className={styles.content}>
+            <header className={styles.title}>
+              <h1>The Medium And The Message</h1>
+            </header>
+            <section className={styles.main}>
+              <ReactMarkdown source={post} />
+            </section>
+          </article>
+        </div>
+      </React.Fragment>
     );
   }
 }
