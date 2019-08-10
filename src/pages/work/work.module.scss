@@ -1,0 +1,39 @@
+@mixin project {
+}
+
+.work {
+  section {
+    padding-top: 40px;
+    width: 100%;
+    .container {
+      margin: 0 auto;
+      width: 1024px;
+      max-width: 1024px;
+      article {
+        max-width: 400px;
+      }
+    }
+  }
+}
+
+.wtf {
+  font-family: Helvetica, Arial, Sans-serif;
+  background-image: url("/public/images/work/wtf.png");
+  h1,
+  h2 {
+    text-transform: uppercase;
+  }
+}
+
+.work {
+}
+
+.deliveroo {
+  color: #fff;
+  background-color: #00ccbc;
+  background-image: url("/public/images/work/deliveroo.png");
+  a {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+  }
+}

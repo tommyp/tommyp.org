@@ -4,8 +4,15 @@ import styles from "./header.module.css";
 
 export default class extends React.Component {
   render() {
+    let headerClass;
+    if (this.props.styles) {
+      headerClass = styles.header + " " + this.props.styles;
+    } else {
+      headerClass = styles.header;
+    }
+
     return (
-      <header className={styles.header + " " + this.props.styles}>
+      <header className={headerClass}>
         <nav className={styles.nav}>
           <ul>
             <li>

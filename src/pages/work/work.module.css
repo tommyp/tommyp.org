@@ -1,0 +1,24 @@
+.work section {
+  padding-top: 40px;
+  width: 100%; }
+  .work section .container {
+    margin: 0 auto;
+    width: 1024px;
+    max-width: 1024px; }
+    .work section .container article {
+      max-width: 400px; }
+
+.wtf {
+  font-family: Helvetica, Arial, Sans-serif;
+  background-image: url("/public/images/work/wtf.png"); }
+  .wtf h1,
+  .wtf h2 {
+    text-transform: uppercase; }
+
+.deliveroo {
+  color: #fff;
+  background-color: #00ccbc;
+  background-image: url("/public/images/work/deliveroo.png"); }
+  .deliveroo a {
+    color: #fff;
+    border-bottom: 1px solid #fff; }
