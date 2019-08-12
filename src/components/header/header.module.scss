@@ -2,6 +2,12 @@
 // @import "./../../css/common";
 /* header */
 
+@font-face {
+  font-family: 'Pictos';
+  src: url('/fonts/pictos-web.eot');
+  src: url('/fonts/pictos-web.woff') format('woff'), url('/fonts/pictos-web.ttf') format('truetype'), url('/fonts/pictos-web.svg#webfontIyfZbseF') format('svg');
+}
+
 .header {
   max-width: 70em;
   border-bottom: 1px solid #1d1d1d;
@@ -72,7 +78,7 @@
   .header {
     margin-top: 0;
     padding-bottom: 6px;
-    .nav {
+    nav {
       width: 60%;
       ul {
         li {
@@ -92,22 +98,12 @@
               display: none;
             }
           }
-          a.home {
-          }
-          a.info {
-          }
-          a.prev {
-          }
-          a.next {
-          }
         }
       }
     }
-    .nav {
-      .article {
-        width: 120px;
-        margin-right: -6px;
-      }
+    .nextPrevious {
+      width: 130px;
+      margin-right: -6px;
     }
   }
 }

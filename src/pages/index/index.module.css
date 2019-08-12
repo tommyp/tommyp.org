@@ -456,7 +456,8 @@ cite {
     .index ul {
       max-width: 70%; }
       .index ul li {
-        font-size: 40px; }
+        font-size: 40px;
+        margin-bottom: 10px; }
         .index ul li article.post {
           line-height: 1.2em; }
           .index ul li article.post h1 {

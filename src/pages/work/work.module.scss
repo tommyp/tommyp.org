@@ -2,7 +2,6 @@
 }
 
 .work {
-  padding: 40px 0;
   width: 100%;
   max-width: 46.125em;
   margin: 4em auto 1em;
@@ -57,7 +56,12 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1024px) {
+  .work {
+    padding: 1.5em 0;
+    margin: 0 1.5em;
+    width: auto;
+  }
   .projects {
     section {
       div {
@@ -67,6 +71,12 @@
         article, img {
           max-width: 100%;
           margin: 0 auto;
+        }
+        article {
+          padding-bottom: 20px;
+        }
+        img {
+          width: auto;
         }
       }
     }

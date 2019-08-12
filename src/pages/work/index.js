@@ -23,9 +23,9 @@ I like building projects that mash APIs together in fun ways and I also like eat
     title: "Deliveroo",
     url: "https://www.deliveroo.co.uk",
     style: styles.deliveroo,
-    content: `When I started at Deliveroo, Engineering was 40 people and the whole codebase was in one Application. Now we're in 13 different markets and Engineering is nearly 10 times as big.
+    content: `When I started at Deliveroo, Engineering was 40 people and the whole codebase was in one Application. Now Engineering is nearly 10 times as big and there's a lot of microservices.
 
-I've worked on a lot of different projects there like porting the Menu page from Angular to React, allowing Restaurants to deliver food themselves and decomping the listing page to a new Go Application. I even worked on a change that the Mayor of London, Sadiq Khan, [commented on](https://twitter.com/sadiqkhan/status/969239476760383488?lang=en).
+I've worked on a lot of different projects there, like porting the Menu page from Angular to React, allowing Restaurants to deliver food themselves and decomping the listing page to a new Go Application. I even worked on a change that the Mayor of London, Sadiq Khan, [commented on](https://twitter.com/sadiqkhan/status/969239476760383488?lang=en).
     `,
     img: "/images/work/deliveroo.png"
   }
@@ -72,9 +72,7 @@ export default class extends React.Component {
                   <ReactMarkdown source={project.content} />
                   <a href={project.url}>{project.url.replace("https://www.", "")}</a>
                 </article>
-                <a href={project.url}>
-                  <img src={project.img} alt={project.title} />
-                </a>
+                <img src={project.img} alt={project.title} />
               </div>
             </section>
           ))}

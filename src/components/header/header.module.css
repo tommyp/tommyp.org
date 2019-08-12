@@ -1,4 +1,9 @@
 /* header */
+@font-face {
+  font-family: 'Pictos';
+  src: url("/fonts/pictos-web.eot");
+  src: url("/fonts/pictos-web.woff") format("woff"), url("/fonts/pictos-web.ttf") format("truetype"), url("/fonts/pictos-web.svg#webfontIyfZbseF") format("svg"); }
+
 .header {
   max-width: 70em;
   border-bottom: 1px solid #1d1d1d;
@@ -54,24 +59,24 @@
   .header {
     margin-top: 0;
     padding-bottom: 6px; }
-    .header .nav {
+    .header nav {
       width: 60%; }
-      .header .nav ul li {
+      .header nav ul li {
         text-transform: none;
         margin-right: 8px; }
-        .header .nav ul li a {
+        .header nav ul li a {
           height: 100%;
           max-width: 40px;
           display: inline-block; }
-          .header .nav ul li a:before {
+          .header nav ul li a:before {
             font-family: "Pictos";
             content: attr(data-icon);
             font-size: 40px;
             width: 40px; }
-          .header .nav ul li a span {
+          .header nav ul li a span {
             display: none; }
-    .header .nav .article {
-      width: 120px;
+    .header .nextPrevious {
+      width: 130px;
       margin-right: -6px; } }
 
 @media screen and (max-width: 1160px) {

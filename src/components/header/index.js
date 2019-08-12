@@ -36,12 +36,12 @@ export default class extends React.Component {
           <ul>
             {this.props.previous && (
               <li className="previous">
-                <Link to={this.props.previous}>Previous</Link>
+                <Link to={this.props.previous} data-icon="["><span>Previous</span></Link>
               </li>
             )}
             {this.props.next && (
               <li className="next">
-                <Link to={this.props.next}>Next</Link>
+                <Link to={this.props.next} data-icon="]"><span>Next</span></Link>
               </li>
             )}
           </ul>
