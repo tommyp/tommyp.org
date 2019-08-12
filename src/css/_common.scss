@@ -108,6 +108,9 @@
   a:hover {
     text-decoration: none;
   }
+  a img {
+    border: none;
+  }
   strong {
     font-weight: bold;
   }
@@ -458,6 +461,17 @@ a:hover {
   -moz-transition: 0.3s linear;
   -o-transition: 0.3s linear;
 }
+
+a img:parent { border: 0; }
+
+// img {
+//   @at-root a {
+//     border: 0;
+//     &:hover {
+//       border: 0;
+//     }
+//   }
+// }
 
 blockquote {
   font-family: Georgia, Serif;

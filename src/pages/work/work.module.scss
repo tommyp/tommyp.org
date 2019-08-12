@@ -2,6 +2,17 @@
 }
 
 .work {
+  padding: 40px 0;
+  width: 100%;
+  max-width: 46.125em;
+  margin: 4em auto 1em;
+  padding: 1.5em;
+  p {
+    font-size: 1.4em;
+  }
+}
+
+.projects {
   section {
     padding: 40px 0;
     width: 100%;
@@ -16,6 +27,9 @@
       img  {
         width: 500px;
       }
+      h2 a {
+        border-bottom: none;
+      }
     }
   }
 
@@ -23,10 +37,10 @@
 
 .wtf {
   background: #fff;
-  font-family: Helvetica, Arial, Sans-serif;
   background-image: url("/public/images/work/wtf.png");
   h1,
   h2 {
+    font-family: Helvetica, Arial, Sans-serif;
     text-transform: uppercase;
   }
 }
@@ -35,14 +49,16 @@
   color: #fff;
   background-color: #00ccbc;
   background-image: url("/public/images/work/deliveroo.png");
-  a {
-    color: #fff;
-    border-bottom: 1px solid #fff;
+  article {
+    a {
+      color: #fff;
+      border-bottom: 1px solid #fff;
+    }
   }
 }
 
 @media screen and (max-width: 500px) {
-  .work {
+  .projects {
     section {
       div {
         display: block;

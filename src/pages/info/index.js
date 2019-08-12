@@ -10,11 +10,15 @@ I'm a Software Engineer who works at [Deliveroo](https://deliveroo.co.uk/). I us
 
 I write Ruby, Go, Elixir and Javascript.
 
-I spend my days [coding](https://github.com/tommyp), [playing electronic music](https://soundcloud.com/dj-bi-furious/likes), [tweeting](http://twitter.com/tommypalm) and [exploring London](http://foursquare.com/tommypalm).
+I spend my days [coding](https://github.com/tommyp), [playing electronic music](https://soundcloud.com/dj-bi-furious), [tweeting](http://twitter.com/tommypalm) and [exploring London](http://foursquare.com/tommypalm).
 
 Say hello - [hi@tommyp.org](mailto:hi@tommyp.org).`;
 
 export default class extends React.Component {
+  componentWillMount() {
+    document.body.style.backgroundColor = "#fff";
+  }
+
   render() {
     return (
       <React.Fragment>
