@@ -3,29 +3,32 @@
 
 .work {
   section {
-    padding-top: 40px;
+    padding: 40px 0;
     width: 100%;
-    .container {
+    div {
       margin: 0 auto;
       width: 1024px;
-      max-width: 1024px;
+      display: flex;
+      justify-content: space-between;
       article {
-        max-width: 400px;
+        width: 500px;
+      }
+      img  {
+        width: 500px;
       }
     }
   }
+
 }
 
 .wtf {
+  background: #fff;
   font-family: Helvetica, Arial, Sans-serif;
   background-image: url("/public/images/work/wtf.png");
   h1,
   h2 {
     text-transform: uppercase;
   }
-}
-
-.work {
 }
 
 .deliveroo {
@@ -35,5 +38,21 @@
   a {
     color: #fff;
     border-bottom: 1px solid #fff;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .work {
+    section {
+      div {
+        display: block;
+        width: auto;
+        padding: 20px;
+        article, img {
+          max-width: 100%;
+          margin: 0 auto;
+        }
+      }
+    }
   }
 }

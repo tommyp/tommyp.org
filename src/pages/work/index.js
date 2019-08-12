@@ -27,6 +27,10 @@ const work = [
 ];
 
 export default class extends React.Component {
+  componentWillMount() {
+    document.body.style.backgroundColor = "#eee";
+  }
+
   render() {
     return (
       <React.Fragment>
@@ -36,30 +40,32 @@ export default class extends React.Component {
         <Header />
         <section className={styles.work}>
           <section>
-            <div class="container">
-              <p>
-                I work with Ruby, Go, Elixir and JavaScript. I enjoy working on
-                user facing features by collaborating with designers, user
-                researchers and product managers.
-              </p>
-              <p>
-                I'm currently a Senior Software Engineer at Deliveroo working on
-                the consumer ordering flow. I previously worked at GOV.UK.
-              </p>
-              <p>
-                Here is my <a href="/cv.pdf">CV</a>.
-              </p>
-              <p>Below is some of the work I've done.</p>
+            <div>
+              <article>
+                <p>
+                  I work with Ruby, Go, Elixir and JavaScript. I enjoy working on
+                  user facing features by collaborating with designers, user
+                  researchers and product managers.
+                </p>
+                <p>
+                  I'm currently a Senior Software Engineer at Deliveroo working on
+                  the consumer ordering flow. I previously worked at GOV.UK.
+                </p>
+                <p>
+                  Here is my <a href="/cv.pdf">CV</a>.
+                </p>
+                <p>Below is some of the work I've done.</p>
+              </article>
             </div>
           </section>
           {work.map((project, i) => (
             <section key={i} className={project.style}>
-              <div className="container">
+              <div>
                 <article>
                   <h2>{project.title}</h2>
                   <ReactMarkdown source={project.content} />
                 </article>
-                <img src={project.img} />
+                <img src={project.img} alt={project.title} />
               </div>
             </section>
           ))}
