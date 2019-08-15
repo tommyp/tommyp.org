@@ -45,7 +45,8 @@
 
 @media screen and (max-width: 500px) {
   .main {
-    margin: 0 1em; }
+    margin-top: 2em;
+    padding: 0 2em; }
   .container article {
     background: none;
     padding-top: 0; } }

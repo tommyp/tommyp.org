@@ -67,7 +67,8 @@ $rumble-headline: "futura-pt", "Helvetica Neue", Arial, Sans-serif;
 
 @media screen and (max-width: 500px) {
   .main {
-    margin: 0 1em;
+    margin-top: 2em;
+    padding: 0 2em;
   }
   .container {
     article {

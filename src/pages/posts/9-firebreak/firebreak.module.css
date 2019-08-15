@@ -53,5 +53,8 @@
 @media screen and (max-width: 700px) {
   .content header h1 {
     font-size: 50px; }
-  .content .main h2 {
-    font-size: 27px; } }
+  .content .main {
+    margin-top: 1em;
+    padding: 0 1em; }
+    .content .main h2 {
+      font-size: 27px; } }

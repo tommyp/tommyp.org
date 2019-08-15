@@ -7,6 +7,7 @@ $font-family: "jaf-facitweb", "Helvetica Neue", Arial, Sans-serif;
   font-family: $header-font-family;
   text-transform: uppercase;
   text-align: center;
+  font-weight: normal;
 }
 
 .title {
@@ -19,7 +20,6 @@ $font-family: "jaf-facitweb", "Helvetica Neue", Arial, Sans-serif;
     text-align: center;
     margin: 0;
     padding: 1em 0;
-    font-weight: normal;
   }
 }
 
@@ -68,7 +68,8 @@ $font-family: "jaf-facitweb", "Helvetica Neue", Arial, Sans-serif;
       }
     }
     .main {
-      margin: auto 1em;
+      margin-top: 2em;
+      padding: 0 2em;
       h2 {
         font-size: 27px;
       }
