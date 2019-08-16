@@ -1,0 +1,58 @@
+.header {
+  border-bottom: 1px solid #fff; }
+  .header li a {
+    color: #1eb4dc; }
+
+.content header {
+  width: 100%;
+  background-image: url("./waterfront.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+  margin: 50px auto;
+  padding-top: 50px; }
+  .content header h1 {
+    margin: 0 auto;
+    background: #fff url("./build_logo.png") no-repeat center center;
+    width: 150px;
+    height: 115px;
+    border-radius: 90px;
+    text-indent: -9999px; }
+
+.main {
+  margin: 0 auto;
+  max-width: 600px; }
+  .main h1,
+  .main h2,
+  .main h3 {
+    font-family: "kulturista-web", Georgia, Serif;
+    margin: 40px auto 0;
+    color: #1eb4dc;
+    font-weight: normal; }
+  .main p,
+  .main li,
+  .main blockquote {
+    font-family: ff-meta-serif-web-pro, Gerogia, Serif;
+    color: #fff;
+    font-size: 18px; }
+  .main a {
+    color: #1eb4dc;
+    border-bottom: 1px solid #1eb4dc; }
+  .main img {
+    border: 1px solid #fff;
+    width: 100%; }
+  .main blockquote {
+    border-left: 3px solid #1eb4dc; }
+  .main cite {
+    font-style: normal; }
+    .main cite p {
+      font-size: 14px;
+      color: #555; }
+      .main cite p a {
+        color: #555;
+        border-bottom: 1px solid #555; }
+
+@media screen and (max-width: 600px) {
+  .main {
+    margin: 0 1em; } }

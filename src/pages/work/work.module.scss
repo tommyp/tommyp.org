@@ -1,0 +1,84 @@
+@mixin project {
+}
+
+.work {
+  width: 100%;
+  max-width: 46.125em;
+  margin: 4em auto 1em;
+  padding: 1.5em;
+  p {
+    font-size: 1.4em;
+  }
+}
+
+.projects {
+  section {
+    padding: 40px 0;
+    width: 100%;
+    div {
+      margin: 0 auto;
+      width: 1024px;
+      display: flex;
+      justify-content: space-between;
+      article {
+        width: 500px;
+      }
+      img  {
+        width: 500px;
+      }
+      h2 a {
+        border-bottom: none;
+      }
+    }
+  }
+
+}
+
+.wtf {
+  background: #fff;
+  background-image: url("/public/images/work/wtf.png");
+  h1,
+  h2 {
+    font-family: Helvetica, Arial, Sans-serif;
+    text-transform: uppercase;
+  }
+}
+
+.deliveroo {
+  color: #fff;
+  background-color: #00ccbc;
+  background-image: url("/public/images/work/deliveroo.png");
+  article {
+    a {
+      color: #fff;
+      border-bottom: 1px solid #fff;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .work {
+    padding: 1.5em 0;
+    margin: 0 1.5em;
+    width: auto;
+  }
+  .projects {
+    section {
+      div {
+        display: block;
+        width: auto;
+        padding: 20px;
+        article, img {
+          max-width: 100%;
+          margin: 0 auto;
+        }
+        article {
+          padding-bottom: 20px;
+        }
+        img {
+          width: auto;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,85 @@
+@import url("https://use.typekit.net/rhu0klk.css");
+.header {
+  border-bottom: 1px solid #2bd887; }
+
+.content header h1 {
+  font-family: "quatro", "Helvetica Neue", Arial, Sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-style: italic;
+  background: #83d8ef;
+  background: -moz-linear-gradient(top, #83d8ef 0%, #2bd887 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #83d8ef), color-stop(100%, #2bd887));
+  background: -webkit-linear-gradient(top, #83d8ef 0%, #2bd887 100%);
+  background: -o-linear-gradient(top, #83d8ef 0%, #2bd887 100%);
+  background: -ms-linear-gradient(top, #83d8ef 0%, #2bd887 100%);
+  background: linear-gradient(to bottom, #83d8ef 0%, #2bd887 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#83d8ef', endColorstr='#2bd887',GradientType=0 );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-size: 200px;
+  text-align: center;
+  margin: 0;
+  padding: 0.25em 0; }
+
+.main {
+  max-width: 680px;
+  margin: 0px auto;
+  font-family: "nimbus-sans", "Helvetica Neue", Arial, Sans-serif; }
+  .main p {
+    font-size: 20px; }
+  .main a {
+    color: #188552;
+    border-bottom: 1px solid #188552; }
+    .main a:hover {
+      color: #092e1d;
+      border-bottom: 1px solid #092e1d; }
+  .main h2,
+  .main h3,
+  .main h4 {
+    font-family: "quatro", "Helvetica Neue", Arial, Sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-style: italic;
+    background: #83d8ef;
+    background: -moz-linear-gradient(top, #83d8ef 0%, #2bd887 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #83d8ef), color-stop(100%, #2bd887));
+    background: -webkit-linear-gradient(top, #83d8ef 0%, #2bd887 100%);
+    background: -o-linear-gradient(top, #83d8ef 0%, #2bd887 100%);
+    background: -ms-linear-gradient(top, #83d8ef 0%, #2bd887 100%);
+    background: linear-gradient(to bottom, #83d8ef 0%, #2bd887 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#83d8ef', endColorstr='#2bd887',GradientType=0 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin: 1.5em 0 0.5em 0; }
+  .main h2 {
+    font-size: 54px; }
+  .main h3 {
+    font-size: 38px; }
+  .main h4 {
+    font-size: 26px; }
+  .main p,
+  .main li {
+    font-size: 18px;
+    font-family: "nimbus-sans", "Helvetica Neue", Arial, Sans-serif; }
+  .main blockquote {
+    border-left: none;
+    padding: 0 1em; }
+
+@media screen and (max-width: 1220px) {
+  .content header h1 {
+    font-size: 100px;
+    padding: 0.5em 0; } }
+
+@media screen and (max-width: 700px) {
+  .content header h1 {
+    font-size: 50px; }
+  .content .main {
+    margin-top: 0em;
+    padding: 0 1.5em; }
+    .content .main h2 {
+      font-size: 27px; } }

@@ -1,0 +1,52 @@
+@import url("https://use.typekit.net/kmu4ycw.css");
+.body {
+  background: #000; }
+
+.content {
+  background-image: url("./logo.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  margin-top: 40px;
+  padding-top: 300px; }
+  .content a {
+    color: #fff;
+    border-bottom: 1px solid #fff; }
+  .content p,
+  .content h1,
+  .content h2,
+  .content h3,
+  .content h4 {
+    color: #fff; }
+  .content h1 {
+    font-size: 1.95em;
+    letter-spacing: 0.22em;
+    text-transform: uppercase; }
+  .content h1,
+  .content h2 {
+    text-align: center; }
+  .content h1 {
+    font-family: "futura-pt", "Helvetica Neue", Arial, Sans-serif;
+    font-weight: bold; }
+  .content h2 {
+    font-family: "ff-tisa-web-pro", Palatino, Georgia, serif;
+    font-size: 17px; }
+  .content p {
+    font-family: "ff-tisa-web-pro", Palatino, Georgia, serif; }
+
+.main {
+  max-width: 30em;
+  font-size: 1em;
+  margin: 60px auto 0; }
+
+.header {
+  border-bottom: 1px solid #fff; }
+  .header li a {
+    color: #fff; }
+
+@media screen and (max-width: 500px) {
+  .main {
+    margin-top: 2em;
+    padding: 0 2em; }
+  .container article {
+    background: none;
+    padding-top: 0; } }

@@ -1,0 +1,88 @@
+@import url("https://use.typekit.net/oqd8dne.css");
+
+$futura-ff: "futura-pt", "Helvetica Neue", Arial, Sans-serif;
+$league-ff: "league-gothic", Helvetica, Sans-serif;
+$block-shadow: #1d1101;
+
+.container {
+  max-width: 70em;
+  background: #000;
+  margin: 0 auto;
+}
+
+.content {
+  margin-top: 80px;
+}
+
+.header {
+  border-bottom: 1px solid #fff;
+  li {
+    a {
+      color: #fff;
+    }
+  }
+}
+
+.main {
+  margin-top: 50px;
+  float: left;
+  max-width: 40em;
+  color: #fff;
+  a {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+  }
+}
+
+.cole {
+  float: right;
+  background-image: url("./cole.png");
+  height: 720px;
+  width: 30em;
+}
+
+.title {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: $futura-ff;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 50px;
+  span {
+    font-weight: normal;
+    display: block;
+    font-family: $league-ff;
+    font-size: 200px;
+    color: #f4b319;
+    text-shadow: 0 0 100px #fff3cc, -1px 1px 0 $block-shadow,
+      -2px 2px 0 $block-shadow, -3px 3px 0 $block-shadow,
+      -4px 4px 0 $block-shadow, -5px 5px 0 $block-shadow,
+      -6px 6px 0 $block-shadow, -7px 7px 0 $block-shadow,
+      -8px 8px 0 $block-shadow, -9px 9px 0 $block-shadow,
+      -10px 10px 0 $block-shadow;
+  }
+}
+
+@media screen and (max-width: 1130px) {
+  .cole {
+    display: none;
+  }
+  .main {
+    article {
+      float: none;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    margin: 0 1em;
+    h1 {
+      span {
+        font-size: 8.125em;
+      }
+    }
+  }
+}
