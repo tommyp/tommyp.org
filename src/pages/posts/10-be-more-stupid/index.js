@@ -165,7 +165,7 @@ export default class extends React.Component {
           <title>Tommy Palmer | Be More Stupid</title>
         </Helmet>
         <div className={styles.container}>
-          <Header styles={styles.header} previous="/junior-developer" />
+          <Header styles={styles.header} previous="/firebreak" />
 
           <article className={styles.content}>
             <header className={styles.title}>
