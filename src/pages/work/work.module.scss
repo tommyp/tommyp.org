@@ -23,20 +23,18 @@
       article {
         width: 500px;
       }
-      img  {
-        width: 500px;
+      img {
+        height: 450px;
       }
       h2 a {
         border-bottom: none;
       }
     }
   }
-
 }
 
 .wtf {
   background: #fff;
-  background-image: url("/public/images/work/wtf.png");
   h1,
   h2 {
     font-family: Helvetica, Arial, Sans-serif;
@@ -47,7 +45,17 @@
 .deliveroo {
   color: #fff;
   background-color: #00ccbc;
-  background-image: url("/public/images/work/deliveroo.png");
+  article {
+    a {
+      color: #fff;
+      border-bottom: 1px solid #fff;
+    }
+  }
+}
+
+.gov {
+  color: #fff;
+  background-color: #005ea5;
   article {
     a {
       color: #fff;
@@ -68,7 +76,8 @@
         display: block;
         width: auto;
         padding: 20px;
-        article, img {
+        article,
+        img {
           max-width: 100%;
           margin: 0 auto;
         }

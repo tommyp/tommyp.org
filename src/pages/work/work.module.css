@@ -17,13 +17,12 @@
     .projects section div article {
       width: 500px; }
     .projects section div img {
-      width: 500px; }
+      height: 450px; }
     .projects section div h2 a {
       border-bottom: none; }
 
 .wtf {
-  background: #fff;
-  background-image: url("/public/images/work/wtf.png"); }
+  background: #fff; }
   .wtf h1,
   .wtf h2 {
     font-family: Helvetica, Arial, Sans-serif;
@@ -31,9 +30,15 @@
 
 .deliveroo {
   color: #fff;
-  background-color: #00ccbc;
-  background-image: url("/public/images/work/deliveroo.png"); }
+  background-color: #00ccbc; }
   .deliveroo article a {
+    color: #fff;
+    border-bottom: 1px solid #fff; }
+
+.gov {
+  color: #fff;
+  background-color: #005ea5; }
+  .gov article a {
     color: #fff;
     border-bottom: 1px solid #fff; }
 
@@ -46,7 +51,8 @@
     display: block;
     width: auto;
     padding: 20px; }
-    .projects section div article, .projects section div img {
+    .projects section div article,
+    .projects section div img {
       max-width: 100%;
       margin: 0 auto; }
     .projects section div article {

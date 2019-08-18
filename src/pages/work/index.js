@@ -28,6 +28,17 @@ I like building projects that mash APIs together in fun ways and I also like eat
 I've worked on a lot of different projects there, like porting the Menu page from Angular to React, allowing Restaurants to deliver food themselves and decomping the listing page to a new Go Application. I even worked on a change that the Mayor of London, Sadiq Khan, [commented on](https://twitter.com/sadiqkhan/status/969239476760383488?lang=en).
     `,
     img: "/images/work/deliveroo.png"
+  },
+  {
+    title: "GOV.UK",
+    url: "https://www.gov.uk",
+    style: styles.gov,
+    content: `Shortly after I moved to London I joined the team at the Government Digital Service working on GOV.UK. It was one of the [best experiences](/junior-developer) of my life. I learnt how to work as a Software Engineer and not just write code.
+
+Initially, as a part of the Transition project, my team and I were responsible for building Applications to support Government Departments from moving their content from their own, dispirate sites, to the unified GOV.UK site. This involved building [a publishing application](/be-more-stupid) and the [public facing application](/firebreak) for organisations like the [Competition and Market Authority](https://www.gov.uk/cma-cases).
+
+After that was finished, my team was disbanded into a number of different teams. I ended up joining the team which was working on preparing the site for the upcoming [General Election](https://en.wikipedia.org/wiki/2015_United_Kingdom_general_election). This involved tagging content with the Government it was published under, adding the ability to end a Government and publishing political content under the same [Application as Government Departments](https://www.gov.uk/search/news-and-communications).`,
+    img: "/images/work/gov.png"
   }
 ];
 
@@ -45,7 +56,6 @@ export default class extends React.Component {
         <Header />
 
         <section className={styles.work}>
-
           <article>
             <p>
               I work with Ruby, Go, Elixir and JavaScript. I enjoy working on
@@ -61,16 +71,19 @@ export default class extends React.Component {
             </p>
             <p>Below is some of the work I've done.</p>
           </article>
-
         </section>
         <section className={styles.projects}>
           {work.map((project, i) => (
             <section key={i} className={project.style}>
               <div>
                 <article>
-                  <h2><a href={project.url}>{project.title}</a></h2>
+                  <h2>
+                    <a href={project.url}>{project.title}</a>
+                  </h2>
                   <ReactMarkdown source={project.content} />
-                  <a href={project.url}>{project.url.replace("https://www.", "")}</a>
+                  <a href={project.url}>
+                    {project.url.replace("https://www.", "")}
+                  </a>
                 </article>
                 <img src={project.img} alt={project.title} />
               </div>
