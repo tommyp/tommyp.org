@@ -35,7 +35,7 @@ I've worked on a lot of different projects there, like porting the Menu page fro
     style: styles.gov,
     content: `Shortly after I moved to London I joined the team at the Government Digital Service working on GOV.UK. It was one of the [best experiences](/junior-developer) of my life. I learnt how to work as a Software Engineer and not just write code.
 
-Initially, as a part of the Transition project, my team and I were responsible for building Applications to support Government Departments from moving their content from their own, dispirate sites, to the unified GOV.UK site. This involved building [a publishing application](/be-more-stupid) and the [public facing application](/firebreak) for organisations like the [Competition and Market Authority](https://www.gov.uk/cma-cases).
+Initially, as a part of the Transition project, my team and I were responsible for building Applications to support Government Departments from moving their content from their own, disparate sites, to the unified GOV.UK site. This involved building [a publishing application](/be-more-stupid) and the [public facing application](/firebreak) for organisations like the [Competition and Market Authority](https://www.gov.uk/cma-cases).
 
 After that was finished, my team was disbanded into a number of different teams. I ended up joining the team which was working on preparing the site for the upcoming [General Election](https://en.wikipedia.org/wiki/2015_United_Kingdom_general_election). This involved tagging content with the Government it was published under, adding the ability to end a Government and publishing political content under the same [Application as Government Departments](https://www.gov.uk/search/news-and-communications).`,
     img: "/images/work/gov.png"
