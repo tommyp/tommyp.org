@@ -13,5 +13,10 @@
     "react-dom": "16.13.1",
     "reset-css": "^5.0.1",
     "sass": "^1.26.3"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.1.0",
+    "autoprefixer": "^9.7.5",
+    "tailwindcss": "^1.2.0"
   }
 }
