@@ -3,3 +3,15 @@
 @tailwind components;
 /* purgecss end ignore */
 @tailwind utilities;
+
+@font-face {
+  font-family: Karmilla;
+  font-weight: 400;
+  src: url(/public/fonts/karmilla/Karmilla-Regular.ttf) format("ttf");
+}
+
+@font-face {
+  font-family: Songer;
+  font-weight: 400;
+  src: url(/public/fonts/songer/SONGERT_C_Regular.otf) format("opentype");
+}
