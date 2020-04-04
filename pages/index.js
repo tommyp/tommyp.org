@@ -11,7 +11,7 @@ function Index() {
       </Head>
       <Header />
       <section className="container mx-auto w-4/6 font-sans">
-        <p className="text-6xl mt-20 text-gray-800 p-4 rounded-lg">
+        <p className="sm:text-6xl lg:text-6xl mt-20 text-gray-800 p-4 rounded-lg">
           I’m Tommy Palmer a Software Engineer living in London and working at{" "}
           <a
             href="https://deliveroo.co.uk/"

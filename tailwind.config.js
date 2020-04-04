@@ -1,8 +1,8 @@
 module.exports = {
   theme: {
     fontFamily: {
-      sans: ["Karmilla", "Helvetica", "Arial", "sans-serif"],
-      header: ["Songer"]
+      sans: ["Barter", "Helvetica", "Arial", "sans-serif"],
+      header: ["Barter"]
     }
   }
 };
