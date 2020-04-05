@@ -11,11 +11,11 @@ function Index() {
       </Head>
       <Header />
       <section className="container mx-auto w-4/6 font-sans">
-        <p className="sm:text-6xl lg:text-6xl mt-20 text-gray-800 p-4 rounded-lg">
-          I’m Tommy Palmer a Software Engineer living in London and working at{" "}
+        <p className="sm:text-2xl md:text-5xl mt-20 text-gray-800 p-4 rounded-lg">
+          I’m Tommy Palmer, a Software Engineer living in London and working at{" "}
           <a
             href="https://deliveroo.co.uk/"
-            className="border-b-8 border-solid border-teal-400 text-gray-800 hover:text-teal-400"
+            className="border-b-4 border-solid border-teal-400 text-gray-800 hover:text-teal-400"
           >
             Deliveroo
           </a>
