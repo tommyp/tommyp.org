@@ -1,6 +1,8 @@
 import React from "react";
 import Head from "next/head";
 import Header from "../components/header";
+import P from "../components/p";
+import ExtA from "../components/external_a";
 
 function About() {
   return (
@@ -10,61 +12,34 @@ function About() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Header />
-      <section className="container mx-auto w-5/6">
-        <p className="text-6xl mt-32 text-gray-900">
+      <section className="container mx-auto w-screen md:w-4/6 pl-6 pr-6 md:pl-0 md:pr-0">
+        <P>
           I&apos;m a Software Engineer living in London who works at{" "}
-          <a
-            href="https://deliveroo.co.uk/"
-            className="border-b-4 border-solid border-gray-400"
-          >
-            Deliveroo
-          </a>
-          . I used to work for{" "}
-          <a
-            href="https://gov.uk"
-            className="border-b-4 border-solid border-gray-400"
-          >
-            GOV.UK
-          </a>
-          .
-        </p>
-        <p className="text-6xl mt-8 text-gray-900">
-          I write Ruby, Javascript, Elixir and Go.
-        </p>
-        <p className="text-6xl mt-8 text-gray-900">
-          I spend my time{" "}
-          <a
-            href="https://github.com/tommyp"
-            className="border-b-4 border-solid border-gray-400"
-          >
-            coding
-          </a>
-          ,{" "}
-          <a
-            href="https://soundcloud.com/dj-bi-furious"
-            className="border-b-4 border-solid border-gray-400"
-          >
+          <ExtA href="https://deliveroo.co.uk/">Deliveroo</ExtA>. I used to work
+          for <ExtA href="https://gov.uk">GOV.UK</ExtA>.
+        </P>
+        <P>I write Ruby, Javascript, Elixir and Go.</P>
+        <P>
+          I spend my time <ExtA href="https://github.com/tommyp">coding</ExtA>,{" "}
+          <ExtA href="https://soundcloud.com/dj-bi-furious">
             playing silly music
-          </a>{" "}
+          </ExtA>{" "}
           and{" "}
-          <a
-            href="https://twitter.com/tommypalm"
-            className="border-b-4 border-solid border-gray-400"
-          >
+          <ExtA href="https://twitter.com/tommypalm">
             shitposting on Twitter
-          </a>
+          </ExtA>
           .
-        </p>
+        </P>
 
-        <p className="text-6xl mt-8 text-gray-900">
+        <P>
           Say hello -{" "}
-          <a
+          <ExtA
             href="mailto:hi@tommyp.org"
             className="border-b-4 border-solid border-gray-400"
           >
             hi@tommyp.org
-          </a>
-        </p>
+          </ExtA>
+        </P>
       </section>
     </React.Fragment>
   );

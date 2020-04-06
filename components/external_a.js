@@ -1,11 +1,22 @@
-import Link from "next/link";
+import PropTypes from "prop-types";
 
-function ExtA(props) {
+const ExtA = ({ href, children }) => {
   return (
-    <a href={props.href} className="border-b-2 border-solid border-gray-900">
-      {props.children}
+    <a
+      href={href}
+      className="border-b-4 border-solid border-gray-600 hover:text-gray-600"
+    >
+      {children}
     </a>
   );
-}
+};
+
+ExtA.propTypes = {
+  href: PropTypes.string,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]).isRequired,
+};
 
 export default ExtA;

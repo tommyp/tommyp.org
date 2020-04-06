@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Header from "../components/header";
+import P from "../components/p";
 
 function Index() {
   return (
@@ -11,7 +12,7 @@ function Index() {
       </Head>
       <Header />
       <section className="container mx-auto w-4/6 font-sans">
-        <p className="sm:text-2xl md:text-5xl mt-20 text-gray-800 p-4 rounded-lg">
+        <P>
           I’m Tommy Palmer, a Software Engineer living in London and working at{" "}
           <a
             href="https://deliveroo.co.uk/"
@@ -20,7 +21,7 @@ function Index() {
             Deliveroo
           </a>
           .
-        </p>
+        </P>
       </section>
     </React.Fragment>
   );
