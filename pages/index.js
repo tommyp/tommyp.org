@@ -1,7 +1,6 @@
 import React from "react";
 import Head from "next/head";
 import Header from "../components/header";
-import P from "../components/p";
 
 function Index() {
   return (
@@ -11,8 +10,14 @@ function Index() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Header />
-      <section className="container mx-auto w-4/6 font-sans">
-        <P>
+      <section className="container mx-auto w-5/6 lg:pl-16 font-sans">
+        <div className="w-full lg:float-right lg:w-1/3 mt-10 lg:mt-20 ">
+          <img
+            className="w-32 h-32 md:w-64 md:h-64 rounded-full mx-auto lg:ml-0"
+            src="/images/bangface.jpg"
+          />
+        </div>
+        <p className="sm:text-3xl lg:text-4xl mt-8 lg:mt-32 text-gray-800 rounded-lg w-full lg:w-2/3 lg:float-left pr-16 float-left text-center lg:text-left">
           I’m Tommy Palmer, a Software Engineer living in London and working at{" "}
           <a
             href="https://deliveroo.co.uk/"
@@ -21,7 +26,8 @@ function Index() {
             Deliveroo
           </a>
           .
-        </P>
+        </p>
+        <div className="clearfix" />
       </section>
     </React.Fragment>
   );
