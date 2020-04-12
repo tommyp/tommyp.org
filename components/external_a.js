@@ -1,10 +1,25 @@
 import PropTypes from "prop-types";
 
-const ExtA = ({ href, children }) => {
+const ExtA = ({
+  href,
+  children,
+  textColor,
+  textHoverColor,
+  borderColor,
+  borderHoverColor,
+}) => {
   return (
     <a
       href={href}
-      className="border-b-2 lg:border-b-4 border-solid border-gray-600 hover:text-gray-600"
+      className={`
+        border-b-2
+        lg:border-b-4
+        border-solid
+        ${textColor || "text-gray-900"}
+        ${textHoverColor || "hover:text-gray-600"}
+        ${borderColor || "border-gray-900"}
+        ${borderHoverColor || "hover:border-gray-600"}
+      `}
     >
       {children}
     </a>
@@ -12,11 +27,15 @@ const ExtA = ({ href, children }) => {
 };
 
 ExtA.propTypes = {
-  href: PropTypes.string,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
   ]).isRequired,
+  href: PropTypes.string,
+  textColor: PropTypes.string,
+  textHoverColor: PropTypes.string,
+  borderColor: PropTypes.string,
+  borderHoverColor: PropTypes.string,
 };
 
 export default ExtA;

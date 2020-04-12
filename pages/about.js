@@ -14,9 +14,9 @@ function About() {
       <Header />
       <section className="container mx-auto w-screen md:w-3/6 pl-6 pr-6 md:pl-0 md:pr-0">
         <P>
-          I&apos;m a Software Engineer living in London who works at{" "}
-          <ExtA href="https://deliveroo.co.uk/">Deliveroo</ExtA>. I used to work
-          for <ExtA href="https://gov.uk">GOV.UK</ExtA>.
+          I&apos;m a Senior Software Engineer at{" "}
+          <ExtA href="https://deliveroo.co.uk/">Deliveroo</ExtA> in London. I
+          used to work for <ExtA href="https://gov.uk">GOV.UK</ExtA>.
         </P>
         <P>I write Ruby, Javascript, Elixir and Go.</P>
         <P>
