@@ -14,7 +14,7 @@ export default class Header extends React.Component {
   render() {
     return (
       <header
-        className={`font-header mx-auto sm:w-full md:w-5/6 pt-4 pb-2 pl-3 pr-3 ${this.state.borderColor} border-b-2 border-solid`}
+        className={`font-header mx-auto sm:w-full md:w-5/6 pt-4 pb-2 pl-3 pr-3 ${this.state.borderColor} border-b-2 border-solid ${this.state.textColor}`}
       >
         <nav className="container mx-auto">
           <h1 className="inline text-xl md:text-3xl mr-20">
