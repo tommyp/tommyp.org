@@ -27,11 +27,6 @@ export default class Header extends React.Component {
               <a>About</a>
             </Link>
           </li>
-          <li className="text-xl md:text-3xl inline mr-20">
-            <Link href="/work">
-              <a>Work</a>
-            </Link>
-          </li>
         </nav>
       </header>
     );
