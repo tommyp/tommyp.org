@@ -4,7 +4,7 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
   theme: {
     fontFamily: {
-      // sans: ["Space Mono", ...defaultTheme.fontFamily.sans],
+      sans: ["Lato", ...defaultTheme.fontFamily.sans],
       mono: ["Space Mono", ...defaultTheme.fontFamily.mono],
     },
     fontSize: {

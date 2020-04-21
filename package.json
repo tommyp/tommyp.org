@@ -15,6 +15,7 @@
     "react-iframe": "^1.8.0",
     "reset-css": "^5.0.1",
     "sass": "^1.26.3",
+    "typeface-lato": "0.0.75",
     "typeface-space-mono": "0.0.71"
   },
   "devDependencies": {
