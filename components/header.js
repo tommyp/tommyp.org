@@ -7,16 +7,16 @@ export default class Header extends React.Component {
     super();
 
     this.state = {
-      borderColor: props.borderColor || "border-black",
-      textColor: props.textColor || "text-black",
+      borderColor: props.borderColor || "border-gray-700",
+      textColor: props.textColor || "text-gray-900",
     };
   }
   render() {
     return (
       <header
-        className={`font-header mx-auto sm:w-full md:w-5/6 pt-4 pb-2 pl-3 pr-3 ${this.state.borderColor} border-b-2 border-solid ${this.state.textColor}`}
+        className={`font-mono mx-auto sm:w-full md:w-5/6 pt-4 pb-2 pl-3 pr-3 ${this.state.borderColor} border-b-2 ${this.state.textColor}`}
       >
-        <nav className="container mx-auto">
+        <nav>
           <h1 className="inline text-xl md:text-3xl mr-20">
             <Link href="/">
               <a>Tommy Palmer</a>
@@ -25,6 +25,11 @@ export default class Header extends React.Component {
           <li className="text-xl md:text-3xl inline mr-20">
             <Link href="/about">
               <a>About</a>
+            </Link>
+          </li>
+          <li className="text-xl md:text-3xl inline mr-20">
+            <Link href="/work">
+              <a>Work</a>
             </Link>
           </li>
         </nav>

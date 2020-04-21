@@ -12,7 +12,7 @@ function About() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Header />
-      <section className="container mx-auto w-screen md:w-3/6 pl-6 pr-6 md:pl-0 md:pr-0">
+      <section className="container font-mono mx-auto w-screen md:w-3/6 pl-6 pr-6 md:pl-0 md:pr-0">
         <P>
           I&apos;m a Senior Software Engineer at{" "}
           <ExtA

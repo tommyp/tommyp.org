@@ -1,8 +1,11 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+
+
 module.exports = {
   theme: {
     fontFamily: {
-      sans: ["Barter", "Helvetica", "Arial", "sans-serif"],
-      header: ["Barter"],
+      // sans: ["Space Mono", ...defaultTheme.fontFamily.sans],
+      mono: ["Space Mono", ...defaultTheme.fontFamily.mono],
     },
     fontSize: {
       xs: ".75rem",

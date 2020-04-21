@@ -10,7 +10,7 @@ function Index() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Header />
-      <section className="container mx-auto w-5/6 lg:pl-16 font-sans">
+      <section className="container mx-auto w-5/6 lg:pl-16 font-mono">
         <div className="w-full lg:float-right lg:w-1/3 mt-10 lg:mt-20 ">
           <img
             className="w-32 h-32 md:w-64 md:h-64 rounded-full mx-auto lg:ml-0"
