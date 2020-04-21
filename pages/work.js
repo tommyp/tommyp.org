@@ -83,8 +83,34 @@ export default class Work extends React.Component {
             </section>
             <div className="clearfix" />
           </section>
+          <section className="w-screen bg-blue-700 text-white">
+            <section className="container w-5/6 mx-auto pt-10 pb-10">
+              <section className="w-1/2 float-left pr-10">
+                <h2 className="text-6xl font-sans font-bold">
+                  <a href="https://gov.uk">
+                    GOV.UK
+                </a>
+                </h2>
+                <p className="text-xl pt-10">
+                  Shortly after I moved to London I joined the team at the Government Digital Service working on GOV.UK. It was one of the best experiences of my life. I learnt how to work as a Software Engineer and not just write code.
+                </p>
+
+                <p className="text-xl pt-10">Initially, as a part of the Transition project, my team and I were responsible for building Applications to support Government Departments from moving their content from their own, disparate sites, to the unified GOV.UK site. This involved building a publishing application and the public facing application for organisations like the <a className="border-b-2 border-white" href="https://www.gov.uk/cma-cases">Competition and Market Authority</a></p>
+
+                <p className="text-xl pt-10">After that was finished, my team was disbanded into a number of different teams. I ended up joining the team which was working on preparing the site for the upcoming <a className="border-b-2 border-white" href="https://en.wikipedia.org/wiki/2015_United_Kingdom_general_election">General Election</a>. This involved tagging content with the Government it was published under, adding the ability to end a Government and publishing political content under the same <a className="border-b-2 border-white" href="https://www.gov.uk/search/news-and-communications">Application as Government Departments</a>
+                </p>
+
+              </section>
+              <section className="w-1/2 float-right pl-10 mt-20">
+                <a href="https://gov.uk">
+                  <img src="/images/work/gov.png" />
+                </a>
+              </section>
+              <div className="clearfix" />
+            </section>
+          </section>
         </section>
-      </React.Fragment >
+      </React.Fragment>
     );
   }
 }
