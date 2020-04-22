@@ -119,7 +119,7 @@ export default class Work extends React.Component {
               <TextBlock>
                 <P>
                   When I started at Deliveroo, Engineering was 40 people and the whole codebase was in one Application. Now, Engineering is nearly 10 times as big and although we still have a Rails monolith, there&apos;s a lot of microservices in various languages in different parts of the stack.
-              </P>
+                </P>
                 <P>
                   I&apos;ve worked on a lot of different projects there, like porting the Menu page from Angular to React, allowing Restaurants to deliver food themselves and decomping the listing page to a new Go Application. I even worked on a change that the Mayor of London, Sadiq Khan, <a className="border-b-2 border-purple-900" href="https://twitter.com/sadiqkhan/status/969239476760383488?lang=en">commented on</a>.
               </P>
