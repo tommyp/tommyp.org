@@ -3,6 +3,13 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   theme: {
+    borderColor: {
+      ...defaultTheme.colors,
+      green: {
+        ...defaultTheme.colors.green,
+        terminal: "#0f0",
+      }
+    },
     fontFamily: {
       // sans: ["Lato", ...defaultTheme.fontFamily.sans],
       mono: ["Space Mono", ...defaultTheme.fontFamily.mono],

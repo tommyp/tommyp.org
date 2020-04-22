@@ -71,9 +71,9 @@ export default class Work extends React.Component {
               <TextBlock>
                 <P>
                   I like seeing how I can use two APIs to make something fun and I wanted to build a side project, but I couldn&apos;t think of any ideas. I ended up building a side project idea generator so that I don&apos;t have this problem in future.
-              </P>
+                </P>
                 <P>
-
+                  It was a fun little project that I built over a few days and I took the opportunity to get a domain hack just for it.
                 </P>
               </TextBlock>
               <Img
