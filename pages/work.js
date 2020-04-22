@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import Head from "next/head";
 import Header from "../components/header";
 
@@ -8,6 +9,13 @@ const P = ({ children }) => {
       {children}
     </p>
   )
+}
+
+P.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node
+  ]).isRequired
 }
 
 const Img = ({ url, src }) => {
@@ -20,12 +28,24 @@ const Img = ({ url, src }) => {
   )
 }
 
+Img.propTypes = {
+  url: PropTypes.string.isRequired,
+  src: PropTypes.string.isRequired,
+}
+
 const TextBlock = ({ children }) => {
   return (
     <section className="w-1/2 float-left pr-10">
       {children}
     </section>
   )
+}
+
+TextBlock.propTypes = {
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node
+  ]).isRequired
 }
 
 export default class Work extends React.Component {
