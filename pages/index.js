@@ -17,7 +17,7 @@ function Index() {
             src="/images/bangface.jpg"
           />
         </div>
-        <p className="sm:text-3xl lg:text-4xl mt-8 lg:mt-32 text-black rounded-lg w-full lg:w-2/3 lg:float-left pr-16 float-left text-center lg:text-left">
+        <p className="sm:text-3xl lg:text-4xl mt-8 lg:mt-32 text-black rounded-lg w-full lg:w-2/3 lg:float-left lg:pr-16 float-left text-center lg:text-left">
           I’m Tommy Palmer, a Software Engineer living in London and working at{" "}
           <a
             href="https://deliveroo.co.uk/"
