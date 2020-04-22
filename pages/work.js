@@ -1,28 +1,9 @@
 import React from "react";
 import Head from "next/head";
 import Header from "../components/header";
-import WorkCard from "../components/work_card";
 
 export default class Work extends React.Component {
   render() {
-    const workItems = [
-      {
-        img: "wtf",
-        page: "wtf",
-        title: "What the fuck should I do in?",
-      },
-      {
-        img: "deliveroo",
-        page: "deliveroo",
-        title: "Deliveroo",
-      },
-      {
-        img: "gov",
-        page: "gov-uk",
-        title: "GOV.UK",
-      },
-    ];
-
     return (
       <React.Fragment>
         <Head>
