@@ -3,21 +3,3 @@
 @tailwind components;
 /* purgecss end ignore */
 @tailwind utilities;
-
-@font-face {
-  font-family: Karmilla;
-  font-weight: 400;
-  src: url(/fonts/karmilla/Karmilla-Regular.ttf) format("ttf");
-}
-
-@font-face {
-  font-family: Songer;
-  font-weight: 400;
-  src: url(/fonts/songer/SONGERT_C_Regular.otf) format("otf");
-}
-
-@font-face {
-  font-family: Barter;
-  font-weight: 400;
-  src: url(/fonts/barter/BarterExchange-Regular.woff) format("woff");
-}

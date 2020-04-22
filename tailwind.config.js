@@ -21,5 +21,12 @@ module.exports = {
       "6xl": "4rem",
       "7xl": "5rem",
     },
+    textColor: {
+      ...defaultTheme.colors,
+      green: {
+        ...defaultTheme.colors.green,
+        terminal: "#0f0",
+      }
+    }
   },
 };
