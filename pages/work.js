@@ -6,7 +6,7 @@ import ExtA from "../components/external_a";
 
 const P = ({ children }) => {
   return (
-    <p className="text-2xl pt-10">
+    <p className="text-l md:text-2xl pt-10">
       {children}
     </p>
   )
@@ -61,7 +61,7 @@ export default class Work extends React.Component {
           />
         </Head>
         <Header />
-        <section className="mx-auto w-4/6 md:w-1/2 pl-5 pr-5 font-mono mb-10">
+        <section className="mx-auto w-5/6 md:w-4/6 md:w-1/2 md:pl-5 md:pr-5 font-mono mb-10">
           <P>
             I&apos;m an Engineer who likes working in multi-disciplinary teams to solve real world problems for users.
           </P>
@@ -75,7 +75,7 @@ export default class Work extends React.Component {
         </section>
         <section className="w-screen text-green-terminal font-mono bg-black">
           <section className="container w-5/6 mx-auto pt-10 pb-10">
-            <h2 className="text-6xl">
+            <h2 className="text-4xl md:text-6xl">
               <a href="https://www.apima.sh/up">
                 apima.sh/up
               </a>
