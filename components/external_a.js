@@ -7,18 +7,20 @@ const ExtA = ({
   textHoverColor,
   borderColor,
   borderHoverColor,
+  className,
 }) => {
   return (
     <a
       href={href}
       className={`
         border-b-2
-        lg:border-b-4
+        lg:border-b-2
         border-solid
         hover:${textHoverColor || "text-gray-600"}
         hover:${borderHoverColor || "border-gray-600"}
         ${textColor || "text-gray-900"}
         ${borderColor || "border-gray-900"}
+        ${className}
       `}
     >
       {children}
@@ -36,6 +38,7 @@ ExtA.propTypes = {
   textHoverColor: PropTypes.string,
   borderColor: PropTypes.string,
   borderHoverColor: PropTypes.string,
+  className: PropTypes.string,
 };
 
 export default ExtA;

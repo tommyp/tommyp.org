@@ -2,10 +2,11 @@ import React from "react";
 import PropTypes from 'prop-types';
 import Head from "next/head";
 import Header from "../components/header";
+import ExtA from "../components/external_a";
 
 const P = ({ children }) => {
   return (
-    <p className="text-xl pt-10">
+    <p className="text-2xl pt-10">
       {children}
     </p>
   )
@@ -60,6 +61,18 @@ export default class Work extends React.Component {
           />
         </Head>
         <Header />
+        <section className="mx-auto w-4/6 md:w-1/2 pl-5 pr-5 font-mono mb-10">
+          <P>
+            I&apos;m an Engineer who likes working in multi-disciplinary teams to solve real world problems for users.
+          </P>
+          <P>I can work across the full stack, but I prefer working on user facing features instead of tinkering with infrastructure - think pixels over platform.</P>
+          <P>Wanna chat? - <ExtA
+            href="mailto:hi@tommyp.org"
+            className="lg:border-b-2 border-solid border-gray-400"
+          >
+            hi@tommyp.org
+          </ExtA></P>
+        </section>
         <section className="w-screen text-green-terminal font-mono bg-black">
           <section className="container w-5/6 mx-auto pt-10 pb-10">
             <h2 className="text-6xl">
@@ -144,11 +157,11 @@ export default class Work extends React.Component {
                 </P>
 
                   <P>
-                    Initially, as a part of the Transition project, my team and I were responsible for building Applications to support Government Departments from moving their content from their own, disparate sites, to the unified GOV.UK site. This involved building a publishing application and the public facing application for organisations like the <a className="border-b-2 border-white" href="https://www.gov.uk/cma-cases">Competition and Market Authority</a>
+                    Initially, as a part of the Transition project, my team and I were responsible for building Applications to support Government Departments from moving their content from their own, disparate sites, to the unified GOV.UK site. This involved building a publishing application and the public facing application for organisations like the <a className="border-b-2 border-white" href="https://www.gov.uk/cma-cases">Competition and Market Authority</a>.
                   </P>
 
                   <P>
-                    After that was finished, my team was disbanded into a number of different teams. I ended up joining the team which was working on preparing the site for the upcoming <a className="border-b-2 border-white" href="https://en.wikipedia.org/wiki/2015_United_Kingdom_general_election">General Election</a>. This involved tagging content with the Government it was published under, adding the ability to end a Government and publishing political content under the same <a className="border-b-2 border-white" href="https://www.gov.uk/search/news-and-communications">Application as Government Departments</a>
+                    After that was finished, my team was disbanded into a number of different teams. I ended up joining the team which was working on preparing the site for the upcoming <a className="border-b-2 border-white" href="https://en.wikipedia.org/wiki/2015_United_Kingdom_general_election">General Election</a>. This involved tagging content with the Government it was published under, adding the ability to end a Government and publishing political content under the same <a className="border-b-2 border-white" href="https://www.gov.uk/search/news-and-communications">Application as Government Departments</a>.
                   </P>
                 </TextBlock>
                 <Img

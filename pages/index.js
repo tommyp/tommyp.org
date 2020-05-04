@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Header from "../components/header";
+import ExtA from "../components/external_a";
 
 function Index() {
   return (
@@ -19,12 +20,14 @@ function Index() {
         </div>
         <p className="sm:text-3xl lg:text-4xl mt-8 lg:mt-32 text-black rounded-lg w-full lg:w-2/3 lg:float-left lg:pr-16 float-left text-center lg:text-left">
           I’m Tommy Palmer, a Software Engineer living in London and working at{" "}
-          <a
+          <ExtA
             href="https://deliveroo.co.uk/"
-            className="border-b-4 border-solid border-teal-400 text-gray-900 hover:text-teal-400"
+            borderColor="border-teal-400"
+            borderHoverColor="border-teal-400"
+            textHoverColor="text-teal-400"
           >
             Deliveroo
-          </a>
+          </ExtA>
           .
         </p>
         <div className="clearfix" />
