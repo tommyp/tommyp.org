@@ -61,11 +61,12 @@ export default class Work extends React.Component {
           />
         </Head>
         <Header />
-        <section className="mx-auto w-5/6 md:w-4/6 md:w-1/2 md:pl-5 md:pr-5 font-mono mb-10">
+        <section className="mx-auto w-5/6 md:w-1/2 md:pl-5 md:pr-5 font-mono mb-10">
           <P>
             I&apos;m an Engineer who likes working in multi-disciplinary teams to solve real world problems for users.
           </P>
-          <P>I can work across the full stack, but I prefer working on user facing features instead of tinkering with infrastructure - think pixels over platform.</P>
+          <P>I can work across the full stack, but I prefer working on user facing features instead of tinkering with infrastructure</P>
+          <P>Think pixels over platform.</P>
           <P>Wanna chat? - <ExtA
             href="mailto:hi@tommyp.org"
             className="lg:border-b-2 border-solid border-gray-400"
