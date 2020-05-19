@@ -65,8 +65,7 @@ export default class Work extends React.Component {
           <P>
             I&apos;m an Engineer who likes working in multi-disciplinary teams to solve real world problems for users.
           </P>
-          <P>I can work across the full stack, but I prefer working on user facing features instead of tinkering with infrastructure</P>
-          <P>Think pixels over platform.</P>
+          <P>I can work across the full stack, but I prefer working on user facing features instead of tinkering with infrastructure.</P>
           <P>Wanna chat? - <ExtA
             href="mailto:hi@tommyp.org"
             className="lg:border-b-2 border-solid border-gray-400"
