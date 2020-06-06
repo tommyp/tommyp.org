@@ -12,7 +12,7 @@ function About() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Header />
-      <section className="container font-mono mx-auto w-screen md:w-3/6 pl-6 pr-6 md:pl-0 md:pr-0">
+      <section className="container font-mono mx-auto w-screen lg:w-4/6 md:w-5/6 pl-6 pr-6 md:pl-0 md:pr-0">
         <P>
           I&apos;m a Senior Software Engineer at{" "}
           <ExtA
@@ -34,7 +34,7 @@ function About() {
           </ExtA>
           .
         </P>
-        <P>I write Ruby, Javascript, Elixir and Go.</P>
+        <P>I write Ruby, Javascript, Elixir & Go.</P>
         <P>
           I spend my time <ExtA href="https://github.com/tommyp">coding</ExtA>,{" "}
           <ExtA href="https://soundcloud.com/dj-bi-furious">
@@ -48,13 +48,7 @@ function About() {
         </P>
 
         <P>
-          Say hello -{" "}
-          <ExtA
-            href="mailto:hi@tommyp.org"
-            className="border-b-4 border-solid border-gray-400"
-          >
-            hi@tommyp.org
-          </ExtA>
+          Say hello - <ExtA href="mailto:hi@tommyp.org">hi@tommyp.org</ExtA>
         </P>
       </section>
     </React.Fragment>
