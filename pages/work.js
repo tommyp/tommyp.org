@@ -46,7 +46,7 @@ export default class Work extends React.Component {
     return (
       <React.Fragment>
         <Head>
-          <title>About | Tommy Palmer</title>
+          <title>Work | Tommy Palmer</title>
           <meta
             name="viewport"
             content="initial-scale=1.0, width=device-width"
