@@ -53,7 +53,7 @@ export default class Work extends React.Component {
           />
         </Head>
         <Header />
-        <section className="mx-auto w-5/6 lg:w-4/6 md:pl-5 md:pr-5 font-mono mb-10">
+        <section className="mx-auto w-5/6 xl:w-2/6 md:pl-5 md:pr-5 font-mono mb-10">
           <P>
             I&apos;m an Engineer who likes working in multi-disciplinary teams
             to solve real world problems for users.
