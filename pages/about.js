@@ -36,18 +36,6 @@ function About() {
         </P>
         <P>I write Ruby, Javascript, Elixir & Go.</P>
         <P>
-          I spend my time <ExtA href="https://github.com/tommyp">coding</ExtA>,{" "}
-          <ExtA href="https://soundcloud.com/dj-bi-furious">
-            playing silly music
-          </ExtA>{" "}
-          and{" "}
-          <ExtA href="https://twitter.com/tommypalm">
-            shitposting on Twitter
-          </ExtA>
-          .
-        </P>
-
-        <P>
           Say hello - <ExtA href="mailto:hi@tommyp.org">hi@tommyp.org</ExtA>
         </P>
       </section>
