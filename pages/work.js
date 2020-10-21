@@ -17,7 +17,7 @@ P.propTypes = {
 
 const Img = ({ url, src }) => {
   return (
-    <section className="mt-10">
+    <section className="md:mt-10">
       <a href={url}>
         <img src={src} />
       </a>
@@ -67,12 +67,39 @@ export default class Work extends React.Component {
             </ExtA>
           </P>
         </section>
+        <section className="w-screen font-rubik bg-gray-100 text-gray-800">
+          <section className="container w-5/6 mx-auto pt-10 pb-10">
+            <h2 className="text-4xl md:text-6xl">
+              <a href="https://www.govbins.uk">govbins</a>
+            </h2>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-20">
+              <TextBlock>
+                <P>
+                  My good friend <ExtA href="https://twitter.com/HarryTrimble" borderColor="border-pink-600" borderHoverColor="border-pink-600" textHoverColor="text-pink-600">Harry</ExtA> has spent a few years travelling the country, taking photos of local council bins and documenting them on <ExtA href="https://govbins.uk" borderColor="border-pink-600" borderHoverColor="border-pink-600" textHoverColor="text-pink-600">govbins.uk</ExtA>.
+                </P>
+                <P>
+                  Mid-March, we were hanging out and he asked me would I help him add new features to the site and I happily agreed. As we went into Lockdown, Harry started accepting submissions via Instagram as travelling for bins didn&apos;t seem so essential.
+                </P>
+                <P>
+                  It was originally a static site hosted on Github Pages made using Bootstrap with lots of overriding inline styles. It had a lot of repetition of markup and with so many high res images, the time to load the page was upwards of 15 seconds.
+                </P>
+                <P>
+                  I ported the site to Next.js and Tailwind CSS and used lazy loading to decrease the latency of the page. I also added sorting and submissions using Netlify forms. After a few weeks, the bandwidth used for the images was making the Netlify bill pretty huge, so now, on every deploy to master, it runs the images through ImageOptim and syncs them to S3, loading them from there for visitors. This reduced the bandwidth per month from hundreds of GBs during peak periods to hundreds of MBs.
+                </P>
+              </TextBlock>
+              <Img
+                url="https://www.govbins.uk"
+                src="/images/work/govbins.png"
+              />
+            </div>
+          </section>
+        </section>
         <section className="w-screen text-green-terminal font-mono bg-black">
           <section className="container w-5/6 mx-auto pt-10 pb-10">
             <h2 className="text-4xl md:text-6xl">
               <a href="https://www.apima.sh/up">apima.sh/up</a>
             </h2>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-20">
               <TextBlock>
                 <P>
                   I like seeing how I can use two APIs to make something fun and
@@ -100,7 +127,7 @@ export default class Work extends React.Component {
                 WHAT THE FUCK SHOULD I DO IN?
               </a>
             </h2>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-20">
               <TextBlock>
                 <P>
                   I&apos;d played with{" "}
@@ -130,7 +157,7 @@ export default class Work extends React.Component {
             <h2 className="text-6xl font-sans font-bold">
               <a href="https://deliveroo.co.uk">Deliveroo</a>
             </h2>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-20">
               <TextBlock>
                 <P>
                   When I started at Deliveroo, Engineering was 40 people and the
@@ -165,7 +192,7 @@ export default class Work extends React.Component {
               <h2 className="text-6xl font-sans font-bold">
                 <a href="https://gov.uk">GOV.UK</a>
               </h2>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-20">
                 <TextBlock>
                   <P>
                     Shortly after I moved to London I joined the team at the

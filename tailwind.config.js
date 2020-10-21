@@ -11,8 +11,8 @@ module.exports = {
       }
     },
     fontFamily: {
-      // sans: ["Lato", ...defaultTheme.fontFamily.sans],
       mono: ["Space Mono", ...defaultTheme.fontFamily.mono],
+      rubik: ["Rubik", ...defaultTheme.fontFamily.sans],
     },
     fontSize: {
       xs: ".75rem",
