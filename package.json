@@ -11,6 +11,7 @@
     "postbuild": "next-on-netlify"
   },
   "dependencies": {
+    "acorn": "^8.0.4",
     "next": "9.3.2",
     "next-on-netlify": "^2.2.0",
     "prop-types": "^15.7.2",
