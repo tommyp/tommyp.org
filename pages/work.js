@@ -84,7 +84,7 @@ export default class Work extends React.Component {
                   It was originally a static site hosted on Github Pages made using Bootstrap with lots of overriding inline styles. It had a lot of repetition of markup and with so many high res images, the time to load the page was upwards of 15 seconds.
                 </P>
                 <P>
-                  I ported the site to Next.js and Tailwind CSS and used lazy loading to decrease the latency of the page. I also added sorting and submissions using Netlify forms. After a few weeks, the bandwidth used for the images was making the Netlify bill pretty huge, so now, on every deploy to master, it runs the images through ImageOptim and syncs them to S3, loading them from there for visitors. This reduced the bandwidth per month from hundreds of GBs during peak periods to hundreds of MBs.
+                  I ported the site to Next.js and Tailwind CSS, and used lazy loading to decrease the latency of the page. I also added sorting and submissions using Netlify forms. After a few weeks, the bandwidth used for the images was making the Netlify bill pretty huge, so now, on every deploy to master, it runs the images through ImageOptim and syncs them to S3, loading them from there for visitors. This reduced the bandwidth per month from hundreds of GBs during peak periods to hundreds of MBs.
                 </P>
               </TextBlock>
               <Img
