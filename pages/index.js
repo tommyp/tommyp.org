@@ -15,7 +15,7 @@ function Index() {
         <div className="w-full lg:float-right lg:w-1/3 mt-10 lg:mt-20 ">
           <img
             className="w-32 h-32 md:w-64 md:h-64 rounded-full mx-auto lg:ml-0"
-            src="/images/bangface.jpg"
+            src="/images/wall.jpg"
           />
         </div>
         <p className="md:text-3xl lg:text-4xl mt-8 lg:mt-32 text-black rounded-lg w-full lg:w-2/3 lg:float-left lg:pr-16 float-left text-center lg:text-left">
