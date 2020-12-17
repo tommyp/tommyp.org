@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Head from "next/head";
+import Head from "../components/head";
 import Header from "../components/header";
 import ExtA from "../components/external_a";
 
@@ -45,13 +45,7 @@ export default class Work extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <Head>
-          <title>Work | Tommy Palmer</title>
-          <meta
-            name="viewport"
-            content="initial-scale=1.0, width=device-width"
-          />
-        </Head>
+        <Head title="Work" />
         <Header />
         <section className="mx-auto w-5/6 xl:w-1/2 md:pl-5 md:pr-5 font-mono mb-10">
           <P>

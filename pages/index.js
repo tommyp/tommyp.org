@@ -1,15 +1,12 @@
 import React from "react";
-import Head from "next/head";
+import Head from "../components/head";
 import Header from "../components/header";
 import ExtA from "../components/external_a";
 
 function Index() {
   return (
     <React.Fragment>
-      <Head>
-        <title>Tommy Palmer | A Software Engineer living in London</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      </Head>
+      <Head/>
       <Header />
       <section className="container mx-auto w-5/6 lg:pl-16 font-mono">
         <div className="w-full lg:float-right lg:w-1/3 mt-10 lg:mt-20 ">

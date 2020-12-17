@@ -1,16 +1,13 @@
 import React from "react";
-import Head from "next/head";
 import Header from "../components/header";
 import P from "../components/p";
 import ExtA from "../components/external_a";
+import Head from "../components/head";
 
 function About() {
   return (
     <React.Fragment>
-      <Head>
-        <title>About | Tommy Palmer</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      </Head>
+      <Head title="About" />
       <Header />
       <section className="container font-mono mx-auto w-screen lg:w-4/6 md:w-5/6 pl-6 pr-6 md:pl-0 md:pr-0">
         <P>
