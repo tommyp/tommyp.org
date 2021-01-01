@@ -8,7 +8,7 @@ function Index() {
     <React.Fragment>
       <Head/>
       <Header />
-      <section className="container mx-auto w-5/6 lg:pl-16 font-mono flex flex-row-reverse">
+      <section className="container mx-auto w-5/6 lg:pl-16 font-mono lg:flex lg:flex-row-reverse">
         <div className="w-full lg:w-1/3 mt-10 lg:mt-20 ">
           <img
             className="w-32 h-32 md:w-64 md:h-64 rounded-full mx-auto lg:ml-0"
