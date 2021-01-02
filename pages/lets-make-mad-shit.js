@@ -65,7 +65,7 @@ const getCreative = () => {
           </P>
 
           <ul className="mb-10">
-            <Li>🍹 <ExtA href="https://poolside.fm/" borderColor="border-red-400" textHoverColor="text-red-400">Poolside</ExtA> - <span className="italic hover:text-transparent bg-gradient-to-r bg-clip-text from-blue-600 to-red-600">ultra vibey</span> website and app that brings a pool party to your internet communication device.</Li>
+            <Li>🍹 <ExtA href="https://poolside.fm/" borderColor="border-red-400" textHoverColor="hover:text-red-400">Poolside</ExtA> - <span className="italic hover:text-transparent bg-gradient-to-r bg-clip-text from-blue-600 to-red-600">ultra vibey</span> website and app that brings a pool party to your internet communication device.</Li>
 
             <Li>💻 <ExtA href="https://javascript30.com/">JavaScript30</ExtA> from <ExtA href="https://twitter.com/wesbos">WesBos</ExtA> - I&apos;m pretty good with JavaScript but in an effort to understand it more deeply I did this free course at the start of Summer and although it took me a bit more than 30 days, I found it really enjoyable to beging my day with some coding and Wes&apos; cheesy jokes.</Li>
 

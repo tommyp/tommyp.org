@@ -64,7 +64,7 @@ export default class Work extends React.Component {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-20">
               <TextBlock>
                 <P>
-                  My good friend <ExtA href="https://twitter.com/HarryTrimble" borderColor="border-pink-600" borderHoverColor="border-pink-600" textHoverColor="text-pink-600">Harry</ExtA> has spent a few years travelling the country, taking photos of local council bins and documenting them on <ExtA href="https://govbins.uk" borderColor="border-pink-600" borderHoverColor="border-pink-600" textHoverColor="text-pink-600">govbins.uk</ExtA>.
+                  My good friend <ExtA href="https://twitter.com/HarryTrimble" borderColor="border-pink-600" borderHoverColor="hover:border-pink-600" textHoverColor="hover:text-pink-600">Harry</ExtA> has spent a few years travelling the country, taking photos of local council bins and documenting them on <ExtA href="https://govbins.uk" borderColor="border-pink-600" borderHoverColor="hover:border-pink-600" textHoverColor="hover:text-pink-600">govbins.uk</ExtA>.
                 </P>
                 <P>
                   Mid-March, we were hanging out and he asked me would I help him add new features to the site and I happily agreed. As we went into Lockdown, Harry started accepting submissions via Instagram as travelling for bins didn&apos;t seem so essential.

@@ -29,8 +29,8 @@ function Index() {
             <ExtA
               href="https://deliveroo.co.uk/"
               borderColor="border-teal-400"
-              borderHoverColor="border-teal-400"
-              textHoverColor="text-teal-400"
+              borderHoverColor="hover:border-teal-400"
+              textHoverColor="hover:text-teal-400"
             >
               Deliveroo
           </ExtA>

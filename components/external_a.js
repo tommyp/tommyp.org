@@ -16,11 +16,11 @@ const ExtA = ({
         border-b-2
         lg:border-b-2
         border-solid
-        hover:${textHoverColor || "text-gray-600"}
-        hover:${borderHoverColor || borderColor || "border-gray-600"}
+        ${textHoverColor || "hover:text-gray-600"}
+        ${borderHoverColor || borderColor || "hover:border-gray-600"}
         ${textColor || "text-gray-900"}
         ${borderColor || "border-gray-900"}
-        ${className}
+        ${className || ''}
       `}
     >
       {children}
