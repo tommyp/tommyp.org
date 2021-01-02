@@ -5326,7 +5326,7 @@ neo-async@^2.5.0, neo-async@^2.6.0, neo-async@^2.6.1:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
   integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
 
-next-on-netlify@^2.2.0:
+next-on-netlify@^2.6.3:
   version "2.6.3"
   resolved "https://registry.yarnpkg.com/next-on-netlify/-/next-on-netlify-2.6.3.tgz#a6e24b5c0504ce2c85e7e59d909b9e4816936df8"
   integrity sha512-5ZEjlEH9ZeWDtbFIgxYLqNywCcssJMKV8WCCk1CC8so9Umlv1mZeUA5MoiMOENOE5mkZJNMLTG+nmL8+tQPQGQ==
