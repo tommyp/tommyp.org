@@ -32,12 +32,12 @@ const Quote = ({ children }) => {
 const getCreative = () => {
   return (
     <>
-      <Head title="Let's make made shit" />
+      <Head title="Let's make mad shit" />
       <Header />
       <main className="mt-20">
         <h1 className="mx-auto w-2/3 text-7xl lg:text-10xl font-rubik text-center uppercase font-bold italic transform -rotate-6 bg-clip-text text-transparent bg-gradient-to-br from-blue-600 to-red-600 leading-none">
-          <span>Let&apos;s make</span><br />
-          <span>mad shit</span>
+          Let&apos;s make<br />
+          mad shit
         </h1>
         <article className="mx-auto w-10/12 lg:w-1/3 mt-20 font-rubik text-2xl">
           <P>
@@ -46,23 +46,23 @@ const getCreative = () => {
 
           <P>
             But 2020 has also shown us that the Internet can be amazing. It kept us together and in touch when we couldn&apos;t do it in real life. It allowed for so much creativity, interaction and communication in this fucking terrible year. So many people are out there are making cool things but we don&apos;t see it because we get bogged down hating all of the terrible shit. Our energy to enjoy what is out there is completely zapped.
-        </P>
+          </P>
 
           <P>
             Remember when people had blogs? And they wrote things? Everyone had their little corner of The Internet. Now we write them in 35 part Twitter threads. Or even worse, Medium articles. You want me to make an account Medium just so I can read more than 3 articles a month? Oh and if you&apos;re trying to browse them on mobile, I hope you have an iPhone 12 Pro Max because otherwise you&apos;ll not be seeing the article when the page loads.
-        </P>
+          </P>
 
           <P>
             Both of those are terrible ways for us to create and share things.
-        </P>
+          </P>
 
           <P>
             Even with all of that stuff making the Internet worse, people are still making fun and cool things on The Internet.
-        </P>
+          </P>
 
           <P>
             Here are a few things I&apos;ve enjoyed in 2020:
-        </P>
+          </P>
 
           <ul className="mb-10">
             <Li>🍹 <ExtA href="https://poolside.fm/" borderColor="border-red-400" textHoverColor="text-red-400">Poolside</ExtA> - <span className="italic hover:text-transparent bg-gradient-to-r bg-clip-text from-blue-600 to-red-600">ultra vibey</span> website and app that brings a pool party to your internet communication device.</Li>
@@ -96,15 +96,15 @@ const getCreative = () => {
 
           <P>
             He&apos;s absolutely right on this point. Even as someone doing more development instead of design, I have ideas of fun things to build or fun ways to build them that I just don&apos;t get to do. Why don&apos;t I do that? I should do that!
-        </P>
+          </P>
 
           <P>
             And this:
-        </P>
+          </P>
 
           <Quote>
             ...just because <ExtA href="https://gov.uk">GOV.UK</ExtA> does an excellent job of helping you pay your car tax doesn’t mean your own playground should look like it’s been built with a government design system.
-        </Quote>
+          </Quote>
 
           <P>
             Although we should make sure our own spaces work for everyone we think will use them, if you want to do something weird with your own site, go ahead! Why not? Nobody is going to tell you it impacted conversion or a client didn&apos;t like it.
