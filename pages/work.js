@@ -53,12 +53,7 @@ export default class Work extends React.Component {
           </P>
           <P>
             Wanna chat? -{" "}
-            <ExtA
-              href="mailto:hi@tommyp.org"
-              className="lg:border-b-2 border-solid border-gray-400"
-            >
-              hi@tommyp.org
-            </ExtA>
+            <ExtA href="https://twitter.com/tommypalm">@tommypalm</ExtA> / <ExtA href="mailto:hi@tommyp.org">hi@tommyp.org</ExtA>
           </P>
         </section>
         <section className="w-screen font-rubik bg-gray-100 text-gray-800">

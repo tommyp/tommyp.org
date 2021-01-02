@@ -33,7 +33,7 @@ function About() {
         </P>
         <P>I write Ruby, Javascript, Elixir & Go.</P>
         <P>
-          Say hello - <ExtA href="mailto:hi@tommyp.org">hi@tommyp.org</ExtA>
+          Say hello - <ExtA href="https://twitter.com/tommypalm">@tommypalm</ExtA> / <ExtA href="mailto:hi@tommyp.org">hi@tommyp.org</ExtA>
         </P>
       </section>
     </React.Fragment>
