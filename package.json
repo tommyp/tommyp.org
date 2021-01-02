@@ -5,14 +5,11 @@
   "scripts": {
     "dev": "next dev",
     "start": "next start",
-    "build": "next build",
-    "export": "next export",
-    "deploy": "npm run build && npm run export",
-    "postbuild": "next-on-netlify"
+    "build": "next build"
   },
   "dependencies": {
     "acorn": "^8.0.4",
-    "next": "10.0.4",
+    "next": "^10.0.3",
     "prop-types": "^15.7.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
