@@ -39,9 +39,9 @@ const getCreative = () => {
           Let&apos;s make<br />
           mad shit
         </h1>
-        <article className="mx-auto w-10/12 lg:w-1/3 mt-20 font-rubik text-2xl">
+        <article className="mx-auto w-10/12 lg:w-1/2 xl:w-1/3 mt-20 font-rubik text-2xl">
           <P>
-            2020 has shown us that The Internet can be complete shit. It&apos;s awful. It&apos;s full of depressing news, racism and people without medical degrees thinking their opinion is as valid as a Doctor.
+            2020 has shown us that The Internet can be utter shit. It&apos;s awful. It&apos;s full of depressing news, racism and people without medical degrees thinking their opinion is as valid as a Doctor.
           </P>
 
           <P>
@@ -61,7 +61,7 @@ const getCreative = () => {
           </P>
 
           <P>
-            Here are a few things I&apos;ve enjoyed in 2020:
+            Here are a few things I enjoyed in 2020:
           </P>
 
           <ul className="mb-10">
@@ -110,11 +110,13 @@ const getCreative = () => {
             Although we should make sure our own spaces work for everyone we think will use them, if you want to do something weird with your own site, go ahead! Why not? Nobody is going to tell you it impacted conversion or a client didn&apos;t like it.
           </P>
 
-          <P>Like most people in 2020 I also watched The Social Dilemma, though I watched it later than most on the 1st January 2021. Something stuck out to me near the end, when someone said they remembered when The Internet was full of creativity. I really miss that side of The Internet.</P>
+          <P>Like most people in 2020 I also watched The Social Dilemma, though I watched it later than most on 1st January 2021. Something stuck out to me near the end, when <ExtA href="https://twitter.com/baileyelaine">Bailey Richardson</ExtA> described The Internet now as being like a mall and that she remembered when The Internet was full of creativity.</P>
+
+          <P>I want an art gallery, not a mall.</P>
 
           <P>
             We used to have fun on the Internet.<br />
-            We used to make <span className="hover:text-transparent bg-gradient-to-r bg-clip-text from-blue-600 to-red-600">mad shit</span>.<br />
+            We used to make <span className="text-transparent bg-gradient-to-r bg-clip-text from-blue-600 to-red-600">mad shit</span>.<br />
             I&apos;m going to do that again in 2021.
           </P>
 
