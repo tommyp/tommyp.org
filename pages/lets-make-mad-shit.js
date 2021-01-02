@@ -112,7 +112,7 @@ const getCreative = () => {
 
           <P>Like most people in 2020 I also watched The Social Dilemma, though I watched it later than most on 1st January 2021. Something stuck out to me near the end, when <ExtA href="https://twitter.com/baileyelaine">Bailey Richardson</ExtA> described The Internet now as being like a mall and that she remembered when The Internet was full of creativity.</P>
 
-          <P>I want an art gallery, not a mall.</P>
+          <P>I want more art galleries and less malls.</P>
 
           <P>
             We used to have fun on the Internet.<br />
