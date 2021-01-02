@@ -45,7 +45,7 @@ const getCreative = () => {
           </P>
 
           <P>
-            But 2020 has also shown us the Internet can be amazing. It kept us together and in touch when we couldn&apos;t do it in real life. It allowed for so much creativity, interaction and communication in this fucking terrible year. So many people are out there are making cool things but we don&apos;t see it because we get bogged down hating all of the terrible shit. Our energy to enjoy what is out there is completely zapped.
+            But 2020 has also shown us that the Internet can be amazing. It kept us together and in touch when we couldn&apos;t do it in real life. It allowed for so much creativity, interaction and communication in this fucking terrible year. So many people are out there are making cool things but we don&apos;t see it because we get bogged down hating all of the terrible shit. Our energy to enjoy what is out there is completely zapped.
         </P>
 
           <P>
