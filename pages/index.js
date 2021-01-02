@@ -22,7 +22,9 @@ function Index() {
             className="w-32 h-32 md:w-64 md:h-64 rounded-full mx-auto lg:ml-0"
             src="/images/wall.jpg"
           />
-          <p className="w-32 md:w-64 mt-12 text-xl hidden lg:block">
+        </div>
+        <section className="container mx-auto w-2/3 pr-16 font-mono md:text-4xl mt-8 lg:mt-32">
+          <p className="mb-12 hidden lg:block">
             I’m Tommy Palmer, a Software Engineer living in London and working at{" "}
             <ExtA
               href="https://deliveroo.co.uk/"
@@ -34,8 +36,6 @@ function Index() {
           </ExtA>
           .
           </p>
-        </div>
-        <section className="container mx-auto w-5/6 font-mono md:text-3xl mt-8 lg:mt-32">
           <ul>
             {posts.map((post, idx) => {
               return (
