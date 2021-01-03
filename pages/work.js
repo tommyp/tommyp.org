@@ -161,12 +161,15 @@ export default class Work extends React.Component {
                   Restaurants to deliver food themselves and decomping the
                   listing page to a new Go Application. I even worked on a
                   change that the Mayor of London, Sadiq Khan,{" "}
-                  <a
-                    className="border-b-2 border-purple-900"
+                  <ExtA
+                    borderColor="border-purple-900"
+                    borderHoverColor="hover:border-white"
+                    textColor="text-purple-900"
+                    textHoverColor="hover:text-white"
                     href="https://twitter.com/sadiqkhan/status/969239476760383488?lang=en"
                   >
                     commented on
-                  </a>
+                  </ExtA>
                   .
                 </P>
               </TextBlock>
@@ -197,12 +200,15 @@ export default class Work extends React.Component {
                     own, disparate sites, to the unified GOV.UK site. This
                     involved building a publishing application and the public
                     facing application for organisations like the{" "}
-                    <a
-                      className="border-b-2 border-white"
+                    <ExtA
+                      borderColor="border-white"
+                      borderHoverColor="hover:border-black"
+                      textColor="text-white"
+                      textHoverColor="hover:text-black"
                       href="https://www.gov.uk/cma-cases"
                     >
                       Competition and Market Authority
-                    </a>
+                    </ExtA>
                     .
                   </P>
 
@@ -210,21 +216,27 @@ export default class Work extends React.Component {
                     After that was finished, my team was disbanded into a number
                     of different teams. I ended up joining the team which was
                     working on preparing the site for the upcoming{" "}
-                    <a
-                      className="border-b-2 border-white"
+                    <ExtA
+                      borderColor="border-white"
+                      borderHoverColor="hover:border-black"
+                      textColor="text-white"
+                      textHoverColor="hover:text-black"
                       href="https://en.wikipedia.org/wiki/2015_United_Kingdom_general_election"
                     >
                       General Election
-                    </a>
+                    </ExtA>
                     . This involved tagging content with the Government it was
                     published under, adding the ability to end a Government and
                     publishing political content under the same{" "}
-                    <a
-                      className="border-b-2 border-white"
+                    <ExtA
+                      borderColor="border-white"
+                      borderHoverColor="hover:border-black"
+                      textColor="text-white"
+                      textHoverColor="hover:text-black"
                       href="https://www.gov.uk/search/news-and-communications"
                     >
                       Application as Government Departments
-                    </a>
+                    </ExtA>
                     .
                   </P>
                 </TextBlock>

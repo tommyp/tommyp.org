@@ -16,6 +16,9 @@ const ExtA = ({
         border-b-2
         lg:border-b-2
         border-solid
+        transition
+        duration-200
+        ease-in-out
         ${textHoverColor || "hover:text-gray-600"}
         ${borderHoverColor || borderColor || "hover:border-gray-600"}
         ${textColor || "text-gray-900"}
