@@ -45,11 +45,11 @@ const getCreative = () => {
           </P>
 
           <P>
-            But 2020 has also shown us that the Internet can be amazing. It kept us together and in touch when we couldn&apos;t do it in real life. It allowed for so much creativity, interaction and communication in this fucking terrible year. So many people are out there are making cool things but we don&apos;t see it because we get bogged down hating all of the terrible shit. Our energy to enjoy what is out there is completely zapped.
+            But 2020 has also shown us that the Internet can be amazing. It kept us together and in touch when we couldn&apos;t do it in real life. It allowed for so much creativity, interaction and communication in this fucking terrible year. So many people out there are making cool things but we don&apos;t see it because we get bogged down hating all of the terrible shit.
           </P>
 
           <P>
-            Remember when people had blogs? And they wrote things? Everyone had their little corner of The Internet. Now we write them in 35 part Twitter threads. Or even worse, Medium articles. You want me to make an account Medium just so I can read more than 3 articles a month? Oh and if you&apos;re trying to browse them on mobile, I hope you have an iPhone 12 Pro Max because otherwise you&apos;ll not be seeing the article when the page loads.
+            Remember when people had blogs? And they wrote things? Everyone had their little corner of The Internet. Now we write them in 35 part Twitter threads. Or even worse, Medium articles. You want me to make an account on Medium just so I can read more than 3 articles a month? Oh and if you&apos;re trying to browse them on mobile, I hope you have an iPhone 12 Pro Max because otherwise you&apos;ll not be seeing the article when the page loads.
           </P>
 
           <P>
@@ -95,7 +95,7 @@ const getCreative = () => {
           <Quote>Admittedly, most company or client work tackles real issues for real people; it’s rarely a sandbox for us to climb into and make mad shit.</Quote>
 
           <P>
-            He&apos;s absolutely right on this point. Even as someone doing more development instead of design, I have ideas of fun things to build or fun ways to build them that I just don&apos;t get to do. Why don&apos;t I do that? I should do that!
+            He&apos;s absolutely right on this point. Even as someone doing more development than design, I have ideas of fun things to build or fun ways to build them that I just don&apos;t get to do. Why don&apos;t I do that? I should do that!
           </P>
 
           <P>
