@@ -83,6 +83,8 @@ const getCreative = () => {
 
             <Li>🚗 <ExtA href="https://www.youtube.com/watch?v=9FEO-XKo4cw">Ogmios&apos; School of Zen Motoring</ExtA> - drives through North East London with a soothing narration.</Li>
 
+            <Li>📝 <ExtA href="https://www.ithoughtaboutthatalot.com/">I Thought About A Lot</ExtA> - a series of essays which includes a really touching story <ExtA href="https://www.ithoughtaboutthatalot.com/how-to-dispose-of-a-body">about disposing of a body</ExtA> and <ExtA href="https://www.ithoughtaboutthatalot.com/why-caroline-quentin-isnt-more-famous">thoughts on Caroline Quentin&apos;s career</ExtA>.</Li>
+
             <Li>🎧 Many Twitch DJ streams from my friends, with a simultanious Zoom call to chat and see familiar faces.</Li>
           </ul>
 
