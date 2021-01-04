@@ -14,8 +14,8 @@ function About() {
           I&apos;m a Senior Software Engineer at{" "}
           <ExtA
             borderColor="border-teal-400"
-            borderHoverColor="border-teal-400"
-            textHoverColor="text-teal-400"
+            borderHoverColor="hover:border-teal-400"
+            textHoverColor="hover:text-teal-400"
             href="https://deliveroo.co.uk/"
           >
             Deliveroo
@@ -23,8 +23,8 @@ function About() {
           in London. I used to work for{" "}
           <ExtA
             borderColor="border-blue-700"
-            borderHoverColor="border-blue-700"
-            textHoverColor="text-blue-700"
+            borderHoverColor="hover:border-blue-700"
+            textHoverColor="hover:text-blue-700"
             href="https://gov.uk"
           >
             GOV.UK
@@ -33,7 +33,7 @@ function About() {
         </P>
         <P>I write Ruby, Javascript, Elixir & Go.</P>
         <P>
-          Say hello - <ExtA href="mailto:hi@tommyp.org">hi@tommyp.org</ExtA>
+          Say hello - <ExtA href="https://twitter.com/tommypalm">@tommypalm</ExtA> / <ExtA href="mailto:hi@tommyp.org">hi@tommyp.org</ExtA>
         </P>
       </section>
     </React.Fragment>
