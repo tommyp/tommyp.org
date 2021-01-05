@@ -67,7 +67,7 @@ const getCreative = () => {
           <ul className="mb-10">
             <Li>🍹 <ExtA href="https://poolside.fm/" borderColor="border-red-400" textHoverColor="hover:text-red-400">Poolside</ExtA> - <span className="italic text-transparent bg-gradient-to-r bg-clip-text from-yellow-600 to-red-600">ultra vibey</span> website and app that brings a pool party to your internet communication device.</Li>
 
-            <Li>💻 <ExtA href="https://javascript30.com/">JavaScript30</ExtA> from <ExtA href="https://twitter.com/wesbos">WesBos</ExtA> - I&apos;m pretty good with JavaScript but in an effort to understand it more deeply, I did this free course at the start of Summer. It took me a bit more than 30 days, I found it really enjoyable beginning my day with some coding and Wes&apos; cheesy jokes.</Li>
+            <Li>💻 <ExtA href="https://javascript30.com/">JavaScript30</ExtA> from <ExtA href="https://twitter.com/wesbos">WesBos</ExtA> - I&apos;m pretty good with JavaScript but in an effort to understand it more deeply, I did this free course at the start of Summer. It took me a bit more than the 30 days, but I found it really enjoyable beginning my day with some coding and Wes&apos; cheesy jokes.</Li>
 
             <Li>🌊 <ExtA href="https://twitter.com/jongold">Jon&apos;s</ExtA> <ExtA href="https://twitter.com/jongold/status/1294137379020627968?lang=en">experiments</ExtA> with three.js shaders.</Li>
 
