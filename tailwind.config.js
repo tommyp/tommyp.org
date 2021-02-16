@@ -8,8 +8,9 @@ module.exports = {
   ],
   theme: {
     extend: {
-      borderColor: {
+      colors: {
         green: {
+          ...defaultTheme.colors.green,
           terminal: "#0f0",
         }
       },
@@ -22,11 +23,6 @@ module.exports = {
         "8xl": "8rem",
         "9xl": "9rem",
         "10xl": "10rem",
-      },
-      textColor: {
-        green: {
-          terminal: "#0f0",
-        }
       }
     }
   },

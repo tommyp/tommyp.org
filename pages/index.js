@@ -27,13 +27,13 @@ function Index() {
           <p className="mb-12">
             I’m Tommy Palmer, a Software Engineer living in London and working at{" "}
             <ExtA
-              href="https://deliveroo.co.uk/"
-              borderColor="border-teal-400"
-              borderHoverColor="hover:border-teal-400"
-              textHoverColor="hover:text-teal-400"
+              borderColor="border-green-500"
+              borderHoverColor="hover:border-green-500"
+              textHoverColor="hover:text-green-500"
+              href="https://goodclub.co.uk/"
             >
-              Deliveroo
-          </ExtA>
+              Good Club
+            </ExtA>{" "}
           .
           </p>
           <ul>

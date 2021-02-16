@@ -13,14 +13,25 @@ function About() {
         <P>
           I&apos;m a Senior Software Engineer at{" "}
           <ExtA
+            borderColor="border-green-500"
+            borderHoverColor="hover:border-green-500"
+            textHoverColor="hover:text-green-500"
+            href="https://goodclub.co.uk/"
+          >
+            Good Club
+          </ExtA>{" "}
+          in London. I used to work for{" "}
+          <ExtA
             borderColor="border-teal-400"
             borderHoverColor="hover:border-teal-400"
             textHoverColor="hover:text-teal-400"
             href="https://deliveroo.co.uk/"
           >
             Deliveroo
-          </ExtA>{" "}
-          in London. I used to work for{" "}
+          </ExtA>
+          {" "}
+            and
+          {" "}
           <ExtA
             borderColor="border-blue-700"
             borderHoverColor="hover:border-blue-700"
