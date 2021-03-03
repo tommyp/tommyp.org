@@ -10,7 +10,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head />
-        <script async defer data-domain="tommy.org" src="https://plausible.io/js/plausible.js"></script>
+        <script async defer data-domain="tommyp.org" src="https://plausible.io/js/plausible.js"></script>
         <body>
           <Main />
           <NextScript />
