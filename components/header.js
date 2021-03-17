@@ -2,7 +2,7 @@ import Link from "next/link";
 import PropTypes from "prop-types";
 
 const Header = ({borderColor, textColor}) => {
-  borderColor = borderColor || "border-gray-700"
+  borderColor = borderColor || "border-gray-900"
   textColor = textColor || "text-gray-900"
 
   return (
