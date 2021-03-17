@@ -56,6 +56,31 @@ export default class Work extends React.Component {
             <ExtA href="https://twitter.com/tommypalm">@tommypalm</ExtA> / <ExtA href="mailto:hi@tommyp.org">hi@tommyp.org</ExtA>
           </P>
         </section>
+        <section className="w-screen font-serif bg-black text-white">
+          <section className="container w-5/6 mx-auto pt-10 pb-10">
+            <h2 className="text-4xl md:text-6xl">
+              <a href="http://conversationswithashipwreck.com">Conversations with a Shipwreck</a>
+            </h2>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-20">
+              <TextBlock>
+                <P>
+                  <ExtA textColor="text-white" borderColor="border-white" href="https://en.wikipedia.org/wiki/Vasa_(ship)">The Vasa</ExtA>, was a Swedish warship who sank on her maiden voyage leaving Stockholm harbour.
+                </P>
+                <P>
+                  I was approached by photographer Adam Davies to work on building a digital exhibition for his collaboration with
+                  Joan Wickersham.
+                </P>
+                <P>
+                  Being a digital representation of a gallery, typography and spacing was extremely important. Adam and I continually worked with the specifics and launched it, timing it to feature with <ExtA textColor="text-white" borderColor="border-white" href="http://www.amscan.org">The American Scandinavian Foundation</ExtA> and <ExtA textColor="text-white" borderColor="border-white" href="http://www.scandinaviahouse.org">Scandinavia House</ExtA>.
+                </P>
+              </TextBlock>
+              <Img
+                url="http://conversationswithashipwreck.com"
+                src="/images/work/conversations.png"
+              />
+            </div>
+          </section>
+        </section>
         <section className="w-screen font-rubik bg-gray-100 text-gray-800">
           <section className="container w-5/6 mx-auto pt-10 pb-10">
             <h2 className="text-4xl md:text-6xl">
