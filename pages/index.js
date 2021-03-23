@@ -33,8 +33,7 @@ function Index() {
               href="https://goodclub.co.uk/"
             >
               Good Club
-            </ExtA>{" "}
-          .
+            </ExtA>.
           </p>
           <ul>
             {posts.map((post, idx) => {
