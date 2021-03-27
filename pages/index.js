@@ -5,6 +5,11 @@ import Link from "next/link";
 
 const posts = [
   {
+    name: "Flying with Tailwind",
+    path: "/flying-with-tailwind",
+    date: "3rd March 2021"
+  },
+  {
     name: "Let's make mad shit",
     path: "/lets-make-mad-shit",
     date: "3rd January 2021"
@@ -39,7 +44,7 @@ function Index() {
           <ul>
             {posts.map((post, idx) => {
               return (
-                <li key={idx}>
+                <li className="mb-5" key={idx}>
                   <Link href={post.path}>
                     <a className="block">
                       <span className="block">{post.name}</span>

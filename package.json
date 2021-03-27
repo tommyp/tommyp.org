@@ -8,6 +8,7 @@
     "build": "next build"
   },
   "dependencies": {
+    "@fontsource/archivo-black": "^4.2.2",
     "acorn": "^8.0.4",
     "next": "^10.0.3",
     "prop-types": "^15.7.2",
@@ -16,11 +17,12 @@
     "react-iframe": "^1.8.0",
     "reset-css": "^5.0.1",
     "sass": "^1.26.3",
-    "typeface-lato": "0.0.75",
-    "typeface-rubik": "^1.1.13",
-    "typeface-space-mono": "0.0.71",
     "tailwindcss": "^1.2.0",
-    "tailwindcss-border-gradients": "^2.0.3"
+    "tailwindcss-border-gradients": "^2.0.3",
+    "typeface-lato": "0.0.75",
+    "typeface-open-sans": "^1.1.13",
+    "typeface-rubik": "^1.1.13",
+    "typeface-space-mono": "0.0.71"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.1.0",
