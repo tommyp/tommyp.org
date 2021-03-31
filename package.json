@@ -16,6 +16,7 @@
     "react-dom": "16.13.1",
     "react-iframe": "^1.8.0",
     "reset-css": "^5.0.1",
+    "roboto-mono-webfont": "^2.0.986",
     "sass": "^1.26.3",
     "tailwindcss": "^1.2.0",
     "tailwindcss-border-gradients": "^2.0.3",

@@ -16,6 +16,7 @@ module.exports = {
       },
       fontFamily: {
         mono: ["Space Mono", ...defaultTheme.fontFamily.mono],
+        "roboto-mono": ["Roboto Mono", ...defaultTheme.fontFamily.mono],
         rubik: ["Rubik", ...defaultTheme.fontFamily.sans],
         "open-sans": ["Open Sans", ...defaultTheme.fontFamily.sans],
         "archivo-black": ["Archivo Black", ...defaultTheme.fontFamily.sans],
