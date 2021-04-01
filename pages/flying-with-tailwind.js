@@ -130,7 +130,7 @@ const AnIntroToTailwind = () => {
         <H2>IntelliSense</H2>
         <Section>
           <P>
-            I&apos;m a VS Code user so it was nice to find an amazing plugin for working with Tailwind. It provides a really great integration for suggesting the class names and even shows the colour when suggesting a class name for a colour.
+            I&apos;m a VS Code user so it was nice to find an amazing plugin for working with Tailwind. It provides a really great integration for autocompletion, and a whole load of other features.
           </P>
           <P>
             Install it from the <A href="https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss">VS Code Marketplace</A>.
