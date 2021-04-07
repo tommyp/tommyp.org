@@ -20,7 +20,7 @@ const H2 = ({children}) => {
     <div className="w-8/12 bg-blue-600">
 
     </div>
-    <h2 className="flex-grow w-full pl-5 lg:pl-10 text-5xl  uppercase text-blue-600">
+    <h2 className="flex-grow w-full pl-5 lg:pl-10 text-5xl md:text-6xl  uppercase text-blue-600">
     {children}
     </h2>
   </div>
