@@ -4,19 +4,26 @@ import "@fontsource/archivo-black"
 import "typeface-open-sans";
 
 const P = ({children}) => {
-  return <p className="text-xl md:text-4xl font-open-sans text-blue-600 leading-relaxed">
+  return <p className="text-xl md:text-2xl font-open-sans text-blue-600 leading-relaxed">
     {children}
   </p>
 }
 
 const Section = ({children}) => {
-  return <section className="px-4 md:px-0 md:ml-40 lg:ml-48 flex-col space-y-8">
+  return <section className="w-full md:w-4/6 lg:w-1/2 mx-auto px-4 md:px-0 flex-col space-y-8">
     {children}
   </section>
 }
 
 const H2 = ({children}) => {
-  return <h2 className="font-archivo-black transform -skew-x-12 border-l-200 md:border-l-400 border-blue-600 text-blue-600 mb-8 pl-5 lg:pl-10 text-4xl sm:text-7xl -ml-40 md:-ml-64 uppercase">{children}</h2>
+  return <div className="w-full mx-auto font-archivo-black mb-8 transform -skew-x-12 flex -ml-48 lg:-ml-64">
+    <div className="w-8/12 bg-blue-600">
+
+    </div>
+    <h2 className="flex-grow w-full pl-5 lg:pl-10 text-5xl  uppercase text-blue-600">
+    {children}
+    </h2>
+  </div>
 }
 
 const A = ({href, children}) => {
@@ -28,7 +35,7 @@ const Pre = ({children}) => {
 }
 
 const Code = ({children}) => {
-  return <code className="font-roboto-mono bg-gray-400 text-blue-600 text-xl md:text-4xl p-8 rounded-md block overflow-scroll">
+  return <code className="font-roboto-mono bg-gray-400 text-blue-600 text-xl md:text-2xl p-8 rounded-md block overflow-scroll">
     {children}
   </code>
 }
@@ -47,7 +54,7 @@ const AnIntroToTailwind = () => {
             </div>
         </h1>
       </div>
-      <main className="w-full md:w-11/12 flex flex-col space-y-10 md:space-y-20 py-10 md:py-20 overflow-x-hidden">
+      <main className="flex flex-col space-y-10 py-10 md:py-20 overflow-x-hidden">
         <Section>
         <P>When I decided that my personal site needed a revamp, I did what every developer does and searched for the hottest new technologies to play with. After a bit of research, one of the things I picked was <A href="https://tailwindcss.com/">Tailwind CSS</A>.</P>
         <P>
@@ -90,7 +97,7 @@ const AnIntroToTailwind = () => {
         <H2>Responsive design</H2>
         <Section>
           <P>
-            <Pre>sm</Pre>, <Pre>md</Pre>, <Pre>lg</Pre>, <Pre>xl</Pre> all relate to screen sizes, so a class of <Pre>md:w-1/2</Pre> would set <Pre>width: 50%;</Pre> at medium screen sizes and up.
+            <Pre>sm</Pre>, <Pre>md</Pre>, <Pre>lg</Pre>, <Pre>xl</Pre>, etc all relate to screen sizes, so a class of <Pre>md:w-1/2</Pre> would set <Pre>width: 50%;</Pre> at medium screen sizes and up.
           </P>
           <P>
             <Pre>hover</Pre>, <Pre>focus</Pre>, etc when prefixed, apply that style just for the pseudo class. A class of <Pre>hover:text-black</Pre> would display the text as <span className="hover:bg-black hover:text-white rounded-md">#000</span> when it is hovered over. Tailwind ships with plenty of <A href="https://tailwindcss.com/docs/configuring-variants#overview">pseudoclass</A> variants that make it super easy to style your elements with interacton.
@@ -100,7 +107,7 @@ const AnIntroToTailwind = () => {
         <Section>
           <P>The truth is that yeah, it sort of is?</P>
           <P>But also, not really?</P>
-          <P>Modern web development has came a long way from this being <span className="italic">just</span> inline styles. You can leverage component based templating to reduce duplication.</P>
+          <P>One of the points of Tailwind is that you stay within your HTML, but there are ways that you can reduce duplication. Let's take a look at those</P>
         </Section>
         <H2>Element components</H2>
         <Section>
@@ -147,7 +154,7 @@ const AnIntroToTailwind = () => {
           classes, but there&apos;s nothing stopping you from completely rewriting the config with your own spacing, colours, fonts, etc and using Tailwind to generate classes for your design system.
           </P>
         </Section>
-        <H2>So what can you build with Tailwind?</H2>
+        <H2>What can you build with Tailwind?</H2>
         <Section>
           <P>Unlike other CSS frameworks, there&apos;s no such thing as a Tailwind look. <A href="https://govbins.uk/">Govbins</A>, <A href="https://conversationswithashipwreck.com/">Conversations with a Shipwreck</A>, <A href="https://www.goodclub.co.uk/">Good Club</A> and this site were all built using Tailwind. A big benefit of Tailwind is to allow you to be more creative and not trap you into a certain style.</P>
         </Section>
@@ -156,7 +163,7 @@ const AnIntroToTailwind = () => {
           <P>Tailwind is a CSS framework to build your own design system, which ships with sensible defaults to generate a good starting point. Give it a shot with your next project and see how it goes. You might not believe it&apos;s as good as people say without trying it.
           </P>
           <P>As the fantastic docs say:</P>
-          <blockquote className="text-xl md:text-4xl text-blue-600 border-l-8 border-blue-600 pl-5 md:pl-10 italic">
+          <blockquote className="text-xl md:text-3xl text-blue-600 border-l-8 border-blue-600 pl-5 md:pl-10 italic">
             If you can suppress the urge to retch long enough to give it a chance, I really think you&apos;ll wonder how you ever worked with CSS any other way.
           </blockquote>
         </Section>
