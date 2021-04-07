@@ -16,14 +16,9 @@ const Section = ({children}) => {
 }
 
 const H2 = ({children}) => {
-  return <div className="w-full mx-auto font-archivo-black mb-8 transform -skew-x-12 flex -ml-48 lg:-ml-64">
-    <div className="w-8/12 bg-blue-600">
-
-    </div>
-    <h2 className="flex-grow w-full pl-5 lg:pl-10 text-5xl md:text-6xl  uppercase text-blue-600">
+  return <h2 className="border-l-20 border-blue-600 pl-5 lg:pl-10 text-5xl md:text-6xl uppercase text-blue-600 font-archivo-black mb-8 transform -skew-x-12 w-full md:w-4/6 lg:w-1/2 -ml-3 sm:mx-auto">
     {children}
-    </h2>
-  </div>
+  </h2>
 }
 
 const A = ({href, children}) => {
@@ -163,7 +158,7 @@ const AnIntroToTailwind = () => {
           <P>Tailwind is a CSS framework to build your own design system, which ships with sensible defaults to generate a good starting point. Give it a shot with your next project and see how it goes. You might not believe it&apos;s as good as people say without trying it.
           </P>
           <P>As the fantastic docs say:</P>
-          <blockquote className="text-xl md:text-3xl text-blue-600 border-l-8 border-blue-600 pl-5 md:pl-10 italic">
+          <blockquote className="text-xl md:text-3xl text-blue-600 border-blue-600 pl-5 md:pl-10">
             If you can suppress the urge to retch long enough to give it a chance, I really think you&apos;ll wonder how you ever worked with CSS any other way.
           </blockquote>
         </Section>
