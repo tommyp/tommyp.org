@@ -56,9 +56,9 @@ const AnIntroToTailwind = () => {
       </div>
       <main className="flex flex-col space-y-10 py-10 md:py-20 overflow-x-hidden">
         <Section>
-        <P>When I decided that my personal site needed a revamp, I did what every developer does and searched for the hottest new technologies to play with. After a bit of research, one of the things I picked was <A href="https://tailwindcss.com/">Tailwind CSS</A>.</P>
+        <P>When I decided that my personal site needed a revamp, I did what every developer does and searched for the hottest new technologies to play with. After a bit of research, one of the things I chose was <A href="https://tailwindcss.com/">Tailwind CSS</A>.</P>
         <P>
-        I&apos;ve now built several projects with Tailwind, and the frontend at my new job is in Tailwind, so I feel like I&apos;ve gotten pretty good with it. This post is based off of a talk I gave to the Frontend guild at Deliveroo just before leaving. Hopefully it gives you a good idea of what Tailwind is and how to use it.
+        I&apos;ve now built several projects with Tailwind, and the frontend at my new job is in Tailwind, so I feel like I&apos;ve gotten pretty good with it. This post is based on a talk I gave to the Frontend guild at Deliveroo just before leaving. Hopefully it gives you a good idea of what Tailwind is and how to use it.
         </P>
         </Section>
       <H2>
@@ -67,13 +67,13 @@ const AnIntroToTailwind = () => {
       </H2>
         <Section>
         <P>
-          First, let&apos;s talk about what it <span className="italic">isn&apos;t</span>. Tailwind isn&apos;t Bootstrap and it&apos;s not a design system like <A href="https://material-ui.com/">Material UI</A> or <A href="https://chakra-ui.com/">Chaka</A>. Frameworks and Design Systems like these can be great to get started, but further down the line it can take more effort to customise them and your markup and CSS selectors must be a certain structure.
+          First, let&apos;s talk about what it <span className="italic">isn&apos;t</span>. Tailwind isn&apos;t Bootstrap and it&apos;s not a design system like <A href="https://material-ui.com/">Material UI</A> or <A href="https://chakra-ui.com/">Chaka</A>. Frameworks and Design Systems like these can be great to get started with, but further down the line it can take more effort to customise them and your markup and CSS selectors must be a certain structure.
         </P>
         <P>
-          I&apos;ve spoken to people who are used to dropping in some components and getting a tooltip, or an accordion, or a carousel. Tailwind doesn&apos;t work like that.
+          I&apos;ve spoken to people who are used to dropping in some components and getting, for example, a tooltip, an accordion, or a carousel. Tailwind doesn&apos;t work like that.
         </P>
         <P>
-          Tailwind is an atomic CSS framework. This means it provides small utility classes that usually only do one thing. You then use combine these classes on an element to build up your styling.
+          Tailwind is an atomic CSS framework. This means it provides small utility classes that usually only do one thing. You then combine these classes on an element to build up your styling.
         </P>
         </Section>
         <H2>
@@ -100,25 +100,25 @@ const AnIntroToTailwind = () => {
             <Pre>sm</Pre>, <Pre>md</Pre>, <Pre>lg</Pre>, <Pre>xl</Pre>, etc all relate to screen sizes, so a class of <Pre>md:w-1/2</Pre> would set <Pre>width: 50%;</Pre> at medium screen sizes and up.
           </P>
           <P>
-            <Pre>hover</Pre>, <Pre>focus</Pre>, etc when prefixed, apply that style just for the pseudo class. A class of <Pre>hover:text-black</Pre> would display the text as <span className="hover:bg-black hover:text-white rounded-md">#000</span> when it is hovered over. Tailwind ships with plenty of <A href="https://tailwindcss.com/docs/configuring-variants#overview">pseudoclass</A> variants that make it super easy to style your elements with interacton.
+            <Pre>hover</Pre>, <Pre>focus</Pre>, etc when prefixed, apply that style just for the pseudo class. A class of <Pre>hover:text-black</Pre> would display the text as <span className="hover:bg-black hover:text-white rounded-md">#000</span> when it is hovered over. Tailwind ships with plenty of <A href="https://tailwindcss.com/docs/configuring-variants#overview">pseudoclass</A> variants that make it super easy to style your elements with interaction.
           </P>
         </Section>
         <H2>Isn&apos;t this just inline styles?</H2>
         <Section>
           <P>The truth is that yeah, it sort of is?</P>
           <P>But also, not really?</P>
-          <P>One of the points of Tailwind is that you stay within your HTML, but there are ways that you can reduce duplication. Let's take a look at those</P>
+          <P>Modern web development has came a long way from being <span className="italic">just</span> inline styles. On way You can leverage component based templating to reduce duplication.</P>
         </Section>
         <H2>Element components</H2>
         <Section>
-          <P>The first hurdle that you&apos;ll probably encounter with Tailwind is that you think that the syntax looks terrible. I&apos;ll admit, that if you&apos;re used to class names or the BEM syntax you&apos;ll probably be very put off by how it looks, but eventually it will begin to make sense.</P>
-          <P>Tailwind ends up leading you down a path that leaves your HTML looking like this:</P>
+          <P>The first hurdle that you&apos;ll probably encounter with Tailwind is that you think that the syntax looks terrible. I&apos;ll admit that if you&apos;re accustomed to class names or the BEM syntax you&apos;ll probably be very put off by how it looks, but eventually it will begin to make sense.</P>
+          <P>Tailwind will lead you down a path that leaves your HTML looking like this:</P>
           <Code>
             &lt;a href=&quot;/testimonials&quot; class=&quot;text-gray-900 underline hover:text-black-900&quot;&gt;<br/>
             &nbsp;&nbsp;Testimonials<br/>
             &lt;/a&gt;
           </Code>
-          <P>Repeating this everywhere in your HTML can become pretty tedious. A good solution I found for this was to turn this into a component:</P>
+          <P>Repeating this everywhere in your HTML can become pretty tedious. A good solution I found for this was to turn that into a reusable component:</P>
           <Code>
           const A = (&#123;href, children&#125;) =&gt;  (<br/>
           &nbsp;&nbsp;&lt;a href=&#123;href&#125; className=&quot;text-gray-900 hover:underline hover:text-black-900&quot;&gt;<br/>
@@ -131,7 +131,7 @@ const AnIntroToTailwind = () => {
             &lt;A href=&quot;/testimonials&quot;&gt;Testimonials&lt;/A&gt;
           </Code>
           <P>
-          Tailwind also has the <A href="https://tailwindcss.com/docs/functions-and-directives#apply">@apply</A> feature which let&apos;s you extract the classes you combine to one common class. I prefer to pull these into a component and keep the Tailwind class syntax across the project, but do whatever is easiest.
+          Tailwind also has the <A href="https://tailwindcss.com/docs/functions-and-directives#apply">@apply</A> feature which allows you to extract the classes you combine to one common class. I prefer to pull these into a component and keep the Tailwind class syntax across the project, but you can do whatever is easiest.
           </P>
         </Section>
         <H2>IntelliSense</H2>
@@ -146,17 +146,17 @@ const AnIntroToTailwind = () => {
         <H2>An API for your Design System</H2>
         <Section>
           <P>
-          Although Tailwind ships with lots of classes to do various things, it&apos;s all generated from a configuration file. You can see that configuration by running <Pre>npx tailwindcss init --full</Pre> and opening <Pre>tailwind.config.js</Pre>.  Anything in that file can be changed and Tailwind will generate the appropriate classes. Each section of the docs also explains how to correctly customise each utility.
+          Although Tailwind ships with lots of classes that do various things, it&apos;s all generated from a configuration file. You can see that configuration by running <Pre>npx tailwindcss init --full</Pre> and opening <Pre>tailwind.config.js</Pre>.  Anything in that file can be changed and Tailwind will generate the appropriate classes. Each section of the docs also explains how to correctly customise each utility.
           </P>
 
           <P>
-          For most projects, I&apos;ve went with the standard
+          For most projects, I&apos;ve gone with the standard
           classes, but there&apos;s nothing stopping you from completely rewriting the config with your own spacing, colours, fonts, etc and using Tailwind to generate classes for your design system.
           </P>
         </Section>
         <H2>What can you build with Tailwind?</H2>
         <Section>
-          <P>Unlike other CSS frameworks, there&apos;s no such thing as a Tailwind look. <A href="https://govbins.uk/">Govbins</A>, <A href="https://conversationswithashipwreck.com/">Conversations with a Shipwreck</A>, <A href="https://www.goodclub.co.uk/">Good Club</A> and this site were all built using Tailwind. A big benefit of Tailwind is to allow you to be more creative and not trap you into a certain style.</P>
+          <P>Unlike other CSS frameworks, there&apos;s no such thing as a Tailwind look. <A href="https://govbins.uk/">Govbins</A>, <A href="https://conversationswithashipwreck.com/">Conversations with a Shipwreck</A>, <A href="https://www.goodclub.co.uk/">Good Club</A> and this site were all built using Tailwind. A big benefit of Tailwind is that it allows you to be more creative and doesn&apos;t trap you into a certain style.</P>
         </Section>
         <H2>Wrapping up</H2>
         <Section>
