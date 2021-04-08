@@ -4,7 +4,7 @@ import "@fontsource/archivo-black"
 import "typeface-open-sans";
 
 const P = ({children}) => {
-  return <p className="text-xl md:text-2xl font-open-sans text-blue-600 leading-relaxed">
+  return <p className="text-xl md:text-2xl font-open-sans text-blue-500 ">
     {children}
   </p>
 }
@@ -16,21 +16,21 @@ const Section = ({children}) => {
 }
 
 const H2 = ({children}) => {
-  return <h2 className="border-l-20 border-blue-600 pl-5 lg:pl-10 text-5xl md:text-6xl uppercase text-blue-600 font-archivo-black mb-8 transform -skew-x-12 w-full md:w-4/6 lg:w-1/2 -ml-3 sm:mx-auto">
+  return <h2 className="border-l-20 border-blue-500 pl-5 lg:pl-10 text-5xl md:text-6xl uppercase text-blue-500 font-archivo-black mb-8 transform -skew-x-12 w-full md:w-4/6 lg:w-1/2 -ml-3 sm:mx-auto">
     {children}
   </h2>
 }
 
 const A = ({href, children}) => {
-  return <a href={href} className="text-white bg-blue-600 inline-block transform -skew-x-12 hover:skew-x-0 transition-all  duration-200">{children}</a>
+  return <a href={href} className="text-white bg-blue-500 inline-block transform -skew-x-12 hover:skew-x-0 transition-all  duration-200">{children}</a>
 }
 
 const Pre = ({children}) => {
-  return <span className="font-roboto-mono bg-gray-400 rounded-md inline px-2">{children}</span>
+  return <span className="font-roboto-mono bg-gray-300 rounded-md inline px-2">{children}</span>
 }
 
 const Code = ({children}) => {
-  return <code className="font-roboto-mono bg-gray-400 text-blue-600 text-xl md:text-2xl p-8 rounded-md block overflow-scroll">
+  return <code className="font-roboto-mono bg-gray-300 text-blue-500 text-xl md:text-2xl p-8 rounded-md block overflow-scroll">
     {children}
   </code>
 }
@@ -39,7 +39,7 @@ const AnIntroToTailwind = () => {
   return (
     <>
       <Head title="Flying with Tailwind" />
-      <div className="w-full bg-blue-600 pb-10 mb:pb-20">
+      <div className="w-full bg-blue-500 pb-10 mb:pb-20">
         <Header textColor="text-white" borderColor="border-white" />
         <h1 className="text-5xl sm:text-7xl md:text-8xl xl:text-10xl text-white uppercase font-bold font-archivo-black md:-ml-12  w-full overflow-hidden leading-none">
             <div className="block -ml-32 md:-ml-64 lg:-ml-40">
@@ -158,7 +158,7 @@ const AnIntroToTailwind = () => {
           <P>Tailwind is a CSS framework to build your own design system, which ships with sensible defaults to generate a good starting point. Give it a shot with your next project and see how it goes. You might not believe it&apos;s as good as people say without trying it.
           </P>
           <P>As the fantastic docs say:</P>
-          <blockquote className="text-xl md:text-3xl text-blue-600 border-blue-600 pl-5 md:pl-10">
+          <blockquote className="text-xl md:text-2xl text-blue-500 border-20 transform -skew-x-12 border-blue-500 p-5 md:pl-10">
             If you can suppress the urge to retch long enough to give it a chance, I really think you&apos;ll wonder how you ever worked with CSS any other way.
           </blockquote>
         </Section>
