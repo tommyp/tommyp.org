@@ -163,7 +163,7 @@ const AnIntroToTailwind = () => {
           </blockquote>
         </Section>
         <Section>
-          <small className="text-blue-400 text-sm font-open-sans">Published 27th March 2021</small>
+          <small className="text-blue-400 text-sm font-open-sans">Published 12th April 2021</small>
         </Section>
       </main>
     </>
