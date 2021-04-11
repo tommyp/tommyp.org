@@ -286,8 +286,8 @@ const AnIntroToTailwind = () => {
           </P>
           <P>
             {" "}
-            It took me a while to get used to it, but now something that I
-            really enjoy working with.
+            It took me a while to get used to it, but now it&apos;s something
+            that I really enjoy working with.
           </P>
           <P>As the fantastic docs say:</P>
           <blockquote className="text-xl md:text-2xl text-blue-500 border-20 transform -skew-x-12 border-blue-500 p-5 md:pl-10">
