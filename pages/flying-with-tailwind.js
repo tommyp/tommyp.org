@@ -113,7 +113,7 @@ const AnIntroToTailwind = () => {
             &nbsp;&nbsp;Testimonials<br/>
             &lt;/a&gt;
           </Code>
-          <P>Repeating this everywhere in your HTML can become pretty tedious. A good solution I found for this was to turn that into a reusable component:</P>
+          <P>Repeating this everywhere in your HTML can become pretty tedious. If I&apos;m working in something like React or Vue I prefer to turn it into a reusable component:</P>
           <Code>
           const A = (&#123;href, children&#125;) =&gt;  (<br/>
           &nbsp;&nbsp;&lt;a href=&#123;href&#125; className=&quot;text-gray-900 hover:underline hover:text-black-900&quot;&gt;<br/>
@@ -126,7 +126,7 @@ const AnIntroToTailwind = () => {
             &lt;A href=&quot;/testimonials&quot;&gt;Testimonials&lt;/A&gt;
           </Code>
           <P>
-          Tailwind also has the <A href="https://tailwindcss.com/docs/functions-and-directives#apply">@apply</A> feature which allows you to extract the classes you combine to one common class. I prefer to pull these into a component and keep the Tailwind class syntax across the project, but you can do whatever is easiest.
+          Tailwind also has the <A href="https://tailwindcss.com/docs/functions-and-directives#apply">@apply</A> feature which allows you to extract multiple classes to one common class. If I&apos;m working in something like React or Vue I prefer to pull these into a component and keep the Tailwind class syntax across the project, but you can do whatever is easiest.
           </P>
         </Section>
         <H2>IntelliSense</H2>
