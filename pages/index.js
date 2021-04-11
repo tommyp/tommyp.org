@@ -5,6 +5,11 @@ import Link from "next/link";
 
 const posts = [
   {
+    name: "Flying with Tailwind",
+    path: "/flying-with-tailwind",
+    date: "12th April 2021"
+  },
+  {
     name: "Let's make mad shit",
     path: "/lets-make-mad-shit",
     date: "3rd January 2021"
@@ -24,7 +29,7 @@ function Index() {
           />
         </div>
         <section className="container mx-auto w-10/12 lg:w-2/3 lg:pr-16 font-mono text-xl sm:text-2xl lg:text-4xl mt-8 lg:mt-24">
-          <p className="mb-12">
+          <p className="mb-12 leading-normal">
             I’m Tommy Palmer, a Software Engineer living in London and working at{" "}
             <ExtA
               borderColor="border-green-500"
@@ -38,11 +43,11 @@ function Index() {
           <ul>
             {posts.map((post, idx) => {
               return (
-                <li key={idx}>
+                <li className="mb-5" key={idx}>
                   <Link href={post.path}>
-                    <a className="block">
+                    <a className="block leading-normal">
                       <span className="block">{post.name}</span>
-                      <small className="block -mt-1 text-sm text-gray-700">{post.date}</small></a>
+                      <small className="block text-sm text-gray-700">{post.date}</small></a>
                   </Link>
                 </li>
               )
