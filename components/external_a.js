@@ -14,8 +14,6 @@ const ExtA = ({
       href={href}
       className={`
         border-b-2
-        lg:border-b-2
-        border-solid
         transition
         duration-200
         ease-in-out
