@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@fontsource/archivo-black": "^4.2.2",
-    "acorn": "^8.0.4",
+    "acorn": "^6.0.1",
     "autoprefixer": "^10.2.5",
     "next": "^10.0.3",
     "postcss": "^8.2.9",
