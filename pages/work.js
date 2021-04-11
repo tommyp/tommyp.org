@@ -204,7 +204,7 @@ export default class Work extends React.Component {
               />
             </div>
           </section>
-          <section className="w-screen bg-blue-800 text-gray-100">
+          <section className="w-screen bg-blue-700 text-white">
             <section className="container w-5/6 mx-auto pt-10 pb-10">
               <h2 className="text-6xl font-sans font-bold">
                 <a href="https://gov.uk">GOV.UK</a>

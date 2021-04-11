@@ -39,7 +39,7 @@ const getCreative = () => {
           Let&apos;s make<br />
           mad shit
         </h1>
-        <article className="mx-auto w-10/12 lg:w-1/2 xl:w-1/3 mt-20 font-rubik text-2xl leading-normal">
+        <article className="mx-auto w-10/12 lg:w-1/2 xl:w-1/3 mt-20 font-rubik text-2xl">
           <P>
             2020 has shown us that The Internet can be utter shit. It&apos;s awful. It&apos;s full of depressing news, racism and people without medical degrees thinking their opinion is as valid as a Doctor.
           </P>
