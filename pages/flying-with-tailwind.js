@@ -5,7 +5,7 @@ import "typeface-open-sans";
 
 const P = ({ children }) => {
   return (
-    <p className="text-xl md:text-2xl font-open-sans text-blue-500 ">
+    <p className="text-xl md:text-2xl font-open-sans text-blue-400 ">
       {children}
     </p>
   );
@@ -13,7 +13,7 @@ const P = ({ children }) => {
 
 const Section = ({ children }) => {
   return (
-    <section className="w-full md:w-4/6 lg:w-1/2 mx-auto px-4 md:px-0 flex-col space-y-8">
+    <section className="w-full md:w-4/6 lg:w-1/2 2xl:w-1/3 mx-auto px-4 md:px-0 flex-col space-y-8">
       {children}
     </section>
   );
@@ -21,7 +21,7 @@ const Section = ({ children }) => {
 
 const H2 = ({ children }) => {
   return (
-    <h2 className="border-l-20 border-blue-500 pl-5 text-5xl md:text-6xl uppercase text-blue-500 font-archivo-black mb-8 transform -skew-x-12 w-full md:w-4/6 lg:w-1/2 -ml-3 sm:mx-auto">
+    <h2 className="border-l-20 border-blue-400 pl-5 text-5xl md:text-6xl uppercase text-transparent bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text font-archivo-black mb-8 transform -skew-x-12 w-full md:w-4/6 lg:w-1/2 2xl:w-1/3 -ml-3 sm:mx-auto">
       {children}
     </h2>
   );
@@ -31,7 +31,7 @@ const A = ({ href, children }) => {
   return (
     <a
       href={href}
-      className="text-white bg-blue-500 inline-block transform -skew-x-12 hover:skew-x-0 transition-all  duration-200"
+      className="text-white bg-gradient-to-r from-blue-400 to-green-400 inline-block transform -skew-x-12 hover:skew-x-0 transition-all duration-200"
     >
       {children}
     </a>
@@ -40,7 +40,7 @@ const A = ({ href, children }) => {
 
 const Pre = ({ children }) => {
   return (
-    <span className="font-roboto-mono bg-gray-300 rounded-md inline px-2">
+    <span className="font-roboto-mono bg-gray-200 rounded-md inline px-2">
       {children}
     </span>
   );
@@ -48,7 +48,7 @@ const Pre = ({ children }) => {
 
 const Code = ({ children }) => {
   return (
-    <code className="font-roboto-mono bg-gray-300 text-blue-500 text-xl md:text-2xl p-8 rounded-md block overflow-scroll">
+    <code className="font-roboto-mono bg-gray-200 text-blue-400 text-xl md:text-2xl p-8 rounded-md block overflow-scroll">
       {children}
     </code>
   );
@@ -58,7 +58,7 @@ const AnIntroToTailwind = () => {
   return (
     <>
       <Head title="Flying with Tailwind" ogImage="flying-with-tailwind.png" />
-      <div className="w-full bg-blue-500 pb-10 mb:pb-20">
+      <div className="w-full  bg-gradient-to-br from-blue-400 to-green-400 pb-10 mb:pb-20">
         <Header textColor="text-white" borderColor="border-white" />
         <h1 className="text-5xl sm:text-7xl md:text-8xl xl:text-10xl text-white uppercase font-bold font-archivo-black  w-full overflow-hidden leading-none">
           <div className="block -ml-32 md:-ml-64">
@@ -180,7 +180,7 @@ const AnIntroToTailwind = () => {
           <P>
             Even with using partials or components, you might think that a load
             of Tailwind classes to style common elements like headings,
-            paragprahs and links is overkill.
+            paragraphs and links is overkill.
           </P>
           <P>
             Just styling an <Pre>a</Pre> will leave your HTML looking like this:
@@ -289,7 +289,7 @@ const AnIntroToTailwind = () => {
             that I really enjoy working with.
           </P>
           <P>As the fantastic docs say:</P>
-          <blockquote className="text-xl md:text-2xl text-blue-500 border-20 transform -skew-x-12 border-blue-500 p-5 md:pl-10">
+          <blockquote className="text-xl md:text-2xl text-white transform -skew-x-12  p-5 md:pl-10 bg-gradient-to-r from-blue-400 to-green-400 ">
             If you can suppress the urge to retch long enough to give it a
             chance, I really think you&apos;ll wonder how you ever worked with
             CSS any other way.
