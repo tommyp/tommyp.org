@@ -57,7 +57,7 @@ const Code = ({ children }) => {
 const AnIntroToTailwind = () => {
   return (
     <>
-      <Head title="Flying with Tailwind" />
+      <Head title="Flying with Tailwind" ogImage="flying-with-tailwind.png" />
       <div className="w-full bg-blue-500 pb-10 mb:pb-20">
         <Header textColor="text-white" borderColor="border-white" />
         <h1 className="text-5xl sm:text-7xl md:text-8xl xl:text-10xl text-white uppercase font-bold font-archivo-black  w-full overflow-hidden leading-none">

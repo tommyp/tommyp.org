@@ -32,7 +32,7 @@ const Quote = ({ children }) => {
 const getCreative = () => {
   return (
     <>
-      <Head title="Let's make mad shit" />
+      <Head title="Let's make mad shit" ogImage="lets-make-mad-shit.png" />
       <Header />
       <main className="mt-20">
         <h1 className="mx-auto w-2/3 text-7xl lg:text-10xl font-rubik text-center uppercase font-bold italic transform -rotate-6 bg-clip-text text-transparent bg-gradient-to-br from-blue-600 to-red-600 leading-none">
