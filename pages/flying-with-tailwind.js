@@ -60,18 +60,16 @@ const AnIntroToTailwind = () => {
       <Head title="Flying with Tailwind" ogImage="flying-with-tailwind.png" />
       <div className="w-full  bg-gradient-to-br from-blue-400 to-green-400 pb-10 mb:pb-20">
         <Header textColor="text-white" borderColor="border-white" />
-        <h1 className="text-5xl sm:text-7xl md:text-8xl xl:text-10xl text-white uppercase font-bold font-archivo-black  w-full overflow-hidden leading-none">
-          <div className="block -ml-32 md:-ml-64">
-            <span className="block transform -skew-x-12 border-l-200 md:border-l-400 lg:border-l-600 xl:border-l-800 border-white mb-4 md:mb-8 pl-3 md:pl-10 ml-4">
-              Flying
-            </span>
-            <span className="block transform -skew-x-12 border-l-200 md:border-l-400 lg:border-l-600 xl:border-l-800 border-white mb-4 md:mb-8 pl-3 md:pl-10 ml-1 sm:-ml-1 md:-ml-4 xl:-ml-6">
-              With
-            </span>
-            <span className="block transform -skew-x-12 border-l-200 md:border-l-400 lg:border-l-600 xl:border-l-800 border-white -ml-2 sm:-ml-6 md:-ml-12 xl:-ml-16 pl-3 md:pl-10">
-              Tailwind
-            </span>
-          </div>
+        <h1 className="text-6xl sm:text-7xl md:text-8xl xl:text-10xl text-white uppercase font-bold font-archivo-black overflow-hidden w-full xl:w-9/12 mx-auto leading-none pl-20">
+          <span className="block transform -skew-x-12 border-l-20 md:border-l-50 border-white mb-4 md:mb-8 pl-3 md:pl-10 ml-4">
+            Flying
+          </span>
+          <span className="block transform -skew-x-12 border-l-20 md:border-l-50 border-white mb-4 md:mb-8 pl-3 md:pl-10 ml-1 sm:-ml-1 md:-ml-4 xl:-ml-6">
+            With
+          </span>
+          <span className="block transform -skew-x-12 border-l-20 md:border-l-50 border-white -ml-2 sm:-ml-6 md:-ml-12 xl:-ml-16 pl-3 md:pl-10">
+            Tailwind
+          </span>
         </h1>
       </div>
       <main className="flex flex-col space-y-10 py-10 md:py-20 overflow-x-hidden">
@@ -83,10 +81,11 @@ const AnIntroToTailwind = () => {
             <A href="https://tailwindcss.com/">Tailwind CSS</A>.
           </P>
           <P>
-            I&apos;ve now built several projects with Tailwind, and we use Tailwind at my new job, so I feel like I&apos;ve gotten pretty
-            good with it. This post is based on a talk I gave to the Frontend
-            guild at Deliveroo just before leaving. Hopefully it gives you a
-            good idea of what Tailwind is and how to use it.
+            I&apos;ve now built several projects with Tailwind, and we use
+            Tailwind at my new job, so I feel like I&apos;ve gotten pretty good
+            with it. This post is based on a talk I gave to the Frontend guild
+            at Deliveroo just before leaving. Hopefully it gives you a good idea
+            of what Tailwind is and how to use it.
           </P>
         </Section>
         <H2>What is Tailwind?</H2>
