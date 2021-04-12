@@ -83,8 +83,7 @@ const AnIntroToTailwind = () => {
             <A href="https://tailwindcss.com/">Tailwind CSS</A>.
           </P>
           <P>
-            I&apos;ve now built several projects with Tailwind, and the frontend
-            at my new job is in Tailwind, so I feel like I&apos;ve gotten pretty
+            I&apos;ve now built several projects with Tailwind, and we use Tailwind at my new job, so I feel like I&apos;ve gotten pretty
             good with it. This post is based on a talk I gave to the Frontend
             guild at Deliveroo just before leaving. Hopefully it gives you a
             good idea of what Tailwind is and how to use it.
