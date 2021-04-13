@@ -247,7 +247,7 @@ const AnIntroToTailwind = () => {
             # don&apos;t do this
             <br />
             const style = &#96;bg-&#36;&#123;resp.status == 200 ? &apos;green-500&apos; :
-            &apos;red-500&apos;&#125;&#96;
+            &apos;red-500&apos;&#125;&#96;;
             <br />
             <br />
             # do this
