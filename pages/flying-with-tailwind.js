@@ -227,6 +227,34 @@ const AnIntroToTailwind = () => {
             don&apos;t want to make a component to replace every tag.
           </P>
         </Section>
+        <H2>That&apos;s a lot of classes</H2>
+        <Section>
+          <P>
+            You&apos;d think so, but when you build in production, Tailwind uses{" "}
+            <A href="https://tailwindcss.com/docs/optimizing-for-production#writing-purgeable-html">
+              PurgeCSS
+            </A>{" "}
+            to look through all your files and only include the classes that you
+            actually use.
+          </P>
+          <P>
+            One thing that initially tripped me up, was that any string
+            concatonation will stop Tailwind from finding those classes. As long
+            as you use full class names when doing any logic it will work as
+            expected.
+          </P>
+          <Code>
+            # don&apos;t do this
+            <br />
+            const style = &#96;bg-&#36;&#123;resp.status == 200 ? &apos;green-500&apos; :
+            &apos;red-500&apos;&#125;&#96;
+            <br />
+            <br />
+            # do this
+            <br />
+            const style = resp.status == 200 ? &apos;bg-green-500&apos; : &apos;bg-red-500&apos;;
+          </Code>
+        </Section>
         <H2>IntelliSense</H2>
         <Section>
           <P>
@@ -246,12 +274,15 @@ const AnIntroToTailwind = () => {
         <Section>
           <P>
             Although Tailwind ships with lots of classes that do various things,
-            it&apos;s all generated from a configuration file. You can see that
-            configuration by running <Pre>npx tailwindcss init --full</Pre> and
-            opening <Pre>tailwind.config.js</Pre>. Anything in that file can be
-            changed and Tailwind will generate the appropriate classes. Each
-            section of the docs also explains how to correctly customise each
-            utility.
+            it&apos;s all generated from a configuration file.
+          </P>
+          <P>
+            {" "}
+            You can see that configuration by running{" "}
+            <Pre>npx tailwindcss init --full</Pre> and opening{" "}
+            <Pre>tailwind.config.js</Pre>. Anything in that file can be changed
+            and Tailwind will generate the appropriate classes. Each section of
+            the docs also explains how to correctly customise each utility.
           </P>
 
           <P>
@@ -296,7 +327,7 @@ const AnIntroToTailwind = () => {
         </Section>
         <Section>
           <small className="text-blue-400 text-sm font-open-sans">
-            Published 12th April 2021
+            Published 13th April 2021
           </small>
         </Section>
       </main>
