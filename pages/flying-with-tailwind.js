@@ -60,7 +60,7 @@ const AnIntroToTailwind = () => {
       <Head title="Flying with Tailwind" ogImage="flying-with-tailwind.png" />
       <div className="w-full  bg-gradient-to-br from-blue-400 to-green-400 pb-10 mb:pb-20">
         <Header textColor="text-white" borderColor="border-white" />
-        <h1 className="text-6xl sm:text-7xl md:text-8xl xl:text-10xl text-white uppercase font-bold font-archivo-black w-full xl:w-6/12 mx-auto leading-none pl-20">
+        <h1 className="text-6xl sm:text-7xl md:text-8xl xl:text-10xl text-white uppercase font-bold font-archivo-black w-full xl:w-6/12 mx-auto leading-none pl-4">
           <span className="block transform -skew-x-12 border-l-20 md:border-l-50 border-white mb-4 md:mb-8 pl-3 md:pl-10 ml-4">
             Flying
           </span>
