@@ -210,7 +210,7 @@ const AnIntroToTailwind = () => {
           </Code>
           <P>Then rendering it becomes similar to regular HTML:</P>
           <Code>
-            &lt;A href=&quot;/testimonials&quot;&gt;Testimonials&lt;/A&gt;
+            &lt;A&nbsp;href=&quot;/testimonials&quot;&gt;Testimonials&lt;/A&gt;
           </Code>
           <P>
             Tailwind also has the{" "}
