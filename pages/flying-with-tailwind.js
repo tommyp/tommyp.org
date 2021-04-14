@@ -131,7 +131,7 @@ const AnIntroToTailwind = () => {
             <Pre>class=&quot;border border-black&quot;</Pre>.
           </P>
         </Section>
-        <H2>Responsive design & pseudoclasses</H2>
+        <H2>Responsive design & pseudo-classes</H2>
         <Section>
           <P>
             <Pre>sm</Pre>, <Pre>md</Pre>, <Pre>lg</Pre>, <Pre>xl</Pre>, etc all
