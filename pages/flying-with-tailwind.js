@@ -327,7 +327,7 @@ const AnIntroToTailwind = () => {
         </Section>
         <Section>
           <small className="text-blue-400 text-sm font-open-sans">
-            Published 13th April 2021
+            Published 15th April 2021
           </small>
         </Section>
       </main>

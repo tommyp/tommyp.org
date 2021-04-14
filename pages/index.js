@@ -7,7 +7,7 @@ const posts = [
   {
     name: "Flying with Tailwind",
     path: "/flying-with-tailwind",
-    date: "13th April 2021"
+    date: "15th April 2021"
   },
   {
     name: "Let's make mad shit",
