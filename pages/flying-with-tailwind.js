@@ -60,7 +60,7 @@ const AnIntroToTailwind = () => {
       <Head title="Flying with Tailwind" ogImage="flying-with-tailwind.png" />
       <div className="w-full  bg-gradient-to-br from-blue-400 to-green-400 pb-10 mb:pb-20">
         <Header textColor="text-white" borderColor="border-white" />
-        <h1 className="text-6xl sm:text-7xl md:text-8xl xl:text-10xl text-white uppercase font-bold font-archivo-black w-full sm:w-10/12 xl:w-7/12 mx-auto leading-none">
+        <h1 className="text-6xl sm:text-7xl md:text-8xl xl:text-10xl text-white uppercase font-bold font-archivo-black w-full sm:w-10/12 xl:w-1/2 2xl:w-5/12 mx-auto leading-none">
           <span className="block transform -skew-x-12 border-l-20 md:border-l-50 border-white mb-4 md:mb-8 pl-3 md:pl-10 ml-4">
             Flying
           </span>
@@ -194,7 +194,7 @@ const AnIntroToTailwind = () => {
           </Code>
           <P>
             Repeating this everywhere in your HTML can become pretty tedious. If
-            I&apos;m working in something like React or Vue I prefer to turn it
+            I&apos;m working in something like React I prefer to turn it
             into a reusable component:
           </P>
           <Code>
@@ -221,10 +221,9 @@ const AnIntroToTailwind = () => {
             class.
           </P>
           <P>
-            If I&apos;m working in something like React or Vue I prefer to pull
+            If I&apos;m working in something component based I prefer to pull
             these into a component and keep the Tailwind class syntax across the
-            project, but <Pre>@apply</Pre> can also be useful when you
-            don&apos;t want to make a component to replace every tag.
+            project, but <Pre>@apply</Pre> can also be useful.
           </P>
         </Section>
         <H2>That&apos;s a lot of classes</H2>
