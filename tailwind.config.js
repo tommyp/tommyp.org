@@ -12,6 +12,9 @@ module.exports = {
         green: {
           ...defaultTheme.colors.green,
           terminal: "#0f0",
+        },
+        teal: {
+          400: '#4fd1c5',
         }
       },
       fontFamily: {
