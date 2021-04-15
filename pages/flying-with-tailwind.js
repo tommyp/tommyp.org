@@ -304,6 +304,9 @@ const AnIntroToTailwind = () => {
             allows you to be more creative and doesn&apos;t trap you into a
             certain style.
           </P>
+          <P>
+            If you&apos;re a bit lost with how to build more complex UI, there&apos;s <A href="https://tailwindui.com/">Tailwind UI</A>. It&apos;s a collection of styled elements that you can drop into your HTML and customise. There&apos;s a load on there for free along with premium ones that require a paid account.
+          </P>
         </Section>
         <H2>Wrapping up</H2>
         <Section>
