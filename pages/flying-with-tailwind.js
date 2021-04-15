@@ -238,20 +238,20 @@ const AnIntroToTailwind = () => {
           </P>
           <P>
             One thing that initially tripped me up, was that any string
-            concatonation will stop Tailwind from finding those classes. As long
+            concatonation will stop PurgeCSS from finding those classes. As long
             as you use full class names when doing any logic it will work as
             expected.
           </P>
           <Code>
             # don&apos;t do this
             <br />
-            const style = &#96;bg-&#36;&#123;resp.status == 200 ? &apos;green-500&apos; :
+            const style = &#96;bg-&#36;&#123;resp.ok ? &apos;green-500&apos; :
             &apos;red-500&apos;&#125;&#96;;
             <br />
             <br />
             # do this
             <br />
-            const style = resp.status == 200 ? &apos;bg-green-500&apos; : &apos;bg-red-500&apos;;
+            const style = resp.ok ? &apos;bg-green-500&apos; : &apos;bg-red-500&apos;;
           </Code>
         </Section>
         <H2>IntelliSense</H2>
