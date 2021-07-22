@@ -27,10 +27,8 @@ function About() {
             href="https://deliveroo.co.uk/"
           >
             Deliveroo
-          </ExtA>
-          {" "}
-            and
-          {" "}
+          </ExtA>{" "}
+          and{" "}
           <ExtA
             borderColor="border-blue-700"
             borderHoverColor="hover:border-blue-700"
@@ -43,7 +41,9 @@ function About() {
         </P>
         <P>I write Ruby, Javascript, Elixir & Go.</P>
         <P>
-          Say hello - <ExtA href="https://twitter.com/tommypalm">@tommypalm</ExtA> / <ExtA href="mailto:hi@tommyp.org">hi@tommyp.org</ExtA>
+          Say hello -{" "}
+          <ExtA href="https://twitter.com/tommypalm">@tommypalm</ExtA> /{" "}
+          <ExtA href="mailto:hi@tommyp.org">hi@tommyp.org</ExtA>
         </P>
       </section>
     </>
