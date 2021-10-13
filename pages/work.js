@@ -18,9 +18,12 @@ P.propTypes = {
 const Img = ({ url, src }) => {
   return (
     <section className="md:mt-10">
-      <a href={url}>
-        <img src={src} />
-      </a>
+      {url && (
+        <a href={url}>
+          <img src={src} />
+        </a>
+      )}
+      {!url && <img src={src} />}
     </section>
   );
 };
@@ -49,35 +52,65 @@ export default class Work extends React.Component {
         <Header />
         <section className="mx-auto w-5/6 xl:w-1/2 md:pl-5 md:pr-5 font-mono mb-10">
           <P>
-            I&apos;m a Full Stack Engineer who likes working in multi-disciplinary teams to solve real world problems for users.
+            I&apos;m a Full Stack Engineer who likes working in
+            multi-disciplinary teams to solve real world problems for users.
           </P>
           <P>
             Wanna chat? -{" "}
-            <ExtA href="https://twitter.com/tommypalm">@tommypalm</ExtA> / <ExtA href="mailto:hi@tommyp.org">hi@tommyp.org</ExtA>
+            <ExtA href="https://twitter.com/tommypalm">@tommypalm</ExtA> /{" "}
+            <ExtA href="mailto:hi@tommyp.org">hi@tommyp.org</ExtA>
           </P>
         </section>
         <section className="w-screen font-serif bg-black text-white">
           <section className="container w-5/6 mx-auto pt-10 pb-10">
             <h2 className="text-4xl md:text-6xl">
-              <a href="http://conversationswithashipwreck.com">Conversations with a Shipwreck</a>
+              Conversations with a Shipwreck
             </h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-20">
               <TextBlock>
                 <P>
-                  <ExtA textColor="text-white" borderColor="border-white" href="https://en.wikipedia.org/wiki/Vasa_(ship)">The Vasa</ExtA>, was a Swedish warship who sank on her maiden voyage leaving Stockholm harbour.
+                  <ExtA
+                    textColor="text-white"
+                    borderColor="border-white"
+                    href="https://en.wikipedia.org/wiki/Vasa_(ship)"
+                  >
+                    The Vasa
+                  </ExtA>
+                  , was a Swedish warship who sank on her maiden voyage leaving
+                  Stockholm harbour.
                 </P>
                 <P>
-                  I was approached by photographer Adam Davies to work on building a digital exhibition for his collaboration with
-                  Joan Wickersham.
+                  I was approached by photographer Adam Davies to work on
+                  building a digital exhibition for his collaboration with Joan
+                  Wickersham.
                 </P>
                 <P>
-                  Being a digital representation of a gallery, typography and spacing was extremely important. Adam and I continually worked with the specifics and launched it, timing it to feature with <ExtA textColor="text-white" borderColor="border-white" href="http://www.amscan.org">The American Scandinavian Foundation</ExtA> and <ExtA textColor="text-white" borderColor="border-white" href="http://www.scandinaviahouse.org">Scandinavia House</ExtA>.
+                  Being a digital representation of a gallery, typography and
+                  spacing was extremely important. Adam and I continually worked
+                  with the specifics and launched it, timing it to feature with{" "}
+                  <ExtA
+                    textColor="text-white"
+                    borderColor="border-white"
+                    href="http://www.amscan.org"
+                  >
+                    The American Scandinavian Foundation
+                  </ExtA>{" "}
+                  and{" "}
+                  <ExtA
+                    textColor="text-white"
+                    borderColor="border-white"
+                    href="http://www.scandinaviahouse.org"
+                  >
+                    Scandinavia House
+                  </ExtA>
+                  .
+                </P>
+                <P>
+                  After the exhibition was finished, we removed the site from
+                  the web, just like a real exhibition.
                 </P>
               </TextBlock>
-              <Img
-                url="http://conversationswithashipwreck.com"
-                src="/images/work/conversations.png"
-              />
+              <Img src="/images/work/conversations.png" />
             </div>
           </section>
         </section>
@@ -89,16 +122,50 @@ export default class Work extends React.Component {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-20">
               <TextBlock>
                 <P>
-                  My good friend <ExtA href="https://twitter.com/HarryTrimble" borderColor="border-pink-600" borderHoverColor="hover:border-pink-600" textHoverColor="hover:text-pink-600">Harry</ExtA> has spent a few years travelling the country, taking photos of local council bins and documenting them on <ExtA href="https://govbins.uk" borderColor="border-pink-600" borderHoverColor="hover:border-pink-600" textHoverColor="hover:text-pink-600">govbins.uk</ExtA>.
+                  My good friend{" "}
+                  <ExtA
+                    href="https://twitter.com/HarryTrimble"
+                    borderColor="border-pink-600"
+                    borderHoverColor="hover:border-pink-600"
+                    textHoverColor="hover:text-pink-600"
+                  >
+                    Harry
+                  </ExtA>{" "}
+                  has spent a few years travelling the country, taking photos of
+                  local council bins and documenting them on{" "}
+                  <ExtA
+                    href="https://govbins.uk"
+                    borderColor="border-pink-600"
+                    borderHoverColor="hover:border-pink-600"
+                    textHoverColor="hover:text-pink-600"
+                  >
+                    govbins.uk
+                  </ExtA>
+                  .
                 </P>
                 <P>
-                  Mid-March, we were hanging out and he asked me would I help him add new features to the site and I happily agreed. As we went into Lockdown, Harry started accepting submissions via Instagram as travelling for bins didn&apos;t seem so essential.
+                  Mid-March, we were hanging out and he asked me would I help
+                  him add new features to the site and I happily agreed. As we
+                  went into Lockdown, Harry started accepting submissions via
+                  Instagram as travelling for bins didn&apos;t seem so
+                  essential.
                 </P>
                 <P>
-                  It was originally a static site hosted on Github Pages made using Bootstrap with lots of overriding inline styles. It had a lot of repetition of markup and with so many high res images, the time to load the page was upwards of 15 seconds.
+                  It was originally a static site hosted on Github Pages made
+                  using Bootstrap with lots of overriding inline styles. It had
+                  a lot of repetition of markup and with so many high res
+                  images, the time to load the page was upwards of 15 seconds.
                 </P>
                 <P>
-                  I ported the site to Next.js and Tailwind CSS, and used lazy loading to decrease the latency of the page. I also added sorting and submissions using Netlify forms. After a few weeks, the bandwidth used for the images was making the Netlify bill pretty huge, so now, on every deploy to master, it runs the images through ImageOptim and syncs them to S3, loading them from there for visitors. This reduced the bandwidth per month from hundreds of GBs during peak periods to hundreds of MBs.
+                  I ported the site to Next.js and Tailwind CSS, and used lazy
+                  loading to decrease the latency of the page. I also added
+                  sorting and submissions using Netlify forms. After a few
+                  weeks, the bandwidth used for the images was making the
+                  Netlify bill pretty huge, so now, on every deploy to master,
+                  it runs the images through ImageOptim and syncs them to S3,
+                  loading them from there for visitors. This reduced the
+                  bandwidth per month from hundreds of GBs during peak periods
+                  to hundreds of MBs.
                 </P>
               </TextBlock>
               <Img
