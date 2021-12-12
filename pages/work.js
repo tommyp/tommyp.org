@@ -106,11 +106,22 @@ export default class Work extends React.Component {
                   .
                 </P>
                 <P>
-                  After the exhibition was finished, we removed the site from
-                  the web, just like a real exhibition.
+                  As the exhibition has finished, you can find the site avilable
+                  at an{" "}
+                  <ExtA
+                    textColor="text-white"
+                    borderColor="border-white"
+                    href="https://shipwreck.tommyp.org/"
+                  >
+                    archive
+                  </ExtA>
+                  .
                 </P>
               </TextBlock>
-              <Img src="/images/work/conversations.png" />
+              <Img
+                src="/images/work/conversations.png"
+                url="https://shipwreck.tommyp.org/"
+              />
             </div>
           </section>
         </section>
