@@ -7,14 +7,14 @@ const posts = [
   {
     name: "Flying with Tailwind",
     path: "/flying-with-tailwind",
-    date: "15th April 2021"
+    date: "15th April 2021",
   },
   {
     name: "Let's make mad shit",
     path: "/lets-make-mad-shit",
-    date: "3rd January 2021"
-  }
-]
+    date: "3rd January 2021",
+  },
+];
 
 function Index() {
   return (
@@ -30,15 +30,12 @@ function Index() {
         </div>
         <section className="container mx-auto w-10/12 lg:w-2/3 lg:pr-16 font-mono text-xl sm:text-2xl lg:text-4xl mt-8 lg:mt-24">
           <p className="mb-12 leading-normal">
-            I’m Tommy Palmer, a Software Engineer living in London and working at{" "}
-            <ExtA
-              borderColor="border-green-500"
-              borderHoverColor="hover:border-green-500"
-              textHoverColor="hover:text-green-500"
-              href="https://goodclub.co.uk/"
-            >
-              Good Club
-            </ExtA>.
+            I’m Tommy, a freelance Software Engineer living in London. I&apos;m
+            currently looking for freelance opportunities.
+          </p>
+          <p className="mb-12 leading-normal">
+            Want to chat? -{" "}
+            <ExtA href="mailto:hi@tommyp.org">hi@tommyp.org</ExtA>
           </p>
           <ul>
             {posts.map((post, idx) => {
@@ -47,10 +44,13 @@ function Index() {
                   <Link href={post.path}>
                     <a className="block leading-normal">
                       <span className="block">{post.name}</span>
-                      <small className="block text-sm text-gray-700">{post.date}</small></a>
+                      <small className="block text-sm text-gray-700">
+                        {post.date}
+                      </small>
+                    </a>
                   </Link>
                 </li>
-              )
+              );
             })}
           </ul>
         </section>
