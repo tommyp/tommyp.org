@@ -17,11 +17,11 @@ const ExtA = ({
         transition
         duration-200
         ease-in-out
-        ${textHoverColor || "hover:text-gray-600"}
-        ${borderHoverColor || borderColor || "hover:border-gray-600"}
-        ${textColor || "text-gray-900"}
-        ${borderColor || "border-gray-900"}
-        ${className || ''}
+        ${textHoverColor || "hover:text-black"}
+        ${borderHoverColor || borderColor || "hover:border-black"}
+        ${textColor || "text-black"}
+        ${borderColor || "border-black"}
+        ${className || ""}
       `}
     >
       {children}
