@@ -41,6 +41,7 @@ function Index() {
   return (
     <>
       <Head />
+      <span id="top"></span>
       <Header />
       <section className="container mx-auto w-full md:w-5/6 lg:pl-16 font-mono lg:flex lg:flex-row-reverse min-h-screen">
         <div className="w-full lg:w-1/3 mt-10 lg:mt-20 ">
@@ -49,8 +50,8 @@ function Index() {
             src="/images/wall.jpg"
           />
         </div>
-        <section className="container mx-auto w-10/12 lg:w-2/3 lg:pr-16 font-mono text-xl sm:text-2xl lg:text-4xl mt-8 lg:mt-24">
-          <p className="mb-6">👋</p>
+        <section className="container mx-auto w-10/12 lg:w-2/3 lg:pr-16 font-mono text-xl sm:text-2xl lg:text-4xl mt-8 lg:mt-18">
+          <p className="mb-12 text-6xl">👋</p>
           <p className="mb-12 leading-normal">
             I’m Tommy, a freelance Web Developer living in London. I&apos;m
             currently looking for freelance opportunities.
@@ -369,6 +370,13 @@ function Index() {
           </section>
         </section>
       </section>
+      <footer className="">
+        <div className="w-10/12 mx-auto py-12">
+          <a href="#top" className="text-slate-400 text-4xl">
+            👆
+          </a>
+        </div>
+      </footer>
     </>
   );
 }
