@@ -53,8 +53,15 @@ function Index() {
         <section className="container mx-auto w-10/12 lg:w-2/3 lg:pr-16 font-mono text-xl sm:text-2xl lg:text-4xl mt-8 lg:mt-18">
           <p className="mb-12 text-6xl">👋</p>
           <p className="mb-12 leading-normal">
-            I’m Tommy, a freelance Web Developer living in London. I&apos;m
-            currently looking for freelance opportunities.
+            I’m Tommy, a{" "}
+            <a
+              href="#work"
+              className="text-transparent bg-gradient-to-r bg-clip-text from-lime-400 to-cyan-400 border-b md:border-b-2 border-cyan-400 hover:text-white hover:bg-clip-border  transition "
+            >
+              freelance Web Developer
+            </a>{" "}
+            living in London. I&apos;m currently looking for freelance
+            opportunities.
           </p>
           <p className="mb-12 leading-normal">
             Want to chat? -{" "}
@@ -78,6 +85,7 @@ function Index() {
           </ul>
         </section>
       </section>
+      <span id="work"></span>
       <section className="container mx-auto w-full md:w-5/6 lg:pl-16 font-mono text-xl sm:text-2xl lg:text-4xl">
         <p className="w-full px-16 lg:px-0 lg:w-2/3 mb-12 leading-normal">
           Over the years I&apos;ve worked on big projects and small projects. I
