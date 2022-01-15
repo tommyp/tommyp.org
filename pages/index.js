@@ -56,7 +56,7 @@ function Index() {
             I’m Tommy, a{" "}
             <a
               href="#work"
-              className="text-transparent bg-gradient-to-r bg-clip-text from-lime-400 to-cyan-400 border-b md:border-b-2 border-cyan-400 hover:text-white hover:bg-clip-border  transition "
+              className="text-cyan-400 border-b md:border-b-2 border-cyan-400 hover:text-lime-400 hover:border-lime-400  transition "
             >
               freelance Web Developer
             </a>{" "}
