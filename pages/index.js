@@ -102,13 +102,48 @@ function Index() {
         </section>
       </section>
       <span id="work"></span>
-      {/* <section className="container mx-auto w-full md:w-5/6 lg:pl-16 font-mono text-xl sm:text-2xl lg:text-4xl"> */}
-
-      {/* </section> */}
+      <section className="w-screen font-rubik bg-orange-600 text-white">
+        <section className="container w-5/6 mx-auto pt-10 pb-10">
+          <h2 className="text-4xl md:text-6xl font-bold text-amber-900">
+            <a href="https://www.isitshortsweathertoday.com/">
+              Is it shorts weather today?
+            </a>
+          </h2>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-20 text-yellow-300">
+            <TextBlock>
+              <P>
+                Many years ago, I thought about building a site that just told
+                you if you should wear shorts or not. That&apos;s it.
+              </P>
+              <P>
+                It uses your location and a little bit of logic to give you an
+                easy yes or no.
+              </P>
+              <P>
+                I&apos;ve used it as a way to experiment with new languages and
+                frameworks. It&apos;s been Ruby, Go and Node, but the latest
+                incarnation is plain HTML, CSS &amp; JavaScript.
+              </P>
+              <P>
+                I had worked my way through a course in making art with code and
+                wanted to show off my new skills. As part of the 2021 rebuild, I
+                made a trippy generative background with WebGL. It even starts
+                semi-randomly each time you refresh.
+              </P>
+            </TextBlock>
+            <Img
+              src="/images/work/shorts.png"
+              url="https://www.isitshortsweathertoday.com/"
+            />
+          </div>
+        </section>
+      </section>
       <section className="w-screen font-serif bg-black text-white">
         <section className="container w-5/6 mx-auto pt-10 pb-10">
           <h2 className="text-4xl md:text-6xl">
-            Conversations with a Shipwreck
+            <a href="https://shipwreck.tommyp.org/">
+              Conversations with a Shipwreck
+            </a>
           </h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-20">
             <TextBlock>
