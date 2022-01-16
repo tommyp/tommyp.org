@@ -88,11 +88,14 @@ function Index() {
 
           <div>
             <p className=" mb-12 leading-normal">
-              Over the years I&apos;ve worked on big projects and small
-              projects. I write all flavours of{" "}
+              I write all flavours of{" "}
               <span className="text-amber-400">JavaScript</span>,{" "}
               <span className="text-red-600">Ruby</span> and{" "}
               <span className="text-violet-700">Elixir</span>.
+            </p>
+            <p className=" mb-12 leading-normal">
+              Over the years I&apos;ve worked on big projects and small
+              projects.
             </p>
             <p className="mb-12 leading-normal">Some of them are 👇</p>
           </div>
