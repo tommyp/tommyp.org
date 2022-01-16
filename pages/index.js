@@ -64,10 +64,12 @@ function Index() {
             opportunities.
           </p>
           <p className="mb-12 leading-normal">
-            Want to chat? -{" "}
-            <ExtA href="mailto:hi@tommyp.org">hi@tommyp.org</ExtA>
+            Want to chat? <span className="hidden md:inline">-</span>{" "}
+            <span className="block md:inline">
+              <ExtA href="mailto:hi@tommyp.org">hi@tommyp.org</ExtA>
+            </span>
           </p>
-          <ul>
+          <ul className="pb-32">
             {posts.map((post, idx) => {
               return (
                 <li className="mb-5" key={idx}>
@@ -83,21 +85,23 @@ function Index() {
               );
             })}
           </ul>
+
+          <div>
+            <p className=" mb-12 leading-normal">
+              Over the years I&apos;ve worked on big projects and small
+              projects. I write all flavours of{" "}
+              <span className="text-amber-400">JavaScript</span>,{" "}
+              <span className="text-red-600">Ruby</span> and{" "}
+              <span className="text-violet-700">Elixir</span>.
+            </p>
+            <p className="mb-12 leading-normal">Some of them are 👇</p>
+          </div>
         </section>
       </section>
       <span id="work"></span>
-      <section className="container mx-auto w-full md:w-5/6 lg:pl-16 font-mono text-xl sm:text-2xl lg:text-4xl">
-        <p className="w-full px-16 lg:px-0 lg:w-2/3 mb-12 leading-normal">
-          Over the years I&apos;ve worked on big projects and small projects. I
-          write all flavours of{" "}
-          <span className="text-amber-400">JavaScript</span>,{" "}
-          <span className="text-red-600">Ruby</span> and{" "}
-          <span className="text-violet-700">Elixir</span>.
-        </p>
-        <p className="w-full px-16 lg:px-0 lg:w-2/3 mb-12 leading-normal">
-          Some of them are 👇
-        </p>
-      </section>
+      {/* <section className="container mx-auto w-full md:w-5/6 lg:pl-16 font-mono text-xl sm:text-2xl lg:text-4xl"> */}
+
+      {/* </section> */}
       <section className="w-screen font-serif bg-black text-white">
         <section className="container w-5/6 mx-auto pt-10 pb-10">
           <h2 className="text-4xl md:text-6xl">
