@@ -102,6 +102,36 @@ function Index() {
         </section>
       </section>
       <span id="work"></span>
+      <section className="w-screen font-sans bg-green-500 text-white">
+        <section className="container w-5/6 mx-auto pt-10 pb-10">
+          <h2 className="text-4xl md:text-6xl font-bold ">
+            <a href="https://www.goodclub.co.uk/">Good Club</a>
+          </h2>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-20 ">
+            <TextBlock>
+              <P>
+                Good Club is an online sustainable supermarket specialising in
+                organic pantry style food.
+              </P>
+              <P>
+                Their unique selling point, is a closed loop, zero waste system.
+                Which enables their customers to shop in an environmentally
+                consious way.
+              </P>
+              <P>
+                As part of the Shop Squad, I worked on many different parts of
+                the customer facing section of the site. One of first projects,
+                was planting a tree if a customer places an order over a certain
+                value.
+              </P>
+            </TextBlock>
+            <Img
+              src="/images/work/goodclub.png"
+              url="https://www.goodclub.co.uk/"
+            />
+          </div>
+        </section>
+      </section>
       <section className="w-screen font-rubik bg-orange-600 text-white">
         <section className="container w-5/6 mx-auto pt-10 pb-10">
           <h2 className="text-4xl md:text-6xl font-bold text-amber-900">
