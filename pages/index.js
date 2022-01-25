@@ -452,10 +452,14 @@ function Index() {
         </section>
       </section>
       <footer className="">
-        <div className="w-10/12 mx-auto py-12">
+        <div className="w-10/12 mx-auto py-6 md:py-12 flex items-center justify-between">
           <a href="#top" className="text-slate-400 text-4xl">
             👆
           </a>
+          <p>
+            Want to chat? -{' '}
+            <ExtA href="mailto:hi@tommyp.org">hi@tommyp.org</ExtA>
+          </p>
         </div>
       </footer>
     </>
