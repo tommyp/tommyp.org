@@ -1,18 +1,18 @@
-import Head from "../components/head";
-import Header from "../components/header";
-import ExtA from "../components/external_a";
-import Link from "next/link";
+import Head from '../components/head';
+import Header from '../components/header';
+import ExtA from '../components/external_a';
+import Link from 'next/link';
 
 const posts = [
   {
-    name: "Flying with Tailwind",
-    path: "/flying-with-tailwind",
-    date: "15th April 2021",
+    name: 'Flying with Tailwind',
+    path: '/flying-with-tailwind',
+    date: '15th April 2021',
   },
   {
     name: "Let's make mad shit",
-    path: "/lets-make-mad-shit",
-    date: "3rd January 2021",
+    path: '/lets-make-mad-shit',
+    date: '3rd January 2021',
   },
 ];
 
@@ -53,18 +53,18 @@ function Index() {
         <section className="container mx-auto w-10/12 lg:w-2/3 lg:pr-16 font-mono text-xl sm:text-2xl lg:text-4xl mt-8 lg:mt-18">
           <p className="mb-12 text-6xl">👋</p>
           <p className="mb-12 leading-normal">
-            I’m Tommy, a{" "}
+            I’m Tommy, a{' '}
             <a
               href="#work"
               className="text-cyan-400 border-b md:border-b-2 border-cyan-400 hover:text-lime-400 hover:border-lime-400  transition "
             >
               freelance Web Developer
-            </a>{" "}
+            </a>{' '}
             living in London. I&apos;m currently looking for freelance
             opportunities.
           </p>
           <p className="mb-12 leading-normal">
-            Want to chat? <span className="hidden md:inline">-</span>{" "}
+            Want to chat? <span className="hidden md:inline">-</span>{' '}
             <span className="block md:inline">
               <ExtA href="mailto:hi@tommyp.org">hi@tommyp.org</ExtA>
             </span>
@@ -86,11 +86,13 @@ function Index() {
             })}
           </ul>
 
+          <span id="work"></span>
+
           <div>
             <p className=" mb-12 leading-normal">
-              I write all flavours of{" "}
-              <span className="text-amber-400">JavaScript</span>,{" "}
-              <span className="text-red-600">Ruby</span> and{" "}
+              I write all flavours of{' '}
+              <span className="text-amber-400">JavaScript</span>,{' '}
+              <span className="text-red-600">Ruby</span> and{' '}
               <span className="text-violet-700">Elixir</span>.
             </p>
             <p className=" mb-12 leading-normal">
@@ -101,7 +103,6 @@ function Index() {
           </div>
         </section>
       </section>
-      <span id="work"></span>
       <section className="w-screen font-sans bg-green-500 text-white">
         <section className="container w-5/6 mx-auto pt-10 pb-10">
           <h2 className="text-4xl md:text-6xl font-bold ">
@@ -196,7 +197,7 @@ function Index() {
               <P>
                 Being a digital representation of a gallery, typography and
                 spacing was extremely important. Adam and I continually worked
-                with the specifics and launched it, timing it to feature with{" "}
+                with the specifics and launched it, timing it to feature with{' '}
                 <ExtA
                   textColor="text-white"
                   textHoverColor="text-white"
@@ -204,8 +205,8 @@ function Index() {
                   href="http://www.amscan.org"
                 >
                   The American Scandinavian Foundation
-                </ExtA>{" "}
-                and{" "}
+                </ExtA>{' '}
+                and{' '}
                 <ExtA
                   textColor="text-white"
                   textHoverColor="text-white"
@@ -218,7 +219,7 @@ function Index() {
               </P>
               <P>
                 As the exhibition has finished, you can find the site avilable
-                at an{" "}
+                at an{' '}
                 <ExtA
                   textColor="text-white"
                   textHoverColor="text-white"
@@ -245,7 +246,7 @@ function Index() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-20">
             <TextBlock>
               <P>
-                My good friend{" "}
+                My good friend{' '}
                 <ExtA
                   href="https://twitter.com/HarryTrimble"
                   borderColor="border-pink-600"
@@ -253,9 +254,9 @@ function Index() {
                   textHoverColor="hover:text-pink-600"
                 >
                   Harry
-                </ExtA>{" "}
+                </ExtA>{' '}
                 has spent a few years travelling the country, taking photos of
-                local council bins and documenting them on{" "}
+                local council bins and documenting them on{' '}
                 <ExtA
                   href="https://govbins.uk"
                   borderColor="border-pink-600"
@@ -327,13 +328,13 @@ function Index() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-20">
             <TextBlock>
               <P>
-                I&apos;d played with{" "}
+                I&apos;d played with{' '}
                 <a href="https://elixir-lang.com">Elixir</a> a little bit, but
                 decided during an on-call shift to build something over the week
-                with it. Being inspired by{" "}
+                with it. Being inspired by{' '}
                 <a href="https://whatthefuckshouldimakefordinner.com/">
                   another site
-                </a>{" "}
+                </a>{' '}
                 I wanted to build a sweary travel guide.
               </P>
               <P>
@@ -365,7 +366,7 @@ function Index() {
                 porting the Menu page from Angular to React, allowing
                 Restaurants to deliver food themselves and decomping the listing
                 page to a new Go Application. I even worked on a change that the
-                Mayor of London, Sadiq Khan,{" "}
+                Mayor of London, Sadiq Khan,{' '}
                 <ExtA
                   borderColor="border-purple-900"
                   borderHoverColor="hover:border-white"
@@ -404,7 +405,7 @@ function Index() {
                   Government Departments from moving their content from their
                   own, disparate sites, to the unified GOV.UK site. This
                   involved building a publishing application and the public
-                  facing application for organisations like the{" "}
+                  facing application for organisations like the{' '}
                   <ExtA
                     borderColor="border-white"
                     borderHoverColor="hover:border-black"
@@ -420,7 +421,7 @@ function Index() {
                 <P>
                   After that was finished, my team was disbanded into a number
                   of different teams. I ended up joining the team which was
-                  working on preparing the site for the upcoming{" "}
+                  working on preparing the site for the upcoming{' '}
                   <ExtA
                     borderColor="border-white"
                     borderHoverColor="hover:border-black"
@@ -432,7 +433,7 @@ function Index() {
                   </ExtA>
                   . This involved tagging content with the Government it was
                   published under, adding the ability to end a Government and
-                  publishing political content under the same{" "}
+                  publishing political content under the same{' '}
                   <ExtA
                     borderColor="border-white"
                     borderHoverColor="hover:border-black"
