@@ -99,19 +99,26 @@
 
 	nav {
 		width: 100%;
+		height: 100%;
 	}
 
 	ul {
 		display: flex;
 		padding: 0;
+		margin: 0;
 		width: 100vw;
 		justify-content: space-around;
+		align-items: center;
 		gap: 1rem;
+		height: 100%;
 	}
 
 	li {
 		list-style: none;
 		font-size: 3rem;
+		display: flex;
+		align-items: center;
+		height: 100%;
 	}
 
 	li > a {
