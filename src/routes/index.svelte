@@ -1,6 +1,16 @@
+<script>
+	import PhotoCanvas from '../components/PhotoCanvas.svelte';
+
+	let vibes = 2;
+</script>
+
 <main>
 	<section class="img-container">
-		<img src="/images/wall.jpg" alt="" srcset="" />
+		{#if vibes === 2}
+			<PhotoCanvas />
+		{:else if vibes == 1}
+			<img src="/images/wall.jpg" alt="" srcset="" />
+		{/if}
 	</section>
 	<section class="text-container">
 		<h1>I'm Tommy Palmer</h1>
