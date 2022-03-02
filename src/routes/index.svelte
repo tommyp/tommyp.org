@@ -4,8 +4,10 @@
 	</section>
 	<section class="text-container">
 		<h1>I'm Tommy Palmer</h1>
-		<h2>A freelance web developer from Belfast living in London</h2>
+		<h2>A freelance web developer in London</h2>
+		<p>let's chat <a href="mailto:hi@tommyp.org">hi@tommyp.org</a></p>
 	</section>
+	<footer />
 </main>
 
 <style>
@@ -19,15 +21,17 @@
 	}
 	main {
 		font-family: 'Basteleur';
-		font-style: bold;
+		font-weight: bold;
 		display: flex;
-		height: 100vh;
-		padding-top: 1rem;
+		align-items: center;
+		justify-content: center;
+		height: 90vh;
+		width: 100%;
+		padding: 1rem 2rem;
 	}
 
 	section.img-container {
 		display: flex;
-		/* justify-content: center; */
 		flex-direction: column;
 		align-items: center;
 		width: 50%;
@@ -48,7 +52,9 @@
 		font-size: 6rem;
 	}
 
-	h2 {
-		font-size: 4rem;
+	h2,
+	p {
+		margin: 2rem 0 0 0;
+		font-size: 3.5rem;
 	}
 </style>
