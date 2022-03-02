@@ -5,9 +5,26 @@
 	<section class="text-container">
 		<h1>I'm Tommy Palmer</h1>
 		<h2>A freelance web developer in London</h2>
-		<p>let's chat <a href="mailto:hi@tommyp.org">hi@tommyp.org</a></p>
+		<p><a class="chat" href="mailto:hi@tommyp.org">let's chat </a></p>
 	</section>
-	<footer />
+	<footer>
+		<nav>
+			<ul>
+				<li>
+					<a href="/home"> Home </a>
+				</li>
+				<li>
+					<a href="/work"> Work </a>
+				</li>
+				<li>
+					<a href="/blog"> Blog </a>
+				</li>
+				<li>
+					<a href="/about"> About </a>
+				</li>
+			</ul>
+		</nav>
+	</footer>
 </main>
 
 <style>
@@ -19,15 +36,89 @@
 		font-style: bold;
 		font-weight: 700;
 	}
+
+	:global(body) {
+		--background: #05999e;
+		--foreground: #ffc800;
+		--highlight: #b43eaa;
+		--green: #00ff00;
+	}
+
 	main {
+		align-items: center;
+		display: flex;
 		font-family: 'Basteleur';
 		font-weight: bold;
+		height: 90vh;
+		justify-content: center;
+		padding: 1rem 2rem;
+		width: 100%;
+		background-color: var(--background);
+		color: var(--foreground);
+	}
+
+	footer {
+		height: 10vh;
+		position: fixed;
+		bottom: 0;
 		display: flex;
 		align-items: center;
-		justify-content: center;
-		height: 90vh;
+		background-color: var(--green);
+	}
+
+	h1,
+	h2,
+	p,
+	a {
+		text-shadow: 3px 0px var(--highlight);
+	}
+
+	h1 {
+		margin: 0;
+		font-size: 6rem;
+	}
+
+	h2,
+	p {
+		margin: 2rem 0 0 0;
+		font-size: 3.5rem;
+	}
+
+	.chat {
+		color: var(--foreground);
+		text-decoration-style: wavy;
+		text-decoration-color: var(--foreground);
+		transition: all 0.25s;
+	}
+
+	.chat:hover {
+		color: var(--highlight);
+		text-decoration-color: var(--highlight);
+		text-shadow: 3px 0px var(--foreground);
+	}
+
+	nav {
 		width: 100%;
-		padding: 1rem 2rem;
+	}
+
+	ul {
+		display: flex;
+		padding: 0;
+		width: 100vw;
+		justify-content: space-around;
+		gap: 1rem;
+	}
+
+	li {
+		list-style: none;
+		font-size: 3rem;
+	}
+
+	li > a {
+		text-decoration: none;
+		text-shadow: none;
+		text-transform: uppercase;
+		color: var(--background);
 	}
 
 	section.img-container {
@@ -45,16 +136,5 @@
 
 	section.text-container {
 		width: 50%;
-	}
-
-	h1 {
-		margin: 0;
-		font-size: 6rem;
-	}
-
-	h2,
-	p {
-		margin: 2rem 0 0 0;
-		font-size: 3.5rem;
 	}
 </style>
