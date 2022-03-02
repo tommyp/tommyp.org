@@ -1,4 +1,5 @@
 <script>
+	import TextCanvas from '../components/TextCanvas.svelte';
 	import PhotoCanvas from '../components/PhotoCanvas.svelte';
 
 	let vibes = 2;
@@ -13,9 +14,13 @@
 		{/if}
 	</section>
 	<section class="text-container">
-		<h1>I'm Tommy Palmer</h1>
-		<h2>A freelance web developer in London</h2>
-		<p><a class="chat" href="mailto:hi@tommyp.org">let's chat </a></p>
+		{#if vibes === 2}
+			<TextCanvas />
+		{:else if vibes == 1}
+			<h1>I'm Tommy Palmer</h1>
+			<h2>A freelance web developer in London</h2>
+			<p><a class="chat" href="mailto:hi@tommyp.org">let's chat </a></p>
+		{/if}
 	</section>
 	<footer>
 		<nav>
@@ -69,6 +74,7 @@
 
 	footer {
 		height: 10vh;
+		min-height: 2rem;
 		position: fixed;
 		bottom: 0;
 		display: flex;
