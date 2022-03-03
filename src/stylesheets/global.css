@@ -8,10 +8,15 @@
 
 :root {
 	--black: #111;
-	--white: #fff;
+	--white: #eee;
 	--pink: #b43eaa;
+	--green: #00ff00;
 	--background: var(--black);
 	--foreground: var(--white);
-	--highlight: var(--pink);
-	--green: #00ff00;
+	--highlight: var(--green);
+}
+
+::selection {
+	color: var(--background);
+	background-color: var(--highlight);
 }

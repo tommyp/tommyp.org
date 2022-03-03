@@ -8,9 +8,6 @@
 				<a href="/work"> Work </a>
 			</li>
 			<li>
-				<a href="/blog"> Blog </a>
-			</li>
-			<li>
 				<a href="/about"> About </a>
 			</li>
 		</ul>
@@ -27,7 +24,7 @@
 		align-items: center;
 		font-family: 'Mattone', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
 			Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-		background-color: var(--green);
+		background-color: var(--highlight);
 	}
 
 	nav {

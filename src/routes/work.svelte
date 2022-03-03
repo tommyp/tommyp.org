@@ -16,8 +16,7 @@
 			and
 			<a class="govbins" href="https://govbins.uk/">Govbins</a>.
 		</p>
-		<p />
-		I can work with JavaScript, Ruby, Elixir and many other technologies.
+		<p>I can work with JavaScript, Ruby, Elixir and many other technologies.</p>
 	</main>
 
 	<Footer />

@@ -43,11 +43,6 @@
 		color: var(--foreground);
 	}
 
-	::selection {
-		color: var(--background);
-		background-color: var(--green);
-	}
-
 	h1,
 	h2,
 	p,
