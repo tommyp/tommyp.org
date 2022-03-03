@@ -44,17 +44,16 @@
 
 <style>
 	@font-face {
-		font-family: 'Basteleur', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-			Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-		src: url('./fonts/basteleur/Basteleur-Bold.woff') format('woff'),
-			url('./fonts/basteleur/Basteleur-Bold.woff2') format('woff2');
-		font-style: bold;
-		font-weight: 700;
+		font-family: 'Mattone';
+		src: url('./fonts/mattone/Mattone-150.woff') format('woff'),
+			url('./fonts/mattone/Mattone-150.woff2') format('woff2');
+		font-style: normal;
+		font-weight: 400;
 	}
 
 	:global(body) {
-		--background: #05999e;
-		--foreground: #ffc800;
+		--background: #0000ff;
+		--foreground: #fff;
 		--highlight: #b43eaa;
 		--green: #00ff00;
 	}
@@ -62,14 +61,19 @@
 	main {
 		align-items: center;
 		display: flex;
-		font-family: 'Basteleur';
-		font-weight: bold;
+		font-family: 'Mattone', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+			Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 		height: 90vh;
 		justify-content: center;
 		padding: 1rem 2rem;
 		width: 100%;
 		background-color: var(--background);
 		color: var(--foreground);
+	}
+
+	::selection {
+		color: var(--background);
+		background-color: var(--green);
 	}
 
 	footer {
@@ -102,7 +106,7 @@
 
 	.chat {
 		color: var(--foreground);
-		text-decoration-style: wavy;
+
 		text-decoration-color: var(--foreground);
 		transition: all 0.25s;
 	}

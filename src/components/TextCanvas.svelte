@@ -6,14 +6,14 @@
 	const height = 600;
 	const wave = 0.05;
 	const waveX = 5;
-	const waveY = 5;
+	const waveY = 7;
 
 	const sketch = (p5) => {
 		const color = '#2fe4c2';
 		const bgColor = '#293752';
 
 		p5.preload = () => {
-			font = p5.loadFont('./fonts/basteleur/Basteleur-Bold.woff');
+			font = p5.loadFont('./fonts/mattone/Mattone-150.woff');
 		};
 
 		p5.setup = () => {
@@ -52,7 +52,7 @@
 
 			let text = `I'm Tommy\n Palmer`;
 
-			graphic.fill('#ffc800');
+			graphic.fill('#fff');
 			graphic.textFont(font);
 			graphic.textSize(80);
 			graphic.textLeading(70);
@@ -61,7 +61,7 @@
 
 			text = `a freelance\nweb developer\nliving in\nLondon`;
 
-			graphic.fill('#ffc800');
+			graphic.fill('#fff');
 			graphic.textFont(font);
 			graphic.textSize(65);
 			graphic.textLeading(70);
