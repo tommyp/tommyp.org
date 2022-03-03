@@ -1,6 +1,7 @@
 <script>
 	import TextCanvas from '../components/TextCanvas.svelte';
 	import PhotoCanvas from '../components/PhotoCanvas.svelte';
+	import ContactStickver from '../components/ContactStickver.svelte';
 
 	let vibes = 2;
 </script>
@@ -16,6 +17,7 @@
 	<section class="text-container">
 		{#if vibes === 2}
 			<TextCanvas />
+			<ContactStickver />
 		{:else if vibes == 1}
 			<h1>I'm Tommy Palmer</h1>
 			<h2>A freelance web developer in London</h2>
@@ -54,9 +56,10 @@
 	:global(body) {
 		--black: #111;
 		--white: #fff;
+		--pink: #b43eaa;
 		--background: var(--black);
 		--foreground: var(--white);
-		--highlight: #b43eaa;
+		--highlight: var(--pink);
 		--green: #00ff00;
 	}
 
