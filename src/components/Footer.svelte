@@ -37,10 +37,10 @@
 
 	ul {
 		display: flex;
-		padding: 0;
+		padding: 0 4rem;
 		margin: 0;
 		width: 100vw;
-		justify-content: space-around;
+		justify-content: space-between;
 		align-items: center;
 		gap: 1rem;
 		height: 100%;

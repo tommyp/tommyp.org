@@ -7,36 +7,37 @@
 	let vibes = 2;
 </script>
 
-<main>
-	<section class="img-container">
-		{#if vibes === 2}
-			<PhotoCanvas />
-		{:else if vibes == 1}
-			<img src="/images/wall.jpg" alt="" srcset="" />
-		{/if}
-	</section>
-	<section class="text-container">
-		{#if vibes === 2}
-			<TextCanvas />
-			<ContactStickver />
-		{:else if vibes == 1}
-			<h1>I'm Tommy Palmer</h1>
-			<h2>A freelance web developer in London</h2>
-			<p><a class="chat" href="mailto:hi@tommyp.org">let's chat </a></p>
-		{/if}
-	</section>
+<div>
+	<main>
+		<section class="img-container">
+			{#if vibes === 2}
+				<PhotoCanvas />
+			{:else if vibes == 1}
+				<img src="/images/wall.jpg" alt="" srcset="" />
+			{/if}
+		</section>
+		<section class="text-container">
+			{#if vibes === 2}
+				<TextCanvas />
+				<ContactStickver />
+			{:else if vibes == 1}
+				<h1>I'm Tommy Palmer</h1>
+				<h2>A freelance web developer in London</h2>
+				<p><a class="chat" href="mailto:hi@tommyp.org">let's chat </a></p>
+			{/if}
+		</section>
+	</main>
 	<Footer />
-</main>
+</div>
 
 <style>
 	main {
-		align-items: center;
 		display: flex;
 		font-family: 'Mattone', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
 			Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-		height: 90vh;
-		justify-content: center;
-		padding: 1rem 2rem;
+		height: 100vh;
+
+		padding: 2rem 4rem;
 		width: 100%;
 		background-color: var(--background);
 		color: var(--foreground);
@@ -83,7 +84,6 @@
 		flex-direction: column;
 		align-items: center;
 		width: 50%;
-		padding-top: 1rem;
 	}
 
 	section.img-container img {

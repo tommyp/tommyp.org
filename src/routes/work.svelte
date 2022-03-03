@@ -11,7 +11,10 @@
 			and
 			<a href="https://www.gov.uk/" class="gov">GOV.UK</a>, and small teams like
 			<a href="https://www.goodclub.co.uk/" class="goodclub"> Good Club</a>. I've also worked on
-			smaller projects like Conversations With A Shipwreck and Govbins.
+			smaller projects like
+			<a class="shipwreck" href="https://shipwreck.tommyp.org/">Conversations With A Shipwreck</a>
+			and
+			<a class="govbins" href="https://govbins.uk/">Govbins</a>.
 		</p>
 		<p />
 		I can work with JavaScript, Ruby, Elixir and many other technologies.
@@ -23,7 +26,7 @@
 <style>
 	main {
 		width: 100vw;
-		height: 90vh;
+		height: 100vh;
 		padding: 2rem 4rem;
 		font-size: 4rem;
 		font-family: 'Mattone', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
@@ -67,5 +70,23 @@
 	.goodclub:hover {
 		color: var(--foreground);
 		background: #0db98c;
+	}
+
+	.shipwreck {
+		color: #c5b358;
+	}
+
+	.shipwreck:hover {
+		color: var(--foreground);
+		background: #c5b358;
+	}
+
+	.govbins {
+		color: #ea47cb;
+	}
+
+	.govbins:hover {
+		color: var(--foreground);
+		background: #ea47cb;
 	}
 </style>
