@@ -1,0 +1,17 @@
+@font-face {
+	font-family: 'Mattone';
+	src: url('../fonts/mattone/Mattone-150.woff') format('woff'),
+		url('../fonts/mattone/Mattone-150.woff2') format('woff2');
+	font-style: normal;
+	font-weight: 400;
+}
+
+:root {
+	--black: #111;
+	--white: #fff;
+	--pink: #b43eaa;
+	--background: var(--black);
+	--foreground: var(--white);
+	--highlight: var(--pink);
+	--green: #00ff00;
+}

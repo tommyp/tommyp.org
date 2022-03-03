@@ -1,6 +1,4 @@
-<div class="btn-container">
-	<a class="btn" href="mailto:hi@tommyp.org"> hire me</a>
-</div>
+<a class="btn" href="mailto:hi@tommyp.org"> hire me</a>
 
 <style>
 	.btn {
@@ -18,7 +16,7 @@
 		text-decoration: none;
 		text-transform: uppercase;
 		transform: rotateZ(-10deg);
-		transition: animation 2s;
+		transition: border 0.5s;
 	}
 
 	.btn:hover {

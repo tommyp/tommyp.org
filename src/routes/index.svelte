@@ -2,6 +2,7 @@
 	import TextCanvas from '../components/TextCanvas.svelte';
 	import PhotoCanvas from '../components/PhotoCanvas.svelte';
 	import ContactStickver from '../components/ContactStickver.svelte';
+	import Footer from '../components/Footer.svelte';
 
 	let vibes = 2;
 </script>
@@ -24,45 +25,10 @@
 			<p><a class="chat" href="mailto:hi@tommyp.org">let's chat </a></p>
 		{/if}
 	</section>
-	<footer>
-		<nav>
-			<ul>
-				<li>
-					<a href="/home"> Home </a>
-				</li>
-				<li>
-					<a href="/work"> Work </a>
-				</li>
-				<li>
-					<a href="/blog"> Blog </a>
-				</li>
-				<li>
-					<a href="/about"> About </a>
-				</li>
-			</ul>
-		</nav>
-	</footer>
+	<Footer />
 </main>
 
 <style>
-	@font-face {
-		font-family: 'Mattone';
-		src: url('./fonts/mattone/Mattone-150.woff') format('woff'),
-			url('./fonts/mattone/Mattone-150.woff2') format('woff2');
-		font-style: normal;
-		font-weight: 400;
-	}
-
-	:global(body) {
-		--black: #111;
-		--white: #fff;
-		--pink: #b43eaa;
-		--background: var(--black);
-		--foreground: var(--white);
-		--highlight: var(--pink);
-		--green: #00ff00;
-	}
-
 	main {
 		align-items: center;
 		display: flex;
@@ -78,16 +44,6 @@
 
 	::selection {
 		color: var(--background);
-		background-color: var(--green);
-	}
-
-	footer {
-		height: 10vh;
-		min-height: 2rem;
-		position: fixed;
-		bottom: 0;
-		display: flex;
-		align-items: center;
 		background-color: var(--green);
 	}
 
@@ -120,37 +76,6 @@
 		color: var(--highlight);
 		text-decoration-color: var(--highlight);
 		text-shadow: 3px 0px var(--foreground);
-	}
-
-	nav {
-		width: 100%;
-		height: 100%;
-	}
-
-	ul {
-		display: flex;
-		padding: 0;
-		margin: 0;
-		width: 100vw;
-		justify-content: space-around;
-		align-items: center;
-		gap: 1rem;
-		height: 100%;
-	}
-
-	li {
-		list-style: none;
-		font-size: 3rem;
-		display: flex;
-		align-items: center;
-		height: 100%;
-	}
-
-	li > a {
-		text-decoration: none;
-		text-shadow: none;
-		text-transform: uppercase;
-		color: var(--background);
 	}
 
 	section.img-container {
