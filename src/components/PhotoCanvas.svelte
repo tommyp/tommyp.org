@@ -38,7 +38,7 @@
 					const wave = 0.05 * distance;
 
 					const distortionX = p5.sin((p5.frameCount * wave) / 1000 + x * 0.5 + y * 0.3) * 30;
-					const distortionY = p5.sin((p5.frameCount * wave) / 1000 + x * 0.5 + y * 0.1) * 30;
+					const distortionY = p5.cos((p5.frameCount * wave) / 1000 + x * 0.5 + y * 0.1) * 30;
 
 					// const distortion = sin(frameCount * 0.05 + x * 0.5 + y * 0.3) * 50;
 

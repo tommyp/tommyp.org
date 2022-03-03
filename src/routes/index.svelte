@@ -52,8 +52,10 @@
 	}
 
 	:global(body) {
-		--background: #0000ff;
-		--foreground: #fff;
+		--black: #111;
+		--white: #fff;
+		--background: var(--black);
+		--foreground: var(--white);
 		--highlight: #b43eaa;
 		--green: #00ff00;
 	}

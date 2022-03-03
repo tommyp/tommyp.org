@@ -4,14 +4,11 @@
 	let graphic;
 	const width = 600;
 	const height = 600;
-	const wave = 0.05;
-	const waveX = 5;
-	const waveY = 7;
+	const wave = 0.05; // this to zero to pause
+	const waveX = 3;
+	const waveY = 3;
 
 	const sketch = (p5) => {
-		const color = '#2fe4c2';
-		const bgColor = '#293752';
-
 		p5.preload = () => {
 			font = p5.loadFont('./fonts/mattone/Mattone-150.woff');
 		};
@@ -50,16 +47,16 @@
 		const createCopy = () => {
 			graphic = p5.createGraphics(width, height);
 
-			let text = `I'm Tommy\n Palmer`;
+			let text = `I'm Tommy\nPalmer`;
 
 			graphic.fill('#fff');
 			graphic.textFont(font);
 			graphic.textSize(80);
-			graphic.textLeading(70);
+			graphic.textLeading(80);
 			// graphic.textAlign(p5.LEFT, p5.CENTER);
 			graphic.text(text, 0, 100);
 
-			text = `a freelance\nweb developer\nliving in\nLondon`;
+			text = `A freelance\nweb developer\nliving in\nLondon`;
 
 			graphic.fill('#fff');
 			graphic.textFont(font);
