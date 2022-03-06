@@ -34,4 +34,14 @@
 			transform: rotateZ(-10deg) scale(100%);
 		}
 	}
+
+	@media screen and (max-width: 600px) {
+		.btn {
+			font-size: 1.8rem;
+			margin-left: 160px;
+			padding: 0.5rem;
+			transform: rotateZ(-30deg);
+			margin-top: -120px;
+		}
+	}
 </style>

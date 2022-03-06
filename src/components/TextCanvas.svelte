@@ -1,12 +1,35 @@
 <script>
 	import P5 from 'p5-svelte';
+	import { browser } from '$app/env';
+
 	let font;
 	let graphic;
-	const width = 600;
-	const height = 600;
+	let width = 600;
+	let height = 600;
+	let fontSize = 80;
+	let subFontSize = 65;
+	let leading = 80;
+	let subLeading = 70;
+	let top = 100;
+	let subTop = 300;
 	const wave = 0.05; // this to zero to pause
 	const waveX = 3;
 	const waveY = 3;
+
+	let scale = 1;
+
+	if (browser && window.outerWidth < 600) {
+		scale = 0.7;
+
+		width = window.outerWidth - 80;
+		height = window.outerWidth;
+		fontSize = 45;
+		subFontSize = 35;
+		leading = 40;
+		subLeading = 40;
+		top = 70;
+		subTop = 170;
+	}
 
 	const sketch = (p5) => {
 		p5.preload = () => {
@@ -51,21 +74,38 @@
 
 			graphic.fill('#fff');
 			graphic.textFont(font);
-			graphic.textSize(80);
-			graphic.textLeading(80);
+			graphic.textSize(fontSize);
+			graphic.textLeading(leading);
 			// graphic.textAlign(p5.LEFT, p5.CENTER);
-			graphic.text(text, 0, 100);
+			graphic.text(text, 0, top);
 
 			text = `A freelance\nweb developer\nliving in\nLondon`;
 
 			graphic.fill('#fff');
 			graphic.textFont(font);
-			graphic.textSize(65);
-			graphic.textLeading(70);
+			graphic.textSize(subFontSize);
+			graphic.textLeading(subLeading);
 			// graphic.textAlign(p5.LEFT, p5.CENTER);
-			graphic.text(text, 0, 300);
+			graphic.text(text, 0, subTop);
 		};
 	};
 </script>
 
-<P5 {sketch} debug />
+<div class="container">
+	<P5 {sketch} />
+</div>
+
+<style>
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+	}
+
+	@media screen and (max-width: 900px) {
+		/* .container {
+			transform: scale(60%);
+		} */
+	}
+</style>

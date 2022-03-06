@@ -3,6 +3,8 @@
 </script>
 
 <div>
-	<main />
+	<main>
+		<h2>blog</h2>
+	</main>
 	<Footer />
 </div>

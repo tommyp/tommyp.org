@@ -1,14 +1,15 @@
 <script>
 	import TextCanvas from '../components/TextCanvas.svelte';
 	import PhotoCanvas from '../components/PhotoCanvas.svelte';
-	import ContactStickver from '../components/ContactStickver.svelte';
+	import ContactStickver from '../components/ContactSticker.svelte';
 	import Footer from '../components/Footer.svelte';
+	import Main from '../layout/Main.svelte';
 
 	let vibes = 2;
 </script>
 
 <div>
-	<main>
+	<Main>
 		<section class="img-container">
 			{#if vibes === 2}
 				<PhotoCanvas />
@@ -26,23 +27,11 @@
 				<p><a class="chat" href="mailto:hi@tommyp.org">let's chat </a></p>
 			{/if}
 		</section>
-	</main>
+	</Main>
 	<Footer />
 </div>
 
 <style>
-	main {
-		display: flex;
-		font-family: 'Mattone', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-			Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-		height: 100vh;
-
-		padding: 2rem 4rem;
-		width: 100%;
-		background-color: var(--background);
-		color: var(--foreground);
-	}
-
 	h1,
 	h2,
 	p,
@@ -88,5 +77,12 @@
 
 	section.text-container {
 		width: 50%;
+	}
+
+	@media screen and (max-width: 900px) {
+		section.img-container,
+		section.text-container {
+			width: 100%;
+		}
 	}
 </style>
