@@ -17,6 +17,14 @@
 		height = 300;
 	}
 
+	if (browser && window.outerWidth < 376) {
+		// scale = 0.7;
+
+		tileSize = 30;
+		width = 250;
+		height = 250;
+	}
+
 	const sketch = (p5) => {
 		p5.preload = () => {
 			img = p5.loadImage('/images/wall.jpg');
@@ -86,7 +94,7 @@
 		width: 100%;
 	}
 
-	@media screen and (max-width: 900px) {
+	@media screen and (max-width: 375px) {
 		/* .container {
 			transform: scale(60%);
 		} */

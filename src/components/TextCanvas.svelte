@@ -4,31 +4,48 @@
 
 	let font;
 	let graphic;
-	let width = 600;
-	let height = 600;
-	let fontSize = 80;
-	let subFontSize = 65;
-	let leading = 80;
-	let subLeading = 70;
-	let top = 100;
-	let subTop = 300;
+	let width;
+	let height;
+	let fontSize;
+	let subFontSize;
+	let leading;
+	let subLeading;
+	let top;
+	let subTop;
 	const wave = 0.05; // this to zero to pause
 	const waveX = 3;
 	const waveY = 3;
 
 	let scale = 1;
 
-	if (browser && window.outerWidth < 600) {
-		scale = 0.7;
+	const setSize = () => {
+		width = 600;
+		height = 600;
+		fontSize = 80;
+		subFontSize = 65;
+		leading = 80;
+		subLeading = 70;
+		top = 100;
+		subTop = 300;
+		scale = 1;
+		if (browser && window.outerWidth < 600) {
+			scale = 0.7;
 
-		width = window.outerWidth - 80;
-		height = window.outerWidth;
-		fontSize = 45;
-		subFontSize = 35;
-		leading = 40;
-		subLeading = 40;
-		top = 70;
-		subTop = 170;
+			width = window.outerWidth - 80;
+			height = window.outerWidth;
+			fontSize = 35;
+			subFontSize = 25;
+			leading = 40;
+			subLeading = 30;
+			top = 50;
+			subTop = 150;
+		}
+	};
+
+	setSize();
+
+	if (browser) {
+		window.addEventListener('resize', setSize);
 	}
 
 	const sketch = (p5) => {

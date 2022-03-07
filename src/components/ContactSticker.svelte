@@ -41,7 +41,7 @@
 			margin-left: 160px;
 			padding: 0.5rem;
 			transform: rotateZ(-30deg);
-			margin-top: -120px;
+			margin-top: -150px;
 		}
 	}
 </style>
