@@ -12,17 +12,16 @@
 	onMount(() => {
 		sandbox = new GlslCanvas(canvasTag);
 		sandbox.load(shader);
-	});
-
-	if (browser) {
-		width = window.outerWidth;
-		height = window.outerHeight;
-
-		window.addEventListener('resize', () => {
+		if (window) {
 			width = window.outerWidth;
 			height = window.outerHeight;
-		});
-	}
+
+			window.addEventListener('resize', () => {
+				width = window.outerWidth;
+				height = window.outerHeight;
+			});
+		}
+	});
 </script>
 
 <canvas bind:this={canvasTag} {width} {height} />

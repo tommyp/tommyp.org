@@ -1,33 +1,43 @@
 <script>
 	import P5 from 'p5-svelte';
 	import { browser } from '$app/env';
+	import { onMount } from 'svelte';
 
 	let img;
+	let imagePath = '/images/wall.jpg';
 	let graphic;
-	let width = 600;
-	let height = 600;
-	let scale = 1;
-	let tileSize = 30;
+	let width;
+	let height;
+	let scale;
+	let tileSize;
 
-	if (browser && window.outerWidth < 900) {
-		// scale = 0.7;
-
+	const setup = () => {
+		width = 600;
+		height = 600;
+		scale = 1;
 		tileSize = 30;
-		width = 300;
-		height = 300;
-	}
 
-	if (browser && window.outerWidth < 376) {
-		// scale = 0.7;
+		if (browser && window.outerWidth < 376) {
+			// scale = 0.7;
 
-		tileSize = 30;
-		width = 250;
-		height = 250;
-	}
+			imagePath = '/images/wall_mobile.jpg';
+			tileSize = 15;
+			width = 300;
+			height = 300;
+		}
+	};
+
+	onMount(() => {
+		if (window) {
+			setup();
+
+			window.addEventListener('resize', setup);
+		}
+	});
 
 	const sketch = (p5) => {
 		p5.preload = () => {
-			img = p5.loadImage('/images/wall.jpg');
+			img = p5.loadImage(imagePath);
 		};
 
 		p5.setup = () => {
@@ -58,8 +68,8 @@
 
 					const wave = 0.05 * distance;
 
-					const distortionX = p5.sin((p5.frameCount * wave) / 1000 + x * 0.5 + y * 0.3) * 30;
-					const distortionY = p5.cos((p5.frameCount * wave) / 1000 + x * 0.5 + y * 0.1) * 30;
+					const distortionX = p5.sin((p5.frameCount * wave) / 1000 + x * 0.5 + y * 0.3) * tileSize;
+					const distortionY = p5.cos((p5.frameCount * wave) / 1000 + x * 0.5 + y * 0.1) * tileSize;
 
 					// const distortion = sin(frameCount * 0.05 + x * 0.5 + y * 0.3) * 50;
 
