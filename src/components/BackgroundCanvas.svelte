@@ -17,6 +17,11 @@
 	if (browser) {
 		width = window.outerWidth;
 		height = window.outerHeight;
+
+		window.addEventListener('resize', () => {
+			width = window.outerWidth;
+			height = window.outerHeight;
+		});
 	}
 </script>
 
