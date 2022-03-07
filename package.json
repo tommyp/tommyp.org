@@ -17,10 +17,12 @@
     "eslint-plugin-svelte3": "^3.2.1",
     "prettier": "^2.5.1",
     "prettier-plugin-svelte": "^2.5.0",
-    "svelte": "^3.44.0"
+    "svelte": "^3.44.0",
+    "vite-plugin-iso-import": "^0.1.3"
   },
   "type": "module",
   "dependencies": {
+    "glslCanvas": "^0.1.7",
     "p5-svelte": "^3.0.1"
   }
 }

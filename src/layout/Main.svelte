@@ -12,7 +12,6 @@
 		font-size: 4rem;
 		font-family: 'Mattone', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
 			Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-		background: var(--background);
 		color: var(--foreground);
 		display: flex;
 	}

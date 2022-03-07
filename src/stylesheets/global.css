@@ -21,6 +21,10 @@
 	background-color: var(--highlight);
 }
 
+body {
+	background: var(--background);
+}
+
 a {
 	transition: color 0.3s, background 0.3s;
 }
