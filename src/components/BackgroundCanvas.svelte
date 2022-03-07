@@ -6,21 +6,24 @@
 
 	let canvasTag;
 	let sandbox;
+	let width;
+	let height;
 
 	onMount(() => {
-		if (window) {
-			sandbox = new GlslCanvas(canvasTag);
-			sandbox.load(shader);
-		}
+		sandbox = new GlslCanvas(canvasTag);
+		sandbox.load(shader);
 	});
+
+	if (browser) {
+		width = window.outerWidth;
+		height = window.outerHeight;
+	}
 </script>
 
-<canvas bind:this={canvasTag} />
+<canvas bind:this={canvasTag} {width} {height} />
 
 <style>
 	canvas {
-		width: 100vw;
-		height: 100vh;
 		z-index: -1;
 		position: absolute;
 	}

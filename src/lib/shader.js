@@ -1,15 +1,9 @@
 const shader = `
-
-
 precision highp float;
 uniform float u_time;
 
-
 varying vec2 v_texcoord;
-
-
-
-   
+  
 #define NUM_OCTAVES 5
 
 float rand(float n){return fract(sin(n) * 43758.5453123);}
