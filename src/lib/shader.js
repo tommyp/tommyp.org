@@ -1,6 +1,7 @@
 const shader = `
 precision highp float;
 uniform float u_time;
+uniform vec2 origin;
 
 varying vec2 v_texcoord;
   
@@ -50,7 +51,7 @@ void main(void)
         cos(u_time * 0.5 + uv.x * 2.0 + uv.y * 0.5)
     );
     
-    vec2 origin = vec2(0.5, 0.5);
+    
     
     vec4 background = vec4(0.1, 0.1, 0.1, 1.0);
     vec4 foreground = vec4(0.3, 0.3, 0.3, 1.0);
