@@ -2,6 +2,7 @@
 	import P5 from 'p5-svelte';
 	import { browser } from '$app/env';
 
+	export let vibes;
 	let font;
 	let graphic;
 	let width;
@@ -12,9 +13,9 @@
 	let subLeading;
 	let top;
 	let subTop;
-	const wave = 0.05; // this to zero to pause
-	const waveX = 3;
-	const waveY = 3;
+	export let wave; // this to zero to pause
+	$: waveX = vibes;
+	$: waveY = vibes;
 
 	let scale = 1;
 

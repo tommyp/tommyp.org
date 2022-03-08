@@ -5,23 +5,30 @@
 	import Header from '../components/Header.svelte';
 	import Main from '../layout/Main.svelte';
 
-	let vibes = 2;
+	let vibes = 5;
+	$: wave = vibes / 100;
 </script>
 
 <div>
+	<div class="vibe-selector">
+		<label for="vibes">no vibes</label>
+		<input type="range" name="vibes" id="vibes" min="0" max="5" step="0.1" bind:value={vibes} />
+		<label for="vibes">max vibes</label>
+	</div>
+
 	<Main>
 		<section class="img-container">
-			{#if vibes === 2}
-				<PhotoCanvas />
-			{:else if vibes == 1}
+			{#if vibes >= 1}
+				<PhotoCanvas {wave} />
+			{:else}
 				<img src="/images/wall.jpg" alt="" srcset="" />
 			{/if}
 		</section>
 		<section class="text-container">
-			{#if vibes === 2}
-				<TextCanvas />
+			{#if vibes >= 0}
+				<TextCanvas {wave} {vibes} />
 				<ContactStickver />
-			{:else if vibes == 1}
+			{:else}
 				<h1>I'm Tommy Palmer</h1>
 				<h2>A freelance web developer in London</h2>
 				<p><a class="chat" href="mailto:hi@tommyp.org">let's chat </a></p>
@@ -76,6 +83,25 @@
 
 	section.text-container {
 		width: 50%;
+	}
+
+	.vibe-selector {
+		background: white;
+		width: 300px;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		font-family: 'Courier New', Courier, monospace;
+		padding: 0.3rem 0.7rem;
+		text-align: center;
+		border-bottom-left-radius: 20px;
+		border-bottom-right-radius: 20px;
+		border: 3px solid var(--green);
+		border-top: 0;
 	}
 
 	@media screen and (max-width: 900px) {

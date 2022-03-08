@@ -3,6 +3,7 @@
 	import { browser } from '$app/env';
 	import { onMount } from 'svelte';
 
+	export let wave;
 	let img;
 	let imagePath = '/images/wall.jpg';
 	let graphic;
@@ -56,8 +57,6 @@
 
 			const xCols = width / tileSize;
 			const yCols = height / tileSize;
-			const midX = xCols / 2;
-			const midY = yCols / 2;
 
 			const center = p5.createVector(width / 2, height / 2);
 
@@ -66,10 +65,12 @@
 					const tileVector = p5.createVector(tileSize * x, tileSize * y);
 					const distance = tileVector.dist(center);
 
-					const wave = 0.05 * distance;
+					const waveMain = wave * distance;
 
-					const distortionX = p5.sin((p5.frameCount * wave) / 1000 + x * 0.5 + y * 0.3) * tileSize;
-					const distortionY = p5.cos((p5.frameCount * wave) / 1000 + x * 0.5 + y * 0.1) * tileSize;
+					const distortionX =
+						p5.sin((p5.frameCount * waveMain) / 1000 + x * 0.5 + y * 0.3) * tileSize;
+					const distortionY =
+						p5.cos((p5.frameCount * waveMain) / 1000 + x * 0.5 + y * 0.1) * tileSize;
 
 					// const distortion = sin(frameCount * 0.05 + x * 0.5 + y * 0.3) * 50;
 
