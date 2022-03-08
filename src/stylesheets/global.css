@@ -1,7 +1,7 @@
 @font-face {
 	font-family: 'Mattone';
-	src: url('../fonts/mattone/Mattone-150.woff') format('woff'),
-		url('../fonts/mattone/Mattone-150.woff2') format('woff2');
+	src: url('fonts/mattone/Mattone-150.woff') format('woff'),
+		url('fonts/mattone/Mattone-150.woff2') format('woff2');
 	font-style: normal;
 	font-weight: 400;
 }

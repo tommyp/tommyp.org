@@ -4,6 +4,7 @@
 	import { onMount } from 'svelte';
 
 	export let wave;
+	export let vibes;
 	let img;
 	let imagePath = '/images/wall.jpg';
 	let graphic;
@@ -67,10 +68,10 @@
 
 					const waveMain = wave * distance;
 
-					const distortionX =
-						p5.sin((p5.frameCount * waveMain) / 1000 + x * 0.5 + y * 0.3) * tileSize;
-					const distortionY =
-						p5.cos((p5.frameCount * waveMain) / 1000 + x * 0.5 + y * 0.1) * tileSize;
+					let distortionX =
+						p5.sin((p5.frameCount * waveMain) / 1000 + x * 0.5 + y * wave * 3) * tileSize;
+					let distortionY =
+						p5.cos((p5.frameCount * waveMain) / 1000 + x * 0.5 + y * wave * 5) * tileSize;
 
 					// const distortion = sin(frameCount * 0.05 + x * 0.5 + y * 0.3) * 50;
 

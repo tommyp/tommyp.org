@@ -4,9 +4,10 @@
 	import ContactStickver from '../components/ContactSticker.svelte';
 	import Header from '../components/Header.svelte';
 	import Main from '../layout/Main.svelte';
+	import { fly } from 'svelte/transition';
 
-	let vibes = 5;
-	$: wave = vibes / 100;
+	let vibes = 2.5;
+	$: wave = (vibes / 100) * 2;
 </script>
 
 <div>
@@ -19,9 +20,20 @@
 	<Main>
 		<section class="img-container">
 			{#if vibes >= 1}
-				<PhotoCanvas {wave} />
+				<div
+					in:fly={{ delay: 250, duration: 250, x: -100 }}
+					out:fly={{ delay: 0, duration: 250, x: -100 }}
+				>
+					<PhotoCanvas {wave} />
+				</div>
 			{:else}
-				<img src="/images/wall.jpg" alt="" srcset="" />
+				<img
+					src="/images/wall.jpg"
+					alt=""
+					srcset=""
+					in:fly={{ delay: 250, duration: 250, x: -100 }}
+					out:fly={{ delay: 0, duration: 250, x: -100 }}
+				/>
 			{/if}
 		</section>
 		<section class="text-container">
@@ -77,8 +89,10 @@
 	}
 
 	section.img-container img {
+		margin-top: 1rem;
 		object-fit: contain;
 		width: 80%;
+		border-radius: 20px;
 	}
 
 	section.text-container {
