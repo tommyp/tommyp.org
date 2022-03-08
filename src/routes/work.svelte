@@ -1,6 +1,5 @@
 <script>
 	import Main from '../layout/Main.svelte';
-	import Footer from '../components/Footer.svelte';
 </script>
 
 <div>
@@ -21,8 +20,6 @@
 			<p>I can work with JavaScript, Ruby, Elixir and many other technologies.</p>
 		</article>
 	</Main>
-
-	<Footer />
 </div>
 
 <style>

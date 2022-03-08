@@ -17,7 +17,7 @@
 		scale = 1;
 		tileSize = 30;
 
-		if (browser && window.outerWidth < 376) {
+		if (window.outerWidth < 376) {
 			// scale = 0.7;
 
 			imagePath = '/images/wall_mobile.jpg';

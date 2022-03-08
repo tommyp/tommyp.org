@@ -2,7 +2,7 @@
 	import TextCanvas from '../components/TextCanvas.svelte';
 	import PhotoCanvas from '../components/PhotoCanvas.svelte';
 	import ContactStickver from '../components/ContactSticker.svelte';
-	import Footer from '../components/Footer.svelte';
+	import Header from '../components/Header.svelte';
 	import Main from '../layout/Main.svelte';
 
 	let vibes = 2;
@@ -28,7 +28,6 @@
 			{/if}
 		</section>
 	</Main>
-	<Footer />
 </div>
 
 <style>

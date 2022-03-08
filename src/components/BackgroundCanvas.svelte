@@ -10,34 +10,39 @@
 	let height;
 	let x = 0.5;
 	let y = 0.5;
+	let isMoving = false;
 
-	const vec2 = (e) => {
-		return {
-			x: e.clientX / window.outerWidth,
-			y: e.clientY / window.outerHeight
-		};
-	};
+	import { tweened } from 'svelte/motion';
+	import { cubicOut } from 'svelte/easing';
+
+	let coords = tweened(
+		{ x: 0.5, y: 0.5 },
+		{
+			duration: 5000,
+			easing: cubicOut
+		}
+	);
 
 	onMount(() => {
 		sandbox = new GlslCanvas(canvasTag);
 		sandbox.load(shader);
 		sandbox.setUniform('origin', 0.5, 0.5);
 		if (window) {
-			width = window.outerWidth;
-			height = window.outerHeight;
+			width = window.innerWidth;
+			height = window.innerHeight;
 
 			window.addEventListener('resize', () => {
-				width = window.outerWidth;
-				height = window.outerHeight;
+				width = window.innerWidth;
+				height = window.innerHeight;
 			});
 
 			window.addEventListener('mousemove', (e) => {
-				const v = vec2(e);
+				coords.set({
+					x: e.clientX / window.innerWidth,
+					y: 1 - e.clientY / window.innerHeight
+				});
 
-				x = v.x;
-				y = v.y;
-
-				sandbox.setUniform('origin', x, y);
+				sandbox.setUniform('origin', $coords.x, $coords.y);
 			});
 		}
 	});
@@ -47,7 +52,11 @@
 
 <style>
 	canvas {
+		width: 100vw;
+		height: 100vh;
+		max-width: 100vw;
+		max-height: 100vh;
 		z-index: -1;
-		position: absolute;
+		position: fixed;
 	}
 </style>

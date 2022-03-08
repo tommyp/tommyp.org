@@ -8,7 +8,7 @@
 		min-width: 320px;
 		width: auto;
 		min-height: 100vh;
-		padding: 2rem 4rem;
+		padding: 6rem 4rem 0;
 		font-size: 4rem;
 		font-family: 'Mattone', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
 			Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -16,7 +16,7 @@
 		display: flex;
 	}
 
-	@media screen and (max-width: 900px) {
+	@media screen and (max-width: 1240px) {
 		main {
 			flex-direction: column;
 			font-size: 3rem;
@@ -27,6 +27,7 @@
 
 	@media screen and (max-width: 450px) {
 		main {
+			padding-top: 3rem;
 			font-size: 2rem;
 		}
 

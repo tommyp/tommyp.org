@@ -22,12 +22,12 @@
 		width: 100vw;
 		min-height: 2rem;
 		position: fixed;
-		bottom: 0;
+		top: 0;
 		display: flex;
 		align-items: center;
 		font-family: 'Mattone', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
 			Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-		background-color: var(--highlight);
+
 		font-size: 2rem;
 	}
 
@@ -56,16 +56,29 @@
 	}
 
 	a {
-		padding: 2rem 1rem;
+		padding: 0.5rem;
 		text-decoration: none;
 		text-shadow: none;
 		text-transform: uppercase;
-		color: var(--background);
+		color: var(--foreground);
+		border-bottom: 5px solid var(--green);
 	}
 
 	a:hover {
 		color: var(--foreground);
-		background: var(--background);
+		background: var(--green);
+		border-bottom: 5px solid var(--green);
+	}
+
+	@media screen and (max-width: 1240px) {
+		footer {
+			height: 8vh;
+			font-size: 1.5rem;
+		}
+
+		ul {
+			padding: 0 1.5rem;
+		}
 	}
 
 	@media screen and (max-width: 600px) {

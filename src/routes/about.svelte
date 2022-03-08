@@ -1,5 +1,4 @@
 <script>
-	import Footer from '../components/Footer.svelte';
 	import Main from '../layout/Main.svelte';
 </script>
 
@@ -21,8 +20,6 @@
 			</p>
 		</article>
 	</Main>
-
-	<Footer />
 </div>
 
 <style>
