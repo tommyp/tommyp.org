@@ -8,6 +8,9 @@ const config = {
 		vite: {
 			plugins: [isoImport()]
 		}
+	},
+	experimental: {
+		useVitePreprocess: true
 	}
 };
 

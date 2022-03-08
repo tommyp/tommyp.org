@@ -4,7 +4,7 @@
 	import { onMount } from 'svelte';
 
 	export let wave;
-	export let vibes;
+
 	let img;
 	let imagePath = '/images/wall.jpg';
 	let graphic;
