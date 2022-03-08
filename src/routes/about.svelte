@@ -1,8 +1,9 @@
 <script>
 	import Main from '../layout/Main.svelte';
+	import { fly } from 'svelte/transition';
 </script>
 
-<div>
+<div in:fly={{ delay: 250, duration: 250, x: -100 }} out:fly={{ delay: 0, duration: 250, x: -100 }}>
 	<Main>
 		<article>
 			<p>I'm originally from Belfast, but I've lived in London since 2013.</p>

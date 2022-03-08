@@ -11,7 +11,11 @@
 </script>
 
 <div>
-	<div class="vibe-selector">
+	<div
+		class="vibe-selector"
+		in:fly={{ delay: 250, duration: 250, y: -100 }}
+		out:fly={{ delay: 0, duration: 250, y: -100 }}
+	>
 		<label for="vibes">no vibes</label>
 		<input type="range" name="vibes" id="vibes" min="0" max="5" step="0.1" bind:value={vibes} />
 		<label for="vibes">max vibes</label>
@@ -36,7 +40,11 @@
 				/>
 			{/if}
 		</section>
-		<section class="text-container">
+		<section
+			class="text-container"
+			in:fly={{ delay: 250, duration: 250, x: -100 }}
+			out:fly={{ delay: 0, duration: 250, x: -100 }}
+		>
 			{#if vibes >= 0}
 				<TextCanvas {wave} {vibes} />
 				<ContactStickver />
