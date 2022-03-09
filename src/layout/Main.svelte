@@ -27,12 +27,8 @@
 
 	@media screen and (max-width: 450px) {
 		main {
-			padding-top: 3rem;
-			font-size: 2rem;
-		}
-
-		a {
-			border-width: 2px;
+			padding: 4rem 1rem 0;
+			font-size: 1.5rem;
 		}
 	}
 </style>
