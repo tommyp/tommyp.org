@@ -2,18 +2,17 @@
 	import { onMount } from 'svelte';
 	import GlslCanvas from 'glslCanvas?client';
 	import shader from '$lib/shader';
-	import { browser } from '$app/env';
+
+	import { tweened } from 'svelte/motion';
+	import { cubicOut } from 'svelte/easing';
 
 	let canvasTag;
 	let sandbox;
 	let width;
 	let height;
-	let x = 0.5;
-	let y = 0.5;
-	let isMoving = false;
 
-	import { tweened } from 'svelte/motion';
-	import { cubicOut } from 'svelte/easing';
+	let background;
+	let foreground;
 
 	let coords = tweened(
 		{ x: 0.5, y: 0.5 },
@@ -30,6 +29,17 @@
 		if (window) {
 			width = window.innerWidth;
 			height = window.innerHeight;
+
+			if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+				background = 0.1;
+				foreground = 0.3;
+			} else {
+				background = 0.9;
+				foreground = 0.7;
+			}
+
+			sandbox.setUniform('foreground', foreground, foreground, foreground, 1.0);
+			sandbox.setUniform('background', background, background, background, 1.0);
 
 			window.addEventListener('resize', () => {
 				width = window.innerWidth;

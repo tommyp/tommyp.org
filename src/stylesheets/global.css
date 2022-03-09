@@ -16,6 +16,13 @@
 	--highlight: var(--green);
 }
 
+@media (prefers-color-scheme: light) {
+	:root {
+		--background: var(--white);
+		--foreground: var(--black);
+	}
+}
+
 ::selection {
 	color: var(--background);
 	background-color: var(--highlight);

@@ -2,6 +2,9 @@ const shader = `
 precision highp float;
 uniform float u_time;
 uniform vec2 origin;
+uniform vec4 foreground;
+uniform vec4 background;
+
 
 varying vec2 v_texcoord;
   
@@ -43,16 +46,10 @@ void main(void)
 {
     vec2 uv = v_texcoord;
     
-
     vec2 distortion = vec2(
         sin(u_time * 0.1 + uv.x + uv.y),
         cos(u_time * 0.5 + uv.x * 2.0 + uv.y * 0.5)
     );
-    
-    
-    
-    vec4 background = vec4(0.1, 0.1, 0.1, 1.0);
-    vec4 foreground = vec4(0.3, 0.3, 0.3, 1.0);
     
     float d = distance(uv, origin);
     

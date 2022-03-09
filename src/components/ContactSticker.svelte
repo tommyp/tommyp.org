@@ -40,7 +40,7 @@
 			position: relative;
 			display: block;
 			font-size: 1.8rem;
-			margin: 0;
+			margin: 0 auto;
 			margin-top: 2rem;
 			width: 12rem;
 			padding: 0.5rem;
