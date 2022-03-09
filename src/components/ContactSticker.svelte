@@ -1,11 +1,32 @@
 <script>
 	export let animate = true;
+	import { fly } from 'svelte/transition';
 </script>
 
-<a class="btn" class:animate href="mailto:hi@tommyp.org"> hire me</a>
+{#if animate}
+	<a
+		in:fly={{ delay: 250, duration: 250, x: 0 }}
+		out:fly={{ delay: 0, duration: 250, x: 100 }}
+		class="btn vibes"
+		class:animate
+		href="mailto:hi@tommyp.org"
+	>
+		hire me</a
+	>
+{:else}
+	<a
+		in:fly={{ delay: 250, duration: 250, x: 0 }}
+		out:fly={{ delay: 0, duration: 250, x: 100 }}
+		class="link"
+		class:animate
+		href="mailto:hi@tommyp.org"
+	>
+		hire me</a
+	>
+{/if}
 
 <style>
-	.btn {
+	.btn.vibes {
 		background: var(--pink);
 		border: 5px solid var(--pink);
 		border-radius: 1rem;
@@ -31,6 +52,13 @@
 		border: 5px solid var(--green);
 	}
 
+	a.link {
+		position: absolute;
+		margin-top: -70px;
+		color: var(--foreground);
+		text-decoration-color: var(--highlight);
+	}
+
 	@keyframes pulse {
 		0% {
 			transform: rotateZ(-10deg) scale(100%);
@@ -43,14 +71,24 @@
 		}
 	}
 
-	@media screen and (max-width: 768px) {
-		.btn {
-			position: relative;
+	@media screen and (max-width: 1024px) {
+		.btn.vibes {
 			display: block;
-			font-size: 1.8rem;
+			position: relative;
 			margin: 0 auto;
 			margin-top: 2rem;
 			width: 12rem;
+			font-size: 1.8rem;
+
+			padding: 0.5rem;
+			transform: rotateZ(-30deg);
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		.btn.vibes {
+			font-size: 1.8rem;
+
 			padding: 0.5rem;
 			transform: rotateZ(-30deg);
 		}

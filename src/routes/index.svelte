@@ -8,6 +8,7 @@
 
 	let vibes = 2.5;
 	$: wave = (vibes / 100) * 2;
+	$: animate = vibes > 2;
 </script>
 
 <div>
@@ -56,12 +57,12 @@
 			{#if vibes >= 0}
 				<div class="canvas-container">
 					<TextCanvas {wave} {vibes} />
-					<ContactSticker />
+					<ContactSticker {animate} />
 				</div>
 				<article>
 					<h1>I'm Tommy Palmer</h1>
 					<h2>A freelance web developer in London</h2>
-					<ContactSticker />
+					<ContactSticker {animate} />
 				</article>
 			{:else}
 				<h1>I'm Tommy Palmer</h1>
@@ -140,11 +141,6 @@
 	}
 
 	@media screen and (max-width: 900px) {
-		section.img-container,
-		section.text-container {
-			width: 100%;
-		}
-
 		.canvas-container ~ img,
 		.canvas-container ~ article {
 			display: block;
@@ -161,7 +157,7 @@
 		h1 {
 			font-size: 2rem;
 
-			margin-top: 1rem;
+			margin-top: 2rem;
 		}
 
 		h2 {

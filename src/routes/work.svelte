@@ -34,12 +34,15 @@
 		transition: color 0.5s, background 0.5s;
 	}
 
+	a:hover {
+		color: var(--background);
+	}
+
 	.deliveroo {
 		color: #00ccbb;
 	}
 
 	.deliveroo:hover {
-		color: var(--foreground);
 		background: #00ccbb;
 	}
 
@@ -48,7 +51,6 @@
 	}
 
 	.gov:hover {
-		color: var(--foreground);
 		background: #1d70b8;
 	}
 
@@ -57,7 +59,6 @@
 	}
 
 	.goodclub:hover {
-		color: var(--foreground);
 		background: #0db98c;
 	}
 
@@ -66,7 +67,6 @@
 	}
 
 	.shipwreck:hover {
-		color: var(--foreground);
 		background: #c5b358;
 	}
 
@@ -75,7 +75,6 @@
 	}
 
 	.govbins:hover {
-		color: var(--foreground);
 		background: #ea47cb;
 	}
 </style>
