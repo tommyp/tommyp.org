@@ -37,11 +37,14 @@
 
 	@media screen and (max-width: 600px) {
 		.btn {
+			position: relative;
+			display: block;
 			font-size: 1.8rem;
-			margin-left: 160px;
+			margin: 0;
+			margin-top: 2rem;
+			width: 12rem;
 			padding: 0.5rem;
 			transform: rotateZ(-30deg);
-			margin-top: -150px;
 		}
 	}
 </style>

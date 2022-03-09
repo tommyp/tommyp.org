@@ -1,7 +1,7 @@
 <script>
 	import TextCanvas from '../components/TextCanvas.svelte';
 	import PhotoCanvas from '../components/PhotoCanvas.svelte';
-	import ContactStickver from '../components/ContactSticker.svelte';
+	import ContactSticker from '../components/ContactSticker.svelte';
 	import Header from '../components/Header.svelte';
 	import Main from '../layout/Main.svelte';
 	import { fly } from 'svelte/transition';
@@ -27,9 +27,17 @@
 				<div
 					in:fly={{ delay: 250, duration: 250, x: -100 }}
 					out:fly={{ delay: 0, duration: 250, x: -100 }}
+					class="canvas-container"
 				>
 					<PhotoCanvas {wave} />
 				</div>
+				<img
+					src="/images/wall.jpg"
+					alt=""
+					srcset=""
+					in:fly={{ delay: 250, duration: 250, x: -100 }}
+					out:fly={{ delay: 0, duration: 250, x: -100 }}
+				/>
 			{:else}
 				<img
 					src="/images/wall.jpg"
@@ -46,8 +54,15 @@
 			out:fly={{ delay: 0, duration: 250, x: -100 }}
 		>
 			{#if vibes >= 0}
-				<TextCanvas {wave} {vibes} />
-				<ContactStickver />
+				<div class="canvas-container">
+					<TextCanvas {wave} {vibes} />
+					<ContactSticker />
+				</div>
+				<article>
+					<h1>I'm Tommy Palmer</h1>
+					<h2>A freelance web developer in London</h2>
+					<ContactSticker />
+				</article>
 			{:else}
 				<h1>I'm Tommy Palmer</h1>
 				<h2>A freelance web developer in London</h2>
@@ -58,13 +73,6 @@
 </div>
 
 <style>
-	h1,
-	h2,
-	p,
-	a {
-		text-shadow: 3px 0px var(--highlight);
-	}
-
 	h1 {
 		margin: 0;
 		font-size: 6rem;
@@ -103,6 +111,11 @@
 		border-radius: 20px;
 	}
 
+	.canvas-container ~ img,
+	.canvas-container ~ article {
+		display: none;
+	}
+
 	section.text-container {
 		width: 50%;
 	}
@@ -130,6 +143,30 @@
 		section.img-container,
 		section.text-container {
 			width: 100%;
+		}
+
+		.canvas-container ~ img,
+		.canvas-container ~ article {
+			display: block;
+		}
+
+		.vibe-selector {
+			display: none;
+		}
+
+		.canvas-container {
+			display: none;
+		}
+
+		h1 {
+			font-size: 2rem;
+
+			margin-top: 1rem;
+		}
+
+		h2 {
+			margin-top: 1rem;
+			font-size: 1.5rem;
 		}
 	}
 </style>

@@ -1,4 +1,4 @@
-<footer>
+<header>
 	<nav>
 		<ul>
 			<li>
@@ -14,10 +14,10 @@
 			</li>
 		</ul>
 	</nav>
-</footer>
+</header>
 
 <style>
-	footer {
+	header {
 		height: 10vh;
 		width: 100vw;
 		min-height: 2rem;
@@ -40,7 +40,7 @@
 
 	ul {
 		display: flex;
-		padding: 0 4rem;
+
 		margin: 0;
 		justify-content: space-between;
 		align-items: center;
@@ -71,7 +71,7 @@
 	}
 
 	@media screen and (max-width: 1240px) {
-		footer {
+		header {
 			height: 8vh;
 			font-size: 1.5rem;
 		}
@@ -82,9 +82,9 @@
 	}
 
 	@media screen and (max-width: 600px) {
-		footer {
-			height: 8vh;
-			font-size: 1rem;
+		header {
+			/* height: 8vh; */
+			font-size: 0.75rem;
 		}
 
 		ul {
@@ -93,6 +93,7 @@
 
 		a {
 			padding: 0.3rem;
+			border-bottom-width: 3px;
 		}
 	}
 </style>

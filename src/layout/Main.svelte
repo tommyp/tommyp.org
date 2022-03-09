@@ -20,7 +20,7 @@
 		main {
 			flex-direction: column;
 			font-size: 3rem;
-			padding: 1rem 1rem 4rem 1rem;
+			padding: 5rem 4rem 0 4rem;
 			align-items: center;
 		}
 	}
