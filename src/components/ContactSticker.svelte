@@ -55,8 +55,14 @@
 	a.link {
 		position: absolute;
 		margin-top: -70px;
+		margin-left: 35px;
 		color: var(--foreground);
 		text-decoration-color: var(--highlight);
+	}
+
+	a:hover {
+		color: var(--foreground);
+		background-color: var(--highlight);
 	}
 
 	@keyframes pulse {
