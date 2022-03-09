@@ -21,8 +21,7 @@
 		height: 10vh;
 		width: 100vw;
 		min-height: 2rem;
-		position: fixed;
-		top: 0;
+
 		display: flex;
 		align-items: center;
 		font-family: 'Mattone', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
