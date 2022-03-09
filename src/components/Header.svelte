@@ -5,7 +5,7 @@
 				<a href="/"> Tommy Palmer </a>
 			</li>
 		</ul>
-		<ul>
+		<ul class="page-nav">
 			<li>
 				<a href="/work"> Work </a>
 			</li>
@@ -41,12 +41,15 @@
 
 	ul {
 		display: flex;
-
 		margin: 0;
-		justify-content: space-between;
+		padding: 0;
 		align-items: center;
 		gap: 1rem;
 		height: 100%;
+		justify-content: space-between;
+	}
+
+	ul.page-nav {
 	}
 
 	li {
@@ -76,18 +79,11 @@
 			height: 8vh;
 			font-size: 1.5rem;
 		}
-
-		ul {
-			padding: 0 1.5rem;
-		}
 	}
 
 	@media screen and (max-width: 600px) {
 		header {
 			font-size: 0.75rem;
-		}
-
-		ul {
 			padding: 0 1rem;
 		}
 
