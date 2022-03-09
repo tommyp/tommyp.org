@@ -13,6 +13,7 @@
 	let subLeading;
 	let top;
 	let subTop;
+	let color;
 	export let wave; // this to zero to pause
 	$: waveX = vibes;
 	$: waveY = vibes;
@@ -47,6 +48,12 @@
 
 	if (browser) {
 		window.addEventListener('resize', setSize);
+
+		if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+			color = '#fff';
+		} else {
+			color = '#000';
+		}
 	}
 
 	const sketch = (p5) => {
@@ -90,7 +97,7 @@
 
 			let text = `I'm Tommy\nPalmer`;
 
-			graphic.fill('#fff');
+			graphic.fill(color);
 			graphic.textFont(font);
 			graphic.textSize(fontSize);
 			graphic.textLeading(leading);
@@ -99,7 +106,7 @@
 
 			text = `A freelance\nweb developer\nliving in\nLondon`;
 
-			graphic.fill('#fff');
+			graphic.fill(color);
 			graphic.textFont(font);
 			graphic.textSize(subFontSize);
 			graphic.textLeading(subLeading);

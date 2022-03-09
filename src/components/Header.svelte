@@ -29,6 +29,7 @@
 			Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 		font-size: 2rem;
+		padding: 0 2rem;
 	}
 
 	nav {
@@ -83,7 +84,6 @@
 
 	@media screen and (max-width: 600px) {
 		header {
-			/* height: 8vh; */
 			font-size: 0.75rem;
 		}
 

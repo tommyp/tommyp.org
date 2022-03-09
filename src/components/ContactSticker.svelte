@@ -1,8 +1,11 @@
-<a class="btn" href="mailto:hi@tommyp.org"> hire me</a>
+<script>
+	export let animate = true;
+</script>
+
+<a class="btn" class:animate href="mailto:hi@tommyp.org"> hire me</a>
 
 <style>
 	.btn {
-		animation: pulse 2s infinite ease-in-out;
 		background: var(--pink);
 		border: 5px solid var(--pink);
 		border-radius: 1rem;
@@ -15,8 +18,13 @@
 		position: absolute;
 		text-decoration: none;
 		text-transform: uppercase;
-		transform: rotateZ(-10deg);
+
 		transition: border 0.5s;
+	}
+
+	.btn.animate {
+		transform: rotateZ(-10deg);
+		animation: pulse 2s infinite ease-in-out;
 	}
 
 	.btn:hover {
@@ -35,7 +43,7 @@
 		}
 	}
 
-	@media screen and (max-width: 600px) {
+	@media screen and (max-width: 768px) {
 		.btn {
 			position: relative;
 			display: block;
