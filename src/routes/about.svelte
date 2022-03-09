@@ -36,7 +36,7 @@
 	}
 
 	a:hover {
-		color: var(--background);
+		color: var(--foreground);
 		background: var(--highlight);
 	}
 </style>
