@@ -13,19 +13,19 @@
 
 	let background;
 	let foreground;
+	let isMoving = false;
 
-	let coords = tweened(
-		{ x: 0.5, y: 0.5 },
-		{
-			duration: 5000,
-			easing: cubicOut
-		}
-	);
+	let coords;
+
+	$: {
+		sandbox && sandbox.setUniform('origin', $coords.x, $coords.y);
+	}
 
 	onMount(() => {
 		sandbox = new GlslCanvas(canvasTag);
 		sandbox.load(shader);
 		sandbox.setUniform('origin', 0.5, 0.5);
+
 		if (window) {
 			width = window.innerWidth;
 			height = window.innerHeight;
@@ -35,7 +35,7 @@
 				foreground = 0.3;
 			} else {
 				background = 0.9;
-				foreground = 0.7;
+				foreground = 0.85;
 			}
 
 			sandbox.setUniform('foreground', foreground, foreground, foreground, 1.0);
@@ -46,13 +46,19 @@
 				height = window.innerHeight;
 			});
 
+			coords = tweened(
+				{ x: 0.5, y: 0.5 },
+				{
+					duration: 5000,
+					easing: cubicOut
+				}
+			);
+
 			window.addEventListener('mousemove', (e) => {
 				coords.set({
 					x: e.clientX / window.innerWidth,
 					y: 1 - e.clientY / window.innerHeight
 				});
-
-				sandbox.setUniform('origin', $coords.x, $coords.y);
 			});
 		}
 	});

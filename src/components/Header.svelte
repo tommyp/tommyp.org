@@ -1,6 +1,6 @@
 <header>
 	<nav>
-		<ul>
+		<ul class="logo">
 			<li>
 				<a href="/"> Tommy Palmer </a>
 			</li>
@@ -18,23 +18,19 @@
 
 <style>
 	header {
-		height: 10vh;
-		width: 100vw;
-		min-height: 2rem;
-
-		display: flex;
 		align-items: center;
 		font-family: 'Mattone', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
 			Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
 		font-size: 2rem;
-		padding: 0 2rem;
+		padding: 1rem 2rem 0;
+		max-width: 1600px;
+		margin: 0 auto;
 	}
 
 	nav {
 		width: 100%;
-		height: 100%;
 		display: flex;
+		gap: 3rem;
 		justify-content: space-between;
 	}
 
@@ -43,39 +39,39 @@
 		margin: 0;
 		padding: 0;
 		align-items: center;
-		gap: 1rem;
-		height: 100%;
-		justify-content: space-between;
+		gap: 3rem;
+	}
+
+	ul.logo {
 	}
 
 	ul.page-nav {
 	}
 
 	li {
+		padding: none;
 		list-style: none;
 		display: flex;
 		align-items: center;
-		height: 100%;
 	}
 
 	a {
-		padding: 0.5rem;
+		padding: 1.5rem;
 		text-decoration: none;
 		text-shadow: none;
 		text-transform: uppercase;
-		color: var(--foreground);
-		border-bottom: 5px solid var(--green);
+		color: var(--highlight);
+		border: 3px solid var(--highlight);
 	}
 
 	a:hover {
 		color: var(--foreground);
 		background: var(--green);
-		border-bottom: 5px solid var(--green);
+		border: 3px solid var(--green);
 	}
 
 	@media screen and (max-width: 1240px) {
 		header {
-			height: 8vh;
 			font-size: 1.5rem;
 		}
 	}

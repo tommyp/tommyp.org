@@ -1,168 +1,150 @@
 <script>
-	import TextCanvas from '../components/TextCanvas.svelte';
-	import PhotoCanvas from '../components/PhotoCanvas.svelte';
-	import ContactSticker from '../components/ContactSticker.svelte';
-	import Header from '../components/Header.svelte';
 	import Main from '../layout/Main.svelte';
 	import { fly } from 'svelte/transition';
+	import Marquee from '../components/Marquee.svelte';
 
-	let vibes = 2.5;
-	$: wave = (vibes / 100) * 2;
-	$: animate = vibes > 2;
+	const projects = [
+		{
+			href: '/work/govbins',
+			title: 'Govbins',
+			description: 'Cataloging the nations bins'
+		},
+		{
+			href: '/work/shipwreck',
+			title: 'Conversations with a shipwreck',
+			description: 'A digital exhibition'
+		},
+		{
+			href: '/work/shorts-weather',
+			title: 'Is It Shorts Weather Today?',
+			description: 'Telling you if you should bare your legs today'
+		}
+	];
+
+	const posts = [];
 </script>
 
-<div>
-	<div
-		class="vibe-selector"
-		in:fly={{ delay: 250, duration: 250, y: -100 }}
-		out:fly={{ delay: 0, duration: 250, y: -100 }}
-	>
-		<label for="vibes">no vibes</label>
-		<input type="range" name="vibes" id="vibes" min="0" max="5" step="0.1" bind:value={vibes} />
-		<label for="vibes">max vibes</label>
-	</div>
-
+<div in:fly={{ delay: 250, duration: 250, x: -100 }} out:fly={{ delay: 0, duration: 250, x: -100 }}>
 	<Main>
-		<section class="img-container">
-			{#if vibes >= 1}
-				<div
-					in:fly={{ delay: 250, duration: 250, x: -100 }}
-					out:fly={{ delay: 0, duration: 250, x: -100 }}
-					class="canvas-container"
-				>
-					<PhotoCanvas {wave} />
-				</div>
-				<img
-					src="/images/wall.jpg"
-					alt=""
-					srcset=""
-					in:fly={{ delay: 250, duration: 250, x: -100 }}
-					out:fly={{ delay: 0, duration: 250, x: -100 }}
-				/>
-			{:else}
-				<img
-					src="/images/wall.jpg"
-					alt=""
-					srcset=""
-					in:fly={{ delay: 250, duration: 250, x: -100 }}
-					out:fly={{ delay: 0, duration: 250, x: -100 }}
-				/>
-			{/if}
+		<section class="hero">
+			<header>
+				<h1>
+					I'm a freelance web developer living in London currently seeking freelance opportunities
+				</h1>
+			</header>
+
+			<div class="photo" />
 		</section>
-		<section
-			class="text-container"
-			in:fly={{ delay: 250, duration: 250, x: -100 }}
-			out:fly={{ delay: 0, duration: 250, x: -100 }}
-		>
-			{#if vibes >= 0}
-				<div class="canvas-container">
-					<TextCanvas {wave} {vibes} />
-					<ContactSticker {animate} />
-				</div>
-				<article>
-					<h1>I'm Tommy Palmer</h1>
-					<h2>A freelance web developer in London</h2>
-					<ContactSticker {animate} />
-				</article>
-			{:else}
-				<h1>I'm Tommy Palmer</h1>
-				<h2>A freelance web developer in London</h2>
-				<p><a class="chat" href="mailto:hi@tommyp.org">let's chat </a></p>
-			{/if}
+		<Marquee />
+		<section class="content">
+			<section class="list">
+				<h2>Projects</h2>
+				{#each projects as project}
+					<article class="list__item">
+						<a href={project.href}>
+							<h3>{project.title}</h3>
+							<h4>{project.description}</h4>
+						</a>
+					</article>
+				{/each}
+			</section>
+			<section class="list">
+				<h2>Writing</h2>
+				{#each posts as post}
+					<article class="list__item">
+						<a href={post.href}>
+							<h3>{post.title}</h3>
+							<h4>{post.description}</h4>
+						</a>
+					</article>
+				{/each}
+			</section>
 		</section>
 	</Main>
 </div>
 
 <style>
+	.hero {
+		display: flex;
+		height: auto;
+		gap: 4rem;
+		width: 100%;
+	}
+	header {
+		border: 3px solid var(--highlight);
+		color: var(--foreground);
+		padding: 1rem;
+		flex-grow: 1;
+	}
+
 	h1 {
 		margin: 0;
-		font-size: 6rem;
+		font-size: 3rem;
 	}
 
-	h2,
-	p {
-		margin: 2rem 0 0 0;
-		font-size: 3.5rem;
+	h2 {
+		font-size: 3rem;
 	}
 
-	.chat {
-		color: var(--foreground);
+	.photo {
+		border: 3px solid var(--highlight);
+		background-image: url(/images/wall.jpg);
+		background-color: var(--highlight);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		background-blend-mode: difference;
 
-		text-decoration-color: var(--foreground);
-		transition: all 0.25s;
+		aspect-ratio: 1;
+		min-width: 350px;
+
+		max-height: 450px;
 	}
 
-	.chat:hover {
-		color: var(--highlight);
-		text-decoration-color: var(--highlight);
-		text-shadow: 3px 0px var(--foreground);
+	.content {
+		display: flex;
+		gap: 4rem;
 	}
 
-	section.img-container {
+	.list {
+		border: 3px solid var(--highlight);
+		width: 50%;
+		padding: 1rem;
 		display: flex;
 		flex-direction: column;
-		align-items: center;
-		width: 50%;
 	}
 
-	section.img-container img {
-		margin-top: 1rem;
-		object-fit: contain;
-		width: 80%;
-		border-radius: 20px;
+	.list a {
+		padding: 1rem 0;
+		color: var(--highlight);
+		text-decoration: none;
+		display: block;
+		transition: padding 0.3s, background-color 0.3s, color 0.3s;
 	}
 
-	.canvas-container ~ img,
-	.canvas-container ~ article {
-		display: none;
+	.list a:hover {
+		padding-left: 1rem;
+		background-color: var(--highlight);
+		color: var(--foreground);
 	}
 
-	section.text-container {
-		width: 50%;
+	.list h2 {
+		margin-bottom: 1rem;
 	}
 
-	.vibe-selector {
-		background: white;
-		width: 300px;
-		position: absolute;
-		top: 0;
-		left: 50%;
-		transform: translateX(-50%);
-		display: flex;
-		align-items: center;
-		justify-content: space-around;
-		font-family: 'Courier New', Courier, monospace;
-		padding: 0.3rem 0.7rem;
-		text-align: center;
-		border-bottom-left-radius: 20px;
-		border-bottom-right-radius: 20px;
-		border: 3px solid var(--green);
-		border-top: 0;
+	.list h3 {
+		font-size: 2rem;
 	}
 
-	@media screen and (max-width: 900px) {
-		.canvas-container ~ img,
-		.canvas-container ~ article {
-			display: block;
-		}
+	.list h4 {
+		font-size: 1.5rem;
+	}
 
-		.vibe-selector {
-			display: none;
-		}
+	.list > .list__item {
+		border-bottom: 3px solid var(--highlight);
+	}
 
-		.canvas-container {
-			display: none;
-		}
-
-		h1 {
-			font-size: 2rem;
-
-			margin-top: 2rem;
-		}
-
-		h2 {
-			margin-top: 1rem;
-			font-size: 1.5rem;
-		}
+	.list > .list__item:last-child {
+		border-bottom: none;
 	}
 </style>

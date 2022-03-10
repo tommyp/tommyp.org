@@ -10,7 +10,7 @@
 	--black: #111;
 	--white: #eee;
 	--pink: #b43eaa;
-	--green: #00ff00;
+	--green: #0c0;
 	--background: var(--black);
 	--foreground: var(--white);
 	--highlight: var(--green);
@@ -21,6 +21,14 @@
 		--background: var(--white);
 		--foreground: var(--black);
 	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	margin: 0;
 }
 
 ::selection {
