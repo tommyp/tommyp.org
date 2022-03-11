@@ -39,4 +39,10 @@
 		color: var(--foreground);
 		background: var(--highlight);
 	}
+
+	@media screen and (max-width: 768px) {
+		p {
+			margin-bottom: 1rem;
+		}
+	}
 </style>

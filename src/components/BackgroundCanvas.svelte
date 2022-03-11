@@ -13,7 +13,6 @@
 
 	let background;
 	let foreground;
-	let isMoving = false;
 
 	let coords;
 
@@ -74,5 +73,11 @@
 		max-height: 100vh;
 		z-index: -1;
 		position: fixed;
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		canvas {
+			display: none;
+		}
 	}
 </style>

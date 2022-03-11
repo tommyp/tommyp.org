@@ -1,11 +1,17 @@
+<script>
+	import { fly } from 'svelte/transition';
+</script>
+
 <header>
 	<nav>
-		<ul class="logo">
-			<li>
-				<a href="/"> Tommy Palmer </a>
+		<ul>
+			<li class="logo">
+				<a href="/"> Tommy <span>Palmer</span> </a>
 			</li>
-		</ul>
-		<ul class="page-nav">
+
+			<li>
+				<a href="/blog"> Blog </a>
+			</li>
 			<li>
 				<a href="/work"> Work </a>
 			</li>
@@ -29,27 +35,27 @@
 
 	nav {
 		width: 100%;
-		display: flex;
-		gap: 3rem;
-		justify-content: space-between;
 	}
 
 	ul {
 		display: flex;
+		justify-content: flex-end;
 		margin: 0;
 		padding: 0;
 		align-items: center;
 		gap: 3rem;
+		width: 100%;
 	}
 
-	ul.logo {
+	.logo {
+		margin-right: auto;
 	}
 
 	ul.page-nav {
 	}
 
 	li {
-		padding: none;
+		padding: 0;
 		list-style: none;
 		display: flex;
 		align-items: center;
@@ -74,12 +80,26 @@
 		header {
 			font-size: 1.5rem;
 		}
+
+		span {
+			display: none;
+		}
 	}
 
 	@media screen and (max-width: 600px) {
 		header {
+			width: 100%;
 			font-size: 0.75rem;
-			padding: 0 1rem;
+			padding: 1rem 1rem 0;
+		}
+
+		ul {
+			gap: 1rem;
+			justify-content: space-between;
+		}
+
+		.logo {
+			margin: 0;
 		}
 
 		a {

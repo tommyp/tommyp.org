@@ -9,6 +9,7 @@
 		overflow: hidden;
 		border: 3px solid var(--highlight);
 		display: block;
+		width: 100%;
 	}
 
 	.marquee:hover {
@@ -57,6 +58,12 @@
 			line-height: 1.5;
 			text-align: center;
 			white-space: normal;
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		.marquee {
+			margin: 1rem 0;
 		}
 	}
 </style>

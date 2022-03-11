@@ -12,7 +12,8 @@
 		font-family: 'Mattone', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
 			Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 		color: var(--foreground);
-		display: grid;
+		display: flex;
+		flex-direction: column;
 		max-width: 1600px;
 		margin: 0 auto;
 	}
@@ -30,6 +31,7 @@
 		main {
 			padding: 1rem 1rem 0;
 			font-size: 1.5rem;
+			width: 100%;
 		}
 	}
 </style>

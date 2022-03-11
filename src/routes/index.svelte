@@ -21,7 +21,18 @@
 		}
 	];
 
-	const posts = [];
+	const posts = [
+		{
+			href: '/blog/buying-a-house',
+			title: 'I bought a house',
+			description: '3rd January 2021'
+		},
+		{
+			href: '/blog/lets-make-mad-shit',
+			title: 'Lets make mad shit',
+			description: '3rd January 2021'
+		}
+	];
 </script>
 
 <div in:fly={{ delay: 250, duration: 250, x: -100 }} out:fly={{ delay: 0, duration: 250, x: -100 }}>
@@ -29,8 +40,12 @@
 		<section class="hero">
 			<header>
 				<h1>
-					I'm a freelance web developer living in London currently seeking freelance opportunities
+					Freelance web developer with over 10 years experience. Based in London. <strike
+						>Available for work.</strike
+					>
 				</h1>
+
+				<h2><a href="mailto:hi@tommyp.org">hi@tommyp.org</a></h2>
 			</header>
 
 			<div class="photo" />
@@ -75,6 +90,9 @@
 		color: var(--foreground);
 		padding: 1rem;
 		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 	}
 
 	h1 {
@@ -84,6 +102,16 @@
 
 	h2 {
 		font-size: 3rem;
+	}
+
+	h2 a {
+		color: var(--foreground);
+		text-decoration-color: var(--highlight);
+	}
+
+	h2 a:hover {
+		color: var(--highlight);
+		text-decoration-color: var(--highlight);
 	}
 
 	.photo {
@@ -146,5 +174,52 @@
 
 	.list > .list__item:last-child {
 		border-bottom: none;
+	}
+
+	@media screen and (max-width: 768px) {
+		.hero {
+			flex-direction: column-reverse;
+			gap: 1rem;
+		}
+
+		header {
+			padding: 0.5rem;
+		}
+
+		.photo {
+			display: none;
+		}
+		h1,
+		h2,
+		h3,
+		h4 {
+			font-size: 1rem;
+		}
+
+		.content {
+			flex-direction: column;
+			gap: 1rem;
+		}
+
+		.list {
+			width: 100%;
+			padding: 0.5rem;
+		}
+
+		.list h2 {
+			margin-bottom: 0;
+		}
+
+		.list h3 {
+			font-size: 1rem;
+		}
+
+		.list h4 {
+			font-size: 1rem;
+		}
+
+		.list a {
+			padding: 0.5rem 0;
+		}
 	}
 </style>
