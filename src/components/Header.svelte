@@ -84,6 +84,14 @@
 		span {
 			display: none;
 		}
+
+		ul {
+			justify-content: space-between;
+		}
+
+		.logo {
+			margin: 0;
+		}
 	}
 
 	@media screen and (max-width: 600px) {
@@ -96,10 +104,6 @@
 		ul {
 			gap: 1rem;
 			justify-content: space-between;
-		}
-
-		.logo {
-			margin: 0;
 		}
 
 		a {

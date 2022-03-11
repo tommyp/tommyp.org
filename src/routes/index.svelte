@@ -199,6 +199,7 @@
 		.content {
 			flex-direction: column;
 			gap: 1rem;
+			width: 100%;
 		}
 
 		.list {

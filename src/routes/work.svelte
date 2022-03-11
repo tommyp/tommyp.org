@@ -1,12 +1,13 @@
 <script>
 	import Main from '../layout/Main.svelte';
 	import { fly } from 'svelte/transition';
+	import Paragraph from '../components/Paragraph.svelte';
 </script>
 
 <div in:fly={{ delay: 250, duration: 250, x: -100 }} out:fly={{ delay: 0, duration: 250, x: -100 }}>
 	<Main>
 		<article>
-			<p>
+			<Paragraph>
 				I've worked on big teams like <a href="https://deliveroo.co.uk/" class="deliveroo">
 					Deliveroo</a
 				>
@@ -17,8 +18,8 @@
 				<a class="shipwreck" href="https://shipwreck.tommyp.org/">Conversations With A Shipwreck</a>
 				and
 				<a class="govbins" href="https://govbins.uk/">Govbins</a>.
-			</p>
-			<p>I can work with JavaScript, Ruby, Elixir and many other technologies.</p>
+			</Paragraph>
+			<Paragraph>I can work with JavaScript, Ruby, Elixir and many other technologies.</Paragraph>
 		</article>
 	</Main>
 </div>

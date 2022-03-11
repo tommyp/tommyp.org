@@ -27,7 +27,7 @@
 		}
 	}
 
-	@media screen and (max-width: 450px) {
+	@media screen and (max-width: 768px) {
 		main {
 			padding: 1rem 1rem 0;
 			font-size: 1.5rem;
