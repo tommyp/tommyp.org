@@ -20,6 +20,19 @@
 		sandbox && sandbox.setUniform('origin', $coords.x, $coords.y);
 	}
 
+	const setTheme = () => {
+		if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+			background = 0.1;
+			foreground = 0.15;
+		} else {
+			background = 0.9;
+			foreground = 0.85;
+		}
+
+		sandbox.setUniform('foreground', foreground, foreground, foreground, 1.0);
+		sandbox.setUniform('background', background, background, background, 1.0);
+	};
+
 	onMount(() => {
 		sandbox = new GlslCanvas(canvasTag);
 		sandbox.load(shader);
@@ -29,16 +42,9 @@
 			width = window.innerWidth;
 			height = window.innerHeight;
 
-			if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-				background = 0.1;
-				foreground = 0.3;
-			} else {
-				background = 0.9;
-				foreground = 0.85;
-			}
+			setTheme();
 
-			sandbox.setUniform('foreground', foreground, foreground, foreground, 1.0);
-			sandbox.setUniform('background', background, background, background, 1.0);
+			window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', setTheme);
 
 			window.addEventListener('resize', () => {
 				width = window.innerWidth;
