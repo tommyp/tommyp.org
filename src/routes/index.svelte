@@ -40,9 +40,8 @@
 		<section class="hero">
 			<header>
 				<h1>
-					Freelance web developer with over 10 years experience. Based in London. <strike
-						>Available for work.</strike
-					>
+					Freelance web developer with over 10 years experience. Based in London. Available for
+					work.
 				</h1>
 
 				<h2><a href="mailto:hi@tommyp.org">hi@tommyp.org</a></h2>
