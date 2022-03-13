@@ -23,7 +23,7 @@
 	.markdown {
 		font-size: 2rem;
 		max-width: 60%;
-		line-height: 1.2;
+
 		margin-top: 2rem;
 	}
 

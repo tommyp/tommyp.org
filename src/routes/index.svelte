@@ -122,6 +122,7 @@
 	.content {
 		display: flex;
 		gap: 4rem;
+		width: 100%;
 	}
 
 	.list {
@@ -174,6 +175,11 @@
 		border-bottom: none;
 	}
 
+	@media screen and (max-width: 1200px) {
+		.list__item a {
+			display: block;
+		}
+	}
 	@media screen and (max-width: 768px) {
 		.hero {
 			flex-direction: column-reverse;
@@ -194,15 +200,13 @@
 			font-size: 1rem;
 		}
 
-		.content {
-			flex-direction: column;
-			gap: 1rem;
-			width: 100%;
-		}
-
 		.list {
 			width: 100%;
 			padding: 0.5rem;
+		}
+
+		.items {
+			width: 100%;
 		}
 
 		.list h2 {
