@@ -38,11 +38,6 @@
 </div>
 
 <style>
-	p {
-		margin: 0;
-		margin-bottom: 3rem;
-	}
-
 	a {
 		color: var(--highlight);
 		text-decoration: none;
