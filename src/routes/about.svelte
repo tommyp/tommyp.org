@@ -88,10 +88,4 @@
 	.govbins:hover {
 		background: #ea47cb;
 	}
-
-	@media screen and (max-width: 768px) {
-		p {
-			margin-bottom: 1rem;
-		}
-	}
 </style>

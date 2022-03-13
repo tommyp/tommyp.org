@@ -15,6 +15,7 @@ const config = {
 		useVitePreprocess: true
 	},
 	extensions: ['.svelte', '.md'],
+	extends: './.svelte-kit/tsconfig.json',
 
 	preprocess: [
 		mdsvex({
