@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-auto';
+import adapter from '@sveltejs/adapter-netlify';
 import { isoImport } from 'vite-plugin-iso-import';
 
 /** @type {import('@sveltejs/kit').Config} */
