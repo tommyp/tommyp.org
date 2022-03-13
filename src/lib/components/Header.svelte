@@ -1,7 +1,3 @@
-<script>
-	import { fly } from 'svelte/transition';
-</script>
-
 <header>
 	<nav>
 		<ul>
@@ -48,9 +44,6 @@
 		margin-right: auto;
 	}
 
-	ul.page-nav {
-	}
-
 	li {
 		padding: 0;
 		list-style: none;
@@ -76,6 +69,7 @@
 	@media screen and (max-width: 1240px) {
 		header {
 			font-size: 1.5rem;
+			padding: 1rem 1rem 0;
 		}
 
 		span {
@@ -93,9 +87,7 @@
 
 	@media screen and (max-width: 600px) {
 		header {
-			width: 100%;
 			font-size: 0.75rem;
-			padding: 1rem 1rem 0;
 		}
 
 		ul {
