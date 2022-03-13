@@ -17,6 +17,7 @@
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-svelte3": "^3.2.1",
+    "mdsvex": "^0.10.5",
     "prettier": "^2.5.1",
     "prettier-plugin-svelte": "^2.5.0",
     "svelte": "^3.44.0",
@@ -25,7 +26,6 @@
   "type": "module",
   "dependencies": {
     "glslCanvas": "^0.1.7",
-    "p5-svelte": "^3.0.1",
-    "svelte-markdown": "^0.2.2"
+    "p5-svelte": "^3.0.1"
   }
 }

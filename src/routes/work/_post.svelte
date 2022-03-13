@@ -1,8 +1,6 @@
 <script>
 	import Main from '$lib/layout/Main.svelte';
 
-	export let md;
-	import SvelteMarkdown from 'svelte-markdown';
 	import { fly } from 'svelte/transition';
 </script>
 
@@ -10,7 +8,7 @@
 	<Main>
 		<a class="back" href="/">← <span>Back</span></a>
 		<div class="markdown">
-			<SvelteMarkdown source={md} />
+			<slot />
 		</div>
 	</Main>
 </div>

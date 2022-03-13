@@ -1,5 +1,6 @@
 import adapter from '@sveltejs/adapter-netlify';
 import { isoImport } from 'vite-plugin-iso-import';
+import { mdsvex } from 'mdsvex';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -12,7 +13,17 @@ const config = {
 	},
 	experimental: {
 		useVitePreprocess: true
-	}
+	},
+	extensions: ['.svelte', '.md'],
+
+	preprocess: [
+		mdsvex({
+			extensions: ['.md'],
+			layout: {
+				work: 'src/routes/work/_post.svelte'
+			}
+		})
+	]
 };
 
 export default config;
