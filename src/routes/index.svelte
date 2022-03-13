@@ -56,7 +56,7 @@
 				<div class="items">
 					{#each projects as project}
 						<article class="list__item">
-							<a href={project.href}>
+							<a sveltekit:prefetch href={project.href}>
 								<h3>{project.title}</h3>
 								<h4>{project.description}</h4>
 							</a>

@@ -8,7 +8,7 @@
 
 <div in:fly={{ delay: 250, duration: 250, x: -100 }} out:fly={{ delay: 0, duration: 250, x: -100 }}>
 	<Main>
-		<a class="back" href="/work">← <span>All work</span></a>
+		<a class="back" href="/">← <span>Back</span></a>
 		<div class="markdown">
 			<SvelteMarkdown source={md} />
 		</div>

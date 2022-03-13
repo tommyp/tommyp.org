@@ -3,8 +3,8 @@
 </script>
 
 <footer
-	in:fly={{ delay: 250, duration: 250, x: -100 }}
-	out:fly={{ delay: 0, duration: 250, x: -100 }}
+	in:fly={{ delay: 250, duration: 250, y: -100 }}
+	out:fly={{ delay: 0, duration: 250, y: -100 }}
 >
 	say hello - <a href="mailto:hi@tommyp.org">hi@tommyp.org</a>
 </footer>
