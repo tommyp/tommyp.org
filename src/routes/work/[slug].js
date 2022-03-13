@@ -1,9 +1,7 @@
 import fs from 'fs';
 
-/** @type {import('./[id]').RequestHandler} */
+/** @type {import('./[slug]').RequestHandler} */
 export async function get({ params }) {
-	// `params.id` comes from [id].js
-
 	const { slug } = params;
 
 	const md = fs.readFileSync(`src/lib/markdown/${slug}.md`).toString();
