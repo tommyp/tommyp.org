@@ -61,7 +61,7 @@
 	.hero {
 		display: flex;
 		height: auto;
-		gap: 4rem;
+		gap: 3rem;
 		width: 100%;
 	}
 	header {

@@ -18,7 +18,7 @@
 		font-family: 'Mattone', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
 			Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 		font-size: 2rem;
-		padding: 1rem 2rem 0;
+		padding: 2rem 2rem 0;
 		max-width: 1600px;
 		margin: 0 auto;
 	}
