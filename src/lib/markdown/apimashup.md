@@ -1,4 +1,4 @@
-# [apima.sh/up](apima.sh/up)
+# [apima.sh/up](https://www.apima.sh/up)
 
 ![API Mashup](/images/work/apimashup.png)
 
