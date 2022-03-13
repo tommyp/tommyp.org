@@ -18,19 +18,11 @@
 			href: '/work/shorts-weather',
 			title: 'Is It Shorts Weather Today?',
 			description: 'Telling you if you should bare your legs'
-		}
-	];
-
-	const posts = [
-		{
-			href: '/blog/buying-a-house',
-			title: 'I bought a house',
-			description: '3rd January 2021'
 		},
 		{
-			href: '/blog/lets-make-mad-shit',
-			title: 'Lets make mad shit',
-			description: '3rd January 2021'
+			href: '/work/apimashup',
+			title: 'apima.sh/up',
+			description: 'Random API suggestions'
 		}
 	];
 </script>
@@ -39,10 +31,7 @@
 	<Main>
 		<section class="hero">
 			<header>
-				<h1>
-					Freelance web developer with over 10 years experience. Based in London. Available for
-					work.
-				</h1>
+				<h1>Freelance web developer with over 10 years experience. Based in London.</h1>
 
 				<h2><a href="mailto:hi@tommyp.org">hi@tommyp.org</a></h2>
 			</header>

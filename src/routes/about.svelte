@@ -14,7 +14,7 @@
 				and
 				<a href="https://www.gov.uk/" class="gov">GOV.UK</a>, and small teams like
 				<a href="https://www.goodclub.co.uk/" class="goodclub"> Good Club</a>. I've also worked on
-				smaller projects like
+				projects by myself, like
 				<a class="shipwreck" href="https://shipwreck.tommyp.org/">Conversations With A Shipwreck</a>
 				and
 				<a class="govbins" href="https://govbins.uk/">Govbins</a>.
