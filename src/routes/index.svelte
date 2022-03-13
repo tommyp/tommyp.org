@@ -31,7 +31,7 @@
 	<Main>
 		<section class="hero">
 			<header>
-				<h1>Freelance web developer with over 10 years experience. Based in London.</h1>
+				<h1>I'm a freelance web developer with over 10 years experience. Based in London.</h1>
 
 				<h2><a href="mailto:hi@tommyp.org">hi@tommyp.org</a></h2>
 			</header>

@@ -5,6 +5,10 @@
 	import Header from '$lib/components/Header.svelte';
 </script>
 
+<svelte:head>
+	<title>Tommy Palmer | Freelance web developer</title>
+</svelte:head>
+
 <BackgroundCanvas />
 
 <Header />
