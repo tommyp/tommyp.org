@@ -1,7 +1,7 @@
 <script>
-	import Main from '../layout/Main.svelte';
+	import Main from '$lib/layout/Main.svelte';
 	import { fly } from 'svelte/transition';
-	import Marquee from '../components/Marquee.svelte';
+	import Marquee from '$lib/components/Marquee.svelte';
 
 	const projects = [
 		{

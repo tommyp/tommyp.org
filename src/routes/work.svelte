@@ -1,7 +1,7 @@
 <script>
-	import Main from '../layout/Main.svelte';
+	import Main from '$lib/layout/Main.svelte';
 	import { fly } from 'svelte/transition';
-	import Paragraph from '../components/Paragraph.svelte';
+	import Paragraph from '$lib/components/Paragraph.svelte';
 </script>
 
 <div in:fly={{ delay: 250, duration: 250, x: -100 }} out:fly={{ delay: 0, duration: 250, x: -100 }}>

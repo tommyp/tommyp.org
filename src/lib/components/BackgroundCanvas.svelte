@@ -1,7 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 	import GlslCanvas from 'glslCanvas?client';
-	import shader from '$lib/shader';
+	import shader from '$lib/shaders/shader';
 
 	import { tweened } from 'svelte/motion';
 	import { cubicOut } from 'svelte/easing';

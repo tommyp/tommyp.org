@@ -1,8 +1,8 @@
 <script>
-	import '../stylesheets/normalize.css';
-	import '../stylesheets/global.css';
-	import BackgroundCanvas from '../components/BackgroundCanvas.svelte';
-	import Header from '../components/Header.svelte';
+	import '$lib/stylesheets/normalize.css';
+	import '$lib/stylesheets/global.css';
+	import BackgroundCanvas from '$lib/components/BackgroundCanvas.svelte';
+	import Header from '$lib/components/Header.svelte';
 	import { fade } from 'svelte/transition';
 </script>
 
