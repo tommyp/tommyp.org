@@ -17,7 +17,7 @@
 		{
 			href: '/work/shorts-weather',
 			title: 'Is It Shorts Weather Today?',
-			description: 'Telling you if you should bare your legs today'
+			description: 'Telling you if you should bare your legs'
 		}
 	];
 
@@ -53,25 +53,16 @@
 		<section class="content">
 			<section class="list">
 				<h2>Projects</h2>
-				{#each projects as project}
-					<article class="list__item">
-						<a href={project.href}>
-							<h3>{project.title}</h3>
-							<h4>{project.description}</h4>
-						</a>
-					</article>
-				{/each}
-			</section>
-			<section class="list">
-				<h2>Writing</h2>
-				{#each posts as post}
-					<article class="list__item">
-						<a href={post.href}>
-							<h3>{post.title}</h3>
-							<h4>{post.description}</h4>
-						</a>
-					</article>
-				{/each}
+				<div class="items">
+					{#each projects as project}
+						<article class="list__item">
+							<a href={project.href}>
+								<h3>{project.title}</h3>
+								<h4>{project.description}</h4>
+							</a>
+						</article>
+					{/each}
+				</div>
 			</section>
 		</section>
 	</Main>
@@ -135,14 +126,16 @@
 
 	.list {
 		border: 3px solid var(--highlight);
-		width: 50%;
+		width: 100%;
 		padding: 1rem;
+	}
+
+	.items {
 		display: flex;
 		flex-direction: column;
 	}
 
 	.list a {
-		padding: 1rem 0;
 		color: var(--highlight);
 		text-decoration: none;
 		display: block;
@@ -151,6 +144,7 @@
 
 	.list a:hover {
 		padding-left: 1rem;
+		padding-right: 1rem;
 		background-color: var(--highlight);
 		color: var(--foreground);
 	}
@@ -167,11 +161,16 @@
 		font-size: 1.5rem;
 	}
 
-	.list > .list__item {
+	.list__item a {
+		padding: 1rem 0;
+		width: auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 		border-bottom: 3px solid var(--highlight);
 	}
 
-	.list > .list__item:last-child {
+	.list__item:last-child a {
 		border-bottom: none;
 	}
 

@@ -62,8 +62,8 @@
 
 	a:hover {
 		color: var(--foreground);
-		background: var(--green);
-		border: 3px solid var(--green);
+		background: var(--highlight);
+		border: 3px solid var(--highlight);
 	}
 
 	@media screen and (max-width: 1240px) {

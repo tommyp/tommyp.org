@@ -17,7 +17,7 @@
 			<Paragraph>
 				<a class="btn" href="mailto:hi@tommyp.org">email</a> /
 				<a href="/files/tommy-palmer-cv.pdf">CV</a> /
-				<a href="http://twitter.com/tommypalm">Twitter</a> /
+				<a href="http://twitter.com/tommypalmr">Twitter</a> /
 				<a href="https://github.com/tommyp/">Github</a>
 			</Paragraph>
 		</article>
