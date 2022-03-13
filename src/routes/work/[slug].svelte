@@ -50,6 +50,5 @@
 	:global(h1 a) {
 		font-size: 6rem;
 		text-decoration: none;
-		text-transform: uppercase;
 	}
 </style>
