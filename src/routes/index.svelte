@@ -7,7 +7,7 @@
 		{
 			href: '/work/govbins',
 			title: 'Govbins',
-			description: 'Cataloging the nations bins'
+			description: "Cataloging the nation's bins"
 		},
 		{
 			href: '/work/shipwreck',
