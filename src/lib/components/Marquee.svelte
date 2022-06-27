@@ -1,11 +1,11 @@
 <a href="mailto:hi@tommyp.org" class="marquee" style="--tw: 30vw; --ad: 5s;">
-	<span>Hire Me</span>
+	<span>email me</span>
 </a>
 
 <style>
 	.marquee {
 		margin: 2rem 0;
-		font-size: calc(var(--tw) / 5);
+		font-size: calc(var(--tw) / 6);
 		overflow: hidden;
 		border: 3px solid var(--highlight);
 		display: block;
