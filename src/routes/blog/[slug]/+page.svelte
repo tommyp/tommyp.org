@@ -1,7 +1,10 @@
-<script>
-	export let data;
-
-	console.log(data.Post);
+<script lang="ts">
+	interface Post {
+		title: string;
+		date: string;
+		content: string;
+	}
+	export let data: Post;
 </script>
 
 <article>
