@@ -1,9 +1,5 @@
 <script lang="ts">
-	interface Post {
-		title: string;
-		date: string;
-		content: string;
-	}
+	import type { Post } from '$lib/types';
 	export let data: Post;
 </script>
 
