@@ -3,3 +3,10 @@ export interface Post {
 	date: string;
 	content: string;
 }
+
+export interface PostSummary {
+	path: string;
+	meta: {
+		title: string;
+	};
+}

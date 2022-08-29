@@ -1,5 +1,6 @@
-<script>
-	export let data;
+<script lang="ts">
+	import type { Post, PostSummary } from '$lib/types';
+	export let data: { posts: Array<PostSummary> };
 </script>
 
 <h1>Blog</h1>
