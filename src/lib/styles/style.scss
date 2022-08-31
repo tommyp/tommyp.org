@@ -1,12 +1,42 @@
-body {
-	margin: 0;
-	background: #eee;
-	color: #333;
-	font-family: sans-serif;
+@font-face {
+	font-family: 'Karrik';
+	src: url('/fonts/karrik/TFF/Karrik-Regular.ttf');
+	font-weight: 400;
 }
 
-main {
-	padding: 1rem;
-	margin: 2rem auto;
-	max-width: 40rem;
+@font-face {
+	font-family: 'Karrik';
+	src: url('/fonts/karrik/TFF/Karrik-Italic.ttf');
+	font-weight: 400;
+	font-style: italic;
+}
+
+:root {
+	--near-black: #222;
+	--white: #fff;
+
+	--border-color: var(--near-black);
+	--foreground: var(--near-black);
+	--background: #fff;
+}
+
+body {
+	margin: 0 auto;
+	font-family: sans-serif;
+	background: var(--background);
+	color: var(--foreground);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-weight: normal;
+	font-family: 'Karrik', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+		Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a {
+	transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
 }
