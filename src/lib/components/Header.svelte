@@ -60,8 +60,9 @@
 		padding: 1rem 0;
 		border-bottom: 4px solid var(--border-color);
 		border-right: 4px solid var(--border-color);
-		font-family: 'Karrik', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+		font-family: 'Mattone', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
 			Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+		text-transform: lowercase;
 	}
 
 	li:last-child > a {
@@ -71,5 +72,19 @@
 	a:hover {
 		color: var(--background);
 		background: var(--foreground);
+	}
+
+	@media (min-width: 768px) {
+		header {
+			text-align: left;
+		}
+
+		h1 a {
+			padding-left: 2rem;
+		}
+
+		li a {
+			padding-left: 2rem;
+		}
 	}
 </style>
