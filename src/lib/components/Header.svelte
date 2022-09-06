@@ -1,7 +1,5 @@
 <header>
-	<h1>
-		<a href="/">Tommy Palmer</a>
-	</h1>
+	<a class="logo" href="/"><h1>Tommy Palmer</h1></a>
 
 	<nav>
 		<ul>
@@ -24,16 +22,14 @@
 		font-size: 1.5rem;
 	}
 
-	h1 {
+	.logo {
 		border-bottom: 4px solid var(--border-color);
 		margin: 0;
-	}
-
-	h1 > a {
+		font-size: 1.25rem;
 		text-decoration: none;
 		color: inherit;
 		display: block;
-		padding: 2rem 0;
+		text-transform: uppercase;
 	}
 
 	ul {
@@ -62,7 +58,7 @@
 		border-right: 4px solid var(--border-color);
 		font-family: 'Mattone', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
 			Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-		text-transform: lowercase;
+		text-transform: uppercase;
 	}
 
 	li:last-child > a {
@@ -77,14 +73,36 @@
 	@media (min-width: 768px) {
 		header {
 			text-align: left;
+			display: flex;
+			border-bottom: 4px solid var(--border-color);
 		}
 
-		h1 a {
+		.logo {
+			flex-grow: 2;
+			border-bottom: none;
 			padding-left: 2rem;
+		}
+
+		ul {
+			width: 50vw;
+			display: flex;
+			height: 100%;
+		}
+
+		li {
+			display: block;
 		}
 
 		li a {
-			padding-left: 2rem;
+			padding: 0;
+			display: flex;
+			height: 100%;
+			align-items: center;
+			justify-content: center;
+		}
+
+		li:first-child > a {
+			border-left: 4px solid var(--border-color);
 		}
 	}
 </style>
