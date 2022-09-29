@@ -9,8 +9,16 @@
 <style>
 	.hero {
 		font-size: 1.5rem;
-
+		padding: 1.5rem;
 		font-weight: bold;
 		font-family: var(--header-font-family);
+	}
+
+	h2 {
+		margin-bottom: 2rem;
+	}
+
+	a {
+		color: var(--highlight);
 	}
 </style>
