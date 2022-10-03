@@ -23,10 +23,12 @@
 		grid-column-start: 1;
 		grid-column-end: 1;
 		background-color: var(--color);
+		border-radius: 1rem;
 	}
 
 	a:hover {
 		color: var(--primary);
+		transform: scale(1.01);
 	}
 
 	h5 {
@@ -37,14 +39,14 @@
 	}
 
 	h3 {
-		font-size: 5rem;
+		font-size: 4rem;
 		font-weight: bold;
 		margin: 0;
 	}
 
 	.description {
 		margin-top: 1rem;
-		font-family: var(--body-font-family);
+		font-family: var(--header-font-family);
 		font-size: 1.25rem;
 		color: var(--primary);
 	}

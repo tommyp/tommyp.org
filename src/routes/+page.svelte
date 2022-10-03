@@ -5,41 +5,47 @@
 
 	export let data: { posts: Array<PostSummary> };
 
-	console.log(data.posts);
+	$: console.log(data);
+
 	$: recentPost = data.posts[0];
 </script>
 
-<Wrapper>
-	<div class="hero">
-		<h2>I'm a creative web developer who likes building fun things.</h2>
-	</div>
+<section>
+	<Wrapper>
+		<div class="hero">
+			<h2>I'm a creative web developer who likes building fun things.</h2>
+		</div>
 
-	<BigBlockLink
-		href="https://castrooms.com"
-		title="Castrooms"
-		subtitle="Where I work"
-		--color="#e1e600"
-		--grid-col-start="4"
-		--grid-col-end="6"
-	>
-		Next generation streaming for DJs and Ravers
-	</BigBlockLink>
-</Wrapper>
+		<BigBlockLink
+			href="https://castrooms.com"
+			title="Castrooms"
+			subtitle="Where I work"
+			--color="#e1e600"
+			--grid-col-start="4"
+			--grid-col-end="6"
+		>
+			Next generation streaming for DJs and Ravers
+		</BigBlockLink>
+	</Wrapper>
 
-<Wrapper>
-	<BigBlockLink
-		href={recentPost.path}
-		title={recentPost.meta.title}
-		subtitle="Something I've written"
-		--color="#dd00ee"
-		--grid-col-start="1"
-		--grid-col-end="3"
-	>
-		{recentPost.description}
-	</BigBlockLink>
-</Wrapper>
+	<Wrapper>
+		<BigBlockLink
+			href={recentPost.path}
+			title={recentPost.meta.title}
+			subtitle="Something I've written"
+			--color="#dd00ee"
+			--grid-col-start="1"
+			--grid-col-end="5"
+		>
+			{recentPost.meta.subtitle}
+		</BigBlockLink>
+	</Wrapper>
+</section>
 
 <style>
+	section {
+		margin-top: 2rem;
+	}
 	.hero {
 		font-size: 1.75rem;
 		font-weight: bold;

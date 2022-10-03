@@ -5,7 +5,7 @@
 <style>
 	.wrapper {
 		max-width: 1600px;
-		margin: 3rem auto;
+		margin: 1rem auto;
 		padding: 0 2rem;
 		display: flex;
 		flex-direction: column;
@@ -14,7 +14,7 @@
 
 	@media screen and (min-width: 968px) {
 		.wrapper {
-			padding: 1rem 1rem 0;
+			padding: 1rem 2rem 0;
 			display: grid;
 			grid-template-columns: 1fr;
 			grid-template-columns: repeat(5, 1fr);

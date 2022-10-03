@@ -8,5 +8,6 @@ export interface PostSummary {
 	path: string;
 	meta: {
 		title: string;
+		subtitle: string;
 	};
 }
