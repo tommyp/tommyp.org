@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { page } from '$app/stores';
 	const links: { path: string; text: string }[] = [
 		{ path: '/blog', text: 'Blog' },
 		{ path: '/about', text: 'About' }
@@ -11,7 +12,7 @@
 		<ul>
 			{#each links as link}
 				<li>
-					<a href={link.path} class={window.location.pathname.includes(link.path) ? 'active' : ''}>
+					<a href={link.path} class={$page.url.pathname.includes(link.path) ? 'active' : ''}>
 						{link.text}
 					</a>
 				</li>
@@ -24,15 +25,18 @@
 	header {
 		font-family: 'Mattone', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
 			Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-		font-size: 2rem;
+
 		padding: 2rem 2rem 0;
 		max-width: 1600px;
 		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		font-size: 1.25rem;
 	}
 
 	nav {
-		width: 100%;
-		margin-top: 1rem;
+		margin: 1rem 0;
 	}
 
 	ul {
@@ -65,7 +69,14 @@
 	}
 
 	nav a {
+		font-size: 1.25rem;
 		border-radius: 3rem;
+	}
+
+	nav a.active {
+		color: var(--foreground);
+		background: var(--highlight);
+		border: 3px solid var(--highlight);
 	}
 
 	a:hover {
@@ -76,12 +87,7 @@
 
 	@media screen and (max-width: 1240px) {
 		header {
-			font-size: 1.5rem;
 			padding: 1rem 1rem 0;
-		}
-
-		span {
-			display: none;
 		}
 
 		.logo {
