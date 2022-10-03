@@ -5,16 +5,19 @@
 <style>
 	.wrapper {
 		max-width: 1600px;
-		margin: 0 auto;
+		margin: 3rem auto;
 		padding: 0 2rem;
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		column-gap: 3rem;
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
 	}
 
-	@media screen and (max-width: 1240px) {
+	@media screen and (min-width: 968px) {
 		.wrapper {
 			padding: 1rem 1rem 0;
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-columns: repeat(5, 1fr);
 		}
 	}
 </style>

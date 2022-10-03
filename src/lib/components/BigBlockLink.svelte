@@ -20,8 +20,8 @@
 		flex-direction: column;
 		padding: 1.5rem;
 		color: #000;
-		grid-column-start: var(--grid-col-start);
-		grid-column-end: var(--grid-col-end);
+		grid-column-start: 1;
+		grid-column-end: 1;
 		background-color: var(--color);
 	}
 
@@ -47,5 +47,12 @@
 		font-family: var(--body-font-family);
 		font-size: 1.25rem;
 		color: var(--primary);
+	}
+
+	@media screen and (min-width: 968px) {
+		a {
+			grid-column-start: var(--grid-col-start);
+			grid-column-end: var(--grid-col-end);
+		}
 	}
 </style>
