@@ -26,13 +26,14 @@
 		font-family: 'Mattone', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
 			Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
-		padding: 2rem 2rem 0;
+		padding: 1rem 1rem 0;
 		max-width: 1600px;
 		margin: 0 auto;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		font-size: 1.25rem;
+		flex-direction: column;
+		font-size: 1rem;
 	}
 
 	nav {
@@ -85,9 +86,13 @@
 		border: 3px solid var(--highlight);
 	}
 
-	@media screen and (max-width: 1240px) {
+	@media screen and (min-width: 1240px) {
 		header {
-			padding: 1rem 1rem 0;
+			padding: 1rem 2rem 0;
+		}
+
+		h1 {
+			font-size: 1.25rem;
 		}
 
 		.logo {

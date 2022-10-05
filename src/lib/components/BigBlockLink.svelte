@@ -39,7 +39,7 @@
 	}
 
 	h3 {
-		font-size: 4rem;
+		font-size: 2rem;
 		font-weight: bold;
 		margin: 0;
 	}
@@ -55,6 +55,14 @@
 		a {
 			grid-column-start: var(--grid-col-start);
 			grid-column-end: var(--grid-col-end);
+		}
+
+		h5 {
+			font-size: 0.8rem;
+		}
+
+		h3 {
+			font-size: 4rem;
 		}
 	}
 </style>
