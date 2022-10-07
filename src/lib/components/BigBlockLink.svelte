@@ -5,8 +5,10 @@
 </script>
 
 <a {href}>
-	<h5>{subtitle}</h5>
-	<h3>{title}</h3>
+	<div>
+		<h5>{subtitle}</h5>
+		<h3>{title}</h3>
+	</div>
 	<div class="description">
 		<slot />
 	</div>
@@ -24,6 +26,7 @@
 		grid-column-end: 1;
 		background-color: var(--color);
 		border-radius: 1rem;
+		justify-content: space-between;
 	}
 
 	a:hover {

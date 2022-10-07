@@ -5,17 +5,18 @@
 <style>
 	.wrapper {
 		max-width: 1600px;
-		margin: 1rem auto;
+		margin: 2rem auto;
 		padding: 0 1rem;
 		display: flex;
 		flex-direction: column;
-		gap: 3rem;
+		gap: 2rem;
 	}
 
 	@media screen and (min-width: 968px) {
 		.wrapper {
-			padding: 1rem 2rem 0;
+			padding: 0 2rem;
 			display: grid;
+			column-gap: 2rem;
 			grid-template-columns: 1fr;
 			grid-template-columns: repeat(5, 1fr);
 		}

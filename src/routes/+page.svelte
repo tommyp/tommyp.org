@@ -52,7 +52,7 @@
 		font-family: var(--header-font-family);
 		grid-column-start: 1;
 		grid-column-end: 6;
-		font-style: italic;
+
 		border: 4px solid var(--highlight);
 		padding: 1.5rem;
 	}
