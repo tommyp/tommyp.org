@@ -1,5 +1,6 @@
 <script>
 	import Header from '$lib/components/Header.svelte';
+	import Footer from '$lib/Footer.svelte';
 	import '$lib/styles/style.scss';
 
 	import { fade } from 'svelte/transition';
@@ -15,15 +16,4 @@
 	</main>
 {/key}
 
-<footer>I'm a footer</footer>
-
-<style>
-	footer {
-		position: fixed;
-		bottom: 0;
-		border-top: 4px solid var(--border-color);
-		width: 100%;
-		padding: 1rem;
-		font-family: var(--font-family);
-	}
-</style>
+<Footer />

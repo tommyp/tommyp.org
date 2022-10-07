@@ -6,7 +6,7 @@
 	.wrapper {
 		max-width: 1600px;
 		margin: 1rem auto;
-		padding: 0 2rem;
+		padding: 0 1rem;
 		display: flex;
 		flex-direction: column;
 		gap: 3rem;

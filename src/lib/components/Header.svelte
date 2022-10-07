@@ -37,7 +37,7 @@
 	}
 
 	nav {
-		margin: 1rem 0;
+		margin-top: 1rem;
 	}
 
 	ul {
@@ -70,7 +70,7 @@
 	}
 
 	nav a {
-		font-size: 1.25rem;
+		font-size: 0.8rem;
 		border-radius: 3rem;
 	}
 
@@ -86,9 +86,10 @@
 		border: 3px solid var(--highlight);
 	}
 
-	@media screen and (min-width: 1240px) {
+	@media screen and (min-width: 968px) {
 		header {
 			padding: 1rem 2rem 0;
+			flex-direction: row;
 		}
 
 		h1 {
@@ -97,6 +98,14 @@
 
 		.logo {
 			margin: 0;
+		}
+
+		nav {
+			margin: 1rem 0;
+		}
+
+		nav a {
+			font-size: 1.25rem;
 		}
 	}
 </style>
