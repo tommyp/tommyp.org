@@ -2,10 +2,9 @@
 	import type { Post, PostSummary } from '$lib/types';
 	import BigBlockLink from '$lib/components/BigBlockLink.svelte';
 	import Wrapper from '$lib/components/Wrapper.svelte';
+	import Test from '$lib/components/graphics/Test.svelte';
 
 	export let data: { posts: Array<PostSummary> };
-
-	$: console.log(data);
 
 	$: recentPost = data.posts[0];
 </script>
@@ -15,6 +14,7 @@
 		<div class="hero">
 			<h2>I'm a creative web developer who likes building fun things.</h2>
 		</div>
+		<Test --grid-col-start="4" --grid-col-end="6" />
 	</Wrapper>
 
 	<Wrapper>
