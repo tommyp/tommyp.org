@@ -23,9 +23,7 @@
 
 <style>
 	header {
-		font-family: 'Mattone', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-			Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
+		font-weight: bold;
 		padding: 1rem 1rem 0;
 		max-width: 1600px;
 		margin: 0 auto;
@@ -51,6 +49,14 @@
 
 	.logo {
 		display: block;
+
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	h1 {
+		font-weight: bold;
+		width: 100%;
 	}
 
 	li {
@@ -61,12 +67,13 @@
 	}
 
 	a {
+		display: block;
 		padding: 1.5rem;
 		text-decoration: none;
 		text-shadow: none;
 		text-transform: uppercase;
 		color: var(--highlight);
-		border: 3px solid var(--highlight);
+		border: 4px solid var(--highlight);
 	}
 
 	nav a {
@@ -77,13 +84,13 @@
 	nav a.active {
 		color: var(--foreground);
 		background: var(--highlight);
-		border: 3px solid var(--highlight);
+		border: 4px solid var(--highlight);
 	}
 
 	a:hover {
 		color: var(--foreground);
 		background: var(--highlight);
-		border: 3px solid var(--highlight);
+		border: 4px solid var(--highlight);
 	}
 
 	@media screen and (min-width: 968px) {
@@ -93,19 +100,21 @@
 		}
 
 		h1 {
-			font-size: 1.25rem;
+			font-size: 5rem;
 		}
 
 		.logo {
 			margin: 0;
+			width: auto;
 		}
 
 		nav {
-			margin: 1rem 0;
+			margin: 0;
 		}
 
 		nav a {
-			font-size: 1.25rem;
+			font-size: 5rem;
+			border-radius: 2rem;
 		}
 	}
 </style>

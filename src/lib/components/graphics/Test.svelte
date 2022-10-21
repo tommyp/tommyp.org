@@ -14,9 +14,8 @@
 		// let x = two.width * 0.5;
 		var y = two.height * 0.35;
 		var circle = two.makeCircle(x, y, radius);
-		var circle2 = two.makeCircle(x, y + radius + 40, radius);
+		var circle2 = two.makeCircle(x, y + radius + 50, radius);
 
-		y = two.height * 0.5 + radius * 1.25;
 		var width = 100;
 		var height = 100;
 		// var rect = two.makeRectangle(x, y, width, height);
@@ -38,8 +37,8 @@
 			// This code is called everytime two.update() is called.
 			// Effectively 60 times per second.
 
-			circle.position.x = two.width / 2 + Math.sin(frameCount * 0.025) * 100;
-			circle2.position.x = two.width / 2 - Math.sin(frameCount * 0.025) * 100;
+			circle.position.x = two.width / 2 + Math.sin(frameCount * 0.025) * 150;
+			circle2.position.x = two.width / 2 - Math.sin(frameCount * 0.025) * 150;
 		});
 
 		// Don’t forget to tell two to draw everything to the screen
