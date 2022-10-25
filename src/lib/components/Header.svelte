@@ -2,7 +2,8 @@
 	import { page } from '$app/stores';
 	const links: { path: string; text: string }[] = [
 		{ path: '/blog', text: 'Blog' },
-		{ path: '/about', text: 'About' }
+		{ path: '/about', text: 'About' },
+		{ path: '/work', text: 'Work' }
 	];
 </script>
 
@@ -24,14 +25,17 @@
 <style>
 	header {
 		font-weight: bold;
-		padding: 1rem 1rem 0;
+
 		max-width: 1600px;
 		margin: 0 auto;
 		display: flex;
-		align-items: center;
+
 		justify-content: space-between;
 		flex-direction: column;
 		font-size: 1rem;
+		background: var(--background);
+
+		--border-color: var(--neon-green);
 	}
 
 	nav {
@@ -42,14 +46,11 @@
 		display: flex;
 		margin: 0;
 		padding: 0;
-		align-items: center;
-		gap: 2rem;
 		width: 100%;
 	}
 
 	.logo {
 		display: block;
-
 		width: 100%;
 		margin: 0 auto;
 	}
@@ -64,39 +65,40 @@
 		list-style: none;
 		display: flex;
 		align-items: center;
+		width: 100%;
 	}
 
 	a {
 		display: block;
-		padding: 1.5rem;
 		text-decoration: none;
-		text-shadow: none;
 		text-transform: uppercase;
 		color: var(--highlight);
-		border: 4px solid var(--highlight);
+		width: 100%;
 	}
 
-	nav a {
+	li a {
 		font-size: 0.8rem;
-		border-radius: 3rem;
+
+		border-right: 4px solid var(--border-color);
+	}
+
+	li:last-of-type a {
+		border-right: none;
 	}
 
 	nav a.active {
 		color: var(--foreground);
 		background: var(--highlight);
-		border: 4px solid var(--highlight);
 	}
 
 	a:hover {
 		color: var(--foreground);
 		background: var(--highlight);
-		border: 4px solid var(--highlight);
 	}
 
 	@media screen and (min-width: 968px) {
 		header {
-			padding: 1rem 2rem 0;
-			flex-direction: row;
+			border-bottom: 4px solid var(--border-color);
 		}
 
 		h1 {
@@ -105,7 +107,8 @@
 
 		.logo {
 			margin: 0;
-			width: auto;
+			padding: 1rem 2rem;
+			border-bottom: 4px solid var(--border-color);
 		}
 
 		nav {
@@ -113,8 +116,12 @@
 		}
 
 		nav a {
-			font-size: 5rem;
-			border-radius: 2rem;
+			font-size: 2.5rem;
+			padding: 1rem 2rem;
+		}
+
+		nav ul {
+			display: flex;
 		}
 	}
 </style>

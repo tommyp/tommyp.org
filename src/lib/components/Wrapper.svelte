@@ -6,7 +6,7 @@
 	.wrapper {
 		max-width: 1600px;
 		margin: 2rem auto;
-		padding: 0 1rem;
+		padding: 0 2rem;
 		display: flex;
 		flex-direction: column;
 		gap: 2rem;
@@ -17,7 +17,7 @@
 			padding: 0 2rem;
 			display: grid;
 			column-gap: 2rem;
-			grid-template-columns: 1fr;
+
 			grid-template-columns: repeat(5, 1fr);
 		}
 	}
