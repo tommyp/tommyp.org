@@ -1,10 +1,12 @@
 <script lang="ts">
+	import { mouseCoOrdsVars } from '$lib/actions/mouseCoOrdsVars';
 </script>
 
-<div class="canvas" />
+<div class="canvas" use:mouseCoOrdsVars />
 
 <style>
 	.canvas {
+		--x-percent: calc(var(--mouse-x));
 		z-index: -1;
 		position: absolute;
 		top: 0;

@@ -30,8 +30,8 @@
 	}
 
 	a:hover {
-		color: var(--primary);
 		transform: scale(1.01);
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 	}
 
 	h5 {
