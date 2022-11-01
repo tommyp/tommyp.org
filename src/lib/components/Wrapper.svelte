@@ -5,7 +5,7 @@
 <style>
 	.wrapper {
 		max-width: 1600px;
-		margin: 2rem auto;
+		margin: 1rem auto;
 		padding: 0 2rem;
 		display: flex;
 		flex-direction: column;

@@ -58,9 +58,9 @@
 		margin-top: 0rem;
 	}
 	.hero {
-		font-size: 3.5rem;
+		font-size: 1.5rem;
 		font-weight: bold;
-		padding-top: 1.5rem;
+
 		font-family: var(--header-font-family);
 		grid-column-start: 1;
 		grid-column-end: 6;
@@ -69,7 +69,7 @@
 	}
 
 	h2 {
-		margin-bottom: 1rem;
+		margin: 0;
 		font-weight: bold;
 		text-shadow: 0 0 0.05rem var(--background);
 	}
@@ -86,7 +86,9 @@
 	/* shake animation */
 
 	@media screen and (min-width: 968px) {
-		section {
+		.hero {
+			font-size: 3.5rem;
+			padding-top: 1.5rem;
 		}
 	}
 </style>

@@ -39,7 +39,7 @@
 	}
 
 	nav {
-		margin-top: 1rem;
+		border-bottom: 3px solid var(--border-color);
 	}
 
 	ul {
@@ -57,7 +57,9 @@
 
 	h1 {
 		font-weight: bold;
-		width: 100%;
+		padding: 0.5rem 1rem;
+		margin: 0;
+		border-bottom: 2px solid var(--border-color);
 	}
 
 	li {
@@ -78,8 +80,8 @@
 
 	li a {
 		font-size: 0.8rem;
-
-		border-right: 4px solid var(--border-color);
+		border-right: 2px solid var(--border-color);
+		padding: 0.5rem;
 	}
 
 	li:last-of-type a {
@@ -122,6 +124,10 @@
 
 		nav ul {
 			display: flex;
+		}
+
+		li a {
+			border-right: 4px solid var(--border-color);
 		}
 	}
 </style>
