@@ -25,21 +25,15 @@
 <style>
 	header {
 		font-weight: bold;
-
 		width: 100%;
 		margin: 0 auto;
 		display: flex;
-
 		justify-content: space-between;
 		flex-direction: column;
 		font-size: 1rem;
 		background: var(--background);
-
+		border-bottom: 2px solid var(--border-color);
 		--border-color: var(--neon-green);
-	}
-
-	nav {
-		border-bottom: 3px solid var(--border-color);
 	}
 
 	ul {
@@ -105,10 +99,6 @@
 
 		h1 {
 			font-size: 5rem;
-		}
-
-		.logo {
-			margin: 0;
 			padding: 1rem 2rem;
 			border-bottom: 4px solid var(--border-color);
 		}

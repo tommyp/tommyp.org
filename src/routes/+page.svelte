@@ -21,7 +21,7 @@
 			href={recentPost.path}
 			title={recentPost.meta.title}
 			subtitle="Something I've written"
-			--color="#dd00ee"
+			--color={recentPost.meta.titleColor}
 			--grid-col-start="1"
 			--grid-col-end="4"
 		>

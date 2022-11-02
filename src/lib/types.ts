@@ -2,6 +2,7 @@ export interface Post {
 	title: string;
 	date: string;
 	content: string;
+	titleColor: string;
 }
 
 export interface PostSummary {
@@ -9,5 +10,6 @@ export interface PostSummary {
 	meta: {
 		title: string;
 		subtitle: string;
+		titleColor: string;
 	};
 }
