@@ -1,6 +1,8 @@
 <script lang="ts">
 	import type { Post } from '$lib/types';
 	export let data: Post;
+
+	$: console.log(data.content);
 </script>
 
 <article>
@@ -10,7 +12,7 @@
 
 	<p>Published: {data.date}</p>
 
-	<svelte:component this={data.content} />
+	{@html data.content}
 </article>
 
 <style>
@@ -31,6 +33,7 @@
 	@media (min-width: 968px) {
 		h1 {
 			font-size: 5rem;
+			padding: 2rem;
 		}
 	}
 </style>
