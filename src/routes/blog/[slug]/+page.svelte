@@ -27,4 +27,10 @@
 		font-size: 2rem;
 		padding: 1rem;
 	}
+
+	@media (min-width: 968px) {
+		h1 {
+			font-size: 5rem;
+		}
+	}
 </style>
