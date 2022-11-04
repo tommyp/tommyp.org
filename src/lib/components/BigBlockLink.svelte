@@ -21,7 +21,7 @@
 		display: flex;
 		flex-direction: column;
 		padding: 1.5rem;
-		color: #000;
+		color: var(--foreground);
 		grid-column-start: 1;
 		grid-column-end: 1;
 		background-color: var(--color);

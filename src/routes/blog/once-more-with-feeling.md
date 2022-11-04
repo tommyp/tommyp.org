@@ -7,9 +7,11 @@ titleColor: '#dd00ee'
 
 Yet again, here I am, attempting to blog **regularly**.
 
-In previous years, I had a blog that involved designing each post. A carefully hand crafted framework and toolchain allowed that to happen. Sometimes the design I had in my head wouldn't be possible, so I'd spend many hours over many days, tinkering away to either get it right or figure out something else that I liked. I also made the mistake of thinking that every post had to be a think piece. That I had to have some grand idea worth exploring.
+In previous years, I had a blog that involved designing each post. A carefully hand crafted framework and toolchain allowed me to create a post with individual colours, layout, and art direction. Sometimes the design I had in my head wouldn't translate to the screen easily, so I'd spend many hours over many days, tinkering away. Either getting it right, or figuring out something else that I liked.
 
-I've recently tried to get back into RSS feeds. Familiar names and URLs keep resurfacing from 10ish years ago. One of the ones I came across was <a target="_blank" href="https://chriscoyier.net/">Chris Coyier</a>, and one of the first posts I read from him was [There is no bar](https://chriscoyier.net/2022/06/27/there-is-no-bar/), which has this nice little nugget of wisdom:
+I also made the mistake of thinking that every post had to be a think piece. That I had to have some grand idea worth exploring.
+
+I've recently tried to get back into RSS feeds. Familiar names and URLs keep resurfacing from 10ish years ago. One site I came across was [Chris Coyier's](https://chriscoyier.net), and one of the first posts I read from him was [There is no bar](https://chriscoyier.net/2022/06/27/there-is-no-bar/), which has this thought provoking question:
 
 > Why do people have a hard time with that publish button, even on ready-to-rock personal sites?
 
@@ -29,6 +31,6 @@ Much of the modern web is a walled garden. When I last tried to start blogging, 
 
 ## Once more, unto the breach
 
-So, yet again, I'm saying that I'm going to blog more. I'm giving myself some credit here now. Everything I write doesn't have to be some well researched and deep article. It can just be something I want to share. It doesn't have to be some world changing website. I can just have fun with it.
+So, yet again, I'm saying that I'm going to blog more. I'm cutting myself some slack this time round. Everything I write doesn't have to be some well researched and deep article. It can just be something I want to share. This doesn't have to be some world changing website. I can just have fun with it.
 
 My little corner of the Internet is just that - mine.

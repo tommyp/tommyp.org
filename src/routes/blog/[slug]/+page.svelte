@@ -54,6 +54,7 @@
 		border-left: 3px solid var(--color);
 		padding-left: 1rem;
 		margin-left: 0;
+		font-style: italic;
 	}
 
 	p {

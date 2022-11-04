@@ -1,3 +1,15 @@
-<h1>Hi, I'm Tommy</h1>
+<script>
+	import Wrapper from '$lib/components/Wrapper.svelte';
+</script>
 
-<p>This is my about page</p>
+<Wrapper>
+	<article>I'm</article>
+</Wrapper>
+
+<style>
+	article {
+		font-size: 2rem;
+		color: var(--near-black);
+		font-weight: bold;
+	}
+</style>

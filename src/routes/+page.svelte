@@ -32,6 +32,7 @@
 			title="Castrooms"
 			subtitle="Where I work"
 			--color="#e1e600"
+			--foreground="#000"
 			--grid-col-start="4"
 			--grid-col-end="6"
 		>
