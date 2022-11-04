@@ -8,7 +8,7 @@
 	.canvas {
 		--x-percent: calc(var(--mouse-x));
 		z-index: -1;
-		position: absolute;
+		position: fixed;
 		top: 0;
 		bottom: 0;
 		height: 100vh;

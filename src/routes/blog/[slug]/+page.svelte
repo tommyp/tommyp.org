@@ -5,14 +5,15 @@
 	$: console.log(data.content);
 </script>
 
-<article>
-	<header style={`--headerColor: ${data.titleColor}`}>
+<article style={`--color: ${data.titleColor}`}>
+	<header>
 		<h1>{data.title}</h1>
 	</header>
 
-	<p>Published: {data.date}</p>
-
-	{@html data.content}
+	<section class="post">
+		<svelte:component this={data.content} />
+		<p>Published: {new Date(data.date).toLocaleDateString()}</p>
+	</section>
 </article>
 
 <style>
@@ -20,7 +21,7 @@
 		display: flex;
 		font-family: var(--header-font-family);
 		width: 100%;
-		background-color: var(--headerColor);
+		background-color: var(--color);
 		color: var(--primary);
 	}
 
@@ -30,10 +31,34 @@
 		padding: 1rem;
 	}
 
+	section {
+		padding: 1rem;
+		color: var(--near-black);
+	}
+
+	:global(.post a) {
+		color: var(--near-black);
+		text-decoration-color: var(--color);
+	}
+
+	:global(.post a:hover) {
+		color: var(--color);
+		text-decoration-color: var(--color);
+	}
+
 	@media (min-width: 968px) {
 		h1 {
 			font-size: 5rem;
 			padding: 2rem;
+		}
+
+		section {
+			padding: 2rem;
+			font-size: 1.5rem;
+			line-height: 1.5;
+
+			width: 100%;
+			max-width: 50rem;
 		}
 	}
 </style>
