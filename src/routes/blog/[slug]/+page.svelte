@@ -12,7 +12,11 @@
 
 	<section class="post">
 		<svelte:component this={data.content} />
-		<p>Published: {new Date(data.date).toLocaleDateString()}</p>
+		<p>
+			Published on {new Date(data.date).toLocaleDateString('en-GB', {
+				dateStyle: 'full'
+			})}
+		</p>
 	</section>
 </article>
 
@@ -44,6 +48,17 @@
 	:global(.post a:hover) {
 		color: var(--color);
 		text-decoration-color: var(--color);
+	}
+
+	:global(.post blockquote) {
+		border-left: 3px solid var(--color);
+		padding-left: 1rem;
+		margin-left: 0;
+	}
+
+	p {
+		color: var(--grey);
+		font-size: 1.2rem;
 	}
 
 	@media (min-width: 968px) {

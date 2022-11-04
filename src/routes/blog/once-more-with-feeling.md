@@ -1,6 +1,6 @@
 ---
 title: Once more, with feeling
-date: '2021-12-14'
+date: '2022-11-07'
 subtitle: Let's give this another go
 titleColor: '#dd00ee'
 ---
@@ -27,6 +27,8 @@ It's also technically hard. We're combining real time audio and video from many 
 
 Much of the modern web is a walled garden. When I last tried to start blogging, I kicked it off with a post titled "Let's make mad shit". I didn't write as much as I wanted to after that, but I did make a few mad shit things, like [Lineup.fun](https://www.lineup.fun/). I still think we need more art galleries than malls on the web. And for me, I want some way to express myself online that can't be ruined by _a serially divorced dad obsessed with imaginary trains_.
 
-It doesn't have to be some world changing website. I can just have fun with it.
+## Once more, unto the breach
+
+So, yet again, I'm saying that I'm going to blog more. I'm giving myself some credit here now. Everything I write doesn't have to be some well researched and deep article. It can just be something I want to share. It doesn't have to be some world changing website. I can just have fun with it.
 
 My little corner of the Internet is just that - mine.
