@@ -12,8 +12,8 @@
 			title={post.meta.title}
 			subtitle="Something I've written"
 			--color={post.meta.titleColor}
-			--grid-col-start="1"
-			--grid-col-end="6"
+			--grid-col-start="2"
+			--grid-col-end="11"
 		>
 			{post.meta.subtitle}
 		</BigBlockLink>

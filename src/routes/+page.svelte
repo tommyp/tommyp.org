@@ -3,6 +3,7 @@
 	import BigBlockLink from '$lib/components/BigBlockLink.svelte';
 	import Wrapper from '$lib/components/Wrapper.svelte';
 	import Test from '$lib/components/graphics/Test.svelte';
+	import Grid from '$lib/components/Grid.svelte';
 
 	export let data: { posts: Array<PostSummary> };
 
@@ -11,33 +12,33 @@
 
 <section>
 	<Wrapper>
-		<div class="hero">
-			<h2>I'm a creative web developer who likes building fun things <span>👋</span></h2>
-		</div>
-	</Wrapper>
+		<Grid>
+			<div class="hero">
+				<h2>I'm a creative web developer who likes building fun things <span>👋</span></h2>
+			</div>
 
-	<Wrapper>
-		<BigBlockLink
-			href={recentPost.path}
-			title={recentPost.meta.title}
-			subtitle="Something I've written"
-			--color={recentPost.meta.titleColor}
-			--grid-col-start="1"
-			--grid-col-end="4"
-		>
-			{recentPost.meta.subtitle}
-		</BigBlockLink>
-		<BigBlockLink
-			href="https://castrooms.com"
-			title="Castrooms"
-			subtitle="Where I work"
-			--color="#e1e600"
-			--foreground="#000"
-			--grid-col-start="4"
-			--grid-col-end="6"
-		>
-			Next generation streaming for DJs and Ravers
-		</BigBlockLink>
+			<BigBlockLink
+				href={recentPost.path}
+				title={recentPost.meta.title}
+				subtitle="Something I've written"
+				--color={recentPost.meta.titleColor}
+				--grid-col-start="1"
+				--grid-col-end="8"
+			>
+				{recentPost.meta.subtitle}
+			</BigBlockLink>
+			<BigBlockLink
+				href="https://castrooms.com"
+				title="Castrooms"
+				subtitle="Where I work"
+				--color="#e1e600"
+				--foreground="#000"
+				--grid-col-start="8"
+				--grid-col-end="13"
+			>
+				Next generation streaming for DJs and Ravers
+			</BigBlockLink>
+		</Grid>
 	</Wrapper>
 </section>
 
@@ -64,7 +65,7 @@
 
 		font-family: var(--header-font-family);
 		grid-column-start: 1;
-		grid-column-end: 6;
+		grid-column-end: 12;
 
 		color: var(--background);
 	}

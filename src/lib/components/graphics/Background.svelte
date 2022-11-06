@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { browser } from '$app/environment';
 	import { mouseCoOrdsVars } from '$lib/actions/mouseCoOrdsVars';
 	import { cubicOut } from 'svelte/easing';
 	import { tweened, type Tweened } from 'svelte/motion';
@@ -13,16 +14,19 @@
 		}
 	);
 
-	$: percantages = {
-		x: (($coords.x / window.innerWidth) * 100).toFixed(0),
-		y: (($coords.y / window.innerHeight) * 100).toFixed(0)
-	};
+	let percentages = { x: 0.5, y: 0.5 };
+	if (browser) {
+		percentages = {
+			x: (($coords.x / window.innerWidth) * 100).toFixed(0),
+			y: (($coords.y / window.innerHeight) * 100).toFixed(0)
+		};
+	}
 </script>
 
 <div
 	class="canvas"
 	use:mouseCoOrdsVars={coords}
-	style={`--mouse-x: ${percantages.x}%; --mouse-y: ${percantages.y}%;`}
+	style={`--mouse-x: ${percentages.x}%; --mouse-y: ${percentages.y}%;`}
 />
 
 <style>
