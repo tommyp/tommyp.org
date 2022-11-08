@@ -14,7 +14,7 @@
 		}
 	);
 
-	let percentages = { x: 0.5, y: 0.5 };
+	let percentages = { x: 50, y: 50 };
 	if (browser) {
 		percentages = {
 			x: (($coords.x / window.innerWidth) * 100).toFixed(0),

@@ -15,8 +15,8 @@
 		</p>
 
 		<p>
-			I also like art and design, mid-century modern architechure and furniture, colourful things,
-			fancy <strikethorugh
+			I also like art, design, brutalism, mid-century modern architechure and furniture, colourful
+			things, fancy <strikethorugh
 				><a href="https://www.urbandictionary.com/define.php?term=gutties">gutties</a
 				></strikethorugh
 			> trainers, interesting indie videogames, and a lovely pint in a lovely pub.
