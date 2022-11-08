@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { browser } from '$app/environment';
 	import { mouseCoOrdsVars } from '$lib/actions/mouseCoOrdsVars';
+	import { onMount } from 'svelte';
 	import { cubicOut } from 'svelte/easing';
 	import { tweened, type Tweened } from 'svelte/motion';
 	let x: number = 0.5;
@@ -14,13 +15,18 @@
 		}
 	);
 
-	let percentages = { x: 50, y: 50 };
-	if (browser) {
-		percentages = {
-			x: (($coords.x / window.innerWidth) * 100).toFixed(0),
-			y: (($coords.y / window.innerHeight) * 100).toFixed(0)
-		};
-	}
+	let percentages = {
+		x: 0,
+		y: 0
+	};
+	onMount(() => {
+		coords.subscribe((v) => {
+			percentages = {
+				x: (v.x / window.innerWidth) * 100,
+				y: (v.y / window.innerHeight) * 100
+			};
+		});
+	});
 </script>
 
 <div
