@@ -12,7 +12,7 @@
 
 	<section class="post">
 		<svelte:component this={data.content} />
-		<p>
+		<p class="published-on">
 			Published on {new Date(data.date).toLocaleDateString('en-GB', {
 				dateStyle: 'full'
 			})}
@@ -40,6 +40,11 @@
 		color: var(--near-black);
 	}
 
+	:global(.post p) {
+		font-size: 1.5rem;
+		line-height: 1.5;
+		margin: 0 0 1.75rem 0;
+	}
 	:global(.post a) {
 		color: var(--near-black);
 		text-decoration-color: var(--color);
@@ -57,7 +62,7 @@
 		font-style: italic;
 	}
 
-	p {
+	.published-on {
 		color: var(--grey);
 		font-size: 1.2rem;
 	}
