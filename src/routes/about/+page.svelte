@@ -16,9 +16,8 @@
 
 		<p>
 			I also like art, design, brutalism, mid-century modern architechure and furniture, colourful
-			things, fancy <strikethorugh
-				><a href="https://www.urbandictionary.com/define.php?term=gutties">gutties</a
-				></strikethorugh
+			things, fancy <s
+				><a href="https://www.urbandictionary.com/define.php?term=gutties">gutties</a></s
 			> trainers, interesting indie videogames, and a lovely pint in a lovely pub.
 		</p>
 	</article>
