@@ -1,8 +1,6 @@
 <script lang="ts">
 	import type { Post } from '$lib/types';
 	export let data: Post;
-
-	$: console.log(data.content);
 </script>
 
 <article style={`--color: ${data.titleColor}`}>

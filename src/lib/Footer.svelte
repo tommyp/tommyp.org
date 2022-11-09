@@ -1,6 +1,10 @@
 <script>
 	const links = [
 		{
+			href: 'mailto:hi@tommyp.org',
+			text: 'email'
+		},
+		{
 			href: 'https://soundcloud.com/syntax-terrorist',
 			text: 'Soundcloud'
 		},
@@ -43,7 +47,6 @@
 		display: flex;
 		align-items: center;
 		justify-content: flex-end;
-		gap: 1rem;
 	}
 
 	li {
@@ -55,7 +58,7 @@
 		color: var(--near-black);
 		text-decoration: none;
 		text-transform: uppercase;
-		padding: 1rem 0.5rem;
+		padding: 1rem;
 	}
 
 	a:hover {
