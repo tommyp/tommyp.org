@@ -1,4 +1,6 @@
 <script>
+	import { fly } from 'svelte/transition';
+
 	const links = [
 		{
 			href: 'mailto:hi@tommyp.org',
@@ -23,7 +25,7 @@
 	];
 </script>
 
-<footer>
+<footer transition:fly={{ duration: 100 }}>
 	<ul>
 		{#each links as link}
 			<li><a href={link.href}>{link.text}</a></li>

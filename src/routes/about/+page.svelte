@@ -1,9 +1,8 @@
 <script>
 	import Grid from '$lib/components/Grid.svelte';
-	import Wrapper from '$lib/components/Wrapper.svelte';
 </script>
 
-<Wrapper>
+<section>
 	<Grid>
 		<article>
 			<p>
@@ -24,9 +23,12 @@
 			</p>
 		</article>
 	</Grid>
-</Wrapper>
+</section>
 
 <style>
+	section {
+		padding: 1rem;
+	}
 	article {
 		color: var(--near-black);
 		grid-column-start: 1;
@@ -46,5 +48,11 @@
 
 	a:hover {
 		color: var(--neon-green);
+	}
+
+	@media (min-width: 968px) {
+		section {
+			padding: 2rem;
+		}
 	}
 </style>
