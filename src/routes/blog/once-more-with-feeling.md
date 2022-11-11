@@ -27,7 +27,7 @@ It's also technically hard. We're combining real time audio and video from many 
 
 ## Shit's on fire yo
 
-Much of the modern web is a walled garden. When I last tried to start blogging, I kicked it off with a post titled "Let's make mad shit". I didn't write as much as I wanted to after that, but I did make a few mad shit things, like [Lineup.fun](https://www.lineup.fun/). I still think we need more art galleries than malls on the web. And for me, I want some way to express myself online that can't be ruined by _a serially divorced dad obsessed with imaginary trains_.
+Much of the modern web is a walled garden. When I last tried to start blogging, I kicked it off with a post titled ["Let's make mad shit"](/blog/lets-make-mad-shit). I didn't write as much as I wanted to after that, but I did make a few mad shit things, like [Lineup.fun](https://www.lineup.fun/). I still think we need more art galleries than malls on the web. And for me, I want some way to express myself online that can't be ruined by _a serially divorced dad obsessed with imaginary trains_.
 
 ## Once more, unto the breach
 
