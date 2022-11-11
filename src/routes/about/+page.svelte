@@ -1,7 +1,9 @@
 <script>
 	import Grid from '$lib/components/Grid.svelte';
+	import Title from '$lib/components/Title.svelte';
 </script>
 
+<Title prefix="About" />
 <section>
 	<Grid>
 		<article>

@@ -37,9 +37,10 @@
 	footer {
 		border-top: 4px solid var(--near-black);
 		max-width: 100%;
-		position: relative;
+
 		font-family: var(--font-family);
 		background: var(--white);
+		font-size: 0.75rem;
 	}
 
 	ul {
@@ -48,7 +49,7 @@
 		padding: 0;
 		display: flex;
 		align-items: center;
-		justify-content: flex-end;
+		justify-content: space-between;
 	}
 
 	li {
@@ -60,7 +61,7 @@
 		color: var(--near-black);
 		text-decoration: none;
 		text-transform: uppercase;
-		padding: 1rem;
+		padding: 0.5rem;
 	}
 
 	a:hover {
@@ -70,7 +71,16 @@
 
 	@media screen and (min-width: 968px) {
 		footer {
+			font-size: 1rem;
 			padding: 0rem 2rem;
+		}
+
+		ul {
+			justify-content: flex-end;
+		}
+
+		a {
+			padding: 1rem;
 		}
 	}
 </style>

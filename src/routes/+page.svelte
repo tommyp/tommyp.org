@@ -4,12 +4,14 @@
 	import Wrapper from '$lib/components/Wrapper.svelte';
 	import Test from '$lib/components/graphics/Test.svelte';
 	import Grid from '$lib/components/Grid.svelte';
+	import Title from '$lib/components/Title.svelte';
 
 	export let data: { posts: Array<PostSummary> };
 
 	$: recentPost = data.posts[0];
 </script>
 
+<Title />
 <section>
 	<Wrapper>
 		<Grid>
@@ -37,6 +39,18 @@
 				--grid-col-end="13"
 			>
 				Next generation streaming for DJs and Ravers
+			</BigBlockLink>
+			<BigBlockLink
+				href="https://lineup.fun"
+				title="Lineup.fun"
+				subtitle="I made this"
+				emoji="🎧"
+				--color="#95fc0f"
+				--foreground="#000"
+				--grid-col-start="1"
+				--grid-col-end="7"
+			>
+				A spotify playlist generator
 			</BigBlockLink>
 		</Grid>
 	</Wrapper>

@@ -1,37 +1,65 @@
 <script lang="ts">
 	export let href: string;
 	export let title: string;
-	export let subtitle: string;
+	export let subtitle: string = null;
+	export let emoji: string = null;
 </script>
 
 <a {href}>
-	<div>
-		<h5>{subtitle}</h5>
+	{#if emoji}
+		<div class="emoji">
+			{emoji}
+		</div>
+	{/if}
+	<div class="text">
+		{#if subtitle}
+			<h5>{subtitle}</h5>
+		{/if}
 		<h3>{title}</h3>
-	</div>
-	<div class="description">
-		<slot />
+		<div class="description">
+			<slot />
+		</div>
 	</div>
 </a>
 
 <style>
 	a {
 		text-decoration: none;
-		border: 4px solid var(--color);
+		/* border: 4px solid var(--color); */
 		display: flex;
-		flex-direction: column;
+		align-items: center;
 		padding: 1.5rem;
 		color: var(--foreground);
 		grid-column-start: 1;
 		grid-column-end: 1;
 		background-color: var(--color);
 		border-radius: 1rem;
-		justify-content: space-between;
+		overflow: hidden;
+		gap: 1rem;
 	}
 
 	a:hover {
 		transform: scale(1.01);
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	}
+
+	.text {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.emoji {
+		font-size: 8rem;
+		margin: 0;
+		margin-left: -9rem;
+
+		transition: all 0.5s;
+	}
+
+	a:hover .emoji {
+		display: block;
+		margin-left: 0;
 	}
 
 	h5 {
