@@ -17,10 +17,6 @@
 		{
 			href: 'https://www.twitter.com/tommypalmr',
 			text: 'Twitter'
-		},
-		{
-			href: 'https://mastodon.social/@tommyp',
-			text: 'Mastodon'
 		}
 	];
 </script>
@@ -30,6 +26,7 @@
 		{#each links as link}
 			<li><a href={link.href}>{link.text}</a></li>
 		{/each}
+		<li><a rel="me" href="https://mastodon.social/@tommyp">Mastodon</a></li>
 	</ul>
 </footer>
 
