@@ -5,8 +5,6 @@ subtitle: Fill this town with nonsense
 titleColor: '#6234eb'
 ---
 
-Let's make mad shit
-
 2020 has shown us that The Internet can be utter shit. It's awful. It's full of depressing news, racism and people without medical degrees thinking their opinion is as valid as a Doctor.
 
 But 2020 has also shown us that the Internet can be amazing. It kept us together and in touch when we couldn't do it in real life. It allowed for so much creativity, interaction and communication in this fucking terrible year. So many people out there are making cool things but we don't see it because we get bogged down hating all of the terrible shit.
