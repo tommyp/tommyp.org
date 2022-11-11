@@ -1,6 +1,6 @@
 ---
 title: Once more, with feeling
-date: '2022-11-07'
+date: '2022-11-11'
 subtitle: Let's give this another go
 titleColor: '#dd00ee'
 ---
