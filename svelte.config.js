@@ -1,30 +1,23 @@
-import adapter from '@sveltejs/adapter-netlify';
-import { isoImport } from 'vite-plugin-iso-import';
+import adapter from '@sveltejs/adapter-auto';
+import preprocess from 'svelte-preprocess';
 import { mdsvex } from 'mdsvex';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-	kit: {
-		adapter: adapter(),
-
-		vite: {
-			plugins: [isoImport()]
-		}
-	},
-	experimental: {
-		useVitePreprocess: true
-	},
-	extensions: ['.svelte', '.md'],
-	extends: './.svelte-kit/tsconfig.json',
-
+	// Consult https://github.com/sveltejs/svelte-preprocess
+	// for more information about preprocessors
 	preprocess: [
+		preprocess(),
 		mdsvex({
-			extensions: ['.md'],
-			layout: {
-				work: 'src/routes/work/_post.svelte'
-			}
+			extensions: ['.md']
 		})
-	]
+	],
+
+	kit: {
+		adapter: adapter()
+	},
+
+	extensions: ['.svelte', '.md']
 };
 
 export default config;

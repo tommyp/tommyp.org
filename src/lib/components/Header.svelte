@@ -1,44 +1,59 @@
+<script lang="ts">
+	import { page } from '$app/stores';
+	const links: { path: string; text: string }[] = [
+		{ path: '/blog', text: 'Blog' },
+		{ path: '/about', text: 'About' },
+		{ path: '/work', text: 'Work' }
+	];
+</script>
+
 <header>
+	<a class="logo" href="/"><h1>Tommy Palmer</h1></a>
 	<nav>
 		<ul>
-			<li class="logo">
-				<a href="/"> Tommy <span>Palmer</span> </a>
-			</li>
-
-			<li>
-				<a href="/about"> About </a>
-			</li>
+			{#each links as link}
+				<li>
+					<a href={link.path} class={$page.url.pathname.includes(link.path) ? 'active' : ''}>
+						{link.text}
+					</a>
+				</li>
+			{/each}
 		</ul>
 	</nav>
 </header>
 
 <style>
 	header {
-		align-items: center;
-		font-family: 'Mattone', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-			Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-		font-size: 2rem;
-		padding: 2rem 2rem 0;
-		max-width: 1600px;
-		margin: 0 auto;
-	}
-
-	nav {
+		font-weight: bold;
 		width: 100%;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		font-size: 1rem;
+		background: var(--background);
+		border-bottom: 2px solid var(--border-color);
+		--border-color: var(--neon-green);
 	}
 
 	ul {
 		display: flex;
-		justify-content: flex-end;
 		margin: 0;
 		padding: 0;
-		align-items: center;
-		gap: 3rem;
 		width: 100%;
 	}
 
 	.logo {
-		margin-right: auto;
+		display: block;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	h1 {
+		font-weight: bold;
+		padding: 0.5rem 1rem;
+		margin: 0;
+		border-bottom: 2px solid var(--border-color);
 	}
 
 	li {
@@ -46,55 +61,63 @@
 		list-style: none;
 		display: flex;
 		align-items: center;
+		width: 100%;
 	}
 
 	a {
-		padding: 1.5rem;
+		display: block;
 		text-decoration: none;
-		text-shadow: none;
 		text-transform: uppercase;
 		color: var(--highlight);
-		border: 3px solid var(--highlight);
+		width: 100%;
+	}
+
+	li a {
+		font-size: 0.8rem;
+		border-right: 2px solid var(--border-color);
+		padding: 0.5rem;
+	}
+
+	li:last-of-type a {
+		border-right: none;
+	}
+
+	nav a.active {
+		color: var(--foreground);
+		background: var(--highlight);
 	}
 
 	a:hover {
 		color: var(--foreground);
 		background: var(--highlight);
-		border: 3px solid var(--highlight);
 	}
 
-	@media screen and (max-width: 1240px) {
+	@media screen and (min-width: 968px) {
 		header {
-			font-size: 1.5rem;
-			padding: 1rem 1rem 0;
+			border-bottom: 4px solid var(--border-color);
 		}
 
-		span {
-			display: none;
+		h1 {
+			font-size: 5rem;
+			padding: 1rem 2rem;
+			border-bottom: 4px solid var(--border-color);
 		}
 
-		ul {
-			justify-content: space-between;
-		}
-
-		.logo {
+		nav {
 			margin: 0;
 		}
-	}
 
-	@media screen and (max-width: 600px) {
-		header {
-			font-size: 0.75rem;
+		nav a {
+			font-size: 2.5rem;
+			padding: 1rem 2rem;
 		}
 
-		ul {
-			gap: 1rem;
-			justify-content: space-between;
+		nav ul {
+			display: flex;
 		}
 
-		a {
-			padding: 0.3rem;
-			border-bottom-width: 3px;
+		li a {
+			border-right: 4px solid var(--border-color);
 		}
 	}
 </style>
