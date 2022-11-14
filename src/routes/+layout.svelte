@@ -1,7 +1,7 @@
 <script>
 	import Background from '$lib/components/graphics/Background.svelte';
 	import Header from '$lib/components/Header.svelte';
-	import Footer from '$lib/Footer.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 	import '$lib/styles/style.scss';
 
 	import { fade } from 'svelte/transition';
