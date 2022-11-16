@@ -15,6 +15,8 @@ export const GET: RequestHandler = async () => {
 
 	const element = toReactNode(`${result.html}<style>${result.css.code}</style>`);
 
+	console.log(element.props.children);
+
 	const svg = await satori(element, {
 		fonts: [
 			{

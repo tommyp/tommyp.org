@@ -1,4 +1,4 @@
-<div style="color: red">Hello, world!</div>
+<div>Hello, world!</div>
 
 <style>
 	div {
