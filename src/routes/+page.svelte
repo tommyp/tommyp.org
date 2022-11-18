@@ -45,7 +45,6 @@
 				href="https://lineup.fun"
 				title="Lineup.fun"
 				subtitle="I made this"
-				emoji="🎧"
 				--color="#95fc0f"
 				--foreground="#000"
 				--grid-col-start="1"
