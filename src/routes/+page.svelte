@@ -5,6 +5,7 @@
 	import Test from '$lib/components/graphics/Test.svelte';
 	import Grid from '$lib/components/Grid.svelte';
 	import Title from '$lib/components/Title.svelte';
+	import BigBlock from '$lib/components/BigBlock.svelte';
 
 	export let data: { posts: Array<PostSummary> };
 
@@ -48,10 +49,29 @@
 				--color="#95fc0f"
 				--foreground="#000"
 				--grid-col-start="1"
-				--grid-col-end="7"
+				--grid-col-end="6"
 			>
 				A spotify playlist generator
 			</BigBlockLink>
+			<BigBlockLink
+				href="https://www.isitshortsweathertoday.com/"
+				title="Shorts Weather"
+				subtitle="I made this too"
+				--color="#f56c42"
+				--grid-col-start="6"
+				--grid-col-end="9"
+			>
+				World's best weather site
+			</BigBlockLink>
+			<BigBlock
+				--color="#fff"
+				--foreground="#000"
+				--grid-col-start="9"
+				--grid-col-end="13"
+				title={'Say hello'}
+				emojiRight="👇"
+				animation={'bounce'}
+			/>
 		</Grid>
 	</Wrapper>
 </section>
