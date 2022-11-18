@@ -11,11 +11,8 @@ const width = 1200;
 
 export const GET: RequestHandler = async () => {
 	const result: SvelteComponent = OpenGraph.render();
-	console.log(result);
 
 	const element = toReactNode(`${result.html}<style>${result.css.code}</style>`);
-
-	console.log(element.props.children);
 
 	const svg = await satori(element, {
 		fonts: [
