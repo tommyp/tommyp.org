@@ -9,8 +9,11 @@ import type { SvelteComponent } from 'svelte';
 const height = 630;
 const width = 1200;
 
-export const GET: RequestHandler = async () => {
-	const result: SvelteComponent = OpenGraph.render();
+export const GET: RequestHandler = async ({ url }) => {
+	const heading = url.searchParams.get('message') ?? undefined;
+	const color = url.searchParams.get('message') ?? undefined;
+
+	const result: SvelteComponent = OpenGraph.render({ heading, color });
 
 	const element = toReactNode(`<style>${result.css.code}</style>${result.html}`);
 
