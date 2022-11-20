@@ -10,8 +10,8 @@ const height = 630;
 const width = 1200;
 
 export const GET: RequestHandler = async ({ url }) => {
-	const heading = url.searchParams.get('message') ?? undefined;
-	const color = url.searchParams.get('message') ?? undefined;
+	const heading = url.searchParams.get('heading') ?? undefined;
+	const color = url.searchParams.get('color') ?? undefined;
 
 	const result: SvelteComponent = OpenGraph.render({ heading, color });
 
