@@ -4,7 +4,7 @@
 	export let data: Post;
 </script>
 
-<Head prefix={data.title} />
+<Head prefix={data.title} color={data.titleColor} />
 
 <article style={`--color: ${data.titleColor}`}>
 	<header>

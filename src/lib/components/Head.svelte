@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { html } from 'satori-html';
+
 	export let prefix: string = undefined;
 	export let color: string = undefined;
 
