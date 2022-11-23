@@ -1,10 +1,10 @@
 <script lang="ts">
-	import Title from '$lib/components/Title.svelte';
+	import Head from '$lib/components/Head.svelte';
 	import type { Post } from '$lib/types';
 	export let data: Post;
 </script>
 
-<Title prefix={data.title} />
+<Head prefix={data.title} />
 
 <article style={`--color: ${data.titleColor}`}>
 	<header>

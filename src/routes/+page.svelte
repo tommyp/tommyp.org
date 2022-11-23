@@ -1,10 +1,9 @@
 <script lang="ts">
-	import type { Post, PostSummary } from '$lib/types';
+	import type { PostSummary } from '$lib/types';
 	import BigBlockLink from '$lib/components/BigBlockLink.svelte';
 	import Wrapper from '$lib/components/Wrapper.svelte';
-	import Test from '$lib/components/graphics/Test.svelte';
 	import Grid from '$lib/components/Grid.svelte';
-	import Title from '$lib/components/Title.svelte';
+	import Head from '$lib/components/Head.svelte';
 	import BigBlock from '$lib/components/BigBlock.svelte';
 
 	export let data: { posts: Array<PostSummary> };
@@ -12,7 +11,7 @@
 	$: recentPost = data.posts[0];
 </script>
 
-<Title />
+<Head />
 <section>
 	<Wrapper>
 		<Grid>
