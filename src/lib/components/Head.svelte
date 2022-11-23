@@ -5,6 +5,8 @@
 	let ogParams: string;
 	if (prefix) {
 		ogParams = `?heading=${prefix}&color=${color}`;
+	} else {
+		ogParams = '';
 	}
 </script>
 
