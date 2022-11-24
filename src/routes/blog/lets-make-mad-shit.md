@@ -39,7 +39,7 @@ Here are a few things I enjoyed in 2020:
 
 - Many Twitch DJ streams from my friends, with a simultaneous Zoom call to chat and see familiar faces.
 
-A while ago I'd decided to start blogging again in 2021, but I didn't really know what to write about first. Before my thoughts started to coalesce, I read this (https://colly.com/articles/this-used-to-be-our-playground">great blog post from (https://twitter.com/colly">Simon Collinson and suddenly it all made sense to me.
+A while ago I'd decided to start blogging again in 2021, but I didn't really know what to write about first. Before my thoughts started to coalesce, I read this [great blog post](https://colly.com/articles/this-used-to-be-our-playground") from [Simon Collinson](https://twitter.com/colly") and suddenly it all made sense to me.
 
 He talks about two things I want to call out here:
 
