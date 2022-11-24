@@ -1,9 +1,9 @@
 <script>
 	import Grid from '$lib/components/Grid.svelte';
-	import Title from '$lib/components/Title.svelte';
+	import Head from '$lib/components/Head.svelte';
 </script>
 
-<Title prefix={'Work'} />
+<Head prefix={'Work'} />
 
 <section>
 	<Grid>
