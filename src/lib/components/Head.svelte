@@ -5,7 +5,7 @@
 	export let color: string = undefined;
 
 	const ogParams: URLSearchParams = new URLSearchParams();
-	if (prefix) {
+	$: if (prefix) {
 		ogParams.set('prefix', escape(prefix));
 		ogParams.set('color', color.replace('#', ''));
 	}
