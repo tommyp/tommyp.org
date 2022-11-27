@@ -1,6 +1,6 @@
 <script>
 	export let heading = undefined;
-	export let color = '#04d704';
+	export let color = '04d704';
 </script>
 
 {#if heading}
