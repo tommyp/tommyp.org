@@ -36,6 +36,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"html-escaper": "^3.0.3",
 		"two.js": "^0.8.10"
 	}
 }

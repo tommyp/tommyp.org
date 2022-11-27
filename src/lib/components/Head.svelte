@@ -1,12 +1,12 @@
 <script lang="ts">
-	import { html } from 'satori-html';
+	import { escape } from 'html-escaper';
 
 	export let prefix: string = undefined;
 	export let color: string = undefined;
 
 	let ogParams: string;
 	if (prefix) {
-		ogParams = `?heading=${prefix}&color=${color.replace('#', '')}`;
+		ogParams = `?heading=${escape(prefix)}&color=${color.replace('#', '')}`;
 	} else {
 		ogParams = '';
 	}
