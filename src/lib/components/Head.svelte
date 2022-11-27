@@ -6,7 +6,7 @@
 
 	let ogParams: string;
 	if (prefix) {
-		ogParams = `?heading=${prefix}&color=${color}`;
+		ogParams = `?heading=${prefix}&color=${color.replace('#', '')}`;
 	} else {
 		ogParams = '';
 	}

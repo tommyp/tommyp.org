@@ -4,14 +4,14 @@
 </script>
 
 {#if heading}
-	<div style={`background: ${color};`} class="combo">
+	<div style={`background: #${color};`} class="combo">
 		<p class="big-text">
 			{heading}
 		</p>
 		<p class="footer">Tommy Palmer is a web developer in London</p>
 	</div>
 {:else}
-	<div class="big-text" style={`background: ${color};`}>
+	<div class="big-text" style={`background: #${color};`}>
 		Tommy Palmer is a web developer in London
 	</div>
 {/if}
