@@ -31,6 +31,11 @@
 		padding: 0;
 	}
 
+	.combo {
+		justify-content: flex-start;
+		padding-top: 2rem;
+	}
+
 	p {
 		margin: 0;
 	}
@@ -39,7 +44,7 @@
 		font-size: 4rem;
 		line-height: 7rem;
 		font-size: 120px;
-		padding: 2rem 4rem;
+		padding: 0 4rem;
 	}
 
 	.footer {
