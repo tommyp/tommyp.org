@@ -7,7 +7,7 @@
 	const ogParams: URLSearchParams = new URLSearchParams();
 	$: if (heading) {
 		ogParams.set('heading', escape(heading));
-		ogParams.set('color', color.replace('#', ''));
+		ogParams.set('color', color?.replace('#', ''));
 	}
 </script>
 

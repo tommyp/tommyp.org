@@ -1,4 +1,6 @@
 <script>
+	import { unescape } from 'html-escaper';
+
 	export let heading = undefined;
 	export let color = '04d704';
 </script>
@@ -6,7 +8,7 @@
 {#if heading}
 	<div style={`background: #${color};`} class="combo">
 		<p class="big-text">
-			{heading}
+			{unescape(heading)}
 		</p>
 		<p class="footer">Tommy Palmer is a web developer in London</p>
 	</div>
