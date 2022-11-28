@@ -3,7 +3,7 @@
 	import Head from '$lib/components/Head.svelte';
 </script>
 
-<Head prefix="About" />
+<Head heading="About" />
 <section>
 	<Grid>
 		<article>

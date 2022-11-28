@@ -6,7 +6,7 @@
 	export let data: { posts: Array<PostSummary> };
 </script>
 
-<Head prefix="Blog" />
+<Head heading="Blog" />
 
 {#each data.posts as post}
 	<Wrapper>
