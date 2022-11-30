@@ -24,6 +24,7 @@
 				title={recentPost.meta.title}
 				subtitle="Something I've written"
 				--color={recentPost.meta.titleColor}
+				--foreground={'#000'}
 				--grid-col-start="1"
 				--grid-col-end="8"
 			>

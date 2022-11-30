@@ -63,6 +63,14 @@
 		font-style: italic;
 	}
 
+	:global(.post iframe) {
+		margin-bottom: 2rem;
+	}
+
+	:global(.post h2) {
+		margin: 0 0 1rem 0;
+	}
+
 	.published-on {
 		color: var(--grey);
 		font-size: 1.2rem;
