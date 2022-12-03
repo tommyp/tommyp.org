@@ -15,7 +15,7 @@ What the article put forward, made me think that eventually, we’d begin to see
 
 ## Prodeus
 
-One of the first games I ever played, was DOOM on an uncle’s PS1. I remember barely any of it, other than the hard as nails difficulty, incomprehensible story and the brutal guns.
+One of the first games I ever played, was DOOM on an uncle’s PS1. I remember barely any of it, other than the hard as nails difficulty, incomprehensible story, and the brutal guns.
 
 Prodeus takes all its inspiration from those early DOOM games. The guns, graphics, and gore, are all throwbacks to that style of first person shooter from the 90s.
 
