@@ -65,6 +65,8 @@
 
 	:global(.post iframe) {
 		margin-bottom: 2rem;
+		width: 100%;
+		aspect-ratio: 16/9;
 	}
 
 	:global(.post h2) {
@@ -80,6 +82,10 @@
 		h1 {
 			font-size: 5rem;
 			padding: 2rem;
+		}
+
+		:global(.post h2) {
+			font-size: 3rem;
 		}
 
 		section {

@@ -19,7 +19,7 @@ One of the first games I ever played, was DOOM on an uncle’s PS1. I remember b
 
 Prodeus takes all its inspiration from those early DOOM games. The guns, graphics, and gore, are all throwbacks to that style of first person shooter from the 90s.
 
-<iframe width="840" height="472" src="https://www.youtube.com/embed/kVNYObIFmYM" title="Prodeus trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/kVNYObIFmYM" title="Prodeus trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Signalis
 
@@ -27,7 +27,7 @@ This one is a bit different for me, as it’s channeling the early survival horr
 
 It’s full of CRT scan lines, limited inventory, save points instead of checkpoints and some very cryptic puzzles.
 
-<iframe width="840" height="472" src="https://www.youtube.com/embed/Na4KadSK770" title="Signalis trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/Na4KadSK770" title="Signalis trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## The CD case
 
