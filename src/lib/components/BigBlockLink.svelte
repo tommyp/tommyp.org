@@ -95,5 +95,11 @@
 		h3 {
 			font-size: 4rem;
 		}
+
+		.text {
+			display: flex;
+			height: 100%;
+			justify-content: space-between;
+		}
 	}
 </style>
