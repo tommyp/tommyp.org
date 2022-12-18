@@ -74,7 +74,7 @@ export const GET: RequestHandler = async () => {
 			title: post.meta.title,
 			url: 'https://www.tommyp.org' + `/${post.path}`,
 			date: post.meta.date,
-			description: post.meta.sumarry
+			description: post.meta.subtitle
 		});
 	});
 
