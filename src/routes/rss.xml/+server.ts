@@ -65,14 +65,14 @@ const allPosts = await fetchMarkdownPosts().then((posts) => {
 export const GET: RequestHandler = async () => {
 	const feed = new RSS({
 		title: 'Tommy Palmer | Web Developer based in London',
-		site_url: 'https://tommyp.org',
-		feed_url: 'https://tommyp.org' + '/rss.xml'
+		site_url: 'https://www.tommyp.org',
+		feed_url: 'https://www.tommyp.org' + '/rss.xml'
 	});
 
 	allPosts.forEach((post) => {
 		feed.item({
 			title: post.meta.title,
-			url: 'https://tommyp.org' + `/${post.path}`,
+			url: 'https://www.tommyp.org' + `/${post.path}`,
 			date: post.meta.date,
 			description: post.meta.sumarry
 		});
