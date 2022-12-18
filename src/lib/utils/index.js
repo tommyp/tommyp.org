@@ -6,13 +6,16 @@ export const fetchMarkdownPosts = async () => {
 		iterablePostFiles.map(async ([path, resolver]) => {
 			// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 			// @ts-ignore
-			const { metadata } = await resolver();
+			const post = await resolver();
+
+			const { metadata } = post;
 
 			const postPath = path.slice(11, -3);
 
 			return {
 				meta: metadata,
-				path: postPath
+				path: postPath,
+				content: post.default.render()
 			};
 		})
 	);
