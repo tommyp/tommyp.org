@@ -37,6 +37,7 @@
 	"type": "module",
 	"dependencies": {
 		"html-escaper": "^3.0.3",
+		"rss": "^1.2.2",
 		"two.js": "^0.8.10"
 	}
 }
