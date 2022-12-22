@@ -3,6 +3,7 @@ export interface Post {
 	date: string;
 	content: string;
 	titleColor: string;
+	inverse: boolean;
 }
 
 export interface PostSummary {
@@ -11,5 +12,6 @@ export interface PostSummary {
 		title: string;
 		subtitle: string;
 		titleColor: string;
+		inverse: boolean;
 	};
 }

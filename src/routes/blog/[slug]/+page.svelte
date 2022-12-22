@@ -2,12 +2,14 @@
 	import Head from '$lib/components/Head.svelte';
 	import type { Post } from '$lib/types';
 	export let data: Post;
+
+	const inverse = data.inverse ? 'inverse' : '';
 </script>
 
 <Head heading={data.title} color={data.titleColor} />
 
 <article style={`--color: ${data.titleColor}`}>
-	<header>
+	<header class:inverse>
 		<h1>{data.title}</h1>
 	</header>
 
@@ -27,7 +29,11 @@
 		font-family: var(--header-font-family);
 		width: 100%;
 		background-color: var(--color);
-		color: var(--primary);
+		color: var(--white);
+	}
+
+	header.inverse {
+		color: var(--near-black);
 	}
 
 	h1 {
@@ -76,6 +82,21 @@
 	.published-on {
 		color: var(--grey);
 		font-size: 1.2rem;
+	}
+
+	:global(p:has(img)) {
+		margin: 0;
+		width: 100vw;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+		/* overflow-x: scroll; */
+	}
+
+	:global(p:has(img) > img) {
+		width: auto;
+		max-height: 40rem;
+		object-fit: cover;
 	}
 
 	@media (min-width: 968px) {
