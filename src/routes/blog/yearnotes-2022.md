@@ -2,8 +2,9 @@
 title: 'Yearnotes: 2022'
 date: '2023-01-01'
 subtitle: Here we go again
-titleColor: '#e7f7dd'
+titleColor: '#efaf11'
 inverse: true
+draft: true
 ---
 
 2022 was a very good year.
@@ -18,9 +19,9 @@ I decided that I was going to take some time off and learn some new things.
 
 In the time off, I spent a lot of time enjoying the frosty surroundings of Walthamstow.
 
-![](/images/blog/yearnotes-2022/bridge.jpeg)
-![](/images/blog/yearnotes-2022/geese.jpeg)
-![](/images/blog/yearnotes-2022/trees.jpeg)
+![A frosty bridge in Tottenham Marshes](/images/blog/yearnotes-2022/bridge.jpeg)
+![Four geese swimming in the canal](/images/blog/yearnotes-2022/geese.jpeg)
+![Grass in the foreground and trees in the background, with the sun streaking through the trees on a frosty morning](/images/blog/yearnotes-2022/trees.jpeg)
 
 ## February
 
@@ -40,4 +41,10 @@ May was when the year started to get really busy. I went to my favourite music f
 
 ## June
 
-Really ramping up into a busy Summer, we started June with Lila's 40th party. Straight after, we flew to Austria for a wedding.
+Really ramping up into a busy Summer, we started June with Lila's 40th party. Straight after, we flew to Austria for a wedding. A few days in Vienna followed by a trip to rural Austria. Vienna's a cool city, but it was amazing to get out into the countryside and see some green fields.
+
+The wedding was in Lackenbach Palace. A beautiful venue. It was a scorching hot day and with half the attendees coming from Ireland, we were hiding in the shade.
+
+On the last day of the trip, my friend Troy found a public pool at the seat of a mountain with a castle on top of it. We had a lovely afternoon in the Sun drinking radlers, swimming, and chatting. It was a great end to the trip.
+
+Straight afer we got back, Lila's Mum came to visit from Canada. She's great fun.e showed her all round Walthamstow and met up with some friends.

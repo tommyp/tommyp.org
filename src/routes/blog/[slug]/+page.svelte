@@ -76,7 +76,9 @@
 	}
 
 	:global(.post h2) {
-		margin: 0 0 1rem 0;
+		font-size: 2rem;
+		font-weight: bold;
+		margin: 2rem 0 0.75rem 0;
 	}
 
 	.published-on {
@@ -84,19 +86,21 @@
 		font-size: 1.2rem;
 	}
 
-	:global(p:has(img)) {
+	:global(.post p:has(img)) {
 		margin: 0;
-		width: 100vw;
+		width: calc(100vw - 2rem);
 		display: flex;
-		flex-wrap: wrap;
+		/* flex-wrap: wrap; */
 		gap: 1rem;
-		/* overflow-x: scroll; */
+		overflow-y: scroll;
+		scroll-snap-type: y mandatory;
 	}
 
-	:global(p:has(img) > img) {
+	:global(.post p:has(img) > img) {
 		width: auto;
-		max-height: 40rem;
+		max-height: 30rem;
 		object-fit: cover;
+		scroll-snap-align: start;
 	}
 
 	@media (min-width: 968px) {
