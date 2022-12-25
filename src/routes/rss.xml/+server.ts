@@ -7,9 +7,11 @@ import RSS from 'rss';
 import { fetchMarkdownPosts } from '$lib/utils';
 
 const allPosts = await fetchMarkdownPosts().then((posts) => {
-	return posts.sort((a, b) => {
-		return new Date(b.meta.date).getTime() - new Date(a.meta.date).getTime();
-	});
+	return posts
+		.filter((post) => !post.meta.draft)
+		.sort((a, b) => {
+			return new Date(b.meta.date).getTime() - new Date(a.meta.date).getTime();
+		});
 });
 
 // const render = async () => {
