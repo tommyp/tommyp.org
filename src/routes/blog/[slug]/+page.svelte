@@ -29,7 +29,7 @@
 		font-family: var(--header-font-family);
 		width: 100%;
 		background-color: var(--color);
-		color: var(--white);
+		color: var(--foreground);
 	}
 
 	header.inverse {
