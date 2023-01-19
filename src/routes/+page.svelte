@@ -23,6 +23,7 @@
 				href={recentPost.path}
 				title={recentPost.meta.title}
 				subtitle="Something I've written"
+				inverse={recentPost.meta.inverse}
 				--color={recentPost.meta.titleColor}
 				--foreground={'#000'}
 				--grid-col-start="1"

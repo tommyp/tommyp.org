@@ -3,9 +3,12 @@
 	export let title: string;
 	export let subtitle: string = null;
 	export let emoji: string = null;
+	export let inverse: boolean = false;
+
+	$: isInverse = inverse ? 'inverse' : '';
 </script>
 
-<a {href}>
+<a {href} class:isInverse>
 	{#if emoji}
 		<div class="emoji">
 			{emoji}
@@ -36,6 +39,10 @@
 		border-radius: 1rem;
 		overflow: hidden;
 		gap: 1rem;
+	}
+
+	a.isInverse {
+		color: var(--near-black);
 	}
 
 	a:hover {
