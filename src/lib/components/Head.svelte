@@ -2,12 +2,12 @@
 	import { escape } from 'html-escaper';
 
 	export let heading: string = undefined;
-	export let color: string = undefined;
+	export let bgColor: string = undefined;
 
 	const ogParams: URLSearchParams = new URLSearchParams();
 	$: if (heading) {
 		ogParams.set('heading', escape(heading));
-		ogParams.set('color', color?.replace('#', ''));
+		ogParams.set('bgColor', bgColor?.replace('#', ''));
 	}
 </script>
 

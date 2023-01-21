@@ -2,7 +2,7 @@
 title: Let's make mad shit
 date: '2021-01-03'
 subtitle: Fill this town with nonsense
-titleColor: '#6234eb'
+titleBgColor: '#6234eb'
 ---
 
 2020 has shown us that The Internet can be utter shit. It's awful. It's full of depressing news, racism and people without medical degrees thinking their opinion is as valid as a Doctor.

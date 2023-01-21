@@ -6,9 +6,9 @@
 	const inverse = data.inverse ? 'inverse' : '';
 </script>
 
-<Head heading={data.title} color={data.titleColor} />
+<Head heading={data.title} bgColor={data.titleBgColor} />
 
-<article style={`--color: ${data.titleColor}`}>
+<article style={`--bgColor: ${data.titleBgColor}; --titleColor: ${data.titleColor || '#fff'}`}>
 	<header class:inverse>
 		<h1>{data.title}</h1>
 	</header>
@@ -28,8 +28,8 @@
 		display: flex;
 		font-family: var(--header-font-family);
 		width: 100%;
-		background-color: var(--color);
-		color: var(--foreground);
+		background-color: var(--bgColor);
+		color: var(--titleColor);
 	}
 
 	header.inverse {
@@ -54,16 +54,16 @@
 	}
 	:global(.post a) {
 		color: var(--near-black);
-		text-decoration-color: var(--color);
+		text-decoration-color: var(--bgColor);
 	}
 
 	:global(.post a:hover) {
-		color: var(--color);
-		text-decoration-color: var(--color);
+		color: var(--bgColor);
+		text-decoration-color: var(--bgColor);
 	}
 
 	:global(.post blockquote) {
-		border-left: 3px solid var(--color);
+		border-left: 3px solid var(--bgColor);
 		padding-left: 1rem;
 		margin-left: 0;
 		font-style: italic;

@@ -2,18 +2,18 @@
 	import { unescape } from 'html-escaper';
 
 	export let heading = undefined;
-	export let color = '04d704';
+	export let bgColor = '04d704';
 </script>
 
 {#if heading}
-	<div style={`background: #${color};`} class="combo">
+	<div style={`background: #${bgColor};`} class="combo">
 		<p class="big-text">
 			{unescape(heading)}
 		</p>
 		<p class="footer">Tommy Palmer is a web developer in London</p>
 	</div>
 {:else}
-	<div class="big-text" style={`background: #${color};`}>
+	<div class="big-text" style={`background: #${bgColor};`}>
 		Tommy Palmer is a web developer in London
 	</div>
 {/if}

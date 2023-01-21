@@ -12,9 +12,9 @@ const width = 1200;
 
 export const GET = async ({ url }) => {
 	const heading = url.searchParams.get('heading') ?? undefined;
-	const color = url.searchParams.get('color') ?? undefined;
+	const bgColor = url.searchParams.get('bgColor') ?? undefined;
 
-	const result = OpenGraph.render({ heading, color });
+	const result = OpenGraph.render({ heading, bgColor });
 
 	const element = toReactNode(`<style>${result.css.code}</style>${result.html}`);
 

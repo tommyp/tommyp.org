@@ -2,7 +2,7 @@ export interface Post {
 	title: string;
 	date: string;
 	content: string;
-	titleColor: string;
+	titleBgColor: string;
 	inverse: boolean;
 }
 
@@ -11,7 +11,7 @@ export interface PostSummary {
 	meta: {
 		title: string;
 		subtitle: string;
-		titleColor: string;
+		titleBgColor: string;
 		inverse: boolean;
 	};
 }

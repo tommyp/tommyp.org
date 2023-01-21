@@ -23,7 +23,7 @@
 <style>
 	section {
 		display: grid;
-		grid-template-rows: min-content minmax(min-content, auto) min-content;
+		grid-template-rows: auto 1fr auto;
 		min-height: 100vh;
 	}
 </style>

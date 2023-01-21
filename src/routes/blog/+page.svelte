@@ -14,7 +14,8 @@
 			href={post.path}
 			title={post.meta.title}
 			subtitle="Something I've written"
-			--color={post.meta.titleColor}
+			--color={post.meta.titleBgColor}
+			--foreground={post.meta.titleColor}
 			--grid-col-start="2"
 			--grid-col-end="11"
 		>
