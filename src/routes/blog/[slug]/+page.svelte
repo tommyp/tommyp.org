@@ -121,5 +121,12 @@
 			width: 100%;
 			max-width: 50rem;
 		}
+
+		:global(.post p:has(img) > img) {
+			width: auto;
+			max-height: 30rem;
+			object-fit: cover;
+			scroll-snap-align: start;
+		}
 	}
 </style>
