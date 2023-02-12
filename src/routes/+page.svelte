@@ -5,34 +5,60 @@
 	import Grid from '$lib/components/Grid.svelte';
 	import Head from '$lib/components/Head.svelte';
 	import BigBlock from '$lib/components/BigBlock.svelte';
+	import Marquee from 'svelte-marquee';
 
 	export let data: { posts: Array<PostSummary> };
 
-	$: recentPost = data.posts[0];
-	$: console.log(recentPost);
+	$: recentPosts = data.posts.slice(0, 3);
 </script>
 
 <Head />
 <section>
 	<Wrapper>
-		<Grid>
-			<div class="hero">
-				<h2>I'm a creative web developer who likes building fun things <span>👋</span></h2>
-			</div>
+		<div class="hero">
+			<h2>
+				I'm a creative web developer who builds fun things like <a
+					class="lineup"
+					href="https://lineup.fun">Lineup.fun</a
+				>
+				and <a class="shorts" href="https://www.isitshortsweathertoday.com">Shorts Weather</a> and I
+				work at <a class="castrooms" href="https://castrooms.com/">CastRooms</a>.
+			</h2>
+		</div>
+	</Wrapper>
+	<div class="marquee">
+		<Marquee content="blog" />
+	</div>
 
-			<BigBlockLink
-				href={recentPost.path}
-				title={recentPost.meta.title}
-				subtitle="Something I've written"
-				inverse={recentPost.meta.inverse}
-				--color={recentPost.meta.titleBgColor}
-				--foreground={recentPost.meta.titleColor}
-				--grid-col-start="1"
-				--grid-col-end="8"
-			>
-				{recentPost.meta.subtitle}
-			</BigBlockLink>
-			<BigBlockLink
+	<Wrapper>
+		<div class="blog">
+			<Grid>
+				{#each recentPosts as recentPost}
+					<BigBlockLink
+						href={recentPost.path}
+						title={recentPost.meta.title}
+						subtitle={recentPost.meta.subtitle}
+						inverse={recentPost.meta.inverse}
+						--color={recentPost.meta.titleBgColor}
+						--foreground={recentPost.meta.titleColor}
+						--grid-col-start="1"
+						--grid-col-end="13"
+					/>
+				{/each}
+
+				<BigBlockLink
+					href="/blog"
+					title="More →"
+					--grid-col-start="5"
+					--grid-col-end="9"
+					--color="#000"
+					--foreground="#fff"
+				/>
+
+				<!-- --color={recentPost.meta.titleBgColor}
+			--foreground={recentPost.meta.titleColor} -->
+
+				<!-- <BigBlockLink
 				href="https://castrooms.com"
 				title="Castrooms"
 				subtitle="Where I work"
@@ -63,17 +89,9 @@
 				--grid-col-end="9"
 			>
 				World's best weather site
-			</BigBlockLink>
-			<BigBlock
-				--color="#fff"
-				--foreground="#000"
-				--grid-col-start="9"
-				--grid-col-end="13"
-				title={'Say hello'}
-				emojiRight="👇"
-				animation={'bounce'}
-			/>
-		</Grid>
+			</BigBlockLink> -->
+			</Grid>
+		</div>
 	</Wrapper>
 </section>
 
@@ -93,6 +111,11 @@
 
 	section {
 		margin-top: 0rem;
+		display: flex;
+		flex-direction: column;
+	}
+	.marquee {
+		max-width: 100vw;
 	}
 	.hero {
 		font-size: 1.5rem;
@@ -100,7 +123,7 @@
 
 		font-family: var(--header-font-family);
 		grid-column-start: 1;
-		grid-column-end: 12;
+		grid-column-end: 13;
 
 		color: var(--background);
 	}
@@ -120,12 +143,44 @@
 		animation: wave-hand 0.5s infinite;
 	}
 
+	.lineup {
+		--color: #95fc0f;
+	}
+
+	.shorts {
+		--color: #f56c42;
+	}
+
+	.castrooms {
+		--color: #e1e600;
+	}
+
+	.hero a {
+		color: var(--color);
+	}
+
 	/* shake animation */
 
 	@media screen and (min-width: 968px) {
 		.hero {
-			font-size: 3.5rem;
+			font-size: 3rem;
 			padding-top: 1.5rem;
+			line-height: 1.2;
+		}
+
+		.marquee {
+			font-size: 4rem;
+			color: var(--background);
+			text-transform: uppercase;
+			word-spacing: 2.5rem;
+			font-weight: bold;
+			border-top: 0.5rem solid var(--background);
+			border-bottom: 0.5rem solid var(--background);
+			margin: 4rem 0 2rem;
+		}
+
+		.blog {
+			margin-bottom: 2rem;
 		}
 	}
 </style>

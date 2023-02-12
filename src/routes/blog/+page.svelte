@@ -1,5 +1,6 @@
 <script lang="ts">
 	import BigBlockLink from '$lib/components/BigBlockLink.svelte';
+	import Grid from '$lib/components/Grid.svelte';
 	import Head from '$lib/components/Head.svelte';
 	import Wrapper from '$lib/components/Wrapper.svelte';
 	import type { Post, PostSummary } from '$lib/types';
@@ -8,18 +9,26 @@
 
 <Head heading="Blog" />
 
-{#each data.posts as post}
+<section>
 	<Wrapper>
-		<BigBlockLink
-			href={post.path}
-			title={post.meta.title}
-			subtitle="Something I've written"
-			--color={post.meta.titleBgColor}
-			--foreground={post.meta.titleColor}
-			--grid-col-start="2"
-			--grid-col-end="11"
-		>
-			{post.meta.subtitle}
-		</BigBlockLink>
+		<Grid>
+			{#each data.posts as post}
+				<BigBlockLink
+					href={post.path}
+					title={post.meta.title}
+					subtitle={post.meta.subtitle}
+					--color={post.meta.titleBgColor}
+					--foreground={post.meta.titleColor}
+					--grid-col-start="1"
+					--grid-col-end="13"
+				/>
+			{/each}
+		</Grid>
 	</Wrapper>
-{/each}
+</section>
+
+<style>
+	section {
+		padding: 2rem 0;
+	}
+</style>

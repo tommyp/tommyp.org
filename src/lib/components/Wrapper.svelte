@@ -5,7 +5,6 @@
 <style>
 	.wrapper {
 		max-width: 1600px;
-		margin: 1rem auto;
 		padding: 0 2rem;
 	}
 

@@ -15,13 +15,12 @@
 		</div>
 	{/if}
 	<div class="text">
+		<h3>{@html title}</h3>
 		{#if subtitle}
-			<h5>{subtitle}</h5>
+			<div class="subtitle">
+				<h5>{subtitle}</h5>
+			</div>
 		{/if}
-		<h3>{title}</h3>
-		<div class="description">
-			<slot />
-		</div>
 	</div>
 </a>
 
@@ -38,7 +37,7 @@
 		background-color: var(--color);
 		border-radius: 1rem;
 		overflow: hidden;
-		gap: 1rem;
+		gap: 1.5rem;
 	}
 
 	a.isInverse {
@@ -82,8 +81,7 @@
 		margin: 0;
 	}
 
-	.description {
-		margin-top: 1rem;
+	.subtitle {
 		font-family: var(--header-font-family);
 		font-size: 1.25rem;
 		color: var(--primary);

@@ -11,6 +11,7 @@ export interface PostSummary {
 	meta: {
 		title: string;
 		subtitle: string;
+		titleColor: string;
 		titleBgColor: string;
 		inverse: boolean;
 	};
