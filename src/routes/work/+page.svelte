@@ -1,32 +1,35 @@
 <script>
 	import Grid from '$lib/components/Grid.svelte';
 	import Head from '$lib/components/Head.svelte';
+	import Wrapper from '$lib/components/Wrapper.svelte';
 </script>
 
 <Head heading={'Work'} />
 
 <section>
-	<Grid>
-		<article>
-			<p>
-				I've worked in tech at big and small companies for over ten years. At the moment I'm working
-				on <a href="https://castrooms.com">Castrooms</a>, a new DJ streaming platform.
-			</p>
-			<p>
-				I've built some things just for me that other people use, like <a
-					href="https://www.lineup.fun/">Lineup.fun</a
-				>
-				and <a href="https://www.isitshortsweathertoday.com/">Is it Shorts Weather today</a>.
-			</p>
-			<p>
-				I've previously worked for <a href="https://deliveroo.co.uk">Deliveroo</a> and the
-				<a href="https://www.gov.uk/government/organisations/government-digital-service"
-					>Government Digital Service</a
-				>.
-			</p>
-			<p>I like building fun things for users that solve interesting problems.</p>
-		</article>
-	</Grid>
+	<Wrapper>
+		<Grid>
+			<article>
+				<p>
+					I've worked in tech at big and small companies for over ten years. At the moment I'm
+					working on <a href="https://castrooms.com">Castrooms</a>, a new DJ streaming platform.
+				</p>
+				<p>
+					I've built some things just for me that other people use, like <a
+						href="https://www.lineup.fun/">Lineup.fun</a
+					>
+					and <a href="https://www.isitshortsweathertoday.com/">Is it Shorts Weather today</a>.
+				</p>
+				<p>
+					I've previously worked for <a href="https://deliveroo.co.uk">Deliveroo</a> and the
+					<a href="https://www.gov.uk/government/organisations/government-digital-service"
+						>Government Digital Service</a
+					>.
+				</p>
+				<p>I like building fun things for users that solve interesting problems.</p>
+			</article>
+		</Grid>
+	</Wrapper>
 </section>
 
 <style>
