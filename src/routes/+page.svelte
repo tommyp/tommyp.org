@@ -25,12 +25,7 @@
 				work at <a class="castrooms" href="https://castrooms.com/">CastRooms</a>.
 			</h2>
 		</div>
-	</Wrapper>
-	<div class="marquee">
-		<Marquee content="blog" />
-	</div>
 
-	<Wrapper>
 		<div class="blog">
 			<Grid>
 				{#each recentPosts as recentPost}
@@ -114,21 +109,18 @@
 		display: flex;
 		flex-direction: column;
 	}
-	.marquee {
-		max-width: 100vw;
-	}
-	.hero {
-		font-size: 1.5rem;
-		font-weight: bold;
 
+	.hero {
+		font-weight: bold;
 		font-family: var(--header-font-family);
 		grid-column-start: 1;
 		grid-column-end: 13;
-
-		color: var(--background);
+		color: var(--near-black);
+		padding-top: 0.5rem;
 	}
 
 	h2 {
+		font-size: 1.5rem;
 		margin: 0;
 		font-weight: bold;
 		text-shadow: 0 0 0.05rem var(--background);
@@ -156,30 +148,30 @@
 	}
 
 	.hero a {
-		color: var(--color);
+		color: var(--near-black);
+		text-decoration-color: var(--color);
 	}
 
 	/* shake animation */
 
 	@media screen and (min-width: 968px) {
 		.hero {
-			font-size: 3rem;
 			padding-top: 1.5rem;
 			line-height: 1.2;
 		}
 
+		h2 {
+			font-size: 4.5rem;
+		}
+
 		.marquee {
-			font-size: 4rem;
-			color: var(--background);
-			text-transform: uppercase;
-			word-spacing: 2.5rem;
-			font-weight: bold;
-			border-top: 0.5rem solid var(--background);
-			border-bottom: 0.5rem solid var(--background);
-			margin: 4rem 0 2rem;
+			font-size: 3.5rem;
+			border-top-width: 6px;
+			border-bottom-width: 6px;
 		}
 
 		.blog {
+			margin-top: 5rem;
 			margin-bottom: 2rem;
 		}
 	}

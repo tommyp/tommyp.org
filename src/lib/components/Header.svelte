@@ -2,8 +2,7 @@
 	import { page } from '$app/stores';
 	const links: { path: string; text: string }[] = [
 		{ path: '/blog', text: 'Blog' },
-		{ path: '/about', text: 'About' },
-		{ path: '/work', text: 'Work' }
+		{ path: '/about', text: 'About' }
 	];
 </script>
 
@@ -24,6 +23,7 @@
 
 <style>
 	header {
+		--border-width: 2px;
 		font-weight: bold;
 		width: 100%;
 		margin: 0 auto;
@@ -32,7 +32,7 @@
 		flex-direction: column;
 		font-size: 1rem;
 		background: var(--background);
-		border-bottom: 2px solid var(--border-color);
+		border-bottom: var(--border-width) solid var(--border-color);
 		--border-color: var(--neon-green);
 	}
 
@@ -53,7 +53,7 @@
 		font-weight: bold;
 		padding: 0.5rem 1rem;
 		margin: 0;
-		border-bottom: 2px solid var(--border-color);
+		border-bottom: var(--border-width) solid var(--border-color);
 	}
 
 	li {
@@ -74,7 +74,7 @@
 
 	li a {
 		font-size: 0.8rem;
-		border-right: 2px solid var(--border-color);
+		border-right: var(--border-width) solid var(--border-color);
 		padding: 0.5rem;
 	}
 
@@ -94,30 +94,39 @@
 
 	@media screen and (min-width: 968px) {
 		header {
-			border-bottom: 4px solid var(--border-color);
+			border-bottom: none;
+			flex-direction: row;
+			--border-width: 6px;
 		}
 
 		h1 {
 			font-size: 5rem;
 			padding: 1rem 2rem;
-			border-bottom: 4px solid var(--border-color);
+			border-bottom: var(--border-width) solid var(--border-color);
+			border-right: var(--border-width) solid var(--border-color);
 		}
 
 		nav {
 			margin: 0;
+			height: 100%;
 		}
 
 		nav a {
 			font-size: 2.5rem;
 			padding: 1rem 2rem;
+			display: flex;
+			align-items: center;
 		}
 
 		nav ul {
 			display: flex;
+			height: 100%;
 		}
 
 		li a {
-			border-right: 4px solid var(--border-color);
+			height: 100%;
+			border-right: var(--border-width) solid var(--border-color);
+			border-bottom: var(--border-width) solid var(--border-color);
 		}
 	}
 </style>

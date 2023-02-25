@@ -25,6 +25,23 @@
 						><a href="https://www.urbandictionary.com/define.php?term=gutties">gutties</a></s
 					> trainers, interesting indie videogames, and a lovely pint in a lovely pub.
 				</p>
+
+				<p>
+					I've worked in tech at big and small companies for over ten years. At the moment I'm
+					working on <a href="https://castrooms.com">Castrooms</a>, a new DJ streaming platform.
+					I've previously worked for <a href="https://deliveroo.co.uk">Deliveroo</a> and the
+					<a href="https://www.gov.uk/government/organisations/government-digital-service"
+						>Government Digital Service</a
+					>.
+				</p>
+				<p>
+					I've built some things just for me that other people use, like <a
+						href="https://www.lineup.fun/">Lineup.fun</a
+					>
+					and <a href="https://www.isitshortsweathertoday.com/">Is it Shorts Weather today</a>.
+				</p>
+
+				<p>I like building fun things for users that solve interesting problems.</p>
 			</article>
 		</Grid>
 	</Wrapper>
@@ -32,7 +49,7 @@
 
 <style>
 	section {
-		padding: 1rem;
+		padding-top: 2rem;
 	}
 	article {
 		color: var(--near-black);
@@ -56,8 +73,5 @@
 	}
 
 	@media (min-width: 968px) {
-		section {
-			padding: 2rem;
-		}
 	}
 </style>
