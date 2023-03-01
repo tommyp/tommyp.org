@@ -11,6 +11,7 @@
 <article style={`--bgColor: ${data.titleBgColor}; --titleColor: ${data.titleColor || '#fff'}`}>
 	<header class:inverse>
 		<h1>{data.title}</h1>
+		<h2>{data.subtitle}</h2>
 	</header>
 
 	<section class="post">
@@ -30,6 +31,7 @@
 		width: 100%;
 		background-color: var(--bgColor);
 		color: var(--titleColor);
+		flex-direction: column;
 	}
 
 	header.inverse {
@@ -40,6 +42,14 @@
 		font-weight: bold;
 		font-size: 2rem;
 		padding: 1rem;
+	}
+
+	h2 {
+		font-size: 0.8rem;
+		font-weight: bold;
+		margin: 0;
+		text-transform: uppercase;
+		padding: 0 1rem;
 	}
 
 	section {
@@ -106,7 +116,11 @@
 	@media (min-width: 968px) {
 		h1 {
 			font-size: 5rem;
-			padding: 2rem;
+			padding: 1rem 2rem 0rem;
+		}
+
+		h2 {
+			padding: 0 2rem 1.5rem;
 		}
 
 		:global(.post h2) {
