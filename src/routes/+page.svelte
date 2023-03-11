@@ -91,19 +91,6 @@
 </section>
 
 <style>
-	/* shake animation */
-	@keyframes wave-hand {
-		0% {
-			transform: rotate(0deg);
-		}
-		50% {
-			transform: rotate(10deg);
-		}
-		100% {
-			transform: rotate(0deg);
-		}
-	}
-
 	section {
 		margin-top: 0rem;
 		display: flex;
@@ -150,6 +137,10 @@
 	.hero a {
 		color: var(--near-black);
 		text-decoration-color: var(--color);
+	}
+
+	.hero a:hover {
+		color: var(--color);
 	}
 
 	/* shake animation */

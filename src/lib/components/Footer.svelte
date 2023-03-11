@@ -5,16 +5,16 @@
 			text: 'email'
 		},
 		{
+			href: '/rss.xml',
+			text: 'rss'
+		},
+		{
 			href: 'https://soundcloud.com/syntax-terrorist',
 			text: 'Soundcloud'
 		},
 		{
 			href: 'https://github.com/tommyp/',
 			text: 'Github'
-		},
-		{
-			href: 'https://www.twitter.com/tommypalmr',
-			text: 'Twitter'
 		}
 	];
 </script>
