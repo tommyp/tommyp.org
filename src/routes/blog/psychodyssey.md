@@ -6,7 +6,7 @@ titleBgColor: '#9F19A8'
 titleColor: '#00ffc7'
 ---
 
-Over the last few weeks, I've been glued to one of the best documentary series I've watched in ages - [PsychOdyssey](https://www.youtube.com/playlist?list=PLIhLvue17Sd70y34zh2erWWpMyOnh4UN_). A glimpse inside [Double Fine studios](https://www.doublefine.com) as they work on on a new sequel to the beloved cult classic Psychonauts.
+Over the last few weeks, I've been glued to one of the best documentary series I've watched in ages - [PsychOdyssey](https://www.youtube.com/playlist?list=PLIhLvue17Sd70y34zh2erWWpMyOnh4UN_). It's a glimpse inside the videogame studio [Double Fine](https://www.doublefine.com), as they work on on a new sequel to their beloved cult classic, Psychonauts.
 
 ## Previously, on PsychOdyssey
 
