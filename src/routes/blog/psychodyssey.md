@@ -3,8 +3,7 @@ title: 'PsychOdyssey'
 date: '2023-03-23'
 subtitle: What colour is the sky in your world?
 titleBgColor: '#9F19A8'
-titleColor: '#00A883'
-draft: true
+titleColor: '#00ffc7'
 ---
 
 Over the last few weeks, I've been glued to one of the best documentary series I've watched in ages - [PsychOdyssey](https://www.youtube.com/playlist?list=PLIhLvue17Sd70y34zh2erWWpMyOnh4UN_). A glimpse inside [Double Fine studios](https://www.doublefine.com) as they work on on a new sequel to the beloved cult classic Psychonauts.
@@ -13,13 +12,13 @@ Over the last few weeks, I've been glued to one of the best documentary series I
 
 First, some background:
 
-Double Fine are known for being an extremely creative studio. Founded by Tim Schafer, who previously worked at Lucasarts, on Secret of Monkey Island, Day of the Tentacle, Grim Fandango, and Full Throttle. While working on Full Throttle, a game about a biker gang, he wanted to have an interactive peyote trip. Lucasarts objected, so he quit and founded his own studio.
+Double Fine are known for being an extremely creative studio. Founded by Tim Schafer, who previously worked at Lucasarts. He worked on some popular games like Secret of Monkey Island, Day of the Tentacle, Grim Fandango, and Full Throttle. While working on Full Throttle, a game about a biker gang, he wanted to have an interactive peyote trip. Lucasarts objected, so he quit and founded his own studio.
 
 Double Fine's first game, Psychonauts, was an action platformer in the lineage of Mario 64. You play as Raz, a boy who has ran away from his circus acrobat family to join a summer camp for children with psychic abilities. He hopes one day to join the titular Psychonauts - a psychic spy agency.
 
-Psychonauts differs from other platformers by its level setup. In most games of that genre, the levels pull from common archetypes like ice, lava, jungle, etc. In Psychonauts, you enter people's minds in a space representing their mental state, defeating enemies and completing tasks centred around their particular condition.
+Psychonauts differs from other platformers by its level setup. In most games of that genre, the levels pull from common archetypes like ice, lava, jungle, etc. In Psychonauts, you enter people's minds and exist in a space representing their mental state, defeating enemies and completing tasks centred around their particular condition.
 
-It's most famous level is [The Milkman Conspiracy](https://en.wikipedia.org/wiki/Milkman_Conspiracy). You enter the mind of a Milkman obsessed with conspiracies, which exists as a 1950s American suburban street twisted within 3d space back onto itself and populated with shady [G-men](https://en.wikipedia.org/wiki/G-man) watching you.
+It's most famous level is [The Milkman Conspiracy](https://en.wikipedia.org/wiki/Milkman_Conspiracy). Set inside the brain of Boyd, a Milkman obsessed with conspiracies, you explore a 1950s American suburban street populated with shady [G-men](https://en.wikipedia.org/wiki/G-man) watching you. The G-men pretend to be housewives and construction workers and speak in nonsense while the street itself twists within 3d space back onto itself, representing the twisted logic that Boyd sees in the world around him.
 
 The development was difficult for the team, and although it wasn't a commercial success, it received a lot of critical acclaim. Over the years, more and more people have played Psychonauts and loved it so much, that even the existence of a sequel was hotly anticipated by many.
 
@@ -39,7 +38,7 @@ It's great to see such an in-depth look within one of the most creative teams in
 
 Not everything is a fully formed idea right at the start, and you get to see the process that forms the finished product.
 
-One level involves reuniting a brain in a jar with a body who then gets overwhelmed with their new senses. You enter the brain, which eventually manifests a trippy music festival camp ground in the style of Yellow Submarine. It started out completely differently, and seeing the iterations of that level and how it came to be is one of my favourite bits.
+One level involves reuniting a brain in a jar with a body, who then gets overwhelmed with their new senses. You enter the brain, which eventually manifests a trippy music festival camp ground in the style of Yellow Submarine. It started out completely differently, and seeing the iterations of that level and how it came to be is one of my favourite bits.
 
 ## The C word
 
