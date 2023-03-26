@@ -43,7 +43,10 @@
 
 				<p>I like building fun things for users that solve interesting problems.</p>
 			</article>
-			<img src="/images/about/green.jpeg" alt="Me, doing my best Wired cover pose" />
+			<div class="img">
+				<img src="/images/about/green.jpeg" alt="Me, doing my best Wired cover pose" />
+				<p>Doing my best Wired cover pose</p>
+			</div>
 		</Grid>
 	</Wrapper>
 </section>
@@ -58,9 +61,14 @@
 		grid-column-end: 8;
 	}
 
-	img {
+	.img {
 		grid-column-start: 8;
 		grid-column-end: 13;
+
+		font-style: italic;
+	}
+
+	img {
 		width: 100%;
 	}
 
