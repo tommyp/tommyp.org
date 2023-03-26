@@ -43,6 +43,7 @@
 
 				<p>I like building fun things for users that solve interesting problems.</p>
 			</article>
+			<img src="/images/about/green.jpeg" alt="Me, doing my best Wired cover pose" />
 		</Grid>
 	</Wrapper>
 </section>
@@ -55,6 +56,12 @@
 		color: var(--near-black);
 		grid-column-start: 1;
 		grid-column-end: 8;
+	}
+
+	img {
+		grid-column-start: 8;
+		grid-column-end: 13;
+		width: 100%;
 	}
 
 	p {
