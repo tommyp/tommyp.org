@@ -9,10 +9,14 @@
 		ogParams.set('heading', escape(heading));
 		ogParams.set('bgColor', bgColor?.replace('#', ''));
 	}
+
+	const title = `${heading ? `${heading} | ` : ''} Tommy Palmer | Web Developer based in London`;
 </script>
 
 <svelte:head>
 	<meta property="og:image" content={`https://tommyp.org/og?${ogParams.toString()}`} />
 	<meta property="twitter:image" content={`https://tommyp.org/og?${ogParams.toString()}`} />
-	<title>{heading ? `${heading} | ` : ''}Tommy Palmer | Web Developer based in London</title>
+	<meta property="twitter:title" content={title} />
+	<meta property="og:title" content={title} />
+	<title>{title}</title>
 </svelte:head>
