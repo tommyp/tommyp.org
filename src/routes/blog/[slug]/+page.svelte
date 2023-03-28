@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Head from '$lib/components/Head.svelte';
+	import Wrapper from '$lib/components/Wrapper.svelte';
 	import type { Post } from '$lib/types';
 	export let data: Post;
 
@@ -10,18 +11,22 @@
 
 <article style={`--bgColor: ${data.titleBgColor}; --titleColor: ${data.titleColor || '#fff'}`}>
 	<header class:inverse>
-		<h1>{data.title}</h1>
-		<h2>{data.subtitle}</h2>
+		<Wrapper>
+			<h1>{data.title}</h1>
+			<h2>{data.subtitle}</h2>
+		</Wrapper>
 	</header>
 
-	<section class="post">
-		<svelte:component this={data.content} />
-		<p class="published-on">
-			Published on {new Date(data.date).toLocaleDateString('en-GB', {
-				dateStyle: 'full'
-			})}
-		</p>
-	</section>
+	<Wrapper>
+		<section class="post">
+			<svelte:component this={data.content} />
+			<p class="published-on">
+				Published on {new Date(data.date).toLocaleDateString('en-GB', {
+					dateStyle: 'full'
+				})}
+			</p>
+		</section>
+	</Wrapper>
 </article>
 
 <style>
@@ -98,10 +103,11 @@
 
 	:global(.post p:has(img)) {
 		margin: 0;
-		width: calc(100vw - 2rem);
+		width: calc(80vw - 2rem);
 		display: flex;
 		/* flex-wrap: wrap; */
 		gap: 1rem;
+
 		overflow-y: scroll;
 		scroll-snap-type: y mandatory;
 	}
@@ -133,7 +139,7 @@
 			line-height: 1.5;
 
 			width: 100%;
-			max-width: 50rem;
+			max-width: 75vw;
 		}
 
 		:global(.post p:has(img) > img) {
