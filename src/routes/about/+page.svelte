@@ -64,7 +64,7 @@
 	.img {
 		grid-column-start: 8;
 		grid-column-end: 13;
-
+		color: var(--near-black);
 		font-style: italic;
 	}
 
