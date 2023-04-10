@@ -139,7 +139,8 @@
 			line-height: 1.5;
 
 			width: 100%;
-			max-width: 75vw;
+
+			max-width: 60rem;
 		}
 
 		:global(.post p:has(img) > img) {
