@@ -7,7 +7,7 @@
 		max-width: 1600px;
 		display: flex;
 		flex-direction: column;
-		gap: 2rem;
+		gap: 1rem;
 	}
 
 	@media screen and (min-width: 968px) {

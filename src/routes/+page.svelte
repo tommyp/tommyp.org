@@ -103,7 +103,7 @@
 		grid-column-start: 1;
 		grid-column-end: 13;
 		color: var(--near-black);
-		padding-top: 0.5rem;
+		padding: 0.5rem 0 1rem 0;
 	}
 
 	h2 {
@@ -141,6 +141,10 @@
 
 	.hero a:hover {
 		color: var(--color);
+	}
+
+	.blog {
+		padding-bottom: 1rem;
 	}
 
 	/* shake animation */
