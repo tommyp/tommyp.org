@@ -124,8 +124,12 @@
 	}
 
 	@media (min-width: 968px) {
+		header {
+			padding: 0.5rem 0;
+		}
 		h1 {
 			font-size: 5rem;
+			line-height: 1;
 			padding: 1rem 2rem 0rem;
 		}
 
