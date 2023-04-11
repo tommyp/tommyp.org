@@ -37,6 +37,7 @@
 		background-color: var(--bgColor);
 		color: var(--titleColor);
 		flex-direction: column;
+		padding: 1rem 0;
 	}
 
 	header.inverse {
@@ -46,7 +47,6 @@
 	h1 {
 		font-weight: bold;
 		font-size: 2rem;
-		padding: 1rem;
 	}
 
 	h2 {
@@ -54,12 +54,11 @@
 		font-weight: bold;
 		margin: 0;
 		text-transform: uppercase;
-		padding: 0 1rem;
 	}
 
 	section {
-		padding: 1rem;
 		color: var(--near-black);
+		padding-top: 1rem;
 	}
 
 	:global(.post p) {
