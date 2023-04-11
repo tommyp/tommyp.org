@@ -59,13 +59,18 @@
 	section {
 		color: var(--near-black);
 		padding-top: 1rem;
+		font-size: 1.5rem;
+		line-height: 1.5;
 	}
 
 	:global(.post p) {
-		font-size: 1.5rem;
-		line-height: 1.5;
 		margin: 0 0 1.75rem 0;
 	}
+
+	:global(.post ul) {
+		padding-left: 1rem;
+	}
+
 	:global(.post a) {
 		color: var(--near-black);
 		text-decoration-color: var(--bgColor);
@@ -134,11 +139,9 @@
 
 		section {
 			padding: 2rem;
-			font-size: 1.5rem;
+			font-size: 1.75rem;
 			line-height: 1.5;
-
 			width: 100%;
-
 			max-width: 60rem;
 		}
 
@@ -147,6 +150,10 @@
 			max-height: 30rem;
 			object-fit: cover;
 			scroll-snap-align: start;
+		}
+
+		:global(.post ul) {
+			padding-left: 1.5rem;
 		}
 	}
 </style>
