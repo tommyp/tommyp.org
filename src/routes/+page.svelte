@@ -14,80 +14,39 @@
 
 <Head />
 <section>
-	<Wrapper>
-		<div class="hero">
-			<h2>
-				I'm a creative web developer who builds fun things like <a
-					class="lineup"
-					href="https://lineup.fun">Lineup.fun</a
-				>
-				and <a class="shorts" href="https://www.isitshortsweathertoday.com">Shorts Weather</a> and I
-				work at <a class="castrooms" href="https://castrooms.com/">CastRooms</a>.
-			</h2>
-		</div>
+	<h2 class="hero">
+		I'm a creative web developer writing JavaScript and Elixir at <a
+			class="castrooms"
+			href="https://castrooms.com/">CastRooms</a
+		>. I build fun things like <a class="lineup" href="https://lineup.fun">Lineup.fun</a>
+		and <a class="shorts" href="https://www.isitshortsweathertoday.com">Shorts Weather</a>.
+	</h2>
 
-		<div class="blog">
-			<Grid>
-				{#each recentPosts as recentPost}
-					<BigBlockLink
-						href={recentPost.path}
-						title={recentPost.meta.title}
-						subtitle={recentPost.meta.subtitle}
-						inverse={recentPost.meta.inverse}
-						--color={recentPost.meta.titleBgColor}
-						--foreground={recentPost.meta.titleColor}
-						--grid-col-start="1"
-						--grid-col-end="13"
-					/>
-				{/each}
-
+	<div class="blog">
+		<Grid>
+			{#each recentPosts as recentPost}
 				<BigBlockLink
-					href="/blog"
-					title="More →"
-					--grid-col-start="5"
-					--grid-col-end="9"
-					--color="#000"
-					--foreground="#fff"
+					href={recentPost.path}
+					title={recentPost.meta.title}
+					subtitle={recentPost.meta.subtitle}
+					inverse={recentPost.meta.inverse}
+					--color={recentPost.meta.titleBgColor}
+					--foreground={recentPost.meta.titleColor}
+					--grid-col-start="1"
+					--grid-col-end="13"
 				/>
+			{/each}
 
-				<!-- --color={recentPost.meta.titleBgColor}
-			--foreground={recentPost.meta.titleColor} -->
-
-				<!-- <BigBlockLink
-				href="https://castrooms.com"
-				title="Castrooms"
-				subtitle="Where I work"
-				--color="#e1e600"
-				--foreground="#000"
-				--grid-col-start="8"
-				--grid-col-end="13"
-			>
-				Next generation streaming for DJs and Ravers
-			</BigBlockLink>
 			<BigBlockLink
-				href="https://lineup.fun"
-				title="Lineup.fun"
-				subtitle="I made this"
-				--color="#95fc0f"
-				--foreground="#000"
-				--grid-col-start="1"
-				--grid-col-end="6"
-			>
-				A spotify playlist generator
-			</BigBlockLink>
-			<BigBlockLink
-				href="https://www.isitshortsweathertoday.com/"
-				title="Shorts Weather"
-				subtitle="I made this too"
-				--color="#f56c42"
-				--grid-col-start="6"
+				href="/blog"
+				title="More →"
+				--grid-col-start="5"
 				--grid-col-end="9"
-			>
-				World's best weather site
-			</BigBlockLink> -->
-			</Grid>
-		</div>
-	</Wrapper>
+				--color="#000"
+				--foreground="#fff"
+			/>
+		</Grid>
+	</div>
 </section>
 
 <style>
@@ -95,6 +54,7 @@
 		margin-top: 0rem;
 		display: flex;
 		flex-direction: column;
+		padding: 2rem;
 	}
 
 	.hero {
@@ -103,15 +63,13 @@
 		grid-column-start: 1;
 		grid-column-end: 13;
 		color: var(--near-black);
-		padding: 0.5rem 0 1rem 0;
-	}
-
-	h2 {
-		font-size: 1.5rem;
+		padding: 0.5rem 0;
+		font-size: 4.5rem;
 		margin: 0;
 		font-weight: bold;
 		text-shadow: 0 0 0.05rem var(--background);
 	}
+
 	span {
 		display: inline-block;
 	}

@@ -17,13 +17,18 @@
 			<slot />
 		</main>
 	{/key}
-	<Footer />
+	<!-- <Footer /> -->
 </section>
 
 <style>
 	section {
+		--sidebar-width: 400px;
 		display: grid;
-		grid-template-rows: auto 1fr auto;
+		grid-template-columns: 1fr;
 		min-height: 100vh;
+	}
+
+	main {
+		margin-left: var(--sidebar-width);
 	}
 </style>
