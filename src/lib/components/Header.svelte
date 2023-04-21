@@ -7,7 +7,7 @@
 </script>
 
 <header>
-	<a class="logo" href="/"><h1>Tommy Palmer</h1></a>
+	<h1><a class="logo" href="/">Tommy Palmer</a></h1>
 	<nav>
 		<ul>
 			{#each links as link}
@@ -49,11 +49,12 @@
 		margin: 0 auto;
 	}
 
-	h1 {
+	h1 a {
 		font-weight: bold;
 		padding: 0.5rem 1rem;
 		margin: 0;
 		border-bottom: var(--border-width) solid var(--border-color);
+		color: var(--near-black);
 	}
 
 	li {
@@ -103,7 +104,7 @@
 			border-right: var(--border-width) solid var(--border-color);
 		}
 
-		h1 {
+		h1 a {
 			font-size: 5rem;
 			padding: 1rem 2rem;
 			border-bottom: var(--border-width) solid var(--border-color);

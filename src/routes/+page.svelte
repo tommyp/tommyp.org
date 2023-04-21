@@ -6,6 +6,7 @@
 	import Head from '$lib/components/Head.svelte';
 	import BigBlock from '$lib/components/BigBlock.svelte';
 	import Marquee from 'svelte-marquee';
+	import Hero from '$lib/components/Hero.svelte';
 
 	export let data: { posts: Array<PostSummary> };
 
@@ -14,14 +15,7 @@
 
 <Head />
 <section>
-	<h2 class="hero">
-		I'm a creative web developer writing JavaScript and Elixir at <a
-			class="castrooms"
-			href="https://castrooms.com/">CastRooms</a
-		>. I build fun things like <a class="lineup" href="https://lineup.fun">Lineup.fun</a>
-		and <a class="shorts" href="https://www.isitshortsweathertoday.com">Shorts Weather</a>.
-	</h2>
-
+	<Hero />
 	<div class="blog">
 		<Grid>
 			{#each recentPosts as recentPost}
@@ -57,50 +51,6 @@
 		padding: 2rem;
 	}
 
-	.hero {
-		font-weight: bold;
-		font-family: var(--header-font-family);
-		grid-column-start: 1;
-		grid-column-end: 13;
-		color: var(--near-black);
-		padding: 0.5rem 0;
-		font-size: 4.5rem;
-		margin: 0;
-		font-weight: bold;
-		text-shadow: 0 0 0.05rem var(--background);
-	}
-
-	span {
-		display: inline-block;
-	}
-
-	span:hover {
-		/* shake animation */
-		transition: all;
-		animation: wave-hand 0.5s infinite;
-	}
-
-	.lineup {
-		--color: #95fc0f;
-	}
-
-	.shorts {
-		--color: #f56c42;
-	}
-
-	.castrooms {
-		--color: #e1e600;
-	}
-
-	.hero a {
-		color: var(--near-black);
-		text-decoration-color: var(--color);
-	}
-
-	.hero a:hover {
-		color: var(--color);
-	}
-
 	.blog {
 		padding-bottom: 1rem;
 	}
@@ -108,21 +58,6 @@
 	/* shake animation */
 
 	@media screen and (min-width: 968px) {
-		.hero {
-			padding-top: 1.5rem;
-			line-height: 1.2;
-		}
-
-		h2 {
-			font-size: 4.5rem;
-		}
-
-		.marquee {
-			font-size: 3.5rem;
-			border-top-width: 6px;
-			border-bottom-width: 6px;
-		}
-
 		.blog {
 			margin-top: 5rem;
 			margin-bottom: 2rem;
