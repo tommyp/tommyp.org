@@ -53,7 +53,7 @@
 
 <style>
 	section {
-		padding-top: 2rem;
+		padding-top: 1rem;
 	}
 	article {
 		color: var(--near-black);
@@ -73,8 +73,8 @@
 	}
 
 	p {
-		font-size: 1.5rem;
-		line-height: 1.5;
+		font-size: 1rem;
+		line-height: 1.25;
 		margin: 0 0 1.75rem 0;
 	}
 
@@ -88,5 +88,8 @@
 	}
 
 	@media (min-width: 968px) {
+		p {
+			font-size: 1.5rem;
+		}
 	}
 </style>

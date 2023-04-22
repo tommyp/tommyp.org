@@ -57,8 +57,7 @@
 
 	@media screen and (min-width: 968px) {
 		.blog {
-			margin-top: 5rem;
-			margin-bottom: 2rem;
+			margin: 2rem 0;
 		}
 	}
 </style>

@@ -38,6 +38,7 @@
 			padding: 0;
 			line-height: 1.2;
 			font-size: 3.5rem;
+			margin-top: 1.5rem;
 		}
 	}
 </style>

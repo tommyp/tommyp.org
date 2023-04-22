@@ -105,7 +105,7 @@
 		}
 
 		h1 a {
-			font-size: 5rem;
+			font-size: 3rem;
 			padding: 1rem 2rem;
 			border-bottom: var(--border-width) solid var(--border-color);
 		}
@@ -116,7 +116,7 @@
 		}
 
 		nav a {
-			font-size: 2.5rem;
+			font-size: 1.5rem;
 			padding: 1rem 2rem;
 			display: flex;
 			align-items: center;
