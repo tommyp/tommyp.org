@@ -23,9 +23,8 @@
 <style>
 	section {
 		--sidebar-width: 0;
-		display: grid;
-		grid-template-columns: 1fr;
-		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
 	}
 
 	main {

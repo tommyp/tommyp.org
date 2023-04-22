@@ -48,14 +48,12 @@
 		margin-top: 0rem;
 		display: flex;
 		flex-direction: column;
-		padding: 2rem;
+		padding: 1rem;
 	}
 
 	.blog {
-		padding-bottom: 1rem;
+		padding: 1rem 0;
 	}
-
-	/* shake animation */
 
 	@media screen and (min-width: 968px) {
 		.blog {

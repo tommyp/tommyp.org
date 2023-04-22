@@ -22,8 +22,8 @@
 	onMount(() => {
 		coords.subscribe((v) => {
 			percentages = {
-				x: (v.x / window.innerWidth) * 100,
-				y: (v.y / window.innerHeight) * 100
+				x: ((v.x / window.innerWidth) * 100).toPrecision(2),
+				y: ((v.y / window.innerHeight) * 100).toPrecision(2)
 			};
 		});
 	});

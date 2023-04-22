@@ -130,7 +130,7 @@
 
 		li a {
 			height: 100%;
-			/* border-right: var(--border-width) solid var(--border-color); */
+			border-right: 0;
 			border-bottom: var(--border-width) solid var(--border-color);
 		}
 	}
