@@ -69,13 +69,13 @@
 		display: block;
 		text-decoration: none;
 		text-transform: uppercase;
-		color: var(--white);
+		color: var(--near-black);
 		width: 100%;
 	}
 
 	li a {
 		font-size: 0.8rem;
-		/* border-right: var(--border-width) solid var(--border-color); */
+		border-right: var(--border-width) solid var(--border-color);
 		padding: 0.5rem;
 	}
 

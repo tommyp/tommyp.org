@@ -22,7 +22,7 @@
 
 <style>
 	section {
-		--sidebar-width: 400px;
+		--sidebar-width: 0;
 		display: grid;
 		grid-template-columns: 1fr;
 		min-height: 100vh;
@@ -30,5 +30,15 @@
 
 	main {
 		margin-left: var(--sidebar-width);
+	}
+
+	@media screen and (min-width: 968px) {
+		section {
+			--sidebar-width: 400px;
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-columns: 1fr;
+			grid-template-rows: 200px 1fr;
+		}
 	}
 </style>
