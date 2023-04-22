@@ -15,9 +15,9 @@
 	{#key data.currentRoute}
 		<main in:fade={{ duration: 150, delay: 150 }} out:fade={{ duration: 150 }}>
 			<slot />
+			<Footer />
 		</main>
 	{/key}
-	<!-- <Footer /> -->
 </section>
 
 <style>
@@ -29,6 +29,7 @@
 
 	main {
 		margin-left: var(--sidebar-width);
+		min-height: 100vh;
 	}
 
 	@media screen and (min-width: 968px) {
@@ -36,8 +37,7 @@
 			--sidebar-width: 300px;
 			display: grid;
 			grid-template-columns: 1fr;
-			grid-template-columns: 1fr;
-			grid-template-rows: 200px 1fr;
+			grid-template-rows: 200px 100% 1fr;
 		}
 	}
 </style>
