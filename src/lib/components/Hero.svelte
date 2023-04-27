@@ -1,8 +1,10 @@
 <h2>
-	I'm a product focussed and creative web developer writing JavaScript and Elixir at <a
-		class="castrooms"
-		href="https://castrooms.com/">CastRooms</a
-	>.
+	I'm a product focussed, and creative web developer.
+
+	<br />
+	<br />
+	I write JavaScript and Elixir, and work at
+	<a class="castrooms" href="https://castrooms.com/">CastRooms</a>.
 </h2>
 
 <style>
