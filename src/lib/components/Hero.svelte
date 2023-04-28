@@ -1,11 +1,13 @@
-<h2>
+<h2>I make websites</h2>
+
+<p>
 	I'm a product focussed, and creative web developer.
 
 	<br />
 	<br />
 	I write JavaScript and Elixir, and work at
 	<a class="castrooms" href="https://castrooms.com/">CastRooms</a>.
-</h2>
+</p>
 
 <style>
 	h2 {
