@@ -28,7 +28,7 @@
 
 				<p>
 					I've worked in tech at big and small companies for over ten years. At the moment I'm
-					working on <a href="https://castrooms.com">Castrooms</a>, a new DJ streaming platform.
+					working on <a href="https://castrooms.com">Castrooms</a> - a new DJ streaming platform.
 					I've previously worked for <a href="https://deliveroo.co.uk">Deliveroo</a> and the
 					<a href="https://www.gov.uk/government/organisations/government-digital-service"
 						>Government Digital Service</a

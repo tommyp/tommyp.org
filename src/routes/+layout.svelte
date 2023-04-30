@@ -25,11 +25,15 @@
 		--sidebar-width: 0;
 		display: flex;
 		flex-direction: column;
+		justify-content: space-between;
 	}
 
 	main {
 		margin-left: var(--sidebar-width);
+		display: flex;
 		min-height: 100vh;
+		flex-direction: column;
+		justify-content: space-between;
 	}
 
 	@media screen and (min-width: 968px) {

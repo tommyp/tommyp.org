@@ -1,16 +1,14 @@
-<h2>I make websites</h2>
+<section>
+	<h2>I make websites 👨‍💻</h2>
 
-<p>
-	I'm a product focussed, and creative web developer.
-
-	<br />
-	<br />
-	I write JavaScript and Elixir, and work at
-	<a class="castrooms" href="https://castrooms.com/">CastRooms</a>.
-</p>
+	<p>
+		I'm a product focussed, and creative web developer. I write JavaScript and Elixir, and work at
+		<a class="castrooms" href="https://castrooms.com/">CastRooms</a>.
+	</p>
+</section>
 
 <style>
-	h2 {
+	section {
 		font-weight: bold;
 		font-family: var(--header-font-family);
 		grid-column-start: 1;
@@ -18,31 +16,34 @@
 		color: var(--near-black);
 		padding: 0.25rem 0;
 		margin: 0;
-		font-weight: bold;
+
 		/* text-shadow: 0 0 0.05rem var(--background); */
+	}
+
+	h2 {
+		font-weight: bold;
 	}
 
 	.castrooms {
 		--color: #e1e600;
 	}
 
-	h2 a {
+	a {
 		color: var(--near-black);
 		text-decoration-color: var(--color);
 	}
 
-	h2 a:hover {
-		background-color: var(--color);
+	a:hover {
 		color: var(--near-black);
 		border-radius: 5px;
 	}
 
 	@media screen and (min-width: 968px) {
-		h2 {
+		section {
 			padding: 0;
 			line-height: 1.2;
 			font-size: 3.5rem;
-			margin-top: 1.5rem;
+			margin-top: 0.75rem;
 		}
 	}
 </style>
