@@ -33,7 +33,6 @@
 		font-size: 1rem;
 		/* background: var(--background); */
 		border-bottom: var(--border-width) solid var(--border-color);
-		--border-color: var(--neon-green);
 	}
 
 	ul {

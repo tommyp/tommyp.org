@@ -10,7 +10,7 @@
 
 	export let data: { posts: Array<PostSummary> };
 
-	$: recentPosts = data.posts.slice(0, 3);
+	$: recentPosts = data.posts.slice(0, 5);
 </script>
 
 <Head />
@@ -48,7 +48,6 @@
 		margin-top: 0rem;
 		display: flex;
 		flex-direction: column;
-		padding: 1rem;
 	}
 
 	.blog {
@@ -58,6 +57,7 @@
 	@media screen and (min-width: 968px) {
 		.blog {
 			margin: 2rem 0;
+			padding: 0 1rem;
 		}
 	}
 </style>

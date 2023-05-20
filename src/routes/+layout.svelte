@@ -39,6 +39,7 @@
 	@media screen and (min-width: 968px) {
 		section {
 			--sidebar-width: 300px;
+
 			display: grid;
 			grid-template-columns: 1fr;
 			grid-template-rows: 200px 100% 1fr;
