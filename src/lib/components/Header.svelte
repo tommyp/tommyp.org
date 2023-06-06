@@ -23,7 +23,6 @@
 
 <style>
 	header {
-		--border-width: 2px;
 		font-weight: bold;
 		width: 100%;
 		margin: 0 auto;
@@ -96,7 +95,7 @@
 		header {
 			border-bottom: none;
 			/* flex-direction: row; */
-			--border-width: 6px;
+
 			position: fixed;
 			width: var(--sidebar-width);
 			height: 100vh;

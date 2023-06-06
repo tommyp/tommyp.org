@@ -97,7 +97,8 @@
 	:global(.post h2) {
 		font-size: 2rem;
 		font-weight: bold;
-		margin: 2rem 0 0.75rem 0;
+		margin: 1rem 0 0.75rem 0;
+		line-height: 1;
 	}
 
 	.published-on {
@@ -139,6 +140,8 @@
 
 		:global(.post h2) {
 			font-size: 3rem;
+			line-height: 1;
+			margin-bottom: 3rem;
 		}
 
 		section {

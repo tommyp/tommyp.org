@@ -20,11 +20,6 @@
 			<h3>{title}</h3>
 		{/if}
 	</div>
-	{#if emojiRight}
-		<div class={`emoji ${animation === 'bounce' ? 'bounce' : ''}`}>
-			{emojiRight}
-		</div>
-	{/if}
 </section>
 
 <style>

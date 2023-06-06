@@ -41,10 +41,6 @@
 		border-radius: 5px;
 	}
 
-	p {
-		margin: 1.5rem 0;
-	}
-
 	@media screen and (min-width: 968px) {
 		section {
 			padding: 0 1rem;
