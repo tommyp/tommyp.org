@@ -29,7 +29,6 @@
 	}
 
 	main {
-		margin-left: var(--sidebar-width);
 		display: flex;
 		min-height: 100vh;
 		flex-direction: column;

@@ -7,9 +7,11 @@
 </script>
 
 <header>
-	<h1><a class="logo" href="/">Tommy Palmer</a></h1>
 	<nav>
 		<ul>
+			<li>
+				<h1><a class="logo" href="/">Tommy Palmer</a></h1>
+			</li>
 			{#each links as link}
 				<li>
 					<a href={link.path} class={$page.url.pathname.includes(link.path) ? 'active' : ''}>
@@ -58,8 +60,7 @@
 	li {
 		padding: 0;
 		list-style: none;
-		display: flex;
-		align-items: center;
+
 		width: 100%;
 	}
 
@@ -96,16 +97,15 @@
 			border-bottom: none;
 			/* flex-direction: row; */
 
-			position: fixed;
+			position: absolute;
+			top: 20px;
+			left: 20px;
 			width: var(--sidebar-width);
 			height: 100vh;
-			border-right: var(--border-width) solid var(--border-color);
 		}
 
 		h1 a {
-			font-size: 3rem;
 			padding: 1rem 2rem;
-			border-bottom: var(--border-width) solid var(--border-color);
 		}
 
 		nav {
