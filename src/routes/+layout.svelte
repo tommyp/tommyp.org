@@ -22,7 +22,6 @@
 
 <style>
 	section {
-		--sidebar-width: 0;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
@@ -36,12 +35,8 @@
 	}
 
 	@media screen and (min-width: 968px) {
-		section {
-			--sidebar-width: 300px;
-
-			display: grid;
-			grid-template-columns: 1fr;
-			grid-template-rows: 200px 100% 1fr;
+		main {
+			margin-top: 5rem;
 		}
 	}
 </style>

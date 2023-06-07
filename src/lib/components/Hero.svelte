@@ -43,7 +43,7 @@
 
 	@media screen and (min-width: 968px) {
 		section {
-			padding: 0 1rem;
+			padding: 0 4rem;
 			line-height: 1.2;
 			font-size: 3.5rem;
 		}
