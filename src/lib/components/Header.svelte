@@ -9,6 +9,7 @@
 	let isHovered = false;
 
 	$: currentLink = links.find((link) => $page.url.pathname.includes(link.path));
+	$: console.log(currentLink);
 </script>
 
 <header on:mouseenter={() => (isHovered = true)} on:mouseleave={() => (isHovered = false)}>
@@ -16,13 +17,14 @@
 		<ul>
 			<li class="logo">
 				<h1>
-					<a class={!currentLink ? 'active' : ''} href="/">Tommy Palmer</a>
+					<a class:active={!currentLink} href="/">Tommy Palmer</a>
 				</h1>
 			</li>
 			{#if isHovered}
 				{#each links as link}
+					{@const active = currentLink === link}
 					<li class="nav" transition:fly={{ y: -50, duration: 200 }}>
-						<a href={link.path} class={currentLink ? 'active' : ''}>
+						<a href={link.path} class:active>
 							{link.text}
 						</a>
 					</li>
@@ -44,33 +46,19 @@
 		/* background: var(--background); */
 	}
 
-	header:hover a {
-		background: var(--white);
-	}
-
 	ul {
 		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
 		margin: 0;
 		padding: 0;
 		width: 100%;
 	}
 
-	.logo {
-		border: var(--border-width) solid var(--border-color);
-	}
-
-	h1 a {
-		font-weight: bold;
-		padding: 0.5rem 1rem;
-		margin: 0;
-
-		color: var(--near-black);
-	}
-
 	li {
 		padding: 0;
 		list-style: none;
-
+		text-align: center;
 		width: 100%;
 	}
 
@@ -80,19 +68,8 @@
 		text-transform: uppercase;
 		color: var(--near-black);
 		width: 100%;
-	}
-
-	li a {
 		font-size: 0.8rem;
 		padding: 0.5rem;
-	}
-
-	li a:hover {
-		background: var(--highlight);
-	}
-
-	li:first-of-type a {
-		border-bottom: none;
 	}
 
 	a:hover {
@@ -130,7 +107,7 @@
 			align-items: center;
 		}
 
-		nav ul {
+		ul {
 			display: flex;
 			flex-direction: column;
 			height: 100%;
