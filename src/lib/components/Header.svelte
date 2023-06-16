@@ -47,10 +47,12 @@
 		justify-content: flex-start;
 		flex-direction: column;
 		font-size: 1rem;
-		padding: 1rem;
 		height: 4rem;
 		position: fixed;
 		z-index: 20;
+		left: 50%;
+		top: 0.5rem;
+		transform: translateX(-50%);
 	}
 
 	nav {
@@ -119,7 +121,7 @@
 
 	@media screen and (min-width: 968px) {
 		header {
-			/* flex-direction: row; */
+			padding: 1rem;
 		}
 
 		nav a {
