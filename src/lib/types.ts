@@ -2,8 +2,10 @@ export interface Post {
 	title: string;
 	date: string;
 	content: string;
+	titleColor: string;
 	titleBgColor: string;
 	inverse: boolean;
+	subtitle: string;
 }
 
 export interface PostSummary {

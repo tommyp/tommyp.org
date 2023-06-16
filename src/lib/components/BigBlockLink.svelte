@@ -45,7 +45,7 @@
 	}
 
 	a:hover {
-		/* transform: scale(1.01); */
+		transform: scale(1.01);
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 	}
 

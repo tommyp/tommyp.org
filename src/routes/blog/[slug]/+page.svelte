@@ -108,7 +108,7 @@
 
 	:global(.post p:has(img)) {
 		margin: 0;
-		width: calc(100vw);
+		width: 100vw;
 
 		display: flex;
 		flex-wrap: wrap;

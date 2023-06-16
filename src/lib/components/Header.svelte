@@ -17,7 +17,7 @@
 	class:isHovered
 	on:touchstart={() => (isHovered = true)}
 	on:mouseenter={() => (isHovered = true)}
-	on:mouseleave={() => setTimeout(() => (isHovered = false), 1000)}
+	on:mouseleave={() => setTimeout(() => (isHovered = false), 250)}
 	style:--links-length={links.length}
 >
 	<nav>
