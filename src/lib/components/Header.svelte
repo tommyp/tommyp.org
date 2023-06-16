@@ -43,7 +43,6 @@
 <style>
 	header {
 		margin: 0 auto;
-		width: 100%;
 		display: flex;
 		justify-content: flex-start;
 		flex-direction: column;

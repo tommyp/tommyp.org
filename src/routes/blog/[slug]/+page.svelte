@@ -108,9 +108,10 @@
 
 	:global(.post p:has(img)) {
 		margin: 0;
-		width: calc(80vw - 2rem);
+		width: calc(100vw);
+
 		display: flex;
-		/* flex-wrap: wrap; */
+		flex-wrap: wrap;
 		gap: 1rem;
 
 		overflow-y: scroll;
@@ -153,10 +154,8 @@
 		}
 
 		:global(.post p:has(img) > img) {
-			width: auto;
+			/* width: 100%; */
 			max-height: 30rem;
-			object-fit: cover;
-			scroll-snap-align: start;
 		}
 
 		:global(.post ul) {
