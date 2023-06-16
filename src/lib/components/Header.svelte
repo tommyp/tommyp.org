@@ -102,7 +102,8 @@
 		z-index: 100;
 	}
 
-	.dropdown {
+	.dropdown,
+	header:not(.isHovered) .dropdown {
 		z-index: calc(99 - var(--link-index));
 		/* position: absolute; */
 		/* top: 0; */
@@ -112,7 +113,8 @@
 		transition: all 0.2s ease-in-out;
 	}
 
-	header:hover .dropdown {
+	header:hover .dropdown,
+	header.isHovered .dropdown {
 		transform: translateY(0);
 	}
 
