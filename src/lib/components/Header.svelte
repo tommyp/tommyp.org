@@ -8,40 +8,64 @@
 		{ path: '/about', text: 'About' }
 	];
 
-	let isHovered = false;
+	let dropdownOpen = false;
 
 	$: currentLink = links.find((link) => $page.url.pathname.includes(link.path));
-	$: console.log(currentLink);
 
-	const handleClick = (e: Event) => {
-		if (isHovered) {
-			goto('/');
-		} else {
-			isHovered = true;
-		}
-	};
+	$: console.log(dropdownOpen);
 </script>
 
 <header
-	class:isHovered
-	on:mouseenter={() => (isHovered = true)}
-	on:mouseleave={() => setTimeout(() => (isHovered = false), 250)}
+	class:dropdownOpen
+	on:mouseenter={() => (dropdownOpen = true)}
+	on:mouseleave={() => setTimeout(() => (dropdownOpen = false), 250)}
 	style:--links-length={links.length}
 >
 	<nav>
 		<ul>
 			<li>
 				<h1>
-					<a class:active={!currentLink} on:click|preventDefault={handleClick} href="/"
-						>Tommy Palmer</a
-					>
+					<a class:active={!currentLink} href="/">Tommy Palmer</a>
+					<button aria-label="Toggle navigation menu" aria-expanded={dropdownOpen}>
+						{#if dropdownOpen}
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="w-6 h-6"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M4.5 12.75l7.5-7.5 7.5 7.5m-15 6l7.5-7.5 7.5 7.5"
+								/>
+							</svg>
+						{:else}
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="w-6 h-6"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5"
+								/>
+							</svg>
+						{/if}
+					</button>
 				</h1>
 			</li>
 
 			{#each links as link, index}
 				{@const active = currentLink === link}
-				<li class="dropdown" transition:fly={{ y: -50, duration: 200 }} style:--link-index={index}>
-					<a href={link.path} class:active on:click={() => (isHovered = false)}>
+				<li class="dropdown" style:--link-index={index}>
+					<a href={link.path} class:active>
 						{link.text}
 					</a>
 				</li>
@@ -67,6 +91,21 @@
 
 	nav {
 		width: 15rem;
+	}
+
+	h1 {
+		display: flex;
+	}
+
+	h1 button {
+		appearance: none;
+		border: none;
+		background: white;
+		color: var(--near-black);
+		border-left: 4px solid var(--highlight);
+	}
+	h1 svg {
+		width: 1rem;
 	}
 
 	ul {
@@ -131,6 +170,9 @@
 
 	@media screen and (min-width: 968px) {
 		header {
+			left: 0;
+			top: 0;
+			transform: none;
 			padding: 1rem;
 		}
 
@@ -148,6 +190,10 @@
 
 		li a {
 			height: 100%;
+		}
+
+		h1 button {
+			display: none;
 		}
 	}
 </style>
