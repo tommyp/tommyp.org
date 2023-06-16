@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { goto } from '$app/navigation';
 	import { page } from '$app/stores';
 	import { onMount } from 'svelte';
 	import { fly } from 'svelte/transition';
@@ -7,15 +8,22 @@
 		{ path: '/about', text: 'About' }
 	];
 
-	let isHovered = true;
+	let isHovered = false;
 
 	$: currentLink = links.find((link) => $page.url.pathname.includes(link.path));
 	$: console.log(currentLink);
+
+	const handleClick = (e: Event) => {
+		if (isHovered) {
+			goto('/');
+		} else {
+			isHovered = true;
+		}
+	};
 </script>
 
 <header
 	class:isHovered
-	on:touchstart={() => (isHovered = true)}
 	on:mouseenter={() => (isHovered = true)}
 	on:mouseleave={() => setTimeout(() => (isHovered = false), 250)}
 	style:--links-length={links.length}
@@ -24,14 +32,16 @@
 		<ul>
 			<li>
 				<h1>
-					<a class:active={!currentLink} href="/">Tommy Palmer</a>
+					<a class:active={!currentLink} on:click|preventDefault={handleClick} href="/"
+						>Tommy Palmer</a
+					>
 				</h1>
 			</li>
 
 			{#each links as link, index}
 				{@const active = currentLink === link}
 				<li class="dropdown" transition:fly={{ y: -50, duration: 200 }} style:--link-index={index}>
-					<a href={link.path} class:active>
+					<a href={link.path} class:active on:click={() => (isHovered = false)}>
 						{link.text}
 					</a>
 				</li>
