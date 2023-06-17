@@ -33,6 +33,7 @@
 		min-height: 100vh;
 		flex-direction: column;
 		justify-content: space-between;
+		margin-top: 1.5rem;
 	}
 
 	@media screen and (min-width: 968px) {

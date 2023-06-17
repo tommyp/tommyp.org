@@ -15,18 +15,21 @@
 	$: console.log(dropdownOpen);
 </script>
 
-<header
-	class:dropdownOpen
-	on:mouseenter={() => (dropdownOpen = true)}
-	on:mouseleave={() => setTimeout(() => (dropdownOpen = false), 250)}
-	style:--links-length={links.length}
->
+<header class:dropdownOpen style:--links-length={links.length}>
 	<nav>
 		<ul>
 			<li>
 				<h1>
 					<a class:active={!currentLink} href="/">Tommy Palmer</a>
-					<button aria-label="Toggle navigation menu" aria-expanded={dropdownOpen}>
+					<button
+						on:click|preventDefault={(e) => {
+							console.log('click', dropdownOpen);
+							dropdownOpen = !dropdownOpen;
+							console.log('click 2', dropdownOpen);
+						}}
+						aria-label="Toggle navigation menu"
+						aria-expanded={dropdownOpen}
+					>
 						{#if dropdownOpen}
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -153,7 +156,7 @@
 	}
 
 	.dropdown,
-	header:not(.isHovered) .dropdown {
+	header:not(.dropdownOpen) .dropdown {
 		z-index: calc(99 - var(--link-index));
 		/* position: absolute; */
 		/* top: 0; */
@@ -164,7 +167,7 @@
 	}
 
 	header:hover .dropdown,
-	header.isHovered .dropdown {
+	header.dropdownOpen .dropdown {
 		transform: translateY(0);
 	}
 
