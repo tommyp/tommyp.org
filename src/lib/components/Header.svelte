@@ -1,8 +1,6 @@
 <script lang="ts">
-	import { goto } from '$app/navigation';
 	import { page } from '$app/stores';
-	import { onMount } from 'svelte';
-	import { fly } from 'svelte/transition';
+
 	const links: { path: string; text: string }[] = [
 		{ path: '/blog', text: 'Blog' },
 		{ path: '/about', text: 'About' }
@@ -11,8 +9,6 @@
 	let dropdownOpen = false;
 
 	$: currentLink = links.find((link) => $page.url.pathname.includes(link.path));
-
-	$: console.log(dropdownOpen);
 </script>
 
 <header class:dropdownOpen style:--links-length={links.length}>
@@ -22,11 +18,7 @@
 				<h1>
 					<a class:active={!currentLink} href="/">Tommy Palmer</a>
 					<button
-						on:click|preventDefault={(e) => {
-							console.log('click', dropdownOpen);
-							dropdownOpen = !dropdownOpen;
-							console.log('click 2', dropdownOpen);
-						}}
+						on:click|preventDefault={(e) => (dropdownOpen = !dropdownOpen)}
 						aria-label="Toggle navigation menu"
 						aria-expanded={dropdownOpen}
 					>
