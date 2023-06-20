@@ -18,6 +18,16 @@
 	<Hero />
 	<div class="blog">
 		<Grid>
+			<h2>Blog posts</h2>
+
+			<!-- <BigBlockLink
+				href="/blog"
+				title="More →"
+				--grid-col-start="9"
+				--grid-col-end="13"
+				--color="#000"
+				--foreground="#fff"
+			/> -->
 			{#each recentPosts as recentPost}
 				<BigBlockLink
 					href={recentPost.path}
@@ -30,15 +40,6 @@
 					--grid-col-end="13"
 				/>
 			{/each}
-
-			<BigBlockLink
-				href="/blog"
-				title="More →"
-				--grid-col-start="5"
-				--grid-col-end="9"
-				--color="#000"
-				--foreground="#fff"
-			/>
 		</Grid>
 	</div>
 </section>
@@ -52,6 +53,15 @@
 
 	.blog {
 		padding: 1rem;
+	}
+
+	h2 {
+		grid-column-start: 1;
+		grid-column-end: 9;
+		font-weight: bold;
+		font-size: 4rem;
+		text-transform: uppercase;
+		/* padding: 1.5rem 0; */
 	}
 
 	@media screen and (min-width: 968px) {

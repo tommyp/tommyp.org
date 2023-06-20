@@ -1,5 +1,13 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+	import { onMount } from 'svelte';
+	import { tweened } from 'svelte/motion';
+	import { cubicOut } from 'svelte/easing';
+
+	const scrollPosition = tweened(0, {
+		duration: 500,
+		easing: cubicOut
+	});
 
 	const links: { path: string; text: string }[] = [
 		{ path: '/blog', text: 'Blog' },
@@ -8,10 +16,20 @@
 
 	let dropdownOpen = false;
 
+	onMount(() => {
+		window.addEventListener('scroll', () => {
+			$scrollPosition = window.scrollY;
+		});
+	});
+
 	$: currentLink = links.find((link) => $page.url.pathname.includes(link.path));
 </script>
 
-<header class:dropdownOpen style:--links-length={links.length}>
+<header
+	class:dropdownOpen
+	style:--links-length={links.length}
+	style:--scroll-top={`${$scrollPosition}px`}
+>
 	<nav>
 		<ul>
 			<li>
@@ -77,10 +95,10 @@
 		flex-direction: column;
 		font-size: 1rem;
 		height: 4rem;
-		position: fixed;
+		position: absolute;
 		z-index: 20;
 		left: 50%;
-		top: 0.5rem;
+		top: calc(var(--scroll-top) + 0.5rem);
 		transform: translateX(-50%);
 	}
 
@@ -166,7 +184,7 @@
 	@media screen and (min-width: 968px) {
 		header {
 			left: 0;
-			top: 0;
+			top: var(--scroll-top);
 			transform: none;
 			padding: 1rem;
 		}
