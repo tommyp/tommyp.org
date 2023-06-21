@@ -17,17 +17,8 @@
 <section>
 	<Hero />
 	<div class="blog">
+		<a class="blog-link" href="/blog"><h2><span>Blog posts</span> &rarr;</h2> </a>
 		<Grid>
-			<h2>Blog posts</h2>
-
-			<!-- <BigBlockLink
-				href="/blog"
-				title="More →"
-				--grid-col-start="9"
-				--grid-col-end="13"
-				--color="#000"
-				--foreground="#fff"
-			/> -->
 			{#each recentPosts as recentPost}
 				<BigBlockLink
 					href={recentPost.path}
@@ -55,13 +46,32 @@
 		padding: 1rem;
 	}
 
-	h2 {
-		grid-column-start: 1;
-		grid-column-end: 9;
-		font-weight: bold;
-		font-size: 4rem;
+	.blog-link {
+		align-items: center;
+		border: 2px solid #000;
+		color: #000;
+		border-radius: 2rem;
+		text-decoration: none;
 		text-transform: uppercase;
-		/* padding: 1.5rem 0; */
+		display: inline-block;
+		font-size: 2rem;
+		padding: 0 2rem;
+		flex-grow: 0;
+		margin-bottom: 1rem;
+	}
+
+	.blog-link:hover {
+		background: var(--white);
+		color: var(--near-black);
+		border-radius: 0;
+	}
+
+	.blog-link span {
+		transition: all 0.2s ease-in-out;
+	}
+
+	.blog-link:hover span {
+		padding-right: 2rem;
 	}
 
 	@media screen and (min-width: 968px) {

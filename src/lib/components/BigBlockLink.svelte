@@ -35,7 +35,8 @@
 		grid-column-start: 1;
 		grid-column-end: 1;
 		background-color: var(--color);
-		border-radius: 1rem;
+		border-radius: 2rem;
+		border: var(--border-width) solid var(--foreground);
 		overflow: hidden;
 		gap: 1.5rem;
 	}
@@ -45,8 +46,7 @@
 	}
 
 	a:hover {
-		transform: scale(1.01);
-		box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+		border-radius: 0;
 	}
 
 	.text {

@@ -35,6 +35,8 @@
 		font-family: var(--header-font-family);
 		width: 100%;
 		background-color: var(--bgColor);
+		border-top: 4px solid var(--titleColor);
+		border-bottom: 4px solid var(--titleColor);
 		color: var(--titleColor);
 		flex-direction: column;
 		padding: 1rem 0;

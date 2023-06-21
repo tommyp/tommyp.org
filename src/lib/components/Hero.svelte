@@ -17,7 +17,7 @@
 		grid-column-end: 13;
 		color: var(--near-black);
 		padding: 0.25rem 1rem;
-		border-bottom: var(--border-width) solid var(--border-color);
+		border-bottom: calc(var(--border-width) * 3) solid var(--border-color);
 		/* text-shadow: 0 0 0.05rem var(--background); */
 	}
 
