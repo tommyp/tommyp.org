@@ -17,7 +17,9 @@
 <section>
 	<Hero />
 	<div class="blog">
-		<a class="blog-link" href="/blog"><h2><span>Blog posts</span> &rarr;</h2> </a>
+		<a class="blog-link" href="/blog"
+			><h2><span class="text">Blog posts</span> <span class="arrow">&rarr;</span></h2>
+		</a>
 		<Grid>
 			{#each recentPosts as recentPost}
 				<BigBlockLink
@@ -55,7 +57,7 @@
 		text-transform: uppercase;
 		display: inline-block;
 		font-size: 2rem;
-		padding: 0 2rem;
+		padding: 0.5rem 2rem;
 		flex-grow: 0;
 		margin-bottom: 1rem;
 	}
@@ -70,7 +72,17 @@
 		transition: all 0.2s ease-in-out;
 	}
 
-	.blog-link:hover span {
+	.blog-link .arrow {
+		display: inline-block;
+		transform: rotate(90deg);
+		transition: all 0.2s ease-in-out;
+	}
+
+	.blog-link:hover .arrow {
+		transform: rotate(0deg);
+	}
+
+	.blog-link:hover .text {
 		padding-right: 2rem;
 	}
 
