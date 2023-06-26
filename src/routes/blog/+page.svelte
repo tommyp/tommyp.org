@@ -17,6 +17,7 @@
 					href={post.path}
 					title={post.meta.title}
 					subtitle={post.meta.subtitle}
+					date={post.meta.date}
 					--color={post.meta.titleBgColor}
 					--foreground={post.meta.titleColor}
 					--grid-col-start="1"

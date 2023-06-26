@@ -16,5 +16,6 @@ export interface PostSummary {
 		titleColor: string;
 		titleBgColor: string;
 		inverse: boolean;
+		date: string;
 	};
 }

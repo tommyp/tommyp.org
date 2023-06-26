@@ -4,6 +4,7 @@
 	export let subtitle: string = null;
 	export let emoji: string = null;
 	export let inverse: boolean = false;
+	export let date: string = null;
 
 	$: isInverse = inverse ? 'inverse' : '';
 </script>
@@ -19,6 +20,13 @@
 		{#if subtitle}
 			<div class="subtitle">
 				<h5>{subtitle}</h5>
+				{#if date}
+					<h5>
+						{new Date(date).toLocaleDateString('en-GB', {
+							dateStyle: 'full'
+						})}
+					</h5>
+				{/if}
 			</div>
 		{/if}
 	</div>
@@ -53,6 +61,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+		width: 100%;
 	}
 
 	.emoji {
@@ -85,6 +94,8 @@
 		font-family: var(--header-font-family);
 		font-size: 1.25rem;
 		color: var(--primary);
+		display: flex;
+		justify-content: space-between;
 	}
 
 	@media screen and (min-width: 968px) {

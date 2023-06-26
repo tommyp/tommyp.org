@@ -27,6 +27,7 @@
 					title={recentPost.meta.title}
 					subtitle={recentPost.meta.subtitle}
 					inverse={recentPost.meta.inverse}
+					date={recentPost.meta.date}
 					--color={recentPost.meta.titleBgColor}
 					--foreground={recentPost.meta.titleColor}
 					--grid-col-start="1"
@@ -56,7 +57,7 @@
 		text-decoration: none;
 		text-transform: uppercase;
 		display: inline-block;
-		font-size: 2rem;
+		font-size: 1rem;
 		padding: 0.5rem 2rem;
 		flex-grow: 0;
 		margin-bottom: 1rem;
@@ -90,6 +91,10 @@
 		.blog {
 			margin: 2rem 0;
 			padding: 0 4rem;
+		}
+
+		.blog-link {
+			font-size: 2rem;
 		}
 	}
 </style>
