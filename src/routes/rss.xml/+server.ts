@@ -76,7 +76,11 @@ export const GET: RequestHandler = async () => {
 			title: post.meta.title,
 			url: 'https://www.tommyp.org' + `/${post.path}`,
 			date: post.meta.date,
-			description: post.meta.subtitle
+			description: `
+			<h3>${post.meta.subtitle}</h3>
+			
+			${post.content.html}
+			`
 		});
 	});
 
