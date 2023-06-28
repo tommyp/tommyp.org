@@ -138,7 +138,7 @@
 		}
 
 		h2 {
-			padding: 0 2rem 1.5rem;
+			padding: 1rem 2rem 1.5rem;
 		}
 
 		:global(.post h2) {
@@ -162,6 +162,15 @@
 
 		:global(.post ul) {
 			padding-left: 1.5rem;
+		}
+
+		:global(.post h2) {
+			margin: 3rem 0 1.5rem 0;
+		}
+
+		:global(.post code) {
+			font-size: 1.25rem;
+			line-height: 0.5;
 		}
 	}
 </style>
