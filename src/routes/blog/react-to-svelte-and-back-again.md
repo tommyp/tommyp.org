@@ -34,7 +34,7 @@ const PhoenixSocketProvider = (props) => {
 		setSocket(sx);
 	}, []);
 
-	// join the channel
+	// ... join the channel, etc
 
 	return (
 		<PhoenixSocketContext.Provider
@@ -48,8 +48,10 @@ const PhoenixSocketProvider = (props) => {
 };
 ```
 
-And in the components
+And in the components:
 
+```javascript
+const { someChannel } = useContext(PhoenixSocketContext);
 ```
 
-```
+But with Svelte, instead of a provider component, I have a big `setupChannels` function that writes the result into a store.

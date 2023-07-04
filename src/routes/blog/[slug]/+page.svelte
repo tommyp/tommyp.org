@@ -3,6 +3,7 @@
 	import Wrapper from '$lib/components/Wrapper.svelte';
 	import type { Post } from '$lib/types';
 	export let data: Post;
+	import '$lib/styles/code-theme.css';
 
 	const inverse = data.inverse ? 'inverse' : '';
 </script>
@@ -168,9 +169,9 @@
 			margin: 3rem 0 1.5rem 0;
 		}
 
-		:global(.post code) {
-			font-size: 1.25rem;
-			line-height: 0.5;
+		:global(.post code[class*='language-']) {
+			font-size: 1rem;
+			line-height: 1;
 		}
 	}
 </style>
