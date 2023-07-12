@@ -17,8 +17,14 @@
 	let dropdownOpen = false;
 
 	onMount(() => {
+		let timer = null;
 		window.addEventListener('scroll', () => {
-			$scrollPosition = window.scrollY;
+			if (timer !== null) {
+				clearTimeout(timer);
+			}
+			timer = setTimeout(function () {
+				$scrollPosition = window.scrollY;
+			}, 50);
 		});
 	});
 

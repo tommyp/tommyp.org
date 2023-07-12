@@ -33,18 +33,22 @@
 
 	a {
 		color: var(--near-black);
-		text-decoration-color: var(--color);
+		text-decoration: none;
+		border: 2px solid var(--color);
+		padding: 0 0.5rem;
+		border-radius: 2rem;
 	}
 
 	a:hover {
-		color: var(--near-black);
-		border-radius: 5px;
+		color: #fff;
+		border-radius: 0;
+		background: var(--color);
 	}
 
 	@media screen and (min-width: 968px) {
 		section {
 			padding: 0 4rem;
-			line-height: 1.2;
+			line-height: 1.5;
 			font-size: 3.5rem;
 		}
 
