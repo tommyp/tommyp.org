@@ -11,7 +11,9 @@ A few months ago I decided to give Apple Music a shot.
 
 I've been a Spotify user on and off for years. Since I DJ, I resisted for a long time and stuck to listening to music that I had downloaded over the years.
 
-TODO: some stuff about using Spotify
+Eventually, I went all in on Spotify. My music _collection_ still lives locally, since it's required for DJing using Traktor. With my job and personal life existing on 2 different laptops, it also made it easy to listen to the same music everywhere.
+
+In our cloud based modern life, for most people, Spotify is now the way that music is discussed, shared, sourced, and listened to.
 
 So why switch?
 
@@ -23,4 +25,4 @@ Apple Music will happily work away without network access.
 
 ## The Apple Ecosystem
 
-I've been a Mac user for more than 15 years. I've got an iPhone, Airpod Pros, Apple Watch and a personal 14" Macbook Pro, along with one for work. It's safe to say I'm in deep when it comes to Apple's products.
+I've been a Mac user for more than 15 years. I've got an iPhone, Airpod Pros, Apple Watch, and a personal 14" Macbook Pro, along with one for work. It's safe to say I'm in deep when it comes to Apple's products.
