@@ -1,59 +1,123 @@
-<!-- <section class="tagline">
-	<h2>I make websites</h2>
-</section> -->
+<script lang="ts">
+	const links = [
+		{
+			background: '#e1e600',
+			color: '#000',
+			href: 'https://castrooms.com/',
+			text: 'CastRooms',
+			subtitle: 'Work'
+		},
+		{
+			href: 'https://lineup.fun',
+			text: 'Lineup',
+			subtitle: 'Spotify Playlist Generator',
+			background: '#95fc0f',
+			color: '#fc660f'
+		},
+		{
+			href: 'https://isitshortsweathertoday.com',
+			text: 'Shorts',
+			subtitle: 'World Famous Weather App',
+			background: '#cd3f1c',
+			color: '#fff'
+		}
+	];
+</script>
 
-<section class="sub">
-	<p>
-		I'm a product focussed and creative web developer. I write JavaScript and Elixir, and work at
-		<a class="castrooms" href="https://castrooms.com/">CastRooms</a>.
-	</p>
+<section>
+	<p>I'm a product focussed and creative web developer. I write JavaScript and Elixir.</p>
+
+	<div>
+		<ul>
+			{#each links as link}
+				<li style:--background={link.background}>
+					<a href={link.href} target="_blank" rel="noopener noreferrer">
+						<span class="subtitle">{link.subtitle}</span>
+						<span class="text">{link.text}</span>
+					</a>
+				</li>
+			{/each}
+		</ul>
+	</div>
 </section>
 
 <style>
 	section {
-		font-weight: bold;
 		font-family: var(--header-font-family);
 		grid-column-start: 1;
 		grid-column-end: 13;
 		color: var(--near-black);
-		padding: 0.25rem 1rem;
+		padding: 2rem 1rem;
 		border-bottom: calc(var(--border-width) * 3) solid var(--border-color);
-		/* text-shadow: 0 0 0.05rem var(--background); */
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+		font-size: 2rem;
 	}
 
-	h2 {
+	p {
 		font-weight: bold;
-		text-transform: uppercase;
-		margin: 0;
 	}
 
-	.castrooms {
-		--color: #e1e600;
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+	}
+
+	li {
+		font-size: 1.5rem;
+		width: 100%;
+	}
+	li .subtitle {
+		font-size: 1rem;
+		text-transform: uppercase;
 	}
 
 	a {
 		color: var(--near-black);
 		text-decoration: none;
-		border: 2px solid var(--color);
-		padding: 0 0.5rem;
-		border-radius: 2rem;
+		border: 2px solid var(--near-black);
+		padding: 0.5rem;
+		display: flex;
+		flex-direction: column;
+		/* overflow: hidden; */
+		transition: all 0.25s ease-in-out;
 	}
 
 	a:hover {
-		color: #fff;
 		border-radius: 0;
-		background: var(--color);
+		background: var(--background);
 	}
 
 	@media screen and (min-width: 968px) {
 		section {
-			padding: 0 4rem;
-			line-height: 1.5;
+			padding: 0 4rem 2rem;
+			line-height: 1.1;
+			font-size: 4rem;
+		}
+
+		p {
+			margin: 1.5rem 0;
+		}
+
+		ul {
+			flex-direction: row;
+			flex-wrap: nowrap;
+			gap: 2rem;
+		}
+
+		li {
+			width: 33%;
 			font-size: 3.5rem;
 		}
 
-		.tagline {
-			/* margin-top: 1.75rem; */
+		li a {
+			padding: 0.5rem 1rem;
+			border-radius: 2rem;
 		}
 	}
 </style>

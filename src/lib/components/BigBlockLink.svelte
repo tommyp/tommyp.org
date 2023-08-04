@@ -2,7 +2,6 @@
 	export let href: string;
 	export let title: string;
 	export let subtitle: string = null;
-	export let emoji: string = null;
 	export let inverse: boolean = false;
 	export let date: string = null;
 
@@ -10,18 +9,13 @@
 </script>
 
 <a {href} class:isInverse>
-	{#if emoji}
-		<div class="emoji">
-			{emoji}
-		</div>
-	{/if}
 	<div class="text">
 		<h3>{@html title}</h3>
 		{#if subtitle}
 			<div class="subtitle">
 				<h5>{subtitle}</h5>
 				{#if date}
-					<h5>
+					<h5 class="date">
 						{new Date(date).toLocaleDateString('en-GB', {
 							dateStyle: 'full'
 						})}
@@ -64,19 +58,6 @@
 		width: 100%;
 	}
 
-	.emoji {
-		font-size: 8rem;
-		margin: 0;
-		margin-left: -9rem;
-
-		transition: all 0.5s;
-	}
-
-	a:hover .emoji {
-		display: block;
-		margin-left: 0;
-	}
-
 	h5 {
 		font-size: 0.8rem;
 		font-weight: bold;
@@ -96,6 +77,12 @@
 		color: var(--primary);
 		display: flex;
 		justify-content: space-between;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	.date {
+		opacity: 0.5;
 	}
 
 	@media screen and (min-width: 968px) {
@@ -116,6 +103,10 @@
 			display: flex;
 			height: 100%;
 			justify-content: space-between;
+		}
+
+		.subtitle {
+			flex-direction: row;
 		}
 	}
 </style>
