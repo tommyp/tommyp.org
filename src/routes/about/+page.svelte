@@ -1,11 +1,14 @@
 <script>
 	import Grid from '$lib/components/Grid.svelte';
 	import Head from '$lib/components/Head.svelte';
+	import MastHeader from '$lib/components/MastHeader.svelte';
 	import Wrapper from '$lib/components/Wrapper.svelte';
+	import H1 from '$lib/components/html/H1.svelte';
 </script>
 
 <Head heading="About" />
 
+<MastHeader title="About The Author" --titleColor="#fff" --bgColor="var(--highlight)" />
 <Wrapper>
 	<section>
 		<article>
@@ -49,6 +52,7 @@
 <style>
 	section {
 		padding-top: 1rem;
+		color: var(--near-black);
 	}
 	.img {
 		grid-column-start: 8;
@@ -77,6 +81,12 @@
 			line-height: 1.5;
 			width: 100%;
 			max-width: 60rem;
+		}
+
+		article {
+			display: flex;
+			flex-direction: column;
+			gap: 1.5rem;
 		}
 	}
 </style>

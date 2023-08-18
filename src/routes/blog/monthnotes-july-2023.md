@@ -1,13 +1,15 @@
 ---
-title: 'Monthnotes: July 2023'
-date: '2023-08-07'
-subtitle: Wet wet wet
+title: 'Monthnotes: July & August 2023'
+date: '2023-09-01'
+subtitle:
 titleBgColor: '#06a4dd'
 titleColor: '#fff'
 draft: true
 ---
 
-[Wettest July on record](https://www.theguardian.com/uk-news/2023/aug/01/northern-ireland-and-parts-of-england-had-wettest-july-on-record). Again, it certainly felt like it.
+I missed the monthnotes for July. I didn't finish them until halfway through August. So why note roll them into one.
+
+Lots of camping with friends.
 
 ## Car trouble
 
@@ -22,3 +24,7 @@ I was meant to DJ on the Friday night, but a power cut delayed that to the Satur
 ## Dry camping
 
 The second weekend was at Eweleaze Farm - a family friendly temporary campsite near Weymouth that's full of fields, food stalls, and some entertainment. We walked along the coast one day to a nice pub.
+
+## Messy camping
+
+Then I went to Boomtown Fair. A huge festival that sets up a city for

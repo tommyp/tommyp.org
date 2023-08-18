@@ -11,7 +11,8 @@
 
 	const links: { path: string; text: string }[] = [
 		{ path: '/blog', text: 'Blog' },
-		{ path: '/about', text: 'About' }
+		{ path: '/about', text: 'About' },
+		{ path: '/uses', text: 'Uses' }
 	];
 
 	let dropdownOpen = false;

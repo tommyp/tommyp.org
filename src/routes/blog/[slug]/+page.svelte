@@ -4,6 +4,7 @@
 	import type { Post } from '$lib/types';
 	export let data: Post;
 	import '$lib/styles/code-theme.css';
+	import MastHeader from '$lib/components/MastHeader.svelte';
 
 	const inverse = data.inverse ? 'inverse' : '';
 </script>
@@ -11,12 +12,7 @@
 <Head heading={data.title} bgColor={data.titleBgColor} />
 
 <article style={`--bgColor: ${data.titleBgColor}; --titleColor: ${data.titleColor || '#fff'}`}>
-	<header class:inverse>
-		<Wrapper>
-			<h1>{data.title}</h1>
-			<h2>{data.subtitle}</h2>
-		</Wrapper>
-	</header>
+	<MastHeader title={data.title} subtitle={data.subtitle} />
 
 	<Wrapper>
 		<section class="post">

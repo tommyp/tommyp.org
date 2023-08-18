@@ -2,6 +2,7 @@
 	import BigBlockLink from '$lib/components/BigBlockLink.svelte';
 	import Grid from '$lib/components/Grid.svelte';
 	import Head from '$lib/components/Head.svelte';
+	import MastHeader from '$lib/components/MastHeader.svelte';
 	import Wrapper from '$lib/components/Wrapper.svelte';
 	import type { Post, PostSummary } from '$lib/types';
 	export let data: { posts: Array<PostSummary> };
@@ -9,10 +10,16 @@
 
 <Head heading="Blog" />
 
+<MastHeader
+	title="Blog posts"
+	subtitle="Thoughts via the written word"
+	--titleColor="#000"
+	--bgColor="#fff"
+/>
 <section>
 	<Wrapper>
 		<Grid>
-			<h2><span class="text">Blog posts</span></h2>
+			<!-- <h2><span class="text">Blog posts</span></h2> -->
 			{#each data.posts as post}
 				<BigBlockLink
 					href={post.path}
