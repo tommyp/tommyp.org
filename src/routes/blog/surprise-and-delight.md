@@ -20,7 +20,7 @@ I can't wait to play with it more.
 
 ## Juicy
 
-After Worlde was sold, I listened to an episode of the [Syntax podcast which interviewed Josh Wardle](https://open.spotify.com/episode/4wpsgfXprwWN4QzyaDkX3Z?si=b10e178af6e640ff). In it, he brought up a talk on the concept of _Juice_ in game design.
+After Wordle was sold, I listened to an episode of the [Syntax podcast which interviewed Josh Wardle](https://open.spotify.com/episode/4wpsgfXprwWN4QzyaDkX3Z?si=b10e178af6e640ff). In it, he brought up a talk on the concept of _Juice_ in game design.
 
 <iframe src="https://www.youtube.com/embed/Fy0aCDmgnxg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
