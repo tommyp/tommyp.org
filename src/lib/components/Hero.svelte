@@ -1,4 +1,6 @@
 <script lang="ts">
+	import Wrapper from './Wrapper.svelte';
+
 	const links = [
 		{
 			background: '#e1e600',
@@ -25,20 +27,22 @@
 </script>
 
 <section>
-	<p>I'm a product focussed and creative web developer. I write JavaScript and Elixir.</p>
+	<Wrapper>
+		<p>I'm a product focussed and creative web developer. I write JavaScript and Elixir.</p>
 
-	<div>
-		<ul>
-			{#each links as link}
-				<li style:--background={link.background}>
-					<a href={link.href} target="_blank" rel="noopener noreferrer">
-						<span class="subtitle">{link.subtitle}</span>
-						<span class="text">{link.text}</span>
-					</a>
-				</li>
-			{/each}
-		</ul>
-	</div>
+		<div>
+			<ul>
+				{#each links as link}
+					<li style:--background={link.background}>
+						<a href={link.href} target="_blank" rel="noopener noreferrer">
+							<span class="subtitle">{link.subtitle}</span>
+							<span class="text">{link.text}</span>
+						</a>
+					</li>
+				{/each}
+			</ul>
+		</div>
+	</Wrapper>
 </section>
 
 <style>
