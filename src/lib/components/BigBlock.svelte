@@ -2,8 +2,6 @@
 	export let title: string;
 	export let subtitle: string = null;
 	export let emojiLeft: string = null;
-	export let emojiRight: string = null;
-	export let animation: string = null;
 </script>
 
 <section>
@@ -78,10 +76,6 @@
 		100% {
 			transform: translateY(0);
 		}
-	}
-
-	section:hover .bounce {
-		animation: bounce 1s infinite;
 	}
 
 	@media screen and (min-width: 968px) {

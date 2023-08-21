@@ -4,6 +4,7 @@ date: '2023-06-06'
 subtitle: Bank holidays everywhere, but none of them relaxing
 titleBgColor: '#1bf995'
 titleColor: '#951bf9'
+categories: [personal, monthnotes]
 ---
 
 ## Music has the right to children ascending the throne

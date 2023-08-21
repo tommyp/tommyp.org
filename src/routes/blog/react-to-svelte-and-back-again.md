@@ -5,6 +5,7 @@ subtitle: I love you Svelte but you're bringing me down
 titleBgColor: '#FF3E00'
 titleColor: 'white'
 draft: true
+categories: [software, svelte, react, elixir, work]
 ---
 
 Just as 2023 started, our product roadmap started to thin out. Will and Mitali, the co-founders of CastRooms, were focussed on pitching for the next few weeks. We decided I could use that time to tackle tech debt.

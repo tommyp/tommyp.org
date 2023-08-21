@@ -4,6 +4,7 @@ date: '2023-01-31'
 subtitle: Pink Elephants
 titleBgColor: '#db259e'
 titleColor: '#000'
+categories: [walthamstow]
 ---
 
 After moving to Walthamstow, I kept finding status of elephants all over the area. With no obvious clues to the reason or origin, it became a [real life Easter Egg](https://www.reddit.com/r/IRLEasterEggs/) in my life. I resigned myself to the fact that I would never know why or how Pink Elephants came to reside in my borough.

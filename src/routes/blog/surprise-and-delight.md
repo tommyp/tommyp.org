@@ -4,6 +4,7 @@ date: '2023-08-21'
 subtitle: Just for fun
 titleBgColor: 'color(display-p3 1 0.784 0.2)'
 titleColor: 'color(display-p3 0.424 0 1 / 1)'
+categories: [games, ui, design, software]
 ---
 
 I just got my [Playdate](https://play.date/) a few days ago. A tiny yellow square of fun. From the moment you turn it on, it provides so much joy. I had a smile on my face even during initial setup. Once you get going, the intro tutorial that teaches you the controls is a delight.

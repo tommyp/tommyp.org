@@ -3,6 +3,7 @@ title: Once more, with feeling
 date: '2022-11-11'
 subtitle: Let's give this another go
 titleBgColor: '#dd00ee'
+categories: [blog, personal]
 ---
 
 Yet again, here I am, attempting to blog **regularly**.

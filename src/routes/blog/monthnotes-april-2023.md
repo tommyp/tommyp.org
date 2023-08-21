@@ -4,6 +4,7 @@ date: '2023-05-1'
 subtitle: Obrigado
 titleBgColor: '#DA291C'
 titleColor: '#FFE900'
+categories: [personal, monthnotes]
 ---
 
 I started writing this straight after my last one. That's some personal growth right there. I did only manage this sentence, but still.

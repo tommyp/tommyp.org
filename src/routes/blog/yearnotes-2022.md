@@ -5,6 +5,7 @@ subtitle: Here we go again
 titleBgColor: '#efaf11'
 inverse: true
 draft: true
+categories: ['yearnotes']
 ---
 
 2022 was a very good year.

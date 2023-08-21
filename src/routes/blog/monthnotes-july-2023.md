@@ -5,6 +5,7 @@ subtitle:
 titleBgColor: '#06a4dd'
 titleColor: '#fff'
 draft: true
+categories: [personal, monthnotes]
 ---
 
 I missed the monthnotes for July. I didn't finish them until halfway through August. So why note roll them into one.

@@ -27,34 +27,6 @@
 </article>
 
 <style>
-	header {
-		display: flex;
-		font-family: var(--header-font-family);
-		width: 100%;
-		background-color: var(--bgColor);
-		border-top: 4px solid var(--titleColor);
-		border-bottom: 4px solid var(--titleColor);
-		color: var(--titleColor);
-		flex-direction: column;
-		padding: 1rem 0;
-	}
-
-	header.inverse {
-		color: var(--near-black);
-	}
-
-	h1 {
-		font-weight: bold;
-		font-size: 2rem;
-	}
-
-	h2 {
-		font-size: 0.8rem;
-		font-weight: bold;
-		margin: 0;
-		text-transform: uppercase;
-	}
-
 	section {
 		color: var(--near-black);
 		padding-top: 1rem;
@@ -125,19 +97,6 @@
 	}
 
 	@media (min-width: 968px) {
-		header {
-			padding: 0.5rem 0;
-		}
-		h1 {
-			font-size: 5rem;
-			line-height: 1;
-			padding: 1rem 2rem 0rem;
-		}
-
-		h2 {
-			padding: 1rem 2rem 1.5rem;
-		}
-
 		:global(.post h2) {
 			font-size: 3rem;
 			line-height: 1;

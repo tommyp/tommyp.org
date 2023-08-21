@@ -4,6 +4,7 @@ date: '2022-12-24'
 subtitle: Beer and cheese
 titleBgColor: '#00ff00'
 titleColor: '#000'
+categories: [personal, monthnotes]
 ---
 
 - We finished off a load of DIY just in time for Christmas. After owning the house for a year, it's nice to have least done half of it. Our house is starting to feel like ours.

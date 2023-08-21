@@ -4,6 +4,7 @@ date: '2023-07-04'
 subtitle: Hot hot heat
 titleBgColor: '#ef3123'
 titleColor: '#fff'
+categories: [personal, monthnotes]
 ---
 
 [Hotted June on record for the UK](https://www.theguardian.com/uk-news/2023/jul/03/fears-of-further-fish-deaths-after-hottest-june-in-uk-history). It certainly felt like it.

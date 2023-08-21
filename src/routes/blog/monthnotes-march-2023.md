@@ -4,6 +4,7 @@ date: '2023-04-10'
 subtitle: pubs crawls
 titleBgColor: '#4cb1e0'
 titleColor: '#fff'
+categories: [personal, monthnotes]
 ---
 
 I'm late again, but getting better.

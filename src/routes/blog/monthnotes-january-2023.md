@@ -4,6 +4,7 @@ date: '2023-02-09'
 subtitle: Wet Jan
 titleBgColor: '#77ddd8'
 titleColor: '#000'
+categories: [personal, monthnotes]
 ---
 
 Yeah, yeah. I realise I'm late.
