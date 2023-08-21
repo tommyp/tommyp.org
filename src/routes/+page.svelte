@@ -16,26 +16,28 @@
 <Head />
 <section>
 	<Hero />
-	<div class="blog">
-		<a class="blog-link" href="/blog"
-			><h2><span class="text">Blog posts</span> <span class="arrow">&rarr;</span></h2>
-		</a>
-		<Grid>
-			{#each recentPosts as recentPost}
-				<BigBlockLink
-					href={recentPost.path}
-					title={recentPost.meta.title}
-					subtitle={recentPost.meta.subtitle}
-					inverse={recentPost.meta.inverse}
-					date={recentPost.meta.date}
-					--color={recentPost.meta.titleBgColor}
-					--foreground={recentPost.meta.titleColor}
-					--grid-col-start="1"
-					--grid-col-end="13"
-				/>
-			{/each}
-		</Grid>
-	</div>
+	<Wrapper>
+		<div class="blog">
+			<a class="blog-link" href="/blog"
+				><h2><span class="text">Blog posts</span> <span class="arrow">&rarr;</span></h2>
+			</a>
+			<Grid>
+				{#each recentPosts as recentPost}
+					<BigBlockLink
+						href={recentPost.path}
+						title={recentPost.meta.title}
+						subtitle={recentPost.meta.subtitle}
+						inverse={recentPost.meta.inverse}
+						date={recentPost.meta.date}
+						--color={recentPost.meta.titleBgColor}
+						--foreground={recentPost.meta.titleColor}
+						--grid-col-start="1"
+						--grid-col-end="13"
+					/>
+				{/each}
+			</Grid>
+		</div>
+	</Wrapper>
 </section>
 
 <style>
@@ -43,10 +45,6 @@
 		margin-top: 0rem;
 		display: flex;
 		flex-direction: column;
-	}
-
-	.blog {
-		padding: 1rem;
 	}
 
 	.blog-link {
@@ -90,7 +88,6 @@
 	@media screen and (min-width: 968px) {
 		.blog {
 			margin: 2rem 0;
-			padding: 0 4rem;
 		}
 
 		.blog-link {
