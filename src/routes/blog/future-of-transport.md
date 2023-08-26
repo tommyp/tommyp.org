@@ -4,6 +4,7 @@ date: '2023-01-21'
 subtitle: Two wheels good, four wheels bad
 titleBgColor: '#00d'
 titleColor: '#fff'
+categories: [personal]
 ---
 
 Lately, I've been thinking a lot about the future of transport.

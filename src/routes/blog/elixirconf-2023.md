@@ -4,6 +4,7 @@ date: '2023-04-30'
 subtitle: 'def handle_event'
 titleBgColor: '#ac00ea'
 titleColor: '#fff'
+categories: [elixir, conference, personal]
 ---
 
 I'm just back from ElixirConf EU. My first conference since the big C, and my first Elixir conference since 2016.

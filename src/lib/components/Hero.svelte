@@ -51,7 +51,7 @@
 		grid-column-start: 1;
 		grid-column-end: 13;
 		color: var(--near-black);
-		padding: 2rem 1rem;
+		padding: 2rem 0;
 		border-bottom: calc(var(--border-width) * 3) solid var(--border-color);
 		display: flex;
 		flex-direction: column;
@@ -99,7 +99,7 @@
 
 	@media screen and (min-width: 968px) {
 		section {
-			padding: 0 4rem 2rem;
+			padding: 0 0 2rem;
 			line-height: 1.1;
 			font-size: 4rem;
 		}

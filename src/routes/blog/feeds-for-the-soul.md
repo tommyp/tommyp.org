@@ -4,6 +4,7 @@ date: '2023-06-29'
 subtitle: Really simple sites
 titleBgColor: '#ff7800'
 titleColor: 'white'
+categories: [internet, culture, rss]
 ---
 
 2023 has been the year of big tech in some sort of self imposed death spiral. Management at Twitter and Reddit seem steadfast in fucking over their most diehard users.
