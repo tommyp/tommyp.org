@@ -41,7 +41,7 @@
 
 	@media (min-width: 968px) {
 		header {
-			padding: 0.5rem 0 2.5rem;
+			padding: 0.5rem 0 1.5rem;
 		}
 		h1 {
 			font-size: 5rem;
