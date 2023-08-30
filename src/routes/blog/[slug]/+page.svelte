@@ -9,7 +9,7 @@
 	const inverse = data.inverse ? 'inverse' : '';
 </script>
 
-<Head heading={data.title} bgColor={data.titleBgColor} />
+<Head heading={data.title} bgColor={data.titleBgColor} description={data.subtitle} />
 
 <article style={`--bgColor: ${data.titleBgColor}; --titleColor: ${data.titleColor || '#fff'}`}>
 	<MastHeader title={data.title} subtitle={data.subtitle} />

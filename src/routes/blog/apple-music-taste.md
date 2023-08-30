@@ -4,6 +4,7 @@ date: '2023-07-16'
 subtitle: Dance to the beat of the drum
 titleBgColor: '#fc3c44'
 titleColor: '#fff'
+categories: ['music', 'tech', 'apple']
 ---
 
 A few months ago I decided to give Apple Music a shot.

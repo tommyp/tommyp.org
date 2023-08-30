@@ -5,6 +5,7 @@ subtitle: 'The search for ultimate productivity'
 titleBgColor: '#140a51'
 titleColor: '#fff'
 draft: true
+categories: ['tech', 'productivity']
 ---
 
 As long as I’ve owned a Mac, I’ve avoided the Dock.
