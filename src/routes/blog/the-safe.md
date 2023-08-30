@@ -1,5 +1,5 @@
 ---
-title: The safe
+title: The Safe
 date: '2023-08-30'
 subtitle: Entering and breaking
 titleBgColor: '#aaa'
