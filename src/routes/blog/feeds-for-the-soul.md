@@ -21,7 +21,7 @@ In the spirit _be the change you want to see in the World_, I've changed my feed
 
 On Mastodon, [Ethan Marcotte](https://ethanmarcotte.com/) posted [asking for some recommendations](https://follow.ethanmarcotte.com/@beep/110622733547605386).
 
-<iframe src="https://follow.ethanmarcotte.com/@beep/110622733547605386/embed" class="mastodon-embed" style="max-width: 100%; border: 0" width="400" height="250" allowfullscreen="allowfullscreen"></iframe>
+<iframe title="Ethan Marcotte's post on Mastodon" src="https://follow.ethanmarcotte.com/@beep/110622733547605386/embed" class="mastodon-embed" style="max-width: 100%; border: 0" width="400" height="250" allowfullscreen="allowfullscreen"></iframe>
 
 I responded with [Brr.fyi](https://brr.fyi/). A blog from a worker at [McMurdo Station](https://en.wikipedia.org/wiki/McMurdo_Station). It's a look into the mundane but fascinating things that go on when you put humans into one of the places on Earth that humans aren't built for. What other kind of writing would give me an insight into [all the different types of doors that they have](https://brr.fyi/posts/doors-of-mcmurdo)?
 

@@ -69,10 +69,10 @@ It didn't last long.
 
 We were in.
 
-![](/images/blog/the-safe/safe_1.jpeg)
-![](/images/blog/the-safe/safe_2.jpeg)
-![](/images/blog/the-safe/safe_3.jpeg)
-![](/images/blog/the-safe/safe_4.jpeg)
+![The Safe itself](/images/blog/the-safe/safe_1.jpeg)
+![Getting it open](/images/blog/the-safe/safe_2.jpeg)
+![Breaking the concrete lining](/images/blog/the-safe/safe_3.jpeg)
+![Finally in](/images/blog/the-safe/safe_4.jpeg)
 
 _Finally cracking the safe_.
 
