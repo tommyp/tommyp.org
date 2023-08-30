@@ -3,11 +3,12 @@
 
 	export let heading = undefined;
 	export let bgColor = '04d704';
+	export let textColor = '000000';
 </script>
 
 {#if heading}
 	<div style={`background: #${bgColor};`} class="combo">
-		<p class="big-text">
+		<p class="big-text" style={`color: #${textColor};`}>
 			{unescape(heading)}
 		</p>
 		<p class="footer">Tommy Palmer is a web developer in London</p>

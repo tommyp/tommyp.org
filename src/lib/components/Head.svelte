@@ -3,12 +3,14 @@
 
 	export let heading: string = undefined;
 	export let bgColor: string = undefined;
+	export let textColor: string = undefined;
 	export let description = 'Creative web developer, working in JavaScript, Ruby & Elixir.';
 
 	const ogParams: URLSearchParams = new URLSearchParams();
 	$: if (heading) {
 		ogParams.set('heading', escape(heading));
 		ogParams.set('bgColor', bgColor?.replace('#', ''));
+		ogParams.set('textColor', textColor?.replace('#', ''));
 	}
 
 	const title = `${heading ? `${heading} | ` : ''}Tommy Palmer | Web Developer based in London`;

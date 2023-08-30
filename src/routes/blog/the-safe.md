@@ -9,7 +9,7 @@ categories: ['personal']
 
 Two years ago, I made an amazing discovery.
 
-My girlfriend, Lila, and I, were a week into home ownership. Our first home together. We were still unpacking and deciding where to store everything.
+My girlfriend Lila, and I, were a week into home ownership. Our first home together. We were still unpacking and deciding where to store everything.
 
 It was a Saturday morning. A friend was dropping round to give us his old drill. Just as he arrived, I crawled into the cupboard under the stairs to start packing away our camping and festival gear. Summer things that wouldn't be used for another ten months.
 
@@ -29,7 +29,7 @@ So we now own a locked safe. Next thing is to break into it.
 
 I was sure to capitalise on this discovery by sharing it online. Straight away I posted it on Reddit and Twitter. The comments had the same thoughts that I had - what was in it?
 
-I tried to move it out from under the stairs, but it wouldn't budge. A couple of minutes with a crowbar moved it enough to shine a torch behind it and see that it was bolted to the wall. Now we know it's both locked and not moving from that spot.
+I tried to move it out from under the stairs, but it wouldn't budge. A couple of minutes with a crowbar moved it enough to shine a torch behind it and see that it was bolted to the wall from the inside. Now we know it's both locked and not moving from that spot.
 
 The immovable secure storage under our stairs wasn't a huge priority, so it sat there, silently taunting me. What secrets did it hold?
 
@@ -41,19 +41,19 @@ Months go by.
 
 Friends ask me _"How's the house going?"_ only to cut off my answer with the real question - _"What about the safe?"_
 
-As part of some DIY we got the front door lock changed. I ask the locksmith can he crack safes. No, but he know's someone who can.
+As part of some DIY we got the front door lock changed. I asked the locksmith can he crack safes. No, but he know's someone who can.
 
 WhatsApp messages go back and forward. Photos and explanations.
 
 Then, silence.
 
-He's stopped replying.
+He stopped replying.
 
 The mystery lived on.
 
 ## Breaking in
 
-So now it's August 2023. A Bank Holiday weekend. We're starting renovations on the downstairs. My mate Chris is our plumber and working on moving our boiler. I mention _The Safe_. It's next to our gas main, so he had a look while digging a trench out of our concrete underfloor.
+So now it's August 2023. A Bank Holiday weekend. We're starting renovations on the downstairs. My mate Chris is our plumber and working on moving our boiler. I mention _The Safe_. It's next to our gas main, so he had a look.
 
 > _"We'll have that out today"_
 
