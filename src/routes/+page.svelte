@@ -85,6 +85,10 @@
 		padding-right: 2rem;
 	}
 
+	.blog {
+		margin: 1rem 0;
+	}
+
 	@media screen and (min-width: 968px) {
 		.blog {
 			margin: 2rem 0;
