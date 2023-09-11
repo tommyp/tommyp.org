@@ -70,7 +70,7 @@
 		aspect-ratio: 16/9;
 	}
 
-	:global(.post h2) {
+	:global(.post h2, h3) {
 		font-size: 2rem;
 		font-weight: bold;
 		margin: 1rem 0 0.75rem 0;
