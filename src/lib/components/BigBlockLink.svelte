@@ -97,6 +97,7 @@
 
 		h3 {
 			font-size: 4rem;
+			margin-bottom: 0.5rem;
 		}
 
 		.text {
