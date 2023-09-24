@@ -12,9 +12,9 @@ export const GET = async ({ url }) => {
     })
     .filter((post) => !post.meta.draft);
 
-  if (category !== 'null') {
-    sortedPosts = sortedPosts.filter((post) => post.meta.categories.includes(category));
-  }
+  // if (category !== 'null') {
+  //   sortedPosts = sortedPosts.filter((post) => post.meta.categories.includes(category));
+  // }
 
   // console.log(category, sortedPosts)
 
