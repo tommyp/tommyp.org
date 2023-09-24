@@ -7,11 +7,11 @@ import RSS from 'rss';
 import { fetchMarkdownPosts } from '$lib/utils';
 
 const allPosts = await fetchMarkdownPosts().then((posts) => {
-	return posts
-		.filter((post) => !post.meta.draft)
-		.sort((a, b) => {
-			return new Date(b.meta.date).getTime() - new Date(a.meta.date).getTime();
-		});
+  return posts
+    .filter((post) => !post.meta.draft)
+    .sort((a, b) => {
+      return new Date(b.meta.date).getTime() - new Date(a.meta.date).getTime();
+    });
 });
 
 // const render = async () => {
@@ -65,29 +65,29 @@ const allPosts = await fetchMarkdownPosts().then((posts) => {
 // };
 
 export const GET: RequestHandler = async () => {
-	const feed = new RSS({
-		title: 'Tommy Palmer | Web Developer based in London',
-		site_url: 'https://www.tommyp.org',
-		feed_url: 'https://www.tommyp.org' + '/rss.xml'
-	});
+  const feed = new RSS({
+    title: 'Tommy Palmer | Web Developer based in London',
+    site_url: 'https://www.tommyp.org',
+    feed_url: 'https://www.tommyp.org' + '/rss.xml'
+  });
 
-	allPosts.forEach((post) => {
-		feed.item({
-			title: post.meta.title,
-			url: 'https://www.tommyp.org' + `/${post.path}`,
-			date: post.meta.date,
-			description: `
+  allPosts.forEach((post) => {
+    feed.item({
+      title: post.meta.title,
+      url: 'https://www.tommyp.org' + `/${post.path}`,
+      date: post.meta.date,
+      description: `
 			<h3>${post.meta.subtitle}</h3>
-			
+
 			${post.content.html}
 			`
-		});
-	});
+    });
+  });
 
-	return new Response(feed.xml({ indent: true }), {
-		headers: {
-			'Cache-Control': `max-age=0, s-maxage=${600}`, // 10 minutes
-			'Content-Type': 'application/rss+xml'
-		}
-	});
+  return new Response(feed.xml({ indent: true }), {
+    headers: {
+      'Cache-Control': `max-age=0, s-maxage=${600}`, // 10 minutes
+      'Content-Type': 'application/rss+xml'
+    }
+  });
 };

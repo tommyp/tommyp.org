@@ -4,7 +4,7 @@ date: '2023-03-11'
 subtitle: let's give it another go
 titleBgColor: '#d1d1d1'
 titleColor: '#000'
-categories: [tv, books, games]
+categories: [tv, books, games, culture]
 ---
 
 If you ever meet me, I could happily talk for hours on end about TV, films, and videogames. One thing I love about all those things is how there are basically no whole original new ideas. [Everything is a remix](https://www.everythingisaremix.info/), and then, every so often, something comes along so completely unlike everything else before it that it reinvents the genre - or even the medium.

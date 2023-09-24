@@ -5,13 +5,16 @@
 	import MastHeader from '$lib/components/MastHeader.svelte';
 	import Wrapper from '$lib/components/Wrapper.svelte';
 	import type { Post, PostSummary } from '$lib/types';
-	export let data: { posts: Array<PostSummary> };
+	import { toTitleCase } from '$lib/utils';
+	export let data: { category: String; posts: Array<PostSummary> };
+
+	$: ({ category, posts } = data);
 </script>
 
 <Head heading="Blog" />
 
 <MastHeader
-	title="Blog posts"
+	title={category ? `${toTitleCase(category)} blog posts` : 'Blog posts'}
 	subtitle="Thoughts via the written word"
 	--titleColor="#000"
 	--bgColor="#fff"
@@ -20,7 +23,7 @@
 	<Wrapper>
 		<Grid>
 			<!-- <h2><span class="text">Blog posts</span></h2> -->
-			{#each data.posts as post}
+			{#each posts as post}
 				<BigBlockLink
 					href={post.path}
 					title={post.meta.title}
