@@ -107,6 +107,7 @@
 		left: 50%;
 		top: calc(var(--scroll-top) + 0.5rem);
 		transform: translateX(-50%);
+		view-transition-name: header;
 	}
 
 	nav {
