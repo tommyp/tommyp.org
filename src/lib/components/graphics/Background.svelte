@@ -41,8 +41,8 @@
 		position: fixed;
 		top: 0;
 		bottom: 0;
-		height: 100vh;
-		width: 100vw;
+		height: 100dvh;
+		width: 100dvw;
 		background-color: #99e4ff;
 		background-image: radial-gradient(at 52% 0%, hsla(38, 69%, 75%, 1) 0px, transparent 50%),
 			radial-gradient(at 81% 32%, hsla(226, 62%, 75%, 1) 0px, transparent 50%),
