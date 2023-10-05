@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import Background from '$lib/components/graphics/Background.svelte';
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
@@ -6,17 +6,17 @@
 	import { onNavigate } from '$app/navigation';
 
 	onNavigate((navigation) => {
+		// @ts-ignore
 		if (!document.startViewTransition) return;
 
 		return new Promise((resolve) => {
+			// @ts-ignore
 			document.startViewTransition(async () => {
 				resolve();
 				await navigation.complete;
 			});
 		});
 	});
-
-	export let data;
 </script>
 
 <Background />
