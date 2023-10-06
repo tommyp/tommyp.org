@@ -33,6 +33,6 @@ Marks and Spencer's saw an opportunity to sell better sandwiches from branches b
 
 ## My hot ~~sandwich~~ take
 
-Ireland's reliance on train infrastructure is minimal compared to the UK, which means that Irish people don't have the same emotional or historical relationship as British people.
+Ireland's reliance on train infrastructure is minimal compared to the UK, which means that Irish people don't have the same emotional or historical relationship to train travel as British people.
 
 No train travel, no boxed sandwiches.
