@@ -29,7 +29,7 @@ I remember when most major sites had RSS feeds. Big organisations rallied around
 
 That was 2011. I was able to build something that could pull in data from all these different sources and display it in a way that was useful to me.
 
-Trying to pull together data for my exhibitions project left me dissapointed. The Tate, Natural History Museum, Wellcome Collection, V&A, and many others, were feedless. It's been a long time since I saw the little orange badge, but I expected better from this cultural institutions.
+Trying to pull together data for my exhibitions project left me dissapointed. The Tate, Natural History Museum, Wellcome Collection, V&A, and many others, were feedless. It's been a long time since I saw the little orange badge, but I expected better from these cultural institutions.
 
 ## Meaning in the madness
 
