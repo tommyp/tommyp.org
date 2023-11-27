@@ -1,0 +1,64 @@
+---
+const links = [
+  {
+    label: "About",
+    url: "/about/",
+  },
+  {
+    label: "Blog",
+    url: "/blog/",
+  },
+  {
+    label: "Contact",
+    url: "/contact/",
+  }
+];
+---
+
+<header>
+  
+  <ul>
+    <li>
+      <a href="/">Tommy Palmer</a>
+    </li>
+    {links.map((link) => (
+      <li>
+        <a href={link.url}>{link.label}</a>
+    </li>
+    ))}
+  </ul>
+</header>
+
+<style>
+  header {
+    display: flex;
+    align-items: center;
+  }
+
+  h1 {
+    margin: 0;
+    width: 20%;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    width: 100%;
+    justify-content: stretch;
+  }
+
+  li {
+    background-color: red;
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+</style>
