@@ -1,18 +1,125 @@
 ---
 import { getCollection } from 'astro:content';
-import Layout from "@/layouts/Layout.astro"
+import Layout from '../../layouts/Layout.astro';
 
 export async function getStaticPaths() {
-  const blogEntries = await getCollection('blog');
-  return blogEntries.map(entry => ({
-    params: { slug: entry.slug }, props: { entry },
-  }));
+	const blogEntries = await getCollection('blog');
+	return blogEntries.map((entry) => ({
+		params: { slug: entry.slug },
+		props: { entry }
+	}));
 }
 
 const { entry } = Astro.props;
 const { Content } = await entry.render();
+
+
+const date = new Date(entry.data.date).toLocaleDateString('en-GB', { dateStyle: 'full'})
 ---
 
-<Layout>
-<Content/>
+<Layout title={`${entry.data.title} | Tommy Palmer`}>
+	<section
+		style={{
+			'--title-color': entry.data.titleColor,
+			'--background-color': entry.data.titleBgColor
+		}}
+	>
+		<header>
+			<h1>{entry.data.title}</h1>
+			<div class="subtitle">
+			<h2>{entry.data.subtitle}</h2> 
+			</div>
+			
+
+		</header>
+		<article>
+			<Content />
+			<small>Published on {date}</small>
+		</article>
+	</section>
 </Layout>
+
+<style>
+	section {
+		padding: var(--margin-6xl) 0rem 0;
+	}
+	article {
+		max-width: 70rem;
+		/* margin: 0 auto; */
+		font-size: 1.5rem;
+		padding: 0 1rem;
+	}
+
+	header {
+		padding: 1rem;
+		color: var(--title-color);
+		background-color: var(--background-color);
+	}
+
+	h1 {
+		font-size: var(--text-3xl);
+		line-height: 1;
+	}
+
+	.subtitle {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.subtitle h2 {
+		font-size: var(--text-xl);
+		line-height: 1;
+	}
+
+	.tags {
+		font-size: var(--text-lg);
+	}
+
+	.tags ul {
+		list-style: none;
+		display: inline-flex;
+		font-size: var(--text-lg);
+	}
+
+	.tags li {
+		display: inline;
+		margin-right: 0.5rem;
+	}
+
+	.tags li:not(:last-child)::after {
+		content: ", ";
+	}
+</style>
+
+<style is:global>
+	article {
+		margin-top: var(--margin-xl);
+	}
+
+	article p {
+		font-size: var(--text-xl);
+		line-height: 1.25;
+		margin-bottom: var(--margin-xl);
+		text-wrap: pretty;
+	}
+
+	article a {
+		color: var(--text-color);
+		text-decoration-color: var(--background-color);
+	}
+
+	article a:hover {
+		color: var(--title-color);
+	}
+
+	article h2 {
+		font-size: var(--text-3xl);
+		line-height: 1.25;
+		margin-bottom: var(--margin-md)
+	}
+
+	blockquote {
+		border-left: 0.5rem solid var(--background-color);
+		padding-left: 1rem;
+	}
+</style>

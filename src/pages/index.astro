@@ -3,16 +3,27 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Tommy Palmer">
 	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
+		<div class="hero">
+			<h1>Hi, I'm Tommy. <br/>I'm a Web developer working at Sona.</h1>
+		</div>
 	</main>
 </Layout>
 
 <style>
+	main {
+		padding: var(--margin-6xl) 1rem 0;
+	}
 
+	h1 {
+		font-size: var(--text-5xl);
+		font-weight: bold;
+		font-style: italic;
+		line-height: 1;
+	}
+
+	.hero {
+		max-width: 66vw;
+	}
 </style>

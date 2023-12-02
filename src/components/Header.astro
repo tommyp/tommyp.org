@@ -1,64 +1,80 @@
 ---
 const links = [
-  {
-    label: "About",
-    url: "/about/",
-  },
-  {
-    label: "Blog",
-    url: "/blog/",
-  },
-  {
-    label: "Contact",
-    url: "/contact/",
-  }
+	{
+		label: 'Blog',
+		url: '/blog/'
+	},
+	{
+		label: 'About',
+		url: '/about/'
+	},
+	{
+		label: 'Contact',
+		url: '/contact/'
+	}
 ];
 ---
 
 <header>
-  
-  <ul>
-    <li>
-      <a href="/">Tommy Palmer</a>
-    </li>
-    {links.map((link) => (
-      <li>
-        <a href={link.url}>{link.label}</a>
-    </li>
-    ))}
-  </ul>
+	<ul>
+		<li>
+			<a href="/">Tommy P</a>
+		</li>
+		{
+			links.map((link) => (
+				<li>
+					<a href={link.url}>{link.label}</a>
+				</li>
+			))
+		}
+	</ul>
 </header>
 
 <style>
-  header {
-    display: flex;
-    align-items: center;
-  }
+	header {
+		font-weight: bold;
+		text-transform: uppercase;
+		font-size: var(--text-xl);
+		padding: 1rem 1rem 0;
+		position: fixed;
+		width: 100%;
+	}
 
-  h1 {
-    margin: 0;
-    width: 20%;
-  }
+	h1 {
+		margin: 0;
+	}
 
-  ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    width: 100%;
-    justify-content: stretch;
-  }
+	ul {
+		display: flex;
+		list-style: none;
+		margin: 0;
+		gap: 0.5rem;
+		flex-direction: column;
+		/* justify-items: stretch; */
+	}
 
-  li {
-    background-color: red;
-  }
+	li {
+		flex: 1;
+	}
 
-  a {
-    display: block;
-    text-decoration: none;
-    color: #000;
-  }
+	a {
+		width: 100%;
+		background-color: var(--button-background-color);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 0.5rem;
+		text-decoration: none;
+		color: var(--button-text-color);
+	}
 
-  a:hover {
-    text-decoration: underline;
-  }
+	a:hover {
+		text-decoration: underline;
+	}
+
+	@media (min-width: 576px){
+		ul {
+			flex-direction: row;
+		}
+	}
 </style>
