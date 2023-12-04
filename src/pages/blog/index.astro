@@ -1,0 +1,38 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import BlogHeader from '../../components/BlogHeader.astro';
+import {publishedPosts} from '../../lib/posts';
+---
+
+<Layout title="Blog">
+  <main>
+    <header>
+      <h1>Blog posts</h1>
+    </header>
+  {publishedPosts.map((post) => (
+    <div>
+      <a href={post.slug}>
+    <BlogHeader title={post.data.title} date={post.data.date} subtitle={post.data.subtitle} titleColor={post.data.titleColor} titleBgColor={post.data.titleBgColor} />
+      </a>
+    </div>
+  ))}
+  </main>
+</Layout>
+
+<style>
+  main {
+    padding-top: var(--margin-3xl);
+  }
+
+  header{
+    padding: 0 1rem;
+  }
+
+  h1 {
+    font-size: var(--text-6xl);
+  }
+
+  a {
+    text-decoration: none;
+  }
+</style>

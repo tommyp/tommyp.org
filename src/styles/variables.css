@@ -9,6 +9,10 @@
 	--text-color: var(--black-90);
 
 	--button-background-color: var(--white);
+	--border-color: var(--black-90);
+
+	--button-hover-background-color: var(--black-90);
+	--button-hover-text-color: var(--white);
 
 	/* text sizes */
 	--text-md: clamp(1rem, 1.5vw, 1.5rem);
@@ -36,6 +40,10 @@
 		--bg-color: var(--black-90);
 		--text-color: var(--grey-100);
 		--button-text-color: var(--black-90);
+		--border-color: var(--grey-100);
+
+		--button-hover-background-color: var(--white);
+		--button-hover-text-color: var(--black-90);
 	}
 }
 

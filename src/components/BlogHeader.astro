@@ -1,0 +1,34 @@
+---
+const { title, subtitle, titleColor, titleBgColor } = Astro.props;
+---
+<section>
+<h1>{title}</h1>
+<div class="subtitle">
+<h2>{subtitle}</h2> 
+</div>
+</section>
+
+<style define:vars={{titleColor, titleBgColor}}>
+  
+  section {
+		padding: 1rem;
+		color: var(--titleColor);
+		background-color: var(--titleBgColor);
+    border-top: 1px solid var(--border-color);
+	}
+
+	h1 {
+		font-size: var(--text-3xl);
+		line-height: 1;
+	}
+
+	.subtitle {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.subtitle h2 {
+		font-size: var(--text-xl);
+		line-height: 1;
+	}
+</style>

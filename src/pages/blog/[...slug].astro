@@ -1,10 +1,10 @@
 ---
-import { getCollection } from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
+import BlogHeader from '../../components/BlogHeader.astro';
+import {allPosts} from '../../lib/posts';
 
 export async function getStaticPaths() {
-	const blogEntries = await getCollection('blog');
-	return blogEntries.map((entry) => ({
+	return allPosts.map((entry) => ({
 		params: { slug: entry.slug },
 		props: { entry }
 	}));
@@ -25,12 +25,7 @@ const date = new Date(entry.data.date).toLocaleDateString('en-GB', { dateStyle: 
 		}}
 	>
 		<header>
-			<h1>{entry.data.title}</h1>
-			<div class="subtitle">
-			<h2>{entry.data.subtitle}</h2> 
-			</div>
-			
-
+			<BlogHeader title={entry.data.title} date={entry.data.date} subtitle={entry.data.subtitle} titleColor={entry.data.titleColor} titleBgColor={entry.data.titleBgColor} />
 		</header>
 		<article>
 			<Content />
@@ -48,12 +43,6 @@ const date = new Date(entry.data.date).toLocaleDateString('en-GB', { dateStyle: 
 		/* margin: 0 auto; */
 		font-size: 1.5rem;
 		padding: 0 1rem;
-	}
-
-	header {
-		padding: 1rem;
-		color: var(--title-color);
-		background-color: var(--background-color);
 	}
 
 	h1 {
