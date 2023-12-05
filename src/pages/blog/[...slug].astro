@@ -14,7 +14,7 @@ const { entry } = Astro.props;
 const { Content } = await entry.render();
 
 
-const date = new Date(entry.data.date).toLocaleDateString('en-GB', { dateStyle: 'full'})
+
 ---
 
 <Layout title={`${entry.data.title} | Tommy Palmer`}>
@@ -25,18 +25,18 @@ const date = new Date(entry.data.date).toLocaleDateString('en-GB', { dateStyle: 
 		}}
 	>
 		<header>
-			<BlogHeader title={entry.data.title} date={entry.data.date} subtitle={entry.data.subtitle} titleColor={entry.data.titleColor} titleBgColor={entry.data.titleBgColor} />
+			<BlogHeader post={entry.data} />
 		</header>
 		<article>
 			<Content />
-			<small>Published on {date}</small>
+			<!-- <small>Published on {date}</small> -->
 		</article>
 	</section>
 </Layout>
 
 <style>
 	section {
-		padding: var(--margin-6xl) 0rem 0;
+		/* padding: var(--margin-6xl) 0rem 0; */
 	}
 	article {
 		max-width: 70rem;

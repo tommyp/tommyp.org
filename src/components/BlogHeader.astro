@@ -1,34 +1,54 @@
 ---
-const { title, subtitle, titleColor, titleBgColor } = Astro.props;
+const { post: {title, subtitle, titleColor, titleBgColor, date}, hoverable } = Astro.props;
+const formattedDate = new Date(date).toLocaleDateString('en-GB', { dateStyle: 'full'})
 ---
-<section>
-<h1>{title}</h1>
-<div class="subtitle">
-<h2>{subtitle}</h2> 
-</div>
+<section class:list={["post-header", {hoverable: hoverable}]}>
+  <h1>{title}</h1>
+  <div class="subtitle">
+    <h2>{subtitle}</h2> 
+    <h3>{formattedDate}</h3>
+  </div>
 </section>
 
 <style define:vars={{titleColor, titleBgColor}}>
-  
   section {
 		padding: 1rem;
-		color: var(--titleColor);
-		background-color: var(--titleBgColor);
-    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    color: var(--titleColor);
+    background-color: var(--titleBgColor);
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 	}
 
+  section.hoverable {
+    color: var(--text-color);
+    background: none;
+  }
+
+  section.hoverable:hover {
+    color: var(--titleColor);
+		background-color: var(--titleBgColor);
+  }
+
+  
+
 	h1 {
-		font-size: var(--text-3xl);
+		font-size: var(--text-5xl);
 		line-height: 1;
 	}
 
 	.subtitle {
 		display: flex;
 		justify-content: space-between;
+    align-items: center;
 	}
 
-	.subtitle h2 {
+	h2 {
 		font-size: var(--text-xl);
 		line-height: 1;
 	}
+
+  h3 {
+    font-size: var(--text-sm);
+    font-weight: 400;
+  }
 </style>

@@ -21,9 +21,13 @@ const activeLink = links.find((link) => link.url === `/${currentPath}`);
 ---
 
 <header>
+	<nav>
 	<ul>
 		<li>
-			<a href="/">Tommy Palmer</a>
+			<h1>
+
+				<a href="/">Tommy Palmer</a>
+			</h1>
 		</li>
 		{
 			links.map((link) => (
@@ -33,6 +37,7 @@ const activeLink = links.find((link) => link.url === `/${currentPath}`);
 			))
 		}
 	</ul>
+</nav>
 </header>
 
 <style>
@@ -40,11 +45,13 @@ const activeLink = links.find((link) => link.url === `/${currentPath}`);
 		font-weight: bold;
 		text-transform: uppercase;
 		font-size: var(--text-lg);
-		position: fixed;
+		position: sticky;
 		width: 100%;
 	}
 
 	h1 {
+		font-size: inherit;
+		font-weight: inherit;
 		margin: 0;
 	}
 

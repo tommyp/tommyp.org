@@ -12,7 +12,7 @@ import {publishedPosts} from '../../lib/posts';
   {publishedPosts.map((post) => (
     <div>
       <a href={post.slug}>
-    <BlogHeader title={post.data.title} date={post.data.date} subtitle={post.data.subtitle} titleColor={post.data.titleColor} titleBgColor={post.data.titleBgColor} />
+        <BlogHeader post={post.data} hoverable={true} />
       </a>
     </div>
   ))}
@@ -21,11 +21,12 @@ import {publishedPosts} from '../../lib/posts';
 
 <style>
   main {
-    padding-top: var(--margin-3xl);
+    /* padding-top: var(--margin-3xl); */
   }
 
   header{
     padding: 0 1rem;
+    border-bottom: 1px solid var(--border-color);
   }
 
   h1 {
