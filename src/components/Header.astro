@@ -2,21 +2,20 @@
 const links = [
 	{
 		label: 'Blog',
-		url: '/blog/'
+		url: '/blog'
 	},
 	{
 		label: 'About',
-		url: '/about/'
+		url: '/about'
 	},
 	{
 		label: 'Contact',
-		url: '/contact/'
+		url: '/contact'
 	}
 ];
 
 const pathname = new URL(Astro.request.url).pathname;
-const currentPath = pathname.slice(1); // remove the first "/"
-
+const currentPath = pathname.split('/')[1];
 const activeLink = links.find((link) => link.url === `/${currentPath}`);
 ---
 
@@ -25,8 +24,7 @@ const activeLink = links.find((link) => link.url === `/${currentPath}`);
 	<ul>
 		<li>
 			<h1>
-
-				<a href="/">Tommy Palmer</a>
+				<a class={currentPath == "" ? "active" : ""} href="/">Tommy Palmer</a>
 			</h1>
 		</li>
 		{
@@ -77,7 +75,7 @@ const activeLink = links.find((link) => link.url === `/${currentPath}`);
 		padding: 0.25rem 0.5rem;
 	}
 
-	a:hover {
+	a.active, a:hover {
 		background-color: var(--button-hover-background-color);
 		color: var(--button-hover-text-color);
 	}

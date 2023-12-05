@@ -51,3 +51,7 @@ body {
 	background-color: var(--bg-color);
 	color: var(--text-color);
 }
+
+a {
+	transition: all 0.2s ease-in-out;
+}
