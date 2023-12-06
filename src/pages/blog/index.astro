@@ -11,7 +11,7 @@ import {publishedPosts} from '../../lib/posts';
     </header>
   {publishedPosts.map((post) => (
     <div>
-      <a href={post.slug}>
+      <a href={`/blog/${post.slug}`}>
         <BlogHeader post={post.data} hoverable={true} />
       </a>
     </div>
