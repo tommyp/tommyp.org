@@ -1,10 +1,10 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import BlogHeader from '../../components/BlogHeader.astro';
-import {allPosts} from '../../lib/posts';
+import { publishedPosts } from '../../lib/posts';
 
 export async function getStaticPaths() {
-	return allPosts.map((entry) => ({
+	return publishedPosts.map((entry) => ({
 		params: { slug: entry.slug },
 		props: { entry }
 	}));
@@ -73,10 +73,10 @@ const { Content } = await entry.render();
 	}
 
 	.tags li:not(:last-child)::after {
-		content: ", ";
+		content: ', ';
 	}
 
-	@media (min-width: 768px){
+	@media (min-width: 768px) {
 		article {
 			max-width: 66vw;
 		}
@@ -107,13 +107,13 @@ const { Content } = await entry.render();
 	article.post h2 {
 		font-size: var(--text-3xl);
 		line-height: 1.25;
-		margin-bottom: var(--margin-md)
+		margin-bottom: var(--margin-md);
 	}
 
 	article.post h3 {
 		font-size: var(--text-2xl);
 		line-height: 1.25;
-		margin-bottom: var(--margin-md)
+		margin-bottom: var(--margin-md);
 	}
 
 	article.post blockquote {

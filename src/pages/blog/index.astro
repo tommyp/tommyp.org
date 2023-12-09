@@ -1,6 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import BlogHeader from '../../components/BlogHeader.astro';
+import BlogHeaderLink from '../../components/BlogHeaderLink.astro';
 import {publishedPosts} from '../../lib/posts';
 ---
 
@@ -10,11 +10,7 @@ import {publishedPosts} from '../../lib/posts';
       <h1>Blog posts</h1>
     </header>
   {publishedPosts.map((post) => (
-    <div>
-      <a href={`/blog/${post.slug}`}>
-        <BlogHeader post={post.data} hoverable={true} />
-      </a>
-    </div>
+    <BlogHeaderLink post={post} />
   ))}
   </main>
 </Layout>

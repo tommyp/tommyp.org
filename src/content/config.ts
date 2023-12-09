@@ -9,7 +9,8 @@ const blogCollection = defineCollection({
 		subtitle: z.string().optional(),
 		titleColor: z.string().optional(),
 		titleBgColor: z.string().optional(),
-		categories: z.array(z.string())
+		categories: z.array(z.string()),
+		draft: z.boolean().optional()
 	})
 });
 // 3. Export a single `collections` object to register your collection(s)

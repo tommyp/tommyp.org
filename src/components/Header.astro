@@ -21,21 +21,23 @@ const activeLink = links.find((link) => link.url === `/${currentPath}`);
 
 <header>
 	<nav>
-	<ul>
-		<li>
-			<h1>
-				<a class={currentPath == "" ? "active" : ""} href="/">Tommy Palmer</a>
-			</h1>
-		</li>
-		{
-			links.map((link) => (
-				<li>
-					<a class={link == activeLink ? "active" : ""} href={link.url}>{link.label}</a>
-				</li>
-			))
-		}
-	</ul>
-</nav>
+		<ul>
+			<li>
+				<h1>
+					<a class={currentPath == '' ? 'active' : ''} href="/">Tommy Palmer</a>
+				</h1>
+			</li>
+			{
+				links.map((link) => (
+					<li>
+						<a class={link == activeLink ? 'active' : ''} href={link.url}>
+							{link.label}
+						</a>
+					</li>
+				))
+			}
+		</ul>
+	</nav>
 </header>
 
 <style>
@@ -43,7 +45,6 @@ const activeLink = links.find((link) => link.url === `/${currentPath}`);
 		font-weight: bold;
 		text-transform: uppercase;
 		font-size: var(--text-lg);
-		position: sticky;
 		width: 100%;
 	}
 
@@ -75,12 +76,13 @@ const activeLink = links.find((link) => link.url === `/${currentPath}`);
 		padding: 0.25rem 0.5rem;
 	}
 
-	a.active, a:hover {
+	a.active,
+	a:hover {
 		background-color: var(--button-hover-background-color);
 		color: var(--button-hover-text-color);
 	}
 
-	@media (min-width: 576px){
+	@media (min-width: 576px) {
 		ul {
 			flex-direction: row;
 		}

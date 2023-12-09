@@ -1,29 +1,69 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Marquee from '../components/Marquee.astro';
+import BlogHeaderLink from '../components/BlogHeaderLink.astro';
+import { publishedPosts } from '../lib/posts';
+
+const blogPosts = publishedPosts.slice(0, 3);
 ---
 
 <Layout title="Tommy Palmer">
 	<main>
 		<div class="hero">
-			<h1>Hi, I'm Tommy. <br/>I'm a Web developer working at Sona.</h1>
+			<div class="tagline">
+				<h1>Tommy Palmer is a <br />creative Web developer.</h1>
+			</div>
+			<a class="about" href="/about">
+				<Marquee>Would you like to know more?</Marquee>
+			</a>
+		</div>
+		<div class="blog-posts">
+			{blogPosts.map((post) => (
+				<BlogHeaderLink post={post} />
+			))}
 		</div>
 	</main>
 </Layout>
 
 <style>
 	main {
-		padding: var(--margin-6xl) 1rem 0;
+		/* padding: var(--margin-6xl) 1rem 0; */
 	}
 
 	h1 {
-		font-size: var(--text-5xl);
+		font-size: var(--text-6xl);
 		font-weight: bold;
 		font-style: italic;
 		line-height: 1;
+		text-align: center;
+	}
+
+	.tagline {
+		display: flex;
+		flex-direction: column;
+		height: 80dvh;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.hero {
-		max-width: 66vw;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		flex: 1;
+	}
+
+	.about {
+		border-top: 1px solid var(--border-color);
+		border-bottom: 1px solid var(--border-color);
+		text-decoration: none;
+		color: var(--text-color);
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+
+	.about:hover {
+		background-color: var(--button-hover-background-color);
+		color: var(--button-hover-text-color);
 	}
 </style>

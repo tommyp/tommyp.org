@@ -1,0 +1,46 @@
+<div class="marquee">
+	<div class="inner" aria-hidden="true">
+		<span><slot /></span>
+		<span><slot /></span>
+		<span><slot /></span>
+		<span><slot /></span>
+	</div>
+</div>
+
+<style>
+	.marquee {
+		position: relative;
+		overflow: hidden;
+		--offset: 25vw;
+		--move-initial: calc(-25% + var(--offset));
+		--move-final: calc(-50% + var(--offset));
+	}
+
+	.inner {
+		width: fit-content;
+		display: flex;
+		position: relative;
+		transform: translate3d(var(--move-initial), 0, 0);
+		animation: marquee 10s linear infinite;
+		animation-play-state: playing;
+	}
+
+	.marquee span {
+		font-size: var(--text-lg);
+		padding: 0 2vw;
+		text-wrap: nowrap;
+	}
+
+	.marquee:hover .inner {
+	}
+
+	@keyframes marquee {
+		0% {
+			transform: translate3d(var(--move-initial), 0, 0);
+		}
+
+		100% {
+			transform: translate3d(var(--move-final), 0, 0);
+		}
+	}
+</style>
