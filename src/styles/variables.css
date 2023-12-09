@@ -23,6 +23,10 @@
 	--text-4xl: clamp(5rem, 6vw, 6rem);
 	--text-5xl: clamp(6rem, 7vw, 7rem);
 	--text-6xl: clamp(7rem, 8vw, 8rem);
+	--text-7xl: clamp(8rem, 9vw, 9rem);
+	--text-8xl: clamp(9rem, 10vw, 10rem);
+	--text-9xl: clamp(10rem, 11vw, 11rem);
+	--text-10xl: clamp(11rem, 12vw, 12rem);
 
 	/* margins */
 	--margin-md: clamp(1rem, 1.5vw, 1.5rem);
