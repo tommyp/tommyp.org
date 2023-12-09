@@ -24,7 +24,7 @@ const { Content } = await entry.render();
 		<header>
 			<BlogHeader post={entry.data} />
 		</header>
-		<article>
+		<article class="post">
 			<Content />
 			<!-- <small>Published on {date}</small> -->
 		</article>
@@ -36,7 +36,7 @@ const { Content } = await entry.render();
 		/* padding: var(--margin-6xl) 0rem 0; */
 	}
 	article {
-		max-width: 70rem;
+		width: 100%;
 		/* margin: 0 auto; */
 		font-size: 1.5rem;
 		padding: 0 1rem;
@@ -75,43 +75,74 @@ const { Content } = await entry.render();
 	.tags li:not(:last-child)::after {
 		content: ", ";
 	}
+
+	@media (min-width: 768px){
+		article {
+			max-width: 66vw;
+		}
+	}
 </style>
 
 <style is:global>
-	article {
+	article.post {
 		margin-top: var(--margin-xl);
 	}
 
-	article p {
+	article.post p {
 		font-size: var(--text-xl);
 		line-height: 1.1;
 		margin-bottom: var(--margin-xl);
 		text-wrap: pretty;
 	}
 
-	article a {
+	article.post a {
 		color: var(--text-color);
 		text-decoration-color: var(--background-color);
 	}
 
-	article a:hover {
+	article.post a:hover {
 		color: var(--title-color);
 	}
 
-	article h2 {
+	article.post h2 {
 		font-size: var(--text-3xl);
 		line-height: 1.25;
 		margin-bottom: var(--margin-md)
 	}
 
-	article blockquote {
+	article.post h3 {
+		font-size: var(--text-2xl);
+		line-height: 1.25;
+		margin-bottom: var(--margin-md)
+	}
+
+	article.post blockquote {
 		border-left: 0.5rem solid var(--background-color);
 		padding-left: 1rem;
 	}
 
-	article iframe {
+	article.post iframe {
 		aspect-ratio: 16 / 9;
 		width: 100%;
-		margin-bottom: var(--margin-md);
+		margin-bottom: var(--margin-lg);
+	}
+
+	article.post p:has(img) {
+		margin: 0;
+		width: 100vw;
+
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+
+		overflow-y: scroll;
+		scroll-snap-type: y mandatory;
+	}
+
+	article.post p:has(img) > img {
+		width: auto;
+		max-height: 30rem;
+		object-fit: cover;
+		scroll-snap-align: start;
 	}
 </style>
