@@ -5,7 +5,7 @@
 	--grey-100: rgb(220, 220, 220);
 	--black-90: rgb(20, 20, 20);
 
-	--bg-color: var(--grey-100);
+	--bg-color: var(--white);
 	--text-color: var(--black-90);
 
 	--button-background-color: var(--white);
