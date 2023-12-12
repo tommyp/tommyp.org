@@ -4,7 +4,7 @@ import '../styles/reset.css';
 import '../styles/inter.css';
 import '../styles/variables.css';
 import 'open-props/style';
-import Header from '../components/Header.astro';
+import Header from '../components/Header.svelte';
 import Footer from '../components/Footer.astro';
 interface Props {
 	title: string;
@@ -27,8 +27,24 @@ const pageTitle = title ? `${title} | Tommy Palmer` : 'Tommy Palmer';
 		<ViewTransitions />
 	</head>
 	<body>
-		<Header />
-		<slot />
+		<Header pathName={new URL(Astro.request.url).pathname} client:load />
+		<main>
+			<slot />
+		</main>
 		<Footer />
+		<style>
+			main {
+				margin-top: 3rem;
+				display: flex;
+				flex: 1;
+				flex-direction: column;
+			}
+
+			@media (min-width: 768px) {
+				main {
+					margin-top: 0;
+				}
+			}
+		</style>
 	</body>
 </html>

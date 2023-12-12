@@ -11,8 +11,10 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.3.1",
+    "@astrojs/svelte": "^5.0.1",
     "astro": "^4.0.3",
     "open-props": "^1.6.16",
+    "svelte": "^5.0.0-next.1",
     "typescript": "^5.3.2"
   },
   "devDependencies": {
