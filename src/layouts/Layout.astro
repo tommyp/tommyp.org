@@ -5,6 +5,7 @@ import '../styles/inter.css';
 import '../styles/variables.css';
 import 'open-props/style';
 import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 interface Props {
 	title: string;
 }
@@ -28,5 +29,6 @@ const pageTitle = title ? `${title} | Tommy Palmer` : 'Tommy Palmer';
 	<body>
 		<Header />
 		<slot />
+		<Footer />
 	</body>
 </html>

@@ -54,6 +54,7 @@
 body {
 	background-color: var(--bg-color);
 	color: var(--text-color);
+	font-family: 'Inter', sans-serif;
 }
 
 a {

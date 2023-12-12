@@ -112,5 +112,13 @@
 			'Open Sans',
 			'Helvetica Neue',
 			sans-serif;
+		font-variation-settings:
+			'dlg' 1,
+			'tnum' 1,
+			'zero' 1,
+			'ss01' 1,
+			'ss02' 1,
+			'ss07' 1,
+			'ss08' 1;
 	}
 }

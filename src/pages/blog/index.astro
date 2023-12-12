@@ -1,49 +1,15 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import BlogHeaderLink from '../../components/BlogHeaderLink.astro';
-import {publishedPosts} from '../../lib/posts';
+import { publishedPosts } from '../../lib/posts';
+import ArrowHeader from '../../components/ArrowHeader.astro';
 ---
 
 <Layout title="Blog">
-  <main>
-    <header>
-      <h1>Blog posts</h1>
-      <span class="icon">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
-        </svg>						
-      </span>
-    </header>
-  {publishedPosts.map((post) => (
-    <BlogHeaderLink post={post} />
-  ))}
-  </main>
+	<main>
+		<ArrowHeader angle="-45">Blog posts</ArrowHeader>
+		{publishedPosts.map((post) => <BlogHeaderLink post={post} />)}
+	</main>
 </Layout>
 
-<style>
-  main {
-    /* padding-top: var(--margin-3xl); */
-  }
-
-  header{
-    padding: 0 1rem;
-    border-bottom: 1px solid var(--border-color);
-    background: var(--button-hover-background-color);
-    color: var(--button-hover-text-color);
-    display: flex;
-  }
-
-  h1 {
-    font-size: var(--text-6xl);
-  }
-
-  a {
-    text-decoration: none;
-  }
-
-  .icon {
-		width: var(--text-10xl);
-		height: var(--text-10xl);
-		transform: rotate(-45deg);
-  }
-</style>
+<style></style>

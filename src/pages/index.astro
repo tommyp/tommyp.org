@@ -87,7 +87,7 @@ const blogPosts = publishedPosts.slice(0, 3);
 
 	.big-header h2 {
 		/* padding: var(--margin-6xl) 0; */
-		font-size: var(--text-6xl);
+		font-size: var(--text-3xl);
 		margin: 0;
 		padding: 0 1rem;
 	}
@@ -114,5 +114,11 @@ const blogPosts = publishedPosts.slice(0, 3);
 
 	.big-header a:hover .icon {
 		transform: rotate(-45deg);
+	}
+
+	@media (min-width: 768px) {
+		.big-header h2 {
+			font-size: var(--text-6xl);
+		}
 	}
 </style>

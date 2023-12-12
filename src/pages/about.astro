@@ -1,12 +1,13 @@
 ---
+import Arrow from '../components/Arrow.astro';
+import ArrowHeader from '../components/ArrowHeader.astro';
+import Article from '../components/Article.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="About">
-	<header>
-		<h1>About Tommy</h1>
-	</header>
-	<article>
+	<ArrowHeader angle="-45">About</ArrowHeader>
+	<Article>
 		<p>
 			I'm from Belfast and live in London. I haven't lost my accent. You can usually spot me by my
 			red hair and beard.
@@ -25,9 +26,11 @@ import Layout from '../layouts/Layout.astro';
 		</p>
 
 		<p>
-			I've worked in tech at big and small companies for over ten years. At the moment I'm working
-			on <a href="https://castrooms.com">Castrooms</a> - a new DJ streaming platform. I've
-			previously worked for <a href="https://deliveroo.co.uk">Deliveroo</a> and the
+			I've worked in tech at big and small companies for over ten years. Most recently at <a
+				href="https://castrooms.com">Castrooms</a
+			>, a new DJ streaming platform. I've previously worked for <a href="https://deliveroo.co.uk"
+				>Deliveroo</a
+			> and the
 			<a href="https://www.gov.uk/government/organisations/government-digital-service"
 				>Government Digital Service</a
 			>.
@@ -40,34 +43,10 @@ import Layout from '../layouts/Layout.astro';
 		</p>
 
 		<p>I like building fun things for users that solve interesting problems.</p>
-	</article>
+	</Article>
 </Layout>
 
 <style>
-	header {
-		padding: 0 1rem;
-		border-bottom: 1px solid var(--border-color);
-		background: var(--button-hover-background-color);
-		color: var(--button-hover-text-color);
-		display: flex;
-	}
-
-	h1 {
-		font-size: var(--text-6xl);
-	}
-
-	article {
-		padding: 1rem;
-		max-width: 100%;
-	}
-
-	p {
-		font-size: var(--text-xl);
-		line-height: 1.1;
-		margin-bottom: var(--margin-xl);
-		text-wrap: pretty;
-	}
-
 	a {
 		color: var(--text-color);
 	}
@@ -75,11 +54,5 @@ import Layout from '../layouts/Layout.astro';
 	a:hover {
 		color: var(--lime-5);
 		text-decoration-color: var(--text-color);
-	}
-
-	@media (min-width: 768px) {
-		article {
-			max-width: 70vw;
-		}
 	}
 </style>
