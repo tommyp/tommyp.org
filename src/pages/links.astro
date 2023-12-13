@@ -5,75 +5,18 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Links">
-	<main>
-		<ArrowHeader angle="-45">Links</ArrowHeader>
-		<Article>
-			<p>
-				Say hello via email at <a href="mailto:hi@tommyp.org">hi@tommyp.org</a>, or via Mastodon at <a
-					href="https://mastodon.social/@tommyp">@tommyp</a
-				>.
-			</p>
-			<p>I'm usually online as @tommyp, if I've been early enough to claim it.</p>
-			<p>I've collected some links on things I <a href="/uses">use and recommend</a>.</p>
-			<p>
-				You can find my music on <a href="https://soundcloud.com/syntax-terrorist">Soundcloud</a>
-				 and my code at <a href="https://github.com/tommyp/">GitHub</a>.
-			</p>
-		</Article>
-	</main>
-
-	<style>
-		header {
-			padding: 0 1rem;
-			border-bottom: 1px solid var(--border-color);
-			background: var(--button-hover-background-color);
-			color: var(--button-hover-text-color);
-			display: flex;
-		}
-
-		h1 {
-			font-size: var(--text-6xl);
-		}
-
-		article {
-			padding: 1rem;
-			max-width: 100%;
-		}
-
-		p {
-			font-size: var(--text-xl);
-			line-height: 1.1;
-			margin-bottom: var(--margin-xl);
-			text-wrap: pretty;
-		}
-
-		a {
-			color: var(--text-color);
-		}
-
-		a:hover {
-			color: var(--blue-5);
-			text-decoration-color: var(--text-color);
-		}
-
-		main {
-			display: flex;
-			flex-direction: column;
-		}
-
-		ul {
-			list-style: disc;
-			margin-left: var(--margin-xl);
-		}
-
-		li {
-			font-size: var(--text-xl);
-		}
-
-		@media (min-width: 768px) {
-			article {
-				max-width: 70vw;
-			}
-		}
-	</style>
+	<ArrowHeader angle="-45">Links</ArrowHeader>
+	<Article linkHoverColor="var(--blue-5)" linkUnderlineColor="var(--blue-5)">
+		<p>
+			Say hello via email at <a href="mailto:hi@tommyp.org">hi@tommyp.org</a>, or via Mastodon at <a
+				href="https://mastodon.social/@tommyp">@tommyp</a
+			>.
+		</p>
+		<p>I'm usually online as @tommyp, if I've been early enough to claim it.</p>
+		<p>I've collected some links on things I <a href="/uses">use and recommend</a>.</p>
+		<p>
+			You can find my music on <a href="https://soundcloud.com/syntax-terrorist">Soundcloud</a>
+			 and my code at <a href="https://github.com/tommyp/">GitHub</a>.
+		</p>
+	</Article>
 </Layout>

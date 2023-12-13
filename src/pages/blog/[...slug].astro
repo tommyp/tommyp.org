@@ -25,7 +25,7 @@ const { Content } = await entry.render();
 		<header>
 			<BlogHeader post={entry.data} />
 		</header>
-		<Article>
+		<Article linkHoverColor={entry.data.titleColor} linkUnderlineColor={entry.data.titleBgColor}>
 			<Content />
 			<!-- <small>Published on {date}</small> -->
 		</Article>

@@ -1,5 +1,4 @@
 ---
-import Arrow from '../components/Arrow.astro';
 import ArrowHeader from '../components/ArrowHeader.astro';
 import Article from '../components/Article.astro';
 import Layout from '../layouts/Layout.astro';
@@ -7,7 +6,7 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="About">
 	<ArrowHeader angle="-45">About</ArrowHeader>
-	<Article>
+	<Article linkHoverColor="var(--lime-5)" linkUnderlineColor="var(--lime-5)">
 		<p>
 			I'm from Belfast and live in London. I haven't lost my accent. You can usually spot me by my
 			red hair and beard.
@@ -45,14 +44,3 @@ import Layout from '../layouts/Layout.astro';
 		<p>I like building fun things for users that solve interesting problems.</p>
 	</Article>
 </Layout>
-
-<style>
-	a {
-		color: var(--text-color);
-	}
-
-	a:hover {
-		color: var(--lime-5);
-		text-decoration-color: var(--text-color);
-	}
-</style>
