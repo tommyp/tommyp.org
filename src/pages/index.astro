@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Marquee from '../components/Marquee.astro';
 import BlogHeaderLink from '../components/BlogHeaderLink.astro';
 import { publishedPosts } from '../lib/posts';
+import Graphic from '../components/Graphic.astro';
 
 const blogPosts = publishedPosts.slice(0, 3);
 ---
@@ -10,9 +11,7 @@ const blogPosts = publishedPosts.slice(0, 3);
 <Layout title="Tommy Palmer">
 	<main>
 		<div class="hero">
-			<div class="tagline">
-				<h1>Tommy Palmer is a <br />creative Web developer.</h1>
-			</div>
+			<Graphic />
 			<a class="about" href="/about">
 				<Marquee>Would you like to know more?</Marquee>
 			</a>
@@ -54,14 +53,6 @@ const blogPosts = publishedPosts.slice(0, 3);
 		font-style: italic;
 		line-height: 1;
 		text-align: center;
-	}
-
-	.tagline {
-		display: flex;
-		flex-direction: column;
-		height: 85dvh;
-		justify-content: center;
-		align-items: center;
 	}
 
 	.hero {
