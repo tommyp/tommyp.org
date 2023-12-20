@@ -29,6 +29,9 @@ dependencies:
   open-props:
     specifier: ^1.6.16
     version: 1.6.16
+  poly-decomp:
+    specifier: ^0.3.0
+    version: 0.3.0
   sanitize-html:
     specifier: ^2.11.0
     version: 2.11.0
@@ -3122,6 +3125,10 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       find-up: 4.1.0
+    dev: false
+
+  /poly-decomp@0.3.0:
+    resolution: {integrity: sha512-hWeBxGzPYiybmI4548Fca7Up/0k1qS5+79cVHI9+H33dKya5YNb9hxl0ZnDaDgvrZSuYFBhkCK/HOnqN7gefkQ==}
     dev: false
 
   /postcss-value-parser@4.2.0:

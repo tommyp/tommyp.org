@@ -33,11 +33,15 @@ const pageTitle = title ? `${title} | Tommy Palmer` : 'Tommy Palmer';
 		</main>
 		<Footer />
 		<style>
+			body {
+				min-height: 100vh;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+			}
 			main {
 				margin-top: 3rem;
-				display: flex;
 				flex: 1;
-				flex-direction: column;
 			}
 
 			@media (min-width: 768px) {
