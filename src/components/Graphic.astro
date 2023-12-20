@@ -12,33 +12,68 @@ const blocks = [
 	'and',
 	'living',
 	'in',
-	'London'
+	'London.'
 ];
+
+const colors = [
+	'red',
+	'blue',
+	'pink',
+	'violet',
+	'yellow',
+	'green',
+	'cyan',
+	'orange',
+	'teal',
+	'sand',
+	'camo',
+	'jungle',
+	'stone'
+];
+
+const shuffledColors = colors
+	.map((value) => ({ value, sort: Math.random() }))
+	.sort((a, b) => a.sort - b.sort);
+
+const blocksWithColors = blocks.map((block, i) => {
+	return {
+		text: block,
+		color: shuffledColors[i]
+	};
+});
 ---
 
 <div>
-	{
-		blocks.map((block, i) => {
-			return <span>{block} </span>;
-		})
-	}
+	<p>
+		{
+			blocksWithColors.map((block) => {
+				return (
+					<span style={`--background-color: var(--${block.color.value}-5)`}>{block.text} </span>
+				);
+			})
+		}
+	</p>
 </div>
 
 <style>
 	div {
-		display: flex;
-		/* flex-direction: column; */
-		height: 85dvh;
-		justify-content: center;
-		align-items: center;
-		gap: 1rem;
+		align-items: flex-start;
 		flex-wrap: wrap;
+		justify-content: flex-start;
 	}
 
 	span {
-		display: block;
-		font-size: var(--text-3xl);
-		line-height: 0;
-		/* text-transform: ; */
+		display: inline-block;
+		font-size: var(--text-2xl);
+		line-height: 1;
+		padding: 1rem 1.5rem;
+		background-color: var(--background-color);
+		color: var(--text-color);
+	}
+
+	@media (min-width: 576px) {
+		span {
+			font-size: var(--text-6xl);
+		}
 	}
 </style>
