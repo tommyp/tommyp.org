@@ -23,6 +23,7 @@ interface Props {
 
 	article.post {
 		margin-top: var(--margin-xl);
+		line-height: 1;
 	}
 
 	article.post p {
@@ -43,13 +44,13 @@ interface Props {
 
 	article.post h2 {
 		font-size: var(--text-3xl);
-		line-height: 1.25;
+
 		margin-bottom: var(--margin-md);
 	}
 
 	article.post h3 {
 		font-size: var(--text-2xl);
-		line-height: 1.25;
+
 		margin-bottom: var(--margin-md);
 	}
 
@@ -86,6 +87,7 @@ interface Props {
 	@media (min-width: 768px) {
 		article.post {
 			max-width: 70vw;
+			line-height: 1.25;
 		}
 	}
 </style>

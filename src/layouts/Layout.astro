@@ -8,11 +8,15 @@ import Header from '../components/Header.svelte';
 import Footer from '../components/Footer.astro';
 interface Props {
 	title: string;
+	description: undefined | string;
 }
 
-const { title } = Astro.props;
+const { title, description } = Astro.props;
 
 const pageTitle = title ? `${title} | Tommy Palmer` : 'Tommy Palmer';
+const pageDescription = description
+	? `${description} | Web Developer based in London`
+	: 'Web Developer based in London';
 ---
 
 <!doctype html>
@@ -25,6 +29,31 @@ const pageTitle = title ? `${title} | Tommy Palmer` : 'Tommy Palmer';
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
 		<ViewTransitions />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script defer data-domain="tommyp.org" src="https://plausible.io/js/plausible.js"></script>
+
+		<meta
+			name="keywords"
+			content="freelance, web, developer, tommy, palmer, london, walthamstow, web gl, react, svelte, html, css, javascript, ruby, elixir"
+		/>
+
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://tommyp.org" />
+
+		<meta name="twitter:creator" content="@tommypalm" />
+
+		<meta property="twitter:card" content="summary_large_image" />
+
+		<meta property="twitter:url" content="https://tommyp.org" />
+
+		<link
+			rel="alternate"
+			type="application/rss+xml"
+			title="Tommy Palmer | Web Developer based in London"
+			href="https://www.tommyp.org/rss.xml"
+		/>
+
+		<meta name="description" content={pageDescription} />
 	</head>
 	<body>
 		<Header pathName={new URL(Astro.request.url).pathname} client:load />
