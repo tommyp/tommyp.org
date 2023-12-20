@@ -1,0 +1,23 @@
+---
+// import { escape } from 'html-escaper';
+
+const { heading, bgColor, textColor, description } = Astro.props;
+
+const ogParams: URLSearchParams = new URLSearchParams();
+if (heading) {
+	ogParams.set('heading', escape(heading));
+	ogParams.set('bgColor', bgColor?.replace('#', ''));
+	ogParams.set('textColor', textColor?.replace('#', ''));
+}
+
+const title = `${heading ? `${heading} | ` : ''}Tommy Palmer | Web Developer based in London`;
+---
+
+<meta property="og:image" content={`https://tommyp.org/og?${ogParams.toString()}`} />
+<meta property="twitter:image" content={`https://tommyp.org/og?${ogParams.toString()}`} />
+<meta property="twitter:title" content={title} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta name="description" content={description} />
+<meta property="twitter:description" content={description} />
+<title>{title}</title>
