@@ -1,0 +1,83 @@
+---
+import { ViewTransitions } from 'astro:transitions';
+import '../styles/reset.css';
+import '../styles/inter.css';
+import '../styles/variables.css';
+import 'open-props/style';
+import Header from '../components/Header.svelte';
+import Footer from '../components/Footer.astro';
+interface Props {
+	title: string;
+	description: undefined | string;
+}
+
+const { title, description } = Astro.props;
+
+const pageTitle = title ? `${title} | Tommy Palmer` : 'Tommy Palmer';
+const pageDescription = description
+	? `${description} | Web Developer based in London`
+	: 'Web Developer based in London';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{pageTitle}</title>
+		<ViewTransitions />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script defer data-domain="tommyp.org" src="https://plausible.io/js/plausible.js"></script>
+
+		<meta
+			name="keywords"
+			content="freelance, web, developer, tommy, palmer, london, walthamstow, web gl, react, svelte, html, css, javascript, ruby, elixir"
+		/>
+
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://tommyp.org" />
+
+		<meta name="twitter:creator" content="@tommypalm" />
+
+		<meta property="twitter:card" content="summary_large_image" />
+
+		<meta property="twitter:url" content="https://tommyp.org" />
+
+		<link
+			rel="alternate"
+			type="application/rss+xml"
+			title="Tommy Palmer | Web Developer based in London"
+			href="https://www.tommyp.org/rss.xml"
+		/>
+
+		<meta name="description" content={pageDescription} />
+	</head>
+	<body>
+		<Header pathName={new URL(Astro.request.url).pathname} client:load />
+		<main>
+			<slot />
+		</main>
+		<Footer />
+		<style>
+			body {
+				min-height: 100vh;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+			}
+			main {
+				margin-top: 3rem;
+				flex: 1;
+			}
+
+			@media (min-width: 768px) {
+				main {
+					margin-top: 0;
+				}
+			}
+		</style>
+	</body>
+</html>

@@ -1,0 +1,62 @@
+:root {
+	--white: rgb(255, 255, 255);
+	--black-100: rgb(0, 0, 0);
+
+	--grey-100: rgb(220, 220, 220);
+	--black-90: rgb(20, 20, 20);
+
+	--bg-color: var(--white);
+	--text-color: var(--black-90);
+
+	--button-background-color: var(--white);
+	--border-color: var(--black-90);
+
+	--button-hover-background-color: var(--black-90);
+	--button-hover-text-color: var(--white);
+
+	/* text sizes */
+	--text-md: clamp(1rem, 1.5vw, 1.5rem);
+	--text-lg: clamp(1.5rem, 2vw, 2rem);
+	--text-xl: clamp(2rem, 3vw, 3rem);
+	--text-2xl: clamp(3rem, 4vw, 4rem);
+	--text-3xl: clamp(4rem, 5vw, 5rem);
+	--text-4xl: clamp(5rem, 6vw, 6rem);
+	--text-5xl: clamp(6rem, 7vw, 7rem);
+	--text-6xl: clamp(7rem, 8vw, 8rem);
+	--text-7xl: clamp(8rem, 9vw, 9rem);
+	--text-8xl: clamp(9rem, 10vw, 10rem);
+	--text-9xl: clamp(10rem, 11vw, 11rem);
+	--text-10xl: clamp(11rem, 12vw, 12rem);
+
+	/* margins */
+	--margin-md: clamp(1rem, 1.5vw, 1.5rem);
+	--margin-lg: clamp(1.5rem, 2vw, 2rem);
+	--margin-xl: clamp(2rem, 3vw, 3rem);
+	--margin-2xl: clamp(3rem, 4vw, 4rem);
+	--margin-3xl: clamp(4rem, 5vw, 5rem);
+	--margin-4xl: clamp(5rem, 6vw, 6rem);
+	--margin-5xl: clamp(6rem, 7vw, 7rem);
+	--margin-6xl: clamp(7rem, 8vw, 8rem);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg-color: var(--black-90);
+		--text-color: var(--grey-100);
+		--button-text-color: var(--black-90);
+		--border-color: var(--white);
+
+		--button-hover-background-color: var(--white);
+		--button-hover-text-color: var(--black-90);
+	}
+}
+
+body {
+	background-color: var(--bg-color);
+	color: var(--text-color);
+	font-family: 'Inter', sans-serif;
+}
+
+a {
+	transition: all 0.2s ease-in-out;
+}

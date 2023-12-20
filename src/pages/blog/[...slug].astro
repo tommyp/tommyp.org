@@ -1,0 +1,72 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import BlogHeader from '../../components/BlogHeader.astro';
+import { publishedPosts } from '../../lib/posts';
+import Article from '../../components/Article.astro';
+
+export async function getStaticPaths() {
+	return publishedPosts.map((entry) => ({
+		params: { slug: entry.slug },
+		props: { entry }
+	}));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+---
+
+<Layout title={`${entry.data.title} | Tommy Palmer`}>
+	<section
+		style={{
+			'--title-color': entry.data.titleColor,
+			'--background-color': entry.data.titleBgColor
+		}}
+	>
+		<header>
+			<BlogHeader post={entry.data} />
+		</header>
+		<Article linkHoverColor={entry.data.titleColor} linkUnderlineColor={entry.data.titleBgColor}>
+			<Content />
+			<!-- <small>Published on {date}</small> -->
+		</Article>
+	</section>
+</Layout>
+
+<style>
+	section {
+		/* padding: var(--margin-6xl) 0rem 0; */
+	}
+	h1 {
+		font-size: var(--text-3xl);
+		line-height: 1;
+	}
+
+	.subtitle {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.subtitle h2 {
+		font-size: var(--text-xl);
+		line-height: 1;
+	}
+
+	.tags {
+		font-size: var(--text-lg);
+	}
+
+	.tags ul {
+		list-style: none;
+		display: inline-flex;
+		font-size: var(--text-lg);
+	}
+
+	.tags li {
+		display: inline;
+		margin-right: 0.5rem;
+	}
+
+	.tags li:not(:last-child)::after {
+		content: ', ';
+	}
+</style>

@@ -1,0 +1,124 @@
+---
+import Arrow from '../components/Arrow.astro';
+import ArrowHeader from '../components/ArrowHeader.astro';
+import Layout from '../layouts/Layout.astro';
+
+const links = [
+	{
+		href: 'https://soundcloud.com/syntax-terrorist',
+		text: 'Soundcloud'
+	},
+	{
+		href: 'https://github.com/tommyp/',
+		text: 'Github'
+	}
+];
+---
+
+<Layout title="Links">
+	<main>
+		<ArrowHeader angle="-45">Uses</ArrowHeader>
+		<article>
+			<p>Here&#39;s a collection of some various things that I use on a day to day basis.</p>
+			<h2 id="software">Software</h2>
+			<ul>
+				<li>
+					<a href="https://apps.apple.com/us/app/amphetamine/id937984704?mt=12">Amphetatmine</a> -
+					stops your Mac from going to sleep
+				</li>
+				<li><a href="https://arc.net/">Arc</a> - the best web browser</li>
+				<li>
+					<a href="https://duckduckgo.com/">DuckDuckGo</a> - the best search, once you get used to
+					it
+				</li>
+				<li><a href="https://iterm2.com/">iTerm2</a> - a better Terminal</li>
+				<li><a href="https://www.reederapp.com/">Reeder</a> - my RSS reader of choice</li>
+				<li>
+					<a href="https://www.raycast.com/">Raycast</a> - I&#39;ve used many App Launchers over the
+					years and this is my current favourite
+				</li>
+				<li>
+					<a href="https://secrets.app/">Secrets</a> - a lovely macOS and iOS app combo for password
+					management
+				</li>
+				<li><a href="https://culturedcode.com/things/">Things</a> - the macOS GTD OG</li>
+				<li>
+					<a
+						href="https://www.native-instruments.com/en/products/traktor/dj-software/traktor-pro-3/"
+						>Traktor</a
+					>
+					 - I learnt to DJ with Traktor and it&#39;s still my go to DJ setup for when I play as
+					<a href="https://soundcloud.com/syntax-terrorist">Syntax Terror</a>
+				</li>
+			</ul>
+			<h2 id="hardware">Hardware</h2>
+			<ul>
+				<li>MacBook Pro 14&quot; M1 Pro</li>
+				<li>iPhone 12</li>
+				<li>ZSA Moonlander</li>
+				<li>Logitech MX Vertical Ergonomic Mouse</li>
+				<li>Pioneer DJ speakers</li>
+				<li>Huawei 34&quot; Curved Monitor</li>
+			</ul>
+		</article>
+	</main>
+</Layout>
+
+<style>
+	header {
+		padding: 0 1rem;
+		border-bottom: 1px solid var(--border-color);
+		background: var(--button-hover-background-color);
+		color: var(--button-hover-text-color);
+		display: flex;
+	}
+
+	h1 {
+		font-size: var(--text-6xl);
+	}
+
+	h2 {
+		font-size: var(--text-3xl);
+	}
+
+	article {
+		padding: 1rem;
+		max-width: 100%;
+	}
+
+	p {
+		font-size: var(--text-xl);
+		line-height: 1.1;
+		margin-bottom: var(--margin-xl);
+		text-wrap: pretty;
+	}
+
+	a {
+		color: var(--text-color);
+		text-decoration-color: var(--pink-5);
+	}
+
+	a:hover {
+		color: var(--pink-5);
+	}
+
+	main {
+		display: flex;
+		flex-direction: column;
+	}
+
+	ul {
+		list-style: disc;
+		margin-left: var(--margin-xl);
+	}
+
+	li {
+		font-size: var(--text-xl);
+	}
+
+	@media (min-width: 768px) {
+		article {
+			max-width: 70vw;
+		}
+	}
+</style>

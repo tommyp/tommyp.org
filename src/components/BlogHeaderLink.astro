@@ -1,0 +1,17 @@
+---
+import BlogHeader from './BlogHeader.astro';
+
+const {post} = Astro.props;
+---
+
+<div>
+  <a href={`/blog/${post.slug}`}>
+    <BlogHeader post={post.data} hoverable={true} />
+  </a>
+</div>
+
+<style>
+  a {
+    text-decoration: none;
+  }
+</style>

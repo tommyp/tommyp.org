@@ -1,0 +1,29 @@
+---
+import Arrow from './Arrow.astro';
+const { angle } = Astro.props;
+---
+
+<header>
+	<h1><slot /></h1>
+	<Arrow angle={angle} />
+</header>
+
+<style>
+	header {
+		padding: 0 1rem;
+		border-bottom: 1px solid var(--border-color);
+		background: var(--button-hover-background-color);
+		color: var(--button-hover-text-color);
+		display: flex;
+	}
+
+	h1 {
+		font-size: var(--text-2xl);
+	}
+
+	@media (min-width: 768px) {
+		h1 {
+			font-size: var(--text-6xl);
+		}
+	}
+</style>

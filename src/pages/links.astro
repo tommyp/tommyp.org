@@ -1,0 +1,22 @@
+---
+import ArrowHeader from '../components/ArrowHeader.astro';
+import Article from '../components/Article.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Links">
+	<ArrowHeader angle="-45">Links</ArrowHeader>
+	<Article linkHoverColor="var(--blue-5)" linkUnderlineColor="var(--blue-5)">
+		<p>
+			Say hello via email at <a href="mailto:hi@tommyp.org">hi@tommyp.org</a>, or via Mastodon at <a
+				href="https://mastodon.social/@tommyp">@tommyp</a
+			>.
+		</p>
+		<p>I'm usually online as @tommyp, if I've been early enough to claim it.</p>
+		<p>I've collected some links on things I <a href="/uses">use and recommend</a>.</p>
+		<p>
+			You can find my music on <a href="https://soundcloud.com/syntax-terrorist">Soundcloud</a>
+			 and my code at <a href="https://github.com/tommyp/">GitHub</a>.
+		</p>
+	</Article>
+</Layout>
