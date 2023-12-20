@@ -8,7 +8,7 @@ import Header from '../components/Header.svelte';
 import Footer from '../components/Footer.astro';
 interface Props {
 	title: string;
-	description: undefined | string;
+	description?: string;
 }
 
 const { title, description } = Astro.props;
