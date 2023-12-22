@@ -4,37 +4,23 @@ import Marquee from '../components/Marquee.astro';
 import BlogHeaderLink from '../components/BlogHeaderLink.astro';
 import { publishedPosts } from '../lib/posts';
 import Graphic from '../components/Graphic.astro';
+import ArrowHeader from '../components/ArrowHeader.astro';
 
 const blogPosts = publishedPosts.slice(0, 3);
 ---
 
-<Layout title="Tommy Palmer">
+<Layout>
 	<main>
 		<div class="hero">
 			<Graphic />
-			<a class="about" href="/about">
+			<a class="marquee" href="/about">
 				<Marquee>Would you like to know more?</Marquee>
 			</a>
 		</div>
 		<div class="blog-posts">
 			<div class="big-header">
 				<a href="/blog">
-					<h2>Blog posts</h2>
-					<span class="icon">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							fill="none"
-							viewBox="0 0 24 24"
-							stroke-width="1.5"
-							stroke="currentColor"
-							class=""
-						>
-							<path
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3"></path>
-						</svg>
-					</span>
+					<ArrowHeader hoverable={true}>Blog&nbsp;posts</ArrowHeader>
 				</a>
 			</div>
 			{blogPosts.map((post) => <BlogHeaderLink post={post} />)}
@@ -62,7 +48,7 @@ const blogPosts = publishedPosts.slice(0, 3);
 		flex: 1;
 	}
 
-	.about {
+	.marquee {
 		border-top: 1px solid var(--border-color);
 		border-bottom: 1px solid var(--border-color);
 		text-decoration: none;
@@ -71,45 +57,12 @@ const blogPosts = publishedPosts.slice(0, 3);
 		font-weight: bold;
 	}
 
-	.about:hover {
+	.marquee:hover {
 		background-color: var(--button-hover-background-color);
 		color: var(--button-hover-text-color);
-	}
-
-	.big-header h2 {
-		/* padding: var(--margin-6xl) 0; */
-		font-size: var(--text-3xl);
-		margin: 0;
-		padding: 0 1rem;
 	}
 
 	.big-header a {
 		text-decoration: none;
-		color: var(--text-color);
-		display: flex;
-		gap: 1rem;
-		align-items: flex-end;
-		border-bottom: 1px solid var(--border-color);
-	}
-
-	.big-header .icon {
-		width: var(--text-10xl);
-		height: var(--text-10xl);
-		transition: transform 0.05s ease-in-out;
-	}
-
-	.big-header a:hover {
-		background-color: var(--button-hover-background-color);
-		color: var(--button-hover-text-color);
-	}
-
-	.big-header a:hover .icon {
-		transform: rotate(-45deg);
-	}
-
-	@media (min-width: 768px) {
-		.big-header h2 {
-			font-size: var(--text-6xl);
-		}
 	}
 </style>

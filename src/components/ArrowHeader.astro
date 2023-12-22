@@ -1,11 +1,11 @@
 ---
 import Arrow from './Arrow.astro';
-const { angle } = Astro.props;
+const { hoverable } = Astro.props;
 ---
 
-<header>
+<header class:list={[{ hoverable: hoverable }]}>
 	<h1><slot /></h1>
-	<Arrow angle={angle} />
+	<Arrow />
 </header>
 
 <style>
@@ -15,6 +15,20 @@ const { angle } = Astro.props;
 		background: var(--button-hover-background-color);
 		color: var(--button-hover-text-color);
 		display: flex;
+		align-items: center;
+		--arrow-angle: -45deg;
+	}
+
+	header.hoverable {
+		color: var(--text-color);
+		background: none;
+		--arrow-angle: 0deg;
+	}
+
+	header.hoverable:hover {
+		color: var(--button-hover-text-color);
+		background: var(--button-hover-background-color);
+		--arrow-angle: -45deg;
 	}
 
 	h1 {

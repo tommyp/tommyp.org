@@ -26,7 +26,7 @@
 		<ul>
 			<li>
 				<h1>
-					<a class={currentPath == '' ? 'active' : ''} href="/">Tommy Palmer</a>
+					<a class={currentPath == '' ? 'active' : ''} href="/"> Tommy&nbsp;Palmer</a>
 					<button
 						on:click|preventDefault={(e) => (dropdownOpen = !dropdownOpen)}
 						aria-label="Toggle navigation menu"
@@ -103,6 +103,10 @@
 	}
 	h1 svg {
 		width: 3rem;
+	}
+
+	h1 span {
+		display: none;
 	}
 
 	ul {
@@ -182,6 +186,10 @@
 
 		h1 button {
 			display: none;
+		}
+
+		h1 span {
+			display: inherit;
 		}
 
 		.dropdown,
