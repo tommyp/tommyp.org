@@ -54,6 +54,9 @@ const pageDescription = description
 		/>
 
 		<meta name="description" content={pageDescription} />
+
+		<meta property="og:image" content={`https://tommyp.org/og`} />
+		<meta property="twitter:image" content={`https://tommyp.org/og`} />
 	</head>
 	<body>
 		<Header pathName={new URL(Astro.request.url).pathname} client:load />
