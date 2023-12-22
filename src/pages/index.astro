@@ -10,29 +10,23 @@ const blogPosts = publishedPosts.slice(0, 3);
 ---
 
 <Layout>
-	<main>
-		<div class="hero">
-			<Graphic />
-			<a class="marquee" href="/about">
-				<Marquee>Would you like to know more?</Marquee>
+	<div class="hero">
+		<Graphic />
+		<a class="marquee" href="/about">
+			<Marquee>Would you like to know more?</Marquee>
+		</a>
+	</div>
+	<div class="blog-posts">
+		<div class="big-header">
+			<a href="/blog">
+				<ArrowHeader hoverable={true}>Blog&nbsp;posts</ArrowHeader>
 			</a>
 		</div>
-		<div class="blog-posts">
-			<div class="big-header">
-				<a href="/blog">
-					<ArrowHeader hoverable={true}>Blog&nbsp;posts</ArrowHeader>
-				</a>
-			</div>
-			{blogPosts.map((post) => <BlogHeaderLink post={post} />)}
-		</div>
-	</main>
+		{blogPosts.map((post) => <BlogHeaderLink post={post} />)}
+	</div>
 </Layout>
 
 <style>
-	main {
-		/* padding: var(--margin-6xl) 1rem 0; */
-	}
-
 	h1 {
 		font-size: var(--text-6xl);
 		font-weight: bold;

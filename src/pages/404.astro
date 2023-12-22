@@ -1,0 +1,44 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+	<article>
+		<h1>404</h1>
+		<p>Page not found.</p>
+		<p><a href="/">Back home?</a></p>
+	</article>
+</Layout>
+
+<style>
+	article {
+		padding: 1rem;
+	}
+
+	h1 {
+		font-size: var(--text-2xl);
+	}
+
+	p {
+		font-size: var(--text-lg);
+	}
+
+	a {
+		color: var(--text-color);
+		text-decoration-color: var(--blue-5);
+	}
+
+	a:hover {
+		color: var(--blue-5);
+	}
+
+	@media (min-width: 768px) {
+		h1 {
+			font-size: var(--text-5xl);
+		}
+
+		p {
+			font-size: var(--text-xl);
+		}
+	}
+</style>
