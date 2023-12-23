@@ -23,7 +23,7 @@ const pageDescription = description
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
+		<meta name="description" content={pageDescription} />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
@@ -52,8 +52,6 @@ const pageDescription = description
 			title="Tommy Palmer | Web Developer based in London"
 			href="https://www.tommyp.org/rss.xml"
 		/>
-
-		<meta name="description" content={pageDescription} />
 
 		<meta property="og:image" content={`https://tommyp.org/images/og.png`} />
 		<meta property="twitter:image" content={`https://tommyp.org/images/og.png`} />
