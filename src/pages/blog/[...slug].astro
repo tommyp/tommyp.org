@@ -15,7 +15,7 @@ const { entry } = Astro.props;
 const { Content } = await entry.render();
 ---
 
-<Layout title={`${entry.data.title} | Tommy Palmer`}>
+<Layout title={entry.data.title}>
 	<section
 		style={{
 			'--title-color': entry.data.titleColor,
