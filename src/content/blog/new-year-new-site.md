@@ -27,7 +27,7 @@ Astro is a static site generator built for content focussed sites. It has an ama
 
 ## Launch day
 
-If you aren't reading this on your favourite RSS reader, you're looking at the redesign. Four week after deciding to start the project and just in time for me to relax over Christmas, I've shipped it.
+If you aren't reading this on your favourite RSS reader, you're looking at the redesign. Four weeks after deciding to start the project and just in time for me to relax over Christmas, I've shipped it.
 
 After so much color and shadows with the previous version, I went with a much flatter design with the gorgeous [Inter typeface](https://rsms.me/inter) from [Rasmus](https://rsms.me/).
 
