@@ -27,28 +27,6 @@ I'm one of those people who doesn't know their dad, so this film was tough to wa
 
 For my film of 2023 though, it's got to be <span style="color: var(--pink-5)">Barbie</span>. I'm still surprised that a film as insane and off the wall ever got greenlit and approved by Mattel.
 
-## TV
-
-2023 had plenty of great follow up seasons that I loved - Succession, Top Boy, Time, and Black Mirror, were all great. Black Mirror's Loch Henry and Joan is Awful were up there with some of the best episodes that I've enjoyed.
-
-I've got three picks for my top new TV of 2023:
-
-### The Last of US
-
-I'm a big fan of the games and some shoddy CGI backdrops not withstanding, I thought the show was basically perfect.
-
-### Blue Eye Samurai
-
-A late entry in the year Netflix release and watch for us over Christmas. Great action scenes and an interesting central character made this an instant classic.
-
-<iframe src="https://www.youtube.com/embed/nJ1yQn17lbE?si=OdmkI8QL8OyfdSpS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-### Jury Duty
-
-An absolutely normal guy is an unwitting participant in a fake trial on jury duty. Think The Truman Show with more improve. Everyone is an actor, except for the central Hero Character. The real life actor James Marsden plays an extreme version of himself. He becomes example of Hollywood big names trying to use their status to get special treatment. Several scenes had me laughing so hard it hurt and the finale includes a heartwarming reveal. The show feels like a study of the hero character's humanity.
-
-<iframe src="https://www.youtube.com/embed/MMhLNJ2Tf9U?si=0BvqFU-3ZPe94PYy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
 ## Games
 
 I played plenty of amazing games this year but by far the best were:
@@ -72,3 +50,25 @@ A horror fishing game seems like an unlikely combination, but it uses the sea an
 ### The Legend of Zelda: Tears of the Kingdom
 
 Being a software engineer in a world of software can sometimes be a boon, but with TOTK, I felt like a caveman using an iPhone for the first time. How they built the physics and machine crafting is beyond anything that most games ever accomplish. There are still Youtubers who are uncovering new and weird ways to build machines. It didn't have as big an impact for me as Breath of The Wild, but it's still an outstanding game, and definitely my game of the year.
+
+## TV
+
+2023 had plenty of great follow up seasons that I loved - Succession, Top Boy, Time, and Black Mirror, were all great. Black Mirror's Loch Henry and Joan is Awful were up there with some of the best episodes that I've enjoyed.
+
+I've got three picks for my top new TV of 2023:
+
+### The Last of US
+
+I'm a big fan of the games and some shoddy CGI backdrops not withstanding, I thought the show was basically perfect.
+
+### Blue Eye Samurai
+
+A late entry in the year Netflix release and watch for us over Christmas. Great action scenes and an interesting central character made this an instant classic.
+
+<iframe src="https://www.youtube.com/embed/nJ1yQn17lbE?si=OdmkI8QL8OyfdSpS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+### Jury Duty
+
+An absolutely normal guy is an unwitting participant in a fake trial on jury duty. Think The Truman Show with more improve. Everyone is an actor, except for the central Hero Character. The real life actor James Marsden plays an extreme version of himself. He becomes example of Hollywood big names trying to use their status to get special treatment. Several scenes had me laughing so hard it hurt and the finale includes a heartwarming reveal. The show feels like a study of the hero character's humanity.
+
+<iframe src="https://www.youtube.com/embed/MMhLNJ2Tf9U?si=0BvqFU-3ZPe94PYy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
