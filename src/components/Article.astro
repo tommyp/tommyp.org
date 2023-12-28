@@ -18,7 +18,7 @@ interface Props {
 	article.post {
 		width: 100%;
 		/* margin: 0 auto; */
-		padding: 0 1rem;
+		padding: 0 0.5rem;
 	}
 
 	article.post {
@@ -70,6 +70,10 @@ interface Props {
 		line-height: 1.5;
 	}
 
+	article.post ul li {
+		margin-bottom: var(--margin-md);
+	}
+
 	article.post p:has(img) {
 		margin: 0;
 		width: 100vw;
@@ -92,6 +96,7 @@ interface Props {
 		article.post {
 			max-width: 70vw;
 			line-height: 1.25;
+			padding: 0 1rem;
 		}
 	}
 </style>
