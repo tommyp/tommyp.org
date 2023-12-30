@@ -10,7 +10,7 @@ const { hoverable } = Astro.props;
 
 <style>
 	header {
-		padding: 0 1rem;
+		padding: 0 0.5rem;
 		border-bottom: 1px solid var(--border-color);
 		background: var(--button-hover-background-color);
 		color: var(--button-hover-text-color);
@@ -36,6 +36,9 @@ const { hoverable } = Astro.props;
 	}
 
 	@media (min-width: 768px) {
+		header {
+			padding: 0 1rem;
+		}
 		h1 {
 			font-size: var(--text-6xl);
 		}

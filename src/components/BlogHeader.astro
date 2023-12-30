@@ -16,7 +16,7 @@ const formattedDate = new Date(date).toLocaleDateString('en-GB', { dateStyle: 'f
 
 <style define:vars={{ titleColor, titleBgColor }}>
 	section {
-		padding: 1rem;
+		padding: 1rem 0.5rem;
 		border-bottom: 1px solid var(--border-color);
 		color: var(--titleColor);
 		background-color: var(--titleBgColor);
@@ -59,6 +59,10 @@ const formattedDate = new Date(date).toLocaleDateString('en-GB', { dateStyle: 'f
 	}
 
 	@media (min-width: 768px) {
+		section {
+			padding: 1rem;
+		}
+
 		h1 {
 			font-size: var(--text-4xl);
 		}
