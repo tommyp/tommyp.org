@@ -19,8 +19,6 @@
 	$: activeLink = links.find((link) => link.url === `/${currentPath}`);
 
 	let dropdownOpen = false;
-
-	$: console.log(dropdownOpen);
 </script>
 
 <header class:dropdownOpen>
