@@ -143,7 +143,6 @@
 		color: var(--button-hover-text-color);
 	}
 
-	.dropdown,
 	header:not(.dropdownOpen) .dropdown {
 		z-index: calc(99 - var(--link-index));
 		/* position: absolute; */
@@ -154,7 +153,6 @@
 		transition: all 0.2s ease-in-out;
 	}
 
-	header:hover .dropdown,
 	header.dropdownOpen .dropdown {
 		transform: translateY(0);
 	}
