@@ -19,6 +19,8 @@
 	$: activeLink = links.find((link) => link.url === `/${currentPath}`);
 
 	let dropdownOpen = false;
+
+	$: console.log(dropdownOpen);
 </script>
 
 <header class:dropdownOpen>
@@ -155,6 +157,13 @@
 
 	header.dropdownOpen .dropdown {
 		transform: translateY(0);
+		transition: all 0.2s ease-in-out;
+	}
+
+	header.dropdownOpen nav {
+		background-color: rgba(0, 0, 0, 0.5);
+		height: 100vh;
+		transition: all 0.05s ease-in-out;
 	}
 
 	@media (min-width: 576px) {
