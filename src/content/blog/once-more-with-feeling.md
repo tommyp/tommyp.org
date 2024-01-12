@@ -2,6 +2,7 @@
 title: Once more, with feeling
 date: '2022-11-11'
 subtitle: Let's give this another go
+titleColor: '#112233'
 titleBgColor: '#dd00ee'
 categories: [blog, personal]
 ---
