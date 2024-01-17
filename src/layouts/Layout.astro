@@ -9,14 +9,18 @@ import Footer from '../components/Footer.astro';
 interface Props {
 	title?: string;
 	description?: string;
+	pageSlug?: string;
 }
 
-const { title, description } = Astro.props;
+const { title, description, pageSlug } = Astro.props;
 
 const pageTitle = title ? `${title} | Tommy Palmer` : 'Tommy Palmer';
 const pageDescription = description
 	? `${description} | Web Developer based in London`
 	: 'Web Developer based in London';
+const opengraphImage = pageSlug
+	? `https://tommyp.org/open-graph/${pageSlug}.png`
+	: `https://tommyp.org/images/og.png`;
 ---
 
 <!doctype html>
@@ -53,8 +57,8 @@ const pageDescription = description
 			href="https://www.tommyp.org/rss.xml"
 		/>
 
-		<meta property="og:image" content={`https://tommyp.org/images/og.png`} />
-		<meta property="twitter:image" content={`https://tommyp.org/images/og.png`} />
+		<meta property="og:image" content={opengraphImage} />
+		<meta property="twitter:image" content={opengraphImage} />
 	</head>
 	<body>
 		<Header pathName={new URL(Astro.request.url).pathname} client:load />

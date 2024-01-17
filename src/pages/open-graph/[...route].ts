@@ -4,7 +4,7 @@ import { publishedPosts } from '../../lib/posts';
 const pages = Object.fromEntries(publishedPosts.map(({ slug, data }) => [slug, data]));
 
 const hexToRgbArray = (hex: string): [any, any, any] => {
-	let color = hex;
+	let color = hex || '#000000';
 	if (color.length === 4) {
 		color = '#' + hex[1] + hex[1] + hex[2] + hex[2] + hex[3] + hex[3];
 	}
