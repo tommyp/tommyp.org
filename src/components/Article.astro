@@ -42,9 +42,16 @@ interface Props {
 		color: var(--link-hover-color);
 	}
 
+	article.post h1 {
+		font-size: var(--text-4xl);
+		margin-bottom: var(--margin-md);
+		line-height: 1;
+	}
+
 	article.post h2 {
 		font-size: var(--text-3xl);
 		margin-bottom: var(--margin-md);
+		line-height: 1;
 	}
 
 	article.post h3 {
@@ -90,6 +97,12 @@ interface Props {
 		max-height: 30rem;
 		object-fit: cover;
 		scroll-snap-align: start;
+	}
+
+	article.post hr {
+		border: 0;
+		border-top: 1px solid var(--border-color);
+		margin: var(--margin-xl) 0;
 	}
 
 	@media (min-width: 768px) {
