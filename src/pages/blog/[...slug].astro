@@ -15,7 +15,7 @@ const { entry } = Astro.props;
 const { Content } = await entry.render();
 ---
 
-<Layout title={entry.data.title}>
+<Layout title={entry.data.title} pageSlug={entry.slug}>
 	<section
 		style={{
 			'--title-color': entry.data.titleColor,
