@@ -1,6 +1,6 @@
 ---
 title: Don't forget the Context
-date: '2024-01-29'
+date: '2024-01-28'
 subtitle: Real World bugs
 titleBgColor: '#ff4b44'
 titleColor: '#4b44ff'
