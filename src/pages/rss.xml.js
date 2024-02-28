@@ -24,7 +24,9 @@ export async function GET(context) {
 			// Compute RSS link from post `slug`
 			// This example assumes all posts are rendered as `/blog/[slug]` routes
 			link: `/blog/${post.slug}/`,
-			content: sanitizeHtml(parser.render(post.body))
+			content: sanitizeHtml(parser.render(post.body), {
+				allowedTags: sanitizeHtml.defaults.allowedTags.concat(['img'])
+			})
 		})),
 
 		// (optional) inject custom xml
