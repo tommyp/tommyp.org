@@ -1,0 +1,284 @@
+---
+import ArrowHeader from '../components/ArrowHeader.astro';
+import Layout from '../layouts/Layout.astro';
+
+const blogroll = [
+	{
+		href: 'https://andy-bell.co.uk/',
+		title: 'Andy Bell'
+	},
+	{
+		href: 'https://boakandbailey.com/',
+		title: 'Boak & Bailey'
+	},
+	{
+		href: 'https://ciechanow.ski/',
+		title: 'Bartosz Ciechanowski'
+	},
+	{
+		href: 'https://brr.fyi/',
+		title: 'Brr.fyi'
+	},
+	{
+		href: 'https://cabel.com',
+		title: 'Cabel Sasser'
+	},
+	{
+		href: 'https://cennydd.com/writing/',
+		title: 'Cennydd Bowles'
+	},
+	{
+		href: 'https://chriscoyier.net/',
+		title: 'Chris Coyier'
+	},
+	{
+		href: 'https://colly.com/',
+		title: 'Colly'
+	},
+	{
+		href: 'https://daverupert.com/',
+		title: 'Dave Rupert'
+	},
+	{
+		href: 'https://ericwbailey.website/',
+		title: 'Eric Bailey'
+	},
+	{
+		href: 'https://ethanmarcotte.com/',
+		title: 'Ethan Marcotte'
+	},
+	{
+		href: 'https://godly.website/',
+		title: 'Godly Website'
+	},
+	{
+		href: 'https://www.futurefabric.co/blog/',
+		title: 'Guy Moorhouse'
+	},
+	{
+		href: 'https://herman.bearblog.dev/',
+		title: 'Herman Martinus'
+	},
+	{
+		href: 'https://interconnected.org/',
+		title: 'Interconnected'
+	},
+	{
+		href: 'https://www.itsnicethat.com/',
+		title: 'It’s Nice That'
+	},
+	{
+		href: 'https://www.fromjason.xyz/',
+		title: 'Jason Velazquez'
+	},
+	{
+		href: 'https://blog.jim-nielsen.com/',
+		title: 'Jim Nielsen'
+	},
+	{
+		href: 'https://www.doscienceto.it/',
+		title: 'Joe Warren'
+	},
+	{
+		href: 'https://joshcollinsworth.com/',
+		title: 'Josh Collinsworth'
+	},
+	{
+		href: 'https://joshwcomeau.com/',
+		title: 'Josh Comeau'
+	},
+	{
+		href: 'https://jvns.ca/',
+		title: 'Julia Evans'
+	},
+	{
+		href: 'https://kottke.org/',
+		title: 'Kottke'
+	},
+	{
+		href: 'https://lewisdale.dev/',
+		title: 'Lewis Dale'
+	},
+	{
+		href: 'https://londonist.com/',
+		title: 'Londonist'
+	},
+	{
+		href: 'https://solar.lowtechmagazine.com/',
+		title: 'LOW←TECH MAGAZINE'
+	},
+	{
+		href: 'https://mhurrell.co.uk',
+		title: 'Mark Hurrell'
+	},
+	{
+		href: 'https://matthiasott.com/',
+		title: 'Matthias Ott'
+	},
+	{
+		href: 'https://mxb.dev/',
+		title: 'Max Böck'
+	},
+	{
+		href: 'https://blog.maximeheckel.com/',
+		title: 'Maxime Heckel'
+	},
+	{
+		href: 'https://micropubadventures.co.uk/',
+		title: 'Micropub Adventures'
+	},
+	{
+		href: 'https://neilojwilliams.net/',
+		title: 'Neil Williams'
+	},
+	{
+		href: 'https://www.gyford.com/',
+		title: 'Phil Gyford'
+	},
+	{
+		href: 'https://po-ru.com/',
+		title: 'Po-ru'
+	},
+	{
+		href: 'https://ryanmulligan.dev/',
+		title: 'Ryan Mulligan'
+	},
+	{
+		href: 'https://robbowen.digital',
+		title: 'Rob Bowen'
+	},
+	{
+		href: 'https://shawn.medero.net/',
+		title: 'Shawn Medero'
+	},
+	{
+		href: 'https://www.siteinspire.com/websites',
+		title: 'SiteInspire'
+	},
+	{
+		href: 'https://www.searchsystem.co/',
+		title: 'Search System'
+	},
+	{
+		href: 'https://www.spellingmistakescostlives.com/blog',
+		title: 'Spelling Mistakes Cost Lives'
+	},
+	{
+		href: 'https://shkspr.mobi/blog/',
+		title: 'Terence Eden'
+	},
+	{
+		href: 'http://www.thingsmagazine.net/',
+		title: 'Things Magazine'
+	},
+	{
+		href: 'https://waxy.org/',
+		title: 'Waxy'
+	}
+];
+
+const colors = [
+	'red',
+	'blue',
+	'pink',
+	'violet',
+	'yellow',
+	'green',
+	'cyan',
+	'orange',
+	'teal',
+	'sand',
+	'camo',
+	'jungle',
+	'stone'
+];
+
+const linksWithColors = blogroll.map((link, index) => {
+	const color = colors[index % colors.length];
+	return {
+		...link,
+		color
+	};
+});
+---
+
+<Layout>
+	<ArrowHeader>Blogroll</ArrowHeader>
+	<article>
+		<section>
+			<p>
+				Here are links to some RSS feeds that I subscribe to. Mostly personal blogs, and some from
+				friends. Some are updated regularly, and some aren't updated any more.
+			</p>
+
+			<p>All of them are worth reading.</p>
+		</section>
+		<ul>
+			{
+				linksWithColors.map((link) => (
+					<li>
+						<a style={`--background-color: var(--${link.color}-8)`} href={link.href}>
+							{link.title}
+						</a>
+					</li>
+				))
+			}
+		</ul>
+	</article>
+</Layout>
+
+<style>
+	ul {
+		display: flex;
+		flex-direction: column;
+		list-style: none;
+		border-top: 5px solid var(--text-color);
+	}
+
+	a {
+		font-size: var(--text-xl);
+		text-decoration: none;
+		color: var(--text-color);
+		padding: 0 0.5rem;
+		display: block;
+	}
+
+	a:hover {
+		background-color: var(--background-color);
+	}
+
+	li {
+		border-bottom: 5px solid var(--text-color);
+	}
+
+	li:last-of-type {
+		border-bottom: none;
+	}
+
+	section {
+		padding: 1rem 0.5rem;
+	}
+
+	p {
+		font-size: var(--text-lg);
+	}
+
+	p ~ p {
+		margin-top: 1rem;
+	}
+
+	@media (min-width: 768px) {
+		ul {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		li {
+			border-right: 5px solid var(--text-color);
+		}
+
+		li:nth-of-type(even) {
+			border-right: none;
+		}
+	}
+</style>

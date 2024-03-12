@@ -12,6 +12,10 @@
 		{
 			label: 'Links',
 			url: '/links'
+		},
+		{
+			label: 'Blogroll',
+			url: '/blogroll'
 		}
 	];
 
@@ -85,6 +89,7 @@
 		width: 100%;
 		position: absolute;
 		top: 0;
+		z-index: 200;
 	}
 
 	h1 {
