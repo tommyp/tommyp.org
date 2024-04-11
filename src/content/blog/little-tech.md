@@ -46,4 +46,4 @@ We're planning our Wedding, a cruise, a holiday in Miami, and a garden renovatio
 
 - 🎮 [Under the castle](https://dani-diez.itch.io/under-the-castle) on the Playdate is such an addictive little game. It's interesting to see how developers approach making games with such limitions.
 - 🎮 Dipping back into Halo: Infinite for The Yappening event. Fighting waves of Grunts is total carnage, and they're surprisingly difficult for the lowest level of the Banished hierarchy.
-- 🎮 Game Pass added Shadow of the Tomb Raider, so I got around to playing the previous game, Rise of the Tomb Raider. Surprisingly it feels like a mix of The Last of Us and Uncharted. A lot wonkier than what Naughty Dog might put out, but it's scratching that itch.
+- 🎮 Game Pass added Shadow of the Tomb Raider, so I got around to playing the previous game, Rise of the Tomb Raider. It feels like a mix of The Last of Us and Uncharted. A lot wonkier than what Naughty Dog might put out, but it's scratching that itch.
