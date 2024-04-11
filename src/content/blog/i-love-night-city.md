@@ -23,7 +23,7 @@ In Cyberpunk 2077, we explore Night City. Sitting on the Californian coastline a
 
 _A view of Night City_
 
-The technological singularity has reached a crescendo - Humans swap their organic limbs and organs for artificial versions, giving them an advantage in the workplace, sports, and sex. Memories can be recorded and played back as Braindances, leading to a whole new industry of recorded entertainment, crime, death, and pornography. NC's leading cab company is run by an AI that doesn't ask questions. The highest earners in society play fast and lose with those who live literally and figuratively below them, but the poorest have no choice but take out huge loans and upgrade their bodies to have any chance at escaping poverty.
+The technological singularity has reached a crescendo - Humans swap their organic limbs and organs for artificial versions, giving them an advantage in the workplace, sports, and sex. Memories can be recorded and played back as Braindances, leading to a whole new industry of recorded entertainment, crime, death, and pornography. NC's leading cab company is run by an AI that doesn't ask questions. The highest earners in society play fast and lose with those who live literally and figuratively below them, while the poorest have no choice but take out huge loans and upgrade their bodies to have any chance at escaping poverty.
 
 ![Japantown, Night City](/images/blog/i-heart-night-city/japantown.jpeg)
 
