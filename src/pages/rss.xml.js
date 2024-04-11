@@ -25,7 +25,7 @@ export async function GET(context) {
 			// This example assumes all posts are rendered as `/blog/[slug]` routes
 			link: `/blog/${post.slug}/`,
 			content: sanitizeHtml(parser.render(post.body), {
-				allowedTags: sanitizeHtml.defaults.allowedTags.concat(['img'])
+				allowedTags: sanitizeHtml.defaults.allowedTags.concat(['img', 'iframe'])
 			})
 		})),
 
