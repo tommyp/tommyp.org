@@ -23,25 +23,25 @@ Here are a few things I enjoyed in 2020:
 
 - [JavaScript30](https://javascript30.com/) from [WesBos](https://twitter.com/wesbos) - I'm pretty good with JavaScript but in an effort to understand it more deeply, I did this free course at the start of Summer. It took me a bit more than the 30 days, but I found it really enjoyable beginning my day with some coding and Wes' cheesy jokes.
 
-- [Jon's](https://twitter.com/jongold") [experiments with three.js shaders](https://twitter.com/jongold/status/1294137379020627968?lang=en").
+- [Jon's](https://twitter.com/jongold) [experiments with three.js shaders](https://twitter.com/jongold/status/1294137379020627968?lang=en).
 
-- [Jonty's](https://twitter.com/jonty") [camjam](http://jonty.co.uk/camjam") - watch a feed from a selection of random TFL CCTV cameras.
+- [Jonty's](https://twitter.com/jonty) [camjam](http://jonty.co.uk/camjam) - watch a feed from a selection of random TFL CCTV cameras.
 
-- [govbins](https://govbins.uk/) - I helped [Harry](https://twitter.com/HarryTrimble") rebuild govbins this year, but even with my obvious bias I've enjoyed the abusurdity of people taking photos of wheelie bins.
+- [govbins](https://govbins.uk/) - I helped [Harry](https://twitter.com/HarryTrimble) rebuild govbins this year, but even with my obvious bias I've enjoyed the abusurdity of people taking photos of wheelie bins.
 
-- [it is what it is](https://twitter.com/itiseyemoutheye") - an injoke taken to an extreme but then used to [raise awareness about systemic racism](https://knowyourmeme.com/memes/eye-mouth-eye-emoji-%F0%9F%91%81%F0%9F%91%84%F0%9F%91%81")
+- [it is what it is](https://twitter.com/itiseyemoutheye) - an injoke taken to an extreme but then used to [raise awareness about systemic racism](https://knowyourmeme.com/memes/eye-mouth-eye-emoji-%F0%9F%91%81%F0%9F%91%84%F0%9F%91%81)
 
-- [Sketch's article about native being better](https://www.sketch.com/blog/2020/10/26/part-of-your-world-why-we-re-proud-to-build-a-truly-native-mac-app") - regardless of weather or not you agree with their point, you have to agree that it looks absolutely gorgeous.
+- [Sketch's article about native being better](https://www.sketch.com/blog/2020/10/26/part-of-your-world-why-we-re-proud-to-build-a-truly-native-mac-app) - regardless of weather or not you agree with their point, you have to agree that it looks absolutely gorgeous.
 
 - [Clubhouse](https://www.joinclubhouse.com/) - drop in audio chat that replaced office shit chatting for me and kept me slightly more sane whilst working from home.
 
-- [Ogmios' School of Zen Motoring](https://www.youtube.com/watch?v=9FEO-XKo4cw") - drives through North East London with a soothing narration.
+- [Ogmios' School of Zen Motoring](https://www.youtube.com/watch?v=9FEO-XKo4cw) - drives through North East London with a soothing narration.
 
-- [I Thought About That A Lot](https://www.ithoughtaboutthatalot.com/) - a series of essays which includes a really touching story [about disposing of a body](https://www.ithoughtaboutthatalot.com/how-to-dispose-of-a-body") and [thoughts on Caroline Quentin's career](https://www.ithoughtaboutthatalot.com/why-caroline-quentin-isnt-more-famous").
+- [I Thought About That A Lot](https://www.ithoughtaboutthatalot.com/) - a series of essays which includes a really touching story [about disposing of a body](https://www.ithoughtaboutthatalot.com/how-to-dispose-of-a-body) and [thoughts on Caroline Quentin's career](https://www.ithoughtaboutthatalot.com/why-caroline-quentin-isnt-more-famous).
 
 - Many Twitch DJ streams from my friends, with a simultaneous Zoom call to chat and see familiar faces.
 
-A while ago I'd decided to start blogging again in 2021, but I didn't really know what to write about first. Before my thoughts started to coalesce, I read this [great blog post](https://colly.com/articles/this-used-to-be-our-playground") from [Simon Collinson](https://twitter.com/colly") and suddenly it all made sense to me.
+A while ago I'd decided to start blogging again in 2021, but I didn't really know what to write about first. Before my thoughts started to coalesce, I read this [great blog post](https://colly.com/articles/this-used-to-be-our-playground) from [Simon Collinson](https://twitter.com/colly) and suddenly it all made sense to me.
 
 He talks about two things I want to call out here:
 
@@ -51,11 +51,11 @@ He's absolutely right on this point. Even as someone doing more development than
 
 And this:
 
-> ...just because [GOV.UK](https://gov.uk") does an excellent job of helping you pay your car tax doesn’t mean your own playground should look like it’s been built with a government design system.
+> ...just because [GOV.UK](https://gov.uk) does an excellent job of helping you pay your car tax doesn’t mean your own playground should look like it’s been built with a government design system.
 
 Although we should make sure our own spaces work for everyone we think will use them, if you want to do something weird with your own site, go ahead! Why not? Nobody is going to tell you it impacted conversion or a client didn't like it.
 
-Like most people in 2020 I also watched The Social Dilemma, though I watched it later than most on 1st January 2021. Something stuck out to me near the end, when [Bailey Richardson](https://twitter.com/baileyelaine") described The Internet now as being like a mall and that she remembered when The Internet was full of creativity.
+Like most people in 2020 I also watched The Social Dilemma, though I watched it later than most on 1st January 2021. Something stuck out to me near the end, when [Bailey Richardson](https://twitter.com/baileyelaine) described The Internet now as being like a mall and that she remembered when The Internet was full of creativity.
 
 I want more art galleries and less malls.
 
