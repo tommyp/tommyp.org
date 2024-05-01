@@ -110,10 +110,6 @@
 		width: 3rem;
 	}
 
-	h1 span {
-		display: none;
-	}
-
 	ul {
 		display: flex;
 		list-style: none;
