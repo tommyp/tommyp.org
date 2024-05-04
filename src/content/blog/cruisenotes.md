@@ -31,7 +31,7 @@ Those are both all-inclusive, but there's extra restaurants that aren't included
 
 There's an extra all-inclusive drinks package. Working out the cost came to ~£1100 for both of us. Everyone in your cabin needs to take the package. We had decided not to do that in the run up to it, but our first drink of 2 cocktails would've cost us $40, so on the first day we changed our mind and splurged.
 
-We worked it out afterwards in the Royal Carribean app and reckon it would've cost us roughly double if we hadn't had the drinks package.
+We worked it out afterwards in the Royal Caribbean app and reckon it would've cost us roughly double if we hadn't had the drinks package.
 
 There were rumours of a 15 minute time limit on how frequently you can get drinks. I'm definitely not advocating you get free drinks and give them to people in your group who don't have the drinks package, but there's nothing stopping you.
 
@@ -45,9 +45,9 @@ In the evening there was some standup and an aqua theatre show on different days
 
 We stopped at three islands, with the first one owned by the cruise line - [CocaCay](https://en.wikipedia.org/wiki/CocoCay?useskin=vector). The adult only beach was an extra charge for the day, but we found a free beach on the other side of the island to sit on for the day.
 
-[St Thomas](https://en.wikipedia.org/wiki/Saint_Thomas%2C_U.S._Virgin_Islands?useskin=vector) was up next and didn't have more than a few main streets selling jewellery and tourist tat.
+[St Thomas](https://en.wikipedia.org/wiki/Saint_Thomas%2C_U.S._Virgin_Islands?useskin=vector) was up next and didn't have more than a few main streets selling jewelry and tourist tat.
 
-[St Martin/Sint Maarten](<https://en.wikipedia.org/wiki/Saint_Martin_(island)?useskin=vector>) was the last and was a bit more interesting. We had an excursion booked for what is apparently the [World's Steepest Zipline](https://www.youtube.com/watch?v=obnTGvHJq8E). It was a pretty scary view from the top of the mountain but a lot of fun on the way back down. The coach drivers who took us to and from the mountain were entertaining tour guides, explaining the weird setup the islands by having two of everything - 2 governments, 2 passports, 2 capital cities, 2 airports, 2 wives for each man, and 2 coach drivers who repeated the same joke.
+[St Martin/Sint Maarten](<https://en.wikipedia.org/wiki/Saint_Martin_(island)?useskin=vector>) was the last and was a bit more interesting. We had an excursion booked for what is apparently the [World's Steepest Zipline](https://www.youtube.com/watch?v=obnTGvHJq8E). It was a pretty scary view from the top of the mountain but a lot of fun on the way back down. The coach drivers who took us to and from the mountain were entertaining tour guides, explaining the weird setup of the island by having 2 of everything - 2 countries, 2 governments, 2 passports, 2 capital cities, 2 airports, 2 wives for each man, and 2 coach drivers who repeated the same joke.
 
 ## Review
 
