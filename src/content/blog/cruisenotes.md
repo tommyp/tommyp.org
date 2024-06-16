@@ -15,7 +15,7 @@ It was a strange experience, and a type of holiday that most people from Europe 
 
 We were on the second biggest cruise ship in the world, the [Wonder of the Seas](https://www.royalcaribbean.com/cruise-ships/wonder-of-the-seas). It's big, but after a week it felt small.
 
-The top deck has waterslides and pools, and a few outdoor bars. The pools are small, so it's more like a Hieronymus Bosch waterpark with little demon children everywhere. There's an adult only section, but it's got a plastic roof so it heats up like a PVC conservatory. When it was very hot outside, it was was too hot in there.
+The top deck has waterslides and pools, and a few outdoor bars. The pools are small, so it's more like a Hieronymus Bosch waterpark with little demon children everywhere. There's an adult only section, but it's got a plastic roof so it heats up like a PVC conservatory. When it was very hot outside, it was too hot in there.
 
 _Wonder_ has a central atrium with an outdoor boardwalk at one end, while the middle has an outdoor park. It's weird, but a nice space. They even play bird noises in a nice touch of climate emergency dystopia.
 
