@@ -22,7 +22,7 @@ Listen to Tipping Point. Share it with others and tell the world. Maybe things h
 I haven't posted in a while, so there's a lot to mention.
 
 - Fallout the show, made me go back to Fallout 4. It's good, but some bad game design decisions forced me to pick a specific side. Fuck The Institute, without them the Railroad is meaningless, the Minutemen are annoying, and so the only logical choice to stop The Institute is the Brotherhood of Steel.
-- After listening to too many podcasts about imminent global collapse, so I started listening to [Three Bean Salad](https://www.benjaminpartridge.com/Three-Bean-Salad). I loved it so much, but it felt like nonsense so I went all the way back to the start from 2021.
+- After listening to too many podcasts about imminent global collapse, I started listening to [Three Bean Salad](https://www.benjaminpartridge.com/Three-Bean-Salad). I loved it so much, but it felt like nonsense so I went all the way back to the start from 2021.
 - I was lucky to go to [Kneecap's](https://www.kneecap.ie/) album launch party in Dalston. It was wild. [Fine Art](https://pias.ffm.to/kneecap-fineart) has been on repeat since then. It's an incredible selection of music from three of the finest lads West Belfast has ever produced.
 - The next night I also went to see [their film](https://www.youtube.com/watch?v=FFYfp-hKxZQ), which is also incredible. Maybe I'm biased, but it deserves all the praise it'll get on general release in August.
 - Shogun is as good as everyone said.
