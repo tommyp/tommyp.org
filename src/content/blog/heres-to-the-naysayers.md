@@ -7,7 +7,7 @@ titleBgColor: '#aaaa99'
 categories: [world, books, culture]
 ---
 
-In 1972 a report was published on humanity's impact on the Earth. The report outlined how, given the current trajectory of economic and exponential population growth, humanity's use of finite resources would eventually cause our systems to collapse. [_The Limits to Growth_](https://en.wikipedia.org/wiki/The_Limits_to_Growth) was written by a group of researchers who were commissioned by a grouped called the [Club of Rome](https://en.wikipedia.org/wiki/Club_of_Rome).
+In 1972 a report was published on humanity's impact on the Earth. The report outlined how, given the current trajectory of economic and exponential population growth, humanity's use of finite resources would eventually cause our systems to collapse. [_The Limits to Growth_](https://en.wikipedia.org/wiki/The_Limits_to_Growth) was written by a group of researchers who were commissioned by a group called the [Club of Rome](https://en.wikipedia.org/wiki/Club_of_Rome).
 
 _The Limits to Growth was a wake up call_. In retrospect, it's easy to see how right the writers of _The Limits to Growth_ were, but many people and corporations rallied against it. They worked to silence and discredit the team behind it.
 
