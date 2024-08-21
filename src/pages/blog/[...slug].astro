@@ -1,11 +1,13 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import BlogHeader from '../../components/BlogHeader.astro';
-import { publishedPosts } from '../../lib/posts';
 import Article from '../../components/Article.astro';
+import { publishedPosts, allPosts } from '../../lib/posts';
 
 export async function getStaticPaths() {
-	return publishedPosts.map((entry) => ({
+	const isDev = import.meta.env.DEV;
+	const posts = isDev ? allPosts : publishedPosts;
+	return posts.map((entry) => ({
 		params: { slug: entry.slug },
 		props: { entry }
 	}));
