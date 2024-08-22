@@ -35,13 +35,13 @@ Working from home can be lonely. [There's](https://www.bbc.com/worklife/article/
 
 Co-working doesn't help. In my experience the cohesion of post work socialing needs to be organised by the office manager and it's up to them if they do it or not. Moving co-working space and leaving behind those other members that you didn't form a bond with in the first place means you probably won't be invited back.
 
-There's now a growing movement to reignite Union membership among Tech Workers. [Ethan Marcotte](https://ethanmarcotte.com) and his book [You Deserve a Tech Union](https://ethanmarcotte.com/books/you-deserve-a-tech-union/) have certainly helped with that.
+But there's now a growing movement to reignite Union membership among Tech Workers. [Ethan Marcotte](https://ethanmarcotte.com) and his book [You Deserve a Tech Union](https://ethanmarcotte.com/books/you-deserve-a-tech-union/) have certainly helped with that.
 
 In decades past, traditional Trade Unions often grouped together to run co-operative social clubs. [In Walthamstow, where I live, there is one such social club](https://walthamstowtradeshall.com/about). Built in 1919 as a place where local Trade Union members could meet, it was a pub, event space, and local community hub. Now, it's used for much the same purpose by the whole community. Maybe there's something there. I'm not suggesting that [Prospect](https://prospect.org.uk/) open a co-working space that doubles as a pub, but potentially what we need is a _Remote Workers Social Club_.
 
 Working from home by yourself wouldn't mean being alone. Meetups, social events, and just chatting over a pint could be something organised by your local branch of the _RWSC_.
 
-Something to think about, anyways.
+Something to think about anyways.
 
 # Honourable mentions
 
