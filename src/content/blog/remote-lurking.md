@@ -15,7 +15,7 @@ But time moves on from that glorious Summer. Hugging friends and shaking hands i
 
 ## The case for Remote Work
 
-Most of us have been doing this for over 4 years now. I think we all have our own reasons that we enjoy it. For me, life seems to be at a slower pace. Without a commute, I can fit in a run before work, chores, errands, or some videogames. If you've got kids, I understand that spending more time with them would be a huge benefit.
+Most of us have been doing this for over 4 years now. I think we all have our own reasons that we enjoy it. For me, life seems to be at a slower pace. Without a commute, I can fit in a run before work, chores, errands, or just relax. If you've got kids, I understand that spending more time with them would be a huge benefit.
 
 Really, it means that your time is your own. No longer is the extra time around your work owned by your employer. It's yours to do with as you please. And that's a big deal.
 
@@ -29,21 +29,25 @@ When I moved to London I knew a few people, but it's a big city and they were sc
 
 What happens now that nearly everyone works from home? If you're in the office some of the time does that still happen? With the loss of the workplace social circle, have we lost the opportunity to turn colleagues into friends?
 
-## What happens now?
+## What can we do?
 
 Working from home can be lonely. [There's](https://www.bbc.com/worklife/article/20220616-is-remote-work-worse-for-wellbeing-than-people-think) [plenty](https://www.theguardian.com/commentisfree/2023/jul/02/working-from-home-mental-health-society) [of](https://www.forbes.com/sites/bryanrobinson/2021/10/15/remote-workers-report-negative-mental-health-impacts-new-study-finds/?sh=545722a174b8) [evidence](https://www.latimes.com/opinion/story/2024-03-21/loneliness-epidemic-work-from-home-remote-guestrooms-airbnb-couchsurfing#:~:text=Now%2C%20as%20an%20adult%2C%20I,days%20spent%20in%20quiet%20solitude.&text=A%202022%20survey%20noted%20that,their%20jobs%20because%20of%20loneliness.) [saying](https://www.reddit.com/r/WFH/comments/107cgct/feeling_isolated_working_from_home/) [so](https://mentalhealth-uk.org/blog/feeling-lonely-while-working-from-home/). But what can we do about it?
+
+Co-working doesn't help. In my experience the cohesion of post work socialing needs to be organised by the office manager and it's up to them if they do it or not. Moving co-working space and leaving behind those other members that you didn't form a bond with in the first place means you probably won't be invited back.
 
 There's now a growing movement to reignite Union membership among Tech Workers. [Ethan Marcotte](https://ethanmarcotte.com) and his book [You Deserve a Tech Union](https://ethanmarcotte.com/books/you-deserve-a-tech-union/) have certainly helped with that.
 
 In decades past, traditional Trade Unions often grouped together to run co-operative social clubs. [In Walthamstow, where I live, there is one such social club](https://walthamstowtradeshall.com/about). Built in 1919 as a place where local Trade Union members could meet, it was a pub, event space, and local community hub. Now, it's used for much the same purpose by the whole community. Maybe there's something there. I'm not suggesting that [Prospect](https://prospect.org.uk/) open a co-working space that doubles as a pub, but potentially what we need is a _Remote Workers Social Club_.
 
-Working from home by yourself can sometimes feel a bit like solitary confinement. Meetups, social events, and just chatting over a pint could be something ran by your local branch of the _RWSC_. It's an idea, and maybe something I'll keep thinking about.
+Working from home by yourself wouldn't mean being alone. Meetups, social events, and just chatting over a pint could be something organised by your local branch of the _RWSC_.
+
+Something to think about, anyways.
 
 # Honourable mentions
 
-- 💒 Getting married was unreal. Instead of doing a first dance, I secretly taught Lila [how to DJ and we did our first set together](https://soundcloud.com/syntax-terrorist/dj-just-married-b2b-with-secret-special-guest).
+- 💒 Getting married was unreal. We had the best day with friends and family. Instead of doing a first dance, I secretly taught Lila [how to DJ and we did our first set together](https://soundcloud.com/syntax-terrorist/dj-just-married-b2b-with-secret-special-guest).
 - 📖 I finished re-reading Foundation and couldn't help but feel the Empire half of the TV show was better. A book of conversations is hard to adapt. I'll continue re-reading the subsequent books in the series. I remember them getting better as it went on.
-- 📖 [Did Ye Hear Mammy Died?](https://uk.bookshop.org/p/books/did-ye-hear-mammy-died-hilarious-tender-absurd-delightful-and-charming-nina-stibbe-seamas-o-reilly/4958208?ean=9780708899236) was a beautiful book. I read over 2 days. It made me laugh loads and cry by the end. It put me back on track for at least 1 book a month this year.
+- 📖 [Did Ye Hear Mammy Died?](https://uk.bookshop.org/p/books/did-ye-hear-mammy-died-hilarious-tender-absurd-delightful-and-charming-nina-stibbe-seamas-o-reilly/4958208?ean=9780708899236) was a beautiful book that I read over 2 days. It made me laugh loads and cry by the end. It also put me back on track for at least 1 book a month this year.
 - 🎮 This post was in part inspired by the [lovely wrap up with all the people involved](https://www.youtube.com/watch?v=FojuFCVg_ng) in [Psychodyssey](blog/psychodyssey).
 - 🎮 I finished Fallout 4 and grew so tired of it by the end. I'm not sure if I'll go back to it for the DLCs. I would love Fallout: London to come to consoles but it's never going to happen.
 - 🎮 Thank Goodness You're Here is a delight. It's rare for games to be funny.
