@@ -23,7 +23,7 @@ We aren't going back to working in offices five days a week. That much is clear.
 
 ## You won't miss it until it's gone
 
-But there's a downside that I see. I have 2 younger brothers. They're 9 and 11 years younger than me, so both in their mid 20s. When I was that age, going out with colleagues was a way to become friendly with them, and in turn become friendly with their new friends.
+But there's a downside that I see. I have 2 younger brothers. They're 9 and 11 years younger than me, so both in their mid 20s. When I was that age, going out with colleagues was a way to become friendly with them, and in turn become friendly with their friends.
 
 When I moved to London I knew a few people, but it's a big city and they were scattered all over the place, with their own plans. After work drinks was an easy way to make new friends. Some of those people have became friends for life.
 
