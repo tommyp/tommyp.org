@@ -1,6 +1,6 @@
 ---
 title: 'Kneecap and the importance of stories'
-date: '2024-28-09'
+date: '2024-09-29'
 subtitle: Our day has come
 titleBgColor: '#128e37'
 titleColor: '#e8a114'
