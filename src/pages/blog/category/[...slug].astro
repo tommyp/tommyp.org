@@ -1,0 +1,31 @@
+---
+import type { GetStaticPaths } from 'astro';
+import Layout from '../../../layouts/Layout.astro';
+import { categories, publishedPosts } from '../../../lib/posts';
+import ArrowHeader from '../../../components/ArrowHeader.astro';
+import BlogHeaderLink from '../../../components/BlogHeaderLink.astro';
+
+export async function getStaticPaths() {
+	const isDev = import.meta.env.DEV;
+
+	const toTitleCase = (str: string) =>
+		str.replace(/\w\S*/g, (txt) => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase());
+
+	return categories.map((category) => ({
+		params: { slug: category },
+		props: {
+			category: toTitleCase(category),
+			posts: publishedPosts.filter((post) => post.data.categories.indexOf(category) !== -1)
+		}
+	}));
+}
+
+const { category, posts } = Astro.props;
+---
+
+<Layout title="Blog">
+	<main>
+		<ArrowHeader angle="-45">Posts tagged {category}</ArrowHeader>
+		{posts.map((post) => <BlogHeaderLink post={post} />)}
+	</main>
+</Layout>

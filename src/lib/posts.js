@@ -5,4 +5,11 @@ const allPosts = (await getCollection('blog')).sort((a, b) => {
 });
 const publishedPosts = allPosts.filter((post) => !post.data.draft);
 
-export { allPosts, publishedPosts };
+const categories = allPosts
+	.reduce((acc, post) => {
+		return acc.concat(post.data.categories);
+	}, [])
+	.filter((value, index, array) => array.indexOf(value) === index)
+	.sort();
+
+export { allPosts, categories, publishedPosts };
