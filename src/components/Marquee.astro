@@ -9,11 +9,17 @@
 
 <style>
 	.marquee {
-		position: relative;
-		overflow: hidden;
-		--offset: 25vw;
-		--move-initial: calc(-25% + var(--offset));
 		--move-final: calc(-50% + var(--offset));
+		--move-initial: calc(-25% + var(--offset));
+		--offset: 25vw;
+		border-bottom: 1px solid var(--border-color);
+		border-top: 1px solid var(--border-color);
+		color: var(--text-color);
+		font-weight: bold;
+		overflow: hidden;
+		position: relative;
+		text-decoration: none;
+		text-transform: uppercase;
 	}
 
 	.inner {
@@ -31,7 +37,9 @@
 		text-wrap: nowrap;
 	}
 
-	.marquee:hover .inner {
+	.marquee:hover {
+		background-color: var(--button-hover-background-color);
+		color: var(--button-hover-text-color);
 	}
 
 	@keyframes marquee {

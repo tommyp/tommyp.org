@@ -3,13 +3,21 @@ import Layout from '../../layouts/Layout.astro';
 import BlogHeaderLink from '../../components/BlogHeaderLink.astro';
 import { publishedPosts } from '../../lib/posts';
 import ArrowHeader from '../../components/ArrowHeader.astro';
+import Marquee from '../../components/Marquee.astro';
 ---
 
 <Layout title="Blog">
 	<main>
 		<ArrowHeader angle="-45">Blog posts</ArrowHeader>
+		<a class="marquee" href="/blog/category">
+			<Marquee>Browse by category</Marquee>
+		</a>
 		{publishedPosts.map((post) => <BlogHeaderLink post={post} />)}
 	</main>
 </Layout>
 
-<style></style>
+<style>
+	a.marquee {
+		text-decoration: none;
+	}
+</style>

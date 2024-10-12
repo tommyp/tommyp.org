@@ -1,0 +1,120 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import BlogHeaderLink from '../../../components/BlogHeaderLink.astro';
+import { categories } from '../../../lib/posts';
+import ArrowHeader from '../../../components/ArrowHeader.astro';
+import Marquee from '../../../components/Marquee.astro';
+
+const colors = [
+	'red',
+	'blue',
+	'pink',
+	'violet',
+	'yellow',
+	'green',
+	'cyan',
+	'orange',
+	'teal',
+	'sand',
+	'camo',
+	'jungle',
+	'stone'
+];
+
+const categoriesWithColors = categories.map((category, index) => {
+	const color = colors[index % colors.length];
+	return {
+		slug: category,
+		color
+	};
+});
+---
+
+<Layout title="Blog">
+	<main>
+		<ArrowHeader angle="-45">Categories</ArrowHeader>
+		<a class="marquee" href="/blog">
+			<Marquee>Browse all posts</Marquee>
+		</a>
+
+		<article>
+			<ul>
+				{
+					categoriesWithColors.map((category) => (
+						<li>
+							<a
+								style={`--background-color: var(--${category.color}-8)`}
+								href={`/blog/category/${category.slug}`}
+							>
+								{category.slug}
+							</a>
+						</li>
+					))
+				}
+			</ul>
+		</article>
+	</main>
+</Layout>
+<style>
+	a.marquee {
+		text-decoration: none;
+	}
+
+	ul {
+		display: flex;
+		flex-direction: column;
+		list-style: none;
+		border-top: 5px solid var(--text-color);
+	}
+
+	li a {
+		font-size: var(--text-xl);
+		text-decoration: none;
+		color: var(--text-color);
+		padding: 0 0.5rem;
+		display: block;
+	}
+
+	li a:hover {
+		background-color: var(--background-color);
+	}
+
+	li {
+		border-bottom: 5px solid var(--text-color);
+	}
+
+	li:last-of-type {
+		border-bottom: none;
+	}
+
+	li:nth-last-child(2) {
+		border-bottom: none;
+	}
+
+	section {
+		padding: 1rem 0.5rem;
+	}
+
+	p {
+		font-size: var(--text-lg);
+	}
+
+	p ~ p {
+		margin-top: 1rem;
+	}
+
+	@media (min-width: 768px) {
+		ul {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		li {
+			border-right: 5px solid var(--text-color);
+		}
+
+		li:nth-of-type(even) {
+			border-right: none;
+		}
+	}
+</style>
