@@ -3,6 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import BlogHeader from '../../components/BlogHeader.astro';
 import Article from '../../components/Article.astro';
 import { publishedPosts, allPosts } from '../../lib/posts';
+import Categories from '../../components/Categories.astro';
 
 export async function getStaticPaths() {
 	const isDev = import.meta.env.DEV;
@@ -27,6 +28,7 @@ const { Content } = await entry.render();
 		<header>
 			<BlogHeader post={entry.data} />
 		</header>
+		<Categories categories={entry.data.categories} />
 		<Article linkHoverColor={entry.data.titleColor} linkUnderlineColor={entry.data.titleBgColor}>
 			<Content />
 		</Article>

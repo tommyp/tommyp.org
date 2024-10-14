@@ -1,0 +1,55 @@
+---
+const { categories } = Astro.props;
+---
+
+<div class="bar">
+	<h2>Categories</h2>
+	<ul>
+		{
+			categories.map((category) => {
+				return (
+					<li>
+						<a href={`/blog/category/${category}`}>{category}</a>
+					</li>
+				);
+			})
+		}
+	</ul>
+</div>
+
+<style>
+	a {
+		text-decoration: none;
+		color: var(--text-color);
+		padding: 0.5rem 1rem;
+		display: block;
+	}
+
+	a:hover {
+		background-color: var(--text-color);
+		color: var(--bg-color);
+	}
+
+	.bar {
+		display: flex;
+		justify-content: space-between;
+		border-bottom: 1px solid var(--text-color);
+		font-size: var(--text-md);
+		text-transform: uppercase;
+	}
+
+	h2 {
+		font-size: var(--text-md);
+		padding: 0.5rem 1rem;
+	}
+
+	ul {
+		list-style-type: none;
+		padding: 0;
+		display: flex;
+	}
+
+	li {
+		border-left: 1px solid var(--text-color);
+	}
+</style>
