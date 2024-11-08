@@ -28,7 +28,7 @@ Being from the Catholic/[Nationalist](https://en.wikipedia.org/wiki/Irish_nation
 
 Now though, Kneecap is telling our story to the world. I think that everyone should listen to the album, watch the film, and maybe learn _cúpla focal_.
 
-# Honourable mentions
+## Honourable mentions
 
 - 🎮 Soaking up all of Elden Ring as I near the end. What an incredible game.
 - 🎮 Balatro is very addictive. I might be developing a problem.
