@@ -4,7 +4,7 @@ date: '2023-11-20'
 subtitle: Future feeds
 titleBgColor: '#894106'
 titleColor: '#ffc18e'
-categories: [web, tech, dev]
+categories: [internet, culture, rss]
 ---
 
 About a year ago, I wrote a post when I [got back into blogging and RSS](https://www.tommyp.org/blog/once-more-with-feeling). I'm still doing both of those things, but I've also been building a few more projects.

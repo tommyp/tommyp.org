@@ -4,7 +4,7 @@ date: '2023-12-03'
 subtitle: Always open with
 titleBgColor: '#fff'
 titleColor: '#05f'
-categories: [personal, web, design, ux]
+categories: [personal, internet, design, ux]
 ---
 
 Jumping on the [bandwagon](https://defaults.rknight.me/). There's more stuff on my [Uses page](/uses).

@@ -4,7 +4,7 @@ date: '2024-03-20'
 subtitle: Show, don't tell
 titleBgColor: '#9b5a37'
 titleColor: '#5e3018'
-categories: [culture, films]
+categories: [culture, film]
 ---
 
 Unless you've been living in a cave, you've probably spotted that the second part of the Dune duology has taken over the world. I'm a huge fan of the book, and to see it finished with such a spectacular entry is a relief. I loved every second of it and drank it up like a fresh pint of worm water on Arrakis.

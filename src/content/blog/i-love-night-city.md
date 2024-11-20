@@ -4,7 +4,7 @@ date: '2024-02-29'
 subtitle: Braindancing with my Chooms
 titleColor: '#fbff31'
 titleBgColor: '#e014d9'
-categories: [games, cyberpunk]
+categories: [videogames]
 ---
 
 > _“The sky above the port was the color of television, tuned to a dead channel.”_

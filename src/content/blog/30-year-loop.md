@@ -4,7 +4,7 @@ date: '2022-12-03'
 subtitle: The 90's are back
 titleColor: '#0000FF'
 titleBgColor: '#1DA5BE'
-categories: ['culture', 'games', 'retro', 'nostalgia']
+categories: [culture, videogames]
 ---
 
 Many years ago, I read this incredible article about how [pop culture exists in 30 year loops](https://thepatterning.com/2017/02/13/the-nostalgia-pendulum-a-rolling-30-year-cycle-of-pop-culture-trends/). It's why Back to the Future jumps from 1985 to 1955. There's plenty of examples within that article and now that you know about it, you'll see it everywhere.
