@@ -42,7 +42,7 @@ const { categories } = Astro.props;
 	}
 
 	li {
-		border-left: 1px solid var(--text-color);
+		border-right: 1px solid var(--text-color);
 	}
 
 	h2 {
@@ -54,7 +54,6 @@ const { categories } = Astro.props;
 		font-size: var(--text-md);
 		text-transform: uppercase;
 		display: flex;
-		justify-content: right;
 	}
 
 	@media (min-width: 768px) {
@@ -69,6 +68,10 @@ const { categories } = Astro.props;
 
 		a {
 			padding: 0.5rem 1rem;
+		}
+
+		.bar {
+			justify-content: right;
 		}
 	}
 </style>
