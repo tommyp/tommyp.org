@@ -189,7 +189,7 @@ A proper pub on a lovely corner in a quiet Hoxton street. It's an old spot with 
 
 <hr/>
 
-This is my list of 20. I probably could've put more down but I tried not to just list every pub I like. As Boak and Bailey said, share your list with the world.
+This is my list of 20. I probably could've put more down but I tried not to just list every pub I like. There's also some that don't exist anymore like [Bree Louise](https://www.camdennewjournal.co.uk/article/its-soul-destroying-say-bree-louise-landlords-as-hs2-forces-pub-to-close). As Boak and Bailey said, share your list with the world.
 
 ## Honourable mentions
 
