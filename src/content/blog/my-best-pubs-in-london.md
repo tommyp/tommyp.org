@@ -189,7 +189,7 @@ A proper pub on a lovely corner in a quiet Hoxton street. It's an old spot with 
 
 <hr/>
 
-This is my list of 20. I probably could've put more down but I tried not to just list every pub I like. There's also some that don't exist anymore like [Bree Louise](https://www.camdennewjournal.co.uk/article/its-soul-destroying-say-bree-louise-landlords-as-hs2-forces-pub-to-close). As Boak and Bailey said, share your list with the world.
+This is my list of 20. I probably could've put more down but I tried not to just list every pub I like. There's also some that don't exist anymore like the [Bree Louise](https://www.camdennewjournal.co.uk/article/its-soul-destroying-say-bree-louise-landlords-as-hs2-forces-pub-to-close). As Boak and Bailey said, share your list with the world.
 
 ## Honourable mentions
 
@@ -198,7 +198,7 @@ This is my list of 20. I probably could've put more down but I tried not to just
 - 🎵 After a few bumper weekends of music, [Lankum](https://open.spotify.com/artist/2zPm4XzwKuPidtfKh92H2Z?si=QJoTieqUT_eVjAoF7k-JSw) was definitely the highlight. A modern take on traditional Irish music. My parents weren't into that stuff so I don't really have an appreciation for it, but Kneecap has gotten me into a broader selection of modern Irish acts.
 - 🎬 Small Things Like These was a brutal watch. I expected it to be better, and the ending wasn't great, but it's an important story.
 - 🎬 Like everyone else, I watched The Substance. So fucked up. I loved it.
-- 🎬 Most of the other things I watched over October to scare myself were dogshit. Immaculate was the only highlight.
+- 🎬 Most of the other things I watched over October to scare myself were awful. Immaculate was the only highlight.
 - 📺 Everyone Else Burns Season 2 was great. Kate O'Flynn is hilarious.
 - 📺 MAFS UK was an abomination. Nearly everyone should've went for therapy instead. Some proper bullying not being called out by the experts. I'm not sure I can handle another series.
 - 📺 Taskmaster Season 18 is over. I've been a fan of Zaltzman for years so it was wonderful to see him on TV. Rosie Jones was disgusting and hilarious.
