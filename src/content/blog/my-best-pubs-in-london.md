@@ -151,7 +151,7 @@ When a pub becomes the office regular, it can lead to many nights filled with go
 
 <p></p>
 
-Carpetted floors, red velvet seats, barebones decor, and ancient photos on the wall are hallmarks of a great pub, and The Pride of Spitalfields has them all. There's even a pub cat who might steal your warm seat when you get up for another round.
+Carpetted floors, red velvet seats, classic decor, and ancient photos on the wall are hallmarks of a great pub, and The Pride of Spitalfields has them all. There's even a pub cat who might steal your warm seat when you get up for another round.
 
 ### [The Seven Stars, Holborn](https://maps.app.goo.gl/4TbPs6zqtj7y2e5a6)
 
