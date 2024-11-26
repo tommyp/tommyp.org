@@ -61,7 +61,7 @@ About as Spanish as San Miguel, Bradley's is a little red oasis hidden away down
 
 <p></p>
 
-A craft beer pub in Hackney isn't exactly original, but The Cock is one of the best. The beer selection is stellar, the decor is classic, the atmosphere is solid, and the 'beer garden' is laughably bleak. [The eponymous Cock was even kidnapped, but eventually returned in September 2022](https://www.instagram.com/p/CiSbggAIgVU/?img_index=1)
+A craft beer pub in Hackney isn't exactly original, but The Cock is one of the best. The beer selection is stellar, the decor is classic, the atmosphere is solid, and the 'beer garden' is laughably bleak. [The eponymous Cock was even kidnapped, but eventually returned in September 2022](https://www.instagram.com/p/CiSbggAIgVU/?img_index=1).
 
 ### [The Cross Keys, Covent Garden](https://maps.app.goo.gl/GDgyEFGu9sh8Kg1EA)
 
@@ -206,4 +206,4 @@ This is my list of 20. I probably could've put more down but I tried not to just
 - 🎮 Balatro on mobile is such an addiction. I've got to endless mode with a few decks, but I don't think I have the time to craft crazy broken builds like I see online.
 - 🎮 I finally [finished Cyberpunk 2077](/blog/i-love-night-city). What an incredible journey.
 - 🎮 I also gave Starfield [a second chance](/blog/second-chances), it's _OK_, but compared to Cyberpunk it's such a letdown and a missed opportunity. I'm looking forward to when someone can figure out how to make a better Starfield.
-- 📚 After finishing Children of Ruin, I had to start Children of Memory instantly. I'm about 100 pages in and it hasn't quite grabbed me yet, but I think I felt the same Children of Time so I'm determined to finish it.
+- 📚 After finishing Children of Ruin, I had to start Children of Memory instantly. I'm about 100 pages in and it hasn't quite grabbed me yet, but I think I felt the same with Children of Time so I'm determined to finish it.
