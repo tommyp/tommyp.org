@@ -194,10 +194,6 @@
 			display: none;
 		}
 
-		h1 span {
-			display: inherit;
-		}
-
 		.dropdown,
 		header:not(.dropdownOpen) .dropdown {
 			position: relative;
