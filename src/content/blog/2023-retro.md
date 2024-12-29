@@ -4,7 +4,7 @@ date: '2023-12-30'
 subtitle: It was a very good year
 titleBgColor: '#ef9'
 titleColor: 'var(--green-9)'
-categories: [personal]
+categories: [personal, yearnotes]
 ---
 
 Here's a rundown of things I did in 2023:
