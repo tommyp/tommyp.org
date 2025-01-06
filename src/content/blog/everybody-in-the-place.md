@@ -19,7 +19,7 @@ Dance Music started as a counter cultural movement, emerging from gay clubs ran 
 
 ## Honourable mentions
 
-- 🎮 Indiana Jones and The Great Circle was delightful from start to finish. It's got some issues with cameras and pathfinding, but that's common with AAA games these days. There's also lots of to enjoy like whacking Nazis in the nads with guitars, [Troy Baker's voice](https://www.bbc.co.uk/news/articles/cn08epwy152o), intricately detailed locations all around the globe, and most surprisingly, it's a first person game where you barely fire a gun.
+- 🎮 Indiana Jones and The Great Circle was delightful from start to finish. It's got some issues with cameras and pathfinding, but that's common with AAA games these days. There's also lots of to enjoy, like whacking Nazis in the nads with guitars, [Troy Baker's voice](https://www.bbc.co.uk/news/articles/cn08epwy152o), intricately detailed locations all around the globe, and most surprisingly, it's a first person game where you barely fire a gun.
 - 🎧 [What Did You Do Yesterday?](https://open.spotify.com/show/62lFI5XAYb68cSOcOWnDI9) has been a nice new bit of background chatter between comedians.
 - 📺 [The Rehearsal](https://www.youtube.com/watch?v=2fjPFt8cpic) was fantastically weird, and my first experience of Nathan Fielder. We'll definitely be watching Nathan For You very soon.
 - 📺 [Fantasmas](https://www.youtube.com/watch?v=0Hy1q_YIAL4) is another weird watch this week. The dialogue, sets, and plots, are so bizarre and I love it. It's been a weird week of TV I guess?
