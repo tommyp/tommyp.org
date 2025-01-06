@@ -1,7 +1,7 @@
 ---
 title: 'Dance Music, counter culture, and the new mainstream'
 date: '2025-01-06'
-subtitle: Everybody In The Place
+subtitle: Music for the jilted generations
 titleBgColor: '#4eef0e'
 titleColor: '#fff'
 categories: [culture, music]
