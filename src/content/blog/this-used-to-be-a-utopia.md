@@ -29,7 +29,7 @@ Jimmy Wales and Tim Berners-Lee had the right idea. Or be like Tom from Myspace 
 
 What are we going to do about it? I honestly have no idea.
 
-If you can somewhat face the impending onslaught of coverage, you should read things like [Molly White](https://bsky.app/profile/molly.wiki) [newsletter, Citation Needed](https://www.citationneeded.news/), alongside the news that made her famous, [web3 is going just great
+If you can somewhat face the impending onslaught of coverage, you should read things like [Molly White's](https://bsky.app/profile/molly.wiki) [newsletter, Citation Needed](https://www.citationneeded.news/), alongside the news that made her famous, [web3 is going just great
 ](https://bsky.app/profile/did:plc:ugyl6syayvsrvu5w4uxtlkz4).
 
 For Podcasts, I like [The Vergecast](https://www.theverge.com/the-vergecast). For more skeptical voices in Tech I stick to [Better Offline](https://www.betteroffline.com/), [Tech Won't Save Us](https://www.techwontsave.us/), and [System Crash](https://systemcrash.info/). Even the odd episode of [Behind The Bastards](https://open.spotify.com/show/0rOatMqaG3wB5BF4AdsrSX) covers your favourite Tech bastards. All of this assumes you can somehow not cringe every time you hear one of their names.
