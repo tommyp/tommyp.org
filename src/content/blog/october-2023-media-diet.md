@@ -1,6 +1,6 @@
 ---
 title: October 2023 Media Diet
-date: '2023-10-31'
+date: 2023-10-31
 subtitle: Let's get spooky
 titleBgColor: '#f47302'
 titleColor: '#000'

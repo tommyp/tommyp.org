@@ -1,6 +1,6 @@
 ---
 title: 'Dance Music, counter culture, and the new mainstream'
-date: '2025-01-06'
+date: 2025-01-06
 subtitle: Music for the jilted generations
 titleBgColor: '#4eef0e'
 titleColor: '#fff'

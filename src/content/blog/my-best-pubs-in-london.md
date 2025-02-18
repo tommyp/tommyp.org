@@ -1,6 +1,6 @@
 ---
 title: 'My best pubs in London'
-date: '2024-11-20'
+date: 2024-11-20
 subtitle: Serious about pints
 titleBgColor: '#e8a114'
 titleColor: '#fff'

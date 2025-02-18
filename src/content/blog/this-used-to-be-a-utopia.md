@@ -1,6 +1,6 @@
 ---
 title: This used to be a Utopia
-date: '2025-01-22'
+date: 2025-01-22
 subtitle: Looking forward
 titleBgColor: '#0245fc'
 titleColor: '#fcb902'

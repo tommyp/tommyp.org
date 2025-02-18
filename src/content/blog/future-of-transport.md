@@ -1,6 +1,6 @@
 ---
 title: The future of transport
-date: '2023-01-21'
+date: 2023-01-21
 subtitle: Two wheels good, four wheels bad
 titleBgColor: '#00d'
 titleColor: '#fff'

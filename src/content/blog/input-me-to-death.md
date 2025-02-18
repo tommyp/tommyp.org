@@ -1,6 +1,6 @@
 ---
 title: Input Me To Death
-date: '2023-09-12'
+date: 2023-09-12
 subtitle: Please try again
 titleBgColor: '#fff'
 titleColor: '#f00'

@@ -1,6 +1,6 @@
 ---
 title: Remote Lurking
-date: '2024-08-22'
+date: 2024-08-22
 subtitle: Happiness and loneliness
 titleBgColor: '#dd8d0d'
 titleColor: '#dd250d'

@@ -1,6 +1,6 @@
 ---
 title: 30 year loop
-date: '2022-12-03'
+date: 2022-12-03
 subtitle: The 90's are back
 titleColor: '#0000FF'
 titleBgColor: '#1DA5BE'

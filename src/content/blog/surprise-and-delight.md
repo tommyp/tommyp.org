@@ -1,6 +1,6 @@
 ---
 title: 'Surprise & Delight'
-date: '2023-08-21'
+date: 2023-08-21
 subtitle: Just for fun
 titleBgColor: 'color(display-p3 1 0.784 0.2)'
 titleColor: 'color(display-p3 0.424 0 1 / 1)'

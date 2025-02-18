@@ -1,6 +1,6 @@
 ---
 title: '⌘ Space'
-date: '2023-08-4'
+date: 2023-08-04
 subtitle: 'The search for ultimate productivity'
 titleBgColor: '#140a51'
 titleColor: '#fff'

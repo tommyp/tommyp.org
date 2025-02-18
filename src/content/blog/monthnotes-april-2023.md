@@ -1,6 +1,6 @@
 ---
 title: 'Monthnotes: April 2023'
-date: '2023-05-1'
+date: 2023-05-01
 subtitle: Obrigado
 titleBgColor: '#DA291C'
 titleColor: '#FFE900'

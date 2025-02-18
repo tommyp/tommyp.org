@@ -1,6 +1,6 @@
 ---
 title: I ❤️ Night City
-date: '2024-02-29'
+date: 2024-02-29
 subtitle: Braindancing with my Chooms
 titleColor: '#fbff31'
 titleBgColor: '#e014d9'

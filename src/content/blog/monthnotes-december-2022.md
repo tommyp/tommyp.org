@@ -1,6 +1,6 @@
 ---
 title: 'Monthnotes: December 2022'
-date: '2022-12-24'
+date: 2022-12-24
 subtitle: Beer and cheese
 titleBgColor: '#00ff00'
 titleColor: '#000'

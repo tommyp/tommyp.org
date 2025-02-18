@@ -1,6 +1,6 @@
 ---
 title: My Films, Games, and TV, of 2023
-date: '2023-12-28'
+date: 2023-12-28
 subtitle: 'And the award goes to...'
 titleBgColor: 'var(--jungle-5)'
 titleColor: 'var(--pink-9)'

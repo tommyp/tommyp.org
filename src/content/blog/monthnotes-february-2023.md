@@ -1,6 +1,6 @@
 ---
 title: 'Monthnotes: February 2023'
-date: '2023-03-01'
+date: 2023-03-01
 subtitle: better bread than dead
 titleBgColor: '#9c6b33'
 titleColor: '#fff'

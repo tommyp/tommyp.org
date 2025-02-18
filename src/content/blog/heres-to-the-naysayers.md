@@ -1,6 +1,6 @@
 ---
 title: Here's to The Naysayers
-date: '2024-07-09'
+date: 2024-07-09
 subtitle: Pre-apocalyptic
 titleColor: '#ff0099'
 titleBgColor: '#aaaa99'

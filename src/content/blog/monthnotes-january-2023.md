@@ -1,6 +1,6 @@
 ---
 title: 'Monthnotes: January 2023'
-date: '2023-02-09'
+date: 2023-02-09
 subtitle: Wet Jan
 titleBgColor: '#77ddd8'
 titleColor: '#000'

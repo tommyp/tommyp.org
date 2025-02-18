@@ -1,6 +1,6 @@
 ---
 title: Little Tech
-date: '2024-04-11'
+date: 2024-04-11
 subtitle: Micro-computing
 titleColor: '#0c45ff'
 titleBgColor: '#45ff0c'

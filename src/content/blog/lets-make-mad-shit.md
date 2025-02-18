@@ -1,6 +1,6 @@
 ---
 title: Let's make mad shit
-date: '2021-01-03'
+date: 2021-01-03
 subtitle: Fill this town with nonsense
 titleColor: '#fff'
 titleBgColor: '#6234eb'

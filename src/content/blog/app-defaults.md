@@ -1,6 +1,6 @@
 ---
 title: App defaults
-date: '2023-12-03'
+date: 2023-12-03
 subtitle: Always open with
 titleBgColor: '#fff'
 titleColor: '#05f'

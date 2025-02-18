@@ -1,6 +1,6 @@
 ---
 title: Tales from a solo dev
-date: '2024-01-22'
+date: 2024-01-22
 subtitle: You want it? You merge it.
 titleBgColor: '#F8FF00'
 titleColor: '#ff00f6'

@@ -1,6 +1,6 @@
 ---
 title: 'PsychOdyssey'
-date: '2023-03-23'
+date: 2023-03-23
 subtitle: What colour is the sky in your world?
 titleBgColor: '#9F19A8'
 titleColor: '#00ffc7'

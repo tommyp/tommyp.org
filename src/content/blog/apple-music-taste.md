@@ -1,6 +1,6 @@
 ---
 title: 'Apple Music Taste'
-date: '2023-07-16'
+date: 2023-07-16
 subtitle: Dance to the beat of the drum
 titleBgColor: '#fc3c44'
 titleColor: '#fff'

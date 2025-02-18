@@ -1,6 +1,6 @@
 ---
 title: New Year, New Site
-date: '2023-12-23'
+date: 2023-12-23
 subtitle: '2024, 3, 2, 1, GO'
 titleBgColor: 'var(--pink-5)'
 titleColor: 'var(--yellow-5)'

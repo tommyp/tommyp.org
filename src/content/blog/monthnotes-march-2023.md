@@ -1,6 +1,6 @@
 ---
 title: 'Monthnotes: March 2023'
-date: '2023-04-10'
+date: 2023-04-10
 subtitle: pubs crawls
 titleBgColor: '#4cb1e0'
 titleColor: '#fff'

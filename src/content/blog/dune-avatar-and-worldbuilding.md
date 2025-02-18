@@ -1,6 +1,6 @@
 ---
 title: Dune, Avatar, and worldbuilding
-date: '2024-03-20'
+date: 2024-03-20
 subtitle: Show, don't tell
 titleBgColor: '#9b5a37'
 titleColor: '#5e3018'

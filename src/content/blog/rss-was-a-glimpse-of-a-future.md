@@ -1,6 +1,6 @@
 ---
 title: RSS was a glimpse of a future
-date: '2023-11-20'
+date: 2023-11-20
 subtitle: Future feeds
 titleBgColor: '#894106'
 titleColor: '#ffc18e'
@@ -37,8 +37,8 @@ I think, that Blogs and RSS were a little taste of this semantic web.
 
 Now, we've got many sophisticated ways of parsing and using this data, but it's all at an OS level by Apple, Google, Microsoft, and Amazon.
 
-Google pushed the spec of Atom and RSS with [Google Data and __Kinds__](https://developers.google.com/gdata/docs/1.0/elements). We have some great extensions of content here - _event start and end dates, locations, quality ratings for reviews, and people associated with the content._
+Google pushed the spec of Atom and RSS with [Google Data and **Kinds**](https://developers.google.com/gdata/docs/1.0/elements). We have some great extensions of content here - _event start and end dates, locations, quality ratings for reviews, and people associated with the content._
 
-__Kinds__ a great idea. It's what I hoped we had by now.
+**Kinds** a great idea. It's what I hoped we had by now.
 
 It's just a shame that using and remixing the web is only capable by big companies.

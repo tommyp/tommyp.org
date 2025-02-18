@@ -1,6 +1,6 @@
 ---
 title: 'Kennedy Space Center'
-date: '2024-05-01'
+date: 2024-05-01
 subtitle: Ad Astra
 titleBgColor: '#0105c4'
 titleColor: '#c40105'

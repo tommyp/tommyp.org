@@ -1,6 +1,6 @@
 ---
 title: Cruisenotes
-date: '2024-05-03'
+date: 2024-05-03
 subtitle: Shipwrecked
 titleBgColor: '#1386d3'
 titleColor: '#1326d3'

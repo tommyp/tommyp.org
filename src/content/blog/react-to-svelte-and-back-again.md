@@ -1,6 +1,6 @@
 ---
 title: 'React to Svelte, and back again'
-date: '2023-05-1'
+date: 2023-05-01
 subtitle: I love you Svelte but you're bringing me down
 titleBgColor: '#FF3E00'
 titleColor: 'white'

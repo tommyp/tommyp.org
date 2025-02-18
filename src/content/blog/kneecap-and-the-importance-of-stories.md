@@ -1,6 +1,6 @@
 ---
 title: 'Kneecap and the importance of stories'
-date: '2024-09-29'
+date: 2024-09-29
 subtitle: Our day has come
 titleBgColor: '#128e37'
 titleColor: '#e8a114'
@@ -22,7 +22,7 @@ Living in London, I know more mainland Brits than the average person in Ireland 
 
 Kneecap, and I, are both from a part of the world with a distinct cultural identity. One that, outside of the North of Ireland, is rarely shown in media. A history of music and language exist alongside [solidarity with Palestine](https://edition.cnn.com/2024/03/29/middleeast/why-ireland-is-the-most-pro-palestinian-nation-in-europe-mime-intl/index.html), a dark sense of humour about our turbulent past, and a healthy distrust of the British State and Royal Family.
 
-Outside of BBC NI and [UTV](https://en.wikipedia.org/wiki/UTV_(TV_channel)?useskin=vector), stories from Irish Catholics weren't heard. Let's not forget that it wasn't that long ago that [our elected representative's voices were literally not allowed on TV](https://en.wikipedia.org/wiki/1988%E2%80%931994_British_broadcasting_voice_restrictions?useskin=vector). What might've been deemed _politically sensitive_ to some, is a way of life where I come from.
+Outside of BBC NI and [UTV](<https://en.wikipedia.org/wiki/UTV_(TV_channel)?useskin=vector>), stories from Irish Catholics weren't heard. Let's not forget that it wasn't that long ago that [our elected representative's voices were literally not allowed on TV](https://en.wikipedia.org/wiki/1988%E2%80%931994_British_broadcasting_voice_restrictions?useskin=vector). What might've been deemed _politically sensitive_ to some, is a way of life where I come from.
 
 Being from the Catholic/[Nationalist](https://en.wikipedia.org/wiki/Irish_nationalism?useskin=vector#Northern_Ireland) part of Belfast, any national identity that I have is steeped in centuries of colonisation, cultural supression, and mainland ignorance of our history.
 

@@ -1,6 +1,6 @@
 ---
 title: 'Feeds for the soul'
-date: '2023-06-29'
+date: 2023-06-29
 subtitle: Really simple sites
 titleBgColor: '#ff7800'
 titleColor: 'white'

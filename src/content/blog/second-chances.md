@@ -1,6 +1,6 @@
 ---
 title: 'Second chances'
-date: '2023-03-11'
+date: 2023-03-11
 subtitle: let's give it another go
 titleBgColor: '#d1d1d1'
 titleColor: '#000'

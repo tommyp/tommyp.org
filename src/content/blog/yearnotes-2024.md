@@ -1,6 +1,6 @@
 ---
 title: 'Yearnotes: 2024'
-date: '2024-12-30'
+date: 2024-12-30
 subtitle: Some year for it
 titleBgColor: '#138af9'
 titleColor: '#13f983'

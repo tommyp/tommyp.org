@@ -1,6 +1,6 @@
 ---
 title: 'Monthnotes: June 2023'
-date: '2023-07-04'
+date: 2023-07-04
 subtitle: Hot hot heat
 titleBgColor: '#ef3123'
 titleColor: '#fff'

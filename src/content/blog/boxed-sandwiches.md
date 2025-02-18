@@ -1,6 +1,6 @@
 ---
 title: Boxed sandwiches
-date: '2023-10-6'
+date: 2023-10-06
 subtitle: Why do the Brits love sandwiches in boxes?
 titleColor: '#fff'
 titleBgColor: '#9e1a30'

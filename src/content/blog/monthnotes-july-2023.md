@@ -1,6 +1,6 @@
 ---
 title: 'Monthnotes: July & August 2023'
-date: '2023-09-01'
+date: 2023-09-01
 titleBgColor: '#06a4dd'
 titleColor: '#fff'
 draft: true

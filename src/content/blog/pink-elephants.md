@@ -1,6 +1,6 @@
 ---
 title: 'Elephanti Sunt Personae'
-date: '2023-01-31'
+date: 2023-01-31
 subtitle: Pink Elephants
 titleBgColor: '#db259e'
 titleColor: '#000'
