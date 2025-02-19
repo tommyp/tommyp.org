@@ -15,7 +15,7 @@ After a long time with [LaunchBar](https://obdev.at/products/launchbar/index.htm
 
 I spend nearly all day using my code editor. If I'm not coding for work, I'm often coding for myself. Many keyboard shortcuts that I learnt with [Textmate](https://macromates.com/) still do the same thing in newer editors. My career took me through [Coda](https://panic.com/coda/), [Sublime](https://www.sublimetext.com/), [Atom](https://atom-editor.cc/), and now [Visual Studio Code](https://code.visualstudio.com/).
 
-Between the app launchers and code editors, it was worth it to learn how to control my Mac with just my keyboard. All of those years spent avoiding the mouse forced me to learn what felt like hidden incantations. Shortcut superpowers.
+Between the app launchers and code editors, it was worth it to learn how to control my Mac with just my keyboard. All of those years spent avoiding the mouse forced me to learn what felt like hidden incantations.
 
 Both Raycast and VS Code now have AI built in. It's in your OS, your phone, and even your [washing machine](https://www.t3.com/news/i-tried-samsungs-new-ai-washing-machine-and-laundry-is-now-my-favourite-chore). AI usage is a common topic of conversation when I speak with other developers. Opinions always differ on any tool, but my usage of keyboard shortcuts made me use it slightly differently, and I wanted to share that.
 
