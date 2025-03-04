@@ -1,0 +1,108 @@
+---
+import ArrowHeader from './ArrowHeader.astro';
+
+const projects = [
+	{
+		title: 'Lineup',
+		href: 'https://lineup.fun',
+		description: 'Spotify playlist generator',
+		colors: {
+			foreground: 'rgb(10, 10, 10)',
+			background: 'rgb(149, 252, 15)'
+		}
+	},
+	{
+		title: 'Shorts',
+		href: 'https://isitshortsweathertoday.com',
+		description: 'The only weather app you need',
+		colors: {
+			foreground: '#fff',
+			background: '#ed3e09'
+		}
+	}
+];
+---
+
+<ArrowHeader>Projects</ArrowHeader>
+
+<section>
+	<ul>
+		{
+			projects.map((project) => (
+				<li>
+					<a
+						href={project.href}
+						style={{
+							'--foreground': `${project.colors.foreground}`,
+							'--background': `${project.colors.background}`
+						}}
+					>
+						<h2>{project.title}</h2>
+						<p>{project.description}</p>
+					</a>
+				</li>
+			))
+		}
+	</ul>
+</section>
+
+<style>
+	li {
+		display: block;
+	}
+
+	a {
+		background-color: var(--background);
+		border-bottom: 1px solid var(--text-color);
+		color: var(--foreground);
+		display: block;
+		font-size: var(--text-xl);
+		padding: 0.5rem;
+		text-decoration: none;
+	}
+
+	h2 {
+		font-size: var(--text-xl);
+	}
+
+	p {
+		font-size: var(--text-md);
+	}
+
+	@media (min-width: 768px) {
+		ul {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		li {
+			border-right: 1px solid var(--text-color);
+		}
+
+		li:nth-of-type(even) {
+			border-right: none;
+		}
+
+		h2 {
+			font-size: var(--text-3xl);
+			display: block;
+		}
+
+		p {
+			font-size: var(--text-lg);
+		}
+
+		a {
+			width: 100%;
+			padding: 0.5rem 1rem;
+			background-color: var(--bg-color);
+			color: var(--text-color);
+			border-bottom: none;
+		}
+
+		a:hover {
+			background-color: var(--background);
+			color: var(--foreground);
+		}
+	}
+</style>

@@ -5,6 +5,7 @@ import BlogHeaderLink from '../components/BlogHeaderLink.astro';
 import { publishedPosts } from '../lib/posts';
 import Graphic from '../components/Graphic.astro';
 import ArrowHeader from '../components/ArrowHeader.astro';
+import Projects from '../components/Projects.astro';
 
 const blogPosts = publishedPosts.slice(0, 3);
 ---
@@ -23,6 +24,7 @@ const blogPosts = publishedPosts.slice(0, 3);
 			</a>
 		</div>
 		{blogPosts.map((post) => <BlogHeaderLink post={post} />)}
+		<Projects />
 	</div>
 </Layout>
 
