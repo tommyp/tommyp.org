@@ -17,7 +17,7 @@ There's one reference everyone misses, and it's from one of Charlie Brooker's ea
 
 Nathan Barley is a show about mid 00's media people who work in Shoreditch. The titular Barley describes himself as a "self-facilitating media node". His main enterprise is [Trashbat.co.ck](https://trashbat.co.ck/), said aloud as "_trashbat dot cock_". The original content is gone, but it was a satire of websites that were common at the time - collections of flash toys with assorted videos of pranks, and of people hurting themselves and each other. In between this he makes films, DJs, and runs club nights. All in an effort to stay cool while constantly teetering on the edge of anxiety over irrelevancy.
 
-Even in 2025, it's worth a watch. Some of the jokes are a little dated, but it mostly holds up. You'll have fun spotting a lot of now very famous faces during the beginning of their careers. Like Black Mirror, it was a show about predicting the future, but unlike Black Mirror it was accidental. It even used the phrase _hand-held twit machines_ a full year before Twitter was launched:
+Even in 2025, it's worth a watch. Some of the jokes are a little dated, but it mostly holds up. You'll have fun spotting a lot of now very famous faces during the beginning of their careers. Like Black Mirror, it was a show about predicting the future, but unlike Black Mirror, it was accidental. It even used the phrase _hand-held twit machines_ a full year before Twitter was launched:
 
 > _They babble into hand-held twit machines about that cool email of the woman being bummed by a wolf. Their friend made it. He’s an idiot too._
 
