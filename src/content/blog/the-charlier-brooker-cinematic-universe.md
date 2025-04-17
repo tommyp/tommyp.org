@@ -11,7 +11,7 @@ New episodes of Black Mirror are out, and once again has some great episodes abo
 
 **This post contains some light spoilers for earlier episodes of Black Mirror.**
 
-It all started in _The National Anthem_ when Prime Minister Michael Callow got piggy with it. He's then mentioned in loads of episodes, including _Hated in the Nation_ where robotic bees cause a few issues. These events both appear in _Black Museum_, which also features a lot of other episodes. [And so on, and so on.](https://screenrant.com/black-mirror-shared-universe-connections-references-easter-eggs/).
+It all started in _The National Anthem_ when Prime Minister Michael Callow got piggy with it. He's then mentioned in loads of episodes, including _Hated in the Nation_ where robotic bees cause a few issues. These events both appear in _Black Museum_, which also features a lot of other episodes. [And so on, and so on](https://screenrant.com/black-mirror-shared-universe-connections-references-easter-eggs/).
 
 There's one reference everyone misses, and it's from one of Charlie Brooker's early works - Nathan Barley.
 
