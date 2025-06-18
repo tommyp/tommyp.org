@@ -25,7 +25,7 @@ Unfortunately, the Playdate shipped in groups, so the idea of everyone playing t
 
 Season 2 has just launched, and there are now many Playdates in the world, so this time it's different. We're on Week 3 and there's already been some great games, my favourite so far being [Dig Dig Dino](https://play.date/games/dig-dig-dino/). I want to share a surprise anomolous addition to the lineup from Week 1, [Blippo+](https://play.date/games/blippo/).
 
-> When the first batch of Playdates came online, something strange happened. All at once, the screens pulsed with an unusual pattern of TV static. Was it a software glitch? Or interference from a transmission coming from somewhere beyond our world?
+> _When the first batch of Playdates came online, something strange happened. All at once, the screens pulsed with an unusual pattern of TV static. Was it a software glitch? Or interference from a transmission coming from somewhere beyond our world?_
 
 Blippo+ is an TV channel broadcast from a planet that I think is called Blippo? Their scientists have detected something they call _The Bend_ in the space time continuum near their planet that has allowed them to broadcast their prime time content with us, their aliens.
 
