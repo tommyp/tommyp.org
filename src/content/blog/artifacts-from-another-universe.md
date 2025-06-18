@@ -13,7 +13,7 @@ My evenings and weekends were spent trawling through corridors leaving trails of
 
 The vaguely satanic imagery was something I didn't see that often in Belfast during the 90s. To me, DOOM felt like a real life [Necronomicon](https://en.wikipedia.org/wiki/Necronomicon). Dropped into the disc drive to lead me on some [Ash Campbell-esque](https://evildead.fandom.com/wiki/Necronomicon_Ex-Mortis) quest to fight the dead. Not that I had seen Evil Dead at this point, but you get the idea.
 
-DOOM felt like something alien. Something weird. Something forbidden. It was like reality had cracked and I had something which shouldn't exist in our world.
+DOOM felt like something alien. Something weird. Something forbidden. It was like reality had cracked and I had an object which shouldn't exist in our world.
 
 That feeling has stuck with me ever since.
 
