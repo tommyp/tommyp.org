@@ -19,7 +19,7 @@ That feeling has stuck with me ever since.
 
 ## Round the bend
 
-I've written about the [Playdate](https://play.date/) [before](/blog/surprise-and-delight) after mine finally arrived. When it launched, it included a season of games delivered straight to the device, with 2 launching each week.
+I've written about the [Playdate](https://play.date/) [before](/blog/surprise-and-delight) when mine finally arrived. When it launched, it included a season of games delivered straight to the device, with 2 arriving each week.
 
 Unfortunately, the Playdate shipped in groups, so the idea of everyone playing the same 2 games each week didn't really work when everyone got their Playdates at different times.
 
