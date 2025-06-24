@@ -24,13 +24,13 @@ Today, I’m releasing another new version. I thought this would be a good oppor
 
 Back in May of 2011, I was 22 and had just recently finished University. Not working weekends for the first time since I was 17 was glorious. Summer was a few weeks away, but I was already enjoying all the Sun I could.
 
-Belfast weather during the summer can be _sunny_, and might reach a level you could describe as _warm_ or even _hot_. No matter what euphoric weather you experience in one part of the day, the rest of the day can be a damp snap back to reality.
+Belfast weather during the summer can be _sunny_, and might reach a level you could describe as _warm_ or even _hot_.
 
 During an evening in May, a friend and I were talking about how we couldn't decide if we should've worn shorts that day. We joked that there should be a single serving site for this purpose.
 
-If you're not sure what a single serving site is, here is the explanation on [wikipedia](https://en.wikipedia.org/wiki/Single-serving_site):
+If you're not sure what a single serving site is, here is the explanation from [wikipedia](https://en.wikipedia.org/wiki/Single-serving_site):
 
-> A single-serving site is a website composed of a single page with a dedicated domain name and which serves only one purpose.
+> _A single-serving site is a website composed of a single page with a dedicated domain name and which serves only one purpose._
 
 The next day, I got to work.
 
@@ -42,11 +42,11 @@ I seem to remember we used Geonames at work for something and I had discovered t
 
 It gave the user an answer, but in a particularly _Belfast-ish_ way like:
 
-> Get your legs out! It's a schwelterin' 21 degrees.
+> _Get your legs out! It's a schwelterin' 21 degrees._
 
 or
 
-> Are you not wise? It's a baltic 9 degrees.
+> _Are you not wise? It's a baltic 9 degrees._
 
 After posting it on Twitter, my friends loved it.
 
@@ -78,7 +78,7 @@ This was also around the time that Dark Sky was big. If you didn't use it or don
 
 People loved it, but the logic was getting complex. I would get sent tweets kicking off that 18 degrees and sunny isn't Shorts Weather, while other people would say they could go as low as 15.
 
-I would sometimes quickly deploy a change to the trigger on a particularly nice day if I thought I might get replies like this.
+I would sometimes quickly deploy a change to the trigger on a particularly nice day if I thought I might get such feedback.
 
 ## A free lunch
 
