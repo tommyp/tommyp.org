@@ -1,7 +1,7 @@
 ---
 title: Is It Shorts Weather Today?
-date: 2025-06-23
-subtitle: A 14 year joke
+date: 2025-06-24
+subtitle: Fun in the Sun
 titleBgColor: '#ff0000'
 titleColor: '#F5CF77'
 categories: [personal, web]
