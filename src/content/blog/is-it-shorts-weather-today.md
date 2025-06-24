@@ -7,7 +7,7 @@ titleColor: '#F5CF77'
 categories: [personal, web]
 ---
 
-For 14 years now, I’ve operated a website that does 1 thing - it tells people if they should wear shorts that day. Nothing more.
+For 14 years now, I’ve operated a website that does 1 thing - [it tells people if they should wear shorts that day](https://isitshortsweathertoday.com/). Nothing more.
 
 People love it. Here's some feedback I've received from The Internet:
 
@@ -96,7 +96,7 @@ Eventually, some dickhead had put my referral code on a voucher website and it w
 
 As I worked at Deliveroo, I knew that each redemption had a 3 month expiry date. I had hundreds of pounds to spend over the summer before it expired. I was going to eat like a king, otherwise it would go to waste.
 
-I sampled my way through any and all central London restaurants opened at lunchtime. Money was no object, so why not spend 25 quid sushi for lunch? Double meat burritos, _with_ guac. And always order a side. Once I even ordered lobster and wagyu beef at home, but in a cruel twist of irony it never got delivered.
+I sampled my way through any and all central London restaurants opened at lunchtime. Money was no object, so why not spend 25 quid on sushi for lunch? Double meat burritos, _with_ guac. Always with a side. Once I even ordered lobster and wagyu beef at home, but in a cruel twist of irony it never got delivered.
 
 After this, sometimes literal, gravy train had screeched to a stop, I had totalled £1500 in credit. Not bad for a joke.
 
@@ -116,7 +116,7 @@ In 2021 I also had bit of a professional crisis. Deliveroo had left me burnt out
 
 With Dark Sky being sunsetted, I went back to using OpenWeather. This meant no more daily forecast. OpenWeather's free tier has the current weather and a forecast every 3 hours for 5 days. Every 3 hours isn't much use to me so current would have to do for now.
 
-After completing the [Shaders for the Web](https://www.superhi.com/catalog/shaders-for-the-web) course I knew I had to use it. I altered one of the projects to end up with a trippy heatmap looking background. Someone pointed out that it looked like one of those heatwave warning images that we're familiar with now, so maybe I was trying to subtly remind everyone that climate change is real.
+After completing the [Shaders for the Web](https://www.superhi.com/catalog/shaders-for-the-web) course I knew I had to use it. I altered one of the projects to end up with a trippy background. Someone pointed out that it looked like one of those heatwave warning images that we're familiar with now, so maybe I was trying to subtly remind everyone that climate change is real.
 
 To simplify, I got rid of the _"It's a schwelterin X degrees"_ statements, which left it simple enough to go back to just HTML, CSS, and JS.
 
@@ -124,15 +124,15 @@ Because I had a lot of spare time in 2021 I also added some new features. Previo
 
 ![](/images/blog/is-it-shorts-weather-today/2021.png)
 
-_Now with more WebGL_
+_WebGL edition_
 
-With shareable URLs now possible, the analytics showed me that even the [Maritime & Transport technology Young Professionals society at Delft University of Technology](https://mtt-colloquium.github.io/) was linking to it.
+With shareable URLs now possible, the analytics has shown me that even the [Maritime & Transport technology Young Professionals society at Delft University of Technology](https://mtt-colloquium.github.io/) was linking to it.
 
 ## 2025 - Version 7.0
 
 So why now?
 
-Truthfully, I have a million ideas for projects, and although rebuilding an old one is easier, even a single page that does one thing involves a lot of work.
+I have a million ideas for projects, and although rebuilding an old one is easier, even a single page that does one thing involves a lot of work.
 
 As more people are now using it, they might disagree with my Hibernian definition of what constitutes shorts weather, so I wanted to allow the trigger temperature to be set.
 
@@ -142,9 +142,11 @@ This newest version is built in SvelteKit, for a few reasons:
 - Working with components is nice, and although I could've built it in Astro like this website, I would've ended up using Svelte where I needed interactivity anyways. It's close enough to HTML, CSS, and JS.
 - Svelte is lightweight enough that I don't feel bad like sending the whole React runtime to the user's browser.
 - Since I'm adding personal settings, this would mean that there's more logic. It made sense to use TypeScript and actually write some tests.
-- Svelte is fun.
+- Svelte is great.
 
 I probably could've solved all of those things except the last one with vanilla HTML, CSS, and JS if I had tried, but Svelte took care of a lot of the extra work for me.
+
+But still, why now? It's summer and I felt like working on something fun to answer the eternal question - [Is it shorts weather today?](https://isitshortsweathertoday.com/)
 
 ## The future - Version ?.0
 
@@ -165,5 +167,5 @@ I'm a big fan of _be the change you want to see_ and I love [making mad shit](/b
 - 🔗 [The future of the internet is in the past](https://www.reddit.com/r/webdev/comments/1kp5ria/the_future_of_the_internet_is_in_the_past/). I've been in _the game_ for 15 years so I remember being excited about all the things mentioned here, and a bit dissalusioned by the state of modern web development.
 - 🎙️ [Hot Money](https://www.pushkin.fm/podcasts/hot-money) is back. The amazing podcast from the Financial Times is back for season 3 and this time about how a fraudulent German fintech company is linked to the Russian government.
 - 📺 We finished White Lotus season 3 and I enjoyed it, but I do feel that the joy of watching rich people ruin their lives is having less impact each season.
-- 🎮 After [picking up my Playdate again](/blog/artifacts-from-another-universe), I've spent some time playing the games I'd bought previously and I've gotten really into [Reasonant Tale](https://play.date/games/resonant-tale/) - a tiny _Zelda_-like with lots of charm.
+- 🎮 After [picking up my Playdate again](/blog/artifacts-from-another-universe) I've spent some time playing the games I'd bought previously so I've gotten really into [Reasonant Tale](https://play.date/games/resonant-tale/) - a tiny Zelda-like with lots of charm.
 - 🎮 I also restarted and came back around to [Atomfall](https://www.youtube.com/watch?v=mdtFjfXetg0). Imagine Fallout in the Lake District. Unlike Fallout, It's more survival than RPG but I'm really enjoying unravelling the mystery.
