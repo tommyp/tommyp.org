@@ -32,7 +32,7 @@ If you're not sure what a single serving site is, here is the explanation on [wi
 
 > A single-serving site is a website composed of a single page with a dedicated domain name and which serves only one purpose.
 
-The next day I thought to myself "_I'm a web developer! I can make this!_".
+The next day, I got to work.
 
 ## 2011 - Version 1.0
 
