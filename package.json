@@ -16,7 +16,7 @@
 		"@astrojs/svelte": "^7.1.0",
 		"@astrojs/upgrade": "^0.3.1",
 		"@resvg/resvg-js": "^2.6.0",
-		"astro": "^5.9.1",
+		"astro": "^5.11.1",
 		"astro-og-canvas": "^0.4.2",
 		"canvaskit-wasm": "^0.39.1",
 		"colorjs.io": "^0.4.5",

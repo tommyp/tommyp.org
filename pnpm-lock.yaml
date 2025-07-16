@@ -19,7 +19,7 @@ importers:
         version: 4.0.12
       '@astrojs/svelte':
         specifier: ^7.1.0
-        version: 7.1.0(@types/node@22.15.20)(astro@5.9.1(@types/node@22.15.20)(rollup@4.41.0)(typescript@5.3.2)(yaml@2.5.1))(svelte@5.17.3)(typescript@5.3.2)(yaml@2.5.1)
+        version: 7.1.0(@types/node@22.15.20)(astro@5.11.1(@types/node@22.15.20)(rollup@4.41.0)(typescript@5.3.2)(yaml@2.5.1))(svelte@5.17.3)(typescript@5.3.2)(yaml@2.5.1)
       '@astrojs/upgrade':
         specifier: ^0.3.1
         version: 0.3.1
@@ -27,11 +27,11 @@ importers:
         specifier: ^2.6.0
         version: 2.6.0
       astro:
-        specifier: ^5.9.1
-        version: 5.9.1(@types/node@22.15.20)(rollup@4.41.0)(typescript@5.3.2)(yaml@2.5.1)
+        specifier: ^5.11.1
+        version: 5.11.1(@types/node@22.15.20)(rollup@4.41.0)(typescript@5.3.2)(yaml@2.5.1)
       astro-og-canvas:
         specifier: ^0.4.2
-        version: 0.4.2(astro@5.9.1(@types/node@22.15.20)(rollup@4.41.0)(typescript@5.3.2)(yaml@2.5.1))
+        version: 0.4.2(astro@5.11.1(@types/node@22.15.20)(rollup@4.41.0)(typescript@5.3.2)(yaml@2.5.1))
       canvaskit-wasm:
         specifier: ^0.39.1
         version: 0.39.1
@@ -101,8 +101,8 @@ packages:
   '@astrojs/compiler@2.10.3':
     resolution: {integrity: sha512-bL/O7YBxsFt55YHU021oL+xz+B/9HvGNId3F9xURN16aeqDK9juHGktdkCSXz+U4nqFACq6ZFvWomOzhV+zfPw==}
 
-  '@astrojs/compiler@2.12.1':
-    resolution: {integrity: sha512-WDSyVIiz7sNcJcCJxJFITu6XjfGhJ50Z0auyaWsrM+xb07IlhBLFtQuDkNy0caVHWNcKTM2LISAaHhgkRqGAVg==}
+  '@astrojs/compiler@2.12.2':
+    resolution: {integrity: sha512-w2zfvhjNCkNMmMMOn5b0J8+OmUaBL1o40ipMvqcG6NRpdC+lKxmTi48DT8Xw0SzJ3AfmeFLB45zXZXtmbsjcgw==}
 
   '@astrojs/internal-helpers@0.6.1':
     resolution: {integrity: sha512-l5Pqf6uZu31aG+3Lv8nl/3s4DbUzdlxTWDof4pEpto6GUJNhhCbelVi9dEyurOVyqaelwmS9oSyOWOENSfgo9A==}
@@ -844,8 +844,8 @@ packages:
     peerDependencies:
       astro: ^3.0.0 || ^4.0.0
 
-  astro@5.9.1:
-    resolution: {integrity: sha512-wxoJcTbuDZNFSv6EaL0PAlrp0Wx6VnOAULCXvy0scsV70oWMeUkdxuBxfO54JxO5Qgyvwj9h99y6E0elqOpGtA==}
+  astro@5.11.1:
+    resolution: {integrity: sha512-32dpUh0tXSV/FR2q2/z7LOA6IXl7RqET9J51IA0pPSSi3exhRP3EOSQGjBq10DzXT7VrvplDrFqwfiiWBS8oYA==}
     engines: {node: 18.20.8 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -2462,7 +2462,7 @@ snapshots:
 
   '@astrojs/compiler@2.10.3': {}
 
-  '@astrojs/compiler@2.12.1': {}
+  '@astrojs/compiler@2.12.2': {}
 
   '@astrojs/internal-helpers@0.6.1': {}
 
@@ -2527,10 +2527,10 @@ snapshots:
       fast-xml-parser: 5.2.4
       kleur: 4.1.5
 
-  '@astrojs/svelte@7.1.0(@types/node@22.15.20)(astro@5.9.1(@types/node@22.15.20)(rollup@4.41.0)(typescript@5.3.2)(yaml@2.5.1))(svelte@5.17.3)(typescript@5.3.2)(yaml@2.5.1)':
+  '@astrojs/svelte@7.1.0(@types/node@22.15.20)(astro@5.11.1(@types/node@22.15.20)(rollup@4.41.0)(typescript@5.3.2)(yaml@2.5.1))(svelte@5.17.3)(typescript@5.3.2)(yaml@2.5.1)':
     dependencies:
       '@sveltejs/vite-plugin-svelte': 5.0.3(svelte@5.17.3)(vite@6.3.5(@types/node@22.15.20)(yaml@2.5.1))
-      astro: 5.9.1(@types/node@22.15.20)(rollup@4.41.0)(typescript@5.3.2)(yaml@2.5.1)
+      astro: 5.11.1(@types/node@22.15.20)(rollup@4.41.0)(typescript@5.3.2)(yaml@2.5.1)
       svelte: 5.17.3
       svelte2tsx: 0.7.39(svelte@5.17.3)(typescript@5.3.2)
       typescript: 5.3.2
@@ -3120,16 +3120,16 @@ snapshots:
 
   array-iterate@2.0.1: {}
 
-  astro-og-canvas@0.4.2(astro@5.9.1(@types/node@22.15.20)(rollup@4.41.0)(typescript@5.3.2)(yaml@2.5.1)):
+  astro-og-canvas@0.4.2(astro@5.11.1(@types/node@22.15.20)(rollup@4.41.0)(typescript@5.3.2)(yaml@2.5.1)):
     dependencies:
-      astro: 5.9.1(@types/node@22.15.20)(rollup@4.41.0)(typescript@5.3.2)(yaml@2.5.1)
+      astro: 5.11.1(@types/node@22.15.20)(rollup@4.41.0)(typescript@5.3.2)(yaml@2.5.1)
       canvaskit-wasm: 0.37.2
       deterministic-object-hash: 2.0.2
       entities: 4.5.0
 
-  astro@5.9.1(@types/node@22.15.20)(rollup@4.41.0)(typescript@5.3.2)(yaml@2.5.1):
+  astro@5.11.1(@types/node@22.15.20)(rollup@4.41.0)(typescript@5.3.2)(yaml@2.5.1):
     dependencies:
-      '@astrojs/compiler': 2.12.1
+      '@astrojs/compiler': 2.12.2
       '@astrojs/internal-helpers': 0.6.1
       '@astrojs/markdown-remark': 6.3.2
       '@astrojs/telemetry': 3.3.0
