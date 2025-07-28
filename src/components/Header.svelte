@@ -9,10 +9,7 @@
 			label: 'About',
 			url: '/about'
 		},
-		{
-			label: 'Links',
-			url: '/links'
-		},
+
 		{
 			label: 'Blogroll',
 			url: '/blogroll'
