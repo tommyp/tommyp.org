@@ -24,7 +24,10 @@ const links = [
 ---
 
 <footer>
-	<p>Tommy Palmer built this site.</p>
+	<div class="text">
+		<p class="tagline">Tommy Palmer built this site.</p>
+		<p class="now-playing">Now playing: Orbital - Belfast</p>
+	</div>
 	<ul>
 		{
 			links.map((link) => (
@@ -67,8 +70,9 @@ const links = [
 		border-right: 1px solid var(--text-color);
 	}
 
-	li:nth-child(2n) {
-		border-right: none;
+	li:first-child {
+		grid-column-start: 1;
+		grid-column-end: 3;
 	}
 
 	a {
@@ -89,7 +93,20 @@ const links = [
 		padding: 0.5rem;
 	}
 
-	@media (min-width: 768px) {
+	li:nth-child(odd) {
+		border-right: none;
+	}
+
+	.text {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.now-playing {
+		border-bottom: 1px solid var(--text-color);
+	}
+
+	@media (min-width: 992px) {
 		footer {
 			flex-direction: row;
 			justify-content: space-between;
@@ -111,6 +128,18 @@ const links = [
 
 		a {
 			padding: 0.5rem 1rem;
+		}
+
+		.text {
+			display: flex;
+			justify-content: space-between;
+			flex-direction: row;
+			width: 100%;
+		}
+
+		.now-playing {
+			border: 0;
+			border-left: 1px solid var(--text-color);
 		}
 	}
 </style>
