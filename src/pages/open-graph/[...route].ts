@@ -19,7 +19,7 @@ const hexToRgbArray = (hex: string): [any, any, any] => {
 export const { getStaticPaths, GET } = OGImageRoute({
 	pages: pages,
 	param: 'route',
-	getImageOptions: (, page) => ({
+	getImageOptions: (_, page) => ({
 		title: page.title,
 		description: page.subtitle,
 		/** Writing direction. Default: `'ltr'`. Set to `'rtl'` for Arabic, Hebrew, etc. */
