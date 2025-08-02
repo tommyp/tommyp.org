@@ -1,5 +1,5 @@
 ---
-import { ViewTransitions } from 'astro:transitions';
+import { ClientRouter } from 'astro:transitions';
 import '../styles/reset.css';
 import '../styles/inter.css';
 import '../styles/variables.css';
@@ -32,7 +32,8 @@ const opengraphImage = pageSlug
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
-		<ViewTransitions />
+		<ClientRouter />
+
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<script defer data-domain="tommyp.org" src="https://plausible.io/js/plausible.js"></script>
 
