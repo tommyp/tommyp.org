@@ -1,4 +1,11 @@
 ---
+import type { PostData } from '../lib/types';
+
+interface Props {
+	post: PostData;
+	hoverable?: boolean;
+}
+
 const {
 	post: { title, subtitle, titleColor, titleBgColor, date },
 	hoverable

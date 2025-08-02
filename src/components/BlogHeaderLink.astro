@@ -1,17 +1,22 @@
 ---
+import type { Post } from '../lib/types';
 import BlogHeader from './BlogHeader.astro';
 
-const {post} = Astro.props;
+interface Props {
+	post: Post;
+}
+
+const { post } = Astro.props;
 ---
 
 <div>
-  <a href={`/blog/${post.slug}`}>
-    <BlogHeader post={post.data} hoverable={true} />
-  </a>
+	<a href={`/blog/${post.slug}`}>
+		<BlogHeader post={post.data} hoverable={true} />
+	</a>
 </div>
 
 <style>
-  a {
-    text-decoration: none;
-  }
+	a {
+		text-decoration: none;
+	}
 </style>

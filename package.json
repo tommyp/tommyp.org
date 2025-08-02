@@ -7,16 +7,18 @@
 		"start": "astro dev",
 		"build": "astro check && astro build",
 		"preview": "astro preview",
-		"astro": "astro"
+		"astro": "astro",
+		"test": "vitest"
 	},
 	"dependencies": {
 		"@astro-community/astro-embed-link-preview": "^0.2.2",
 		"@astrojs/check": "^0.9.4",
 		"@astrojs/rss": "^4.0.12",
 		"@astrojs/svelte": "^7.1.0",
+		"@astrojs/ts-plugin": "^1.10.4",
 		"@astrojs/upgrade": "^0.3.1",
 		"@resvg/resvg-js": "^2.6.0",
-		"astro": "^5.11.1",
+		"astro": "^5.12.5",
 		"astro-og-canvas": "^0.4.2",
 		"canvaskit-wasm": "^0.39.1",
 		"colorjs.io": "^0.4.5",
@@ -32,6 +34,7 @@
 	},
 	"devDependencies": {
 		"prettier": "3.1.0",
-		"prettier-plugin-astro": "^0.12.2"
+		"prettier-plugin-astro": "^0.12.2",
+		"vitest": "^3.2.4"
 	}
 }

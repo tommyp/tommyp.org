@@ -8,5 +8,6 @@
 		"@assets/*": ["src/assets/*"],
 		"@layouts/*": ["src/layouts/*"],
 		"@/lib/*": ["src/lib/*"]
-	}
+	},
+	"include": [".astro/types.d.ts", "**/*"]
 }
