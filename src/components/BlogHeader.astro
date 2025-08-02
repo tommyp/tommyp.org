@@ -1,4 +1,15 @@
 ---
+interface Props {
+	post: {
+		title: string;
+		subtitle: string;
+		titleColor?: string;
+		titleBgColor?: string;
+		date: string;
+	};
+	hoverable?: boolean;
+}
+
 const {
 	post: { title, subtitle, titleColor, titleBgColor, date },
 	hoverable

@@ -1,10 +1,10 @@
 ---
-const { linkHoverColor, linkUnderlineColor } = Astro.props;
-
 interface Props {
-	linkHoverColor: string | undefined;
-	linkUnderlineColor: string | undefined;
+	linkHoverColor?: string;
+	linkUnderlineColor?: string;
 }
+
+const { linkHoverColor, linkUnderlineColor } = Astro.props;
 ---
 
 <article class="post">

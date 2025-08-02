@@ -1,6 +1,13 @@
 ---
 // import { escape } from 'html-escaper';
 
+interface Props {
+	heading?: string;
+	bgColor?: string;
+	textColor?: string;
+	description?: string;
+}
+
 const { heading, bgColor, textColor, description } = Astro.props;
 
 const ogParams: URLSearchParams = new URLSearchParams();
