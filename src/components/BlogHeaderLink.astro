@@ -1,17 +1,9 @@
 ---
+import type { Post } from '../lib/types';
 import BlogHeader from './BlogHeader.astro';
 
 interface Props {
-	post: {
-		slug: string;
-		data: {
-			title: string;
-			date: string;
-			description?: string;
-			author?: string;
-			categories?: string[];
-		};
-	};
+	post: Post;
 }
 
 const { post } = Astro.props;

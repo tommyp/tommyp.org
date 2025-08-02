@@ -1,6 +1,5 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
-import BlogHeaderLink from '../../../components/BlogHeaderLink.astro';
 import { categories } from '../../../lib/posts';
 import ArrowHeader from '../../../components/ArrowHeader.astro';
 import Marquee from '../../../components/Marquee.astro';
@@ -32,7 +31,7 @@ const categoriesWithColors = categories.map((category, index) => {
 
 <Layout title="Blog">
 	<main>
-		<ArrowHeader angle="-45">Categories</ArrowHeader>
+		<ArrowHeader>Categories</ArrowHeader>
 		<a class="marquee" href="/blog">
 			<Marquee>Browse all posts</Marquee>
 		</a>

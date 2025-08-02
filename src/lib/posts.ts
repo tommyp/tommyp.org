@@ -1,6 +1,7 @@
 import { getCollection } from 'astro:content';
+import type { Post } from './types';
 
-const allPosts = (await getCollection('blog')).sort((a, b) => {
+const allPosts = ((await getCollection('blog')) as Post[]).sort((a, b) => {
 	return a.data.date < b.data.date ? 1 : -1;
 });
 const publishedPosts = allPosts.filter((post) => !post.data.draft);

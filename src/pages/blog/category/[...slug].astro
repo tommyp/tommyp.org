@@ -6,8 +6,6 @@ import BlogHeaderLink from '../../../components/BlogHeaderLink.astro';
 import { toTitleCase } from '../../../lib/utils';
 
 export async function getStaticPaths() {
-	const isDev = import.meta.env.DEV;
-
 	return categories.map((category) => ({
 		params: { slug: category },
 		props: {
@@ -22,7 +20,7 @@ const { category, posts } = Astro.props;
 
 <Layout title={`${category} posts | Blog`}>
 	<main>
-		<ArrowHeader angle="-45">{category} posts</ArrowHeader>
+		<ArrowHeader>{category} posts</ArrowHeader>
 
 		{posts.map((post) => <BlogHeaderLink post={post} />)}
 	</main>
