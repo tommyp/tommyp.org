@@ -26,7 +26,8 @@ export async function GET(context) {
 			link: `/blog/${post.slug}/`,
 			content: sanitizeHtml(parser.render(post.body), {
 				allowedTags: false,
-				allowedAttributes: false
+				allowedAttributes: false,
+				allowVulnerableTags: false
 			})
 		})),
 
