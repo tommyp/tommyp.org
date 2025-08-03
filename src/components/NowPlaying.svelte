@@ -1,18 +1,14 @@
----
-const PUBLIC_URL = import.meta.env.PUBLIC_URL;
-const resp = await fetch(`${PUBLIC_URL}/api/spotify.json`);
-const spotifyResponse = await resp.json();
----
+<script lang="ts">
+	const PUBLIC_URL = import.meta.env.PUBLIC_URL;
+	const resp = await fetch(`${PUBLIC_URL}/api/spotify.json`);
+	const spotifyResponse = await resp.json();
+</script>
 
-{
-	spotifyResponse.isPlaying ? (
-		<a class="now-playing" href={spotifyResponse.songUrl}>
-			Now playing: {spotifyResponse.title} - {spotifyResponse.artist}
-		</a>
-	) : (
-		''
-	)
-}
+{#if spotifyResponse.isPlaying}
+	<a class="now-playing" href={spotifyResponse.songUrl}>
+		Now playing: {spotifyResponse.title} - {spotifyResponse.artist}
+	</a>
+{/if}
 
 <style>
 	.now-playing {
