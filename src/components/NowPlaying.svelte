@@ -1,14 +1,32 @@
 <script lang="ts">
+	interface Player {
+		isPlaying: boolean;
+		songUrl?: string;
+		title?: string;
+		artist?: string;
+	}
 	const PUBLIC_URL = import.meta.env.PUBLIC_URL;
-	const resp = await fetch(`${PUBLIC_URL}/api/spotify.json`);
-	const spotifyResponse = await resp.json();
+
+	let playerPromise: Promise<Player> = $derived.by(async () => {
+		const resp = await fetch(`${PUBLIC_URL}/api/spotify.json`);
+		const spotifyResponse = await resp.json();
+		return {
+			isPlaying: spotifyResponse.isPlaying,
+			songUrl: spotifyResponse.songUrl,
+			title: spotifyResponse.title,
+			artist: spotifyResponse.artist
+		};
+	});
 </script>
 
-{#if spotifyResponse.isPlaying}
-	<a class="now-playing" href={spotifyResponse.songUrl}>
-		Now playing: {spotifyResponse.title} - {spotifyResponse.artist}
+{#await playerPromise then player}
+	<a class="now-playing" href={player.songUrl}>
+		Now playing:
+		{#if player.isPlaying}
+			{player.title} - {player.artist}
+		{/if}
 	</a>
-{/if}
+{/await}
 
 <style>
 	.now-playing {
@@ -20,7 +38,7 @@
 		display: block;
 		color: var(--text-color);
 		text-decoration: none;
-
+		border-bottom: 1px solid var(--text-color);
 		padding: 0.5rem;
 	}
 
