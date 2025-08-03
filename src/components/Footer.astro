@@ -1,4 +1,6 @@
 ---
+import NowPlaying from './NowPlaying.astro';
+
 const links = [
 	{
 		href: 'mailto:hi@tommyp.org',
@@ -26,7 +28,7 @@ const links = [
 <footer>
 	<div class="text">
 		<p class="tagline">Tommy Palmer built this site.</p>
-		<p class="now-playing">Now playing: Orbital - Belfast</p>
+		<NowPlaying />
 	</div>
 	<ul>
 		{
@@ -100,10 +102,6 @@ const links = [
 	.text {
 		display: flex;
 		flex-direction: column-reverse;
-	}
-
-	.now-playing {
-		border-bottom: 1px solid var(--text-color);
 	}
 
 	@media (min-width: 992px) {
