@@ -20,12 +20,12 @@
 </script>
 
 {#await playerPromise then player}
-	<a class="now-playing" href={player.songUrl}>
-		Now playing:
-		{#if player.isPlaying}
+	{#if player.isPlaying}
+		<a class="now-playing" href={player.songUrl}>
+			Now playing:
 			{player.title} - {player.artist}
-		{/if}
-	</a>
+		</a>
+	{/if}
 {/await}
 
 <style>
