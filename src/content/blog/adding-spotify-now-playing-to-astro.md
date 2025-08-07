@@ -2,7 +2,7 @@
 title: Adding Spotify now playing to Astro
 date: 2025-08-07
 subtitle: Live on air
-titleBgColor: '#103979ff'
+titleBgColor: '#103979'
 titleColor: '#FF3E00'
 categories: [personal, web]
 ---
