@@ -152,7 +152,7 @@ export { getAccessToken, getNowPlaying };
 ```
 
 ```typescript
-// '../../lib/types';
+// src/lib/types.ts
 export interface SpotifyPlayerResponse {
 	is_playing: boolean;
 	item: {
