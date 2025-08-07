@@ -31,7 +31,8 @@ https://accounts.spotify.com/authorize?client_id=YOUR_CLIENT_ID&response_type=co
 
 ```javascript
 const client_id = YOUR_CLIENT_ID;
-const client_secret = YOUR_CLIENT_SECRET;
+const client_id = 'YOUR_CLIENT_ID';
+const client_secret = 'YOUR_CLIENT_SECRET';
 Buffer.from(client_id + ':' + client_secret).toString('base64');
 ```
 
