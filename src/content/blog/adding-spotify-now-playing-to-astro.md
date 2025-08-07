@@ -239,4 +239,4 @@ If you use this guide, or have any questions or feedback, get in touch via [emai
 - 📖 The Mountain In The Sea was fantastic. It made me feel bad about eating Octopus, which I suppose is the point of it.
 - 📺 Foundation season 3 is great. I'm waiting for it to finish before reading the second book again.
 - 📺 Long Way Home has given me another burst of interest in getting a motorbike. Lila and my Mum aren't too pleased, but my mates are very encouraging.
-- 🇮🇪 Back home this week for some family stuff. It's weird moving away and seeing everyone age so much. Like watching a TV show with a time jump between seasons, there's whole bits of life that I just wasn't around for. My parents, aunts, uncles, and my granny, are all getting on and the time I spend with them is precious.
+- 🇮🇪 Back home this week for some family stuff. It's weird moving away and seeing everyone age so much. Like watching a TV show with a time jump between seasons, there's whole bits of life that I just wasn't around for. My parents, aunts, uncles, and my granny, are all getting on, and the time I spend with them is precious.
