@@ -5,18 +5,22 @@
 		title?: string;
 		artist?: string;
 	}
-	const PUBLIC_URL = import.meta.env.PUBLIC_URL;
 
-	let playerPromise: Promise<Player> = $derived.by(async () => {
-		const resp = await fetch(`${PUBLIC_URL}/api/spotify.json`);
-		const spotifyResponse = await resp.json();
-		return {
-			isPlaying: spotifyResponse.isPlaying,
-			songUrl: spotifyResponse.songUrl,
-			title: spotifyResponse.title,
-			artist: spotifyResponse.artist
-		};
-	});
+	let playerPromise: Promise<Player> = (async () => {
+		try {
+			const resp = await fetch(`/api/spotify.json`);
+			if (!resp.ok) throw new Error('Fetch failed');
+			const spotifyResponse = await resp.json();
+			return {
+				isPlaying: spotifyResponse.isPlaying,
+				songUrl: spotifyResponse.songUrl,
+				title: spotifyResponse.title,
+				artist: spotifyResponse.artist
+			};
+		} catch (error) {
+			return { isPlaying: false };
+		}
+	})();
 </script>
 
 {#await playerPromise then player}
