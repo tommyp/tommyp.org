@@ -214,7 +214,7 @@ Astro uses a concept called [Islands Architecture](https://docs.astro.build/en/c
 A few things to note here:
 
 - I'm not using all of the response from `/api/spotify.json`, but I've left it in the endpoint to show what you could use from the Spotify response.
-- This component only renders anything if I'm currently playing. There's nothing stopping you from doing like an \_on air/off air` thing.
+- This component only renders anything if I'm currently playing. There's nothing stopping you from doing like an _on air/off air_ thing.
 
 And the last bit is to import and render our Svelte component from an Astro file:
 
