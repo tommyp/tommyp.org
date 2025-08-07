@@ -70,14 +70,16 @@ const { linkHoverColor, linkUnderlineColor } = Astro.props;
 		margin-bottom: var(--margin-lg);
 	}
 
-	article.post ul {
+	article.post ul,
+	article.post ol {
 		font-size: var(--text-lg);
 		margin-left: var(--margin-lg);
 		margin-bottom: var(--margin-xl);
 		line-height: 1.5;
 	}
 
-	article.post ul li {
+	article.post ul li,
+	article.post ol li {
 		margin-bottom: var(--margin-md);
 	}
 
@@ -103,6 +105,10 @@ const { linkHoverColor, linkUnderlineColor } = Astro.props;
 		border: 0;
 		border-top: 1px solid var(--border-color);
 		margin: var(--margin-xl) 0;
+	}
+
+	.article.post pre {
+		margin-bottom: var(--margin-xl);
 	}
 
 	@media (min-width: 768px) {
