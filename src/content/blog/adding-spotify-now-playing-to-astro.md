@@ -36,7 +36,7 @@ const client_secret = 'YOUR_CLIENT_SECRET';
 Buffer.from(client_id + ':' + client_secret).toString('base64');
 ```
 
-6. Make a POST request with the following params:
+6. Make a POST request with a content-type of `x-www-form-urlencoded` to `https://accounts.spotify.com/api/token` with the following params:
 
 ```
 {
