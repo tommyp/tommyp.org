@@ -11,7 +11,7 @@ I'm working on a new version of [Lineup.fun](https://lineup.fun/), and because I
 
 What we're going to do is set up an API route that is signed in as you, so if you're playing a track it will return the track's data. Just like how if you listen on your phone with Spotify open on your computer the desktop app or the web browser is showing the same track.
 
-_I mostly followed [this great guide](https://thomasmoran.dev/snippets/spotify-currently-playing/spotify-currently-playing/) with a few changes_, but I've laid out all the steps here anyways.
+_I mostly followed [this great guide](https://thomasmoran.dev/snippets/spotify-currently-playing/spotify-currently-playing/) with a few changes, but I've laid out all the steps here anyways_.
 
 ### Authorisation
 
