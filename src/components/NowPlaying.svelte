@@ -2,6 +2,7 @@
 	interface Player {
 		isPlaying: boolean;
 		songUrl?: string;
+		imageUrl?: string;
 		title?: string;
 		artist?: string;
 	}
@@ -15,7 +16,8 @@
 				isPlaying: spotifyResponse.isPlaying,
 				songUrl: spotifyResponse.songUrl,
 				title: spotifyResponse.title,
-				artist: spotifyResponse.artist
+				artist: spotifyResponse.artist,
+				imageUrl: spotifyResponse.albumImageUrl
 			};
 		} catch (error) {
 			return { isPlaying: false };
@@ -25,25 +27,38 @@
 
 {#await playerPromise then player}
 	{#if player.isPlaying}
-		<a class="now-playing" href={player.songUrl}>
-			Now playing:
-			{player.title} - {player.artist}
-		</a>
+		<a href={player.songUrl}>
+			<img src={player.imageUrl} alt="Album cover" class="album-cover" />
+			<p>
+				<span class="now-playing">Now playing:</span>
+				<span class="title">{player.title}</span>
+				<span class="artist">{player.artist}</span>
+			</p></a
+		>
 	{/if}
 {/await}
 
 <style>
-	.now-playing {
-		--background: var(--button-hover-background-color);
-		--text-color: var(--button-hover-text-color);
+	img {
+		width: 100%;
+		max-width: 8rem;
+		margin-right: 0.5rem;
+	}
+
+	p {
+		padding: 0.5rem;
+		display: flex;
+		flex-direction: column;
 	}
 
 	a {
-		display: block;
+		--background: var(--button-hover-background-color);
+		--text-color: var(--button-hover-text-color);
+		display: flex;
+
 		color: var(--text-color);
 		text-decoration: none;
 		border-bottom: 1px solid var(--text-color);
-		padding: 0.5rem;
 	}
 
 	a:hover {
@@ -51,10 +66,43 @@
 		color: var(--background-color);
 	}
 
-	@media (min-width: 992px) {
-		.now-playing {
+	.now-playing {
+		font-size: var(--text-md);
+	}
+
+	.title {
+		font-size: var(--text-xl);
+	}
+
+	.artist {
+		font-size: var(--text-lg);
+	}
+
+	@media (min-width: 1280px) {
+		a {
 			border: 0;
 			border-left: 1px solid var(--text-color);
+		}
+
+		img {
+			max-width: 4rem;
+		}
+
+		p {
+			flex-direction: row;
+		}
+
+		.now-playing {
+			font-size: var(--text-sm);
+			display: none;
+		}
+
+		.title {
+			font-size: var(--text-sm);
+		}
+
+		.artist {
+			font-size: var(--text-sm);
 		}
 	}
 </style>
