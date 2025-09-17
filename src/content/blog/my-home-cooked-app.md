@@ -2,8 +2,8 @@
 title: My home cooked app
 date: 2025-09-17
 subtitle: Line it up
-titleColor: '#ff0099ff'
-titleBgColor: '#9fee00ff'
+titleColor: '#ff0099'
+titleBgColor: '#9fee00'
 categories: [personal, web]
 ---
 
