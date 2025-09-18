@@ -30,7 +30,7 @@ https://accounts.spotify.com/authorize?client_id=YOUR_CLIENT_ID&response_type=co
 5. Base64 encode this: `YOUR_CLIENT_ID:YOUR_CLIENT_SECRET`. If have Node installed, which you probably do if you're using Astro, run `nodejs` in your terminal and then you can use this to encode it:
 
 ```javascript
-const client_id = YOUR_CLIENT_ID;
+const client_id = 'YOUR_CLIENT_ID';
 const client_id = 'YOUR_CLIENT_ID';
 const client_secret = 'YOUR_CLIENT_SECRET';
 Buffer.from(client_id + ':' + client_secret).toString('base64');
