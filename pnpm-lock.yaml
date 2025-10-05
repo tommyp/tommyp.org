@@ -19,7 +19,7 @@ importers:
         version: 4.0.12
       '@astrojs/svelte':
         specifier: ^7.2.0
-        version: 7.2.0(@types/node@22.15.20)(astro@5.14.0(@types/node@22.15.20)(rollup@4.41.0)(typescript@5.3.2)(yaml@2.5.1))(svelte@5.17.3)(typescript@5.3.2)(yaml@2.5.1)
+        version: 7.2.0(@types/node@22.15.20)(astro@5.14.1(@types/node@22.15.20)(rollup@4.41.0)(typescript@5.3.2)(yaml@2.5.1))(svelte@5.17.3)(typescript@5.3.2)(yaml@2.5.1)
       '@astrojs/ts-plugin':
         specifier: ^1.10.4
         version: 1.10.4
@@ -30,11 +30,11 @@ importers:
         specifier: ^2.6.0
         version: 2.6.0
       astro:
-        specifier: ^5.14.0
-        version: 5.14.0(@types/node@22.15.20)(rollup@4.41.0)(typescript@5.3.2)(yaml@2.5.1)
+        specifier: ^5.14.1
+        version: 5.14.1(@types/node@22.15.20)(rollup@4.41.0)(typescript@5.3.2)(yaml@2.5.1)
       astro-og-canvas:
         specifier: ^0.4.2
-        version: 0.4.2(astro@5.14.0(@types/node@22.15.20)(rollup@4.41.0)(typescript@5.3.2)(yaml@2.5.1))
+        version: 0.4.2(astro@5.14.1(@types/node@22.15.20)(rollup@4.41.0)(typescript@5.3.2)(yaml@2.5.1))
       canvaskit-wasm:
         specifier: ^0.39.1
         version: 0.39.1
@@ -926,8 +926,8 @@ packages:
     peerDependencies:
       astro: ^3.0.0 || ^4.0.0
 
-  astro@5.14.0:
-    resolution: {integrity: sha512-p41jPzs9XhcVBPzp8ZwjU4SgxSyjgkzMq3NToRIn4CPbE/f9rb1cba5+N6TRk4A8yBudEU6MFzCMFWer7kjW3Q==}
+  astro@5.14.1:
+    resolution: {integrity: sha512-gPa8NY7/lP8j8g81iy8UwANF3+aukKRWS68IlthZQNgykpg80ne6lbHOp6FErYycxQ1TUhgEfkXVDQZAoJx8Bg==}
     engines: {node: 18.20.8 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -2748,10 +2748,10 @@ snapshots:
       fast-xml-parser: 5.2.4
       kleur: 4.1.5
 
-  '@astrojs/svelte@7.2.0(@types/node@22.15.20)(astro@5.14.0(@types/node@22.15.20)(rollup@4.41.0)(typescript@5.3.2)(yaml@2.5.1))(svelte@5.17.3)(typescript@5.3.2)(yaml@2.5.1)':
+  '@astrojs/svelte@7.2.0(@types/node@22.15.20)(astro@5.14.1(@types/node@22.15.20)(rollup@4.41.0)(typescript@5.3.2)(yaml@2.5.1))(svelte@5.17.3)(typescript@5.3.2)(yaml@2.5.1)':
     dependencies:
-      '@sveltejs/vite-plugin-svelte': 5.1.1(svelte@5.17.3)(vite@6.3.5(@types/node@22.15.20)(yaml@2.5.1))
-      astro: 5.14.0(@types/node@22.15.20)(rollup@4.41.0)(typescript@5.3.2)(yaml@2.5.1)
+      '@sveltejs/vite-plugin-svelte': 5.1.1(svelte@5.17.3)(vite@6.3.6(@types/node@22.15.20)(yaml@2.5.1))
+      astro: 5.14.1(@types/node@22.15.20)(rollup@4.41.0)(typescript@5.3.2)(yaml@2.5.1)
       svelte: 5.17.3
       svelte2tsx: 0.7.43(svelte@5.17.3)(typescript@5.3.2)
       typescript: 5.3.2
@@ -3207,25 +3207,25 @@ snapshots:
       fflate: 0.7.4
       string.prototype.codepointat: 0.2.1
 
-  '@sveltejs/vite-plugin-svelte-inspector@4.0.1(@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.17.3)(vite@6.3.6(@types/node@22.15.20)(yaml@2.5.1)))(svelte@5.17.3)(vite@6.3.5(@types/node@22.15.20)(yaml@2.5.1))':
+  '@sveltejs/vite-plugin-svelte-inspector@4.0.1(@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.17.3)(vite@6.3.6(@types/node@22.15.20)(yaml@2.5.1)))(svelte@5.17.3)(vite@6.3.6(@types/node@22.15.20)(yaml@2.5.1))':
     dependencies:
-      '@sveltejs/vite-plugin-svelte': 5.1.1(svelte@5.17.3)(vite@6.3.5(@types/node@22.15.20)(yaml@2.5.1))
+      '@sveltejs/vite-plugin-svelte': 5.1.1(svelte@5.17.3)(vite@6.3.6(@types/node@22.15.20)(yaml@2.5.1))
       debug: 4.4.1
       svelte: 5.17.3
-      vite: 6.3.5(@types/node@22.15.20)(yaml@2.5.1)
+      vite: 6.3.6(@types/node@22.15.20)(yaml@2.5.1)
     transitivePeerDependencies:
       - supports-color
 
-  '@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.17.3)(vite@6.3.5(@types/node@22.15.20)(yaml@2.5.1))':
+  '@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.17.3)(vite@6.3.6(@types/node@22.15.20)(yaml@2.5.1))':
     dependencies:
-      '@sveltejs/vite-plugin-svelte-inspector': 4.0.1(@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.17.3)(vite@6.3.6(@types/node@22.15.20)(yaml@2.5.1)))(svelte@5.17.3)(vite@6.3.5(@types/node@22.15.20)(yaml@2.5.1))
+      '@sveltejs/vite-plugin-svelte-inspector': 4.0.1(@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.17.3)(vite@6.3.6(@types/node@22.15.20)(yaml@2.5.1)))(svelte@5.17.3)(vite@6.3.6(@types/node@22.15.20)(yaml@2.5.1))
       debug: 4.4.1
       deepmerge: 4.3.1
       kleur: 4.1.5
       magic-string: 0.30.19
       svelte: 5.17.3
-      vite: 6.3.5(@types/node@22.15.20)(yaml@2.5.1)
-      vitefu: 1.1.1(vite@6.3.5(@types/node@22.15.20)(yaml@2.5.1))
+      vite: 6.3.6(@types/node@22.15.20)(yaml@2.5.1)
+      vitefu: 1.1.1(vite@6.3.6(@types/node@22.15.20)(yaml@2.5.1))
     transitivePeerDependencies:
       - supports-color
 
@@ -3430,14 +3430,14 @@ snapshots:
 
   assertion-error@2.0.1: {}
 
-  astro-og-canvas@0.4.2(astro@5.14.0(@types/node@22.15.20)(rollup@4.41.0)(typescript@5.3.2)(yaml@2.5.1)):
+  astro-og-canvas@0.4.2(astro@5.14.1(@types/node@22.15.20)(rollup@4.41.0)(typescript@5.3.2)(yaml@2.5.1)):
     dependencies:
-      astro: 5.14.0(@types/node@22.15.20)(rollup@4.41.0)(typescript@5.3.2)(yaml@2.5.1)
+      astro: 5.14.1(@types/node@22.15.20)(rollup@4.41.0)(typescript@5.3.2)(yaml@2.5.1)
       canvaskit-wasm: 0.37.2
       deterministic-object-hash: 2.0.2
       entities: 4.5.0
 
-  astro@5.14.0(@types/node@22.15.20)(rollup@4.41.0)(typescript@5.3.2)(yaml@2.5.1):
+  astro@5.14.1(@types/node@22.15.20)(rollup@4.41.0)(typescript@5.3.2)(yaml@2.5.1):
     dependencies:
       '@astrojs/compiler': 2.12.2
       '@astrojs/internal-helpers': 0.7.3
@@ -5217,10 +5217,6 @@ snapshots:
       '@types/node': 22.15.20
       fsevents: 2.3.3
       yaml: 2.5.1
-
-  vitefu@1.1.1(vite@6.3.5(@types/node@22.15.20)(yaml@2.5.1)):
-    optionalDependencies:
-      vite: 6.3.5(@types/node@22.15.20)(yaml@2.5.1)
 
   vitefu@1.1.1(vite@6.3.6(@types/node@22.15.20)(yaml@2.5.1)):
     optionalDependencies:
