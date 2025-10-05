@@ -8,7 +8,8 @@ export const GET: APIRoute = async () => {
 	if (response.status === 204 || response.status > 400) {
 		return new Response(
 			JSON.stringify({
-				isPlaying: false
+				isPlaying: false,
+				...response
 			})
 		);
 	}
