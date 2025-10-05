@@ -13,6 +13,7 @@
 	"dependencies": {
 		"@astro-community/astro-embed-link-preview": "^0.2.2",
 		"@astrojs/check": "^0.9.4",
+		"@astrojs/netlify": "^6.5.11",
 		"@astrojs/rss": "^4.0.12",
 		"@astrojs/svelte": "^7.2.0",
 		"@astrojs/ts-plugin": "^1.10.4",
