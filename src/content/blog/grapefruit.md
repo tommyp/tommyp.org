@@ -51,6 +51,7 @@ Imagine what we could do if we were more like Mary who refused to handle the gra
 
 - 🧑‍💻 I started a new job this week. It's great so far.
 - 🎮 While watching the [Machine Games documentaries](https://youtu.be/E189QG28rnE?si=ktepIxVdpqYq_2fJ) and when it got to Wolfenstein I realised they passed me by. I highly recommend them given the current state of everything.
+- 🎮 Hades 2 is great. I thought it was just more of the same at the start, but the more I play, the more I uncover the differences.
 - 📺 Wayward is so creepy it's giving me weird dreams.
 - 📺 Alien: Earth also gave me a weird dream - John Malkavich was an android chasing me around a building. Yes, I know that he's not in it.
 - 📺 We're a bit behind on Taskmaster, but I'm enjoying it so far.
