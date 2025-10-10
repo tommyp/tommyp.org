@@ -29,6 +29,7 @@ const blogCollection = defineCollection({
 				'movies',
 				'music',
 				'personal',
+				'politics',
 				'productivity',
 				'pubs',
 				'rss',
