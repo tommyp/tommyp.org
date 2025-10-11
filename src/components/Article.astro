@@ -17,20 +17,16 @@ const { linkHoverColor, linkUnderlineColor } = Astro.props;
 >
 	article.post {
 		width: 100%;
-		/* margin: 0 auto; */
 		padding: 0 0.5rem;
-	}
-
-	article.post {
 		margin-top: var(--margin-xl);
 		line-height: 1;
-	}
-
-	article.post p {
-		font-size: var(--text-lg);
-		line-height: 1.25;
-		margin-bottom: var(--margin-xl);
-		text-wrap: pretty;
+		> p {
+			line-height: 1.25;
+			margin-bottom: var(--margin-xl);
+			text-wrap: pretty;
+			max-width: 50vw;
+			font-size: var(--text-md);
+		}
 	}
 
 	article.post a {
@@ -109,9 +105,10 @@ const { linkHoverColor, linkUnderlineColor } = Astro.props;
 
 	.article.post pre {
 		margin-bottom: var(--margin-xl);
+		font-size: var(--text-md);
 	}
 
-	@media (min-width: 768px) {
+	@media (min-width: 1023px) {
 		article.post {
 			max-width: 70vw;
 			line-height: 1.25;
