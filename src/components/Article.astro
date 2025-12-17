@@ -16,106 +16,103 @@ const { linkHoverColor, linkUnderlineColor } = Astro.props;
 	define:vars={{ 'link-hover-color': linkHoverColor, 'link-underline-color': linkUnderlineColor }}
 >
 	article.post {
-		width: 100%;
-		/* margin: 0 auto; */
-		padding: 0 0.5rem;
-	}
-
-	article.post {
-		margin-top: var(--margin-xl);
-		line-height: 1;
-	}
-
-	article.post p {
-		font-size: var(--text-lg);
-		line-height: 1.25;
-		margin-bottom: var(--margin-xl);
-		text-wrap: pretty;
-	}
-
-	article.post a {
-		color: var(--text-color);
-		text-decoration-color: var(--link-underline-color);
-	}
-
-	article.post a:hover {
-		color: var(--link-hover-color);
-	}
-
-	article.post h1 {
-		font-size: var(--text-4xl);
-		margin-bottom: var(--margin-md);
-		line-height: 1;
-	}
-
-	article.post h2 {
-		font-size: var(--text-3xl);
-		margin-bottom: var(--margin-md);
-		line-height: 1;
-	}
-
-	article.post h3 {
-		font-size: var(--text-2xl);
-		margin-bottom: var(--margin-md);
-	}
-
-	article.post blockquote {
-		border-left: 0.5rem solid var(--background-color);
-		padding-left: 1rem;
-	}
-
-	article.post iframe {
-		aspect-ratio: 16 / 9;
-		width: 100%;
-		margin-bottom: var(--margin-lg);
-	}
-
-	article.post ul,
-	article.post ol {
-		font-size: var(--text-lg);
-		margin-left: var(--margin-lg);
-		margin-bottom: var(--margin-xl);
-		line-height: 1.5;
-	}
-
-	article.post ul li,
-	article.post ol li {
-		margin-bottom: var(--margin-md);
-	}
-
-	article.post p:has(img) {
-		margin: 0;
-		width: 100vw;
-		max-width: 100%;
+		align-items: center;
 		display: flex;
-		flex-wrap: wrap;
-		gap: 1rem;
-		overflow-y: scroll;
-		scroll-snap-type: y mandatory;
-	}
+		flex-direction: column;
+		line-height: 1;
+		margin: var(--margin-xl) auto;
+		width: clamp(320px, 90vw, 60rem);
 
-	article.post p:has(img) > img {
-		width: auto;
-		max-height: 30rem;
-		object-fit: cover;
-		scroll-snap-align: start;
-	}
+		p,
+		li {
+			width: clamp(320px, 90vw, 45rem);
+			font-size: var(--text-md);
+			line-height: 1.25;
+			margin-bottom: var(--margin-lg);
+			text-wrap: pretty;
+		}
 
-	article.post hr {
-		border: 0;
-		border-top: 1px solid var(--border-color);
-		margin: var(--margin-xl) 0;
-	}
+		li {
+			margin-left: var(--margin-lg);
+		}
 
-	.article.post pre {
-		margin-bottom: var(--margin-xl);
+		a {
+			color: var(--text-color);
+			text-decoration-color: var(--link-underline-color);
+			&:hover {
+				color: var(--link-hover-color);
+			}
+		}
+
+		h1,
+		h2,
+		h3,
+		h4 {
+			margin-bottom: var(--margin-md);
+			line-height: 1;
+			text-align: center;
+			text-wrap: pretty;
+			font-size: var(--text-2xl);
+		}
+
+		blockquote {
+			border-left: 0.5rem solid var(--background-color);
+			padding-left: 1rem;
+		}
+
+		iframe {
+			aspect-ratio: 16 / 9;
+			width: 100%;
+			margin-bottom: var(--margin-lg);
+		}
+
+		p:has(img) {
+			align-items: center;
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			gap: 1rem;
+			margin: 0;
+			max-width: 100%;
+			overflow-y: scroll;
+			scroll-snap-type: y mandatory;
+			width: 100vw;
+		}
+
+		p:has(img) > img {
+			width: auto;
+			max-height: 30rem;
+			object-fit: cover;
+			scroll-snap-align: start;
+		}
+
+		hr {
+			border: 0;
+			border-top: 1px solid var(--border-color);
+			margin: var(--margin-xl) 0;
+		}
+
+		pre {
+			width: 100%;
+			margin-bottom: var(--margin-xl);
+		}
 	}
 
 	@media (min-width: 768px) {
-		article.post {
-			max-width: 70vw;
+		.post {
 			line-height: 1.25;
-			padding: 0 1rem;
+
+			h1 {
+				font-size: var(--text-4xl);
+			}
+
+			h2 {
+				font-size: var(--text-3xl);
+			}
+
+			h3 {
+				font-size: var(--text-2xl);
+			}
 		}
 	}
 </style>
