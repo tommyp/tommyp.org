@@ -21,8 +21,6 @@ Now I love hanging out in pubs, and I've spent most of my adult life in London, 
 
 ![](/images/blog/my-best-pubs-in-london/anchor.jpg)
 
-<p></p>
-
 There's something about a drinking nice cold pint right next to a body of water that really elevates the whole experience. The Anchor & Hope is a tiny community ran pub, but spills out onto the path that runs alongside the River Lea.
 
 You'll see a lovely cross section of East London citizens taking up the picnic tables, while dogs and bikes fit in between any gaps. A mate was in there once by himself, when a group of people walked in and asked "Do you do coffee? And can I see the wine list?", to which the old punk barmaid replied, "Fuck off back to Shoreditch".
@@ -30,8 +28,6 @@ You'll see a lovely cross section of East London citizens taking up the picnic t
 ### [The Auld Shillelagh, Stoke Newington](https://maps.app.goo.gl/gY9GkJg4oHRRKjFg7)
 
 ![](/images/blog/my-best-pubs-in-london/auld.jpg)
-
-<p></p>
 
 A legend of an Irish pub in London. The Auld Shillelagh serves all the standard drinks that you might expect from an Irish pub, and although I'm not really a Guinness drinker, I have been reliably informed that they pour it well.
 
@@ -43,15 +39,11 @@ It also serves [Nordie](https://www.urbandictionary.com/define.php?term=Nordie) 
 
 ![](/images/blog/my-best-pubs-in-london/blue-posts.jpg)
 
-<p></p>
-
 With an interior that looks like it hasn't changed from the 70s, The Blue Posts feels like a proper old [battle cruiser](https://www.urbandictionary.com/define.php?term=battle%20cruiser). It gets very busy in the evenings, but also a lovely spot to grab a table with a book during the day. [There are several pubs called The Blue Posts all within or near to Soho](https://londonist.com/london/food-and-drink/the-blue-posts-pub-crawl), but it's not really known why, so make sure you get the right one.
 
 ### [Bradley's Spanish Bar, Tottenham Court Road](https://maps.app.goo.gl/1PoXi7AcneUNCLAn7)
 
 ![](/images/blog/my-best-pubs-in-london/bradleys.webp)
-
-<p></p>
 
 About as Spanish as San Miguel, Bradley's is a little red oasis hidden away down a side street. An ancient looking jukebox sits just inside the door, where you might see a similarly aged regular sat at the bar. [There isn't much to the pub, but the history is an interesting one](https://londoninbits.substack.com/p/bradleys-lager-and-shots-in-no-mans).
 
@@ -59,15 +51,11 @@ About as Spanish as San Miguel, Bradley's is a little red oasis hidden away down
 
 ![](/images/blog/my-best-pubs-in-london/cock.webp)
 
-<p></p>
-
 A craft beer pub in Hackney isn't exactly original, but The Cock is one of the best. The beer selection is stellar, the decor is classic, the atmosphere is solid, and the 'beer garden' is laughably bleak. [The eponymous Cock was even kidnapped, but eventually returned in September 2022](https://www.instagram.com/p/CiSbggAIgVU/?img_index=1).
 
 ### [The Cross Keys, Covent Garden](https://maps.app.goo.gl/GDgyEFGu9sh8Kg1EA)
 
 ![](/images/blog/my-best-pubs-in-london/cross-keys.avif)
-
-<p></p>
 
 Although the front looks overgrown, hidden inside is a carpetted cavern covered with plenty of tat. A lovely place to spend an afternoon taking it all in.
 
@@ -75,15 +63,11 @@ Although the front looks overgrown, hidden inside is a carpetted cavern covered 
 
 ![](/images/blog/my-best-pubs-in-london/dickens-inn.webp)
 
-<p></p>
-
 Sat within Saint Katherine's Way, The Dicken's Inn is another pub covered in plants situated near a body of water. When you're stuck in the no man's land of Tower Hill, this is a solid spot for a pint. If you sit outside you can also gawk at all the fancy boats docked up.
 
 ### [The Euston Tap, Euston](https://maps.app.goo.gl/T8Qy2XHZYUrG9rZZ7)
 
 ![](/images/blog/my-best-pubs-in-london/euston-tap.jpg)
-
-<p></p>
 
 Outside the [worst train station](https://www.bbc.co.uk/news/articles/cj31v6dgy3xo) may be an odd spot for a great pub, and although the West Hall is small, the Euston Tap has more than enough personality to make up for the surroundings and the size. The selection is top notch and there is lots of space outside.
 
@@ -91,15 +75,11 @@ Outside the [worst train station](https://www.bbc.co.uk/news/articles/cj31v6dgy3
 
 ![](/images/blog/my-best-pubs-in-london/exmouth-arms.jpg)
 
-<p></p>
-
 London has plenty of nice pubs, covered in green tiles, sitting on the corners of nice streets, but the Exmouth Arms is special to me because it's where my wife and I finished our first date.
 
 ### [Howl at The Moon, Hoxton](https://maps.app.goo.gl/MKkzMrYMC3yCYbuz8)
 
 ![](/images/blog/my-best-pubs-in-london/howl.jpg)
-
-<p></p>
 
 Most of the pubs on this list are simply here because I enjoy being in them, but The Howl is different. When I first moved to London, I lived behind the building facing it. Between Paddy's Days, GAA finals, Ireland rugby games, and any night I fancied, I spent a lot of my time there. Eventually, I even became friendly with the owner. By no means a _traditional_ take on an Irish pub, it is still an Irish pub, and was a little slice of home away from home when I needed it the most.
 
@@ -107,15 +87,11 @@ Most of the pubs on this list are simply here because I enjoy being in them, but
 
 ![](/images/blog/my-best-pubs-in-london/the-lamb.avif)
 
-<p></p>
-
 There's something special about a dimly lit pub at night, especially during the winter months. The Lamb's black floor and ceiling make it feel darker than it really is, so it feels extra cosy. And they serve Tayto.
 
 ### [Lord Nelson, Southwark](https://maps.app.goo.gl/Y3tE6m6axtsXd12q8)
 
 ![](/images/blog/my-best-pubs-in-london/lord-nelson.jpg)
-
-<p></p>
 
 A [flat roof pub](https://en.wikipedia.org/wiki/Flat-roofed_pub?useskin=vector) joined onto a block of flats is not a place you might expect to be on this list, but the Lord Nelson is a colorful spot filled to the brim with kitchy tat that turns it into a divebar down an otherwise non-descript street.
 
@@ -123,15 +99,11 @@ A [flat roof pub](https://en.wikipedia.org/wiki/Flat-roofed_pub?useskin=vector) 
 
 ![](/images/blog/my-best-pubs-in-london/mannions.webp)
 
-<p></p>
-
 Another microcosm of Ireland, this one ran by a Roscommon couple and in an area more known for warehouses, of both the industrial variety and 40 people living there variety. To my shame, I only discovered it recently, but it immediately became a firm favourite.
 
 ### [The Nag's Head, Walthamstow](https://maps.app.goo.gl/3uA4Awio5RCHzZFP8)
 
 ![](/images/blog/my-best-pubs-in-london/nags-head.jpg)
-
-<p></p>
 
 There aren't many places that have as much unique personality as The Nag's Head. The landlady, Flossie, is practically a celebrity, and you'll see her there being followed around the pub by her poodles. Famously filled with cats, one by one they've all passed away over the years, so the bar is flanked on one side by a cat shrine, with a David Bowie shrine on the other. It all feels a bit like drinking in an Flossie's living room. And best of all for a DINK couple living in Walthamstow, it's a childfree pub.
 
@@ -141,15 +113,11 @@ There aren't many places that have as much unique personality as The Nag's Head.
 
 ![](/images/blog/my-best-pubs-in-london/pelt-trader.jpg)
 
-<p></p>
-
 When a pub becomes the office regular, it can lead to many nights filled with gossip and laughs, but when I worked above it, it felt like The Pelt Trader was even better than a normal regular. It boasts a fantastic beer selection and serves some of the best pizza I've had in London. The lads from our New York office said it was the best pizza they'd had outside of New York.
 
 ### [The Pride of Spitalfields, Spitalfields](https://maps.app.goo.gl/ZvMV9GavmVgGhujn8)
 
 ![](/images/blog/my-best-pubs-in-london/pride.webp)
-
-<p></p>
 
 Carpetted floors, red velvet seats, classic decor, and ancient photos on the wall are hallmarks of a great pub, and The Pride of Spitalfields has them all. There's even a pub cat who might steal your warm seat when you get up for another round.
 
@@ -157,23 +125,17 @@ Carpetted floors, red velvet seats, classic decor, and ancient photos on the wal
 
 ![](/images/blog/my-best-pubs-in-london/seven-stars.jpg)
 
-<p></p>
-
 A weird little spot that you might miss walking by, unless you're keeping an eye out for the strange collection of tat in the window. Green check tablecloths sit inside two tiny rooms and constant rotation of pub cats in ruffs have stood guard. A beatifully weird pub with a [long and interesting history](https://www.thesevenstars1602.co.uk/).
 
 ### [Tamesis Dock, Vauxhaull](https://maps.app.goo.gl/gwCzNaFbQCtwuvBQ9)
 
 ![](/images/blog/my-best-pubs-in-london/tamesis-dock.jpg)
 
-<p></p>
-
 Some pubs overlook The Thames. This one is in The Thames. A pub on a boat, or maybe the pub _is_ the boat? Enjoying your pint while the waves gentely rock you is an odd feeling. If you time it right when the tide is going out, you can even feel the boat settling into its' cradle.
 
 ### [The Toucan, Soho](https://maps.app.goo.gl/6y3e1FtTUUDX6F79A)
 
 ![](/images/blog/my-best-pubs-in-london/the-toucan.avif)
-
-<p></p>
 
 There are plenty of pubs London that serve [shit](https://www.instagram.com/shitlondonguinness/) and [unreal](https://www.instagram.com/beautifulpints/) Guinness, but The Toucan is on another level. People spill out of the small ground floor room onto the street, while in the basement below, pint shaped stools painted like Guinness sit in front of another bar with a serious whiskey collection. My favourite thing about the pub is a quote on the wall in basement from former DUP leader Ian Paisley:
 
@@ -182,8 +144,6 @@ There are plenty of pubs London that serve [shit](https://www.instagram.com/shit
 ### [The Wenlock Arms, Old Street](https://maps.app.goo.gl/u3iNxgJdq76wovfX6)
 
 ![](/images/blog/my-best-pubs-in-london/wenlock-arms.jpg)
-
-<p></p>
 
 A proper pub on a lovely corner in a quiet Hoxton street. It's an old spot with wonky floorboards, a fireplace, and a piano. Another one that sells Tayto too, but I'm an easy mark for that distinctive flavour with a pint in a nice place.
 

@@ -53,7 +53,6 @@ After posting it on Twitter, my friends loved it.
 Thanks to the Wayback Machine, we can see what it looked like, without the TypeKit font unfortunately.
 
 ![](/images/blog/is-it-shorts-weather-today/2013.png)
-
 _The original design_
 
 ## 2014 - Version 2.0
@@ -105,7 +104,6 @@ After this, sometimes literal, gravy train had screeched to a stop, I had totall
 I could see what way the wind was blowing in the Frontend Wars, so now was the time to ditch Ember and move to React. This also called for a redesign, and you can't beat a gradient.
 
 ![](/images/blog/is-it-shorts-weather-today/2015.png)
-
 _Now with more gradients_
 
 ## 2021 - Version 6.0
@@ -123,7 +121,6 @@ To simplify, I got rid of the _"It's a schwelterin X degrees"_ statements, which
 Because I had a lot of spare time in 2021 I also added some new features. Previously it only searched using your current location, so I added a location lookup, which allowed me to place the location in the URL, which in turn allowed me to use those values on the initial request. Now I had shareable URLs.
 
 ![](/images/blog/is-it-shorts-weather-today/2021.png)
-
 _WebGL edition_
 
 With shareable URLs now possible, the analytics has shown me that even the [Maritime & Transport technology Young Professionals society at Delft University of Technology](https://mtt-colloquium.github.io/) was linking to it.
