@@ -7,7 +7,7 @@ titleColor: '#9d90ff'
 categories: [tech]
 ---
 
-The crypto trend brought some utter shit to my LinkedIn inbox. Jobs at stock traders using knock off cartoon characters as currency. They said that blockchains, and ledgers, and decentrialisation.
+The crypto trend brought some utter shit to my LinkedIn inbox. Jobs at stock traders using knock off cartoon characters as currency. They said that blockchains, and ledgers, and decentrialisation, were the future.
 
 Then came the metaverse. Not that I ever got a job offer from Meta, but I was always impressed at the amount of absolute bollocks they pedalled. They said that it was the future of human interaction before they [even shipped legs](https://www.pcmag.com/news/avatars-in-meta-horizons-finally-get-legs-this-time-for-real?test_uuid=04IpBmWGZleS0I0J3epvMrC&test_variant=A).
 
