@@ -10,7 +10,7 @@ const { post } = Astro.props;
 ---
 
 <div>
-	<a href={`/blog/${post.slug}`}>
+	<a href={`/blog/${post.id}`}>
 		<BlogHeader post={post.data} hoverable={true} />
 	</a>
 </div>

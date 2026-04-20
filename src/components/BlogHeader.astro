@@ -1,5 +1,5 @@
 ---
-import type { PostData } from '../lib/types';
+import type { Post, PostData } from '../lib/types';
 
 interface Props {
 	post: PostData;
@@ -10,13 +10,13 @@ const {
 	post: { title, subtitle, titleColor, titleBgColor, date },
 	hoverable
 } = Astro.props;
-const formattedDate = new Date(date).toLocaleDateString('en-GB', { dateStyle: 'full' });
+const formattedDate = date.toLocaleDateString('en-GB', { dateStyle: 'full' });
 ---
 
 <section class:list={['post-header', { hoverable: hoverable }]}>
 	<h1>{title}</h1>
 	<div class="subtitle">
-		<h2>{subtitle}</h2>
+		{subtitle && <h2>{subtitle}</h2>}
 		<h3>{formattedDate}</h3>
 	</div>
 </section>

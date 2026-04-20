@@ -9,7 +9,7 @@ const { categories } = Astro.props;
 	<h2>Categories</h2>
 	<ul>
 		{
-			categories.map((category: String) => {
+			categories.map((category) => {
 				return (
 					<li>
 						<a href={`/blog/category/${category}`}>{category}</a>

@@ -4,32 +4,35 @@ import BlogHeader from '../../components/BlogHeader.astro';
 import Article from '../../components/Article.astro';
 import { publishedPosts, allPosts } from '../../lib/posts';
 import Categories from '../../components/Categories.astro';
+import { render } from 'astro:content';
 
-export async function getStaticPaths() {
+import type { GetStaticPaths } from 'astro';
+
+export const getStaticPaths = (async () => {
 	const isDev = import.meta.env.DEV;
 	const posts = isDev ? allPosts : publishedPosts;
-	return posts.map((entry) => ({
-		params: { slug: entry.slug },
-		props: { entry }
+	return posts.map((post) => ({
+		params: { slug: post.id },
+		props: { post }
 	}));
-}
+}) satisfies GetStaticPaths;
 
-const { entry } = Astro.props;
-const { Content } = await entry.render();
+const { post } = Astro.props;
+const { Content } = await render(post);
 ---
 
-<Layout title={entry.data.title} pageSlug={entry.slug}>
+<Layout title={post.data.title} pageSlug={post.id}>
 	<section
 		style={{
-			'--title-color': entry.data.titleColor,
-			'--background-color': entry.data.titleBgColor
+			'--title-color': post.data.titleColor,
+			'--background-color': post.data.titleBgColor
 		}}
 	>
 		<header>
-			<BlogHeader post={entry.data} />
+			<BlogHeader post={post.data} />
 		</header>
-		<Categories categories={entry.data.categories} />
-		<Article linkHoverColor={entry.data.titleColor} linkUnderlineColor={entry.data.titleBgColor}>
+		<Categories categories={post.data.categories} />
+		<Article linkHoverColor={post.data.titleColor} linkUnderlineColor={post.data.titleBgColor}>
 			<Content />
 		</Article>
 	</section>

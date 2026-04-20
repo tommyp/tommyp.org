@@ -1,7 +1,7 @@
 import type { RenderResult } from 'astro:content';
 
 export interface Post {
-	slug: string;
+	id: string;
 	data: PostData;
 	body: string;
 	collection: 'blog';
@@ -16,6 +16,43 @@ export interface PostData {
 	date: Date;
 	draft: boolean;
 	categories: string[];
+}
+
+export enum PostCategories {
+	'apple',
+	'blog',
+	'books',
+	'conference',
+	'culture',
+	'design',
+	'dev',
+	'elixir',
+	'film',
+	'food',
+	'internet',
+	'ireland',
+	'list',
+	'london',
+	'media',
+	'monthnotes',
+	'movies',
+	'music',
+	'personal',
+	'politics',
+	'productivity',
+	'pubs',
+	'rss',
+	'software',
+	'tech',
+	'travel',
+	'tv',
+	'ui',
+	'ux',
+	'videogames',
+	'yearnotes',
+	'web',
+	'work',
+	'world'
 }
 
 export interface SpotifyPlayerResponse {
