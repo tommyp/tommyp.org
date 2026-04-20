@@ -1,5 +1,5 @@
 import { getCollection } from 'astro:content';
-import type { Post, PostCategories } from './types';
+import type { Post } from './types';
 
 const allPosts = ((await getCollection('blog')) as Post[]).sort((a, b) => {
 	return a.data.date < b.data.date ? 1 : -1;
@@ -7,7 +7,7 @@ const allPosts = ((await getCollection('blog')) as Post[]).sort((a, b) => {
 const publishedPosts = allPosts.filter((post) => !post.data.draft);
 
 const categories = publishedPosts
-	.reduce<PostCategories[]>((acc, post) => {
+	.reduce<string[]>((acc, post) => {
 		return acc.concat(post.data.categories);
 	}, [])
 	.filter((value, index, array) => array.indexOf(value) === index)

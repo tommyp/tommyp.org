@@ -1,7 +1,7 @@
 import { OGImageRoute } from 'astro-og-canvas';
 import { publishedPosts } from '../../lib/posts';
 
-const pages = Object.fromEntries(publishedPosts.map(({ slug, data }) => [slug, data]));
+const pages = Object.fromEntries(publishedPosts.map(({ id, data }) => [id, data]));
 
 const hexToRgbArray = (hex: string): [any, any, any] => {
 	let color = hex || '#000000';

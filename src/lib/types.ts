@@ -18,43 +18,6 @@ export interface PostData {
 	categories: string[];
 }
 
-export enum PostCategories {
-	'apple',
-	'blog',
-	'books',
-	'conference',
-	'culture',
-	'design',
-	'dev',
-	'elixir',
-	'film',
-	'food',
-	'internet',
-	'ireland',
-	'list',
-	'london',
-	'media',
-	'monthnotes',
-	'movies',
-	'music',
-	'personal',
-	'politics',
-	'productivity',
-	'pubs',
-	'rss',
-	'software',
-	'tech',
-	'travel',
-	'tv',
-	'ui',
-	'ux',
-	'videogames',
-	'yearnotes',
-	'web',
-	'work',
-	'world'
-}
-
 export interface SpotifyPlayerResponse {
 	is_playing: boolean;
 	item: {
