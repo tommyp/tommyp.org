@@ -6,6 +6,7 @@ const categories = [
 	'apple',
 	'blog',
 	'books',
+	'code',
 	'conference',
 	'culture',
 	'design',
