@@ -1,5 +1,5 @@
 ---
-title: A different syntax for Phoenix.LiveComponent
+title: A different syntax for Phoenix LiveComponents
 date: 2026-05-11
 subtitle: Functional live components
 titleBgColor: '#ac00ea'
