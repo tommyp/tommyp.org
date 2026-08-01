@@ -16,9 +16,8 @@ const hexToRgbArray = (hex: string): [any, any, any] => {
 	return [r, g, b];
 };
 
-export const { getStaticPaths, GET } = OGImageRoute({
+export const { getStaticPaths, GET } = await OGImageRoute({
 	pages: pages,
-	param: 'route',
 	getImageOptions: (_, page) => ({
 		title: page.title,
 		description: page.subtitle,
@@ -89,12 +88,12 @@ export const { getStaticPaths, GET } = OGImageRoute({
 
 		font: {
 			title: {
-				family: 'Inter',
+				families: ['Inter'],
 				size: 96,
 				color: hexToRgbArray(page.titleColor)
 			},
 			description: {
-				family: 'Inter',
+				families: ['Inter'],
 				size: 48,
 				color: hexToRgbArray(page.titleColor)
 			}
