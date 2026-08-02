@@ -4,7 +4,7 @@ import MarkdownIt from 'markdown-it';
 import { publishedPosts } from '../lib/posts';
 const parser = new MarkdownIt();
 
-export async function GET(context) {
+export async function GET(context: {site: string}) {
 	return rss({
 		// `<title>` field in output xml
 		title: "Tommy Palmer's Blog",
@@ -23,11 +23,9 @@ export async function GET(context) {
 
 			// Compute RSS link from post `slug`
 			// This example assumes all posts are rendered as `/blog/[slug]` routes
-			link: `/blog/${post.slug}/`,
+			link: `/blog/${post.id}/`,
 			content: sanitizeHtml(parser.render(post.body), {
-				allowedTags: false,
-				allowedAttributes: false,
-				allowVulnerableTags: false
+				allowedTags: sanitizeHtml.defaults.allowedTags.concat(['img'])
 			})
 		})),
 
