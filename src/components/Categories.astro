@@ -8,15 +8,13 @@ const { categories } = Astro.props;
 <div class="bar">
 	<h2>Categories</h2>
 	<ul>
-		{
-			categories.map((category) => {
-				return (
-					<li>
-						<a href={`/blog/category/${category}`}>{category}</a>
-					</li>
-				);
-			})
-		}
+		{categories.map((category) => {
+			return (
+				<li>
+					<a href={`/blog/category/${category}`}>{category}</a>
+				</li>
+			);
+		})}
 	</ul>
 </div>
 

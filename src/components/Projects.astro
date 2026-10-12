@@ -27,22 +27,20 @@ const projects = [
 
 <section>
 	<ul>
-		{
-			projects.map((project) => (
-				<li>
-					<a
-						href={project.href}
-						style={{
-							'--foreground': `${project.colors.foreground}`,
-							'--background': `${project.colors.background}`
-						}}
-					>
-						<h2>{project.title}</h2>
-						<p>{project.description}</p>
-					</a>
-				</li>
-			))
-		}
+		{projects.map((project) => (
+			<li>
+				<a
+					href={project.href}
+					style={{
+						'--foreground': `${project.colors.foreground}`,
+						'--background': `${project.colors.background}`
+					}}
+				>
+					<h2>{project.title}</h2>
+					<p>{project.description}</p>
+				</a>
+			</li>
+		))}
 	</ul>
 </section>
 

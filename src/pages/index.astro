@@ -23,7 +23,9 @@ const blogPosts = publishedPosts.slice(0, 3);
 				<ArrowHeader hoverable={true}>Blog&nbsp;posts</ArrowHeader>
 			</a>
 		</div>
-		{blogPosts.map((post) => <BlogHeaderLink post={post} />)}
+		{blogPosts.map((post) => (
+			<BlogHeaderLink post={post} />
+		))}
 		<Projects />
 	</div>
 </Layout>

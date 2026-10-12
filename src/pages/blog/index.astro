@@ -12,7 +12,9 @@ import Marquee from '../../components/Marquee.astro';
 		<a class="marquee" href="/blog/category">
 			<Marquee>Browse by category</Marquee>
 		</a>
-		{publishedPosts.map((post) => <BlogHeaderLink post={post} />)}
+		{publishedPosts.map((post) => (
+			<BlogHeaderLink post={post} />
+		))}
 	</main>
 </Layout>
 

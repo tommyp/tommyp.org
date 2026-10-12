@@ -22,6 +22,8 @@ const { category, posts } = Astro.props;
 	<main>
 		<ArrowHeader>{category} posts</ArrowHeader>
 
-		{posts.map((post) => <BlogHeaderLink post={post} />)}
+		{posts.map((post) => (
+			<BlogHeaderLink post={post} />
+		))}
 	</main>
 </Layout>

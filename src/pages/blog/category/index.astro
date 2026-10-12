@@ -38,18 +38,16 @@ const categoriesWithColors = categories.map((category, index) => {
 
 		<article>
 			<ul>
-				{
-					categoriesWithColors.map((category) => (
-						<li>
-							<a
-								style={`--background-color: var(--${category.color}-8)`}
-								href={`/blog/category/${category.slug}`}
-							>
-								{category.slug}
-							</a>
-						</li>
-					))
-				}
+				{categoriesWithColors.map((category) => (
+					<li>
+						<a
+							style={`--background-color: var(--${category.color}-8)`}
+							href={`/blog/category/${category.slug}`}
+						>
+							{category.slug}
+						</a>
+					</li>
+				))}
 			</ul>
 		</article>
 	</main>

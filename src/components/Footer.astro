@@ -31,13 +31,11 @@ const links = [
 		<NowPlaying client:idle />
 	</div>
 	<ul>
-		{
-			links.map((link) => (
-				<li>
-					<a href={link.href}>{link.text}</a>
-				</li>
-			))
-		}
+		{links.map((link) => (
+			<li>
+				<a href={link.href}>{link.text}</a>
+			</li>
+		))}
 	</ul>
 </footer>
 
