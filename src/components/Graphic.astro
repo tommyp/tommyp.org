@@ -33,13 +33,9 @@ const blocksWithColors = blocks.map((block, i) => {
 
 <div>
 	<p>
-		{
-			blocksWithColors.map((block) => {
-				return (
-					<span style={`--background-color: var(--${block.color.value}-5)`}>{block.text} </span>
-				);
-			})
-		}
+		{blocksWithColors.map((block) => {
+			return <span style={`--background-color: var(--${block.color.value}-5)`}>{block.text} </span>;
+		})}
 	</p>
 </div>
 

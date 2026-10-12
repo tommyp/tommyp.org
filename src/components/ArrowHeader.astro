@@ -9,7 +9,9 @@ const { hoverable } = Astro.props;
 ---
 
 <header class:list={[{ hoverable: hoverable }]}>
-	<h1><slot /></h1>
+	<h1>
+		<slot />
+	</h1>
 	<Arrow />
 </header>
 

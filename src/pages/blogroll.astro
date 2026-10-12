@@ -226,15 +226,13 @@ const linksWithColors = blogroll.map((link, index) => {
 			<p>All of them are worth reading.</p>
 		</section>
 		<ul>
-			{
-				linksWithColors.map((link) => (
-					<li>
-						<a style={`--background-color: var(--${link.color}-8)`} href={link.href}>
-							{link.title}
-						</a>
-					</li>
-				))
-			}
+			{linksWithColors.map((link) => (
+				<li>
+					<a style={`--background-color: var(--${link.color}-8)`} href={link.href}>
+						{link.title}
+					</a>
+				</li>
+			))}
 		</ul>
 	</article>
 </Layout>
