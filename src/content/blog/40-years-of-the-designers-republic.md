@@ -1,6 +1,6 @@
 ---
 title: 40 years of The Designers Republic
-date: 2026-10-31
+date: 2026-11-09
 subtitle: miTDR
 titleBgColor: '#FF08E8'
 titleColor: '#fff'
