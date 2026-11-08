@@ -1,0 +1,12 @@
+diff --git a/dist/node/main.js b/dist/node/main.js
+index 4d66fb56936f7c8148b46ffeb8f398d2a16e06f0..320c1c8e351b0493b5c25749e094a1fac01f3235 100644
+--- a/dist/node/main.js
++++ b/dist/node/main.js
+@@ -250,6 +250,7 @@ var EdgeFunctionsHandler = class {
+     const denoBridge = new DenoBridge({
+       // TODO: Remove this override once `@netlify/edge-bundler` has been
+       // updated to require Deno 2.x.
++      useGlobal: false,
+       versionRange: "^2.2.4"
+     });
+     const runOptions = {
