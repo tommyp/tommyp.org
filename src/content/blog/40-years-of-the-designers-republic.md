@@ -17,11 +17,11 @@ In my first year at university, I worked a part-time job after my classes. I nea
 
 This was such an inspiration to me that most of my personal tastes can be traced back to Wipeout, and by extension TDR. The futuristic visuals got me into design, which got me into programming, while the thumping soundtrack pointed me towards electronic music.
 
-That impact in my life came back into my mind when I thought about getting my first tattoo. You always overthink your first. The more you get, the less they need to mean. I've only got 5 so far, and the most recent one is a weird alien eyeball thing. But that first one needed to be special, and so, my mind went to Wipeout and TDR, so I got the TDR logo tattooed.
+That impact in my life came back into my mind when I thought about getting my first tattoo. You always overthink your first, but the more you get, the less they need to mean. I've only got 5 so far, and the most recent one is a weird alien eyeball thing. But that first one needed to be special, and so, my mind went to Wipeout and TDR, so I got the TDR logo tattooed.
 
 ## Meet your heroes
 
-And so, a few weeks ago, at an event hosted by [Verdant Brewing](https://verdantbrewing.co/), I found myself in front of Ian Anderson showing him my tattoo.
+And so, at an event hosted by [Verdant Brewing](https://verdantbrewing.co/), I found myself in front of Ian Anderson showing him my tattoo.
 
 I'd never seen him in person, or even a recent photo, so when a man in his 60s arrived after everyone and was talking with the people wearing Verdant t-shirts, I guessed it might be him. I was at the bar grabbing pints for my friend and me, when one of the staff who had seen my tattoo showed it to this man. To my relief, he went, "Nice."
 
@@ -41,7 +41,7 @@ At the end of the night, he was signing stuff for people, so I got him to sign m
 
 He's the kind of artist who I fully expected to hate hero worship and call me a dickhead, so it was great to finish the night with this story that is more memorable than some signed bit of memorabilia to sell off. Unfortunately his signature was basically a scribble, so no, I have no plans to get it tattooed.
 
-So in my experience, if you like someone's work, tell them. They'll appreciate you telling them, no matter how famous they are.
+So in my experience, if you like someone's work, tell them. They'll appreciate it, no matter how famous they are.
 
 ## Honourable mentions
 
