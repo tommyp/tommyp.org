@@ -1,23 +1,27 @@
 {
-	"name": "astro",
+	"name": "tommyp.org",
 	"type": "module",
 	"version": "0.0.1",
+	"packageManager": "pnpm@11.9.0",
+	"engines": {
+		"node": ">=26"
+	},
 	"scripts": {
 		"dev": "astro dev",
 		"start": "astro dev",
-		"build": "astro check && astro build",
+		"build": "astro check && vitest run && astro build",
 		"preview": "astro preview",
 		"astro": "astro",
 		"test": "vitest"
 	},
 	"dependencies": {
-		"@astrojs/check": "^0.9.10",
-		"@astrojs/netlify": "^8.2.10",
+		"@astrojs/check": "^0.9.12",
+		"@astrojs/netlify": "^8.2.11",
 		"@astrojs/rss": "^4.0.19",
-		"@astrojs/svelte": "^9.1.0",
+		"@astrojs/svelte": "^9.1.2",
 		"@astrojs/ts-plugin": "^1.10.12",
 		"@resvg/resvg-js": "^2.6.2",
-		"astro": "^7.4.0",
+		"astro": "^7.4.5",
 		"astro-og-canvas": "^0.13.2",
 		"canvaskit-wasm": "^0.42.0",
 		"markdown-it": "^15.0.2",
